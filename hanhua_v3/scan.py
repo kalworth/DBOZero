@@ -1024,6 +1024,78 @@ def write_workbench(
     )
 
 
+def write_new_translation_queue(
+    path: Path,
+    entries: list[CatalogEntry],
+    exact: dict[tuple[str, str, str], list[TranslationRow]],
+    wildcard_by_source: dict[tuple[str, str, str], list[TranslationRow]],
+    legacy_by_text: dict[str, list[LegacyCandidate]],
+) -> int:
+    def rows():
+        for entry in entries:
+            if entry.surface != "lang0":
+                continue
+            if exact_translations_for(entry, exact, wildcard_by_source):
+                continue
+            if not looks_like_translation_candidate(entry.source_text):
+                continue
+            text_norm = normalize_text(entry.source_text)
+            legacy_suggestions = legacy_by_text.get(text_norm, [])
+            if legacy_suggestions:
+                continue
+            suggested = legacy_suggestions[0].translation if legacy_suggestions else ""
+            yield [
+                "UI" if entry.surface == "lang0" else "TBL",
+                entry.file_name,
+                entry.item_id,
+                entry.source_text,
+                suggested,
+                "",
+                translation_bytes_fit(entry, suggested),
+            ]
+
+    return write_tsv(
+        path,
+        ["来源", "文件", "位置", "原文", "参考译文", "填写中文", "长度状态"],
+        rows(),
+    )
+
+
+def write_tbl_internal_queue(
+    path: Path,
+    entries: list[CatalogEntry],
+    exact: dict[tuple[str, str, str], list[TranslationRow]],
+    wildcard_by_source: dict[tuple[str, str, str], list[TranslationRow]],
+    legacy_by_text: dict[str, list[LegacyCandidate]],
+) -> int:
+    def rows():
+        for entry in entries:
+            if entry.surface != "tbl":
+                continue
+            if exact_translations_for(entry, exact, wildcard_by_source):
+                continue
+            if not looks_like_translation_candidate(entry.source_text):
+                continue
+            text_norm = normalize_text(entry.source_text)
+            legacy_suggestions = legacy_by_text.get(text_norm, [])
+            suggested = legacy_suggestions[0].translation if legacy_suggestions else ""
+            yield [
+                "TBL",
+                entry.file_name,
+                entry.item_id,
+                entry.source_text,
+                suggested,
+                "",
+                translation_bytes_fit(entry, suggested),
+            ]
+
+    return write_tsv(
+        path,
+        ["来源", "文件", "位置", "原文", "参考译文", "填写中文", "长度状态"],
+        rows(),
+    )
+
+
 def write_overlap_by_text(
     path: Path,
     entries: list[CatalogEntry],
@@ -1243,48 +1315,49 @@ def write_review_overlaps(
 
 def write_next_steps(
     path: Path,
-    workbench_count: int,
-    conflict_count: int,
+    queue_count: int,
 ) -> None:
     lines = [
-        "# What To Do Next",
+        "# 翻译工作说明",
         "",
-        "老大，日常不用看全量 catalog。",
+        "老大，以后做翻译只看这两个文件。",
         "",
-        "## 你要改旧翻译",
+        "## 1. 补新内容",
         "",
-        "改这个文件：`data/translations.tsv`",
+        "打开：`data/待翻译_新增内容.tsv`",
         "",
-        "常用列：",
+        "只填这一列：",
         "",
-        "- `source_text`: 原文",
-        "- `zh_cn`: 当前中文，直接改这里",
-        "- `status`: 保持 `accepted` 即可；不确定就写 `needs_review`",
-        "- `note`: 备注为什么这样翻",
+        "- `填写中文`: 你只填这一列",
         "",
-        "TBL 里为了长度把“那美克”写成“那美”这种情况可以保留，不需要为了术语统一强行改。",
+        "其他列只是参考：",
         "",
-        "## 你要补新增翻译",
+        "- `来源`: UI 表示 lang0",
+        "- `文件`: 来源文件",
+        "- `位置`: key 或 offset",
+        "- `原文`: 游戏原文",
+        "- `参考译文`: 旧资料里找到的参考译法",
+        "- `长度状态`: `too_long` 表示可能放不进固定长度字段",
         "",
-        "填这个文件：`data/workbench.tsv`",
+        f"当前待填行数：{queue_count}",
         "",
-        "只看这些列：",
+        "这个表现在只放 UI/lang0 待翻译内容，避免 TBL 几万行候选干扰你。",
         "",
-        "- `reason`: 为什么需要处理",
-        "- `surface`: 属于 lang0 还是 tbl",
-        "- `source_text`: 原文",
-        "- `current_zh_cn`: 已有旧翻译，没有就空",
-        "- `suggested_zh_cn`: 工具给的参考译法",
-        "- `zh_cn_new`: 你只需要填这一列",
-        "- `fit`: `too_long` 表示可能放不进固定长度字段",
+        "## 2. 改旧翻译",
         "",
-        "填完 `zh_cn_new` 后，后续工具会把这些变更合并进主库。",
+        "打开：`data/translations.tsv`",
         "",
-        "## 当前优先级",
+        "只改这一列：",
         "",
-        f"- 先看 `reports/review_conflicts.md`：{conflict_count} 个旧翻译冲突，适合少量人工拍板。",
-        f"- 再看 `data/workbench.tsv`：{workbench_count} 行待处理；先筛 `reason = reuse_or_edit_existing_translation`，这些最容易补。",
-        "- 暂时不要处理全量 `data/catalog_current.tsv`，它是机器地图。",
+        "- `zh_cn`: 当前中文译文",
+        "",
+        "TBL 里为了长度把“那美克”写成“那美”这种情况可以保留。",
+        "",
+        "## 3. 其他文件",
+        "",
+        "不用看。",
+        "",
+        "`data/catalog_current.tsv`、`data/candidates_unified.tsv`、`data/workbench.tsv`、`reports/internal/` 都是工具内部生成物。",
         "",
     ]
     path.parent.mkdir(parents=True, exist_ok=True)
@@ -1398,6 +1471,20 @@ def run(args: argparse.Namespace) -> None:
         translations_by_text,
         legacy_by_text,
     )
+    generated_counts["data/待翻译_新增内容.tsv"] = write_new_translation_queue(
+        data_dir / "待翻译_新增内容.tsv",
+        entries,
+        exact,
+        wildcard_by_source,
+        legacy_by_text,
+    )
+    generated_counts["data/内部_TBL候选.tsv"] = write_tbl_internal_queue(
+        data_dir / "内部_TBL候选.tsv",
+        entries,
+        exact,
+        wildcard_by_source,
+        legacy_by_text,
+    )
     generated_counts["data/candidates_unified.tsv"] = write_candidates(
         data_dir / "candidates_unified.tsv",
         entries,
@@ -1406,32 +1493,32 @@ def run(args: argparse.Namespace) -> None:
         translations_by_text,
         legacy_by_text,
     )
-    generated_counts["reports/overlaps_by_text.tsv"] = write_overlap_by_text(
-        report_dir / "overlaps_by_text.tsv",
+    internal_report_dir = report_dir / "internal"
+    generated_counts["reports/internal/overlaps_by_text.tsv"] = write_overlap_by_text(
+        internal_report_dir / "overlaps_by_text.tsv",
         entries,
         translations_by_text,
     )
-    generated_counts["reports/overlaps_by_id.tsv"] = write_overlap_by_id(report_dir / "overlaps_by_id.tsv", entries)
-    generated_counts["reports/translation_conflicts.tsv"] = write_translation_conflicts(
-        report_dir / "translation_conflicts.tsv",
+    generated_counts["reports/internal/overlaps_by_id.tsv"] = write_overlap_by_id(internal_report_dir / "overlaps_by_id.tsv", entries)
+    generated_counts["reports/internal/translation_conflicts.tsv"] = write_translation_conflicts(
+        internal_report_dir / "translation_conflicts.tsv",
         translations,
     )
-    generated_counts["reports/review_conflicts.md"] = write_review_conflicts(
-        report_dir / "review_conflicts.md",
+    generated_counts["reports/internal/review_conflicts.md"] = write_review_conflicts(
+        internal_report_dir / "review_conflicts.md",
         translations,
     )
-    generated_counts["reports/review_overlaps.md"] = write_review_overlaps(
-        report_dir / "review_overlaps.md",
+    generated_counts["reports/internal/review_overlaps.md"] = write_review_overlaps(
+        internal_report_dir / "review_overlaps.md",
         entries,
         translations_by_text,
     )
     write_next_steps(
         report_dir / "what_to_do_next.md",
-        generated_counts["data/workbench.tsv"],
-        generated_counts["reports/review_conflicts.md"],
+        generated_counts["data/待翻译_新增内容.tsv"],
     )
     generated_counts["reports/what_to_do_next.md"] = 1
-    write_summary(report_dir / "scan_summary.md", entries, translations, legacy, warnings, generated_counts)
+    write_summary(internal_report_dir / "scan_summary.md", entries, translations, legacy, warnings, generated_counts)
 
     print("hanhua v3 scan completed")
     print(f"current catalog entries: {len(entries)}")

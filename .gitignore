@@ -7,6 +7,9 @@
 # v3 generated discovery outputs
 /data/catalog_current.tsv
 /data/candidates_unified.tsv
+/data/workbench.tsv
+/data/内部_TBL候选.tsv
+/reports/internal/
 
 # Python caches and local runtime noise
 __pycache__/
