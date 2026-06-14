@@ -1,0 +1,29 @@
+生成 output 流程
+
+1. 改翻译表：
+overrides.tsv
+lang0_overrides.tsv
+tbl_overrides.tsv
+
+2. 生成 output：
+python "E:\DBO Zero 2.0_tools\hanhua\build_output.py"
+
+3. 检查生成结果：
+output\DBOZero\localize\Taiwan\language
+output\DBOZero\pack\lang0.pak
+output\DBOZero\pack\tbl0.pak
+output\DBOZero\pack\tbl1.pak
+output\使用说明.txt
+
+4. 发给用户：
+只打包 output 目录。
+
+注意：
+- 源文件固定放在 src_file\DBOZero。
+- 本流程不修改游戏目录。
+- 本流程不读取当前游戏目录。
+- 不再打包 EXE。
+- 用户自己备份、自己复制覆盖。
+- Taiwan/RDF 文本改 overrides.tsv。
+- lang0.pak 文本改 lang0_overrides.tsv。
+- tbl0.pak / tbl1.pak UTF-16LE 文本改 tbl_overrides.tsv。

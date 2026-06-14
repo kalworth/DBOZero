@@ -1,0 +1,20 @@
+# Generated patch outputs
+/output/
+/output_taiwan/
+/release/
+
+# Python caches and local runtime noise
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Local editor and OS files
+.vscode/
+.idea/
+Thumbs.db
+Desktop.ini
+
+# Temporary scratch files
+*.tmp
+*.bak
+*.orig

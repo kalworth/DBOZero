@@ -1,0 +1,57 @@
+# Reference only. Do not copy these DST_ITEM_ATTR_* rows into lang0_overrides.tsv without retesting.
+# User test on 2026-06-03: changing these lang0 rows did not affect equipment attribute text and caused in-game side effects.
+file	id	source_text	translation
+lang0.pak	DST_ITEM_ATTR_ELEGANCE	Water	水
+lang0.pak	DST_ITEM_ATTR_FUNNY	Fire	火
+lang0.pak	DST_ITEM_ATTR_HONEST	Ice	冰
+lang0.pak	DST_ITEM_ATTR_STRANGE	Lightning	雷
+lang0.pak	DST_ITEM_ATTR_WILD	Wind	风
+lang0.pak	DST_ITEM_ATTR_NONE	None	无
+lang0.pak	DST_ELEMENT_CYCLE_TIP	Elements: Water > Fire > Wind > Ice > Lightning > Water (+10%% advantage)	属性相克: 水 > 火 > 风 > 冰 > 雷 > 水 (+10%%优势)
+
+# Bot Check / SCS candidates. Reference only; do not move into lang0_overrides.tsv unless the user selects an isolated test block.
+lang0.pak	DST_DIALOG_MODE_NARRATION	Please Wait while I'm on the bot check	请稍候，正在进行机器人验证
+lang0.pak	DST_SCS_BEGIN_ALARMMSG	Anti-Bot verification initiated	防挂机验证已启动
+lang0.pak	DST_SCS_BEGIN_BTN	Start Verification	开始验证
+lang0.pak	DST_SCS_BEGIN_ICONVIEWMSG_1	Bot check started. Press 'Start Verification' to begin.	机器人验证已开始。点击“开始验证”继续。
+lang0.pak	DST_SCS_BEGIN_ICONVIEWMSG_2	Move to a safe location before starting. 2 incorrect attempts will result in penalty.	开始前请移动到安全地点。错误2次将受到惩罚。
+lang0.pak	DST_SCS_BEGIN_ICONVIEWMSG_3	Time remaining: %d minutes %d seconds	剩余时间：%d分%d秒
+lang0.pak	DST_SCS_BLUNDER_NARRATION_1	Incorrect![br]Please try again	输入错误！[br]请重试
+lang0.pak	DST_SCS_BLUNDER_NARRATION_2	Don't worry![br]You still have chances left	别担心！[br]你还有剩余机会
+lang0.pak	DST_SCS_BLUNDER_NARRATION_3	Incorrect attempts: %d[br]Warning: More fails will trigger a penalty	错误次数：%d[br]警告：继续失败将触发惩罚
+lang0.pak	DST_SCS_CANCEL	Verification cancelled. You may be prompted again.	验证已取消，之后可能会再次提示。
+lang0.pak	DST_SCS_FAIL_NARRATION_1	Verification failed after %d attempts.[br]You will be disconnected for safety.	验证失败%d次。[br]为安全起见，你将断开连接。
+lang0.pak	DST_SCS_FAIL_NARRATION_2	For security reasons, you will be disconnected.[br] if you fail again	为安全起见，如果再次失败，[br]你将断开连接
+lang0.pak	DST_SCS_FAIL_NARRATION_3	Cooldown time: %d seconds	冷却时间：%d秒
+lang0.pak	DST_SCS_GUI_BUTTON_DIFFERENT	Get New Code	获取新代码
+lang0.pak	DST_SCS_GUI_BUTTON_DIFFERENT_TOOLTIP	Request a different code (Limited uses)	请求更换代码（次数有限）
+lang0.pak	DST_SCS_GUI_BUTTON_RESEND	Clear	清空
+lang0.pak	DST_SCS_GUI_BUTTON_RESEND_TOOLTIP	Clear input and try again	清空输入并重试
+lang0.pak	DST_SCS_GUI_BUTTON_SEND	Submit Code	提交代码
+lang0.pak	DST_SCS_GUI_BUTTON_SEND_TOOLTIP	Click to verify your code	点击验证代码
+lang0.pak	DST_SCS_GUI_CODE	Code Image	代码图片
+lang0.pak	DST_SCS_GUI_FAIL_MOVE	Final warning! %d seconds left	最后警告！剩余%d秒
+lang0.pak	DST_SCS_GUI_INPUT	Enter Code Here	在此输入代码
+lang0.pak	DST_SCS_GUI_INPUTTIME	Time Remaining	剩余时间
+lang0.pak	DST_SCS_GUI_INPUTTIME_TOOLTIP	Time left to complete verification	完成验证的剩余时间
+lang0.pak	DST_SCS_GUI_QUESTION	Verification Code	验证码
+lang0.pak	DST_SCS_GUI_QUESTIONTEXT	Enter the code shown in the image below.	输入下方图片中显示的代码。
+lang0.pak	DST_SCS_GUI_QUESTION_TOOLTIP	Code may contain letters, numbers, and symbols	代码可能包含字母、数字和符号
+lang0.pak	DST_SCS_GUI_TITLE	Anti-Bot Verification	防挂机验证
+lang0.pak	DST_SCS_GUI_WARNING_MOVE	Warning! Time remaining: %d seconds	警告！剩余时间：%d秒
+lang0.pak	DST_SCS_START_ALARMMSG_1	Bot verification started. Please follow the instructions carefully.	机器人验证已开始，请按提示仔细操作。
+lang0.pak	DST_SCS_START_ALARMMSG_2	Warning: %d incorrect attempts will result in a temporary disconnect.	警告：错误%d次将导致临时断开连接。
+lang0.pak	DST_SCS_START_NARRATION_1	Hello![br]Welcome to the verification system	你好！[br]欢迎使用验证系统
+lang0.pak	DST_SCS_START_NARRATION_2	Let's verify you're not a bot!	让我们验证你不是机器人！
+lang0.pak	DST_SCS_START_NARRATION_3	Failed attempts so far: %d	当前失败次数：%d
+lang0.pak	DST_SCS_START_NARRATION_4	Warning: %d failed attempts[br]will result in temporary disconnect	警告：失败%d次[br]将导致临时断开连接
+lang0.pak	DST_SCS_START_NARRATION_5	You'll receive an image with a code.[br]Please enter the code exactly as shown.	你会收到一张带代码的图片。[br]请准确输入显示的代码。
+lang0.pak	DST_SCS_START_NARRATION_6	Note: You must have a buff slot available[br]to receive the verification reward.	注意：必须留有一个增益栏位[br]才能获得验证奖励。
+lang0.pak	DST_SCS_SUCCESS_NARRATION_1	Excellent![br]Verification completed successfully!	很好！[br]验证已成功完成！
+lang0.pak	DST_SCS_SUCCESS_NARRATION_2	Thank you for playing fair![br]We appreciate your cooperation.	感谢你公平游戏！[br]感谢你的配合。
+lang0.pak	DST_SCS_SUCCESS_NARRATION_3	Reward:[br]Verification Buff VIP(4 hour)/ non VIP(2 hour)[br]Have a Great Gameplay!	奖励：[br]验证增益 VIP(4小时)/非VIP(2小时)[br]祝你游戏愉快！
+lang0.pak	DST_SCS_TIMEFAIL	Time's up! Verification expired.	时间到！验证已过期。
+lang0.pak	DST_SCS_WARNING_NARRATION_1	Incorrect code![br]You have 1 more attempt.[br]A new code has been generated.	代码错误！[br]你还剩1次机会。[br]已生成新代码。
+lang0.pak	DST_SCS_WARNING_NARRATION_2	For security reasons, you will be disconnected.	为安全起见，你将断开连接。
+lang0.pak	DST_SCS_LOGIN_ALERT	[align = "center"][font size = "12" color="f4d762"]Bot Check Required[/font][br][br][font size = "9" color="ffffff"]To receive experience and item drops,[br]you must complete the Bot Verification.[br][br]Complete it once for 1 hour of immunity![/font]	[align = "center"][font size = "12" color="f4d762"]需要机器人验证[/font][br][br][font size = "9" color="ffffff"]若要获得经验和物品掉落，[br]必须完成机器人验证。[br][br]完成一次后可获得1小时免验证时间！[/font]
+lang0.pak	GAME_SCS_CHECK_FAIL	Verification failed.	验证失败。

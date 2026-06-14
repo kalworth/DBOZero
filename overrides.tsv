@@ -1,0 +1,269 @@
+# file	id	text
+# local_data.dat	DST_EXAMPLE	这里填写人工修订后的简中文本
+# local_sync_data.dat	DST_EXAMPLE	这里填写人工修订后的简中文本
+# table_text_all_data.rdf	0:1015	炫耀
+# table_quest_text_data.rdf	1	这里填写人工修订后的任务文本
+table_text_all_data.rdf	3:7000215:0	Natsu Dragneel Outfit	纳兹灭龙外套
+table_text_all_data.rdf	3:70002150:0	Used by DragonSlayer Natsu, the son of a Dragon.	纳兹灭龙外套，龙之子纳兹专用。
+table_text_all_data.rdf	3:7000231:0	Nika Smoke	尼卡烟雾
+table_text_all_data.rdf	5:44982101:0	Krillin	克林
+table_text_all_data.rdf	3:70002270:0	Featuring One Piece in EggHead	以《海贼王》为主题的背饰
+table_text_all_data.rdf	3:99199921:0	军配团扇造型	宇智波团扇造型
+table_text_all_data.rdf	3:111704270:0	黑星龙珠	六道求道玉
+table_text_all_data.rdf	8:621:0	真属性防御上升%d%%	冰属性防御上升%d%%
+table_text_all_data.rdf	8:622:0	奇属性防御上升%d%%	雷属性防御上升%d%%
+table_text_all_data.rdf	8:623:0	猛属性防御上升%d%%	风属性防御上升%d%%
+table_text_all_data.rdf	8:624:0	丽属性防御上升%d%%	水属性防御上升%d%%
+table_text_all_data.rdf	8:625:0	乐属性防御上升%d%%	火属性防御上升%d%%
+table_text_all_data.rdf	8:672:0	真属性攻击 %d%% 增加	冰属性攻击 %d%% 增加
+table_text_all_data.rdf	8:673:0	奇属性攻击 %d%% 增加	雷属性攻击 %d%% 增加
+table_text_all_data.rdf	8:674:0	猛属性攻击 %d%% 增加	风属性攻击 %d%% 增加
+table_text_all_data.rdf	8:675:0	丽属性攻击 %d%% 增加	水属性攻击 %d%% 增加
+table_text_all_data.rdf	8:676:0	乐属性攻击 %d%% 增加	火属性攻击 %d%% 增加
+table_text_all_data.rdf	8:826:0	真属性防御减少%d%%	冰属性防御减少%d%%
+table_text_all_data.rdf	8:827:0	奇属性防御减少%d%%	雷属性防御减少%d%%
+table_text_all_data.rdf	8:828:0	猛属性防御减少%d%%	风属性防御减少%d%%
+table_text_all_data.rdf	8:829:0	丽属性防御减少%d%%	水属性防御减少%d%%
+table_text_all_data.rdf	8:830:0	乐属性防御减少%d%%	火属性防御减少%d%%
+table_text_all_data.rdf	8:62101:0	真属性防御上升(%)	冰属性防御上升(%)
+table_text_all_data.rdf	8:62201:0	奇属性防御上升(%)	雷属性防御上升(%)
+table_text_all_data.rdf	8:62301:0	猛属性防御上升(%)	风属性防御上升(%)
+table_text_all_data.rdf	8:62401:0	丽属性防御上升(%)	水属性防御上升(%)
+table_text_all_data.rdf	8:62501:0	乐属性防御上升(%)	火属性防御上升(%)
+table_text_all_data.rdf	8:67201:0	增加真属性防御(%)	增加冰属性防御(%)
+table_text_all_data.rdf	8:67301:0	增加奇属性攻击(%)	增加雷属性攻击(%)
+table_text_all_data.rdf	8:67401:0	增加猛属性攻击(%)	增加风属性攻击(%)
+table_text_all_data.rdf	8:67501:0	增加丽属性攻击(%)	增加水属性攻击(%)
+table_text_all_data.rdf	8:67601:0	增加要属性攻击(%)	增加火属性攻击(%)
+table_text_all_data.rdf	8:62100000:0	真属性防御上升 %s。	冰属性防御上升 %s。
+table_text_all_data.rdf	8:62100001:0	的真属性防御上升 %s。	的冰属性防御上升 %s。
+table_text_all_data.rdf	8:62200000:0	奇属性防御上升 %s。	雷属性防御上升 %s。
+table_text_all_data.rdf	8:62200001:0	的奇属性防御上升 %s。	的雷属性防御上升 %s。
+table_text_all_data.rdf	8:62300000:0	猛属性防御上升 %s。	风属性防御上升 %s。
+table_text_all_data.rdf	8:62300001:0	的猛属性防御上升 %s。	的风属性防御上升 %s。
+table_text_all_data.rdf	8:62400000:0	丽属性防御上升 %s。	水属性防御上升 %s。
+table_text_all_data.rdf	8:62400001:0	的丽属性防御上升 %s。	的水属性防御上升 %s。
+table_text_all_data.rdf	8:62500000:0	乐属性防御上升 %s。	火属性防御上升 %s。
+table_text_all_data.rdf	8:62500001:0	的乐属性防御上升 %s。	的火属性防御上升 %s。
+table_text_all_data.rdf	8:67200000:0	真属性攻击增加 %s。	冰属性攻击增加 %s。
+table_text_all_data.rdf	8:67200001:0	的真属性攻击增加 %s。	的冰属性攻击增加 %s。
+table_text_all_data.rdf	8:67300000:0	奇属性攻击增加 %s。	雷属性攻击增加 %s。
+table_text_all_data.rdf	8:67300001:0	的奇属性攻击增加 %s。	的雷属性攻击增加 %s。
+table_text_all_data.rdf	8:67400000:0	猛属性攻击增加 %s。	风属性攻击增加 %s。
+table_text_all_data.rdf	8:67400001:0	的猛属性攻击增加 %s。	的风属性攻击增加 %s。
+table_text_all_data.rdf	8:67500000:0	丽属性攻击增加 %s。	水属性攻击增加 %s。
+table_text_all_data.rdf	8:67500001:0	的丽属性攻击增加 %s。	的水属性攻击增加 %s。
+table_text_all_data.rdf	8:67600000:0	乐属性攻击增加 %s。	火属性攻击增加 %s。
+table_text_all_data.rdf	8:67600001:0	的乐属性攻击增加 %s。	的火属性攻击增加 %s。
+table_text_all_data.rdf	8:82600000:0	真属性防御减少 %s。	冰属性防御减少 %s。
+table_text_all_data.rdf	8:82600001:0	的真属性防御减少 %s。	的冰属性防御减少 %s。
+table_text_all_data.rdf	8:82700000:0	奇属性防御减少 %s。	雷属性防御减少 %s。
+table_text_all_data.rdf	8:82700001:0	的奇属性防御减少  %s。	的雷属性防御减少  %s。
+table_text_all_data.rdf	8:82800000:0	猛性防御减少  %s。	风属性防御减少  %s。
+table_text_all_data.rdf	8:82800001:0	的猛属性防御减少  %s。	的风属性防御减少  %s。
+table_text_all_data.rdf	8:82900000:0	丽属性防御减少  %s。	水属性防御减少  %s。
+table_text_all_data.rdf	8:82900001:0	的丽属性防御减少  %s。	的水属性防御减少  %s。
+table_text_all_data.rdf	8:83000000:0	乐属性防御减少 %s。	火属性防御减少 %s。
+table_text_all_data.rdf	8:83000001:0	的乐属性防御减少  %s。	的火属性防御减少  %s。
+local_data.dat	DST_SKILL_TRANSFORM_USE_INFO_FLAG_ABLE_WHEN_EVIL_NAMEK	[Usable while in Evil Namek form]	[邪恶那美克星人形态下可使用]
+local_data.dat	DST_SKILL_TRANSFORM_USE_INFO_FLAG_ABLE_WHEN_EVIL_BOO	[Usable while in Super Boo form]	[超级布欧形态下可使用]
+local_data.dat	DST_SKILL_TRANSFORM_USE_INFO_FLAG_ABLE_WHEN_SUPER_SAIYANBLUE	[Usable while in Super Saiyan Blue form]	[超级赛亚人蓝色形态下可使用]
+local_data.dat	DST_SKILL_TRANSFORM_USE_INFO_FLAG_ABLE_WHEN_SUPER_SAIYAN33	[Usable while in Super Saiyan 3 form]	[超级赛亚人3形态下可使用]
+local_data.dat	DST_SKILL_TRANSFORM_USE_INFO_FLAG_ABLE_WHEN_SUPER_SAIYAN3	[Usable while in Super Saiyan God form]	[超级赛亚人之神形态下可使用]
+local_data.dat	DST_SKILL_TRANSFORM_USE_INFO_FLAG_ABLE_WHEN_BUUHAN_SKIN	[Usable while in Buuhan Skin form]	[布欧悟饭皮肤形态下可使用]
+local_data.dat	DST_SKILL_TRANSFORM_USE_INFO_FLAG_ABLE_WHEN_SUPER_SAIYAN4	[Usable while in Super Saiyan 4 form]	[超级赛亚人4形态下可使用]
+local_data.dat	DST_SKILL_TRANSFORM_USE_INFO_FLAG_ABLE_WHEN_SUPER_BOO	[Usable while in Buuhan form]	[布欧悟饭形态下可使用]
+local_data.dat	DST_SKILL_TRANSFORM_USE_INFO_FLAG_ABLE_WHEN_BUUHAN_SKIN2	[Usable while in Buuhan Skin 2 form]	[布欧悟饭皮肤2形态下可使用]
+local_data.dat	DST_SKILL_TRANSFORM_USE_INFO_FLAG_ABLE_WHEN_GREAT_ORANGE	[Usable while in Great Orange form]	[巨大橙色形态下可使用]
+local_data.dat	DST_SKILL_TRANSFORM_USE_INFO_FLAG_ABLE_WHEN_DARK_NAMEK	[Usable while in Dark Namek form]	[黑暗那美克星人形态下可使用]
+local_data.dat	DST_SKILL_TRANSFORM_USE_INFO_FLAG_ABLE_WHEN_GOTENKS_BOO_FIS	[Usable while in Gotenks Boo Fighter form]	[悟天克斯布欧格斗形态下可使用]
+local_data.dat	DST_SKILL_TRANSFORM_USE_INFO_FLAG_ABLE_WHEN_GOTENKS_BOO_MAG	[Usable while in Gotenks Boo Mystic form]	[悟天克斯布欧秘术形态下可使用]
+local_data.dat	DST_SKILL_TRANSFORM_USE_INFO_FLAG_ABLE_WHEN_SUPER_SAIYANROSE	[Usable while in Super Saiyan Rose form]	[超级赛亚人桃红形态下可使用]
+local_data.dat	DST_SKILL_TRANSFORM_USE_INFO_FLAG_ABLE_WHEN_MYSTIC_MAJIN	[Usable while in Mystic Majin form]	[神秘魔人形态下可使用]
+local_data.dat	DST_SKILL_TRANSFORM_USE_INFO_FLAG_ABLE_WHEN_SUPER_BOO2	[Usable while in Super Boo 2 form]	[超级布欧2形态下可使用]
+local_data.dat	DST_SKILL_TRANSFORM_USE_INFO_FLAG_ABLE_WHEN_SUPER_SAIYAN2	[Usable while in Super Saiyan 2 form]	[超级赛亚人2形态下可使用]
+local_data.dat	DST_SKILL_TRANSFORM_USE_INFO_FLAG_ABLE_WHEN_SUPER_SAIYANL	[Usable while in Super Saiyan Legendary form]	[传说超级赛亚人形态下可使用]
+local_data.dat	DST_SKILL_TRANSFORM_USE_INFO_FLAG_ABLE_WHEN_BIG_MONKEY	[Usable while in Oozaru form]	[大猿形态下可使用]
+local_data.dat	DST_SKILL_TRANSFORM_USE_INFO_FLAG_ABLE_WHEN_KING_NAMEK	[Usable while in Orange Namek form]	[橙色那美克星人形态下可使用]
+# Extra transform tooltip keys referenced by the client but absent from Taiwan/lang0.
+local_data.dat	DST_SKILL_TRANSFORM_USE_INFO_FLAG_ABLE_WHEN_SUPER_SAIYANMAJIN	[Usable while in Majin Super Saiyan form]	[魔人超级赛亚人形态下可使用]
+local_data.dat	DST_SKILL_TRANSFORM_USE_INFO_FLAG_ABLE_WHEN_SUPER_SAIYANNAMEK	[Usable while in Namek Super Saiyan form]	[那美克超级赛亚人形态下可使用]
+# Original Taiwan local_sync placeholders that can surface as unreadable text.
+local_sync_data.dat	GAME_SKILL_CANT_USE_SKILL_WHEN_SUPER_SAIYAN2	CNTEST_LS_004	超级赛亚人2形态下不能使用技能。
+local_sync_data.dat	GAME_SKILL_CANT_USE_SKILL_WHEN_SUPER_BOO2	CNTEST_LS_005	超级布欧2形态下不能使用技能。
+local_sync_data.dat	GAME_SKILL_CANT_USE_SKILL_WHEN_KING_NAMEK	CNTEST_LS_006	橙色那美克星人形态下不能使用技能。
+local_sync_data.dat	GAME_CANNOT_TOGGLE_AURA_WITH_KAIOKEN	CNTEST_LS_007	界王拳状态下不能切换气场。
+local_sync_data.dat	GAME_SKILL_CANT_USE_SKILL_WHEN_SUPER_SAIYANBLUE	CNTEST_LS_008	超级赛亚人蓝色形态下不能使用技能。
+local_sync_data.dat	GAME_SKILL_CANT_USE_SKILL_WHEN_SUPER_BOO	CNTEST_LS_010	布欧悟饭形态下不能使用技能。
+table_text_all_data.rdf	3:1510120:0	Super Saiyan Blue	超级赛亚人蓝色
+table_text_all_data.rdf	7:1510120:0	Super Saiyan Blue	超级赛亚人蓝色
+local_data.dat	GAME_SKILL_NOT_READY_TO_BE_CAST	Skill is still on cooldown.	技能仍在冷却中。
+local_sync_data.dat	GAME_SKILL_NOT_READY_TO_BE_CAST	Skill is still on cooldown.	技能仍在冷却中。
+
+# TEST_BLOCK_BOT_CHECK_TAIWAN_BEGIN
+local_data.dat	DST_SCS_LOGIN_ALERT	[align = ""center""][font size = ""12"" color=""f4d762""]Bot Check Required[/font][br][br][font size = ""9"" color=""ffffff""]To receive experience and item drops,[br]you must complete the Bot Verification.[br][br]Complete it once for 1 hour of immunity![/font]	[align = ""center""][font size = ""12"" color=""f4d762""]需要机器人验证[/font][br][br][font size = ""9"" color=""ffffff""]若要获得经验和物品掉落，[br]必须完成机器人验证。[br][br]完成一次后可获得1小时免验证时间！[/font]
+local_data.dat	GAME_SCS_CHECK_FAIL	Verification failed.	验证失败。
+# TEST_BLOCK_BOT_CHECK_TAIWAN_END
+
+local_data.dat	DST_BATTLEATTR_ATTACK_RATE_TARGET	属性防御 攻击力增加 %.0f%%	属性攻击力增加 %.0f%%
+local_data.dat	DST_BATTLEATTR_DEFENCE_RATE_TARGET	属性攻击 防御力增加 %.0f%%	属性防御力增加 %.0f%%
+
+# AUTO_BLOCK_TAIWAN_SAFE_UNTRANSLATED_20260604_BEGIN
+local_data.dat	DST_MAILSYSTEM_TOOLTIP_RECEIVE_ALL	Receive items and Zeni from eligible mail (up to 6 per use, 15s cooldown).	从符合条件的邮件领取道具和索尼（每次最多6封，冷却15秒）。
+local_data.dat	DST_MAILSYSTEM_TOOLTIP_DELETE_RESOLVED	Delete resolved mail in batches of 6.	批量删除已处理邮件，每次最多6封。
+local_data.dat	DST_MAILSYSTEM_MSG_RECEIVE_ALL_COOLDOWN	Please wait 15 seconds before trying again.	请等待15秒后再试。
+local_data.dat	DST_MAILSYSTEM_MSG_RECEIVE_ALL_NONE	No mail available to receive.	没有可领取的邮件。
+local_data.dat	DST_MAILSYSTEM_MSG_DELETE_RESOLVED_NONE	No resolved mail to delete.	没有可删除的已处理邮件。
+local_data.dat	DST_DOGI_ASK_APPLY_CHANGE	DOGIPROBE_001	时装确认应用变更
+local_data.dat	DST_DOGI_CHANGED	DOGIPROBE_002	时装已变更
+local_data.dat	DST_DOGI_COLOR	DOGIPROBE_003	时装颜色
+local_data.dat	DST_DOGI_EXPAIN_DYE	DOGIPROBE_004	时装说明染色
+local_data.dat	DST_DOGI_MUST_REGI_DOGI_SLOT	DOGIPROBE_005	时装必须登记时装栏位
+local_data.dat	DST_DOGI_ONLY_REGISTER_DYE_ITEM	DOGIPROBE_006	时装仅登记染色道具
+local_data.dat	DST_DOGI_PREVIEW	DOGIPROBE_007	时装预览
+local_data.dat	DST_DOGI_SETUP	DOGIPROBE_008	时装设置
+local_data.dat	DST_DOGI_YOU_MUST_GET_DOGI_CHANGE_FUNCTION	DOGIPROBE_009	时装你必须获得时装变更功能
+local_data.dat	DST_DOGI_YOU_MUST_GET_DOGI_FUNCTION	DOGIPROBE_010	时装你必须获得时装功能
+local_data.dat	DST_DOGI_YOU_MUST_GET_DOJO_DOGI_CHANGE_FUNCTION	DOGIPROBE_011	时装你必须获得道场时装变更功能
+local_data.dat	DST_DOGI_YOU_MUST_GET_DOJO_DOGI_FUNCTION	DOGIPROBE_012	时装你必须获得道场时装功能
+local_data.dat	DST_EXP_INFO	EXP : %d / %d	经验 : %d / %d
+local_data.dat	DST_GUN_MANIA	CNTEST_LD_001	枪狂热者
+local_data.dat	DST_JOB_DOGI_MERCHANT	DOGIPROBE_013	职业时装商人
+local_data.dat	DST_MECH_MANIA	CNTEST_LD_003	机械狂热者
+local_data.dat	DST_MULTIDIALOG_GUILDFUNCTION_CAN_CHANGE_DOGI	DOGIPROBE_014	对话公会功能可以变更时装
+local_data.dat	DST_MULTIDIALOG_GUILDFUNCTION_MAKE_DOGI	DOGIPROBE_015	对话公会功能制作时装
+local_data.dat	DST_TELEPORT_TYPE_COMMAND	COMMAND	命令
+local_data.dat	DST_TELEPORT_TYPE_TIMEQUEST	TIMEQUEST	时光任务
+local_data.dat	DST_DWC_CONDITION_RB_STRAIGHTWIN	%d Streak	%d连胜
+local_data.dat	DST_DOJO_UPGRADE_CURENT_LEVEL_5	CNTEST_LD_007	道场升级当前等级
+local_data.dat	DST_EQUIP_SLOT_TYPE_DOGI	DOGIPROBE_016	装备栏位类型时装
+local_data.dat	DST_DWC_PLAYER_COUNT_TEXT	%d ~ %d players	%d ~ %d名玩家
+local_data.dat	DST_DRAGONBALL_SCRAMBLE_GAIN_BUDOJI_MILEAGE	Earned %d Mudosa	获得%d武道币
+local_data.dat	DST_EQUIP_SLOT_TAIL	CNTEST_LD_020	装备栏位尾巴
+local_data.dat	DST_DRAGONBALL_SCRAMBLE_DROP_MSG	Dragon Ball Lost!!	龙珠丢失!!
+local_data.dat	DST_DRAGONBALL_SCRAMBLE_I_AM_NOT_PLAYER	Not Scramble Participant	非龙珠争夺战参与者
+local_data.dat	DST_DRAGONBALL_SCRAMBLE_CONFIRM_DROP_3	PK Impossible to Enter	PK状态无法进入
+local_data.dat	DST_DWC_CARD_GRADE_04	Rare	稀有
+local_data.dat	DST_DRAGONBALL_SCRAMBLE_CONFIRM_DROP_1	Fainted	昏迷
+local_data.dat	DST_OPTION_OKEFFECT	Apply Only Effect	仅应用效果
+local_data.dat	DST_DWC_CARD_GRADE_02	Uncommon	普通
+local_data.dat	DST_DWC_CARD_GRADE	Card Grade	卡片等级
+local_data.dat	DST_DRAGONBALL_SCRAMBLE_CONFIRM_GET_1	Dropped To pick up	已掉落，可拾取
+local_data.dat	DST_EQUIP_SLOT_TYPE_NECKLACE	Necklace	项链
+local_data.dat	DST_EQUIP_SLOT_TYPE_ACCESSORY2	Accessory 2 - Richness	饰品2 - 富饶
+local_data.dat	DST_DROPITEM_ZENNY	%s Zeni	%s索尼
+local_data.dat	DST_DWC_FIELD_ENTER_COMMAND	Enter DWC	进入DWC
+local_data.dat	DST_OPTION_PERF_PLAYER_FILTER_PARTY	Party Only	组队专用
+local_data.dat	DST_DWC_TARGET	Target	目标
+local_data.dat	DST_TAIL	Tail	尾巴
+local_data.dat	DST_EQUIP_SLOT_TYPE_RING	Ring	戒指
+local_data.dat	DST_DWC_CARD_GRADE_05	Legendary	传说
+local_data.dat	DST_EQUIP_SLOT_TYPE_SOUL	Soul	灵魂
+local_data.dat	DST_DRUM	Drum	鼓
+local_data.dat	DST_EQUIP_SLOT_TYPE_HAND	Weapon	武器
+local_data.dat	DST_EQUIP_SLOT_TYPE_SCOUTER	Scouter	探测器
+local_data.dat	DST_EQUIP_SLOT_TYPE_PANTS	Pants	裤子
+local_data.dat	DST_EQUIP_SLOT_TYPE_EARRING	Earring	耳环
+local_data.dat	DST_ENGINEER	Engineer	工程师
+local_data.dat	DST_EQUIP_SLOT_TYPE_BOOTS	Shoes	鞋子
+local_data.dat	DST_DOJO_UPGRADE_NEED_ITEM	Upgrade Stone	升级石
+local_data.dat	DST_DOJO_UPGRADE	Upgrade	升级
+local_data.dat	DST_EQUIP_SLOT_TYPE_HAIR	Hair	发型
+local_data.dat	DST_BUDOKAI_NOTICE_GUIDE_TIME	Time	时间
+local_data.dat	GAME_GUILD_DOGI_ARLEADY_CREATED	DOGIPROBE_017	公会时装已已创建
+local_data.dat	GAME_GUILD_DOGI_CHANGE_FUNCTION_NEED	DOGIPROBE_018	公会时装变更功能需要
+local_data.dat	GAME_GUILD_DOGI_NOT_CREATED	DOGIPROBE_019	公会时装未已创建
+local_data.dat	GAME_GUILD_DOJO_DOGI_CHANGE_FUNCTION_NEED	DOGIPROBE_020	公会道场时装变更功能需要
+local_data.dat	GAME_SKILL_CANT_USE_SKILL_WHEN_GREAT_NAMEK	Can't use skill while great namek.	不能在巨大那美克形态下使用技能。
+local_data.dat	GAME_SKILL_CANT_USE_SKILL_WHEN_EVIL_NAMEK	Can't use skill while evil namek.	不能在邪恶那美克形态下使用技能。
+local_data.dat	GAME_SKILL_CANT_USE_SKILL_WHEN_KING_NAMEK	Can't use skill while king namek.	不能在王那美克形态下使用技能。
+local_data.dat	GAME_SKILL_CANT_USE_SKILL_WHEN_PURE_MAJIN	Can't use skill while pure majin.	不能在纯粹魔人形态下使用技能。
+local_data.dat	GAME_SKILL_CANT_USE_SKILL_WHEN_EVIL_BOO	Can't use skill while evil boo.	不能在邪恶布欧形态下使用技能。
+local_data.dat	GAME_SKILL_CANT_USE_SKILL_WHEN_SUPER_BOO	Can't use skill while super boo.	不能在超级布欧形态下使用技能。
+local_data.dat	GAME_SKILL_CANT_USE_SKILL_WHEN_SUPER_SAIYAN	Can't use skill while super saiyan.	不能在超级赛亚人形态下使用技能。
+local_data.dat	GAME_SKILL_CANT_USE_SKILL_WHEN_SUPER_SAIYAN2	Can't use skill while super saiyan 2.	不能在超级赛亚人2形态下使用技能。
+local_data.dat	GAME_SKILL_CANT_USE_SKILL_WHEN_SUPER_SAIYAN3	Can't use skill while super saiyan God.	不能在超级赛亚人之神形态下使用技能。
+local_data.dat	GAME_SKILL_CANT_USE_SKILL_WHEN_SUPER_SAIYANBLUE	Can't use skill while super saiyan blue.	不能在超级赛亚人蓝形态下使用技能。
+local_data.dat	GAME_SKILL_CANT_USE_SKILL_WHEN_SUPER_SAIYANROSE	Can't use skill while super saiyan rose.	不能在超级赛亚人桃红形态下使用技能。
+local_data.dat	GAME_SKILL_CANT_USE_SKILL_WHEN_SUPER_SAIYAN33	Can't use skill while super saiyan god super saiyan.	不能在超级赛亚人蓝形态下使用技能。
+local_data.dat	GAME_SKILL_CANT_USE_SKILL_WHEN_SUPER_SAIYAN4	Can't use skill while super saiyan 4.	不能在超级赛亚人4形态下使用技能。
+local_data.dat	GAME_SKILL_CANT_USE_SKILL_WHEN_SUPER_BOO2	Can't use skill while super boo 2.	不能在超级布欧2形态下使用技能。
+local_data.dat	GAME_SKILL_CANT_USE_SKILL_WHEN_BUUHAN_SKIN	Can't use skill while buuhan.	不能在布欧悟饭形态下使用技能。
+local_data.dat	GAME_SKILL_CANT_USE_SKILL_WHEN_BUUHAN_SKIN2	Can't use skill while buuhan 2.	不能在布欧悟饭2形态下使用技能。
+local_data.dat	GAME_SKILL_CANT_USE_SKILL_WHEN_GOTENKS_BOO_FIS	Can't use skill while gotenks boo.	不能在悟天克斯布欧形态下使用技能。
+local_data.dat	GAME_SKILL_CANT_USE_SKILL_WHEN_GOTENKS_BOO_MAG	Can't use skill while gotenks boo magic.	不能在悟天克斯布欧魔法形态下使用技能。
+local_data.dat	GAME_SKILL_CANT_USE_SKILL_WHEN_BIG_MONKEY	Can't use skill while great ape.	不能在大猿形态下使用技能。
+local_data.dat	GAME_SKILL_CANT_USE_SKILL_WHEN_DARK_NAMEK	Can't use skill while dark namek.	不能在黑暗那美克形态下使用技能。
+local_data.dat	GAME_SKILL_CANT_USE_SKILL_WHEN_SUPER_SAIYANL	Can't use skill while legendary super saiyan.	不能在传说超级赛亚人形态下使用技能。
+local_data.dat	GAME_SKILL_CANT_USE_SKILL_WHEN_SUPER_SAIYANMAJIN	Can't use skill while majin super saiyan.	不能在魔人超级赛亚人形态下使用技能。
+local_data.dat	GAME_SKILL_CANT_USE_SKILL_WHEN_SUPER_SAIYANNAMEK	Can't use skill while namek super saiyan.	不能在那美克超级赛亚人形态下使用技能。
+local_data.dat	GAME_SKILL_CANT_USE_SKILL_WHEN_GREAT_ORANGE	Can't use skill while great orange.	不能在巨大橙色形态下使用技能。
+local_data.dat	GAME_KAIOKEN_BOOST_NOT_AVAILABLE	Kaioken Boost is not available in this form.	界王拳强化在此形态下不可用。
+local_data.dat	GAME_KAIOKEN_BOOST_REQUIRES_AURA	Kaioken Boost requires aura to be active.	界王拳强化需要气场处于激活状态。
+local_data.dat	MASCOT_FAIL_GUARD_ITEM_USE_FAIL	Failed to use guard item on mascot.	未能对吉祥物使用守护道具。
+local_data.dat	DST_ITEM_OPTION_RESTRUCTURE_OPTION_鐭砡TITLE	Dogi Ball	时装球
+local_sync_data.dat	GAME_GUILD_DOGI_ARLEADY_CREATED	DOGIPROBE_023	公会时装已已创建
+local_sync_data.dat	GAME_GUILD_DOGI_CHANGE_FUNCTION_NEED	DOGIPROBE_024	公会时装变更功能需要
+local_sync_data.dat	GAME_GUILD_DOGI_NOT_CREATED	DOGIPROBE_025	公会时装未已创建
+local_sync_data.dat	GAME_GUILD_DOJO_DOGI_CHANGE_FUNCTION_NEED	DOGIPROBE_026	公会道场时装变更功能需要
+local_sync_data.dat	GAME_GUILD_NEED_PREREQUISITE_DOJO_FUNCTION	CNTEST_LS_001	公会需要前置条件道场功能
+local_sync_data.dat	GAME_GUILD_NEED_PREREQUISITE_GUILD_FUNCTION	CNTEST_LS_002	公会需要前置条件公会功能
+local_sync_data.dat	DST_CLIENT_VERSION	CNTEST_LS_009	客户端版本
+local_sync_data.dat	GAME_SKILL_CANT_USE_SKILL_WHEN_GOTENKS_BOO_FIS	Can't use skill while gotenks boo.	不能在悟天克斯布欧形态下使用技能。
+local_sync_data.dat	GAME_SKILL_CANT_USE_SKILL_WHEN_DARK_NAMEK	Can't use skill while dark namek.	不能在黑暗那美克形态下使用技能。
+local_sync_data.dat	GAME_SKILL_CANT_USE_SKILL_WHEN_EVIL_NAMEK	Can't use skill while evil namek.	不能在邪恶那美克形态下使用技能。
+local_sync_data.dat	GAME_KAIOKEN_BOOST_NOT_AVAILABLE	Kaioken Boost is not available in this form.	界王拳强化在此形态下不可用。
+local_sync_data.dat	GAME_SKILL_CANT_USE_SKILL_WHEN_SUPER_SAIYAN3	Can't use skill while super saiyan God.	不能在超级赛亚人之神形态下使用技能。
+local_sync_data.dat	GAME_SKILL_CANT_USE_SKILL_WHEN_SUPER_SAIYANNAMEK	Can't use skill while namek super saiyan.	不能在那美克超级赛亚人形态下使用技能。
+local_sync_data.dat	GAME_SKILL_CANT_USE_SKILL_WHEN_BIG_MONKEY	Can't use skill while great ape.	不能在大猿形态下使用技能。
+local_sync_data.dat	GAME_SKILL_CANT_USE_SKILL_WHEN_SUPER_SAIYAN4	Can't use skill while super saiyan 4.	不能在超级赛亚人4形态下使用技能。
+local_sync_data.dat	GAME_SKILL_CANT_USE_SKILL_WHEN_SUPER_SAIYANL	Can't use skill while legendary super saiyan.	不能在传说超级赛亚人形态下使用技能。
+local_sync_data.dat	GAME_SKILL_CANT_USE_SKILL_WHEN_SUPER_SAIYANMAJIN	Can't use skill while majin super saiyan.	不能在魔人超级赛亚人形态下使用技能。
+local_sync_data.dat	GAME_SKILL_CANT_USE_SKILL_WHEN_EVIL_BOO	Can't use skill while evil boo.	不能在邪恶布欧形态下使用技能。
+local_sync_data.dat	MASCOT_FAIL_GUARD_ITEM_USE_FAIL	Failed to use guard item on mascot.	未能对吉祥物使用守护道具。
+local_sync_data.dat	GAME_SKILL_CANT_USE_SKILL_WHEN_BUUHAN_SKIN	Can't use skill while buuhan.	不能在布欧悟饭形态下使用技能。
+local_sync_data.dat	GAME_SKILL_CANT_USE_SKILL_WHEN_SUPER_SAIYANROSE	Can't use skill while super saiyan rose.	不能在超级赛亚人桃红形态下使用技能。
+local_sync_data.dat	GAME_SKILL_CANT_USE_SKILL_WHEN_GOTENKS_BOO_MAG	Can't use skill while gotenks boo magic.	不能在悟天克斯布欧魔法形态下使用技能。
+local_sync_data.dat	GAME_SKILL_CANT_USE_SKILL_WHEN_SUPER_SAIYAN33	Can't use skill while super saiyan god super saiyan.	不能在超级赛亚人蓝形态下使用技能。
+local_sync_data.dat	GAME_KAIOKEN_BOOST_REQUIRES_AURA	Kaioken Boost requires aura to be active.	界王拳强化需要气场处于激活状态。
+local_sync_data.dat	GAME_SKILL_CANT_USE_SKILL_WHEN_GREAT_ORANGE	Can't use skill while great orange.	不能在巨大橙色形态下使用技能。
+local_sync_data.dat	GAME_SKILL_CANT_USE_SKILL_WHEN_BUUHAN_SKIN2	Can't use skill while buuhan 2.	不能在布欧悟饭2形态下使用技能。
+table_text_all_data.rdf	3:3031490:0	EV Capsule Box Z64	EV胶囊盒Z64
+table_text_all_data.rdf	3:3031500:0	EV Capsule Box Z48	EV胶囊盒Z48
+table_text_all_data.rdf	3:3031510:0	EV Capsule Box Z40	EV胶囊盒Z40
+table_text_all_data.rdf	3:7000213:0	Lucy Hair	露西发型
+table_text_all_data.rdf	3:7000214:0	Erza Hair	艾露莎发型
+table_text_all_data.rdf	3:7000217:0	Aqua Outfit	阿库娅套装
+table_text_all_data.rdf	3:7000220:0	Fire Wings	火翅膀
+table_text_all_data.rdf	3:7000230:0	Pink Outfit	粉色套装
+table_text_all_data.rdf	3:7000238:0	Android 21 Outfit	人造人21套装
+table_text_all_data.rdf	3:99199977:0	Tanjiro Hair	炭治郎发型
+table_text_all_data.rdf	3:111600800:0	Cell Armor (Top)	沙鲁盔甲(上衣)
+table_text_all_data.rdf	3:111600810:0	Cell Armor (Pants)	沙鲁盔甲(裤子)
+table_text_all_data.rdf	3:111600820:0	Cell Armor (Shoes)	沙鲁盔甲(鞋子)
+table_text_all_data.rdf	3:111600830:0	Cell Armor (Top)	沙鲁盔甲(上衣)
+table_text_all_data.rdf	3:111600840:0	Cell Armor (Pants)	沙鲁盔甲(裤子)
+table_text_all_data.rdf	3:111600850:0	Cell Armor (Shoes)	沙鲁盔甲(鞋子)
+table_text_all_data.rdf	3:111600860:0	Cell Armor (Top)	沙鲁盔甲(上衣)
+table_text_all_data.rdf	3:111600870:0	Cell Armor (Pants)	沙鲁盔甲(裤子)
+table_text_all_data.rdf	3:111600880:0	Cell Armor (Shoes)	沙鲁盔甲(鞋子)
+table_text_all_data.rdf	3:111702910:0	Piccolo Outfit	比克套装
+table_text_all_data.rdf	3:111702930:0	Human Outfit	人类套装
+table_text_all_data.rdf	3:111702940:0	Namek Outfit	那美克套装
+table_text_all_data.rdf	3:111702950:0	Majin Outfit	魔人套装
+table_text_all_data.rdf	4:6001515:0	Namek	那美克
+table_text_all_data.rdf	4:6001516:0	Majin	魔人
+table_text_all_data.rdf	4:6001517:0	Saiyan	赛亚人
+table_text_all_data.rdf	4:6001534:0	Stone	石
+table_text_all_data.rdf	6:1211301:0	Fajita	肥吉塔
+table_text_all_data.rdf	6:3701222:0	Sky Dungeon 1	天空副本1
+table_text_all_data.rdf	6:3701223:0	Sky Dungeon 2	天空副本2
+table_text_all_data.rdf	6:3701224:0	Sky Dungeon 3	天空副本3
+table_text_all_data.rdf	13:1000:0	General	将军
+table_text_all_data.rdf	17:2734007:0	Super Saiyan God	超级赛亚人之神
+# AUTO_BLOCK_TAIWAN_SAFE_UNTRANSLATED_20260604_END
+
+
+local_data.dat	DST_STATUS_TOOLTIP_ATTACK_RATING	@	命中率
+local_data.dat	DST_STATUS_TOOLTIP_DODGE_RATING	@	回避率
+local_data.dat	DST_INVENTORY_SORT_SUCCESS	整理%s了。	整理完成。

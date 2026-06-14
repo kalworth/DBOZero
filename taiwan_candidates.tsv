@@ -1,0 +1,58 @@
+file	id	source_text	translation
+table_text_all_data.rdf	8:621:0	真属性防御上升%d%%	冰属性防御上升%d%%
+table_text_all_data.rdf	8:622:0	奇属性防御上升%d%%	雷属性防御上升%d%%
+table_text_all_data.rdf	8:623:0	猛属性防御上升%d%%	风属性防御上升%d%%
+table_text_all_data.rdf	8:624:0	丽属性防御上升%d%%	水属性防御上升%d%%
+table_text_all_data.rdf	8:625:0	乐属性防御上升%d%%	火属性防御上升%d%%
+table_text_all_data.rdf	8:672:0	真属性攻击 %d%% 增加	冰属性攻击 %d%% 增加
+table_text_all_data.rdf	8:673:0	奇属性攻击 %d%% 增加	雷属性攻击 %d%% 增加
+table_text_all_data.rdf	8:674:0	猛属性攻击 %d%% 增加	风属性攻击 %d%% 增加
+table_text_all_data.rdf	8:675:0	丽属性攻击 %d%% 增加	水属性攻击 %d%% 增加
+table_text_all_data.rdf	8:676:0	乐属性攻击 %d%% 增加	火属性攻击 %d%% 增加
+table_text_all_data.rdf	8:826:0	真属性防御减少%d%%	冰属性防御减少%d%%
+table_text_all_data.rdf	8:827:0	奇属性防御减少%d%%	雷属性防御减少%d%%
+table_text_all_data.rdf	8:828:0	猛属性防御减少%d%%	风属性防御减少%d%%
+table_text_all_data.rdf	8:829:0	丽属性防御减少%d%%	水属性防御减少%d%%
+table_text_all_data.rdf	8:830:0	乐属性防御减少%d%%	火属性防御减少%d%%
+table_text_all_data.rdf	8:62101:0	真属性防御上升(%)	冰属性防御上升(%)
+table_text_all_data.rdf	8:62201:0	奇属性防御上升(%)	雷属性防御上升(%)
+table_text_all_data.rdf	8:62301:0	猛属性防御上升(%)	风属性防御上升(%)
+table_text_all_data.rdf	8:62401:0	丽属性防御上升(%)	水属性防御上升(%)
+table_text_all_data.rdf	8:62501:0	乐属性防御上升(%)	火属性防御上升(%)
+table_text_all_data.rdf	8:67201:0	增加真属性防御(%)	增加冰属性防御(%)
+table_text_all_data.rdf	8:67301:0	增加奇属性攻击(%)	增加雷属性攻击(%)
+table_text_all_data.rdf	8:67401:0	增加猛属性攻击(%)	增加风属性攻击(%)
+table_text_all_data.rdf	8:67501:0	增加丽属性攻击(%)	增加水属性攻击(%)
+table_text_all_data.rdf	8:67601:0	增加要属性攻击(%)	增加火属性攻击(%)
+table_text_all_data.rdf	8:62100000:0	真属性防御上升 %s。	冰属性防御上升 %s。
+table_text_all_data.rdf	8:62100001:0	的真属性防御上升 %s。	的冰属性防御上升 %s。
+table_text_all_data.rdf	8:62200000:0	奇属性防御上升 %s。	雷属性防御上升 %s。
+table_text_all_data.rdf	8:62200001:0	的奇属性防御上升 %s。	的雷属性防御上升 %s。
+table_text_all_data.rdf	8:62300000:0	猛属性防御上升 %s。	风属性防御上升 %s。
+table_text_all_data.rdf	8:62300001:0	的猛属性防御上升 %s。	的风属性防御上升 %s。
+table_text_all_data.rdf	8:62400000:0	丽属性防御上升 %s。	水属性防御上升 %s。
+table_text_all_data.rdf	8:62400001:0	的丽属性防御上升 %s。	的水属性防御上升 %s。
+table_text_all_data.rdf	8:62500000:0	乐属性防御上升 %s。	火属性防御上升 %s。
+table_text_all_data.rdf	8:62500001:0	的乐属性防御上升 %s。	的火属性防御上升 %s。
+table_text_all_data.rdf	8:67200000:0	真属性攻击增加 %s。	冰属性攻击增加 %s。
+table_text_all_data.rdf	8:67200001:0	的真属性攻击增加 %s。	的冰属性攻击增加 %s。
+table_text_all_data.rdf	8:67300000:0	奇属性攻击增加 %s。	雷属性攻击增加 %s。
+table_text_all_data.rdf	8:67300001:0	的奇属性攻击增加 %s。	的雷属性攻击增加 %s。
+table_text_all_data.rdf	8:67400000:0	猛属性攻击增加 %s。	风属性攻击增加 %s。
+table_text_all_data.rdf	8:67400001:0	的猛属性攻击增加 %s。	的风属性攻击增加 %s。
+table_text_all_data.rdf	8:67500000:0	丽属性攻击增加 %s。	水属性攻击增加 %s。
+table_text_all_data.rdf	8:67500001:0	的丽属性攻击增加 %s。	的水属性攻击增加 %s。
+table_text_all_data.rdf	8:67600000:0	乐属性攻击增加 %s。	火属性攻击增加 %s。
+table_text_all_data.rdf	8:67600001:0	的乐属性攻击增加 %s。	的火属性攻击增加 %s。
+table_text_all_data.rdf	8:82600000:0	真属性防御减少 %s。	冰属性防御减少 %s。
+table_text_all_data.rdf	8:82600001:0	的真属性防御减少 %s。	的冰属性防御减少 %s。
+table_text_all_data.rdf	8:82700000:0	奇属性防御减少 %s。	雷属性防御减少 %s。
+table_text_all_data.rdf	8:82700001:0	的奇属性防御减少  %s。	的雷属性防御减少  %s。
+table_text_all_data.rdf	8:82800000:0	猛性防御减少  %s。	风属性防御减少  %s。
+table_text_all_data.rdf	8:82800001:0	的猛属性防御减少  %s。	的风属性防御减少  %s。
+table_text_all_data.rdf	8:82900000:0	丽属性防御减少  %s。	水属性防御减少  %s。
+table_text_all_data.rdf	8:82900001:0	的丽属性防御减少  %s。	的水属性防御减少  %s。
+table_text_all_data.rdf	8:83000000:0	乐属性防御减少 %s。	火属性防御减少 %s。
+table_text_all_data.rdf	8:83000001:0	的乐属性防御减少  %s。	的火属性防御减少  %s。
+local_data.dat	DST_SCS_LOGIN_ALERT	[align = "center"][font size = "12" color="f4d762"]Bot Check Required[/font][br][br][font size = "9" color="ffffff"]To receive experience and item drops,[br]you must complete the Bot Verification.[br][br]Complete it once for 1 hour of immunity![/font]	[align = "center"][font size = "12" color="f4d762"]需要机器人验证[/font][br][br][font size = "9" color="ffffff"]若要获得经验和物品掉落，[br]必须完成机器人验证。[br][br]完成一次后可获得1小时免验证时间！[/font]
+local_data.dat	GAME_SCS_CHECK_FAIL	Verification failed.	验证失败。

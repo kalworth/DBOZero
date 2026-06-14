@@ -1,0 +1,208 @@
+﻿line	file	id	source_text	translation	reason	taiwan_refs
+31	tbl1.pak	*	Krillin	克林	same_source_translation_in_taiwan_rdf	table_text_all_data.rdf:5:44982101:0
+48	tbl1.pak	*	Sun Steel	太阳钢	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:29830050:0
+51	tbl1.pak	*	Fajita	肥吉塔	same_source_translation_in_taiwan_rdf	table_text_all_data.rdf:6:1211301:0
+246	tbl0.pak	0x017F7BF4	Broly Egg	布罗利蛋	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:60000800:0
+252	tbl0.pak	0x017F8034	Mr Popo Pet	波波先生宠物	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:60000880:0
+260	tbl0.pak	0x0127565D	Tanjiro Hair	炭治郎发型	same_source_translation_in_taiwan_rdf	table_text_all_data.rdf:3:99199977:0
+261	tbl0.pak	0x012757D9	Lucy Hair	露西发型	same_source_translation_in_taiwan_rdf	table_text_all_data.rdf:3:7000213:0
+262	tbl0.pak	0x01275955	Erza Hair	艾露莎发型	same_source_translation_in_taiwan_rdf	table_text_all_data.rdf:3:7000214:0
+311	tbl0.pak	0x01397DF1	Warrior	那美克战士	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:111703240:0
+315	tbl0.pak	0x0139972D	Warrior	那美克战士	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:111703240:0
+456	tbl1.pak	0x016C33A4	Scouter	探测器	translation_in_taiwan_item_tables	table_text_all_data.rdf:12:1630:0
+546	tbl1.pak	0x016CA1B4	Saiyan	赛亚人	same_source_translation_in_taiwan_rdf	table_text_all_data.rdf:4:6001517:0
+622	tbl1.pak	0x0172DC54	Sky Dungeon 1	天空副本1	same_source_translation_in_taiwan_rdf	table_text_all_data.rdf:6:3701222:0
+623	tbl1.pak	0x0172DC74	Sky Dungeon 2	天空副本2	same_source_translation_in_taiwan_rdf	table_text_all_data.rdf:6:3701223:0
+624	tbl1.pak	0x0172DC94	Sky Dungeon 3	天空副本3	same_source_translation_in_taiwan_rdf	table_text_all_data.rdf:6:3701224:0
+735	tbl1.pak	0x0181EACA	Lizard Meat	蜥蜴肉	translation_in_taiwan_item_tables	table_text_all_data.rdf:12:16:0;table_text_all_data.rdf:3:29670030:0
+737	tbl1.pak	0x0181EC0E	Namek Egg	那美克蛋	translation_in_taiwan_item_tables	table_text_all_data.rdf:12:26:0
+749	tbl1.pak	0x01822CDC	Dinosaur Meat	恐龙肉	translation_in_taiwan_item_tables	table_text_all_data.rdf:12:409:0;table_text_all_data.rdf:3:29850070:0;table_text_all_data.rdf:3:920080:0
+755	tbl1.pak	0x01823F4C	CC Life Pill M	CC生命药丸M	translation_in_taiwan_item_tables	table_text_all_data.rdf:12:519:0;table_text_all_data.rdf:3:14000070:0;table_text_all_data.rdf:3:180120:0
+773	tbl1.pak	0x01826B68	RP Bomb	RP炸弹	translation_in_taiwan_item_tables	table_text_all_data.rdf:12:802:0;table_text_all_data.rdf:3:990380:0
+785	tbl1.pak	0x01828056	Saibaman Skin	栽培人皮肤	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:29820010:0
+798	tbl1.pak	0x01829BAA	Robot Fuel	机器人燃料	translation_in_taiwan_item_tables	table_text_all_data.rdf:12:1106:0
+803	tbl1.pak	0x0182A43C	Robot CPU	机器人CPU	translation_in_taiwan_item_tables	table_text_all_data.rdf:12:1158:0
+813	tbl1.pak	0x0182B9A6	Mushroom Bomb	蘑菇炸弹	translation_in_taiwan_item_tables	table_text_all_data.rdf:12:1286:0
+825	tbl1.pak	0x0182D220	RP Special Robot Parts	RP特殊机器人零件	translation_in_taiwan_item_tables	table_text_all_data.rdf:12:1435:0
+827	tbl1.pak	0x0182D276	CC Robot Processor	CC机器人处理器	translation_in_taiwan_item_tables	table_text_all_data.rdf:12:1437:0
+848	tbl1.pak	0x0186B958	Warrior	那美克战士	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:111703240:0
+854	tbl1.pak	0x018C9AC4	Strong Soul	强力灵魂	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:111704390:0
+915	tbl1.pak	0x012D93B5	Shenron Coin	神龙硬币	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:10170:0
+930	tbl1.pak	0x012DC2EB	CC Life Pill S	CC生命药丸S	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:180110:0
+931	tbl1.pak	0x012DC507	CC Life Pill L	CC生命药丸L	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:14000060:0;table_text_all_data.rdf:3:180130:0
+932	tbl1.pak	0x012DC5BF	CC Life Pill X	CC生命药丸X	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:180140:0
+945	tbl1.pak	0x012DE323	Z Drink	Z饮料	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:180650:0
+952	tbl1.pak	0x012DF255	Detoxification Capsule	解毒胶囊	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:180910:0;table_text_all_data.rdf:3:29000880:0
+954	tbl1.pak	0x012DF467	Premium Detoxification Capsule	高级解毒胶囊	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:180920:0;table_text_all_data.rdf:3:29001730:0
+967	tbl1.pak	0x012E21E9	Speed Potion	速度药水	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:181470:0;table_text_all_data.rdf:3:29004050:0
+991	tbl1.pak	0x012EFFC5	Rubber Staff	橡胶杖	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:6660080:0;table_text_all_data.rdf:3:801060:0
+998	tbl1.pak	0x012F1501	Rainbow Crane Fan	彩虹鹤扇	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:6750030:0;table_text_all_data.rdf:3:810020:0
+1012	tbl1.pak	0x012F5C93	Powerful Life Capsule	强力生命胶囊	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:826100:0
+1021	tbl1.pak	0x0130ADA5	Saibaman Outfit	栽培人套装	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:111700250:0;table_text_all_data.rdf:3:14100060:0;table_text_all_data.rdf:3:29001890:0;table_text_all_data.rdf:3:900090:0
+1049	tbl1.pak	0x013120DF	Old Treasure Chest	老旧宝箱	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:920540:0;table_text_all_data.rdf:3:920541:0;table_text_all_data.rdf:3:92054:0
+1059	tbl1.pak	0x01313309	Soul Capsule	灵魂胶囊	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:980140:0
+1060	tbl1.pak	0x01316343	CC Bomb	CC炸弹	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:990410:0
+1061	tbl1.pak	0x013171A9	Mira's Army Bomb	米拉军炸弹	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:990580:0
+1063	tbl1.pak	0x0131F5D3	Yellow Capsule	黄色胶囊	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:1100100:0;table_text_all_data.rdf:3:1100200:0;table_text_all_data.rdf:3:1100300:0;table_text_all_data.rdf:3:1100400:0;table_text_all_data.rdf:3:1100500:0;table_text_all_data.rdf:3:1100600:0;table_text_all_data.rdf:3:1100700:0;table_text_all_data.rdf:3:1100800:0;table_text_all_data.rdf:3:1100900:0;table_text_all_data.rdf:3:1101000:0;table_text_all_data.rdf:3:1101100:0;table_text_all_data.rdf:3:1101200:0;table_text_all_data.rdf:3:1101300:0;table_text_all_data.rdf:3:1101400:0;table_text_all_data.rdf:3:1101500:0;table_text_all_data.rdf:3:1101600:0;table_text_all_data.rdf:3:1101700:0;table_text_all_data.rdf:3:1101800:0;table_text_all_data.rdf:3:1101900:0;table_text_all_data.rdf:3:1102000:0
+1064	tbl1.pak	0x01326405	Red Capsule	红色胶囊	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:1200100:0;table_text_all_data.rdf:3:1200200:0;table_text_all_data.rdf:3:1200300:0;table_text_all_data.rdf:3:1200400:0;table_text_all_data.rdf:3:1200500:0;table_text_all_data.rdf:3:1200600:0;table_text_all_data.rdf:3:1200700:0;table_text_all_data.rdf:3:1200800:0;table_text_all_data.rdf:3:1200900:0;table_text_all_data.rdf:3:1201000:0;table_text_all_data.rdf:3:1201100:0;table_text_all_data.rdf:3:1201200:0;table_text_all_data.rdf:3:1201300:0;table_text_all_data.rdf:3:1201400:0;table_text_all_data.rdf:3:1201500:0;table_text_all_data.rdf:3:1201600:0;table_text_all_data.rdf:3:1201700:0;table_text_all_data.rdf:3:1201800:0;table_text_all_data.rdf:3:1201900:0;table_text_all_data.rdf:3:1202000:0
+1065	tbl1.pak	0x01328119	Blue Capsule	蓝色胶囊	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:1300100:0;table_text_all_data.rdf:3:1300200:0;table_text_all_data.rdf:3:1300300:0;table_text_all_data.rdf:3:1300400:0;table_text_all_data.rdf:3:1300500:0;table_text_all_data.rdf:3:1300600:0;table_text_all_data.rdf:3:1300700:0;table_text_all_data.rdf:3:1300800:0;table_text_all_data.rdf:3:1300900:0;table_text_all_data.rdf:3:1301000:0;table_text_all_data.rdf:3:1301100:0;table_text_all_data.rdf:3:1301200:0;table_text_all_data.rdf:3:1301300:0;table_text_all_data.rdf:3:1301400:0;table_text_all_data.rdf:3:1301500:0;table_text_all_data.rdf:3:1301600:0;table_text_all_data.rdf:3:1301700:0;table_text_all_data.rdf:3:1301800:0;table_text_all_data.rdf:3:1301900:0;table_text_all_data.rdf:3:1302000:0
+1068	tbl1.pak	0x0132922F	Recovery Capsule	恢复胶囊	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:1302030:0;table_text_all_data.rdf:3:14100110:0
+1075	tbl1.pak	0x0133DC8F	Super Saiyan Blue	超级赛亚人蓝	same_source_in_taiwan_rdf	table_text_all_data.rdf:3:1510120:0;table_text_all_data.rdf:7:1510120:0
+1136	tbl1.pak	0x01348729	Battle Dragon Ball	战斗龙珠	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:2000480:0
+1144	tbl1.pak	0x0134E737	EV Capsule Box Z64	EV胶囊盒Z64	same_source_translation_in_taiwan_rdf	table_text_all_data.rdf:3:3031490:0
+1145	tbl1.pak	0x0134E7B5	EV Capsule Box Z48	EV胶囊盒Z48	same_source_translation_in_taiwan_rdf	table_text_all_data.rdf:3:3031500:0
+1146	tbl1.pak	0x0134E833	EV Capsule Box Z40	EV胶囊盒Z40	same_source_translation_in_taiwan_rdf	table_text_all_data.rdf:3:3031510:0
+1148	tbl1.pak	0x01351881	Liquid Fuel S3	液体燃料S3	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:4010100:0;table_text_all_data.rdf:3:4010140:0
+1174	tbl1.pak	0x01363647	Narak Staff	那拉克杖	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:5060090:0
+1179	tbl1.pak	0x013649E1	Dragon Eye Claws	龙眼爪	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:5080040:0;table_text_all_data.rdf:3:8280020:0
+1181	tbl1.pak	0x01364B5B	Meteor Claws	流星爪	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:5080060:0;table_text_all_data.rdf:3:6680230:0;table_text_all_data.rdf:3:8280030:0
+1187	tbl1.pak	0x01365463	Meteor Axe	流星斧	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:5090060:0;table_text_all_data.rdf:3:6690100:0;table_text_all_data.rdf:3:8290030:0
+1204	tbl1.pak	0x01366EA1	Meteor Stick	流星棍	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:5120060:0;table_text_all_data.rdf:3:8320030:0
+1206	tbl1.pak	0x01366F99	Comet Stick	彗星棍	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:5120080:0;table_text_all_data.rdf:3:5520080:0;table_text_all_data.rdf:3:5920080:0;table_text_all_data.rdf:3:6320080:0;table_text_all_data.rdf:3:7925040:0;table_text_all_data.rdf:3:8320040:0;table_text_all_data.rdf:3:8323040:0
+1222	tbl1.pak	0x01368321	Phoenix Fan	凤凰扇	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:5150030:0
+1224	tbl1.pak	0x01368475	Meteor Fan	流星扇	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:5150060:0;table_text_all_data.rdf:3:8350030:0
+1225	tbl1.pak	0x01368617	Lightning Fan	闪电扇	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:5150090:0
+1286	tbl1.pak	0x01398279	Practitioner Ring	修行者戒指	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:5301890:0
+1330	tbl1.pak	0x013B2DF5	Narak Staff EX	那拉克杖EX	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:5460090:0;table_text_all_data.rdf:3:7865020:0
+1337	tbl1.pak	0x013B3D51	Power Gun EX	力量枪EX	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:5470070:0
+1340	tbl1.pak	0x013B41E3	Dragon Eye Claws EX	龙眼爪EX	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:5480040:0;table_text_all_data.rdf:3:7885020:0;table_text_all_data.rdf:3:8283020:0
+1342	tbl1.pak	0x013B42F1	Meteor Claws EX	流星爪EX	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:5480060:0;table_text_all_data.rdf:3:6680110:0;table_text_all_data.rdf:3:7885030:0;table_text_all_data.rdf:3:8283030:0
+1355	tbl1.pak	0x013B4B7B	Meteor Axe EX	流星斧EX	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:5490060:0;table_text_all_data.rdf:3:6690110:0;table_text_all_data.rdf:3:7895030:0;table_text_all_data.rdf:3:8293030:0
+1366	tbl1.pak	0x013B57B1	Taichu Scroll	太初卷轴	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:5505010:0;table_text_all_data.rdf:3:5905010:0
+1368	tbl1.pak	0x013B593B	Original Scroll	原始卷轴	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:5506510:0;table_text_all_data.rdf:3:5906510:0
+1385	tbl1.pak	0x013B6711	Meteor Stick EX	流星棍EX	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:5520060:0;table_text_all_data.rdf:3:6720110:0;table_text_all_data.rdf:3:7925030:0;table_text_all_data.rdf:3:8323030:0
+1409	tbl1.pak	0x013B807F	Phoenix Fan EX	凤凰扇EX	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:5550030:0;table_text_all_data.rdf:3:6750020:0
+1411	tbl1.pak	0x013B81E9	Meteor Fan EX	流星扇EX	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:5550060:0;table_text_all_data.rdf:3:6750110:0;table_text_all_data.rdf:3:7955030:0;table_text_all_data.rdf:3:8353030:0
+1412	tbl1.pak	0x013B8391	Lightning Fan EX	闪电扇EX	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:5550090:0
+1425	tbl1.pak	0x013B9209	Watercolor Trumpet	水彩号角	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:5585010:0;table_text_all_data.rdf:3:5985010:0
+1502	tbl1.pak	0x013FBEB5	Narak Staff R	那拉克杖R	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:5860090:0
+1505	tbl1.pak	0x013FCDFB	Power Gun R	力量枪R	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:5870070:0
+1508	tbl1.pak	0x013FD279	Dragon Eye Claws R	龙眼爪R	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:5880040:0
+1510	tbl1.pak	0x013FD383	Meteor Claws R	流星爪R	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:5880060:0
+1516	tbl1.pak	0x013FDBF9	Meteor Axe R	流星斧R	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:5890060:0
+1529	tbl1.pak	0x013FF78B	Meteor Stick R	流星棍R	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:5920060:0
+1542	tbl1.pak	0x014010CF	Phoenix Fan R	凤凰扇R	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:5950030:0
+1544	tbl1.pak	0x01401233	Meteor Fan R	流星扇R	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:5950060:0
+1545	tbl1.pak	0x014013D9	Lightning Fan R	闪电扇R	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:5950090:0
+1612	tbl1.pak	0x0144242F	Narak Staff L	那拉克杖L	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:6260090:0
+1615	tbl1.pak	0x01442E2B	Power Gun L	力量枪L	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:6270070:0
+1618	tbl1.pak	0x014432B1	Dragon Eye Claws L	龙眼爪L	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:6280040:0
+1620	tbl1.pak	0x014433BB	Meteor Claws L	流星爪L	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:6280060:0
+1625	tbl1.pak	0x014438FF	Meteor Axe L	流星斧L	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:6290060:0
+1635	tbl1.pak	0x01444973	Meteor Stick L	流星棍L	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:6320060:0
+1648	tbl1.pak	0x014456E5	Phoenix Fan L	凤凰扇L	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:6350030:0
+1650	tbl1.pak	0x01445849	Meteor Fan L	流星扇L	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:6350060:0
+1651	tbl1.pak	0x014459EF	Lightning Fan L	闪电扇L	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:6350090:0
+1710	tbl1.pak	0x014857E3	Power Gun	力量枪	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:5070070:0;table_text_all_data.rdf:3:6670070:0
+1715	tbl1.pak	0x01487AD9	Hellfire Scroll	地狱火卷轴	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:6700090:0
+1716	tbl1.pak	0x01487E19	Ultimate Scroll	终极卷轴	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:6700140:0
+1724	tbl1.pak	0x0148A36B	Awakening Z Stick	觉醒Z棍	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:5120100:0;table_text_all_data.rdf:3:8320050:0;table_text_all_data.rdf:3:8320070:0
+1726	tbl1.pak	0x0148AA23	Mira Sword	米拉剑	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:6730090:0
+1728	tbl1.pak	0x0148AEC1	Phoenix Sword	凤凰剑	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:6730160:0
+1761	tbl1.pak	0x014B0AC7	Classic Necklace	经典项链	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:6890060:0
+1763	tbl1.pak	0x014B0C7F	Crystal Necklace	水晶项链	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:6890090:0
+1765	tbl1.pak	0x014B0EDF	Meteor Necklace	流星项链	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:6890130:0
+1779	tbl1.pak	0x014B1BA3	Flame Necklace	火焰项链	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:6890380:0
+1783	tbl1.pak	0x014B1FE9	Classic Ring	经典戒指	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:6900060:0
+1788	tbl1.pak	0x014B294F	New Ring 9	新戒指9	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:6900240:0;table_text_all_data.rdf:3:6900241:0
+1789	tbl1.pak	0x014B2983	New Ring 10	新戒指10	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:6900250:0;table_text_all_data.rdf:3:6900251:0
+1790	tbl1.pak	0x014B29BB	New Ring 11	新戒指11	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:6900260:0;table_text_all_data.rdf:3:6900261:0
+1791	tbl1.pak	0x014B29F3	New Ring 12	新戒指12	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:6900270:0;table_text_all_data.rdf:3:6900271:0
+1798	tbl1.pak	0x014B2EC5	Classic Earring	经典耳环	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:6910060:0
+1800	tbl1.pak	0x014B3071	Crystal Earring	水晶耳环	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:6910090:0
+1802	tbl1.pak	0x014B32C5	Meteor Earring	流星耳环	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:6910130:0
+1803	tbl1.pak	0x014B37D1	Unlimited Life Earring	无限生命耳环	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:6910220:0
+1812	tbl1.pak	0x014B482F	Lucy Hair	露西发型	same_source_translation_in_taiwan_rdf	table_text_all_data.rdf:3:7000213:0
+1813	tbl1.pak	0x014B4847	Erza Hair	艾露莎发型	same_source_translation_in_taiwan_rdf	table_text_all_data.rdf:3:7000214:0
+1814	tbl1.pak	0x014B48B5	Aqua Outfit	阿库娅套装	same_source_translation_in_taiwan_rdf	table_text_all_data.rdf:3:7000217:0
+1815	tbl1.pak	0x014B48D1	Fire Wings	火翅膀	same_source_translation_in_taiwan_rdf	table_text_all_data.rdf:3:7000220:0
+1816	tbl1.pak	0x014B49DD	Pink Outfit	粉色套装	same_source_translation_in_taiwan_rdf	table_text_all_data.rdf:3:7000230:0
+1817	tbl1.pak	0x014B4AD1	Android 21 Outfit	人造人21套装	same_source_translation_in_taiwan_rdf	table_text_all_data.rdf:3:7000238:0
+1919	tbl1.pak	0x01509B5D	Dragon King Scroll R	龙王卷轴R	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:7900030:0;table_text_all_data.rdf:3:7900050:0
+1924	tbl1.pak	0x0150AD97	Dragon Sword R	龙剑R	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:7930010:0
+1931	tbl1.pak	0x0150BA05	Dragon King Fan R	龙王扇R	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:7950020:0
+1933	tbl1.pak	0x0150BF8F	Dragon King Cannon R	龙王炮R	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:7960020:0
+1934	tbl1.pak	0x0150C857	Buu Trumpet	布欧号角	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:7985050:0
+1938	tbl1.pak	0x0150CF97	Dragon Drum R	龙鼓R	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:8000030:0;table_text_all_data.rdf:3:8000050:0
+1940	tbl1.pak	0x0150D4F7	Dragon King Mask	龙王面具	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:8010020:0
+1965	tbl1.pak	0x0152D3E7	Narak Elder Staff	那拉克长老杖	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:8260070:0;table_text_all_data.rdf:3:8263070:0
+1978	tbl1.pak	0x01533097	Corn EX	玉米EX	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:5590060:0;table_text_all_data.rdf:3:6790100:0;table_text_all_data.rdf:3:7995030:0;table_text_all_data.rdf:3:8393030:0
+2004	tbl1.pak	0x01581E75	Popo Gun R	波波枪R	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:8670020:0
+2005	tbl1.pak	0x01581E97	Popo Gun	波波枪	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:8670030:0
+2007	tbl1.pak	0x0158224D	Soul Axe R	灵魂斧R	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:8690010:0
+2008	tbl1.pak	0x01582389	Popo Axe R	波波斧R	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:8690030:0;table_text_all_data.rdf:3:8690050:0
+2016	tbl1.pak	0x01583D91	Popo Drum	波波鼓	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:8800020:0
+2017	tbl1.pak	0x015840CF	Popo Mask R	波波面具R	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:8810030:0;table_text_all_data.rdf:3:8810050:0
+2021	tbl1.pak	0x01589FA3	Chaos Earring	混沌耳环	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:8910110:0
+2022	tbl1.pak	0x0158F515	Metal Axe L	金属斧L	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:9085010:0
+2023	tbl1.pak	0x0158FAA7	Dragon King Scroll L	龙王卷轴L	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:9090010:0
+2026	tbl1.pak	0x01592157	Dragon Drum L	龙鼓L	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:9140010:0
+2039	tbl1.pak	0x015C74BB	CC Pill Capsule L	CC药丸胶囊L	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:111400370:0;table_text_all_data.rdf:3:29000450:0
+2040	tbl1.pak	0x015C7745	CC Pill Capsule M	CC药丸胶囊M	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:111400330:0;table_text_all_data.rdf:3:29000440:0
+2043	tbl1.pak	0x015C93E1	HL Pill Capsule	HL药丸胶囊	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:111401030:0;table_text_all_data.rdf:3:29000790:0
+2049	tbl1.pak	0x015CE343	Gold Treasure Chest	黄金宝箱	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:1302020:0;table_text_all_data.rdf:3:14100150:0
+2096	tbl1.pak	0x015E3863	Popo Set Capsule	波波套装胶囊	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:111402660:0;table_text_all_data.rdf:3:29005820:0
+2114	tbl1.pak	0x015E9A2D	Super Pet Capsule	超级宠物胶囊	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:111403470:0;table_text_all_data.rdf:3:29007080:0
+2121	tbl1.pak	0x015EAAB5	Krillin Set Capsule	克林套装胶囊	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:111403550:0;table_text_all_data.rdf:3:29007320:0
+2134	tbl1.pak	0x015EE6A7	Mushroom Hat	蘑菇帽子	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:112000160:0;table_text_all_data.rdf:3:29011200:0
+2141	tbl1.pak	0x015F155D	Fire Rock	火岩石	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:29610040:0
+2148	tbl1.pak	0x015F3703	Fire Diamond	火钻石	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:29700050:0
+2151	tbl1.pak	0x015F430F	Liquid Fuel	液体燃料	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:29740020:0
+2167	tbl1.pak	0x016211F5	Ghost Pet	幽灵宠物	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:60000760:0;table_text_all_data.rdf:3:60000770:0;table_text_all_data.rdf:3:60000780:0;table_text_all_data.rdf:3:60000790:0
+2168	tbl1.pak	0x016212FD	Broly Egg	布罗利蛋	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:60000800:0
+2176	tbl1.pak	0x01621945	Mr Popo Pet	波波先生宠物	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:60000880:0
+2178	tbl1.pak	0x01623F1B	Rainbow Pet Capsule	彩虹宠物胶囊	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:26000040:0;table_text_all_data.rdf:3:4210010:0;table_text_all_data.rdf:3:60050100:0
+2262	tbl1.pak	0x01647897	CC Blessed Ruby	CC祝福红宝石	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:70030460:0
+2264	tbl1.pak	0x016539AB	Prototype Parts	原型零件	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:70060040:0
+2271	tbl1.pak	0x016552E7	Tanjiro Hair	炭治郎发型	same_source_translation_in_taiwan_rdf	table_text_all_data.rdf:3:99199977:0
+2272	tbl1.pak	0x01655363	Super Saiyan 3	超级赛亚人3	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:99990000:0
+2356	tbl1.pak	0x01675FCF	Key Capsule (Silver)	钥匙胶囊(银色)	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:111401240:0
+2400	tbl1.pak	0x01684F41	Halloween Set Coupon	万圣节套装券	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:111600250:0
+2416	tbl1.pak	0x01692E35	Piccolo Outfit	比克套装	same_source_translation_in_taiwan_rdf	table_text_all_data.rdf:3:111702910:0
+2417	tbl1.pak	0x01692F6B	Human Outfit	人类套装	same_source_translation_in_taiwan_rdf	table_text_all_data.rdf:3:111702930:0
+2418	tbl1.pak	0x01692FBB	Namek Outfit	那美克套装	same_source_translation_in_taiwan_rdf	table_text_all_data.rdf:3:111702940:0
+2419	tbl1.pak	0x01693011	Majin Outfit	魔人套装	same_source_translation_in_taiwan_rdf	table_text_all_data.rdf:3:111702950:0
+2423	tbl1.pak	0x01693C25	Namek Warrior	那美克战士	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:111703240:0
+2426	tbl1.pak	0x0169404D	Bardock Hair	巴达克发型	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:111703430:0
+2427	tbl1.pak	0x01694077	Human Hair-01	人类发型-01	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:111703440:0
+2428	tbl1.pak	0x016940D1	Human Hair-02	人类发型-02	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:111703450:0
+2429	tbl1.pak	0x0169412B	Human Hair-03	人类发型-03	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:111703460:0
+2430	tbl1.pak	0x01694185	Human Hair-04	人类发型-04	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:111703470:0
+2431	tbl1.pak	0x016941DF	Human Hair-05	人类发型-05	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:111703480:0
+2432	tbl1.pak	0x01694239	Human Hair-06	人类发型-06	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:111703490:0
+2433	tbl1.pak	0x01694293	Human Hair-07	人类发型-07	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:111703500:0
+2434	tbl1.pak	0x016942ED	Human Hair-08	人类发型-08	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:111703510:0
+2436	tbl1.pak	0x0169439F	Human Hair-10	人类发型-10	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:111703530:0
+2447	tbl1.pak	0x01694881	Namekian Hair-01	那美克星人发型-01	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:111703640:0
+2448	tbl1.pak	0x016948E1	Namekian Hair-02	那美克星人发型-02	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:111703650:0
+2449	tbl1.pak	0x01694941	Namekian Hair-03	那美克星人发型-03	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:111703660:0
+2450	tbl1.pak	0x016949A1	Namekian Hair-04	那美克星人发型-04	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:111703670:0
+2451	tbl1.pak	0x01694A01	Namekian Hair-05	那美克星人发型-05	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:111703680:0
+2452	tbl1.pak	0x01694A61	Namekian Hair-06	那美克星人发型-06	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:111703690:0
+2453	tbl1.pak	0x01694AC1	Namekian Hair-07	那美克星人发型-07	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:111703700:0
+2454	tbl1.pak	0x01694B21	Namekian Hair-08	那美克星人发型-08	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:111703710:0
+2455	tbl1.pak	0x01694B81	Namekian Hair-09	那美克星人发型-09	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:111703720:0
+2456	tbl1.pak	0x01694BE1	Namekian Hair-10	那美克星人发型-10	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:111703730:0
+2457	tbl1.pak	0x01694C41	Majin Hair-01	魔人发型-01	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:111703740:0
+2458	tbl1.pak	0x01694C9B	Majin Hair-02	魔人发型-02	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:111703750:0
+2459	tbl1.pak	0x01694CF5	Majin Hair-03	魔人发型-03	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:111703760:0
+2460	tbl1.pak	0x01694D4F	Majin Hair-04	魔人发型-04	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:111703770:0
+2461	tbl1.pak	0x01694DA9	Majin Hair-05	魔人发型-05	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:111703780:0
+2462	tbl1.pak	0x01694E03	Majin Hair-06	魔人发型-06	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:111703790:0
+2463	tbl1.pak	0x01694E5D	Majin Hair-07	魔人发型-07	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:111703800:0
+2464	tbl1.pak	0x01694EB7	Majin Hair-08	魔人发型-08	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:111703810:0
+2465	tbl1.pak	0x01694F11	Majin Hair-09	魔人发型-09	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:111703820:0
+2466	tbl1.pak	0x01694F6B	Majin Hair-10	魔人发型-10	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:111703830:0
+2471	tbl1.pak	0x01696D53	Pure Evil	纯粹邪恶	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:111705310:0
+2472	tbl1.pak	0x01696DA5	Time Chamber Buff	精神时光屋增益	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:111705330:0
+2478	tbl1.pak	0x01697FD7	GM Weapon Upgrade Stone	GM武器升级石	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:111705640:0
+2923	tbl1.pak	0x0178EAE5	Super Saiyan God	超级赛亚人之神	same_source_translation_in_taiwan_rdf	table_text_all_data.rdf:17:2734007:0
+3017	tbl1.pak	0x018600E7	General	将军	same_source_translation_in_taiwan_rdf	table_text_all_data.rdf:13:1000:0
+3054	tbl1.pak	0x01862CA5	Warrior	那美克战士	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:111703240:0
+3088	tbl1.pak	0x0186883F	Warrior	那美克战士	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:111703240:0
+3208	tbl1.pak	0x015AEFB1	Taichu Scroll Recipe	太初卷轴配方	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:12722030:0;table_text_all_data.rdf:3:13722030:0
+3214	tbl1.pak	0x015AF269	Watercolor Trumpet Recipe	水彩号角配方	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:12722090:0;table_text_all_data.rdf:3:13722090:0
+3276	tbl1.pak	0x015B1BE5	Original Scroll Recipe	原始卷轴配方	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:12752030:0;table_text_all_data.rdf:3:13752030:0
+3353	tbl1.pak	0x015B5E31	Taichu Scroll Recipe	太初卷轴配方	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:12722030:0;table_text_all_data.rdf:3:13722030:0
+3359	tbl1.pak	0x015B60B9	Watercolor Trumpet Recipe	水彩号角配方	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:12722090:0;table_text_all_data.rdf:3:13722090:0
+3413	tbl1.pak	0x015B81B1	Original Scroll Recipe	原始卷轴配方	translation_in_taiwan_item_tables	table_text_all_data.rdf:3:12752030:0;table_text_all_data.rdf:3:13752030:0

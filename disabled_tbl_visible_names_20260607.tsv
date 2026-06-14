@@ -1,0 +1,2103 @@
+# Disabled from AUTO_BLOCK_TBL_VISIBLE_NAMES_20260604 on 2026-06-07.
+# Reason: ordinary equipment template TBL patches caused blank tooltip titles in game.
+# Restore only after in-game A/B testing.
+tbl0.pak	0x01275AD1	Natsu Dogi	纳兹时装
+tbl0.pak	0x01275C4D	Tanjiro Dogi	炭治郎时装
+tbl0.pak	0x01275F45	Aqua Dogi	阿库娅时装
+tbl0.pak	0x012760C1	Darkness Dogi	达克妮斯时装
+tbl0.pak	0x012766B1	AOT Dogi	进击巨人时装
+tbl0.pak	0x0127EF41	VIP Capsule Dogi	VIP胶囊时装
+tbl0.pak	0x0135C201	Refurbished Saiyan Armor (Namek)	翻新赛亚人盔甲(那美克)
+tbl0.pak	0x0135C37D	Bardock Armor Controlled	巴达克盔甲受控
+tbl0.pak	0x0135C675	Saiyan Prince Armor(Vegeta)	赛亚人王子盔甲(贝吉塔)
+tbl0.pak	0x0135C96D	Broly Battle Armor	布罗利战斗盔甲
+tbl0.pak	0x0135CAE9	Xeno Vegeta Armor	异次元贝吉塔盔甲
+tbl0.pak	0x0135CF5D	King Vegeta Armor	王贝吉塔盔甲
+tbl0.pak	0x0136E07D	GM Armor Upgrade Stone U75	GM防具升级石U75
+tbl0.pak	0x0136FFA9	Custom Dogi	定制时装
+tbl0.pak	0x01371A61	Dogi Preview	时装预览
+tbl0.pak	0x013727BD	Lower Rank Dogi Stone	低级时装石
+tbl0.pak	0x01372939	Upper Rank Dogi Stone	高级时装石
+tbl0.pak	0x013B015D	Downgrade Armor 85	降级盔甲85
+tbl1.pak	0x016C311E	Gloves	手套
+tbl1.pak	0x018218DE	Red Pants Military Gloves	红裤军军用手套
+tbl1.pak	0x01822506	Old Shoes	老旧鞋子
+tbl1.pak	0x0182493A	Basic Shoes	基础鞋子
+tbl1.pak	0x01826972	Red Pants Army Key	红裤军钥匙
+tbl1.pak	0x01829802	Red Army Combat Pants	红色军战斗裤子
+tbl1.pak	0x0182C40C	Practitioner's Gloves	修行者的手套
+tbl1.pak	0x0182C43C	Practitioner's Shoes	修行者的鞋子
+tbl1.pak	0x012EE5BF	Lightning Gloves	闪电手套
+tbl1.pak	0x012EEC73	Wolf Gloves	狼手套
+tbl1.pak	0x012F6B23	Warrior Pants	那美克战士裤子
+tbl1.pak	0x012F74A9	Evil Top	邪恶上衣
+tbl1.pak	0x012F7573	Evil Pants	邪恶裤子
+tbl1.pak	0x012F7643	Evil Shoes	邪恶鞋子
+tbl1.pak	0x012F799D	Legend Top	传说上衣
+tbl1.pak	0x012F7FFF	Saibaman Rubber Pants	栽培人橡胶裤子
+tbl1.pak	0x012F9043	Red Dragon Pants	红色龙裤子
+tbl1.pak	0x012F90E9	Green Dragon Shoes	绿色龙鞋子
+tbl1.pak	0x012F91AB	Narak Dark Power Top	那拉克黑暗力量上衣
+tbl1.pak	0x012F92F1	Narak Dark Power Pants	那拉克黑暗力量裤子
+tbl1.pak	0x012F943B	Narak Dark Power Shoes	那拉克黑暗力量鞋子
+tbl1.pak	0x012F9DEF	]Suit from Dragon Clan usually for training,\nwith spoor by bitten by insects top from bottom.	]Suit from 那美克龙族 usually for training,\nwith spoor by bitten by insects top from bottom.
+tbl1.pak	0x012F9F05	Guz Dragon Clan Pants	Guz 那美克龙族 Pants
+tbl1.pak	0x012FA05B	Cowry Dragon Clan Shoes	Cowry 那美克龙族 Shoes
+tbl1.pak	0x012FA167	Paython Dragon Clan Suit	Paython 那美克龙族 Suit
+tbl1.pak	0x012FAB25	Green Leather Pants	绿色皮革裤子
+tbl1.pak	0x012FB4C5	Noble Dragon Clan Suit	贵族龙族套装
+tbl1.pak	0x012FBC4F	Paella Shoes	皮拉夫鞋子
+tbl1.pak	0x012FC1FD	Dragon Clan Enchanter Shoes	那美克龙族 Enchanter Shoes
+tbl1.pak	0x012FC301	Battle Dragon Top	战斗龙上衣
+tbl1.pak	0x012FC3A1	Battle Dragon Pants	战斗龙裤子
+tbl1.pak	0x012FC445	Battle Dragon Shoes	战斗龙鞋子
+tbl1.pak	0x012FCC95	Namekian Shoes	那美克星人鞋子
+tbl1.pak	0x012FD0D7	Narak Chaos Top	那拉克混沌上衣
+tbl1.pak	0x012FD3DB	Kid Martial Artist Suit	Kid 武道家 Suit
+tbl1.pak	0x012FD4F9	Mira Soldier Pants	米拉士兵裤子
+tbl1.pak	0x012FD67B	Black Diamond Top	黑色钻石上衣
+tbl1.pak	0x012FD8C5	Diamond Combat Shoes	钻石战斗鞋子
+tbl1.pak	0x012FDE85	Super Shoes	超级鞋子
+tbl1.pak	0x012FE1C7	Combat Shoes	战斗鞋子
+tbl1.pak	0x012FE2F5	Namek Combat Top	那美克战斗上衣
+tbl1.pak	0x012FE3D5	Namek Combat Pants	那美克战斗裤子
+tbl1.pak	0x012FE4B9	Namek Combat Shoes	那美克战斗鞋子
+tbl1.pak	0x012FEAEB	Silver Shoes	银色鞋子
+tbl1.pak	0x012FEF69	Fire Diamond Top	火钻石上衣
+tbl1.pak	0x012FF0CF	Fire Diamond Pants	火钻石裤子
+tbl1.pak	0x012FF239	Fire Diamond Shoes	火钻石鞋子
+tbl1.pak	0x012FF3A3	Red Devil Top	红色魔鬼上衣
+tbl1.pak	0x012FF443	Red Devil Pants	红色魔鬼裤子
+tbl1.pak	0x012FF4E7	Red Devil Shoes	红色魔鬼鞋子
+tbl1.pak	0x012FF959	Dark Shoes	黑暗鞋子
+tbl1.pak	0x012FFDAF	Dark Magic Pants	黑暗魔法裤子
+tbl1.pak	0x012FFEC5	CC Combat Top	CC战斗上衣
+tbl1.pak	0x012FFFE5	CC Combat Pants	CC战斗裤子
+tbl1.pak	0x01300109	CC Combat Shoes	CC战斗鞋子
+tbl1.pak	0x01300847	Spiritualist Top	气功师上衣
+tbl1.pak	0x013016AF	Special Lizard Skin Shoes	特殊蜥蜴皮肤鞋子
+tbl1.pak	0x01301787	Earth Evil Spirit Top	大地邪恶精神上衣
+tbl1.pak	0x01301F99	Tiger King Top	老虎王上衣
+tbl1.pak	0x013031D1	Turtle King Top	龟王上衣
+tbl1.pak	0x01303A57	Dragon Shoes	龙鞋子
+tbl1.pak	0x01303EA9	Iron Devil Pants	铁魔鬼裤子
+tbl1.pak	0x01304355	Dash Magic Shoes	冲刺魔法鞋子
+tbl1.pak	0x0130598F	Ice Magic Shoes	冰魔法鞋子
+tbl1.pak	0x0130643D	Elite Shoes	精英鞋子
+tbl1.pak	0x01306725	King's Magic Top	王的魔法上衣
+tbl1.pak	0x01306811	King's Magic Pants	王的魔法裤子
+tbl1.pak	0x01306901	King's Magic Shoes	王的魔法鞋子
+tbl1.pak	0x0130739B	Leather Magic Top	皮革魔法上衣
+tbl1.pak	0x0130790F	Magic Smile Top	魔法笑脸上衣
+tbl1.pak	0x01307941	Magic Smile Pants	魔法笑脸裤子
+tbl1.pak	0x01307977	Magic Smile Shoes	魔法笑脸鞋子
+tbl1.pak	0x01307D23	CC Master Top	CC大师上衣
+tbl1.pak	0x0130AEA3	General Blue Dogi	将军蓝色时装
+tbl1.pak	0x0130D6C7	Android 18 Dogi 1	人造人18时装1
+tbl1.pak	0x0130D745	Android 18 Dogi 2	人造人18时装2
+tbl1.pak	0x0130D7C3	Android 18 Dogi 3	人造人18时装3
+tbl1.pak	0x0131EF77	Armor Upgrade Stone U11	盔甲升级石U11
+tbl1.pak	0x0131F0DB	Armor Downgrade Stone U70	盔甲降级石U70
+tbl1.pak	0x0133F627	Armor Upgrade Stone U6	盔甲升级石U6
+tbl1.pak	0x0133F8EB	Armor Upgrade Stone U16	盔甲升级石U16
+tbl1.pak	0x0133FA4F	Armor Upgrade Stone U21	盔甲升级石U21
+tbl1.pak	0x0133FBB3	Armor Upgrade Stone U26	盔甲升级石U26
+tbl1.pak	0x0133FD17	Armor Upgrade Stone U30	盔甲升级石U30
+tbl1.pak	0x0133FE7B	Armor Upgrade Stone U34	盔甲升级石U34
+tbl1.pak	0x0133FFDF	Armor Upgrade Stone U38	盔甲升级石U38
+tbl1.pak	0x01340143	Armor Upgrade Stone U42	盔甲升级石U42
+tbl1.pak	0x013402A7	Armor Upgrade Stone U46	盔甲升级石U46
+tbl1.pak	0x0134040B	Armor Upgrade Stone U50	盔甲升级石U50
+tbl1.pak	0x0134056F	Armor Upgrade Stone U53	盔甲升级石U53
+tbl1.pak	0x013406D3	Armor Upgrade Stone U55	盔甲升级石U55
+tbl1.pak	0x01340837	Armor Upgrade Stone U58	盔甲升级石U58
+tbl1.pak	0x0134099B	Armor Upgrade Stone U60	盔甲升级石U60
+tbl1.pak	0x01340AFF	Armor Upgrade Stone U65	盔甲升级石U65
+tbl1.pak	0x01340C63	Armor Upgrade Stone U70	盔甲升级石U70
+tbl1.pak	0x01342313	Advanced Armor Upgrade Stone U6	高级盔甲升级石U6
+tbl1.pak	0x01342437	Advanced Armor Upgrade Stone U11	高级盔甲升级石U11
+tbl1.pak	0x0134255F	Advanced Armor Upgrade Stone U16	高级盔甲升级石U16
+tbl1.pak	0x01342687	Advanced Armor Upgrade Stone U21	高级盔甲升级石U21
+tbl1.pak	0x013427AF	Advanced Armor Upgrade Stone U26	高级盔甲升级石U26
+tbl1.pak	0x013428D7	Advanced Armor Upgrade Stone U30	高级盔甲升级石U30
+tbl1.pak	0x013429FF	Advanced Armor Upgrade Stone U34	高级盔甲升级石U34
+tbl1.pak	0x01342B27	Advanced Armor Upgrade Stone U38	高级盔甲升级石U38
+tbl1.pak	0x01342C4F	Advanced Armor Upgrade Stone U42	高级盔甲升级石U42
+tbl1.pak	0x01342D77	Advanced Armor Upgrade Stone U46	高级盔甲升级石U46
+tbl1.pak	0x01342E9F	Advanced Armor Upgrade Stone U50	高级盔甲升级石U50
+tbl1.pak	0x01342FC7	Advanced Armor Upgrade Stone U53	高级盔甲升级石U53
+tbl1.pak	0x013430EF	Advanced Armor Upgrade Stone U55	高级盔甲升级石U55
+tbl1.pak	0x01343217	Advanced Armor Upgrade Stone U58	高级盔甲升级石U58
+tbl1.pak	0x0134333F	Advanced Armor Upgrade Stone U60	高级盔甲升级石U60
+tbl1.pak	0x01343467	Advanced Armor Upgrade Stone U65	高级盔甲升级石U65
+tbl1.pak	0x0134358F	Advanced Armor Upgrade Stone U70	高级盔甲升级石U70
+tbl1.pak	0x01344F01	Armor Downgrade Stone U6	盔甲降级石U6
+tbl1.pak	0x01345065	Armor Downgrade Stone U11	盔甲降级石U11
+tbl1.pak	0x013451CD	Armor Downgrade Stone U16	盔甲降级石U16
+tbl1.pak	0x01345335	Armor Downgrade Stone U21	盔甲降级石U21
+tbl1.pak	0x0134549D	Armor Downgrade Stone U26	盔甲降级石U26
+tbl1.pak	0x01345605	Armor Downgrade Stone U30	盔甲降级石U30
+tbl1.pak	0x0134576D	Armor Downgrade Stone U34	盔甲降级石U34
+tbl1.pak	0x013458D5	Armor Downgrade Stone U38	盔甲降级石U38
+tbl1.pak	0x01345A3D	Armor Downgrade Stone U42	盔甲降级石U42
+tbl1.pak	0x01345BA5	Armor Downgrade Stone U46	盔甲降级石U46
+tbl1.pak	0x01345D0D	Armor Downgrade Stone U50	盔甲降级石U50
+tbl1.pak	0x01345E75	Armor Downgrade Stone U53	盔甲降级石U53
+tbl1.pak	0x01345FDD	Armor Downgrade Stone U55	盔甲降级石U55
+tbl1.pak	0x01346145	Armor Downgrade Stone U58	盔甲降级石U58
+tbl1.pak	0x013462AD	Armor Downgrade Stone U60	盔甲降级石U60
+tbl1.pak	0x01346415	Armor Downgrade Stone U65	盔甲降级石U65
+tbl1.pak	0x01346695	9 Armor Coupon	9盔甲券
+tbl1.pak	0x0135C921	P Alien Gloves	P异星手套
+tbl1.pak	0x0135CA3D	P Suspicious Gloves	P可疑手套
+tbl1.pak	0x0135CB31	P Special A Class Gloves	P特殊A职业手套
+tbl1.pak	0x0135CC4F	P Basic Dragon Gloves	P基础龙手套
+tbl1.pak	0x0135D011	P Lotus Dragon Gloves	P莲花龙手套
+tbl1.pak	0x0135DC19	Alien Gloves	异星手套
+tbl1.pak	0x0135DD31	Suspicious Gloves	可疑手套
+tbl1.pak	0x0135DE21	Special A-Class Gloves	特殊A-职业手套
+tbl1.pak	0x0135DF3B	Basic Dragon Gloves	基础龙手套
+tbl1.pak	0x0135E2F1	Lotus Dragon Gloves	莲花龙手套
+tbl1.pak	0x0135EFDB	E Alien Gloves	E异星手套
+tbl1.pak	0x0135F0F7	E Suspicious Gloves	E可疑手套
+tbl1.pak	0x0135F1EB	E Special A-Class Gloves	E特殊A-职业手套
+tbl1.pak	0x0135F309	E Basic Dragon Gloves	E基础龙手套
+tbl1.pak	0x0135F6CB	E Lotus Dragon Gloves	E莲花龙手套
+tbl1.pak	0x01368897	Light Armor	光盔甲
+tbl1.pak	0x0136A8FF	Practitioner Equip (Top)	修行者装备(上衣)
+tbl1.pak	0x0136AA45	Practitioner Equip (Pants)	修行者装备(裤子)
+tbl1.pak	0x0136AB8F	Practitioner Equip (Shoes)	修行者装备(鞋子)
+tbl1.pak	0x0136BCDB	Jade Combat Suit (Top)	翡翠战斗套装(上衣)
+tbl1.pak	0x0136BDD3	Jade Combat Suit (Pants)	翡翠战斗套装(裤子)
+tbl1.pak	0x0136BECF	Jade Combat Suit (Shoes)	翡翠战斗套装(鞋子)
+tbl1.pak	0x0136BFCB	CC Combat Equip (Top)	CC战斗装备(上衣)
+tbl1.pak	0x0136C09F	CC Combat Equip (Pants)	CC战斗装备(裤子)
+tbl1.pak	0x0136C177	CC Combat Equip (Shoes)	CC战斗装备(鞋子)
+tbl1.pak	0x0136C24F	Red Lizard Equip (Top)	红色蜥蜴装备(上衣)
+tbl1.pak	0x0136C2FF	Red Lizard Equip (Pants)	红色蜥蜴装备(裤子)
+tbl1.pak	0x0136C3B3	Red Lizard Equip (Shoes)	红色蜥蜴装备(鞋子)
+tbl1.pak	0x0136C467	Classic CC Equip (Top)	经典CC装备(上衣)
+tbl1.pak	0x0136C519	Classic CC Equip (Pants)	经典CC装备(裤子)
+tbl1.pak	0x0136C5CF	Classic CC Equip (Shoes)	经典CC装备(鞋子)
+tbl1.pak	0x0136C685	Invincible Armor (Top)	无敌盔甲(上衣)
+tbl1.pak	0x0136C75B	Invincible Armor (Pants)	无敌盔甲(裤子)
+tbl1.pak	0x0136C835	Invincible Armor (Shoes)	无敌盔甲(鞋子)
+tbl1.pak	0x0136C90F	Swordsman Battle Equip (Top)	剑术家战斗装备(上衣)
+tbl1.pak	0x0136CA03	Swordsman Battle Equip (Pants)	剑术家战斗装备(裤子)
+tbl1.pak	0x0136CAFB	Swordsman Battle Equip (Shoes)	剑术家战斗装备(鞋子)
+tbl1.pak	0x0136CBF3	Long Combat Equip (Top)	长战斗装备(上衣)
+tbl1.pak	0x0136CCC3	Long Combat Equip (Pants)	长战斗装备(裤子)
+tbl1.pak	0x0136CD97	Long Combat Equip (Shoes)	长战斗装备(鞋子)
+tbl1.pak	0x0136D10D	Crystal Battle Equip (Top)	水晶战斗装备(上衣)
+tbl1.pak	0x0136D20F	Crystal Battle Equip (Pants)	水晶战斗装备(裤子)
+tbl1.pak	0x0136D315	Crystal Battle Equip (Shoes)	水晶战斗装备(鞋子)
+tbl1.pak	0x0136DABF	Diamond Combat Suit (Top)	钻石战斗套装(上衣)
+tbl1.pak	0x0136DB51	Diamond Combat Suit (Pants)	钻石战斗套装(裤子)
+tbl1.pak	0x0136DBE7	Diamond Combat Suit (Shoes)	钻石战斗套装(鞋子)
+tbl1.pak	0x0136DC7D	Della Army Combat Armor (Top)	德拉军战斗盔甲(上衣)
+tbl1.pak	0x0136DD2D	Della Army Combat Armor (Pants)	德拉军战斗盔甲(裤子)
+tbl1.pak	0x0136DDE1	Della Army Combat Armor (Shoes)	德拉军战斗盔甲(鞋子)
+tbl1.pak	0x0136DF75	Magic Sword Battle Clothes (Pants)	魔法剑战斗服装(裤子)
+tbl1.pak	0x0136E059	Magic Sword Battle Clothes (Shoes)	魔法剑战斗服装(鞋子)
+tbl1.pak	0x0136FCF5	O!Practice Spiritualist Equip (Top)	O!Practice 气功师 Equip (Top)
+tbl1.pak	0x0136FE4D	O#Practice Spiritualist Equip (Pants)	O#Practice 气功师 Equip (Pants)
+tbl1.pak	0x0136FFA9	O#Practice Spiritualist Equip (Shoes)	O#Practice 气功师 Equip (Shoes)
+tbl1.pak	0x01370105	O Skilled Spiritualist Equip (Top)	O Skilled 气功师 Equip (Top)
+tbl1.pak	0x013701BD	O"Skilled Spiritualist Equip (Pants)	O"Skilled 气功师 Equip (Pants)
+tbl1.pak	0x01370279	O"Skilled Spiritualist Equip (Shoes)	O"Skilled 气功师 Equip (Shoes)
+tbl1.pak	0x01370611	Spiritualist Equip (Top)	气功师装备(上衣)
+tbl1.pak	0x0137075B	Spiritualist Equip (Pants)	气功师装备(裤子)
+tbl1.pak	0x013708A9	Spiritualist Equip (Shoes)	气功师装备(鞋子)
+tbl1.pak	0x01370C99	Earth Spiritualist Equip (Top)	大地气功师装备(上衣)
+tbl1.pak	0x01370D41	O Earth Spiritualist Equip (Pants)	O Earth 气功师 Equip (Pants)
+tbl1.pak	0x01370DF1	O Earth Spiritualist Equip (Shoes)	O Earth 气功师 Equip (Shoes)
+tbl1.pak	0x01371311	CC Spiritualist Equip (Top)	CC气功师装备(上衣)
+tbl1.pak	0x01371417	CC Spiritualist Equip (Pants)	CC气功师装备(裤子)
+tbl1.pak	0x01371521	CC Spiritualist Equip (Shoes)	CC气功师装备(鞋子)
+tbl1.pak	0x0137162B	Elite Korin Equip (Top)	精英卡林装备(上衣)
+tbl1.pak	0x0137170F	Elite Korin Equip (Pants)	精英卡林装备(裤子)
+tbl1.pak	0x013717F7	Elite Korin Equip (Shoes)	精英卡林装备(鞋子)
+tbl1.pak	0x013718DB	O#Classic CC Spiritualist Equip (Top)	O#Classic CC 气功师 Equip (Top)
+tbl1.pak	0x013719EB	O%Classic CC Spiritualist Equip (Pants)	O%Classic CC 气功师 Equip (Pants)
+tbl1.pak	0x01371AFF	O%Classic CC Spiritualist Equip (Shoes)	O%Classic CC 气功师 Equip (Shoes)
+tbl1.pak	0x01371C17	Turtle Clothes (Top)	龟服装(上衣)
+tbl1.pak	0x01371C9D	Turtle Clothes (Pants)	龟服装(裤子)
+tbl1.pak	0x01371D27	Turtle Clothes (Shoes)	龟服装(鞋子)
+tbl1.pak	0x01371F81	Korin Spirit Suit (Top)	卡林精神套装(上衣)
+tbl1.pak	0x01372015	Korin Spirit Suit (Pants)	卡林精神套装(裤子)
+tbl1.pak	0x013720AD	Korin Spirit Suit (Shoes)	卡林精神套装(鞋子)
+tbl1.pak	0x01372145	Korin Spirit Clothes (Top)	卡林精神服装(上衣)
+tbl1.pak	0x01372257	Korin Spirit Clothes (Pants)	卡林精神服装(裤子)
+tbl1.pak	0x0137236D	Korin Spirit Clothes (Shoes)	卡林精神服装(鞋子)
+tbl1.pak	0x01372481	Flame Spirit Suit (Top)	火焰精神套装(上衣)
+tbl1.pak	0x0137252B	Flame Spirit Suit (Pants)	火焰精神套装(裤子)
+tbl1.pak	0x013725D9	Flame Spirit Suit (Shoes)	火焰精神套装(鞋子)
+tbl1.pak	0x01372AB7	Star Crane Clothes (Top)	星鹤服装(上衣)
+tbl1.pak	0x01372B5D	Star Crane Clothes (Pants)	星鹤服装(裤子)
+tbl1.pak	0x01372C07	Star Crane Clothes (Shoes)	星鹤服装(鞋子)
+tbl1.pak	0x01372CB1	Purple Battle Suit (Top)	紫色战斗套装(上衣)
+tbl1.pak	0x01372D43	Purple Battle Suit (Pants)	紫色战斗套装(裤子)
+tbl1.pak	0x01372DD9	Purple Battle Suit (Shoes)	紫色战斗套装(鞋子)
+tbl1.pak	0x01372E6F	Phoenix Spirit Suit (Top)	凤凰精神套装(上衣)
+tbl1.pak	0x01372EF3	Phoenix Spirit Suit (Pants)	凤凰精神套装(裤子)
+tbl1.pak	0x01372F7B	Phoenix Spirit Suit (Shoes)	凤凰精神套装(鞋子)
+tbl1.pak	0x0137376D	Turtle Clothes Z (Top)	龟服装Z(上衣)
+tbl1.pak	0x0137381D	Turtle Clothes Z (Pants)	龟服装Z(裤子)
+tbl1.pak	0x013738D1	Turtle Clothes Z (Shoes)	龟服装Z(鞋子)
+tbl1.pak	0x0137410B	Military Turtle Clothes (Top)	军用龟服装(上衣)
+tbl1.pak	0x013741B7	Military Turtle Clothes (Pants)	军用龟服装(裤子)
+tbl1.pak	0x01374267	Military Turtle Clothes (Shoes)	军用龟服装(鞋子)
+tbl1.pak	0x01374317	Valkyrie Crane Clothes (Top)	女武神鹤服装(上衣)
+tbl1.pak	0x013743B9	Valkyrie Crane Clothes (Pants)	女武神鹤服装(裤子)
+tbl1.pak	0x0137445F	Valkyrie Crane Clothes (Shoes)	女武神鹤服装(鞋子)
+tbl1.pak	0x01374505	Military Armor (Top)	军用盔甲(上衣)
+tbl1.pak	0x0137459F	Military Armor (Pants)	军用盔甲(裤子)
+tbl1.pak	0x0137463D	Military Armor (Shoes)	军用盔甲(鞋子)
+tbl1.pak	0x013746DB	King of Dragon Gear (Top)	龙装备的王(上衣)
+tbl1.pak	0x01374771	King of Dragon Gear (Pants)	龙装备的王(裤子)
+tbl1.pak	0x0137480B	King of Dragon Gear (Shoes)	龙装备的王(鞋子)
+tbl1.pak	0x013748A5	Ultra Turtle Clothes Z (Top)	极限龟服装Z(上衣)
+tbl1.pak	0x0137499D	Ultra Turtle Clothes Z (Pants)	极限龟服装Z(裤子)
+tbl1.pak	0x01374A99	Ultra Turtle Clothes Z (Shoes)	极限龟服装Z(鞋子)
+tbl1.pak	0x01375379	Engineer Kit (Top)	工程师工具包(上衣)
+tbl1.pak	0x013753AB	Engineer Kit (Pants)	工程师工具包(裤子)
+tbl1.pak	0x013753E1	Engineer Kit (Shoes)	工程师工具包(鞋子)
+tbl1.pak	0x013755BF	Work Clothes (Top)	工作服装(上衣)
+tbl1.pak	0x013755F1	Work Clothes (Pants)	工作服装(裤子)
+tbl1.pak	0x01375627	Work Clothes (Shoes)	工作服装(鞋子)
+tbl1.pak	0x01375731	CC Engineer Kit (Top)	CC工程师工具包(上衣)
+tbl1.pak	0x01375769	CC Engineer Kit (Pants)	CC工程师工具包(裤子)
+tbl1.pak	0x013757A5	CC Engineer Kit (Shoes)	CC工程师工具包(鞋子)
+tbl1.pak	0x01375A4B	Pilot Clothes (Top)	驾驶员服装(上衣)
+tbl1.pak	0x01375A7F	Pilot Clothes (Pants)	驾驶员服装(裤子)
+tbl1.pak	0x01375AB7	Pilot Clothes (Shoes)	驾驶员服装(鞋子)
+tbl1.pak	0x01375AEF	Dragon Work Clothes (Top)	龙工作服装(上衣)
+tbl1.pak	0x01375B2F	Dragon Work Clothes (Pants)	龙工作服装(裤子)
+tbl1.pak	0x01375B73	Dragon Work Clothes (Shoes)	龙工作服装(鞋子)
+tbl1.pak	0x01375C97	Flame Work Clothes (Top)	火焰工作服装(上衣)
+tbl1.pak	0x01375CD5	Flame Work Clothes (Pants)	火焰工作服装(裤子)
+tbl1.pak	0x01375D17	Flame Work Clothes (Shoes)	火焰工作服装(鞋子)
+tbl1.pak	0x01375F01	Space Pilot Clothes (Top)	空间驾驶员服装(上衣)
+tbl1.pak	0x01375F41	Space Pilot Clothes (Pants)	空间驾驶员服装(裤子)
+tbl1.pak	0x01375F85	Space Pilot Clothes (Shoes)	空间驾驶员服装(鞋子)
+tbl1.pak	0x0137609D	Phoenix Work Clothes (Top)	凤凰工作服装(上衣)
+tbl1.pak	0x013760DF	Phoenix Work Clothes (Pants)	凤凰工作服装(裤子)
+tbl1.pak	0x01376125	Phoenix Work Clothes (Shoes)	凤凰工作服装(鞋子)
+tbl1.pak	0x0137616B	True Dragon Warrior Gear (Top)	真龙战士装备(上衣)
+tbl1.pak	0x01376431	Della Army Pilot Clothes (Top)	德拉军驾驶员服装(上衣)
+tbl1.pak	0x0137694F	Pilot Clothes Z (Top)	驾驶员服装Z(上衣)
+tbl1.pak	0x01376987	Pilot Clothes Z (Pants)	驾驶员服装Z(裤子)
+tbl1.pak	0x013769C3	Pilot Clothes Z (Shoes)	驾驶员服装Z(鞋子)
+tbl1.pak	0x01376F5F	Special Pilot Clothes (Top)	特殊驾驶员服装(上衣)
+tbl1.pak	0x01376FA3	Special Pilot Clothes (Pants)	特殊驾驶员服装(裤子)
+tbl1.pak	0x01376FEB	Special Pilot Clothes (Shoes)	特殊驾驶员服装(鞋子)
+tbl1.pak	0x01377385	Spirit Warrior Equip (Top)	精神战士装备(上衣)
+tbl1.pak	0x01377491	Spirit Warrior Equip (Pants)	精神战士装备(裤子)
+tbl1.pak	0x013775A1	Spirit Warrior Equip (Shoes)	精神战士装备(鞋子)
+tbl1.pak	0x0137799B	Warrior Equip (Top)	那美克战士装备(上衣)
+tbl1.pak	0x01377A8B	Warrior Equip (Pants)	那美克战士装备(裤子)
+tbl1.pak	0x01377B7F	Warrior Equip (Shoes)	那美克战士装备(鞋子)
+tbl1.pak	0x01377E8B	Blast Suit (Top)	爆破套装(上衣)
+tbl1.pak	0x01377F07	Blast Suit (Pants)	爆破套装(裤子)
+tbl1.pak	0x01377F87	Blast Suit (Shoes)	爆破套装(鞋子)
+tbl1.pak	0x01378007	Magic Equip (Top)	魔法装备(上衣)
+tbl1.pak	0x013780F3	Magic Equip (Pants)	魔法装备(裤子)
+tbl1.pak	0x013781E3	Magic Equip (Shoes)	魔法装备(鞋子)
+tbl1.pak	0x013782D3	Gale Magic Equip (Top)	疾风魔法装备(上衣)
+tbl1.pak	0x01378377	Gale Magic Equip (Pants)	疾风魔法装备(裤子)
+tbl1.pak	0x0137841F	Gale Magic Equip (Shoes)	疾风魔法装备(鞋子)
+tbl1.pak	0x013784C7	Dark Suit (Top)	黑暗套装(上衣)
+tbl1.pak	0x01378573	Dark Suit (Pants)	黑暗套装(裤子)
+tbl1.pak	0x01378623	Dark Suit (Shoes)	黑暗套装(鞋子)
+tbl1.pak	0x01379579	Dragon Leather Suit (Shoes)	龙皮革套装(鞋子)
+tbl1.pak	0x01379CB5	Meteor Devil Combat Equip (Top)	流星魔鬼战斗装备(上衣)
+tbl1.pak	0x0137A2EB	Awakening Magic Clothes  (Top)	觉醒魔法服装(上衣)
+tbl1.pak	0x0137A3A7	P Awakening Magic Clothes  (Pants)	P觉醒魔法服装(裤子)
+tbl1.pak	0x0137A46B	P Awakening Magic Clothes  (Shoes)	P觉醒魔法服装(鞋子)
+tbl1.pak	0x0137A533	Tiamat Battle Suit (Top)	提亚马特战斗套装(上衣)
+tbl1.pak	0x0137A5C5	Tiamat Battle Suit (Pants)	提亚马特战斗套装(裤子)
+tbl1.pak	0x0137A65B	Tiamat Battle Suit (Shoes)	提亚马特战斗套装(鞋子)
+tbl1.pak	0x0137A6F1	Tiamat Battle Clothes (Top)	提亚马特战斗服装(上衣)
+tbl1.pak	0x0137A789	Tiamat Battle Clothes (Pants)	提亚马特战斗服装(裤子)
+tbl1.pak	0x0137A825	Tiamat Battle Clothes (Shoes)	提亚马特战斗服装(鞋子)
+tbl1.pak	0x0137A8C1	True Magic Gear (Top)	真魔法装备(上衣)
+tbl1.pak	0x0137A97B	True Magic Gear (Pants)	真魔法装备(裤子)
+tbl1.pak	0x0137AA39	True Magic Gear (Shoes)	真魔法装备(鞋子)
+tbl1.pak	0x0137AC7F	Devil Battle Clothes (Top)	魔鬼战斗服装(上衣)
+tbl1.pak	0x0137AD0B	Devil Battle Clothes (Pants)	魔鬼战斗服装(裤子)
+tbl1.pak	0x0137AD9B	Devil Battle Clothes (Shoes)	魔鬼战斗服装(鞋子)
+tbl1.pak	0x0137AE2B	Strong Magic Battle Gear (Top)	强力魔法战斗装备(上衣)
+tbl1.pak	0x0137AF2B	P Strong Magic Battle Gear (Pants)	P强力魔法战斗装备(裤子)
+tbl1.pak	0x0137B033	P Strong Magic Battle Gear (Shoes)	P强力魔法战斗装备(鞋子)
+tbl1.pak	0x0137B13F	Warrior Magic Suit (Top)	那美克战士魔法套装(上衣)
+tbl1.pak	0x0137B1DD	Warrior Magic Suit (Pants)	那美克战士魔法套装(裤子)
+tbl1.pak	0x0137B27F	Warrior Magic Suit (Shoes)	那美克战士魔法套装(鞋子)
+tbl1.pak	0x0137B321	Blessed Magic Gear (Top)	祝福魔法装备(上衣)
+tbl1.pak	0x0137B3A9	Blessed Magic Gear (Pants)	祝福魔法装备(裤子)
+tbl1.pak	0x0137B435	Blessed Magic Gear (Shoes)	祝福魔法装备(鞋子)
+tbl1.pak	0x0137BAA5	Ancient Warrior Gear (Top)	古代战士装备(上衣)
+tbl1.pak	0x0137BB43	Ancient Warrior Gear (Pants)	古代战士装备(裤子)
+tbl1.pak	0x0137BBE5	Ancient Warrior Gear (Shoes)	古代战士装备(鞋子)
+tbl1.pak	0x0137BC87	Namek Battle Suit (Top)	那美克战斗套装(上衣)
+tbl1.pak	0x0137BD23	Namek Battle Suit (Pants)	那美克战斗套装(裤子)
+tbl1.pak	0x0137BDC3	Namek Battle Suit (Shoes)	那美克战斗套装(鞋子)
+tbl1.pak	0x0137C5CB	Blue Dragon Battle (Top)	蓝色龙战斗(上衣)
+tbl1.pak	0x0137C657	Blue Dragon Battle (Pants)	蓝色龙战斗(裤子)
+tbl1.pak	0x0137C6E7	Blue Dragon Battle (Shoes)	蓝色龙战斗(鞋子)
+tbl1.pak	0x0137C9F5	Dragon Clan Equip (Top)	那美克龙族装备(上衣)
+tbl1.pak	0x0137CAF3	Dragon Clan Equip (Pants)	那美克龙族装备(裤子)
+tbl1.pak	0x0137CBF5	Dragon Clan Equip (Shoes)	那美克龙族装备(鞋子)
+tbl1.pak	0x0137CEDB	P Recovery Dragon Clan Equip (Top)	P恢复龙族装备(上衣)
+tbl1.pak	0x0137CF81	P"Recovery Dragon Clan Equip (Pants)	P"Recovery 那美克龙族 Equip (Pants)
+tbl1.pak	0x0137D02B	P"Recovery Dragon Clan Equip (Shoes)	P"Recovery 那美克龙族 Equip (Shoes)
+tbl1.pak	0x0137D0D9	Devil's Battle Equip (Top)	魔鬼的战斗装备(上衣)
+tbl1.pak	0x0137D1B7	Devil's Battle Equip (Pants)	魔鬼的战斗装备(裤子)
+tbl1.pak	0x0137D299	Devil's Battle Equip (Shoes)	魔鬼的战斗装备(鞋子)
+tbl1.pak	0x0137D37B	Gale Demon Battle Clothes (Top)	疾风恶魔战斗服装(上衣)
+tbl1.pak	0x0137E245	Palm Magic Suit (Top)	棕榈魔法套装(上衣)
+tbl1.pak	0x0137E2CD	Palm Magic Suit (Pants)	棕榈魔法套装(裤子)
+tbl1.pak	0x0137E359	Palm Magic Suit (Shoes)	棕榈魔法套装(鞋子)
+tbl1.pak	0x0137E3E5	Dragon Leather Suit (Top)	龙皮革套装(上衣)
+tbl1.pak	0x0137E4AF	Dragon Leather Suit (Pants)	龙皮革套装(裤子)
+tbl1.pak	0x0137F5B5	True Magic Battle Suit (Top)	真魔法战斗套装(上衣)
+tbl1.pak	0x0137F64D	True Magic Battle Suit (Pants)	真魔法战斗套装(裤子)
+tbl1.pak	0x0137F6E9	True Magic Battle Suit (Shoes)	真魔法战斗套装(鞋子)
+tbl1.pak	0x0137F829	Awakening Magic Battle Suit (Pants)	觉醒魔法战斗套装(裤子)
+tbl1.pak	0x0137F8D1	Awakening Magic Battle Suit (Shoes)	觉醒魔法战斗套装(鞋子)
+tbl1.pak	0x01380075	Star Space Suit (Top)	星空间套装(上衣)
+tbl1.pak	0x013800E5	Star Space Suit (Pants)	星空间套装(裤子)
+tbl1.pak	0x01380159	Star Space Suit (Shoes)	星空间套装(鞋子)
+tbl1.pak	0x01380ADB	Namek Gear  (Top)	那美克装备(上衣)
+tbl1.pak	0x01380B8D	Namek Gear  (Pants)	那美克装备(裤子)
+tbl1.pak	0x01380C43	Namek Gear  (Shoes)	那美克装备(鞋子)
+tbl1.pak	0x01380CF9	Original Magic Suit (Top)	原始魔法套装(上衣)
+tbl1.pak	0x01380D97	Original Magic Suit (Pants)	原始魔法套装(裤子)
+tbl1.pak	0x01380E39	Original Magic Suit (Shoes)	原始魔法套装(鞋子)
+tbl1.pak	0x0138215B	Super Magic Equip (Top)	超级魔法装备(上衣)
+tbl1.pak	0x0138223D	Super Magic Equip (Pants)	超级魔法装备(裤子)
+tbl1.pak	0x01382323	Super Magic Equip (Shoes)	超级魔法装备(鞋子)
+tbl1.pak	0x0138261B	Magic Rubber Equip (Top)	魔法橡胶装备(上衣)
+tbl1.pak	0x013826D7	Magic Rubber Equip (Pants)	魔法橡胶装备(裤子)
+tbl1.pak	0x01382797	Magic Rubber Equip (Shoes)	魔法橡胶装备(鞋子)
+tbl1.pak	0x013829BD	P Classic Rubber Magic Equip (Top)	P经典橡胶魔法装备(上衣)
+tbl1.pak	0x01382A8F	Classic Rubber Magic Equip (Pants)	经典橡胶魔法装备(裤子)
+tbl1.pak	0x01382B61	Classic Rubber Magic Equip (Shoes)	经典橡胶魔法装备(鞋子)
+tbl1.pak	0x01382D97	Tasty Magic Clothes(Top)	美味魔法服装(上衣)
+tbl1.pak	0x01382E09	Tasty Magic Clothes(Pants)	美味魔法服装(裤子)
+tbl1.pak	0x01382E7F	Tasty Magic Clothes(Shoes)	美味魔法服装(鞋子)
+tbl1.pak	0x01382EF5	Vital Magic Suit (Top)	活力魔法套装(上衣)
+tbl1.pak	0x01382F95	Vital Magic Suit (Pants)	活力魔法套装(裤子)
+tbl1.pak	0x01383039	Vital Magic Suit (Shoes)	活力魔法套装(鞋子)
+tbl1.pak	0x013830DD	Magic Dragon Suit (Top)	魔法龙套装(上衣)
+tbl1.pak	0x0138314F	Magic Dragon Suit (Pants)	魔法龙套装(裤子)
+tbl1.pak	0x013831C5	Magic Dragon Suit (Shoes)	魔法龙套装(鞋子)
+tbl1.pak	0x0138323B	Crystal Gem Clothes (Top)	水晶宝石服装(上衣)
+tbl1.pak	0x013832E7	Crystal Gem Clothes (Pants)	水晶宝石服装(裤子)
+tbl1.pak	0x01383397	Crystal Gem Clothes (Shoes)	水晶宝石服装(鞋子)
+tbl1.pak	0x01383447	Blue Magic Dragon (Top)	蓝色魔法龙(上衣)
+tbl1.pak	0x013834D1	Blue Magic Dragon (Pants)	蓝色魔法龙(裤子)
+tbl1.pak	0x0138355F	Blue Magic Dragon (Shoes)	蓝色魔法龙(鞋子)
+tbl1.pak	0x01383BB1	Diamond Magic Clothes (Top)	钻石魔法服装(上衣)
+tbl1.pak	0x01383C71	Diamond Magic Clothes (Pants)	钻石魔法服装(裤子)
+tbl1.pak	0x01383D35	Diamond Magic Clothes (Shoes)	钻石魔法服装(鞋子)
+tbl1.pak	0x013848EF	Z Tasty Magic Clothes (Top)	Z美味魔法服装(上衣)
+tbl1.pak	0x01384973	Z Tasty Magic Clothes (Pants)	Z美味魔法服装(裤子)
+tbl1.pak	0x013849FB	Z Tasty Magic Clothes (Shoes)	Z美味魔法服装(鞋子)
+tbl1.pak	0x0138594B	Z Special Tasty Magic Clothes (Top)	Z特殊美味魔法服装(上衣)
+tbl1.pak	0x01386965	Simple Magic Equip (Top)	简单魔法装备(上衣)
+tbl1.pak	0x01386A39	Simple Magic Equip (Pants)	简单魔法装备(裤子)
+tbl1.pak	0x01386B11	Simple Magic Equip (Shoes)	简单魔法装备(鞋子)
+tbl1.pak	0x01386F4B	Sweet Magic Equip (Top)	甜魔法装备(上衣)
+tbl1.pak	0x01387003	Sweet Magic Equip (Pants)	甜魔法装备(裤子)
+tbl1.pak	0x013870BF	Sweet Magic Equip (Shoes)	甜魔法装备(鞋子)
+tbl1.pak	0x01387755	Classic Rubber Equip (Top)	经典橡胶装备(上衣)
+tbl1.pak	0x0138781D	Classic Rubber Equip (Pants)	经典橡胶装备(裤子)
+tbl1.pak	0x013878E9	Classic Rubber Equip (Shoes)	经典橡胶装备(鞋子)
+tbl1.pak	0x013879B5	Magic Surprise Suit (Top)	魔法惊喜套装(上衣)
+tbl1.pak	0x01387A33	Magic Surprise Suit (Pants)	魔法惊喜套装(裤子)
+tbl1.pak	0x01387AB5	Magic Surprise Suit (Shoes)	魔法惊喜套装(鞋子)
+tbl1.pak	0x01387B37	Magic Comfort Suit (Top)	魔法舒适套装(上衣)
+tbl1.pak	0x01387BE1	Magic Comfort Suit (Pants)	魔法舒适套装(裤子)
+tbl1.pak	0x01387C8F	Magic Comfort Suit (Shoes)	魔法舒适套装(鞋子)
+tbl1.pak	0x01387D3D	Broadwood Magic Suit (Top)	布洛德伍德魔法套装(上衣)
+tbl1.pak	0x01387DE7	Broadwood Magic Suit (Pants)	布洛德伍德魔法套装(裤子)
+tbl1.pak	0x01387E95	Broadwood Magic Suit (Shoes)	布洛德伍德魔法套装(鞋子)
+tbl1.pak	0x01387F43	Wonder Dragon Clothes (Top)	意魔人龙服装(上衣)
+tbl1.pak	0x01387FBD	Wonder Dragon Clothes (Pants)	意魔人龙服装(裤子)
+tbl1.pak	0x0138803B	Wonder Dragon Clothes (Shoes)	意魔人龙服装(鞋子)
+tbl1.pak	0x013880B9	Crystal Gem Suit (Top)	水晶宝石套装(上衣)
+tbl1.pak	0x01388153	Crystal Gem Suit (Pants)	水晶宝石套装(裤子)
+tbl1.pak	0x013881F1	Crystal Gem Suit (Shoes)	水晶宝石套装(鞋子)
+tbl1.pak	0x0138828F	Wonder Blue Dragon Suit (Top)	意魔人蓝色龙套装(上衣)
+tbl1.pak	0x01388311	Wonder Blue Dragon Suit (Pants)	意魔人蓝色龙套装(裤子)
+tbl1.pak	0x01388397	Wonder Blue Dragon Suit (Shoes)	意魔人蓝色龙套装(鞋子)
+tbl1.pak	0x01388A59	Diamond Broadwood Magic Suit (Top)	钻石布洛德伍德魔法套装(上衣)
+tbl1.pak	0x01388B33	Diamond Broadwood Magic Suit (Pants)	钻石布洛德伍德魔法套装(裤子)
+tbl1.pak	0x01388C11	Diamond Broadwood Magic Suit (Shoes)	钻石布洛德伍德魔法套装(鞋子)
+tbl1.pak	0x01388DB1	Magic Surprise Suit DD Suit (Pants)	魔法惊喜套装DD套装(裤子)
+tbl1.pak	0x01388E77	Magic Surprise Suit DD Suit (Shoes)	魔法惊喜套装DD套装(鞋子)
+tbl1.pak	0x01388F3D	Magic Comfort Suit D (Top)	魔法舒适套装D(上衣)
+tbl1.pak	0x01388FE3	Magic Comfort Suit D (Pants)	魔法舒适套装D(裤子)
+tbl1.pak	0x0138908D	Magic Comfort Suit D (Shoes)	魔法舒适套装D(鞋子)
+tbl1.pak	0x01389137	Soul Broadwood Suit (Top)	灵魂布洛德伍德套装(上衣)
+tbl1.pak	0x013891DF	Soul Broadwood Suit (Pants)	灵魂布洛德伍德套装(裤子)
+tbl1.pak	0x0138928B	Soul Broadwood Suit (Shoes)	灵魂布洛德伍德套装(鞋子)
+tbl1.pak	0x01389337	Soul Broadwood Clothes (Top)	灵魂布洛德伍德服装(上衣)
+tbl1.pak	0x013893E9	Soul Broadwood Clothes (Pants)	灵魂布洛德伍德服装(裤子)
+tbl1.pak	0x0138949F	Soul Broadwood Clothes (Shoes)	灵魂布洛德伍德服装(鞋子)
+tbl1.pak	0x0138975B	Magic Comfort Suit Z (Top)	魔法舒适套装Z(上衣)
+tbl1.pak	0x01389811	Magic Comfort Suit Z ( Pants)	魔法舒适套装Z(裤子)
+tbl1.pak	0x013898CD	Magic Comfort Suit Z (Shoes)	魔法舒适套装Z(鞋子)
+tbl1.pak	0x013ACF3D	P Alien Gloves EX	P异星手套EX
+tbl1.pak	0x013AD05F	P Suspicious Gloves EX	P可疑手套EX
+tbl1.pak	0x013AD159	P Special A Class Gloves EX	P特殊A职业手套EX
+tbl1.pak	0x013AD27D	P Basic Dragon Gloves EX	P基础龙手套EX
+tbl1.pak	0x013ADE19	Alien Gloves EX	异星手套EX
+tbl1.pak	0x013ADF37	Suspicious Gloves EX	可疑手套EX
+tbl1.pak	0x013AE02D	Special A Class Gloves EX	特殊A职业手套EX
+tbl1.pak	0x013AE14D	Basic Dragon Gloves EX	基础龙手套EX
+tbl1.pak	0x013AEBAF	Warrior Gloves	那美克战士手套
+tbl1.pak	0x013AF32D	E Alien Gloves EX	E异星手套EX
+tbl1.pak	0x013AF44F	E Suspicious Gloves EX	E可疑手套EX
+tbl1.pak	0x013AF549	E Special A Class Gloves EX	E特殊A职业手套EX
+tbl1.pak	0x013AF66D	E Basic Dragon Gloves EX	E基础龙手套EX
+tbl1.pak	0x013B248F	Namek Gloves	那美克手套
+tbl1.pak	0x013B880B	Light Armor EX	光盔甲EX
+tbl1.pak	0x013BAE7F	Practitioner Martial Arts Clothes (Top) EX	修行者武道服装(上衣)EX
+tbl1.pak	0x013BAF47	U,Practitioner Martial Arts Clothes (Pants) EX	U、修行者武道服装(裤子)EX
+tbl1.pak	0x013BB017	U,Practitioner Martial Arts Clothes (Shoes) EX	U、修行者武道服装(鞋子)EX
+tbl1.pak	0x013BB503	Martial Arts Clothes (Top) EX	武道服装(上衣)EX
+tbl1.pak	0x013BB5CB	Martial Arts Clothes (Pants) EX	武道服装(裤子)EX
+tbl1.pak	0x013BB697	Martial Arts Clothes (Shoes) EX	武道服装(鞋子)EX
+tbl1.pak	0x013BBD3F	Jade Battle Suit (Top) EX	翡翠战斗套装(上衣)EX
+tbl1.pak	0x013BBDCD	Jade Battle Suit (Pants) EX	翡翠战斗套装(裤子)EX
+tbl1.pak	0x013BBE5F	Jade Battle Suit (Shoes) EX	翡翠战斗套装(鞋子)EX
+tbl1.pak	0x013BBFA7	CC Martial Arts Clothes (Pants) EX	CC武道服装(裤子)EX
+tbl1.pak	0x013BC061	CC Martial Arts Clothes (Shoes) EX	CC武道服装(鞋子)EX
+tbl1.pak	0x013BC11B	Red Lizard Suit (Top) EX	红色蜥蜴套装(上衣)EX
+tbl1.pak	0x013BC1A1	Red Lizard Suit (Pants) EX	红色蜥蜴套装(裤子)EX
+tbl1.pak	0x013BC22B	Red Lizard Suit (Shoes) EX	红色蜥蜴套装(鞋子)EX
+tbl1.pak	0x013BC2B5	Classic CC Martial Arts Clothes (Top) EX	经典CC武道服装(上衣)EX
+tbl1.pak	0x013BC3CF	Classic CC Martial Arts Clothes (Pants) EX	经典CC武道服装(裤子)EX
+tbl1.pak	0x013BC4ED	Classic CC Martial Arts Clothes (Shoes) EX	经典CC武道服装(鞋子)EX
+tbl1.pak	0x013BC60B	Invincible Gear (Top) EX	无敌装备(上衣)EX
+tbl1.pak	0x013BC6B9	Invincible Gear (Pants) EX	无敌装备(裤子)EX
+tbl1.pak	0x013BC76B	Invincible Gear (Shoes) EX	无敌装备(鞋子)EX
+tbl1.pak	0x013BC9C3	Long Combat Suit (Top) EX	长战斗套装(上衣)EX
+tbl1.pak	0x013BCA35	Long Combat Suit (Pants) EX	长战斗套装(裤子)EX
+tbl1.pak	0x013BCAAB	Long Combat Suit (Shoes) EX	长战斗套装(鞋子)EX
+tbl1.pak	0x013BCB21	Korin Martial Arts Clothes (Top) EX	卡林武道服装(上衣)EX
+tbl1.pak	0x013BCC43	Korin Martial Arts Clothes (Pants) EX	卡林武道服装(裤子)EX
+tbl1.pak	0x013BCD69	Korin Martial Arts Clothes (Shoes) EX	卡林武道服装(鞋子)EX
+tbl1.pak	0x013BCF3D	Crystal Gem Battle Armor (Pants) EX	水晶宝石战斗盔甲(裤子)EX
+tbl1.pak	0x013BCFEF	Crystal Gem Battle Armor (Shoes) EX	水晶宝石战斗盔甲(鞋子)EX
+tbl1.pak	0x013BD0A1	Korin Chief Martial Arts Clothes (Top) EX	卡林首领武道服装(上衣)EX
+tbl1.pak	0x013BD7DB	Diamond Combat Suit (Top) EX	钻石战斗套装(上衣)EX
+tbl1.pak	0x013BD873	Diamond Combat Suit (Pants) EX	钻石战斗套装(裤子)EX
+tbl1.pak	0x013BD90F	Diamond Combat Suit (Shoes) EX	钻石战斗套装(鞋子)EX
+tbl1.pak	0x013BD9A7	U Della Army Combat Armor (Top) EX	U德拉军战斗盔甲(上衣)EX
+tbl1.pak	0x013BDA61	Della Army Combat Armor (Pants) EX	德拉军战斗盔甲(裤子)EX
+tbl1.pak	0x013BDB1B	Della Army Combat Armor (Shoes) EX	德拉军战斗盔甲(鞋子)EX
+tbl1.pak	0x013BDBD5	Magic Sword Battle Clothes (Top) EX	魔法剑战斗服装(上衣)EX
+tbl1.pak	0x013BDCBB	Magic Sword Battle Clothes (Pants) EX	魔法剑战斗服装(裤子)EX
+tbl1.pak	0x013BDDA5	Magic Sword Battle Clothes (Shoes) EX	魔法剑战斗服装(鞋子)EX
+tbl1.pak	0x013BED01	Injection New Gear (Top) EX	注射新装备(上衣)EX
+tbl1.pak	0x013BED45	Injection New Gear (Pants) EX	注射新装备(裤子)EX
+tbl1.pak	0x013BED8D	Injection New Gear (Shoes) EX	注射新装备(鞋子)EX
+tbl1.pak	0x013BEEA9	Armored Combat Gear (Top) H	装甲战斗装备(上衣)H
+tbl1.pak	0x013BEF3F	Armored Combat Gear (Pants) H	装甲战斗装备(裤子)H
+tbl1.pak	0x013BEFD9	Armored Combat Gear (Shoes) H	装甲战斗装备(鞋子)H
+tbl1.pak	0x013BF073	Combat Force Gear (Top) H	战斗力量装备(上衣)H
+tbl1.pak	0x013BF111	Combat Force Gear (Pants) H	战斗力量装备(裤子)H
+tbl1.pak	0x013BF1B3	Combat Force Gear (Shoes) H	战斗力量装备(鞋子)H
+tbl1.pak	0x013BF255	Combat Gear (Top) H	战斗装备(上衣)H
+tbl1.pak	0x013BF2EF	Combat Gear (Pants) H	战斗装备(裤子)H
+tbl1.pak	0x013BF38D	Combat Gear (Shoes) H	战斗装备(鞋子)H
+tbl1.pak	0x013BF42B	Advanced Combat Gear (Top) H	高级战斗装备(上衣)H
+tbl1.pak	0x013BF4CD	Advanced Combat Gear (Pants) H	高级战斗装备(裤子)H
+tbl1.pak	0x013BF573	Advanced Combat Gear (Shoes) H	高级战斗装备(鞋子)H
+tbl1.pak	0x013BF619	Super Combat Gear (Top) H	超级战斗装备(上衣)H
+tbl1.pak	0x013BF699	Super Combat Gear (Pants) H	超级战斗装备(裤子)H
+tbl1.pak	0x013BF71D	Super Combat Gear (Shoes) H	超级战斗装备(鞋子)H
+tbl1.pak	0x013BF7A1	Ultimate Combat Gear (Top) H	终极战斗装备(上衣)H
+tbl1.pak	0x013BF867	Ultimate Combat Gear (Pants) H	终极战斗装备(裤子)H
+tbl1.pak	0x013BF931	Ultimate Combat Gear (Shoes) H	终极战斗装备(鞋子)H
+tbl1.pak	0x013BFE37	Firepower Combat Gear (Top) H	火力战斗装备(上衣)H
+tbl1.pak	0x013BFECD	Firepower Combat Gear (Pants) H	火力战斗装备(裤子)H
+tbl1.pak	0x013BFF67	Firepower Combat Gear (Shoes) H	火力战斗装备(鞋子)H
+tbl1.pak	0x013C0001	Galactic Combat Gear (Top) H	银河战斗装备(上衣)H
+tbl1.pak	0x013C00CF	Galactic Combat Gear (Pants) H	银河战斗装备(裤子)H
+tbl1.pak	0x013C01A1	Galactic Combat Gear (Shoes) H	银河战斗装备(鞋子)H
+tbl1.pak	0x013C0273	Practitioner Spirit Clothes (Top) EX	修行者精神服装(上衣)EX
+tbl1.pak	0x013C0763	Practitioner Spirit Suit (Pants) EX	修行者精神套装(裤子)EX
+tbl1.pak	0x013C0815	Practitioner Spirit Suit (Shoes) EX	修行者精神套装(鞋子)EX
+tbl1.pak	0x013C08C7	Spirit Clothes (Top) EX	精神服装(上衣)EX
+tbl1.pak	0x013C0985	Spirit Clothes (Pants) EX	精神服装(裤子)EX
+tbl1.pak	0x013C0A47	Spirit Clothes (Shoes) EX	精神服装(鞋子)EX
+tbl1.pak	0x013C0CD3	Earth Spirit Clothes (Top) EX	大地精神服装(上衣)EX
+tbl1.pak	0x013C0D4D	Earth Spirit Clothes (Pants) EX	大地精神服装(裤子)EX
+tbl1.pak	0x013C0DCB	Earth Spirit Clothes (Shoes) EX	大地精神服装(鞋子)EX
+tbl1.pak	0x013C0E49	Spirit Suit (Top) EX	精神套装(上衣)EX
+tbl1.pak	0x013C0F01	Spirit Suit (Pants) EX	精神套装(裤子)EX
+tbl1.pak	0x013C0FBD	Spirit Suit (Shoes) EX	精神套装(鞋子)EX
+tbl1.pak	0x013C1309	CC Spirit Clothes (Top) EX	CC精神服装(上衣)EX
+tbl1.pak	0x013C13C1	CC Spirit Clothes (Pants) EX	CC精神服装(裤子)EX
+tbl1.pak	0x013C147D	CC Spirit Clothes (Shoes) EX	CC精神服装(鞋子)EX
+tbl1.pak	0x013C1539	Korin Spirit Suit (Top) EX	卡林精神套装(上衣)EX
+tbl1.pak	0x013C15AF	Korin Spirit Suit (Pants) EX	卡林精神套装(裤子)EX
+tbl1.pak	0x013C1629	Korin Spirit Suit (Shoes) EX	卡林精神套装(鞋子)EX
+tbl1.pak	0x013C16A3	Classic CC Spirit Clothes (Top) EX	经典CC精神服装(上衣)EX
+tbl1.pak	0x013C1791	Classic CC Spirit Clothes (Pants) EX	经典CC精神服装(裤子)EX
+tbl1.pak	0x013C1883	Classic CC Spirit Clothes (Shoes) EX	经典CC精神服装(鞋子)EX
+tbl1.pak	0x013C1975	Turtle Clothes (Top) EX	龟服装(上衣)EX
+tbl1.pak	0x013C1A01	Turtle Clothes (Pants) EX	龟服装(裤子)EX
+tbl1.pak	0x013C1A91	Turtle Clothes (Shoes) EX	龟服装(鞋子)EX
+tbl1.pak	0x013C1ED9	Korin Spirit Clothes (Top) EX	卡林精神服装(上衣)EX
+tbl1.pak	0x013C1FEF	Korin Spirit Clothes (Pants) EX	卡林精神服装(裤子)EX
+tbl1.pak	0x013C2109	Korin Spirit Clothes (Shoes) EX	卡林精神服装(鞋子)EX
+tbl1.pak	0x013C2223	Flame Spirit Suit (Top) EX	火焰精神套装(上衣)EX
+tbl1.pak	0x013C22D3	Flame Spirit Suit (Pants) EX	火焰精神套装(裤子)EX
+tbl1.pak	0x013C2387	Flame Spirit Suit (Shoes) EX	火焰精神套装(鞋子)EX
+tbl1.pak	0x013C288F	Star Crane Clothes (Top) EX	星鹤服装(上衣)EX
+tbl1.pak	0x013C293B	Star Crane Clothes (Pants) EX	星鹤服装(裤子)EX
+tbl1.pak	0x013C29EB	Star Crane Clothes (Shoes) EX	星鹤服装(鞋子)EX
+tbl1.pak	0x013C2A9B	Purple Battle Suit (Top) EX	紫色战斗套装(上衣)EX
+tbl1.pak	0x013C2B33	Purple Battle Suit (Pants) EX	紫色战斗套装(裤子)EX
+tbl1.pak	0x013C2BCF	Purple Battle Suit (Shoes) EX	紫色战斗套装(鞋子)EX
+tbl1.pak	0x013C2C6B	Phoenix Spirit Suit (Top) EX	凤凰精神套装(上衣)EX
+tbl1.pak	0x013C2CF5	Phoenix Spirit Suit (Pants) EX	凤凰精神套装(裤子)EX
+tbl1.pak	0x013C2D83	Phoenix Spirit Suit (Shoes) EX	凤凰精神套装(鞋子)EX
+tbl1.pak	0x013C3C87	U Military Turtle Clothes (Top) EX	U军用龟服装(上衣)EX
+tbl1.pak	0x013C3CD9	Military Turtle Clothes (Pants) EX	军用龟服装(裤子)EX
+tbl1.pak	0x013C3D2B	Military Turtle Clothes (Shoes) EX	军用龟服装(鞋子)EX
+tbl1.pak	0x013C3D7D	Valkyrie Crane Clothes (Top) EX	女武神鹤服装(上衣)EX
+tbl1.pak	0x013C4011	Ultra Turtle Clothes Z (Top) EX	极限龟服装Z(上衣)EX
+tbl1.pak	0x013C458D	Engineer Kit (Top) EX	工程师工具包(上衣)EX
+tbl1.pak	0x013C45C5	Engineer Kit (Pants) EX	工程师工具包(裤子)EX
+tbl1.pak	0x013C4601	Engineer Kit (Shoes) EX	工程师工具包(鞋子)EX
+tbl1.pak	0x013C47E5	Work Clothes (Top) EX	工作服装(上衣)EX
+tbl1.pak	0x013C481D	Work Clothes (Pants) EX	工作服装(裤子)EX
+tbl1.pak	0x013C4859	Work Clothes (Shoes) EX	工作服装(鞋子)EX
+tbl1.pak	0x013C4969	CC Engineer Kit (Top) EX	CC工程师工具包(上衣)EX
+tbl1.pak	0x013C49A7	CC Engineer Kit (Pants) EX	CC工程师工具包(裤子)EX
+tbl1.pak	0x013C49E9	CC Engineer Kit (Shoes) EX	CC工程师工具包(鞋子)EX
+tbl1.pak	0x013C4CA7	Pilot Clothes (Top) EX	驾驶员服装(上衣)EX
+tbl1.pak	0x013C4CE1	Pilot Clothes (Pants) EX	驾驶员服装(裤子)EX
+tbl1.pak	0x013C4D1F	Pilot Clothes (Shoes) EX	驾驶员服装(鞋子)EX
+tbl1.pak	0x013C4D5D	Dragon Work Clothes (Top) EX	龙工作服装(上衣)EX
+tbl1.pak	0x013C4DA3	Dragon Work Clothes (Pants) EX	龙工作服装(裤子)EX
+tbl1.pak	0x013C4DED	Dragon Work Clothes (Shoes) EX	龙工作服装(鞋子)EX
+tbl1.pak	0x013C4F29	Flame Work Clothes (Top) EX	火焰工作服装(上衣)EX
+tbl1.pak	0x013C4F6D	Flame Work Clothes (Pants) EX	火焰工作服装(裤子)EX
+tbl1.pak	0x013C4FB5	Flame Work Clothes (Shoes) EX	火焰工作服装(鞋子)EX
+tbl1.pak	0x013C51B7	Space Pilot Clothes (Top) EX	空间驾驶员服装(上衣)EX
+tbl1.pak	0x013C51FD	Space Pilot Clothes (Pants) EX	空间驾驶员服装(裤子)EX
+tbl1.pak	0x013C5247	Space Pilot Clothes (Shoes) EX	空间驾驶员服装(鞋子)EX
+tbl1.pak	0x013C5365	Phoenix Work Clothes (Top) EX	凤凰工作服装(上衣)EX
+tbl1.pak	0x013C53AD	Phoenix Work Clothes (Pants) EX	凤凰工作服装(裤子)EX
+tbl1.pak	0x013C53F9	Phoenix Work Clothes (Shoes) EX	凤凰工作服装(鞋子)EX
+tbl1.pak	0x013C576D	Della Army Pilot Clothes (Pants) EX	德拉军驾驶员服装(裤子)EX
+tbl1.pak	0x013C57C1	Della Army Pilot Clothes (Shoes) EX	德拉军驾驶员服装(鞋子)EX
+tbl1.pak	0x013C5815	Soul Work Clothes (Top)	灵魂工作服装(上衣)
+tbl1.pak	0x013C5851	Soul Work Clothes (Pants)	灵魂工作服装(裤子)
+tbl1.pak	0x013C5891	Soul Work Clothes (Shoes)	灵魂工作服装(鞋子)
+tbl1.pak	0x013C62A3	Practitioner Battle Armor (Top) EX	修行者战斗盔甲(上衣)EX
+tbl1.pak	0x013C6353	Practitioner Battle Armor (Pants) EX	修行者战斗盔甲(裤子)EX
+tbl1.pak	0x013C6407	Practitioner Battle Armor (Shoes) EX	修行者战斗盔甲(鞋子)EX
+tbl1.pak	0x013C66DF	Practitioner Magic Bucket Clothes (Top) EX	修行者魔法桶服装(上衣)EX
+tbl1.pak	0x013C679B	V,Practitioner Magic Bucket Clothes (Pants) EX	V、修行者魔法桶服装(裤子)EX
+tbl1.pak	0x013C685F	V,Practitioner Magic Bucket Clothes (Shoes) EX	V、修行者魔法桶服装(鞋子)EX
+tbl1.pak	0x013C6927	Battle Armor (Top) EX	战斗盔甲(上衣)EX
+tbl1.pak	0x013C69D3	Battle Armor (Pants) EX	战斗盔甲(裤子)EX
+tbl1.pak	0x013C6A83	Battle Armor (Shoes) EX	战斗盔甲(鞋子)EX
+tbl1.pak	0x013C6E91	Magic Bucket Clothes (Top) EX	魔法桶服装(上衣)EX
+tbl1.pak	0x013C6F53	Magic Bucket Clothes (Pants) EX	魔法桶服装(裤子)EX
+tbl1.pak	0x013C7019	Magic Bucket Clothes (Shoes) EX	魔法桶服装(鞋子)EX
+tbl1.pak	0x013C70DF	Gale Magic Bucket Suit (Top) EX	疾风魔法桶套装(上衣)EX
+tbl1.pak	0x013C72C7	Dark Battle Armor (Top) EX	黑暗战斗盔甲(上衣)EX
+tbl1.pak	0x013C734F	Dark Battle Armor (Pants) EX	黑暗战斗盔甲(裤子)EX
+tbl1.pak	0x013C73DB	Dark Battle Armor (Shoes) EX	黑暗战斗盔甲(鞋子)EX
+tbl1.pak	0x013C7467	Magic Thunder Clothes (Top) EX	魔法雷霆服装(上衣)EX
+tbl1.pak	0x013C7527	V Magic Thunder Clothes (Pants) EX	V魔法雷霆服装(裤子)EX
+tbl1.pak	0x013C75EF	V Magic Thunder Clothes (Shoes) EX	V魔法雷霆服装(鞋子)EX
+tbl1.pak	0x013C7A01	Magic Battle Clothes (Top) EX	魔法战斗服装(上衣)EX
+tbl1.pak	0x013C7A8D	Magic Battle Clothes (Pants) EX	魔法战斗服装(裤子)EX
+tbl1.pak	0x013C7B1D	Magic Battle Clothes (Shoes) EX	魔法战斗服装(鞋子)EX
+tbl1.pak	0x013C7C4F	Dragon Magic Bucket Suit (Pants) EX	龙魔法桶套装(裤子)EX
+tbl1.pak	0x013C7CF5	Dragon Magic Bucket Suit (Shoes) EX	龙魔法桶套装(鞋子)EX
+tbl1.pak	0x013C83E9	Meteor Devil Suit (Top) EX	流星魔鬼套装(上衣)EX
+tbl1.pak	0x013C8491	Meteor Devil Suit (Pants) EX	流星魔鬼套装(裤子)EX
+tbl1.pak	0x013C853D	Meteor Devil Suit (Shoes) EX	流星魔鬼套装(鞋子)EX
+tbl1.pak	0x013C8A21	V Awakening Magic Clothes (Top) EX	V觉醒魔法服装(上衣)EX
+tbl1.pak	0x013C8AE9	Awakening Magic Clothes (Pants) EX	觉醒魔法服装(裤子)EX
+tbl1.pak	0x013C8BB1	Awakening Magic Clothes (Shoes) EX	觉醒魔法服装(鞋子)EX
+tbl1.pak	0x013C8C79	Tiamat Battle Suit (Top) EX	提亚马特战斗套装(上衣)EX
+tbl1.pak	0x013C8D11	Tiamat Battle Suit (Pants) EX	提亚马特战斗套装(裤子)EX
+tbl1.pak	0x013C8DAD	Tiamat Battle Suit (Shoes) EX	提亚马特战斗套装(鞋子)EX
+tbl1.pak	0x013C8E49	Tiamat Battle Clothes (Top) EX	提亚马特战斗服装(上衣)EX
+tbl1.pak	0x013C8EE3	V Tiamat Battle Clothes (Pants) EX	V提亚马特战斗服装(裤子)EX
+tbl1.pak	0x013C8F85	V Tiamat Battle Clothes (Shoes) EX	V提亚马特战斗服装(鞋子)EX
+tbl1.pak	0x013C902B	True Magic Gear (Top) EX	真魔法装备(上衣)EX
+tbl1.pak	0x013C90EB	True Magic Gear (Pants) EX	真魔法装备(裤子)EX
+tbl1.pak	0x013C91AF	True Magic Gear (Shoes) EX	真魔法装备(鞋子)EX
+tbl1.pak	0x013C96A7	V Strong Magic Battle Gear (Pants)	V强力魔法战斗装备(裤子)
+tbl1.pak	0x013C97AF	V Strong Magic Battle Gear (Shoes)	V强力魔法战斗装备(鞋子)
+tbl1.pak	0x013C98BB	Warrior Magic Suit (Top) EX	那美克战士魔法套装(上衣)EX
+tbl1.pak	0x013C98FF	Warrior Magic Suit (Pants) EX	那美克战士魔法套装(裤子)EX
+tbl1.pak	0x013C9947	Warrior Magic Suit (Shoes) EX	那美克战士魔法套装(鞋子)EX
+tbl1.pak	0x013C998F	Blessed Magic Gear (Top) EX	祝福魔法装备(上衣)EX
+tbl1.pak	0x013C99D3	Blessed Magic Gear (Pants) EX	祝福魔法装备(裤子)EX
+tbl1.pak	0x013C9A1B	Blessed Magic Gear (Shoes) EX	祝福魔法装备(鞋子)EX
+tbl1.pak	0x013C9DED	Namek Combat Gear (Top) EX	那美克战斗装备(上衣)EX
+tbl1.pak	0x013C9E2F	Namek Combat Gear (Pants) EX	那美克战斗装备(裤子)EX
+tbl1.pak	0x013C9E75	Namek Combat Gear (Shoes) EX	那美克战斗装备(鞋子)EX
+tbl1.pak	0x013C9EBB	Namek Battle Armor (Top) EX	那美克战斗盔甲(上衣)EX
+tbl1.pak	0x013C9EFF	Namek Battle Armor (Pants) EX	那美克战斗盔甲(裤子)EX
+tbl1.pak	0x013C9F47	Namek Battle Armor (Shoes) EX	那美克战斗盔甲(鞋子)EX
+tbl1.pak	0x013CA063	Armored Combat Gear (Top) N	装甲战斗装备(上衣)N
+tbl1.pak	0x013CA0F9	Armored Combat Gear (Pants) N	装甲战斗装备(裤子)N
+tbl1.pak	0x013CA193	Armored Combat Gear (Shoes) N	装甲战斗装备(鞋子)N
+tbl1.pak	0x013CA22D	Combat Force Gear (Top) N	战斗力量装备(上衣)N
+tbl1.pak	0x013CA2CB	Combat Force Gear (Pants) N	战斗力量装备(裤子)N
+tbl1.pak	0x013CA36D	Combat Force Gear (Shoes) N	战斗力量装备(鞋子)N
+tbl1.pak	0x013CA40F	Combat Gear (Top) N	战斗装备(上衣)N
+tbl1.pak	0x013CA4A9	Combat Gear (Pants) N	战斗装备(裤子)N
+tbl1.pak	0x013CA547	Combat Gear (Shoes) N	战斗装备(鞋子)N
+tbl1.pak	0x013CA5E5	Advanced Combat Gear (Top) N	高级战斗装备(上衣)N
+tbl1.pak	0x013CA687	Advanced Combat Gear (Pants) N	高级战斗装备(裤子)N
+tbl1.pak	0x013CA72D	Advanced Combat Gear (Shoes) N	高级战斗装备(鞋子)N
+tbl1.pak	0x013CA7D3	Super Combat Gear (Top) N	超级战斗装备(上衣)N
+tbl1.pak	0x013CA853	Super Combat Gear (Pants) N	超级战斗装备(裤子)N
+tbl1.pak	0x013CA8D7	Super Combat Gear (Shoes) N	超级战斗装备(鞋子)N
+tbl1.pak	0x013CA95B	Ultimate Combat Gear (Top) N	终极战斗装备(上衣)N
+tbl1.pak	0x013CAA21	Ultimate Combat Gear (Pants) N	终极战斗装备(裤子)N
+tbl1.pak	0x013CAAEB	Ultimate Combat Gear (Shoes) N	终极战斗装备(鞋子)N
+tbl1.pak	0x013CAFF1	Firepower Combat Gear (Top) N	火力战斗装备(上衣)N
+tbl1.pak	0x013CB087	Firepower Combat Gear (Pants) N	火力战斗装备(裤子)N
+tbl1.pak	0x013CB121	Firepower Combat Gear (Shoes) N	火力战斗装备(鞋子)N
+tbl1.pak	0x013CB1BB	Galactic Combat Gear (Top) N	银河战斗装备(上衣)N
+tbl1.pak	0x013CB289	Galactic Combat Gear (Pants) N	银河战斗装备(裤子)N
+tbl1.pak	0x013CB35B	Galactic Combat Gear (Shoes) N	银河战斗装备(鞋子)N
+tbl1.pak	0x013CB4DB	Practitioner Dragon Suit (Pants) EX	修行者龙套装(裤子)EX
+tbl1.pak	0x013CB58D	Practitioner Dragon Suit (Shoes) EX	修行者龙套装(鞋子)EX
+tbl1.pak	0x013CB63F	Green Dragon Suit (Top) EX	绿色龙套装(上衣)EX
+tbl1.pak	0x013CB6B5	Green Dragon Suit (Pants) EX	绿色龙套装(裤子)EX
+tbl1.pak	0x013CB72F	Green Dragon Suit (Shoes) EX	绿色龙套装(鞋子)EX
+tbl1.pak	0x013CB7A9	Practitioner Magic Battle Suit (Top) EX	修行者魔法战斗套装(上衣)EX
+tbl1.pak	0x013CB863	Practitioner Magic Battle Suit (Pants) EX	修行者魔法战斗套装(裤子)EX
+tbl1.pak	0x013CB921	Practitioner Magic Battle Suit (Shoes) EX	修行者魔法战斗套装(鞋子)EX
+tbl1.pak	0x013CB9DF	Dragon Suit (Top) EX	龙套装(上衣)EX
+tbl1.pak	0x013CBA89	Dragon Suit (Pants) EX	龙套装(裤子)EX
+tbl1.pak	0x013CBB37	Dragon Suit (Shoes) EX	龙套装(鞋子)EX
+tbl1.pak	0x013CBBE5	Healing Magic Battle Suit (Top) EX	治疗魔法战斗套装(上衣)EX
+tbl1.pak	0x013CBC6B	Healing Magic Battle Suit (Pants) EX	治疗魔法战斗套装(裤子)EX
+tbl1.pak	0x013CBCF5	Healing Magic Battle Suit (Shoes) EX	治疗魔法战斗套装(鞋子)EX
+tbl1.pak	0x013CBD7F	Healing Dragon Suit (Top) EX	治疗龙套装(上衣)EX
+tbl1.pak	0x013CBDEF	Healing Dragon Suit (Pants) EX	治疗龙套装(裤子)EX
+tbl1.pak	0x013CBE63	Healing Dragon Suit (Shoes) EX	治疗龙套装(鞋子)EX
+tbl1.pak	0x013CBED7	Magic Battle Suit (Top) EX	魔法战斗套装(上衣)EX
+tbl1.pak	0x013CBF63	Magic Battle Suit (Pants) EX	魔法战斗套装(裤子)EX
+tbl1.pak	0x013CBFF3	Magic Battle Suit (Shoes) EX	魔法战斗套装(鞋子)EX
+tbl1.pak	0x013CC083	Gale Magic Armor (Top) EX	疾风魔法盔甲(上衣)EX
+tbl1.pak	0x013CC121	Gale Magic Armor (Pants) EX	疾风魔法盔甲(裤子)EX
+tbl1.pak	0x013CC1C3	Gale Magic Armor (Shoes) EX	疾风魔法盔甲(鞋子)EX
+tbl1.pak	0x013CCCE3	Palm Magic Suit (Top) EX	棕榈魔法套装(上衣)EX
+tbl1.pak	0x013CCD71	Palm Magic Suit (Pants) EX	棕榈魔法套装(裤子)EX
+tbl1.pak	0x013CCE03	Palm Magic Suit (Shoes) EX	棕榈魔法套装(鞋子)EX
+tbl1.pak	0x013CCE95	Dragon Leather Suit (Top) EX	龙皮革套装(上衣)EX
+tbl1.pak	0x013CCF65	Dragon Leather Suit (Pants) EX	龙皮革套装(裤子)EX
+tbl1.pak	0x013CD039	Dragon Leather Suit (Shoes) EX	龙皮革套装(鞋子)EX
+tbl1.pak	0x013CEF43	Namek Suit (Top) EX	那美克套装(上衣)EX
+tbl1.pak	0x013CEF77	Namek Suit (Pants) EX	那美克套装(裤子)EX
+tbl1.pak	0x013CEFAF	Namek Suit (Shoes) EX	那美克套装(鞋子)EX
+tbl1.pak	0x013CEFE7	Namek Clothes (Top) EX	那美克服装(上衣)EX
+tbl1.pak	0x013CF021	Namek Clothes (Pants) EX	那美克服装(裤子)EX
+tbl1.pak	0x013CF05F	Namek Clothes (Shoes) EX	那美克服装(鞋子)EX
+tbl1.pak	0x013CF729	Magic Clothes (Top) EX	魔法服装(上衣)EX
+tbl1.pak	0x013CF7D7	Magic Clothes (Pants) EX	魔法服装(裤子)EX
+tbl1.pak	0x013CF889	Magic Clothes (Shoes) EX	魔法服装(鞋子)EX
+tbl1.pak	0x013CFC87	Super Magic Clothes  (Top) EX	超级魔法服装(上衣)EX
+tbl1.pak	0x013CFD43	Super Magic Clothes  (Pants) EX	超级魔法服装(裤子)EX
+tbl1.pak	0x013CFE03	Super Magic Clothes  (Shoes) EX	超级魔法服装(鞋子)EX
+tbl1.pak	0x013CFEC3	Strong Black Armor (Top) EX	强力黑色盔甲(上衣)EX
+tbl1.pak	0x013CFF59	Strong Black Armor (Pants) EX	强力黑色盔甲(裤子)EX
+tbl1.pak	0x013CFFF3	Strong Black Armor (Shoes) EX	强力黑色盔甲(鞋子)EX
+tbl1.pak	0x013D008D	Magic Rubber Suit (Top) EX	魔法橡胶套装(上衣)EX
+tbl1.pak	0x013D0167	Magic Rubber Suit (Pants) EX	魔法橡胶套装(裤子)EX
+tbl1.pak	0x013D0245	Magic Rubber Suit (Shoes) EX	魔法橡胶套装(鞋子)EX
+tbl1.pak	0x013D04F3	Classic Magic Rubber Suit (Top) EX	经典魔法橡胶套装(上衣)EX
+tbl1.pak	0x013D05BD	Classic Magic Rubber Suit (Pants) EX	经典魔法橡胶套装(裤子)EX
+tbl1.pak	0x013D068B	Classic Magic Rubber Suit (Shoes) EX	经典魔法橡胶套装(鞋子)EX
+tbl1.pak	0x013D0759	Lotus Magic Suit (Top) EX	莲花魔法套装(上衣)EX
+tbl1.pak	0x013D07D3	Lotus Magic Suit (Pants) EX	莲花魔法套装(裤子)EX
+tbl1.pak	0x013D0851	Lotus Magic Suit (Shoes) EX	莲花魔法套装(鞋子)EX
+tbl1.pak	0x013D08CF	Tasty Magic Clothes(Top) EX	美味魔法服装(上衣)EX
+tbl1.pak	0x013D0947	Tasty Magic Clothes(Pants) EX	美味魔法服装(裤子)EX
+tbl1.pak	0x013D09C3	Tasty Magic Clothes(Shoes) EX	美味魔法服装(鞋子)EX
+tbl1.pak	0x013D0A3F	Vital Magic Suit (Top) EX	活力魔法套装(上衣)EX
+tbl1.pak	0x013D0AE5	Vital Magic Suit (Pants) EX	活力魔法套装(裤子)EX
+tbl1.pak	0x013D0B8F	Vital Magic Suit (Shoes) EX	活力魔法套装(鞋子)EX
+tbl1.pak	0x013D0C39	Magic Dragon Suit (Top) EX	魔法龙套装(上衣)EX
+tbl1.pak	0x013D0CB1	Magic Dragon Suit (Pants) EX	魔法龙套装(裤子)EX
+tbl1.pak	0x013D0D2D	Magic Dragon Suit (Shoes) EX	魔法龙套装(鞋子)EX
+tbl1.pak	0x013D0DA9	Crystal Gem Clothes (Top) EX	水晶宝石服装(上衣)EX
+tbl1.pak	0x013D0E5B	Crystal Gem Clothes (Pants) EX	水晶宝石服装(裤子)EX
+tbl1.pak	0x013D0F11	Crystal Gem Clothes (Shoes) EX	水晶宝石服装(鞋子)EX
+tbl1.pak	0x013D0FC7	Blue Magic Dragon (Top) EX	蓝色魔法龙(上衣)EX
+tbl1.pak	0x013D1057	Blue Magic Dragon (Pants) EX	蓝色魔法龙(裤子)EX
+tbl1.pak	0x013D10EB	Blue Magic Dragon (Shoes) EX	蓝色魔法龙(鞋子)EX
+tbl1.pak	0x013D1779	Diamond Magic Clothes (Top) EX	钻石魔法服装(上衣)EX
+tbl1.pak	0x013D183B	V Diamond Magic Clothes (Pants) EX	V钻石魔法服装(裤子)EX
+tbl1.pak	0x013D1905	V Diamond Magic Clothes (Shoes) EX	V钻石魔法服装(鞋子)EX
+tbl1.pak	0x013D22FF	Carnival Lotus Magic Suit (Top)	嘉年华莲花魔法套装(上衣)
+tbl1.pak	0x013D2EC3	Armored Combat Gear (Top) M	装甲战斗装备(上衣)M
+tbl1.pak	0x013D2F59	Armored Combat Gear (Pants) M	装甲战斗装备(裤子)M
+tbl1.pak	0x013D2FF3	Armored Combat Gear (Shoes) M	装甲战斗装备(鞋子)M
+tbl1.pak	0x013D308D	Combat Force Gear (Top) M	战斗力量装备(上衣)M
+tbl1.pak	0x013D312B	Combat Force Gear (Pants) M	战斗力量装备(裤子)M
+tbl1.pak	0x013D31CD	Combat Force Gear (Shoes) M	战斗力量装备(鞋子)M
+tbl1.pak	0x013D326F	Combat Gear (Top) M	战斗装备(上衣)M
+tbl1.pak	0x013D3309	Combat Gear (Pants) M	战斗装备(裤子)M
+tbl1.pak	0x013D33A7	Combat Gear (Shoes) M	战斗装备(鞋子)M
+tbl1.pak	0x013D3445	Advanced Combat Gear (Top) M	高级战斗装备(上衣)M
+tbl1.pak	0x013D34E7	Advanced Combat Gear (Pants) M	高级战斗装备(裤子)M
+tbl1.pak	0x013D358D	Advanced Combat Gear (Shoes) M	高级战斗装备(鞋子)M
+tbl1.pak	0x013D3633	Super Combat Gear (Top) M	超级战斗装备(上衣)M
+tbl1.pak	0x013D36B3	Super Combat Gear (Pants) M	超级战斗装备(裤子)M
+tbl1.pak	0x013D3737	Super Combat Gear (Shoes) M	超级战斗装备(鞋子)M
+tbl1.pak	0x013D37BB	Ultimate Combat Gear (Top) M	终极战斗装备(上衣)M
+tbl1.pak	0x013D3881	Ultimate Combat Gear (Pants) M	终极战斗装备(裤子)M
+tbl1.pak	0x013D394B	Ultimate Combat Gear (Shoes) M	终极战斗装备(鞋子)M
+tbl1.pak	0x013D3E51	Firepower Combat Gear (Top) M	火力战斗装备(上衣)M
+tbl1.pak	0x013D3EE7	Firepower Combat Gear (Pants) M	火力战斗装备(裤子)M
+tbl1.pak	0x013D3F81	Firepower Combat Gear (Shoes) M	火力战斗装备(鞋子)M
+tbl1.pak	0x013D401B	Galactic Combat Gear (Top) M	银河战斗装备(上衣)M
+tbl1.pak	0x013D40E9	Galactic Combat Gear(Pants) M	银河战斗装备(裤子)M
+tbl1.pak	0x013D41B9	Galactic Combat Gear (Shoes) M	银河战斗装备(鞋子)M
+tbl1.pak	0x013D4BFB	Simple Magic Clothes (Top) EX	简单魔法服装(上衣)EX
+tbl1.pak	0x013D4CA7	Simple Magic Clothes (Pants) EX	简单魔法服装(裤子)EX
+tbl1.pak	0x013D4D57	Simple Magic Clothes (Shoes) EX	简单魔法服装(鞋子)EX
+tbl1.pak	0x013D4E07	Broadwood Clothes (Top) EX	布洛德伍德服装(上衣)EX
+tbl1.pak	0x013D4EE9	Broadwood Clothes (Pants) EX	布洛德伍德服装(裤子)EX
+tbl1.pak	0x013D4FCF	Broadwood Clothes (Shoes) EX	布洛德伍德服装(鞋子)EX
+tbl1.pak	0x013D52B5	Sweet Rubber Clothes (Top) EX	甜橡胶服装(上衣)EX
+tbl1.pak	0x013D5395	Sweet Rubber Clothes (Pants) EX	甜橡胶服装(裤子)EX
+tbl1.pak	0x013D5479	Sweet Rubber Clothes (Shoes) EX	甜橡胶服装(鞋子)EX
+tbl1.pak	0x013D59DB	Magic Surprise Suit (Top) EX	魔法惊喜套装(上衣)EX
+tbl1.pak	0x013D5A5F	Magic Surprise Suit (Pants) EX	魔法惊喜套装(裤子)EX
+tbl1.pak	0x013D5AE7	Magic Surprise Suit (Shoes) EX	魔法惊喜套装(鞋子)EX
+tbl1.pak	0x013D5B6F	Magic Comfort Suit (Top) EX	魔法舒适套装(上衣)EX
+tbl1.pak	0x013D5C1F	Magic Comfort Suit (Pants) EX	魔法舒适套装(裤子)EX
+tbl1.pak	0x013D5CD3	Magic Comfort Suit (Shoes) EX	魔法舒适套装(鞋子)EX
+tbl1.pak	0x013D5D87	Broadwood Magic Suit (Top) EX	布洛德伍德魔法套装(上衣)EX
+tbl1.pak	0x013D5E37	Broadwood Magic Suit (Pants) EX	布洛德伍德魔法套装(裤子)EX
+tbl1.pak	0x013D5EEB	Broadwood Magic Suit (Shoes) EX	布洛德伍德魔法套装(鞋子)EX
+tbl1.pak	0x013D5F9F	Wonder Dragon Clothes (Top) EX	意魔人龙服装(上衣)EX
+tbl1.pak	0x013D601B	V Wonder Dragon Clothes (Pants) EX	V意龙服装(裤子)EX
+tbl1.pak	0x013D609F	V Wonder Dragon Clothes (Shoes) EX	V意龙服装(鞋子)EX
+tbl1.pak	0x013D6127	Crystal Gem Suit (Top) EX	水晶宝石套装(上衣)EX
+tbl1.pak	0x013D61C7	Crystal Gem Suit (Pants) EX	水晶宝石套装(裤子)EX
+tbl1.pak	0x013D626B	Crystal Gem Suit (Shoes) EX	水晶宝石套装(鞋子)EX
+tbl1.pak	0x013D630B	V Wonder Blue Dragon Suit (Top) EX	V意蓝色龙套装(上衣)EX
+tbl1.pak	0x013D6397	Wonder Blue Dragon Suit (Pants) EX	意魔人蓝色龙套装(裤子)EX
+tbl1.pak	0x013D6423	Wonder Blue Dragon Suit (Shoes) EX	意魔人蓝色龙套装(鞋子)EX
+tbl1.pak	0x013D6B21	Diamond Broadwood Magic Suit (Top) EX	钻石布洛德伍德魔法套装(上衣)EX
+tbl1.pak	0x013D6C01	Diamond Broadwood Magic Suit (Pants) EX	钻石布洛德伍德魔法套装(裤子)EX
+tbl1.pak	0x013D6CE5	Diamond Broadwood Magic Suit (Shoes) EX	钻石布洛德伍德魔法套装(鞋子)EX
+tbl1.pak	0x013D6DC9	Magic Surprise Suit DD Suit (Top) EX	魔法惊喜套装DD套装(上衣)EX
+tbl1.pak	0x013D7029	Magic Comfort Suit D (Top) EX	魔法舒适套装D(上衣)EX
+tbl1.pak	0x013D70D5	Magic Comfort Suit D (Pants) EX	魔法舒适套装D(裤子)EX
+tbl1.pak	0x013D7185	Magic Comfort Suit D (Shoes) EX	魔法舒适套装D(鞋子)EX
+tbl1.pak	0x013D790F	Magic Comfort Suit Z (Pants)	魔法舒适套装Z(裤子)
+tbl1.pak	0x013D7FF9	Ultra Magic Surprise Suit Z(Top) EX	极限魔法惊喜套装Z(上衣)EX
+tbl1.pak	0x013D804D	Ultra Magic Surprise Suit Z(Pants) EX	极限魔法惊喜套装Z(裤子)EX
+tbl1.pak	0x013D80A5	Ultra Magic Surprise Suit Z(Shoes) EX	极限魔法惊喜套装Z(鞋子)EX
+tbl1.pak	0x013D80FD	Magic Comfort Suit Z(Top) EX	魔法舒适套装Z(上衣)EX
+tbl1.pak	0x013D8143	Magic Comfort Suit Z(Pants) EX	魔法舒适套装Z(裤子)EX
+tbl1.pak	0x013D818D	Magic Comfort Suit Z(Shoes) EX	魔法舒适套装Z(鞋子)EX
+tbl1.pak	0x013F6039	P Alien Gloves R	P异星手套R
+tbl1.pak	0x013F6159	P Suspicious Gloves R	P可疑手套R
+tbl1.pak	0x013F6251	P Special A Class Gloves R	P特殊A职业手套R
+tbl1.pak	0x013F6373	P Basic Dragon Gloves R	P基础龙手套R
+tbl1.pak	0x013F6ED9	Alien Gloves R	异星手套R
+tbl1.pak	0x013F6FF5	Suspicious Gloves R	可疑手套R
+tbl1.pak	0x013F70E9	Special A Class Gloves R	特殊A职业手套R
+tbl1.pak	0x013F7207	Basic Dragon Gloves R	基础龙手套R
+tbl1.pak	0x013F7C59	Warrior Gloves	那美克战士手套
+tbl1.pak	0x013F83C9	E Alien Gloves R	E异星手套R
+tbl1.pak	0x013F84E9	E Suspicious Gloves R	E可疑手套R
+tbl1.pak	0x013F85E1	E Special A Class Gloves R	E特殊A职业手套R
+tbl1.pak	0x013F8703	E Basic Dragon Gloves R	E基础龙手套R
+tbl1.pak	0x01401849	Light Armor R	光盔甲R
+tbl1.pak	0x01404011	Practitioner Martial Arts Clothes (Top) R	修行者武道服装(上衣)R
+tbl1.pak	0x014040DB	Practitioner Martial Arts Clothes (Pants) R	修行者武道服装(裤子)R
+tbl1.pak	0x014041A9	Practitioner Martial Arts Clothes (Shoes) R	修行者武道服装(鞋子)R
+tbl1.pak	0x01404683	Martial Arts Clothes (Top) R	武道服装(上衣)R
+tbl1.pak	0x01404749	Martial Arts Clothes (Pants) R	武道服装(裤子)R
+tbl1.pak	0x01404813	Martial Arts Clothes (Shoes) R	武道服装(鞋子)R
+tbl1.pak	0x01404EA7	Jade Battle Suit (Top) R	翡翠战斗套装(上衣)R
+tbl1.pak	0x01404F33	Jade Battle Suit (Pants) R	翡翠战斗套装(裤子)R
+tbl1.pak	0x01404FC3	Jade Battle Suit (Shoes) R	翡翠战斗套装(鞋子)R
+tbl1.pak	0x01405053	CC Martial Arts Clothes (Top) R	CC武道服装(上衣)R
+tbl1.pak	0x01405107	CC Martial Arts Clothes (Pants) R	CC武道服装(裤子)R
+tbl1.pak	0x014051BF	CC Martial Arts Clothes (Shoes) R	CC武道服装(鞋子)R
+tbl1.pak	0x01405277	Red Lizard Suit (Top) R	红色蜥蜴套装(上衣)R
+tbl1.pak	0x014052FB	Red Lizard Suit (Pants) R	红色蜥蜴套装(裤子)R
+tbl1.pak	0x01405383	Red Lizard Suit (Shoes) R	红色蜥蜴套装(鞋子)R
+tbl1.pak	0x0140540B	Classic CC Martial Arts Clothes (Top) R	经典CC武道服装(上衣)R
+tbl1.pak	0x01405523	Classic CC Martial Arts Clothes (Pants) R	经典CC武道服装(裤子)R
+tbl1.pak	0x0140563F	Classic CC Martial Arts Clothes (Shoes) R	经典CC武道服装(鞋子)R
+tbl1.pak	0x0140575B	Invincible Gear (Top) R	无敌装备(上衣)R
+tbl1.pak	0x01405807	Invincible Gear (Pants) R	无敌装备(裤子)R
+tbl1.pak	0x014058B7	Invincible Gear (Shoes) R	无敌装备(鞋子)R
+tbl1.pak	0x01405B07	Long Combat Suit (Top) R	长战斗套装(上衣)R
+tbl1.pak	0x01405B77	Long Combat Suit (Pants) R	长战斗套装(裤子)R
+tbl1.pak	0x01405BEB	Long Combat Suit (Shoes) R	长战斗套装(鞋子)R
+tbl1.pak	0x01405C5F	Korin Martial Arts Clothes (Top) R	卡林武道服装(上衣)R
+tbl1.pak	0x01405D7F	Korin Martial Arts Clothes (Pants) R	卡林武道服装(裤子)R
+tbl1.pak	0x01405EA3	Korin Martial Arts Clothes (Shoes) R	卡林武道服装(鞋子)R
+tbl1.pak	0x01405FC7	Crystal Gem Battle Armor (Top) R	水晶宝石战斗盔甲(上衣)R
+tbl1.pak	0x01406073	Crystal Gem Battle Armor (Pants) R	水晶宝石战斗盔甲(裤子)R
+tbl1.pak	0x01406123	Crystal Gem Battle Armor (Shoes) R	水晶宝石战斗盔甲(鞋子)R
+tbl1.pak	0x014061D3	Korin Chief Martial Arts Clothes (Top) R	卡林首领武道服装(上衣)R
+tbl1.pak	0x01406281	Korin Chief Martial Arts Clothes (Pants) R	卡林首领武道服装(裤子)R
+tbl1.pak	0x01406333	Korin Chief Martial Arts Clothes (Shoes) R	卡林首领武道服装(鞋子)R
+tbl1.pak	0x01406AB3	Della Army Combat Armor (Top) R	德拉军战斗盔甲(上衣)R
+tbl1.pak	0x01406B67	Della Army Combat Armor (Pants) R	德拉军战斗盔甲(裤子)R
+tbl1.pak	0x01406C1F	Della Army Combat Armor (Shoes) R	德拉军战斗盔甲(鞋子)R
+tbl1.pak	0x01406CD7	Magic Sword Battle Clothes (Top) R	魔法剑战斗服装(上衣)R
+tbl1.pak	0x01406DBB	Magic Sword Battle Clothes (Pants) R	魔法剑战斗服装(裤子)R
+tbl1.pak	0x01406EA3	Magic Sword Battle Clothes (Shoes) R	魔法剑战斗服装(鞋子)R
+tbl1.pak	0x01407DED	Injection New Gear (Top) R	注射新装备(上衣)R
+tbl1.pak	0x01407E2F	Injection New Gear (Pants) R	注射新装备(裤子)R
+tbl1.pak	0x01407E75	Injection New Gear (Shoes) R	注射新装备(鞋子)R
+tbl1.pak	0x01409359	Practitioner Spirit Clothes (Top) R	修行者精神服装(上衣)R
+tbl1.pak	0x01409419	Practitioner Spirit Clothes (Pants) R	修行者精神服装(裤子)R
+tbl1.pak	0x014094DD	Practitioner Spirit Clothes (Shoes) R	修行者精神服装(鞋子)R
+tbl1.pak	0x0140978F	Practitioner Spirit Suit (Top) R	修行者精神套装(上衣)R
+tbl1.pak	0x0140983B	Practitioner Spirit Suit (Pants) R	修行者精神套装(裤子)R
+tbl1.pak	0x014098EB	Practitioner Spirit Suit (Shoes) R	修行者精神套装(鞋子)R
+tbl1.pak	0x0140999B	Spirit Clothes (Top) R	精神服装(上衣)R
+tbl1.pak	0x01409A57	Spirit Clothes (Pants) R	精神服装(裤子)R
+tbl1.pak	0x01409B17	Spirit Clothes (Shoes) R	精神服装(鞋子)R
+tbl1.pak	0x01409D9B	Earth Spirit Clothes (Top) R	大地精神服装(上衣)R
+tbl1.pak	0x01409E13	Earth Spirit Clothes (Pants) R	大地精神服装(裤子)R
+tbl1.pak	0x01409E8F	Earth Spirit Clothes (Shoes) R	大地精神服装(鞋子)R
+tbl1.pak	0x01409F0B	Spirit Suit (Top) R	精神套装(上衣)R
+tbl1.pak	0x01409FC1	Spirit Suit (Pants) R	精神套装(裤子)R
+tbl1.pak	0x0140A07B	Spirit Suit (Shoes) R	精神套装(鞋子)R
+tbl1.pak	0x0140A3BF	CC Spirit Clothes (Top) R	CC精神服装(上衣)R
+tbl1.pak	0x0140A475	CC Spirit Clothes (Pants) R	CC精神服装(裤子)R
+tbl1.pak	0x0140A52F	CC Spirit Clothes (Shoes) R	CC精神服装(鞋子)R
+tbl1.pak	0x0140A5E9	Korin Spirit Suit (Top) R	卡林精神套装(上衣)R
+tbl1.pak	0x0140A65D	Korin Spirit Suit (Pants) R	卡林精神套装(裤子)R
+tbl1.pak	0x0140A6D5	Korin Spirit Suit (Shoes) R	卡林精神套装(鞋子)R
+tbl1.pak	0x0140A74D	Classic CC Spirit Clothes (Top) R	经典CC精神服装(上衣)R
+tbl1.pak	0x0140A839	Classic CC Spirit Clothes (Pants) R	经典CC精神服装(裤子)R
+tbl1.pak	0x0140A929	Classic CC Spirit Clothes (Shoes) R	经典CC精神服装(鞋子)R
+tbl1.pak	0x0140AA19	Turtle Clothes (Top) R	龟服装(上衣)R
+tbl1.pak	0x0140AAA3	Turtle Clothes (Pants) R	龟服装(裤子)R
+tbl1.pak	0x0140AB31	Turtle Clothes (Shoes) R	龟服装(鞋子)R
+tbl1.pak	0x0140AF6B	Korin Spirit Clothes (Top) R	卡林精神服装(上衣)R
+tbl1.pak	0x0140B07F	Korin Spirit Clothes (Pants) R	卡林精神服装(裤子)R
+tbl1.pak	0x0140B197	Korin Spirit Clothes (Shoes) R	卡林精神服装(鞋子)R
+tbl1.pak	0x0140B2AF	Flame Spirit Suit (Top) R	火焰精神套装(上衣)R
+tbl1.pak	0x0140B35D	Flame Spirit Suit (Pants) R	火焰精神套装(裤子)R
+tbl1.pak	0x0140B40F	Flame Spirit Suit (Shoes) R	火焰精神套装(鞋子)R
+tbl1.pak	0x0140B909	Star Crane Clothes (Top) R	星鹤服装(上衣)R
+tbl1.pak	0x0140B9B3	Star Crane Clothes (Pants) R	星鹤服装(裤子)R
+tbl1.pak	0x0140BA61	Star Crane Clothes (Shoes) R	星鹤服装(鞋子)R
+tbl1.pak	0x0140BB0F	Purple Battle Suit (Top) R	紫色战斗套装(上衣)R
+tbl1.pak	0x0140BBA5	Purple Battle Suit (Pants) R	紫色战斗套装(裤子)R
+tbl1.pak	0x0140BC3F	Purple Battle Suit (Shoes) R	紫色战斗套装(鞋子)R
+tbl1.pak	0x0140BCD9	Phoenix Spirit Suit (Top) R	凤凰精神套装(上衣)R
+tbl1.pak	0x0140BD61	Phoenix Spirit Suit (Pants) R	凤凰精神套装(裤子)R
+tbl1.pak	0x0140BDED	Phoenix Spirit Suit (Shoes) R	凤凰精神套装(鞋子)R
+tbl1.pak	0x0140CCE7	Military Turtle Clothes (Top) R	军用龟服装(上衣)R
+tbl1.pak	0x0140CD33	Military Turtle Clothes (Pants) R	军用龟服装(裤子)R
+tbl1.pak	0x0140CD83	Military Turtle Clothes (Shoes) R	军用龟服装(鞋子)R
+tbl1.pak	0x0140CDD3	Valkyrie Crane Clothes (Top) R	女武神鹤服装(上衣)R
+tbl1.pak	0x0140CE1D	Valkyrie Crane Clothes (Pants) R	女武神鹤服装(裤子)R
+tbl1.pak	0x0140CE6B	Valkyrie Crane Clothes (Shoes) R	女武神鹤服装(鞋子)R
+tbl1.pak	0x0140D061	Ultra Turtle Clothes Z(Top) R	极限龟服装Z(上衣)R
+tbl1.pak	0x0140D0A9	Ultra Turtle Clothes Z(Pants) R	极限龟服装Z(裤子)R
+tbl1.pak	0x0140D0F5	Ultra Turtle Clothes Z(Shoes) R	极限龟服装Z(鞋子)R
+tbl1.pak	0x0140D141	Super Crane Suit Z (Top) R	超级鹤套装Z(上衣)R
+tbl1.pak	0x0140D183	Super Crane Suit Z (Pants) R	超级鹤套装Z(裤子)R
+tbl1.pak	0x0140D1C9	Super Crane Suit Z (Shoes) R	超级鹤套装Z(鞋子)R
+tbl1.pak	0x0140D589	Engineer Kit (Top) R	工程师工具包(上衣)R
+tbl1.pak	0x0140D5BF	Engineer Kit (Pants) R	工程师工具包(裤子)R
+tbl1.pak	0x0140D5F9	Engineer Kit (Shoes) R	工程师工具包(鞋子)R
+tbl1.pak	0x0140D7DB	Work Clothes (Top) R	工作服装(上衣)R
+tbl1.pak	0x0140D811	Work Clothes (Pants) R	工作服装(裤子)R
+tbl1.pak	0x0140D84B	Work Clothes (Shoes) R	工作服装(鞋子)R
+tbl1.pak	0x0140D959	CC Engineer Kit (Top) R	CC工程师工具包(上衣)R
+tbl1.pak	0x0140D995	CC Engineer Kit (Pants) R	CC工程师工具包(裤子)R
+tbl1.pak	0x0140D9D5	CC Engineer Kit (Shoes) R	CC工程师工具包(鞋子)R
+tbl1.pak	0x0140DC8B	Pilot Clothes (Top) R	驾驶员服装(上衣)R
+tbl1.pak	0x0140DCC3	Pilot Clothes (Pants) R	驾驶员服装(裤子)R
+tbl1.pak	0x0140DCFF	Pilot Clothes (Shoes) R	驾驶员服装(鞋子)R
+tbl1.pak	0x0140DD3B	Dragon Work Clothes (Top) R	龙工作服装(上衣)R
+tbl1.pak	0x0140DD7F	Dragon Work Clothes (Pants) R	龙工作服装(裤子)R
+tbl1.pak	0x0140DDC7	Dragon Work Clothes (Shoes) R	龙工作服装(鞋子)R
+tbl1.pak	0x0140DEFB	Flame Work Clothes (Top) R	火焰工作服装(上衣)R
+tbl1.pak	0x0140DF3D	Flame Work Clothes (Pants) R	火焰工作服装(裤子)R
+tbl1.pak	0x0140DF83	Flame Work Clothes (Shoes) R	火焰工作服装(鞋子)R
+tbl1.pak	0x0140E17D	Space Pilot Clothes (Top) R	空间驾驶员服装(上衣)R
+tbl1.pak	0x0140E1C1	Space Pilot Clothes (Pants) R	空间驾驶员服装(裤子)R
+tbl1.pak	0x0140E209	Space Pilot Clothes (Shoes) R	空间驾驶员服装(鞋子)R
+tbl1.pak	0x0140E325	Phoenix Work Clothes (Top) R	凤凰工作服装(上衣)R
+tbl1.pak	0x0140E36B	Phoenix Work Clothes (Pants) R	凤凰工作服装(裤子)R
+tbl1.pak	0x0140E3B5	Phoenix Work Clothes (Shoes) R	凤凰工作服装(鞋子)R
+tbl1.pak	0x0140E3FF	True Dragon Warrior Gear (Top) R	真龙战士装备(上衣)R
+tbl1.pak	0x0140E4ED	True Dragon Warrior Gear (Pants) R	真龙战士装备(裤子)R
+tbl1.pak	0x0140E5DF	True Dragon Warrior Gear (Shoes) R	真龙战士装备(鞋子)R
+tbl1.pak	0x0140E6D1	Della Army Pilot Clothes (Top) R	德拉军驾驶员服装(上衣)R
+tbl1.pak	0x0140E71F	Della Army Pilot Clothes (Pants) R	德拉军驾驶员服装(裤子)R
+tbl1.pak	0x0140E771	Della Army Pilot Clothes (Shoes) R	德拉军驾驶员服装(鞋子)R
+tbl1.pak	0x0140EA15	Pilot Clothes Z(Top)	驾驶员服装Z(上衣)
+tbl1.pak	0x0140EA4B	Pilot Clothes Z(Pants)	驾驶员服装Z(裤子)
+tbl1.pak	0x0140EA85	Pilot Clothes Z(Shoes)	驾驶员服装Z(鞋子)
+tbl1.pak	0x0140F22D	Practitioner Battle Armor (Top) R	修行者战斗盔甲(上衣)R
+tbl1.pak	0x0140F2DB	Practitioner Battle Armor (Pants) R	修行者战斗盔甲(裤子)R
+tbl1.pak	0x0140F38D	Practitioner Battle Armor (Shoes) R	修行者战斗盔甲(鞋子)R
+tbl1.pak	0x0140F65D	Practitioner Magic Bucket Clothes (Top) R	修行者魔法桶服装(上衣)R
+tbl1.pak	0x0140F71B	Practitioner Magic Bucket Clothes (Pants) R	修行者魔法桶服装(裤子)R
+tbl1.pak	0x0140F7DD	Practitioner Magic Bucket Clothes (Shoes) R	修行者魔法桶服装(鞋子)R
+tbl1.pak	0x0140F89F	Battle Armor (Top) R	战斗盔甲(上衣)R
+tbl1.pak	0x0140F949	Battle Armor (Pants) R	战斗盔甲(裤子)R
+tbl1.pak	0x0140F9F7	Battle Armor (Shoes) R	战斗盔甲(鞋子)R
+tbl1.pak	0x0140FDF7	Magic Bucket Clothes (Top) R	魔法桶服装(上衣)R
+tbl1.pak	0x0140FEB7	Magic Bucket Clothes (Pants) R	魔法桶服装(裤子)R
+tbl1.pak	0x0140FF7B	Magic Bucket Clothes (Shoes) R	魔法桶服装(鞋子)R
+tbl1.pak	0x0141003F	Gale Magic Bucket Suit (Top) R	疾风魔法桶套装(上衣)R
+tbl1.pak	0x014100DD	Gale Magic Bucket Suit (Pants) R	疾风魔法桶套装(裤子)R
+tbl1.pak	0x0141017F	Gale Magic Bucket Suit (Shoes) R	疾风魔法桶套装(鞋子)R
+tbl1.pak	0x01410221	Dark Battle Armor (Top) R	黑暗战斗盔甲(上衣)R
+tbl1.pak	0x014102A7	Dark Battle Armor (Pants) R	黑暗战斗盔甲(裤子)R
+tbl1.pak	0x01410331	Dark Battle Armor (Shoes) R	黑暗战斗盔甲(鞋子)R
+tbl1.pak	0x014103BB	Magic Thunder Clothes (Top) R	魔法雷霆服装(上衣)R
+tbl1.pak	0x0141047D	Magic Thunder Clothes (Pants) R	魔法雷霆服装(裤子)R
+tbl1.pak	0x01410543	Magic Thunder Clothes (Shoes) R	魔法雷霆服装(鞋子)R
+tbl1.pak	0x01410943	Magic Battle Clothes (Top) R	魔法战斗服装(上衣)R
+tbl1.pak	0x014109CD	Magic Battle Clothes (Pants) R	魔法战斗服装(裤子)R
+tbl1.pak	0x01410A5B	Magic Battle Clothes (Shoes) R	魔法战斗服装(鞋子)R
+tbl1.pak	0x01410AE9	Dragon Magic Bucket Suit (Top) R	龙魔法桶套装(上衣)R
+tbl1.pak	0x01410B89	Dragon Magic Bucket Suit (Pants) R	龙魔法桶套装(裤子)R
+tbl1.pak	0x01410C2D	Dragon Magic Bucket Suit (Shoes) R	龙魔法桶套装(鞋子)R
+tbl1.pak	0x0141130D	Meteor Devil Suit (Top) R	流星魔鬼套装(上衣)R
+tbl1.pak	0x014113B3	Meteor Devil Suit (Pants) R	流星魔鬼套装(裤子)R
+tbl1.pak	0x0141145D	Meteor Devil Suit (Shoes) R	流星魔鬼套装(鞋子)R
+tbl1.pak	0x01411937	Awakening Magic Clothes (Top) R	觉醒魔法服装(上衣)R
+tbl1.pak	0x014119F9	Awakening Magic Clothes (Pants) R	觉醒魔法服装(裤子)R
+tbl1.pak	0x01411ABF	Awakening Magic Clothes (Shoes) R	觉醒魔法服装(鞋子)R
+tbl1.pak	0x01411B85	Tiamat Battle Suit (Top) R	提亚马特战斗套装(上衣)R
+tbl1.pak	0x01411C1B	Tiamat Battle Suit (Pants) R	提亚马特战斗套装(裤子)R
+tbl1.pak	0x01411CB5	Tiamat Battle Suit (Shoes) R	提亚马特战斗套装(鞋子)R
+tbl1.pak	0x01411D4F	Tiamat Battle Clothes (Top) R	提亚马特战斗服装(上衣)R
+tbl1.pak	0x01411DEB	Tiamat Battle Clothes (Pants) R	提亚马特战斗服装(裤子)R
+tbl1.pak	0x01411E8B	Tiamat Battle Clothes (Shoes) R	提亚马特战斗服装(鞋子)R
+tbl1.pak	0x01412599	Strong Magic Battle Gear (Pants)	强力魔法战斗装备(裤子)
+tbl1.pak	0x014126A1	Strong Magic Battle Gear (Shoes)	强力魔法战斗装备(鞋子)
+tbl1.pak	0x014127A9	Warrior Magic Suit (Top) R	那美克战士魔法套装(上衣)R
+tbl1.pak	0x014127EB	Warrior Magic Suit (Pants) R	那美克战士魔法套装(裤子)R
+tbl1.pak	0x01412831	Warrior Magic Suit (Shoes) R	那美克战士魔法套装(鞋子)R
+tbl1.pak	0x01412877	Blessed Magic Gear (Top) R	祝福魔法装备(上衣)R
+tbl1.pak	0x014128B9	Blessed Magic Gear (Pants) R	祝福魔法装备(裤子)R
+tbl1.pak	0x014128FF	Blessed Magic Gear (Shoes) R	祝福魔法装备(鞋子)R
+tbl1.pak	0x01412CBF	Namek Combat Gear (Top) R	那美克战斗装备(上衣)R
+tbl1.pak	0x01412CFF	Namek Combat Gear (Pants) R	那美克战斗装备(裤子)R
+tbl1.pak	0x01412D43	Namek Combat Gear (Shoes) R	那美克战斗装备(鞋子)R
+tbl1.pak	0x01412D87	Namek Battle Armor (Top) R	那美克战斗盔甲(上衣)R
+tbl1.pak	0x01412DC9	Namek Battle Armor (Pants) R	那美克战斗盔甲(裤子)R
+tbl1.pak	0x01412E0F	Namek Battle Armor (Shoes) R	那美克战斗盔甲(鞋子)R
+tbl1.pak	0x014142F3	Practitioner Dragon Suit (Top) R	修行者龙套装(上衣)R
+tbl1.pak	0x0141439F	Practitioner Dragon Suit (Pants) R	修行者龙套装(裤子)R
+tbl1.pak	0x0141444F	Practitioner Dragon Suit (Shoes) R	修行者龙套装(鞋子)R
+tbl1.pak	0x014144FF	Green Dragon Suit (Top) R	绿色龙套装(上衣)R
+tbl1.pak	0x01414573	Green Dragon Suit (Pants) R	绿色龙套装(裤子)R
+tbl1.pak	0x014145EB	Green Dragon Suit (Shoes) R	绿色龙套装(鞋子)R
+tbl1.pak	0x01414663	Practitioner Magic Battle Suit (Top) R	修行者魔法战斗套装(上衣)R
+tbl1.pak	0x0141471B	Practitioner Magic Battle Suit (Pants) R	修行者魔法战斗套装(裤子)R
+tbl1.pak	0x014147D7	Practitioner Magic Battle Suit (Shoes) R	修行者魔法战斗套装(鞋子)R
+tbl1.pak	0x01414893	Dragon Suit (Top) R	龙套装(上衣)R
+tbl1.pak	0x0141493B	Dragon Suit (Pants) R	龙套装(裤子)R
+tbl1.pak	0x014149E7	Dragon Suit (Shoes) R	龙套装(鞋子)R
+tbl1.pak	0x01414A93	Healing Magic Battle Suit (Top) R	治疗魔法战斗套装(上衣)R
+tbl1.pak	0x01414B17	Healing Magic Battle Suit (Pants) R	治疗魔法战斗套装(裤子)R
+tbl1.pak	0x01414B9F	Healing Magic Battle Suit (Shoes) R	治疗魔法战斗套装(鞋子)R
+tbl1.pak	0x01414C27	Healing Dragon Suit (Top) R	治疗龙套装(上衣)R
+tbl1.pak	0x01414C95	Healing Dragon Suit (Pants) R	治疗龙套装(裤子)R
+tbl1.pak	0x01414D07	Healing Dragon Suit (Shoes) R	治疗龙套装(鞋子)R
+tbl1.pak	0x01414D79	Magic Battle Suit (Top) R	魔法战斗套装(上衣)R
+tbl1.pak	0x01414E03	Magic Battle Suit (Pants) R	魔法战斗套装(裤子)R
+tbl1.pak	0x01414E91	Magic Battle Suit (Shoes) R	魔法战斗套装(鞋子)R
+tbl1.pak	0x01414F1F	Gale Magic Armor (Top) R	疾风魔法盔甲(上衣)R
+tbl1.pak	0x01414FBB	Gale Magic Armor (Pants) R	疾风魔法盔甲(裤子)R
+tbl1.pak	0x0141505B	Gale Magic Armor (Shoes) R	疾风魔法盔甲(鞋子)R
+tbl1.pak	0x01415B5B	Palm Magic Suit (Top) R	棕榈魔法套装(上衣)R
+tbl1.pak	0x01415BE7	Palm Magic Suit (Pants) R	棕榈魔法套装(裤子)R
+tbl1.pak	0x01415C77	Palm Magic Suit (Shoes) R	棕榈魔法套装(鞋子)R
+tbl1.pak	0x01415D07	Dragon Leather Suit (Top) R	龙皮革套装(上衣)R
+tbl1.pak	0x01415DD5	Dragon Leather Suit (Pants) R	龙皮革套装(裤子)R
+tbl1.pak	0x01415EA7	Dragon Leather Suit (Shoes) R	龙皮革套装(鞋子)R
+tbl1.pak	0x01417113	Awakening Magic Battle Suit (Top)	觉醒魔法战斗套装(上衣)
+tbl1.pak	0x01417D73	Namek Suit (Top) R	那美克套装(上衣)R
+tbl1.pak	0x01417DA5	Namek Suit (Pants) R	那美克套装(裤子)R
+tbl1.pak	0x01417DDB	Namek Suit (Shoes) R	那美克套装(鞋子)R
+tbl1.pak	0x01417E11	Namek Clothes (Top) R	那美克服装(上衣)R
+tbl1.pak	0x01417E49	Namek Clothes (Pants) R	那美克服装(裤子)R
+tbl1.pak	0x01417E85	Namek Clothes (Shoes) R	那美克服装(鞋子)R
+tbl1.pak	0x0141853B	Magic Clothes (Top) R	魔法服装(上衣)R
+tbl1.pak	0x014185E7	Magic Clothes (Pants) R	魔法服装(裤子)R
+tbl1.pak	0x01418697	Magic Clothes (Shoes) R	魔法服装(鞋子)R
+tbl1.pak	0x01418A87	Super Magic Clothes  (Top) R	超级魔法服装(上衣)R
+tbl1.pak	0x01418B41	Super Magic Clothes  (Pants) R	超级魔法服装(裤子)R
+tbl1.pak	0x01418BFF	Super Magic Clothes  (Shoes) R	超级魔法服装(鞋子)R
+tbl1.pak	0x01418CBD	Strong Black Armor (Top) R	强力黑色盔甲(上衣)R
+tbl1.pak	0x01418D51	Strong Black Armor (Pants) R	强力黑色盔甲(裤子)R
+tbl1.pak	0x01418DE9	Strong Black Armor (Shoes) R	强力黑色盔甲(鞋子)R
+tbl1.pak	0x01418E81	Magic Rubber Suit (Top) R	魔法橡胶套装(上衣)R
+tbl1.pak	0x01418F59	Magic Rubber Suit (Pants) R	魔法橡胶套装(裤子)R
+tbl1.pak	0x01419035	Magic Rubber Suit (Shoes) R	魔法橡胶套装(鞋子)R
+tbl1.pak	0x014192DB	Classic Magic Rubber Suit (Top) R	经典魔法橡胶套装(上衣)R
+tbl1.pak	0x014193A3	Classic Magic Rubber Suit (Pants) R	经典魔法橡胶套装(裤子)R
+tbl1.pak	0x0141946F	Classic Magic Rubber Suit (Shoes) R	经典魔法橡胶套装(鞋子)R
+tbl1.pak	0x0141953B	Lotus Magic Suit (Top) R	莲花魔法套装(上衣)R
+tbl1.pak	0x014195B3	Lotus Magic Suit (Pants) R	莲花魔法套装(裤子)R
+tbl1.pak	0x0141962F	Lotus Magic Suit (Shoes) R	莲花魔法套装(鞋子)R
+tbl1.pak	0x014196AB	Tasty Magic Clothes (Top) R	美味魔法服装(上衣)R
+tbl1.pak	0x01419723	Tasty Magic Clothes (Pants) R	美味魔法服装(裤子)R
+tbl1.pak	0x0141979F	Tasty Magic Clothes (Shoes) R	美味魔法服装(鞋子)R
+tbl1.pak	0x0141981B	Vital Magic Suit (Top) R	活力魔法套装(上衣)R
+tbl1.pak	0x014198BF	Vital Magic Suit (Pants) R	活力魔法套装(裤子)R
+tbl1.pak	0x01419967	Vital Magic Suit (Shoes) R	活力魔法套装(鞋子)R
+tbl1.pak	0x01419A0F	Magic Dragon Suit (Top) R	魔法龙套装(上衣)R
+tbl1.pak	0x01419A85	Magic Dragon Suit (Pants) R	魔法龙套装(裤子)R
+tbl1.pak	0x01419AFF	Magic Dragon Suit (Shoes) R	魔法龙套装(鞋子)R
+tbl1.pak	0x01419B79	Crystal Gem Clothes (Top) R	水晶宝石服装(上衣)R
+tbl1.pak	0x01419C29	Crystal Gem Clothes (Pants) R	水晶宝石服装(裤子)R
+tbl1.pak	0x01419CDD	Crystal Gem Clothes (Shoes) R	水晶宝石服装(鞋子)R
+tbl1.pak	0x01419D91	Blue Magic Dragon (Top) R	蓝色魔法龙(上衣)R
+tbl1.pak	0x01419E1F	Blue Magic Dragon (Pants) R	蓝色魔法龙(裤子)R
+tbl1.pak	0x01419EB1	Blue Magic Dragon (Shoes) R	蓝色魔法龙(鞋子)R
+tbl1.pak	0x0141A52B	Diamond Magic Clothes (Top) R	钻石魔法服装(上衣)R
+tbl1.pak	0x0141A5EF	Diamond Magic Clothes (Pants) R	钻石魔法服装(裤子)R
+tbl1.pak	0x0141A6B7	Diamond Magic Clothes (Shoes) R	钻石魔法服装(鞋子)R
+tbl1.pak	0x0141B141	Carnival Lotus Magic Suit (Pants)	嘉年华莲花魔法套装(裤子)
+tbl1.pak	0x0141B1E7	Carnival Lotus Magic Suit (Shoes)	嘉年华莲花魔法套装(鞋子)
+tbl1.pak	0x0141BA65	Z Special Tasty Magic Clothes(Top) R	Z特殊美味魔法服装(上衣)R
+tbl1.pak	0x0141BABB	Z Special Tasty Magic Clothes(Pants) R	Z特殊美味魔法服装(裤子)R
+tbl1.pak	0x0141BB15	Z Special Tasty Magic Clothes(Shoes) R	Z特殊美味魔法服装(鞋子)R
+tbl1.pak	0x0141CE69	Galactic Combat Gear (Pants) M	银河战斗装备(裤子)M
+tbl1.pak	0x0141D95F	Simple Magic Clothes (Top) R	简单魔法服装(上衣)R
+tbl1.pak	0x0141DA09	Simple Magic Clothes (Pants) R	简单魔法服装(裤子)R
+tbl1.pak	0x0141DAB7	Simple Magic Clothes (Shoes) R	简单魔法服装(鞋子)R
+tbl1.pak	0x0141DB65	Broadwood Clothes (Top) R	布洛德伍德服装(上衣)R
+tbl1.pak	0x0141DC45	Broadwood Clothes (Pants) R	布洛德伍德服装(裤子)R
+tbl1.pak	0x0141DD29	Broadwood Clothes (Shoes) R	布洛德伍德服装(鞋子)R
+tbl1.pak	0x0141E007	Sweet Rubber Clothes (Top) R	甜橡胶服装(上衣)R
+tbl1.pak	0x0141E0E5	Sweet Rubber Clothes (Pants) R	甜橡胶服装(裤子)R
+tbl1.pak	0x0141E1C7	Sweet Rubber Clothes (Shoes) R	甜橡胶服装(鞋子)R
+tbl1.pak	0x0141E71B	Magic Surprise Suit (Top) R	魔法惊喜套装(上衣)R
+tbl1.pak	0x0141E79D	Magic Surprise Suit (Pants) R	魔法惊喜套装(裤子)R
+tbl1.pak	0x0141E823	Magic Surprise Suit (Shoes) R	魔法惊喜套装(鞋子)R
+tbl1.pak	0x0141E8A9	Magic Comfort Suit (Top) R	魔法舒适套装(上衣)R
+tbl1.pak	0x0141E957	Magic Comfort Suit (Pants) R	魔法舒适套装(裤子)R
+tbl1.pak	0x0141EA09	Magic Comfort Suit (Shoes) R	魔法舒适套装(鞋子)R
+tbl1.pak	0x0141EABB	Broadwood Magic Suit (Top) R	布洛德伍德魔法套装(上衣)R
+tbl1.pak	0x0141EB69	Broadwood Magic Suit (Pants) R	布洛德伍德魔法套装(裤子)R
+tbl1.pak	0x0141EC1B	Broadwood Magic Suit (Shoes) R	布洛德伍德魔法套装(鞋子)R
+tbl1.pak	0x0141ECCD	Wonder Dragon Clothes (Top) R	意魔人龙服装(上衣)R
+tbl1.pak	0x0141ED4B	Wonder Dragon Clothes (Pants) R	意魔人龙服装(裤子)R
+tbl1.pak	0x0141EDCD	Wonder Dragon Clothes (Shoes) R	意魔人龙服装(鞋子)R
+tbl1.pak	0x0141EE4F	Crystal Gem Suit (Top) R	水晶宝石套装(上衣)R
+tbl1.pak	0x0141EEED	Crystal Gem Suit (Pants) R	水晶宝石套装(裤子)R
+tbl1.pak	0x0141EF8F	Crystal Gem Suit (Shoes) R	水晶宝石套装(鞋子)R
+tbl1.pak	0x0141F031	Wonder Blue Dragon Suit (Top) R	意魔人蓝色龙套装(上衣)R
+tbl1.pak	0x0141F0B7	Wonder Blue Dragon Suit (Pants) R	意魔人蓝色龙套装(裤子)R
+tbl1.pak	0x0141F141	Wonder Blue Dragon Suit (Shoes) R	意魔人蓝色龙套装(鞋子)R
+tbl1.pak	0x0141F82B	Diamond Broadwood Magic Suit (Top) R	钻石布洛德伍德魔法套装(上衣)R
+tbl1.pak	0x0141F909	Diamond Broadwood Magic Suit (Pants) R	钻石布洛德伍德魔法套装(裤子)R
+tbl1.pak	0x0141F9EB	Diamond Broadwood Magic Suit (Shoes) R	钻石布洛德伍德魔法套装(鞋子)R
+tbl1.pak	0x0141FACD	Magic Surprise Suit DD Suit (Top) R	魔法惊喜套装DD套装(上衣)R
+tbl1.pak	0x0141FB93	Magic Surprise Suit DD Suit (Pants) R	魔法惊喜套装DD套装(裤子)R
+tbl1.pak	0x0141FC5D	Magic Surprise Suit DD Suit (Shoes) R	魔法惊喜套装DD套装(鞋子)R
+tbl1.pak	0x0141FD27	Magic Comfort Suit D (Top) R	魔法舒适套装D(上衣)R
+tbl1.pak	0x0141FDD1	Magic Comfort Suit D (Pants) R	魔法舒适套装D(裤子)R
+tbl1.pak	0x0141FE7F	Magic Comfort Suit D (Shoes) R	魔法舒适套装D(鞋子)R
+tbl1.pak	0x01420CE5	Ultra Magic Surprise Suit Z (Top) R	极限魔法惊喜套装Z(上衣)R
+tbl1.pak	0x01420D39	Ultra Magic Surprise Suit Z (Pants) R	极限魔法惊喜套装Z(裤子)R
+tbl1.pak	0x01420D91	Ultra Magic Surprise Suit Z (Shoes) R	极限魔法惊喜套装Z(鞋子)R
+tbl1.pak	0x01420DE9	Magic Comfort Suit Z (Top) R	魔法舒适套装Z(上衣)R
+tbl1.pak	0x01420E2F	Magic Comfort Suit Z (Pants) R	魔法舒适套装Z(裤子)R
+tbl1.pak	0x01420E79	Magic Comfort Suit Z (Shoes) R	魔法舒适套装Z(鞋子)R
+tbl1.pak	0x0143D22D	P Alien Gloves L	P异星手套L
+tbl1.pak	0x0143D34D	P Suspicious Gloves L	P可疑手套L
+tbl1.pak	0x0143D445	P Special A Class Gloves L	P特殊A职业手套L
+tbl1.pak	0x0143D567	P Basic Dragon Gloves L	P基础龙手套L
+tbl1.pak	0x0143E0CD	Alien Gloves L	异星手套L
+tbl1.pak	0x0143E1E9	Suspicious Gloves L	可疑手套L
+tbl1.pak	0x0143E2DD	Special A Class Gloves L	特殊A职业手套L
+tbl1.pak	0x0143E3FB	Basic Dragon Gloves L	基础龙手套L
+tbl1.pak	0x0143EF67	E Alien Gloves L	E异星手套L
+tbl1.pak	0x0143F087	E Suspicious Gloves L	E可疑手套L
+tbl1.pak	0x0143F17F	E Special A Class Gloves L	E特殊A职业手套L
+tbl1.pak	0x0143F2A1	E Basic Dragon Gloves L	E基础龙手套L
+tbl1.pak	0x01445A79	Light Armor L	光盔甲L
+tbl1.pak	0x01447195	Practitioner Martial Arts Clothes (Top) L	修行者武道服装(上衣)L
+tbl1.pak	0x01447807	Martial Arts Clothes (Top) L	武道服装(上衣)L
+tbl1.pak	0x014478CD	Martial Arts Clothes (Pants) L	武道服装(裤子)L
+tbl1.pak	0x01447997	Martial Arts Clothes (Shoes) L	武道服装(鞋子)L
+tbl1.pak	0x0144802B	Jade Battle Suit (Top) L	翡翠战斗套装(上衣)L
+tbl1.pak	0x014480B7	Jade Battle Suit (Pants) L	翡翠战斗套装(裤子)L
+tbl1.pak	0x01448147	Jade Battle Suit (Shoes) L	翡翠战斗套装(鞋子)L
+tbl1.pak	0x014481D7	CC Martial Arts Clothes (Top) L	CC武道服装(上衣)L
+tbl1.pak	0x014483FB	Red Lizard Suit (Top) L	红色蜥蜴套装(上衣)L
+tbl1.pak	0x0144847F	Red Lizard Suit (Pants) L	红色蜥蜴套装(裤子)L
+tbl1.pak	0x01448507	Red Lizard Suit (Shoes) L	红色蜥蜴套装(鞋子)L
+tbl1.pak	0x0144858F	Classic CC Martial Arts Clothes (Top) L	经典CC武道服装(上衣)L
+tbl1.pak	0x014486A7	Classic CC Martial Arts Clothes (Pants) L	经典CC武道服装(裤子)L
+tbl1.pak	0x014487C3	Classic CC Martial Arts Clothes (Shoes) L	经典CC武道服装(鞋子)L
+tbl1.pak	0x014488DF	Invincible Gear (Top) L	无敌装备(上衣)L
+tbl1.pak	0x0144898B	Invincible Gear (Pants) L	无敌装备(裤子)L
+tbl1.pak	0x01448A3B	Invincible Gear (Shoes) L	无敌装备(鞋子)L
+tbl1.pak	0x01448C8B	Long Combat Suit (Top) L	长战斗套装(上衣)L
+tbl1.pak	0x01448CFB	Long Combat Suit (Pants) L	长战斗套装(裤子)L
+tbl1.pak	0x01448D6F	Long Combat Suit (Shoes) L	长战斗套装(鞋子)L
+tbl1.pak	0x01448DE3	Korin Martial Arts Clothes (Top) L	卡林武道服装(上衣)L
+tbl1.pak	0x01448F03	Korin Martial Arts Clothes (Pants) L	卡林武道服装(裤子)L
+tbl1.pak	0x01449027	Korin Martial Arts Clothes (Shoes) L	卡林武道服装(鞋子)L
+tbl1.pak	0x014491F7	Crystal Gem Battle Armor (Pants) L	水晶宝石战斗盔甲(裤子)L
+tbl1.pak	0x014492A7	Crystal Gem Battle Armor (Shoes) L	水晶宝石战斗盔甲(鞋子)L
+tbl1.pak	0x01449357	Korin Chief Martial Arts Clothes (Top) L	卡林首领武道服装(上衣)L
+tbl1.pak	0x01449405	Korin Chief Martial Arts Clothes (Pants) L	卡林首领武道服装(裤子)L
+tbl1.pak	0x014494B7	Korin Chief Martial Arts Clothes (Shoes) L	卡林首领武道服装(鞋子)L
+tbl1.pak	0x01449A79	Diamond Combat Suit(Top) L	钻石战斗套装(上衣)L
+tbl1.pak	0x01449B0D	Diamond Combat Suit(Pants) L	钻石战斗套装(裤子)L
+tbl1.pak	0x01449BA5	Diamond Combat Suit(Shoes) L	钻石战斗套装(鞋子)L
+tbl1.pak	0x01449C3D	Della Army Combat Armor (Top) L	德拉军战斗盔甲(上衣)L
+tbl1.pak	0x01449E61	Magic Sword Battle Clothes (Top) L	魔法剑战斗服装(上衣)L
+tbl1.pak	0x01449F45	Magic Sword Battle Clothes (Pants) L	魔法剑战斗服装(裤子)L
+tbl1.pak	0x0144A02D	Magic Sword Battle Clothes (Shoes) L	魔法剑战斗服装(鞋子)L
+tbl1.pak	0x0144AF77	Injection New Gear (Top) L	注射新装备(上衣)L
+tbl1.pak	0x0144AFB9	Injection New Gear (Pants) L	注射新装备(裤子)L
+tbl1.pak	0x0144AFFF	Injection New Gear (Shoes) L	注射新装备(鞋子)L
+tbl1.pak	0x0144B119	Practitioner Spirit Clothes (Top) L	修行者精神服装(上衣)L
+tbl1.pak	0x0144B1D9	Practitioner Spirit Clothes (Pants) L	修行者精神服装(裤子)L
+tbl1.pak	0x0144B29D	Practitioner Spirit Clothes (Shoes) L	修行者精神服装(鞋子)L
+tbl1.pak	0x0144B54F	Practitioner Spirit Suit (Top) L	修行者精神套装(上衣)L
+tbl1.pak	0x0144B5FB	Practitioner Spirit Suit (Pants) L	修行者精神套装(裤子)L
+tbl1.pak	0x0144B6AB	Practitioner Spirit Suit (Shoes) L	修行者精神套装(鞋子)L
+tbl1.pak	0x0144B75B	Spirit Clothes (Top) L	精神服装(上衣)L
+tbl1.pak	0x0144B817	Spirit Clothes (Pants) L	精神服装(裤子)L
+tbl1.pak	0x0144B8D7	Spirit Clothes (Shoes) L	精神服装(鞋子)L
+tbl1.pak	0x0144BB5B	Earth Spirit Clothes (Top) L	大地精神服装(上衣)L
+tbl1.pak	0x0144BBD3	Earth Spirit Clothes (Pants) L	大地精神服装(裤子)L
+tbl1.pak	0x0144BC4F	Earth Spirit Clothes (Shoes) L	大地精神服装(鞋子)L
+tbl1.pak	0x0144BCCB	Spirit Suit (Top) L	精神套装(上衣)L
+tbl1.pak	0x0144BD81	Spirit Suit (Pants) L	精神套装(裤子)L
+tbl1.pak	0x0144BE3B	Spirit Suit (Shoes) L	精神套装(鞋子)L
+tbl1.pak	0x0144C17F	CC Spirit Clothes (Top) L	CC精神服装(上衣)L
+tbl1.pak	0x0144C235	CC Spirit Clothes (Pants) L	CC精神服装(裤子)L
+tbl1.pak	0x0144C2EF	CC Spirit Clothes (Shoes) L	CC精神服装(鞋子)L
+tbl1.pak	0x0144C3A9	Korin Spirit Suit (Top) L	卡林精神套装(上衣)L
+tbl1.pak	0x0144C41D	Korin Spirit Suit (Pants) L	卡林精神套装(裤子)L
+tbl1.pak	0x0144C495	Korin Spirit Suit (Shoes) L	卡林精神套装(鞋子)L
+tbl1.pak	0x0144C50D	Classic CC Spirit Clothes (Top) L	经典CC精神服装(上衣)L
+tbl1.pak	0x0144C5F9	Classic CC Spirit Clothes (Pants) L	经典CC精神服装(裤子)L
+tbl1.pak	0x0144C6E9	Classic CC Spirit Clothes (Shoes) L	经典CC精神服装(鞋子)L
+tbl1.pak	0x0144C7D9	Turtle Clothes (Top) L	龟服装(上衣)L
+tbl1.pak	0x0144C863	Turtle Clothes (Pants) L	龟服装(裤子)L
+tbl1.pak	0x0144C8F1	Turtle Clothes (Shoes) L	龟服装(鞋子)L
+tbl1.pak	0x0144CD2B	Korin Spirit Clothes (Top) L	卡林精神服装(上衣)L
+tbl1.pak	0x0144CE3F	Korin Spirit Clothes (Pants) L	卡林精神服装(裤子)L
+tbl1.pak	0x0144CF57	Korin Spirit Clothes (Shoes) L	卡林精神服装(鞋子)L
+tbl1.pak	0x0144D06F	Flame Spirit Suit (Top) L	火焰精神套装(上衣)L
+tbl1.pak	0x0144D11D	Flame Spirit Suit (Pants) L	火焰精神套装(裤子)L
+tbl1.pak	0x0144D1CF	Flame Spirit Suit (Shoes) L	火焰精神套装(鞋子)L
+tbl1.pak	0x0144D6C9	Star Crane Clothes (Top) L	星鹤服装(上衣)L
+tbl1.pak	0x0144D773	Star Crane Clothes (Pants) L	星鹤服装(裤子)L
+tbl1.pak	0x0144D821	Star Crane Clothes (Shoes) L	星鹤服装(鞋子)L
+tbl1.pak	0x0144D8CF	Purple Battle Suit (Top) L	紫色战斗套装(上衣)L
+tbl1.pak	0x0144D911	Purple Battle Suit (Pants) L	紫色战斗套装(裤子)L
+tbl1.pak	0x0144D957	Purple Battle Suit (Shoes) L	紫色战斗套装(鞋子)L
+tbl1.pak	0x0144D99D	Phoenix Spirit Suit (Top) L	凤凰精神套装(上衣)L
+tbl1.pak	0x0144DA25	Phoenix Spirit Suit (Pants) L	凤凰精神套装(裤子)L
+tbl1.pak	0x0144DAB1	Phoenix Spirit Suit (Shoes) L	凤凰精神套装(鞋子)L
+tbl1.pak	0x0144E9AB	Military Turtle Clothes (Top) L	军用龟服装(上衣)L
+tbl1.pak	0x0144E9F7	Military Turtle Clothes (Pants) L	军用龟服装(裤子)L
+tbl1.pak	0x0144EA47	Military Turtle Clothes (Shoes) L	军用龟服装(鞋子)L
+tbl1.pak	0x0144EA97	Valkyrie Crane Clothes (Top) L	女武神鹤服装(上衣)L
+tbl1.pak	0x0144EAE1	Valkyrie Crane Clothes (Pants) L	女武神鹤服装(裤子)L
+tbl1.pak	0x0144EB2F	Valkyrie Crane Clothes (Shoes) L	女武神鹤服装(鞋子)L
+tbl1.pak	0x0144ED25	Ultra Turtle Clothes Z (Top) L	极限龟服装Z(上衣)L
+tbl1.pak	0x0144ED6F	Ultra Turtle Clothes Z (Pants) L	极限龟服装Z(裤子)L
+tbl1.pak	0x0144EDBD	Ultra Turtle Clothes Z (Shoes) L	极限龟服装Z(鞋子)L
+tbl1.pak	0x0144F289	Engineer Kit (Top) L	工程师工具包(上衣)L
+tbl1.pak	0x0144F2BF	Engineer Kit (Pants) L	工程师工具包(裤子)L
+tbl1.pak	0x0144F2F9	Engineer Kit (Shoes) L	工程师工具包(鞋子)L
+tbl1.pak	0x0144F4DB	Work Clothes (Top) L	工作服装(上衣)L
+tbl1.pak	0x0144F511	Work Clothes (Pants) L	工作服装(裤子)L
+tbl1.pak	0x0144F54B	Work Clothes (Shoes) L	工作服装(鞋子)L
+tbl1.pak	0x0144F659	CC Engineer Kit (Top) L	CC工程师工具包(上衣)L
+tbl1.pak	0x0144F695	CC Engineer Kit (Pants) L	CC工程师工具包(裤子)L
+tbl1.pak	0x0144F6D5	CC Engineer Kit (Shoes) L	CC工程师工具包(鞋子)L
+tbl1.pak	0x0144F979	Pilot Clothes (Top) L	驾驶员服装(上衣)L
+tbl1.pak	0x0144F9B1	Pilot Clothes (Pants) L	驾驶员服装(裤子)L
+tbl1.pak	0x0144F9ED	Pilot Clothes (Shoes) L	驾驶员服装(鞋子)L
+tbl1.pak	0x0144FA29	Dragon Work Clothes (Top) L	龙工作服装(上衣)L
+tbl1.pak	0x0144FA6D	Dragon Work Clothes (Pants) L	龙工作服装(裤子)L
+tbl1.pak	0x0144FAB5	Dragon Work Clothes (Shoes) L	龙工作服装(鞋子)L
+tbl1.pak	0x0144FBE9	Flame Work Clothes (Top) L	火焰工作服装(上衣)L
+tbl1.pak	0x0144FC2B	Flame Work Clothes (Pants) L	火焰工作服装(裤子)L
+tbl1.pak	0x0144FC71	Flame Work Clothes (Shoes) L	火焰工作服装(鞋子)L
+tbl1.pak	0x0144FE6B	Space Pilot Clothes (Top) L	空间驾驶员服装(上衣)L
+tbl1.pak	0x0144FEAF	Space Pilot Clothes (Pants) L	空间驾驶员服装(裤子)L
+tbl1.pak	0x0144FEF7	Space Pilot Clothes (Shoes) L	空间驾驶员服装(鞋子)L
+tbl1.pak	0x01450013	Phoenix Work Clothes (Top) L	凤凰工作服装(上衣)L
+tbl1.pak	0x01450059	Phoenix Work Clothes (Pants) L	凤凰工作服装(裤子)L
+tbl1.pak	0x014500A3	Phoenix Work Clothes (Shoes) L	凤凰工作服装(鞋子)L
+tbl1.pak	0x014500ED	True Dragon Warrior Gear (Top) L	真龙战士装备(上衣)L
+tbl1.pak	0x014501DB	True Dragon Warrior Gear (Pants) L	真龙战士装备(裤子)L
+tbl1.pak	0x014502CD	True Dragon Warrior Gear (Shoes) L	真龙战士装备(鞋子)L
+tbl1.pak	0x014503BF	Della Army Pilot Clothes (Top) L	德拉军驾驶员服装(上衣)L
+tbl1.pak	0x0145040D	Della Army Pilot Clothes (Pants) L	德拉军驾驶员服装(裤子)L
+tbl1.pak	0x0145045F	Della Army Pilot Clothes (Shoes) L	德拉军驾驶员服装(鞋子)L
+tbl1.pak	0x01450F27	Practitioner Battle Armor (Top) L	修行者战斗盔甲(上衣)L
+tbl1.pak	0x01450FD5	Practitioner Battle Armor (Pants) L	修行者战斗盔甲(裤子)L
+tbl1.pak	0x01451087	Practitioner Battle Armor (Shoes) L	修行者战斗盔甲(鞋子)L
+tbl1.pak	0x01451357	Practitioner Magic Bucket Clothes (Top) L	修行者魔法桶服装(上衣)L
+tbl1.pak	0x01451415	Practitioner Magic Bucket Clothes (Pants) L	修行者魔法桶服装(裤子)L
+tbl1.pak	0x014514D7	Practitioner Magic Bucket Clothes (Shoes) L	修行者魔法桶服装(鞋子)L
+tbl1.pak	0x01451599	Battle Armor (Top) L	战斗盔甲(上衣)L
+tbl1.pak	0x01451643	Battle Armor (Pants) L	战斗盔甲(裤子)L
+tbl1.pak	0x014516F1	Battle Armor (Shoes) L	战斗盔甲(鞋子)L
+tbl1.pak	0x01451AF1	Magic Bucket Clothes (Top) L	魔法桶服装(上衣)L
+tbl1.pak	0x01451BB1	Magic Bucket Clothes (Pants) L	魔法桶服装(裤子)L
+tbl1.pak	0x01451C75	Magic Bucket Clothes (Shoes) L	魔法桶服装(鞋子)L
+tbl1.pak	0x01451D39	Gale Magic Bucket Suit (Top) L	疾风魔法桶套装(上衣)L
+tbl1.pak	0x01451DD7	Gale Magic Bucket Suit (Pants) L	疾风魔法桶套装(裤子)L
+tbl1.pak	0x01451E79	Gale Magic Bucket Suit (Shoes) L	疾风魔法桶套装(鞋子)L
+tbl1.pak	0x01451F1B	Dark Battle Armor (Top) L	黑暗战斗盔甲(上衣)L
+tbl1.pak	0x01451FA1	Dark Battle Armor (Pants) L	黑暗战斗盔甲(裤子)L
+tbl1.pak	0x0145202B	Dark Battle Armor (Shoes) L	黑暗战斗盔甲(鞋子)L
+tbl1.pak	0x014520B5	Magic Thunder Clothes (Top) L	魔法雷霆服装(上衣)L
+tbl1.pak	0x01452177	Magic Thunder Clothes (Pants) L	魔法雷霆服装(裤子)L
+tbl1.pak	0x0145223D	Magic Thunder Clothes (Shoes) L	魔法雷霆服装(鞋子)L
+tbl1.pak	0x0145263D	Magic Battle Clothes (Top) L	魔法战斗服装(上衣)L
+tbl1.pak	0x014526C7	Magic Battle Clothes (Pants) L	魔法战斗服装(裤子)L
+tbl1.pak	0x01452755	Magic Battle Clothes (Shoes) L	魔法战斗服装(鞋子)L
+tbl1.pak	0x014527E3	Dragon Magic Bucket Suit (Top) L	龙魔法桶套装(上衣)L
+tbl1.pak	0x01452883	Dragon Magic Bucket Suit (Pants) L	龙魔法桶套装(裤子)L
+tbl1.pak	0x01452927	Dragon Magic Bucket Suit (Shoes) L	龙魔法桶套装(鞋子)L
+tbl1.pak	0x01453007	Meteor Devil Suit (Top) L	流星魔鬼套装(上衣)L
+tbl1.pak	0x014530AD	Meteor Devil Suit (Pants) L	流星魔鬼套装(裤子)L
+tbl1.pak	0x01453157	Meteor Devil Suit (Shoes) L	流星魔鬼套装(鞋子)L
+tbl1.pak	0x01453631	Awakening Magic Clothes  (Top) L	觉醒魔法服装(上衣)L
+tbl1.pak	0x014536F5	Awakening Magic Clothes  (Pants) L	觉醒魔法服装(裤子)L
+tbl1.pak	0x014537BD	Awakening Magic Clothes  (Shoes) L	觉醒魔法服装(鞋子)L
+tbl1.pak	0x01453885	Tiamat Battle Suit (Top) L	提亚马特战斗套装(上衣)L
+tbl1.pak	0x0145391B	Tiamat Battle Suit (Pants) L	提亚马特战斗套装(裤子)L
+tbl1.pak	0x014539B5	Tiamat Battle Suit (Shoes) L	提亚马特战斗套装(鞋子)L
+tbl1.pak	0x01453A4F	Tiamat Battle Clothes (Top) L	提亚马特战斗服装(上衣)L
+tbl1.pak	0x01453AEB	Tiamat Battle Clothes (Pants) L	提亚马特战斗服装(裤子)L
+tbl1.pak	0x01453B8B	Tiamat Battle Clothes (Shoes) L	提亚马特战斗服装(鞋子)L
+tbl1.pak	0x014544A9	Warrior Magic Suit (Top) L	那美克战士魔法套装(上衣)L
+tbl1.pak	0x014544EB	Warrior Magic Suit (Pants) L	那美克战士魔法套装(裤子)L
+tbl1.pak	0x01454531	Warrior Magic Suit (Shoes) L	那美克战士魔法套装(鞋子)L
+tbl1.pak	0x01454577	Blessed Magic Gear (Top) L	祝福魔法装备(上衣)L
+tbl1.pak	0x014545B9	Blessed Magic Gear (Pants) L	祝福魔法装备(裤子)L
+tbl1.pak	0x014545FF	Blessed Magic Gear (Shoes) L	祝福魔法装备(鞋子)L
+tbl1.pak	0x014549BF	Namek Combat Gear (Top) L	那美克战斗装备(上衣)L
+tbl1.pak	0x014549FF	Namek Combat Gear (Pants) L	那美克战斗装备(裤子)L
+tbl1.pak	0x01454A43	Namek Combat Gear (Shoes) L	那美克战斗装备(鞋子)L
+tbl1.pak	0x01454A87	Namek Battle Armor (Top) L	那美克战斗盔甲(上衣)L
+tbl1.pak	0x01454AC9	Namek Battle Armor (Pants) L	那美克战斗盔甲(裤子)L
+tbl1.pak	0x01454B0F	Namek Battle Armor (Shoes) L	那美克战斗盔甲(鞋子)L
+tbl1.pak	0x01454C23	Practitioner Dragon Suit (Top) L	修行者龙套装(上衣)L
+tbl1.pak	0x01454CCF	Practitioner Dragon Suit (Pants) L	修行者龙套装(裤子)L
+tbl1.pak	0x01454D7F	Practitioner Dragon Suit (Shoes) L	修行者龙套装(鞋子)L
+tbl1.pak	0x01454E2F	Green Dragon Suit (Top) L	绿色龙套装(上衣)L
+tbl1.pak	0x01454EA3	Green Dragon Suit (Pants) L	绿色龙套装(裤子)L
+tbl1.pak	0x01454F1B	Green Dragon Suit (Shoes) L	绿色龙套装(鞋子)L
+tbl1.pak	0x01454F93	Practitioner Magic Battle Suit (Top) L	修行者魔法战斗套装(上衣)L
+tbl1.pak	0x0145504B	Practitioner Magic Battle Suit (Pants) L	修行者魔法战斗套装(裤子)L
+tbl1.pak	0x01455107	Practitioner Magic Battle Suit (Shoes) L	修行者魔法战斗套装(鞋子)L
+tbl1.pak	0x014551C3	Dragon Suit (Top) L	龙套装(上衣)L
+tbl1.pak	0x0145526B	Dragon Suit (Pants) L	龙套装(裤子)L
+tbl1.pak	0x01455317	Dragon Suit (Shoes) L	龙套装(鞋子)L
+tbl1.pak	0x014553C3	Healing Magic Battle Suit (Top) L	治疗魔法战斗套装(上衣)L
+tbl1.pak	0x01455447	Healing Magic Battle Suit (Pants) L	治疗魔法战斗套装(裤子)L
+tbl1.pak	0x014554CF	Healing Magic Battle Suit (Shoes) L	治疗魔法战斗套装(鞋子)L
+tbl1.pak	0x01455557	Healing Dragon Suit (Top) L	治疗龙套装(上衣)L
+tbl1.pak	0x014555C5	Healing Dragon Suit (Pants) L	治疗龙套装(裤子)L
+tbl1.pak	0x01455637	Healing Dragon Suit (Shoes) L	治疗龙套装(鞋子)L
+tbl1.pak	0x014556A9	Magic Battle Suit (Top) L	魔法战斗套装(上衣)L
+tbl1.pak	0x01455733	Magic Battle Suit (Pants) L	魔法战斗套装(裤子)L
+tbl1.pak	0x014557C1	Magic Battle Suit (Shoes) L	魔法战斗套装(鞋子)L
+tbl1.pak	0x0145584F	Gale Magic Armor (Top) L	疾风魔法盔甲(上衣)L
+tbl1.pak	0x014558EB	Gale Magic Armor (Pants) L	疾风魔法盔甲(裤子)L
+tbl1.pak	0x0145598B	Gale Magic Armor (Shoes) L	疾风魔法盔甲(鞋子)L
+tbl1.pak	0x0145648B	Palm Magic Suit (Top) L	棕榈魔法套装(上衣)L
+tbl1.pak	0x01456517	Palm Magic Suit (Pants) L	棕榈魔法套装(裤子)L
+tbl1.pak	0x014565A7	Palm Magic Suit (Shoes) L	棕榈魔法套装(鞋子)L
+tbl1.pak	0x01456637	Dragon Leather Suit (Top) L	龙皮革套装(上衣)L
+tbl1.pak	0x01456705	Dragon Leather Suit (Pants) L	龙皮革套装(裤子)L
+tbl1.pak	0x014567D7	Dragon Leather Suit (Shoes) L	龙皮革套装(鞋子)L
+tbl1.pak	0x014586A3	Namek Suit (Top) L	那美克套装(上衣)L
+tbl1.pak	0x014586D5	Namek Suit (Pants) L	那美克套装(裤子)L
+tbl1.pak	0x0145870B	Namek Suit (Shoes) L	那美克套装(鞋子)L
+tbl1.pak	0x01458741	Namek Clothes (Top) L	那美克服装(上衣)L
+tbl1.pak	0x01458779	Namek Clothes (Pants) L	那美克服装(裤子)L
+tbl1.pak	0x014587B5	Namek Clothes (Shoes) L	那美克服装(鞋子)L
+tbl1.pak	0x01458E6B	Magic Clothes (Top) L	魔法服装(上衣)L
+tbl1.pak	0x01458F17	Magic Clothes (Pants) L	魔法服装(裤子)L
+tbl1.pak	0x01458FC7	Magic Clothes (Shoes) L	魔法服装(鞋子)L
+tbl1.pak	0x014593B7	Super Magic Clothes  (Top) L	超级魔法服装(上衣)L
+tbl1.pak	0x01459471	Super Magic Clothes  (Pants) L	超级魔法服装(裤子)L
+tbl1.pak	0x0145952F	Super Magic Clothes  (Shoes) L	超级魔法服装(鞋子)L
+tbl1.pak	0x014595ED	Strong Black Armor (Top) L	强力黑色盔甲(上衣)L
+tbl1.pak	0x01459681	Strong Black Armor (Pants) L	强力黑色盔甲(裤子)L
+tbl1.pak	0x01459719	Strong Black Armor (Shoes) L	强力黑色盔甲(鞋子)L
+tbl1.pak	0x014597B1	Magic Rubber Suit (Top) L	魔法橡胶套装(上衣)L
+tbl1.pak	0x01459889	Magic Rubber Suit (Pants) L	魔法橡胶套装(裤子)L
+tbl1.pak	0x01459965	Magic Rubber Suit (Shoes) L	魔法橡胶套装(鞋子)L
+tbl1.pak	0x01459C0B	Classic Magic Rubber Suit (Top) L	经典魔法橡胶套装(上衣)L
+tbl1.pak	0x01459CD3	Classic Magic Rubber Suit (Pants) L	经典魔法橡胶套装(裤子)L
+tbl1.pak	0x01459D9F	Classic Magic Rubber Suit (Shoes) L	经典魔法橡胶套装(鞋子)L
+tbl1.pak	0x01459E6B	Lotus Magic Suit (Top) L	莲花魔法套装(上衣)L
+tbl1.pak	0x01459EE3	Lotus Magic Suit (Pants) L	莲花魔法套装(裤子)L
+tbl1.pak	0x01459F5F	Lotus Magic Suit (Shoes) L	莲花魔法套装(鞋子)L
+tbl1.pak	0x01459FDB	Tasty Magic Clothes (Top) L	美味魔法服装(上衣)L
+tbl1.pak	0x0145A053	Tasty Magic Clothes (Pants) L	美味魔法服装(裤子)L
+tbl1.pak	0x0145A0CF	Tasty Magic Clothes (Shoes) L	美味魔法服装(鞋子)L
+tbl1.pak	0x0145A14B	Vital Magic Suit (Top) L	活力魔法套装(上衣)L
+tbl1.pak	0x0145A1EF	Vital Magic Suit (Pants) L	活力魔法套装(裤子)L
+tbl1.pak	0x0145A297	Vital Magic Suit (Shoes) L	活力魔法套装(鞋子)L
+tbl1.pak	0x0145A33F	Magic Dragon Suit (Top) L	魔法龙套装(上衣)L
+tbl1.pak	0x0145A3B5	Magic Dragon Suit (Pants) L	魔法龙套装(裤子)L
+tbl1.pak	0x0145A42F	Magic Dragon Suit (Shoes) L	魔法龙套装(鞋子)L
+tbl1.pak	0x0145A4A9	Crystal Gem Clothes (Top) L	水晶宝石服装(上衣)L
+tbl1.pak	0x0145A559	Crystal Gem Clothes (Pants) L	水晶宝石服装(裤子)L
+tbl1.pak	0x0145A60D	Crystal Gem Clothes (Shoes) L	水晶宝石服装(鞋子)L
+tbl1.pak	0x0145A6C1	Blue Magic Dragon (Top) L	蓝色魔法龙(上衣)L
+tbl1.pak	0x0145A74F	Blue Magic Dragon (Pants) L	蓝色魔法龙(裤子)L
+tbl1.pak	0x0145A7E1	Blue Magic Dragon (Shoes) L	蓝色魔法龙(鞋子)L
+tbl1.pak	0x0145AE5B	Diamond Magic Clothes (Top) L	钻石魔法服装(上衣)L
+tbl1.pak	0x0145AF1F	Diamond Magic Clothes (Pants) L	钻石魔法服装(裤子)L
+tbl1.pak	0x0145AFE7	Diamond Magic Clothes (Shoes) L	钻石魔法服装(鞋子)L
+tbl1.pak	0x0145C3A1	Z Special Tasty Magic Clothes (Top) L	Z特殊美味魔法服装(上衣)L
+tbl1.pak	0x0145C3F9	Z Special Tasty Magic Clothes (Pants) L	Z特殊美味魔法服装(裤子)L
+tbl1.pak	0x0145C455	Z Special Tasty Magic Clothes (Shoes) L	Z特殊美味魔法服装(鞋子)L
+tbl1.pak	0x0145CED7	Simple Magic Clothes (Top) L	简单魔法服装(上衣)L
+tbl1.pak	0x0145CF81	Simple Magic Clothes (Pants) L	简单魔法服装(裤子)L
+tbl1.pak	0x0145D02F	Simple Magic Clothes (Shoes) L	简单魔法服装(鞋子)L
+tbl1.pak	0x0145D0DD	Broadwood Clothes (Top) L	布洛德伍德服装(上衣)L
+tbl1.pak	0x0145D1BD	Broadwood Clothes (Pants) L	布洛德伍德服装(裤子)L
+tbl1.pak	0x0145D2A1	Broadwood Clothes (Shoes) L	布洛德伍德服装(鞋子)L
+tbl1.pak	0x0145D57F	Sweet Rubber Clothes (Top) L	甜橡胶服装(上衣)L
+tbl1.pak	0x0145D65D	Sweet Rubber Clothes (Pants) L	甜橡胶服装(裤子)L
+tbl1.pak	0x0145D73F	Sweet Rubber Clothes (Shoes) L	甜橡胶服装(鞋子)L
+tbl1.pak	0x0145DC93	Magic Surprise Suit (Top) L	魔法惊喜套装(上衣)L
+tbl1.pak	0x0145DD15	Magic Surprise Suit (Pants) L	魔法惊喜套装(裤子)L
+tbl1.pak	0x0145DD9B	Magic Surprise Suit (Shoes) L	魔法惊喜套装(鞋子)L
+tbl1.pak	0x0145DE21	Magic Comfort Suit (Top) L	魔法舒适套装(上衣)L
+tbl1.pak	0x0145DECF	Magic Comfort Suit (Pants) L	魔法舒适套装(裤子)L
+tbl1.pak	0x0145DF81	Magic Comfort Suit (Shoes) L	魔法舒适套装(鞋子)L
+tbl1.pak	0x0145E033	Broadwood Magic Suit (Top) L	布洛德伍德魔法套装(上衣)L
+tbl1.pak	0x0145E0E1	Broadwood Magic Suit (Pants) L	布洛德伍德魔法套装(裤子)L
+tbl1.pak	0x0145E193	Broadwood Magic Suit (Shoes) L	布洛德伍德魔法套装(鞋子)L
+tbl1.pak	0x0145E245	Wonder Dragon Clothes (Top) L	意魔人龙服装(上衣)L
+tbl1.pak	0x0145E2C3	Wonder Dragon Clothes (Pants) L	意魔人龙服装(裤子)L
+tbl1.pak	0x0145E345	Wonder Dragon Clothes (Shoes) L	意魔人龙服装(鞋子)L
+tbl1.pak	0x0145E3C7	Crystal Gem Suit (Top) L	水晶宝石套装(上衣)L
+tbl1.pak	0x0145E465	Crystal Gem Suit (Pants) L	水晶宝石套装(裤子)L
+tbl1.pak	0x0145E507	Crystal Gem Suit (Shoes) L	水晶宝石套装(鞋子)L
+tbl1.pak	0x0145E5A9	Wonder Blue Dragon Suit (Top) L	意魔人蓝色龙套装(上衣)L
+tbl1.pak	0x0145E62F	Wonder Blue Dragon Suit (Pants) L	意魔人蓝色龙套装(裤子)L
+tbl1.pak	0x0145E6B9	Wonder Blue Dragon Suit (Shoes) L	意魔人蓝色龙套装(鞋子)L
+tbl1.pak	0x0145EDA3	Diamond Broadwood Magic Suit (Top) L	钻石布洛德伍德魔法套装(上衣)L
+tbl1.pak	0x0145EE81	Diamond Broadwood Magic Suit (Pants) L	钻石布洛德伍德魔法套装(裤子)L
+tbl1.pak	0x0145EF63	Diamond Broadwood Magic Suit (Shoes) L	钻石布洛德伍德魔法套装(鞋子)L
+tbl1.pak	0x0145F045	Magic Surprise Suit DD Suit (Top) L	魔法惊喜套装DD套装(上衣)L
+tbl1.pak	0x0145F10B	Magic Surprise Suit DD Suit (Pants) L	魔法惊喜套装DD套装(裤子)L
+tbl1.pak	0x0145F1D5	Magic Surprise Suit DD Suit (Shoes) L	魔法惊喜套装DD套装(鞋子)L
+tbl1.pak	0x0145F29F	Magic Comfort Suit D (Top) L	魔法舒适套装D(上衣)L
+tbl1.pak	0x0145F349	Magic Comfort Suit D (Pants) L	魔法舒适套装D(裤子)L
+tbl1.pak	0x0145F3F7	Magic Comfort Suit D (Shoes) L	魔法舒适套装D(鞋子)L
+tbl1.pak	0x0146025D	Ultra Magic Surprise Suit Z (Top) L	极限魔法惊喜套装Z(上衣)L
+tbl1.pak	0x014602B1	Ultra Magic Surprise Suit Z (Pants) L	极限魔法惊喜套装Z(裤子)L
+tbl1.pak	0x01460309	Ultra Magic Surprise Suit Z (Shoes) L	极限魔法惊喜套装Z(鞋子)L
+tbl1.pak	0x01460361	Magic Comfort Suit Z (Top) L	魔法舒适套装Z(上衣)L
+tbl1.pak	0x014603A7	Magic Comfort Suit Z (Pants) L	魔法舒适套装Z(裤子)L
+tbl1.pak	0x014603F1	Magic Comfort Suit Z (Shoes) L	魔法舒适套装Z(鞋子)L
+tbl1.pak	0x0147A81F	P Tiamat Gloves	P提亚马特手套
+tbl1.pak	0x0147A88D	P Red Fire Dragon Gloves	P红色火龙手套
+tbl1.pak	0x0147BF05	New Gloves 1	新手套1
+tbl1.pak	0x0147BF41	New Gloves 2	新手套2
+tbl1.pak	0x0147BF7D	New Gloves 3	新手套3
+tbl1.pak	0x0147C055	Dragon Gloves	龙手套
+tbl1.pak	0x0147C0F3	Armored Bomb Gloves	装甲炸弹手套
+tbl1.pak	0x0147C29B	Magic Dragon Gloves	魔法龙手套
+tbl1.pak	0x0147C7AB	Magic Leather Gloves	魔法皮革手套
+tbl1.pak	0x0147D263	Tiamat Gloves	提亚马特手套
+tbl1.pak	0x0147D2CD	Red Fire Dragon Gloves	红色火龙手套
+tbl1.pak	0x0147D3D1	Dark Red Dragon Gloves	黑暗红色龙手套
+tbl1.pak	0x0147EAEF	King Gloves	王手套
+tbl1.pak	0x0147EBF5	Invincible Bomb Gloves	无敌炸弹手套
+tbl1.pak	0x0147EE75	Invincible Turtle Gloves	无敌龟手套
+tbl1.pak	0x0147F181	Tiger Dragon King Gloves	老虎龙王手套
+tbl1.pak	0x0147F2F1	CC Energy Gloves	CC气功手套
+tbl1.pak	0x0147F7D9	E Magic Leather Gloves	E魔法皮革手套
+tbl1.pak	0x014802E5	E Tiamat Gloves	E提亚马特手套
+tbl1.pak	0x01480353	E Red Fire Dragon Gloves	E红色火龙手套
+tbl1.pak	0x01481AD3	Dragon Roar Gloves	龙咆哮手套
+tbl1.pak	0x01481CB5	Military King Gloves	军用王手套
+tbl1.pak	0x0148200B	New Gloves 12	新手套12
+tbl1.pak	0x0148204B	Magic Tiger Dragon Gloves	魔法老虎龙手套
+tbl1.pak	0x0148216F	Blast Gloves	爆破手套
+tbl1.pak	0x01483A41	Dragon Rock Gloves	龙岩石手套
+tbl1.pak	0x01483B71	Magic Soul King Gloves	魔法灵魂王手套
+tbl1.pak	0x01489CBF	Big Armored Stick	大装甲棍
+tbl1.pak	0x01491C59	Red Magic Ghost Clothes	红色魔法幽灵服装
+tbl1.pak	0x01491D4F	CC Strong Battle Suit	CC强力战斗套装
+tbl1.pak	0x01491DF7	Fire Diamond Clothes	火钻石服装
+tbl1.pak	0x01492001	Black King Diamond Suit	黑色王钻石套装
+tbl1.pak	0x01492245	Invincible Gear (Top)	无敌装备(上衣)
+tbl1.pak	0x014927BB	CC Strong Battle Pants	CC强力战斗裤子
+tbl1.pak	0x01492909	Red Magic Ghost Pants	红色魔法幽灵裤子
+tbl1.pak	0x01492985	Namek Warrior Pants	那美克战士裤子
+tbl1.pak	0x014929B1	Namek Warrior Pants	那美克战士裤子
+tbl1.pak	0x014931C9	Invincible Gear (Pants)	无敌装备(裤子)
+tbl1.pak	0x01493721	Super Force Shoes	超级力量鞋子
+tbl1.pak	0x01493B83	CC Strong Battle Shoes	CC强力战斗鞋子
+tbl1.pak	0x01494367	High Grade Warrior Top	高级那美克战士上衣
+tbl1.pak	0x0149444F	High Grade Warrior Pants	高级那美克战士裤子
+tbl1.pak	0x0149453B	High Grade Warrior Shoes	高级那美克战士鞋子
+tbl1.pak	0x01495BCB	CC Ultimate Combat Armor (Top)	CC终极战斗盔甲(上衣)
+tbl1.pak	0x01495CA1	CC Ultimate Combat Armor(Pants)	CC终极战斗盔甲(裤子)
+tbl1.pak	0x01495D79	CC Ultimate Combat Armor (Shoes)	CC终极战斗盔甲(鞋子)
+tbl1.pak	0x01496209	Dragon Gear (Top)	龙装备(上衣)
+tbl1.pak	0x014962B9	Dragon Gear (Pants)	龙装备(裤子)
+tbl1.pak	0x0149636D	Dragon Gear (Shoes)	龙装备(鞋子)
+tbl1.pak	0x01496421	King Battle Suit (Top)	王战斗套装(上衣)
+tbl1.pak	0x01496AB7	Turtle Clothes EX (Top)	龟服装EX(上衣)
+tbl1.pak	0x01496DCF	Tiger King Spirit Clothes	老虎王精神服装
+tbl1.pak	0x014972BB	Red Flame Spirit Top	红色火焰精神上衣
+tbl1.pak	0x014973B5	Crane Clothes (Top)	鹤服装(上衣)
+tbl1.pak	0x01497575	Hellfire Spirit Pants	地狱火精神裤子
+tbl1.pak	0x014978B5	Giant Mushroom Pants	巨大蘑菇裤子
+tbl1.pak	0x01497A43	Black Fire Magic Pants	黑色火魔法裤子
+tbl1.pak	0x01497E6D	Namek Wind Pants	那美克风裤子
+tbl1.pak	0x01498BCD	Dragon King Treasure Shoes	龙王宝藏鞋子
+tbl1.pak	0x01499627	Red Field Top	红色野外上衣
+tbl1.pak	0x01499697	Red Field Pants	红色野外裤子
+tbl1.pak	0x0149970B	Red Field Shoes	红色野外鞋子
+tbl1.pak	0x0149977F	Spirit Practitioner Top	精神修行者上衣
+tbl1.pak	0x01499941	Spirit Adventurer Top	精神冒险家上衣
+tbl1.pak	0x014999ED	Spirit Combat Family Top	精神战斗家族上衣
+tbl1.pak	0x01499C3B	Invincible Energy Top	无敌气功上衣
+tbl1.pak	0x01499E95	Spirit Practitioner Pants	精神修行者裤子
+tbl1.pak	0x0149A05F	Spiritualist Adventurer Pants	气功师冒险家裤子
+tbl1.pak	0x0149A121	Spiritualist combat Pants	气功师 combat Pants
+tbl1.pak	0x0149A231	Spiritualist Guarding Pants	气功师 Guarding Pants
+tbl1.pak	0x0149A383	Invincible Energy Pants	无敌气功裤子
+tbl1.pak	0x0149A5E9	Spirit Practitioner Shoes	精神修行者鞋子
+tbl1.pak	0x0149A7B3	Spirit Adventurer Shoes	精神冒险家鞋子
+tbl1.pak	0x0149A863	Spirit Combat Family Shoes	精神战斗家族鞋子
+tbl1.pak	0x0149AABD	Invincible Energy Shoes	无敌气功鞋子
+tbl1.pak	0x0149B2B3	Dragon Spiritualist Gear (Top)	龙气功师装备(上衣)
+tbl1.pak	0x0149B37B	Dragon Spiritualist Gear (Pants)	龙气功师装备(裤子)
+tbl1.pak	0x0149B447	Dragon Spiritualist Gear (Shoes)	龙气功师装备(鞋子)
+tbl1.pak	0x0149B513	Phoenix Spiritualist Gear (Top)	凤凰气功师装备(上衣)
+tbl1.pak	0x0149B5DF	Ancient Spiritualist Clothes (Top)	古代气功师服装(上衣)
+tbl1.pak	0x0149B67D	Ancient Spiritualist Clothes (Pants)	古代气功师服装(裤子)
+tbl1.pak	0x0149B71F	Ancient Spiritualist Clothes (Shoes)	古代气功师服装(鞋子)
+tbl1.pak	0x0149B841	Dark Clothes	黑暗服装
+tbl1.pak	0x0149BA73	Narak Dark Power Suit	那拉克黑暗力量套装
+tbl1.pak	0x0149BF31	Ancient Namek Combat Clothes	古代那美克战斗服装
+tbl1.pak	0x0149C2AB	Namek Noble Top	那美克贵族上衣
+tbl1.pak	0x0149C709	Magic Battle Clothes (Top)	魔法战斗服装(上衣)
+tbl1.pak	0x0149C85D	Dark Pants	黑暗裤子
+tbl1.pak	0x0149CBE5	Narak Magic Pants	那拉克魔法裤子
+tbl1.pak	0x0149CD3B	Warrior Pants	那美克战士裤子
+tbl1.pak	0x0149D64F	Magic Battle Clothes (Pants)	魔法战斗服装(裤子)
+tbl1.pak	0x0149DED9	Double Gem Shoes	双宝石鞋子
+tbl1.pak	0x0149E875	Military Practitioner Top	军用修行者上衣
+tbl1.pak	0x0149EA3F	Military Adventurer Top	军用冒险家上衣
+tbl1.pak	0x0149EAEF	Military Combat Family Top	军用战斗家族上衣
+tbl1.pak	0x0149EFB1	Military Practitioner Pants	军用修行者裤子
+tbl1.pak	0x0149F183	Military Adventurer Pants	军用冒险家裤子
+tbl1.pak	0x0149F237	Military Combat Family Pants	军用战斗家族裤子
+tbl1.pak	0x0149F711	Military Practitioner Shoes	军用修行者鞋子
+tbl1.pak	0x0149F8E3	Military Adventurer Shoes	军用冒险家鞋子
+tbl1.pak	0x0149F997	Military Combat Family Shoes	军用战斗家族鞋子
+tbl1.pak	0x014A0C95	Noble Dragon Clan Tutor Clothes	Noble 那美克龙族 Tutor Clothes
+tbl1.pak	0x014A12BB	Narak Chaos Clothes	那拉克混沌服装
+tbl1.pak	0x014A13A3	Green Clothes	绿色服装
+tbl1.pak	0x014A14A9	Decadent Dragon Clan Clothes	Decadent 那美克龙族 Clothes
+tbl1.pak	0x014A19A9	Simple Practitioner Pants	简单修行者裤子
+tbl1.pak	0x014A20D7	Combat Dragon Clan Pants	战斗龙族裤子
+tbl1.pak	0x014A2B99	Dragon Clan Master Shoes	那美克龙族大师鞋子
+tbl1.pak	0x014A2D63	Paella Special Shoes	皮拉夫特殊鞋子
+tbl1.pak	0x014A2EFD	Combat Dragon Clan Shoes	战斗龙族鞋子
+tbl1.pak	0x014A31ED	Namek Shoes	那美克鞋子
+tbl1.pak	0x014A32D3	Little Dragon Clan Shoes	Little 那美克龙族 Shoes
+tbl1.pak	0x014A3549	Hot Flame Top	火辣火焰上衣
+tbl1.pak	0x014A3613	Hot Flame Pants	火辣火焰裤子
+tbl1.pak	0x014A36E1	Hot Flame Shoes	火辣火焰鞋子
+tbl1.pak	0x014A52DD	Dragon Magic Battle Suit (Top)	龙魔法战斗套装(上衣)
+tbl1.pak	0x014A5381	Dragon Magic Battle Suit (Pants)	龙魔法战斗套装(裤子)
+tbl1.pak	0x014A5429	Dragon Magic Battle Suit (Shoes)	龙魔法战斗套装(鞋子)
+tbl1.pak	0x014A6123	King Magic Clothes	王魔法服装
+tbl1.pak	0x014A6443	Namek Wind Magic Clothes	那美克风魔法服装
+tbl1.pak	0x014A6C73	Lotus Magic Suit (Top)	莲花魔法套装(上衣)
+tbl1.pak	0x014A6CE7	Tasty Magic Clothes (Top)	美味魔法服装(上衣)
+tbl1.pak	0x014A6D5B	Super Capsule Magic Pants	超级胶囊魔法裤子
+tbl1.pak	0x014A7189	Iron Magic Pants	铁魔法裤子
+tbl1.pak	0x014A78A9	Lotus Magic Suit (Pants)	莲花魔法套装(裤子)
+tbl1.pak	0x014A7921	Tasty Magic Clothes (Pants)	美味魔法服装(裤子)
+tbl1.pak	0x014A7999	King Magic Pants	王魔法裤子
+tbl1.pak	0x014A7B93	Crash Magic Shoes	冲击魔法鞋子
+tbl1.pak	0x014A821B	King Magic Shoes	王魔法鞋子
+tbl1.pak	0x014A89C5	Black Cat Shoes	黑色猫鞋子
+tbl1.pak	0x014A8D1F	Happy Top	快乐上衣
+tbl1.pak	0x014A8DB9	Happy Pants	快乐裤子
+tbl1.pak	0x014A8E57	Happy Shoes	快乐鞋子
+tbl1.pak	0x014A8EF5	Magic Practitioner Top	魔法修行者上衣
+tbl1.pak	0x014A90B9	Magic Adventurer Top	魔法冒险家上衣
+tbl1.pak	0x014A9163	Magic Combat Family Top	魔法战斗家族上衣
+tbl1.pak	0x014A9621	Magic Practitioner Pants	魔法修行者裤子
+tbl1.pak	0x014A97ED	Magic Adventurer Pants	魔法冒险家裤子
+tbl1.pak	0x014A989B	Magic Combat Family Pants	魔法战斗家族裤子
+tbl1.pak	0x014A9D71	Magic Practitioner Shoes	魔法修行者鞋子
+tbl1.pak	0x014A9F3D	Magic Adventurer Shoes	魔法冒险家鞋子
+tbl1.pak	0x014A9FEB	Magic Combat Family Shoes	魔法战斗家族鞋子
+tbl1.pak	0x014AAE7D	Special Magic Clothes (Top)	特殊魔法服装(上衣)
+tbl1.pak	0x014AAF65	Special Magic Clothes (Pants)	特殊魔法服装(裤子)
+tbl1.pak	0x014AB051	Special Magic Clothes (Shoes)	特殊魔法服装(鞋子)
+tbl1.pak	0x014AB695	Autumn Wonder Majin Clothes	Autumn 意魔人 Clothes
+tbl1.pak	0x014ABB95	CC Master Magic Clothes	CC大师魔法服装
+tbl1.pak	0x014ABD37	CC Prototype Majin Clothes	CC原型魔人服装
+tbl1.pak	0x014AC2D9	Autumn Wonder Majin Pants	Autumn 意魔人 Pants
+tbl1.pak	0x014AC661	Classic Sweet Rubber Clothes (Pants) EX	经典甜橡胶服装(裤子)EX
+tbl1.pak	0x014AD36D	Autumn Wonder Majin Shoes	Autumn 意魔人 Shoes
+tbl1.pak	0x014AD5BD	Classic Sweet Rubber Clothes (Shoes) EX	经典甜橡胶服装(鞋子)EX
+tbl1.pak	0x014AE315	Wonder Majin Practitioner Top	意魔人修行者上衣
+tbl1.pak	0x014AE413	Wonder Majin Practitioner Top	意魔人修行者上衣
+tbl1.pak	0x014AE4EF	Wonder Majin Adventurer Top	意魔人冒险家上衣
+tbl1.pak	0x014AE5A7	Wonder Majin Combat Family Top	意魔人战斗家族上衣
+tbl1.pak	0x014AE6C1	Wonder Majin Protector Top	意魔人 Protector Top
+tbl1.pak	0x014AE993	Warlike Wonder Majin King Top	Warlike 意魔人 King Top
+tbl1.pak	0x014AEA7B	Wonder Majin Practitioner Pants	意魔人修行者裤子
+tbl1.pak	0x014AEB7D	Wonder Majin Practitioner Pants	意魔人修行者裤子
+tbl1.pak	0x014AEC5D	Wonder Majin Adventurer Pants	意魔人冒险家裤子
+tbl1.pak	0x014AED19	Wonder Majin Combat Family Pants	意魔人战斗家族裤子
+tbl1.pak	0x014AEE37	Wonder Majin Protector Pants	意魔人 Protector Pants
+tbl1.pak	0x014AF119	Warlike Wonder Majin King Pants	Warlike 意魔人 King Pants
+tbl1.pak	0x014AF205	Wonder Majin Practitioner Shoes	意魔人修行者鞋子
+tbl1.pak	0x014AF307	Wonder Majin Practitioner Shoes	意魔人修行者鞋子
+tbl1.pak	0x014AF3E7	Wonder Majin Adventurer Shoes	意魔人冒险家鞋子
+tbl1.pak	0x014AF4A3	Wonder Majin Combat Family Shoes	意魔人战斗家族鞋子
+tbl1.pak	0x014AF5C1	Wonder Majin Protector Shoes	意魔人 Protector Shoes
+tbl1.pak	0x014AF8A3	Warlike Wonder Majin King Shoes	Warlike 意魔人 King Shoes
+tbl1.pak	0x014B0147	Super Magic Clothes (Top)	超级魔法服装(上衣)
+tbl1.pak	0x014B0233	Super Magic Clothes (Pants)	超级魔法服装(裤子)
+tbl1.pak	0x014B0323	Super Magic Clothes (Shoes)	超级魔法服装(鞋子)
+tbl1.pak	0x014BC711	Special Gear (Top) EX	特殊装备(上衣)EX
+tbl1.pak	0x014BC795	Special Gear (Pants) EX	特殊装备(裤子)EX
+tbl1.pak	0x014BC81D	Special Gear (Shoes) EX	特殊装备(鞋子)EX
+tbl1.pak	0x014BCA87	Armored Suit (Top) EX	装甲套装(上衣)EX
+tbl1.pak	0x014BCAEF	Armored Suit (Pants) EX	装甲套装(裤子)EX
+tbl1.pak	0x014BCB5B	Armored Suit (Shoes) EX	装甲套装(鞋子)EX
+tbl1.pak	0x014BCBC7	Advanced Armored Suit (Top) EX	高级装甲套装(上衣)EX
+tbl1.pak	0x014BCC45	Advanced Armored Suit (Pants) EX	高级装甲套装(裤子)EX
+tbl1.pak	0x014BCCC7	Advanced Armored Suit (Shoes) EX	高级装甲套装(鞋子)EX
+tbl1.pak	0x014BCD49	High Armored Suit (Top)	高级装甲套装(上衣)
+tbl1.pak	0x014BCDB9	High Armored Suit (Pants)	高级装甲套装(裤子)
+tbl1.pak	0x014BCE2D	High Armored Suit (Shoes)	高级装甲套装(鞋子)
+tbl1.pak	0x014BD287	Cell Armor (Top)	沙鲁盔甲(上衣)
+tbl1.pak	0x014BD2B5	Cell Armor (Pants)	沙鲁盔甲(裤子)
+tbl1.pak	0x014BD2E7	Cell Armor (Shoes)	沙鲁盔甲(鞋子)
+tbl1.pak	0x014BD647	Special Gear (Top) L	特殊装备(上衣)L
+tbl1.pak	0x014BD6C9	Special Gear (Pants) L	特殊装备(裤子)L
+tbl1.pak	0x014BD74F	Special Gear (Shoes) L	特殊装备(鞋子)L
+tbl1.pak	0x014BD9B1	Armored Suit (Top) L	装甲套装(上衣)L
+tbl1.pak	0x014BDA17	Armored Suit (Pants) L	装甲套装(裤子)L
+tbl1.pak	0x014BDA81	Armored Suit (Shoes) L	装甲套装(鞋子)L
+tbl1.pak	0x014BE19F	Mira Armor (Top)	米拉盔甲(上衣)
+tbl1.pak	0x014BE1CD	Mira Armor (Pants)	米拉盔甲(裤子)
+tbl1.pak	0x014BE1FF	Mira Armor (Shoes)	米拉盔甲(鞋子)
+tbl1.pak	0x014BE34D	Thunder Combat Suit (Top)	雷霆战斗套装(上衣)
+tbl1.pak	0x014BE401	Thunder Combat Suit (Pants)	雷霆战斗套装(裤子)
+tbl1.pak	0x014BE4B9	Thunder Combat Suit (Shoes)	雷霆战斗套装(鞋子)
+tbl1.pak	0x014BEFDF	Super Special Gear (Top) EX	超级特殊装备(上衣)EX
+tbl1.pak	0x014BF06F	Super Special Gear (Pants) EX	超级特殊装备(裤子)EX
+tbl1.pak	0x014BF103	Super Special Gear (Shoes) EX	超级特殊装备(鞋子)EX
+tbl1.pak	0x014BF197	Black Armored Suit (Top) EX	黑色装甲套装(上衣)EX
+tbl1.pak	0x014BF233	Black Armored Suit (Pants) EX	黑色装甲套装(裤子)EX
+tbl1.pak	0x014BF2D3	Black Armored Suit (Shoes) EX	黑色装甲套装(鞋子)EX
+tbl1.pak	0x014BF373	High Armored Suit (Top) EX	高级装甲套装(上衣)EX
+tbl1.pak	0x014BF3E5	High Armored Suit (Pants) EX	高级装甲套装(裤子)EX
+tbl1.pak	0x014BF45B	High Armored Suit (Shoes) EX	高级装甲套装(鞋子)EX
+tbl1.pak	0x014BFF63	Super Special Gear (Top) L	超级特殊装备(上衣)L
+tbl1.pak	0x014BFFF1	Super Special Gear (Pants) L	超级特殊装备(裤子)L
+tbl1.pak	0x014C0083	Super Special Gear (Shoes) L	超级特殊装备(鞋子)L
+tbl1.pak	0x014C0115	Black Armored Suit (Top) L	黑色装甲套装(上衣)L
+tbl1.pak	0x014C01AF	Black Armored Suit (Pants) L	黑色装甲套装(裤子)L
+tbl1.pak	0x014C024D	Black Armored Suit (Shoes) L	黑色装甲套装(鞋子)L
+tbl1.pak	0x014C02EB	High Armored Suit (Top) L	高级装甲套装(上衣)L
+tbl1.pak	0x014C035B	High Armored Suit (Pants) L	高级装甲套装(裤子)L
+tbl1.pak	0x014C03CF	High Armored Suit (Shoes) L	高级装甲套装(鞋子)L
+tbl1.pak	0x014C0CA5	Lightning Wolf Combat Suit (Top)	闪电狼战斗套装(上衣)
+tbl1.pak	0x014C0D61	Lightning Wolf Combat Suit(Pants)	闪电狼战斗套装(裤子)
+tbl1.pak	0x014C0E1F	Lightning Wolf Combat Suit (Shoes)	闪电狼战斗套装(鞋子)
+tbl1.pak	0x014C1893	Elite Combat Suit (Top) EX	精英战斗套装(上衣)EX
+tbl1.pak	0x014C1905	Elite Combat Suit (Pants) EX	精英战斗套装(裤子)EX
+tbl1.pak	0x014C197B	Elite Combat Suit (Shoes) EX	精英战斗套装(鞋子)EX
+tbl1.pak	0x014C27E1	Elite Combat Suit (Top) L	精英战斗套装(上衣)L
+tbl1.pak	0x014C2851	Elite Combat Suit (Pants) L	精英战斗套装(裤子)L
+tbl1.pak	0x014C28C5	Elite Combat Suit (Shoes) L	精英战斗套装(鞋子)L
+tbl1.pak	0x014C35CF	Tiger Combat Suit (Top)	老虎战斗套装(上衣)
+tbl1.pak	0x014C367B	Tiger Combat Suit (Pants)	老虎战斗套装(裤子)
+tbl1.pak	0x014C372B	Tiger Combat Suit (Shoes)	老虎战斗套装(鞋子)
+tbl1.pak	0x014D5B4B	Lightning Wolf Combat Suit (Pants)	闪电狼战斗套装(裤子)
+tbl1.pak	0x014D846D	Tiger Combat Suit(Pants)	老虎战斗套装(裤子)
+tbl1.pak	0x014F00C3	Invincible Battle Gloves	无敌战斗手套
+tbl1.pak	0x014F02BF	Intense Fire Armored Gloves	浓烈火装甲手套
+tbl1.pak	0x014F0999	Big Surprise Battle Gloves	大惊喜战斗手套
+tbl1.pak	0x014F4A1D	Magic King Gloves	魔法王手套
+tbl1.pak	0x014F6237	Fire Tiger Gloves	火老虎手套
+tbl1.pak	0x014FD711	Invincible Combat Top	无敌战斗上衣
+tbl1.pak	0x014FD79B	Invincible Combat Pants	无敌战斗裤子
+tbl1.pak	0x014FD829	Invincible Combat Shoes	无敌战斗鞋子
+tbl1.pak	0x014FDA8D	Fire Tiger Armor	火老虎盔甲
+tbl1.pak	0x014FDB2F	Fire Tiger Pants	火老虎裤子
+tbl1.pak	0x014FDBD1	Fire Tiger Shoes	火老虎鞋子
+tbl1.pak	0x014FDE7F	General Combat Clothes	将军战斗服装
+tbl1.pak	0x01504A6F	Happy Dragon Gloves EX	快乐龙手套EX
+tbl1.pak	0x01505137	Dragon Gloves EX	龙手套EX
+tbl1.pak	0x0150591D	Invincible Steel Gloves	无敌钢手套
+tbl1.pak	0x015059A5	Happy Martial Arts Gloves	快乐武道手套
+tbl1.pak	0x0150E3BB	Invincible Martial Arts Clothes (Top)	无敌武道服装(上衣)
+tbl1.pak	0x0150E499	Invincible Martial Arts Clothes (Pants)	无敌武道服装(裤子)
+tbl1.pak	0x0150E57B	Invincible Martial Arts Clothes (Shoes)	无敌武道服装(鞋子)
+tbl1.pak	0x0150E96B	Flame Martial Arts Clothes (Top)	火焰武道服装(上衣)
+tbl1.pak	0x0150EAA7	Flame Martial Arts Clothes (Pants)	火焰武道服装(裤子)
+tbl1.pak	0x0150EBE7	Flame Martial Arts Clothes (Shoes)	火焰武道服装(鞋子)
+tbl1.pak	0x0150F367	Dark Sword Suit (Top) EX	黑暗剑套装(上衣)EX
+tbl1.pak	0x0150F447	Dark Sword Suit (Pants) EX	黑暗剑套装(裤子)EX
+tbl1.pak	0x0150F52B	Dark Sword Suit (Shoes) EX	黑暗剑套装(鞋子)EX
+tbl1.pak	0x0150FE75	Comet Suit (Top) EX	彗星套装(上衣)EX
+tbl1.pak	0x0150FF1F	Comet Suit (Pants) EX	彗星套装(裤子)EX
+tbl1.pak	0x0150FFCD	Comet Suit (Shoes) EX	彗星套装(鞋子)EX
+tbl1.pak	0x015106D5	Simple Della Combat Armor (Top) EX	简单德拉战斗盔甲(上衣)EX
+tbl1.pak	0x01510727	Simple Della Combat Armor (Pants) EX	简单德拉战斗盔甲(裤子)EX
+tbl1.pak	0x0151077D	Simple Della Combat Armor (Shoes) EX	简单德拉战斗盔甲(鞋子)EX
+tbl1.pak	0x015121A9	Master Turtle Clothes (Top) EX	大师龟服装(上衣)EX
+tbl1.pak	0x01512235	Master Turtle Clothes (Pants) EX	大师龟服装(裤子)EX
+tbl1.pak	0x015122C5	Master Turtle Clothes (Shoes) EX	大师龟服装(鞋子)EX
+tbl1.pak	0x01512355	Master Crane Clothes (Top) EX	大师鹤服装(上衣)EX
+tbl1.pak	0x015123DF	Master Crane Clothes (Pants) EX	大师鹤服装(裤子)EX
+tbl1.pak	0x0151246D	Master Crane Clothes (Shoes) EX	大师鹤服装(鞋子)EX
+tbl1.pak	0x015124FB	True Turtle Clothes (Top) EX	真龟服装(上衣)EX
+tbl1.pak	0x015125C7	True Turtle Clothes (Pants) EX	真龟服装(裤子)EX
+tbl1.pak	0x01512697	True Turtle Clothes (Shoes) EX	真龟服装(鞋子)EX
+tbl1.pak	0x01512EB7	Comet Turtle Clothes (Top) EX	彗星龟服装(上衣)EX
+tbl1.pak	0x01512F39	Comet Turtle Clothes (Pants) EX	彗星龟服装(裤子)EX
+tbl1.pak	0x01512FBF	Comet Turtle Clothes (Shoes) EX	彗星龟服装(鞋子)EX
+tbl1.pak	0x01513045	Comet Crane Suit (Top) EX	彗星鹤套装(上衣)EX
+tbl1.pak	0x015130BF	Comet Crane Suit (Pants) EX	彗星鹤套装(裤子)EX
+tbl1.pak	0x0151313D	Comet Crane Suit (Shoes) EX	彗星鹤套装(鞋子)EX
+tbl1.pak	0x015131BB	Super Dragon Turtle Clothes (Top) EX	超级龙龟服装(上衣)EX
+tbl1.pak	0x0151328B	Super Dragon Turtle Clothes (Pants) EX	超级龙龟服装(裤子)EX
+tbl1.pak	0x0151335F	Super Dragon Turtle Clothes (Shoes) EX	超级龙龟服装(鞋子)EX
+tbl1.pak	0x01513433	Tiamat Crane Clothes (Top) EX	提亚马特鹤服装(上衣)EX
+tbl1.pak	0x015134B7	Tiamat Crane Clothes (Pants) EX	提亚马特鹤服装(裤子)EX
+tbl1.pak	0x0151353F	Tiamat Crane Clothes (Shoes) EX	提亚马特鹤服装(鞋子)EX
+tbl1.pak	0x015135C7	Dragon Law Turtle Clothes (Top) EX	龙法则龟服装(上衣)EX
+tbl1.pak	0x01513619	Dragon Law Turtle Clothes (Pants) EX	龙法则龟服装(裤子)EX
+tbl1.pak	0x0151366F	Dragon Law Turtle Clothes (Shoes) EX	龙法则龟服装(鞋子)EX
+tbl1.pak	0x015136C5	Dragon Law Crane Clothes (Top) EX	龙法则鹤服装(上衣)EX
+tbl1.pak	0x01513715	Dragon Law Crane Clothes (Pants) EX	龙法则鹤服装(裤子)EX
+tbl1.pak	0x01513769	Dragon Law Crane Clothes (Shoes) EX	龙法则鹤服装(鞋子)EX
+tbl1.pak	0x015154FF	Comet Pilot Clothes (Top) EX	彗星驾驶员服装(上衣)EX
+tbl1.pak	0x01515545	Comet Pilot Clothes (Pants) EX	彗星驾驶员服装(裤子)EX
+tbl1.pak	0x0151558F	Comet Pilot Clothes (Shoes) EX	彗星驾驶员服装(鞋子)EX
+tbl1.pak	0x015155D9	Super Dragon Warrior Suit EX (Top)	超级龙战士套装EX(上衣)
+tbl1.pak	0x0151562B	Super Dragon Warrior Suit EX (Pants)	超级龙战士套装EX(裤子)
+tbl1.pak	0x01515681	Super Dragon Warrior Suit EX (Shoes)	超级龙战士套装EX(鞋子)
+tbl1.pak	0x015156D7	Super Della Army Battle Suit (Top) EX	超级德拉军战斗套装(上衣)EX
+tbl1.pak	0x0151572F	Super Della Army Battle Suit (Pants) EX	超级德拉军战斗套装(裤子)EX
+tbl1.pak	0x0151578B	Super Della Army Battle Suit (Shoes) EX	超级德拉军战斗套装(鞋子)EX
+tbl1.pak	0x015157E7	Della Army Suit (Top) EX	德拉军套装(上衣)EX
+tbl1.pak	0x01515825	Della Army Suit (Pants) EX	德拉军套装(裤子)EX
+tbl1.pak	0x01515867	Della Army Suit (Shoes) EX	德拉军套装(鞋子)EX
+tbl1.pak	0x015158A9	Pilot Dragon Suit (Top) EX	驾驶员龙套装(上衣)EX
+tbl1.pak	0x015158EB	Pilot Dragon Suit (Pants) EX	驾驶员龙套装(裤子)EX
+tbl1.pak	0x01515931	Pilot Dragon Suit (Shoes) EX	驾驶员龙套装(鞋子)EX
+tbl1.pak	0x01515977	Gun Warrior (Top) EX	枪战士(上衣)EX
+tbl1.pak	0x015159AD	Gun Warrior (Pants) EX	枪战士(裤子)EX
+tbl1.pak	0x015159E7	Gun Warrior (Shoes) EX	枪战士(鞋子)EX
+tbl1.pak	0x01517401	Ultra Magic Battle Armor (Top) EX	极限魔法战斗盔甲(上衣)EX
+tbl1.pak	0x015174E7	Ultra Magic Battle Armor (Pants) EX	极限魔法战斗盔甲(裤子)EX
+tbl1.pak	0x015175D1	Ultra Magic Battle Armor (Shoes) EX	极限魔法战斗盔甲(鞋子)EX
+tbl1.pak	0x015176BB	Flame Magic Combat Clothes (Top) EX	火焰魔法战斗服装(上衣)EX
+tbl1.pak	0x015177BF	Flame Magic Combat Clothes (Pants) EX	火焰魔法战斗服装(裤子)EX
+tbl1.pak	0x015178C7	Flame Magic Combat Clothes (Shoes) EX	火焰魔法战斗服装(鞋子)EX
+tbl1.pak	0x015179CF	Ghost Fire Magic Clothes (Top) EX	幽灵火魔法服装(上衣)EX
+tbl1.pak	0x01517A7F	Ghost Fire Magic Clothes (Pants) EX	幽灵火魔法服装(裤子)EX
+tbl1.pak	0x01517B33	Ghost Fire Magic Clothes (Shoes) EX	幽灵火魔法服装(鞋子)EX
+tbl1.pak	0x01517BE7	Devil Wolf Battle Suit (Top)	魔鬼狼战斗套装(上衣)
+tbl1.pak	0x01517CAD	Devil Wolf Battle Suit (Pants)	魔鬼狼战斗套装(裤子)
+tbl1.pak	0x01517D77	Devil Wolf Battle Suit (Shoes)	魔鬼狼战斗套装(鞋子)
+tbl1.pak	0x01518167	Comet Magic Battle Clothes (Top) EX	彗星魔法战斗服装(上衣)EX
+tbl1.pak	0x015181F5	Comet Magic Battle Clothes (Pants) EX	彗星魔法战斗服装(裤子)EX
+tbl1.pak	0x01518287	Comet Magic Battle Clothes (Shoes) EX	彗星魔法战斗服装(鞋子)EX
+tbl1.pak	0x015184EF	Super Devil Battle Suit (Top) EX	超级魔鬼战斗套装(上衣)EX
+tbl1.pak	0x015185D1	Super Devil Battle Suit (Pants) EX	超级魔鬼战斗套装(裤子)EX
+tbl1.pak	0x015186B7	Super Devil Battle Suit (Shoes) EX	超级魔鬼战斗套装(鞋子)EX
+tbl1.pak	0x0151879D	Super Magic Dragon Armor (Top) EX	超级魔法龙盔甲(上衣)EX
+tbl1.pak	0x01518881	Super Magic Dragon Armor (Pants) EX	超级魔法龙盔甲(裤子)EX
+tbl1.pak	0x01518969	Super Magic Dragon Armor (Shoes) EX	超级魔法龙盔甲(鞋子)EX
+tbl1.pak	0x01518BCF	Awakening New Battle Clothes (Top) EX	觉醒新战斗服装(上衣)EX
+tbl1.pak	0x01518C27	Awakening New Battle Clothes (Pants) EX	觉醒新战斗服装(裤子)EX
+tbl1.pak	0x01518C83	Awakening New Battle Clothes (Shoes) EX	觉醒新战斗服装(鞋子)EX
+tbl1.pak	0x01518CDF	Awakening New Battle Gear (Top) EX	觉醒新战斗装备(上衣)EX
+tbl1.pak	0x01518D31	Awakening New Battle Gear (Pants) EX	觉醒新战斗装备(裤子)EX
+tbl1.pak	0x01518D87	Awakening New Battle Gear (Shoes) EX	觉醒新战斗装备(鞋子)EX
+tbl1.pak	0x0151D1C5	Happy Broadwood Clothes (Top) EX	快乐布洛德伍德服装(上衣)EX
+tbl1.pak	0x0151D2D3	Happy Broadwood Clothes (Pants) EX	快乐布洛德伍德服装(裤子)EX
+tbl1.pak	0x0151D3E5	Happy Broadwood Clothes (Shoes) EX	快乐布洛德伍德服装(鞋子)EX
+tbl1.pak	0x0151D4F7	High Grade Tasty Magic Clothes (Top) EX	高级美味魔法服装(上衣)EX
+tbl1.pak	0x0151D601	High Grade Tasty Magic Clothes (Pants) EX	高级美味魔法服装(裤子)EX
+tbl1.pak	0x0151D70F	High Grade Tasty Magic Clothes (Shoes) EX	高级美味魔法服装(鞋子)EX
+tbl1.pak	0x0151E081	Red Lightning Clothes (Top) EX	红色闪电服装(上衣)EX
+tbl1.pak	0x0151E15D	Red Lightning Clothes (Pants) EX	红色闪电服装(裤子)EX
+tbl1.pak	0x0151E23D	Red Lightning Clothes (Shoes) EX	红色闪电服装(鞋子)EX
+tbl1.pak	0x0151E741	Super Della Army Lotus Magic Suit (Top) EX	超级德拉军莲花魔法套装(上衣)EX
+tbl1.pak	0x0151E7FF	Super Della Army Lotus Magic Suit (Pants) EX	超级德拉军莲花魔法套装(裤子)EX
+tbl1.pak	0x0151E8C1	Super Della Army Lotus Magic Suit (Shoes) EX	超级德拉军莲花魔法套装(鞋子)EX
+tbl1.pak	0x0151E983	Super Della Army Clothes (Top) EX	超级德拉军服装(上衣)EX
+tbl1.pak	0x0151EA19	Super Della Army Clothes (Pants) EX	超级德拉军服装(裤子)EX
+tbl1.pak	0x0151EAB3	Super Della Army Clothes (Shoes) EX	超级德拉军服装(鞋子)EX
+tbl1.pak	0x0151EC5D	DD Clothes (Top) EX	DD服装(上衣)EX
+tbl1.pak	0x0151EC91	DD Clothes (Pants) EX	DD服装(裤子)EX
+tbl1.pak	0x0151ECC9	DD Clothes (Shoes) EX	DD服装(鞋子)EX
+tbl1.pak	0x0151EF0F	Classic Sweet Rubber Clothes (Top) R	经典甜橡胶服装(上衣)R
+tbl1.pak	0x0151EFDD	Classic Sweet Rubber Clothes (Pants) R	经典甜橡胶服装(裤子)R
+tbl1.pak	0x0151F0AF	Classic Sweet Rubber Clothes (Shoes)	经典甜橡胶服装(鞋子)
+tbl1.pak	0x015208CB	High Grade Magic Comfort Suit (Top) EX	高级魔法舒适套装(上衣)EX
+tbl1.pak	0x015209D3	High Grade Magic Comfort Suit (Pants) EX	高级魔法舒适套装(裤子)EX
+tbl1.pak	0x01520ADF	High Grade Magic Comfort Suit (Shoes) EX	高级魔法舒适套装(鞋子)EX
+tbl1.pak	0x0152125B	Space Magic Surprise Suit (Top) EX	空间魔法惊喜套装(上衣)EX
+tbl1.pak	0x0152133D	Space Magic Surprise Suit (Pants) EX	空间魔法惊喜套装(裤子)EX
+tbl1.pak	0x01521423	Space Magic Surprise Suit (Shoes) EX	空间魔法惊喜套装(鞋子)EX
+tbl1.pak	0x015216F7	Soul Broadwood Clothes (Top) EX	灵魂布洛德伍德服装(上衣)EX
+tbl1.pak	0x015217F7	Soul Broadwood Clothes (Pants) EX	灵魂布洛德伍德服装(裤子)EX
+tbl1.pak	0x015218FB	Soul Broadwood Clothes (Shoes) EX	灵魂布洛德伍德服装(鞋子)EX
+tbl1.pak	0x01522185	Magic Surprise DD Suit (Top) EX	魔法惊喜DD套装(上衣)EX
+tbl1.pak	0x015221D1	Magic Surprise DD Suit (Pants) EX	魔法惊喜DD套装(裤子)EX
+tbl1.pak	0x01522221	Magic Surprise DD Suit (Shoes) EX	魔法惊喜DD套装(鞋子)EX
+tbl1.pak	0x01522271	Magic Comfort DD Suit (Top) EX	魔法舒适DD套装(上衣)EX
+tbl1.pak	0x015222BB	Magic Comfort DD Suit (Pants) EX	魔法舒适DD套装(裤子)EX
+tbl1.pak	0x01522309	Magic Comfort DD Suit (Shoes) EX	魔法舒适DD套装(鞋子)EX
+tbl1.pak	0x0152AA0D	Red Wind Gloves	红色风手套
+tbl1.pak	0x0152B30B	Fighter Gloves	战士手套
+tbl1.pak	0x015346E7	Red Lizard Suit (Top)	红色蜥蜴套装(上衣)
+tbl1.pak	0x01534767	Red Lizard Suit (Pants)	红色蜥蜴套装(裤子)
+tbl1.pak	0x015347EB	Red Lizard Suit (Shoes)	红色蜥蜴套装(鞋子)
+tbl1.pak	0x01534A51	Dark Sword Suit (Top)	黑暗剑套装(上衣)
+tbl1.pak	0x01534B2B	Dark Sword Suit (Pants)	黑暗剑套装(裤子)
+tbl1.pak	0x01534C09	Dark Sword Suit (Shoes)	黑暗剑套装(鞋子)
+tbl1.pak	0x015360D3	Dragon Battle Sword Suit (Top)	龙战斗剑套装(上衣)
+tbl1.pak	0x01536187	Dragon Battle Sword Suit (Pants)	龙战斗剑套装(裤子)
+tbl1.pak	0x0153623F	Dragon Battle Sword Suit (Shoes)	龙战斗剑套装(鞋子)
+tbl1.pak	0x015382BB	Dragon Battle Sword Suit (Top) EX	龙战斗剑套装(上衣)EX
+tbl1.pak	0x01538395	Dragon Battle Sword Suit (Pants) EX	龙战斗剑套装(裤子)EX
+tbl1.pak	0x01538473	Dragon Battle Sword Suit (Shoes) EX	龙战斗剑套装(鞋子)EX
+tbl1.pak	0x015386D5	Practitioner Spirit Suit (Top)	修行者精神套装(上衣)
+tbl1.pak	0x0153877D	Practitioner Spirit Suit (Pants)	修行者精神套装(裤子)
+tbl1.pak	0x01538829	Practitioner Spirit Suit (Shoes)	修行者精神套装(鞋子)
+tbl1.pak	0x015388D5	Spirit Suit (Top)	精神套装(上衣)
+tbl1.pak	0x01538987	Spirit Suit (Pants)	精神套装(裤子)
+tbl1.pak	0x01538A3D	Spirit Suit (Shoes)	精神套装(鞋子)
+tbl1.pak	0x01538C4B	Master Turtle Clothes (Top)	大师龟服装(上衣)
+tbl1.pak	0x01538CD1	Master Turtle Clothes (Pants)	大师龟服装(裤子)
+tbl1.pak	0x01538D5B	Master Turtle Clothes (Shoes)	大师龟服装(鞋子)
+tbl1.pak	0x01538DE5	Master Crane Clothes (Top)	大师鹤服装(上衣)
+tbl1.pak	0x01538E69	Master Crane Clothes (Pants)	大师鹤服装(裤子)
+tbl1.pak	0x01538EF1	Master Crane Clothes (Shoes)	大师鹤服装(鞋子)
+tbl1.pak	0x01538F79	True Turtle Clothes (Top)	真龟服装(上衣)
+tbl1.pak	0x0153903F	True Turtle Clothes (Pants)	真龟服装(裤子)
+tbl1.pak	0x01539109	True Turtle Clothes (Shoes)	真龟服装(鞋子)
+tbl1.pak	0x01539E73	Super Dragon Turtle Suit (Top)	超级龙龟套装(上衣)
+tbl1.pak	0x01539F37	Super Dragon Turtle Suit (Pants)	超级龙龟套装(裤子)
+tbl1.pak	0x01539FFF	Super Dragon Turtle Suit (Shoes)	超级龙龟套装(鞋子)
+tbl1.pak	0x0153A0C7	Super Dragon Crane Clothes (Top)	超级龙鹤服装(上衣)
+tbl1.pak	0x0153A18F	Super Dragon Crane Clothes (Pants)	超级龙鹤服装(裤子)
+tbl1.pak	0x0153A25B	Super Dragon Crane Clothes (Shoes)	超级龙鹤服装(鞋子)
+tbl1.pak	0x0153A327	Dragon Law Turtle Clothes (Top)	龙法则龟服装(上衣)
+tbl1.pak	0x0153A40D	Dragon Law Turtle Clothes (Pants)	龙法则龟服装(裤子)
+tbl1.pak	0x0153A4F7	Dragon Law Turtle Clothes (Shoes)	龙法则龟服装(鞋子)
+tbl1.pak	0x0153A5E1	Dragon Law Crane Clothes (Top)	龙法则鹤服装(上衣)
+tbl1.pak	0x0153A6C5	Dragon Law Crane Clothes (Pants)	龙法则鹤服装(裤子)
+tbl1.pak	0x0153A7AD	Dragon Law Crane Clothes (Shoes)	龙法则鹤服装(鞋子)
+tbl1.pak	0x0153AA13	Practitioner Spirit Suit (Top) EX	修行者精神套装(上衣)EX
+tbl1.pak	0x0153C453	Super Dragon Crane Clothes (Top) EX	超级龙鹤服装(上衣)EX
+tbl1.pak	0x0153C4FF	Super Dragon Crane Clothes (Pants) EX	超级龙鹤服装(裤子)EX
+tbl1.pak	0x0153C5AF	Super Dragon Crane Clothes (Shoes) EX	超级龙鹤服装(鞋子)EX
+tbl1.pak	0x0153D739	Super Dragon Warrior Clothes (Top)	超级龙战士服装(上衣)
+tbl1.pak	0x0153D78B	Super Dragon Warrior Clothes (Pants)	超级龙战士服装(裤子)
+tbl1.pak	0x0153D7E1	Super Dragon Warrior Clothes (Shoes)	超级龙战士服装(鞋子)
+tbl1.pak	0x0153D837	Super Della Army Battle Suit (Top)	超级德拉军战斗套装(上衣)
+tbl1.pak	0x0153D889	Super Della Army Battle Suit (Pants)	超级德拉军战斗套装(裤子)
+tbl1.pak	0x0153D8DF	Super Della Army Battle Suit (Shoes)	超级德拉军战斗套装(鞋子)
+tbl1.pak	0x0153D935	Della Army Suit (Top)	德拉军套装(上衣)
+tbl1.pak	0x0153D96D	Della Army Suit (Pants)	德拉军套装(裤子)
+tbl1.pak	0x0153D9A9	Della Army Suit (Shoes)	德拉军套装(鞋子)
+tbl1.pak	0x0153D9E5	Pilot Dragon Suit (Top)	驾驶员龙套装(上衣)
+tbl1.pak	0x0153DA21	Pilot Dragon Suit (Pants)	驾驶员龙套装(裤子)
+tbl1.pak	0x0153DA61	Pilot Dragon Suit (Shoes)	驾驶员龙套装(鞋子)
+tbl1.pak	0x0153DAA1	Gun Warrior (Top)	枪战士(上衣)
+tbl1.pak	0x0153DAD1	Gun Warrior (Pants)	枪战士(裤子)
+tbl1.pak	0x0153DB05	Gun Warrior (Shoes)	枪战士(鞋子)
+tbl1.pak	0x0153E5D7	Super Dragon Warrior Clothes (Top) EX	超级龙战士服装(上衣)EX
+tbl1.pak	0x0153E62F	Super Dragon Warrior Clothes (Pants) EX	超级龙战士服装(裤子)EX
+tbl1.pak	0x0153E68B	Super Dragon Warrior Clothes (Shoes) EX	超级龙战士服装(鞋子)EX
+tbl1.pak	0x0153E987	Gun Warrior (Top) EX	枪战士(上衣)EX
+tbl1.pak	0x0153E9BD	Gun Warrior (Pants) EX	枪战士(裤子)EX
+tbl1.pak	0x0153E9F7	Gun Warrior (Shoes) EX	枪战士(鞋子)EX
+tbl1.pak	0x0153EB35	Practitioner Magic Bucket Clothes (Top)	修行者魔法桶服装(上衣)
+tbl1.pak	0x0153EBEF	Practitioner Magic Bucket Clothes (Pants)	修行者魔法桶服装(裤子)
+tbl1.pak	0x0153ECAD	Practitioner Magic Bucket Clothes (Shoes)	修行者魔法桶服装(鞋子)
+tbl1.pak	0x0153ED6B	Magic Bucket Clothes (Top)	魔法桶服装(上衣)
+tbl1.pak	0x0153EE27	Magic Bucket Clothes (Pants)	魔法桶服装(裤子)
+tbl1.pak	0x0153EEE7	Magic Bucket Clothes (Shoes)	魔法桶服装(鞋子)
+tbl1.pak	0x0153EFA7	Magic Thunder Clothes (Top)	魔法雷霆服装(上衣)
+tbl1.pak	0x0153F065	Magic Thunder Clothes (Pants)	魔法雷霆服装(裤子)
+tbl1.pak	0x0153F127	Magic Thunder Clothes (Shoes)	魔法雷霆服装(鞋子)
+tbl1.pak	0x0153F497	Ultra Magic Battle Armor (Top)	极限魔法战斗盔甲(上衣)
+tbl1.pak	0x0153F577	Ultra Magic Battle Armor (Pants)	极限魔法战斗盔甲(裤子)
+tbl1.pak	0x0153F65B	Ultra Magic Battle Armor (Shoes)	极限魔法战斗盔甲(鞋子)
+tbl1.pak	0x0153F73F	Flame Magic Combat Clothes (Top)	火焰魔法战斗服装(上衣)
+tbl1.pak	0x0153F83D	Flame Magic Combat Clothes (Pants)	火焰魔法战斗服装(裤子)
+tbl1.pak	0x0153F93F	Flame Magic Combat Clothes (Shoes)	火焰魔法战斗服装(鞋子)
+tbl1.pak	0x0153FA41	Ghost Fire Magic Clothes (Top)	幽灵火魔法服装(上衣)
+tbl1.pak	0x0153FAEB	Ghost Fire Magic Clothes (Pants)	幽灵火魔法服装(裤子)
+tbl1.pak	0x0153FB99	Ghost Fire Magic Clothes (Shoes)	幽灵火魔法服装(鞋子)
+tbl1.pak	0x0154067B	Super Devil Battle Suit (Top)	超级魔鬼战斗套装(上衣)
+tbl1.pak	0x01540757	Super Devil Battle Suit (Pants)	超级魔鬼战斗套装(裤子)
+tbl1.pak	0x01540837	Super Devil Battle Suit (Shoes)	超级魔鬼战斗套装(鞋子)
+tbl1.pak	0x01540917	Super Magic Dragon Armor (Top)	超级魔法龙盔甲(上衣)
+tbl1.pak	0x015409F5	Super Magic Dragon Armor (Pants)	超级魔法龙盔甲(裤子)
+tbl1.pak	0x01540AD7	Super Magic Dragon Armor (Shoes)	超级魔法龙盔甲(鞋子)
+tbl1.pak	0x01540FC5	Awakening New Battle Clothes (Top)	觉醒新战斗服装(上衣)
+tbl1.pak	0x01541017	Awakening New Battle Clothes (Pants)	觉醒新战斗服装(裤子)
+tbl1.pak	0x0154106D	Awakening New Battle Clothes (Shoes)	觉醒新战斗服装(鞋子)
+tbl1.pak	0x015410C3	Awakening New Battle Gear (Top)	觉醒新战斗装备(上衣)
+tbl1.pak	0x0154110F	Awakening New Battle Gear (Pants)	觉醒新战斗装备(裤子)
+tbl1.pak	0x0154115F	Awakening New Battle Gear (Shoes)	觉醒新战斗装备(鞋子)
+tbl1.pak	0x0154126F	Practitioner Magic Bucket Clothes (Pants) EX	修行者魔法桶服装(裤子)EX
+tbl1.pak	0x01541333	Practitioner Magic Bucket Clothes (Shoes) EX	修行者魔法桶服装(鞋子)EX
+tbl1.pak	0x01541709	Magic Thunder Clothes (Pants) EX	魔法雷霆服装(裤子)EX
+tbl1.pak	0x015417D1	Magic Thunder Clothes (Shoes) EX	魔法雷霆服装(鞋子)EX
+tbl1.pak	0x0154233F	Devil Wolf Battle Suit (Top) EX	魔鬼狼战斗套装(上衣)EX
+tbl1.pak	0x0154240B	Devil Wolf Battle Suit (Pants) EX	魔鬼狼战斗套装(裤子)EX
+tbl1.pak	0x015424DB	Devil Wolf Battle Suit (Shoes) EX	魔鬼狼战斗套装(鞋子)EX
+tbl1.pak	0x01543B35	Practitioner Magic Battle Suit (Top)	修行者魔法战斗套装(上衣)
+tbl1.pak	0x01543BE9	Practitioner Magic Battle Suit (Pants)	修行者魔法战斗套装(裤子)
+tbl1.pak	0x01543CA1	Practitioner Magic Battle Suit (Shoes)	修行者魔法战斗套装(鞋子)
+tbl1.pak	0x01543D59	Magic Battle Suit (Top)	魔法战斗套装(上衣)
+tbl1.pak	0x01543DDF	Magic Battle Suit (Pants)	魔法战斗套装(裤子)
+tbl1.pak	0x01543E69	Magic Battle Suit (Shoes)	魔法战斗套装(鞋子)
+tbl1.pak	0x015485A7	Happy Broadwood Clothes (Top)	快乐布洛德伍德服装(上衣)
+tbl1.pak	0x015486AF	Happy Broadwood Clothes (Pants)	快乐布洛德伍德服装(裤子)
+tbl1.pak	0x015487BB	Happy Broadwood Clothes (Shoes)	快乐布洛德伍德服装(鞋子)
+tbl1.pak	0x015488C7	High Grade Tasty Magic Clothes (Top)	高级美味魔法服装(上衣)
+tbl1.pak	0x015489CB	High Grade Tasty Magic Clothes (Pants)	高级美味魔法服装(裤子)
+tbl1.pak	0x01548AD3	High Grade Tasty Magic Clothes (Shoes)	高级美味魔法服装(鞋子)
+tbl1.pak	0x01549409	Red Lightning Clothes (Top)	红色闪电服装(上衣)
+tbl1.pak	0x015494DF	Red Lightning Clothes (Pants)	红色闪电服装(裤子)
+tbl1.pak	0x015495B9	Red Lightning Clothes (Shoes)	红色闪电服装(鞋子)
+tbl1.pak	0x01549A45	Super Della Army Lotus Magic Suit (Top)	超级德拉军莲花魔法套装(上衣)
+tbl1.pak	0x01549AFD	Super Della Army Lotus Magic Suit (Pants)	超级德拉军莲花魔法套装(裤子)
+tbl1.pak	0x01549BB9	Super Della Army Lotus Magic Suit (Shoes)	超级德拉军莲花魔法套装(鞋子)
+tbl1.pak	0x01549C75	Super Della Army Clothes (Top)	超级德拉军服装(上衣)
+tbl1.pak	0x01549D39	Super Della Army Clothes (Pants)	超级德拉军服装(裤子)
+tbl1.pak	0x01549E01	Super Della Army Clothes (Shoes)	超级德拉军服装(鞋子)
+tbl1.pak	0x0154A159	DD Clothes (Top)	DD服装(上衣)
+tbl1.pak	0x0154A239	DD Clothes (Pants)	DD服装(裤子)
+tbl1.pak	0x0154A31D	DD Clothes (Shoes)	DD服装(鞋子)
+tbl1.pak	0x0154A7BB	Super Magic Clothes (Top) EX	超级魔法服装(上衣)EX
+tbl1.pak	0x0154A875	Super Magic Clothes (Pants) EX	超级魔法服装(裤子)EX
+tbl1.pak	0x0154A933	Super Magic Clothes (Shoes) EX	超级魔法服装(鞋子)EX
+tbl1.pak	0x0154CE05	Broadwood Clothes (Top)	布洛德伍德服装(上衣)
+tbl1.pak	0x0154CEE1	Broadwood Clothes (Pants)	布洛德伍德服装(裤子)
+tbl1.pak	0x0154CFC1	Broadwood Clothes (Shoes)	布洛德伍德服装(鞋子)
+tbl1.pak	0x0154D57F	High Grade Magic Comfort Suit (Top)	高级魔法舒适套装(上衣)
+tbl1.pak	0x0154D681	High Grade Magic Comfort Suit (Pants)	高级魔法舒适套装(裤子)
+tbl1.pak	0x0154D787	High Grade Magic Comfort Suit (Shoes)	高级魔法舒适套装(鞋子)
+tbl1.pak	0x0154DED9	Space Magic Surprise Suit (Top)	空间魔法惊喜套装(上衣)
+tbl1.pak	0x0154DFB5	Space Magic Surprise Suit (Pants)	空间魔法惊喜套装(裤子)
+tbl1.pak	0x0154E095	Space Magic Surprise Suit (Shoes)	空间魔法惊喜套装(鞋子)
+tbl1.pak	0x0154EA4D	Super Happy Suit (Top) EX	超级快乐套装(上衣)EX
+tbl1.pak	0x0154EB17	Super Happy Suit (Pants) EX	超级快乐套装(裤子)EX
+tbl1.pak	0x0154EBE5	Super Happy Suit (Shoes) EX	超级快乐套装(鞋子)EX
+tbl1.pak	0x0154ECB3	Magic Surprise DD Suit (Top)	魔法惊喜DD套装(上衣)
+tbl1.pak	0x0154ED7F	Magic Surprise DD Suit (Pants)	魔法惊喜DD套装(裤子)
+tbl1.pak	0x0154EE4F	Magic Surprise DD Suit (Shoes)	魔法惊喜DD套装(鞋子)
+tbl1.pak	0x0154EF1F	Magic Comfort DD Suit (Top)	魔法舒适DD套装(上衣)
+tbl1.pak	0x0154EFE9	Magic Comfort DD Suit (Pants)	魔法舒适DD套装(裤子)
+tbl1.pak	0x0154F0B7	Magic Comfort DD Suit (Shoes)	魔法舒适DD套装(鞋子)
+tbl1.pak	0x01580A31	Invincible Energy Gloves	无敌气功手套
+tbl1.pak	0x01580E31	Soul Gloves	灵魂手套
+tbl1.pak	0x015845A3	Shenron Dragon Armor (Top)	神龙龙盔甲(上衣)
+tbl1.pak	0x01584647	Shenron Dragon Armor (Pants)	神龙龙盔甲(裤子)
+tbl1.pak	0x015846EF	Shenron Dragon Armor (Shoes)	神龙龙盔甲(鞋子)
+tbl1.pak	0x01584B7F	Shenron Suit (Top)	神龙套装(上衣)
+tbl1.pak	0x01584C49	Shenron Suit (Pants)	神龙套装(裤子)
+tbl1.pak	0x01584D17	Shenron Suit (Shoes)	神龙套装(鞋子)
+tbl1.pak	0x01584EC9	Classic CC Spiritualist Suit (Top) R	经典CC气功师套装(上衣)R
+tbl1.pak	0x01584FBD	Classic CC Spiritualist Suit (Pants) R	经典CC气功师套装(裤子)R
+tbl1.pak	0x015850B5	Classic CC Spiritualist Suit (Shoes) R	经典CC气功师套装(鞋子)R
+tbl1.pak	0x01585571	CC Popo Magic (Top)	CC波波魔法(上衣)
+tbl1.pak	0x01585651	CC Popo Magic (Pants)	CC波波魔法(裤子)
+tbl1.pak	0x01585735	CC Popo Magic (Shoes)	CC波波魔法(鞋子)
+tbl1.pak	0x01585FA1	Master Armor (Top)	大师盔甲(上衣)
+tbl1.pak	0x01585FD3	Master Armor (Pants)	大师盔甲(裤子)
+tbl1.pak	0x01586009	Master Armor (Shoes)	大师盔甲(鞋子)
+tbl1.pak	0x01586687	Namek Popo Magic (Top)	那美克波波魔法(上衣)
+tbl1.pak	0x0158679F	Namek Popo Magic (Pants)	那美克波波魔法(裤子)
+tbl1.pak	0x015868BB	Namek Popo Magic (Shoes)	那美克波波魔法(鞋子)
+tbl1.pak	0x01588885	Shenron Dragon Armor (Top) R	神龙龙盔甲(上衣)R
+tbl1.pak	0x0158892D	Shenron Dragon Armor (Pants) R	神龙龙盔甲(裤子)R
+tbl1.pak	0x015889D9	Shenron Dragon Armor (Shoes) R	神龙龙盔甲(鞋子)R
+tbl1.pak	0x01588C55	Hot Clothes (Top)	火辣服装(上衣)
+tbl1.pak	0x01588D5D	Hot Clothes (Pants)	火辣服装(裤子)
+tbl1.pak	0x01588E69	Hot Clothes (Shoes)	火辣服装(鞋子)
+tbl1.pak	0x01588F75	Master Gear (Top) R	大师装备(上衣)R
+tbl1.pak	0x01588FA9	Master Gear (Pants) R	大师装备(裤子)R
+tbl1.pak	0x01588FE1	Master Gear (Shoes) R	大师装备(鞋子)R
+tbl1.pak	0x01589181	Combat Armor Necklace	战斗盔甲项链
+tbl1.pak	0x015894AB	Combat Armor Ring	战斗盔甲戒指
+tbl1.pak	0x01589CAD	Combat Armor Earring	战斗盔甲耳环
+tbl1.pak	0x015935BD	Dragon Martial Arts Clothes (Top) L	龙武道服装(上衣)L
+tbl1.pak	0x01594E55	Super Tiger Spirit Clothes (Top) L	超级老虎精神服装(上衣)L
+tbl1.pak	0x01594FA9	Super Tiger Spirit Clothes (Pants) L	超级老虎精神服装(裤子)L
+tbl1.pak	0x01595101	Super Tiger Spirit Clothes (Shoes) L	超级老虎精神服装(鞋子)L
+tbl1.pak	0x01595259	Ultra Spirit Clothes (Top) L	极限精神服装(上衣)L
+tbl1.pak	0x015952E3	Ultra Spirit Clothes (Pants) L	极限精神服装(裤子)L
+tbl1.pak	0x01595371	Ultra Spirit Clothes (Shoes) L	极限精神服装(鞋子)L
+tbl1.pak	0x015953FF	Super Dragon Magic Suit (Top) L	超级龙魔法套装(上衣)L
+tbl1.pak	0x015954CD	Super Tiger Spirit Suit (Shoes) L	超级老虎精神套装(鞋子)L
+tbl1.pak	0x01595829	Dragon King Spirit Clothes (Top) L	龙王精神服装(上衣)L
+tbl1.pak	0x015979C9	Super Taichu Battle Gear (Top) L	超级太初战斗装备(上衣)L
+tbl1.pak	0x01597A6B	Super Taichu Battle Gear (Pants) L	超级太初战斗装备(裤子)L
+tbl1.pak	0x01597B11	Super Taichu Battle Gear (Shoes) L	超级太初战斗装备(鞋子)L
+tbl1.pak	0x01597BB7	Super Ancient Battle Armor (Top)	超级古代战斗盔甲(上衣)
+tbl1.pak	0x01597C93	Super Ancient Battle Armor (Pants)	超级古代战斗盔甲(裤子)
+tbl1.pak	0x01597D73	Super Ancient Battle Armor (Shoes)	超级古代战斗盔甲(鞋子)
+tbl1.pak	0x01599B95	Ultra Dragon Suit (Top) L	极限龙套装(上衣)L
+tbl1.pak	0x01599C41	Ultra Dragon Suit (Pants) L	极限龙套装(裤子)L
+tbl1.pak	0x01599CF1	Ultra Dragon Suit (Shoes) L	极限龙套装(鞋子)L
+tbl1.pak	0x01599DA1	Super Ancient Dragon Suit (Top)	超级古代龙套装(上衣)
+tbl1.pak	0x01599E75	Super Ancient Dragon Suit (Pants)	超级古代龙套装(裤子)
+tbl1.pak	0x01599F4D	Super Ancient Dragon Suit (Shoes)	超级古代龙套装(鞋子)
+tbl1.pak	0x0159B95D	Super Magic Clothes (Top) L	超级魔法服装(上衣)L
+tbl1.pak	0x0159BA25	Super Magic Clothes (Pants) L	超级魔法服装(裤子)L
+tbl1.pak	0x0159BAF1	Super Magic Clothes (Shoes) L	超级魔法服装(鞋子)L
+tbl1.pak	0x0159D271	Ultra Magic Suit (Top) L	极限魔法套装(上衣)L
+tbl1.pak	0x0159D30D	Ultra Magic Suit (Pants) L	极限魔法套装(裤子)L
+tbl1.pak	0x0159D3AD	Ultra Magic Suit (Shoes) L	极限魔法套装(鞋子)L
+tbl1.pak	0x015A274D	Combat Gear (Top)	战斗装备(上衣)
+tbl1.pak	0x015A27C7	Combat Gear (Pants)	战斗装备(裤子)
+tbl1.pak	0x015A2845	Combat Gear (Shoes)	战斗装备(鞋子)
+tbl1.pak	0x015A2CF9	Basic Combat Gear (Top)	基础战斗装备(上衣)
+tbl1.pak	0x015A2DD7	Basic Combat Gear (Pants)	基础战斗装备(裤子)
+tbl1.pak	0x015A2EB9	Basic Combat Gear (Shoes)	基础战斗装备(鞋子)
+tbl1.pak	0x015A2F9B	T Combat Gear (Top)	T战斗装备(上衣)
+tbl1.pak	0x015A3019	T Combat Gear (Pants)	T战斗装备(裤子)
+tbl1.pak	0x015A309B	T Combat Gear (Shoes)	T战斗装备(鞋子)
+tbl1.pak	0x015A311D	Ultimate Combat Gear (Top)	终极战斗装备(上衣)
+tbl1.pak	0x015A31A3	Ultimate Combat Gear (Pants)	终极战斗装备(裤子)
+tbl1.pak	0x015A322D	Ultimate Combat Gear (Shoes)	终极战斗装备(鞋子)
+tbl1.pak	0x015A32B7	Classic Combat Gear (Top)	经典战斗装备(上衣)
+tbl1.pak	0x015A3395	Classic Combat Gear (Pants)	经典战斗装备(裤子)
+tbl1.pak	0x015A3477	Classic Combat Gear (Shoes)	经典战斗装备(鞋子)
+tbl1.pak	0x015A372F	Saiyan Battle Armor (Top)	赛亚人战斗盔甲(上衣)
+tbl1.pak	0x015A37DB	Saiyan Battle Armor (Pants)	赛亚人战斗盔甲(裤子)
+tbl1.pak	0x015A388B	Saiyan Battle Armor (Shoes)	赛亚人战斗盔甲(鞋子)
+tbl1.pak	0x015A393B	New Saiyan Battle Armor (Top)	新赛亚人战斗盔甲(上衣)
+tbl1.pak	0x015A39EF	New Saiyan Battle Armor (Pants)	新赛亚人战斗盔甲(裤子)
+tbl1.pak	0x015A3AA7	New Saiyan Battle Armor (Shoes)	新赛亚人战斗盔甲(鞋子)
+tbl1.pak	0x015A3E25	Basic Battle Armor (Top)	基础战斗盔甲(上衣)
+tbl1.pak	0x015A3EDB	Basic Battle Armor (Pants)	基础战斗盔甲(裤子)
+tbl1.pak	0x015A3F95	Basic Battle Armor (Shoes)	基础战斗盔甲(鞋子)
+tbl1.pak	0x015A42E5	Ultimate Battle Armor (Top)	终极战斗盔甲(上衣)
+tbl1.pak	0x015A443B	Ultimate Battle Armor (Pants)	终极战斗盔甲(裤子)
+tbl1.pak	0x015A4595	Ultimate Battle Armor (Shoes)	终极战斗盔甲(鞋子)
+tbl1.pak	0x015D3DF3	Pirate Captain Suit 1	海盗队长套装1
+tbl1.pak	0x015D3E6D	Pirate Captain Suit 2	海盗队长套装2
+tbl1.pak	0x015D74EF	EV Armor Upgrade Stone U50	EV盔甲升级石U50
+tbl1.pak	0x015D7659	EV Armor Upgrade Stone U53	EV盔甲升级石U53
+tbl1.pak	0x015D77C3	EV Armor Upgrade Stone U55	EV盔甲升级石U55
+tbl1.pak	0x015D7CC3	EV Advanced Armor Upgrade Stone U50	EV高级盔甲升级石U50
+tbl1.pak	0x015D7DF1	EV Advanced Armor Upgrade Stone U53	EV高级盔甲升级石U53
+tbl1.pak	0x015D7F1F	EV Advanced Armor Upgrade Stone U55	EV高级盔甲升级石U55
+tbl1.pak	0x015E0C23	EV Armor Upgrade Stone U60	EV盔甲升级石U60
+tbl1.pak	0x015E0EBF	EV Advanced Armor Upgrade Stone U60	EV高级盔甲升级石U60
+tbl1.pak	0x015E8C83	Top Hat	上衣帽子
+tbl1.pak	0x015EF36B	Red Pants Army Dogi	红裤军时装
+tbl1.pak	0x015EF97B	Ginyu Force Dogi	基纽特战队时装
+tbl1.pak	0x015EFBAF	Cosmic Suit	宇宙套装
+tbl1.pak	0x015F0DB3	Gogeta Dogi	悟吉塔时装
+tbl1.pak	0x0162884F	Special Armor Material Box	特殊盔甲材料盒
+tbl1.pak	0x0163F0F5	Dark Soul Armor	黑暗灵魂盔甲
+tbl1.pak	0x0163F1E3	Dark Soul Pants	黑暗灵魂裤子
+tbl1.pak	0x0163F2D1	Dark Soul Shoes	黑暗灵魂鞋子
+tbl1.pak	0x016413DF	Gloves of Blazing Fire A (Fighter)	炽热火A的手套(战士)
+tbl1.pak	0x016415C7	Gloves of Blazing Fire A (Swordsman)	炽热火A的手套(剑术家)
+tbl1.pak	0x01641B59	Gloves of Blazing Fire B (Dark Warrior)	炽热火B的手套(黑暗战士)
+tbl1.pak	0x01642437	Gloves of Blazing Fire C (Ultimate Majin)	炽热火C的手套(终极魔人)
+tbl1.pak	0x0166BC51	EV Premium Dogi Ball	EV高级时装球
+tbl1.pak	0x016866CF	Armor Upgrade Stone U75	盔甲升级石U75
+tbl1.pak	0x0168695F	Advanced Armor Upgrade Stone U80	高级盔甲升级石U80
+tbl1.pak	0x0168DF85	Invincible Armor Outfit A	无敌盔甲套装A
+tbl1.pak	0x0168E045	Invincible Armor Outfit B	无敌盔甲套装B
+tbl1.pak	0x0168E105	Invincible Armor Outfit C	无敌盔甲套装C
+tbl1.pak	0x01693DCF	Bardock Armor Controlled	巴达克盔甲受控
+tbl1.pak	0x01693E6B	Saiyan Prince Armor(Vegeta)	赛亚人王子盔甲(贝吉塔)
+tbl1.pak	0x01693EF1	Broly Battle Armor	布罗利战斗盔甲
+tbl1.pak	0x01693F27	Xeno Vegeta Armor	异次元贝吉塔盔甲
+tbl1.pak	0x01693FC9	King Vegeta Armor	王贝吉塔盔甲
+tbl1.pak	0x01695AB3	Erza Scarlet Armor	艾露莎绯红盔甲
+tbl1.pak	0x016976D3	Epic Armor Upgrade Stone U75	史诗盔甲升级石U75
+tbl1.pak	0x01698033	GM Armor Upgrade Stone	GM防具升级石
+tbl1.pak	0x01698F15	Dogi Preview	时装预览
+tbl1.pak	0x016A0991	Epic Armor Upgrade Stone U70	史诗盔甲升级石U70
+tbl1.pak	0x016B5701	Armor Downgrade Stone U85	盔甲降级石U85
+tbl1.pak	0x016E81C7	Red Pants Military Trainee	红裤军军用见习
+tbl1.pak	0x016EA515	Armored Saibaman	装甲栽培人
+tbl1.pak	0x016EA77F	Armored Eye Saibaman	装甲眼栽培人
+tbl1.pak	0x016EF579	Armored Mole Cricket	装甲鼹鼠蟋蟀
+tbl1.pak	0x016F0495	Dark Iron-Armored Mole Cricket	黑暗铁-装甲鼹鼠蟋蟀
+tbl1.pak	0x016F1823	Red Pants Gun Trainee	红裤军枪见习
+tbl1.pak	0x01704FF9	Red Pants Wolf	红裤军狼
+tbl1.pak	0x01707F75	Classic Red Pants Elite Unit	经典红裤军精英部队
+tbl1.pak	0x0181AD8B	Treasure Chest of Red Pants	红裤军的宝箱
+tbl1.pak	0x0186411D	Red Pants Army	红裤军
+tbl1.pak	0x018666D7	(Martial Artist Costume from Gotten (Top)	(武道家 Costume from Gotten (Top)
+tbl1.pak	0x01868701	Red Pants	红裤军
+tbl1.pak	0x0186DACF	Korin's Gloves	卡林的手套
+tbl1.pak	0x0186E655	Warrior Pants	那美克战士裤子
+tbl1.pak	0x0186E6CF	Warrior Shoes	那美克战士鞋子
+tbl1.pak	0x0186E82D	Dragon Clan Pants	那美克龙族裤子
+tbl1.pak	0x0186E8AF	Dragon Clan Shoes	那美克龙族鞋子
+tbl1.pak	0x0186EA21	Martial Artist Pants	武道家裤子
+tbl1.pak	0x0186EAA9	Martial Artist Shoes	武道家鞋子
+tbl1.pak	0x0186EC19	Spiritualist Pants	气功师裤子
+tbl1.pak	0x0186EC9D	Spiritualist Shoes	气功师鞋子
+tbl1.pak	0x0186EFF9	Wonder Majin Pants	意魔人裤子
+tbl1.pak	0x0186F07D	Wonder Majin Shoes	意魔人鞋子

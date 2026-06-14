@@ -1,0 +1,964 @@
+﻿# key	source_text	translation
+# 只写确认来自 DBOZero\pack\lang0.pak 的明面文本。
+# translation 会按 GBK/CP936 写入 lang0.pak 的 value bytes。
+DST_ITEM_GRADE_MYTHIC	Hakai	破坏
+DST_EQUIP_SLOT_TYPE_DOGI	Dogi	时装
+DST_LOBBY_CHARACTER_MAKE	New Character	创建新角色
+DST_ITEM_GRADE_HERO	Divine	神圣
+DST_ITEMLIST_ITEMNAME	Name: %s	名称: %s
+DST_STATUS_STAT_CON	CON	耐
+DST_STATUS_STAT_DEX	DEX	敏
+DST_STATUS_STAT_ENG	ENG	运
+DST_STATUS_STAT_FOC	FOC	集
+DST_STATUS_STAT_SOL	SOL	气
+DST_STATUS_STAT_STR	STR	力
+DST_STATUS_AP	P.Level	战斗力
+DST_STATUS_ATTACK	Attack	攻击
+DST_STATUS_ATTACK_RATE	Hit Rate	命中率
+DST_STATUS_ATTR	Attr	属性
+DST_STATUS_JOB	Class	职业
+DST_STATUS_LEVEL	Level	等级
+DST_STATUS_RESETS	Resets	转生
+DST_STATUS_NAME	Name	名称
+DST_LOBBY_ZENNY	Bank	金额
+DST_LOGIN	Start	登录
+DST_LOGIN_CONTRACT	Contract	合同
+DST_LOGIN_CREDIT	Credit	信用
+DST_LOGIN_ID	User	账号
+DST_LOGIN_NEW_ACCOUNT	Game Policies	游戏政策
+DST_LOGIN_PASSWARD	Pass	密码
+DST_LOGIN_PLAY_MOVIE	Film	影片
+DST_SIDEICON_HINT_FRIEND_TEXT	%s has logged in.	%s 已登录
+DST_NOTIFY_GET_BUFF	Received Buff: %s	获得增益: %s
+DST_CRANE_ROSHI	Crane Hermit	鹤仙流
+DST_TURTLE_ROSHI	Turtle Hermit	龟仙流
+DST_STATUS_WINDOW_TITLE	Character Status	角色状态
+DST_ITEM_CAN_EQUIP	Class: %s	职业:%s
+DST_ITEM_EQUIP_SLOT_TEXT	Slot: %s	部位: %s
+DST_ITEM_GRADE_NORMAL	Normal	普通
+DST_ITEM_GRADE_RARE	Rare	稀有
+DST_ITEM_GRADE_EXCELLENT	Excellent	特级
+DST_ITEM_GRADE_LEGENDARY	Legendary	传说
+DST_ITEM_PHYSICAL_DEFENCE	Physical Def: %5d	物理防御力: %5d
+DST_ITEM_PHYSICAL_OFFENCE	Physical Atk: %5d	物理攻击力: %5d
+DST_PET_STATUS_ENERGY_DEFENSE	Energy Defense	气功防御力
+DST_PET_STATUS_ENERGY_OFFENSE	Energy Attack	气功攻击力
+DST_PET_STATUS_PHYSICAL_DEFENSE	Physical Defense	物理防御力
+DST_STATUS_ENERGY_ATTACK	Energy Atk.	气功攻击
+DST_STATUS_ENERGY_CRITICAL	Crit. Energy	气功暴击
+DST_STATUS_ENERGY_DEFENCE	E. Defense.	气功防御
+DST_STATUS_PHYSICAL_ATTACK	Physical Atk.	物理攻击
+DST_STATUS_PHYSICAL_CRITICAL	Crit. Physical	物理暴击
+DST_STATUS_PHYSICAL_DEFENCE	P. Defense.	物理防御
+DST_ITEM_ATTACK_RANGE	Attack Range: %5d	攻击范围: %5d
+DST_ITEM_ATTACK_SPEED	Attack Speed: %4d	攻击速度: %4d
+DST_ITEM_ATTR_INFO	Element: %s	属性: %s
+DST_LOBBY_CHARACTER_ATTRIBUTE	Attributes	属性
+DST_LOBBY_CHARACTER_LIST	Characters	角色
+DST_LOBBY_CHAR_CLASS	Class	职业
+DST_LOBBY_CHAR_LEVEL	Level	等级
+DST_LOBBY_CHAR_RESETS	Resets	转生
+DST_LOBBY_CHOICE_CHANNEL	Channels	频道
+DST_LOBBY_CHOICE_SERVER	Change Server	更换服务器
+DST_LOBBY_CLASS	Class	职业
+DST_ITEM_ENERGY_DEFENCE	Energy Def: %5d	气功防御力: %5d
+DST_ITEM_ENERGY_OFFENCE	Energy Atk: %5d	气功攻击力: %5d
+DST_ITEM_LIMITED_SELL	No-Sale	不可售
+DST_ITEM_LIMITED_STORE_COMMON_WAREHOUSE	No-Bank	禁仓库
+DST_ITEM_LIMITED_STORE_GUILD_WAREHOUSE	No-Bank	禁公仓
+DST_ITEM_LIMITED_STORE_WAREHOUSE	No-Bank	禁仓库
+DST_ITEM_LIMITED_USER_TRADE	No-Trade	不可交易
+DST_TODAT_TIP	Today's Tips	今日小贴士
+DST_ITEM_ALL_GENDER	All genders	所有性别
+DST_ITEM_ALL_RACE	All Classes	所有职业
+DST_MOB_TYPE_MAJIN	Majin	魔人
+DST_MOB_TYPE_NAMEC	Namek	那美
+DST_MOB_TYPE_HUMAN	Human	人类
+DST_REVERTED_EQUIP	Binds	绑定
+DST_REVERTED_GENERAL	Binds	绑定
+DST_REVERTED_USE	Binds	绑定
+DST_REVERTED_ACTIVATE	(Activate)	(活动)
+DST_LOBBY_EXIT	Exit	退出
+DST_LOBBY_FACE	Face	面部
+DST_LOBBY_GAME_START	Start	开始
+DST_LOBBY_GENDER	Gender	性别
+DST_LOBBY_HAIR	Hair	发型
+DST_LOBBY_HAIRCOLOR	Hair Color	发色
+DST_EQUIP_SLOT_TYPE_FULLBODY	Transform	幻化
+DST_EQUIP_SLOT_TYPE_EARRING	Earring	耳环
+DST_EQUIP_SLOT_TYPE_HAIR	Hair	发型
+DST_EQUIP_SLOT_TYPE_HAND	Weapon	主武器
+DST_EQUIP_SLOT_TYPE_JACKET	Jacket	上衣
+DST_EQUIP_SLOT_TYPE_NECKLACE	Necklace	项链
+DST_EQUIP_SLOT_TYPE_PANTS	Pants	裤子
+DST_EQUIP_SLOT_TYPE_QUEST	Quest	任务
+DST_EQUIP_SLOT_TYPE_RING	Ring	戒指
+DST_EQUIP_SLOT_TYPE_SOUL	Soul	灵魂
+DST_EQUIP_SLOT_TYPE_SCOUTER	Scouter	史考特
+DST_EQUIP_SLOT_TYPE_SUB_WEAPON	Sub Weapon	副武器
+DST_EQUIP_SLOT_TYPE_SUB_WEAPONTRASMOG	Transmog Weapon	幻化武器
+DST_EQUIP_SLOT_TYPE_TAIL	Acessory 4 - Tail	配件 4 - 尾巴
+DST_EQUIP_SLOT_TYPE_ACCESSORY1	Accessory 1 - Mask	配件 1 - 面具
+DST_EQUIP_SLOT_TYPE_ACCESSORY2	Accessory 2 - Richness	配件 2 - 光环
+DST_EQUIP_SLOT_TYPE_ACCESSORY3	Accessory 3 - Backpack	配件 3 - 背饰
+DST_EQUIP_SLOT_TAIL	Accessory 4 - Tail	配件 4 - 尾巴
+DST_EQUIP_SLOT_TYPE_BOOTS	Shoes	鞋子
+DST_STATUS_DODGE	Dodge	闪避
+DST_STATUS_TAB_AVATAR	Character	角色
+DST_STATUS_TAB_FAMILY	Fame	声望
+DST_STATUS_TAB_SUMMON	Pet	宠
+DST_STATUS_TECHNIC_TITLE	Craft	工艺
+DST_STATUS_TAB_MOREINFO	Status	状态
+DST_LOBBY_POSITION	Location	位置
+DST_LOBBY_CHANNEL	Channel:	频道:
+DST_LOBBY_OK	Ok	OK
+DST_LOBBY_CANCLE	Cancel	取消
+DST_LOBBY_CANCLE2	Cancel	取消
+DST_LOBBY_SERVER	Server	服务器
+DST_LOBBY_SERVER_BUSY	Busy	繁忙
+DST_LOBBY_SERVER_CHECK	Offline	离线
+DST_LOBBY_SERVER_EXCESS	Full	已满
+DST_LOBBY_SERVER_INFO	Server	服务器
+DST_LOBBY_SERVER_LOCK	Locked	锁定
+DST_LOBBY_SERVER_NAME	Server	服务器
+DST_LOBBY_SERVER_NORMAL	Normal	正常
+DST_LOBBY_SERVER_NOT_BUSY	Not Busy	空闲
+DST_LOBBY_SERVER_OPEN	Open	开放
+DST_LOBBY_SERVER_STATE	State	状态
+DST_LOBBY_CARACTER_INFO	Character Info	角色信息
+DST_DELETE	Delete	删除
+DST_LOBBY_DEL_CHAR	Delete	删除
+DST_LOBBY_DEL_DAT	Delete	删除
+DST_HUMAN	Human	人类
+DST_MAJIN	Majin	魔人
+DST_NAMEK	Namek	那美
+DST_ITEM_ALREADY_EQUIPPED	Already Equipped	已装备
+DST_ITEM_ALL_RACE_ENABLE_EQUIP_BUT_NMY	All Classes (Except Dragon Clan)	所有职业（除龙族外）
+DST_ITEM_ADDITIONAL_EFFECT	Effect	效果
+DST_ITEM_AIR_TEXT	Dogi effect: %s	时装效果: %s
+DST_ITEM_EQUIP_CLASS_TEXT	Req %s	需要 %s
+DST_ITEM_EQUIP_LEVEL_TEXT	Lv.%d	Lv.%d
+DST_ITEM_EQUIP_MIN_MAX_LEVEL_TEXT	Lv.%d - %d	Lv.%d-%d
+DST_ITEM_GRADE_SUPERIOR	Superior	优质
+DST_ITEM_IDENTIFY_COST	Cost: %u	成本: %u
+DST_JOB_BATTLE_DUNGEON_MANAGER	Dungeon Manager	副本管理机
+DST_ITEM_CAN_SEX	Gender : %s	性别 : %s
+DST_ITEM_CAN_USE	Race : %s	种族 : %s
+DST_DISASSEMBLE_EXCUTE	Disassemble	分解
+DST_STATUS_TECHNIC_HOIPOIMIX_DISASSEMBLE	Disassemble	分解
+DST_SLOT_COUNT	Slots: %d	槽位: %d
+DST_SLOT_EMPTY	Empty	空
+DST_ITEM_JUST_DURABILITY	Durability: % 3d	耐久: % 3d
+DST_REVERTED_ACCOUNT	Account Bound	账号绑定
+DST_SKILL_CASTTIME	Cast: %s	吟唱:%s
+DST_SKILL_COOLTIME	Cooldown: %s	冷却时间: %s
+DST_SKILL_DURATIONTIME	Duration: %s	持续时间: %s
+DST_CHARTITLE_FILTER_OWNED	Owned Titles Only	仅显示已拥有称号
+DST_ITEM_DURABILITY	Durability:% 3d /% 3d	耐久度:% 3d /% 3d
+DST_SCOUTERITEM_OFF_EQUIPMENT	Scouter Status: Off	史考特状态: 关闭
+DST_SCOUTERITEM_ON_EQUIPMENT	Scouter Status: On	史考特状态: 开启
+DST_MAINMENU_OPTION	Options	选项
+DST_MAINMENU_HELP	Help	帮助
+DST_MAINMENU_UNSTUCK	Unstuck	脱卡
+DST_MAINMENU_END_GAME	Exit	退出
+DST_MAINMENU_END_SESSION	Log Out	回角色
+DST_MAINMENU_CHANNEL_CHANGE	Change Channel	更换频道
+DST_CCBD_BOARD_INAVLID_ITEM	Invalid Item.	无效物品。
+DST_MULTIDIALOG_MENU_UPGRADE	Item Upgrade	装备强化
+
+# TEST_BLOCK_LANG0_RISKY_ROWS_BEGIN
+DST_ITEM_ATTR_ELEGANCE	Water	水
+DST_ITEM_ATTR_FUNNY	Fire	火
+DST_ITEM_ATTR_HONEST	Ice	冰
+DST_ITEM_ATTR_NONE	None	无
+DST_ITEM_ATTR_STRANGE	Lightning	雷
+DST_ITEM_ATTR_WILD	Wind	风
+DST_SKILL_TARGET_AND_RANGE_INFO1	Self Cast	自身施放
+DST_SKILL_TARGET_AND_RANGE_INFO2	All Enemies within %dM on %d targets	对自身半径%d米内的敌人%d名使用
+DST_SKILL_TARGET_AND_RANGE_INFO3	All Enemies within %d x %dM of the surrounding landscape on %d targets	对自身周围%d米 x %d米内的敌人%d名使用
+DST_SKILL_TARGET_AND_RANGE_INFO4	All Allies within %dM on %d targets	对自身半径%d米内的友方%d名使用
+DST_SKILL_TARGET_AND_RANGE_INFO5	All Allies within %d x %dM of the surrounding landscape on %d targets	对自身周围%d米 x %d米内的友方%d名使用
+DST_SKILL_TARGET_AND_RANGE_INFO6	Teleport to a Specified Area	瞬间移动至指定区域
+DST_SKILL_TARGET_AND_RANGE_INFO7	All Party Members near the Caster within %dM on %d targets	对施放者附近%d米内的队员%d名使用
+DST_SKILL_TARGET_AND_RANGE_INFO8	All Party Members around the Caster within a %d x %dM on %d targets	对施放者周围%d米 x %d米内的队员%d名使用
+DST_SKILL_TARGET_AND_RANGE_INFO9	Target	目标
+DST_SKILL_TARGET_AND_RANGE_INFO11	All Enemies within %dM of the target on %d targets	对目标周围%d米内的敌人%d名使用
+DST_SKILL_TARGET_AND_RANGE_INFO12	All Enemies around the target within a %d x %dM on %d targets	对目标周围%d米 x %d米内的敌人%d名使用
+DST_SKILL_TARGET_AND_RANGE_INFO13	Affects specified target & %dM in a straight line on %d targets	对指定目标直线%d米内的目标%d名使用
+DST_SKILL_TARGET_AND_RANGE_INFO14	Affects one ally	作用于一名友方
+DST_SKILL_TARGET_AND_RANGE_INFO15	All Members within %dM of the target on %d targets	对目标周围%d米内的成员%d名使用
+DST_SKILL_TARGET_AND_RANGE_INFO16	All Members around the target within a %d x %dM on %d targets	对目标周围%d米 x %d米内的成员%d名使用
+DST_SKILL_TARGET_AND_RANGE_INFO17	Affects One Group Member	作用于一名队伍成员
+DST_SKILL_TARGET_AND_RANGE_INFO18	All Party Members within %dM of the target on %d targets	对目标周围%d米内的队员%d名使用
+DST_SKILL_TARGET_AND_RANGE_INFO19	All %d Party Members within %dM of the target on %d targets	对%d名队员使用，目标周围%d米内共%d个目标
+DST_SKILL_TARGET_AND_RANGE_INFO20	All Enemies within %dM of the area on %d targets	对区域内%d米范围的敌人%d名使用
+DST_SKILL_TARGET_AND_RANGE_INFO21	All Enemies around the area within a %d x %dM on %d targets	对区域周围%d米 x %d米内的敌人%d名使用
+DST_SKILL_TARGET_AND_RANGE_INFO22	All Members within %dM of the area on %d targets	对区域内%d米范围的成员%d名使用
+DST_SKILL_TARGET_AND_RANGE_INFO23	All Members around the area within a %d x %dM on %d targets	对区域周围%d米 x %d米内的成员%d名使用
+DST_SKILL_TARGET_AND_RANGE_INFO24	All Party Members within %dm of the area on %d targets	对区域内%d米范围的队员%d名使用
+DST_SKILL_TARGET_AND_RANGE_INFO25	All Party Members around the area within a %dx%dM on %d targets	对区域周围%d米 x %d米内的队员%d名使用
+DST_SKILL_TARGET_AND_RANGE_INFO26	All Enemies within %dM on %d targets	对自身半径%d米内的敌人%d名使用
+DST_SKILL_TARGET_AND_RANGE_INFO27	Everyone all around the caster within a range of %d x %dM on %d targets	对施放者周围%d米 x %d米内的所有目标%d名使用
+DST_SKILL_TARGET_AND_RANGE_INFO28	Target	目标
+DST_SKILL_TARGET_AND_RANGE_INFO29	Everyone within %dM of the target on %d targets	对目标周围%d米内的所有目标%d名使用
+DST_SKILL_TARGET_AND_RANGE_INFO30	Everyone around the target within a %d x %dM on %d targets	对目标周围%d米 x %d米内的所有目标%d名使用
+DST_SKILL_TARGET_AND_RANGE_INFO31	Everyone within %dM of the Area on %d targets	对区域内%d米范围的所有目标%d名使用
+DST_SKILL_TARGET_AND_RANGE_INFO32	Everyone around the area within a %d x %dM on %d targets	对区域周围%d米 x %d米内的所有目标%d名使用
+DST_SKILL_TARGET_AND_RANGE_INFO33	Near the character that designates immediate movement	瞬间移动至指定角色附近
+DST_SKILL_TARGET_AND_RANGE_INFO34	All Except the Caster	除施放者外的所有目标
+DST_SKILL_TARGET_AND_RANGE_INFO35	Target Range: %d targets within %dM hit	目标范围: 命中%d名目标，范围%d米
+DST_SKILL_TARGET_AND_RANGE_INFO36	Own Pet Only	仅自己的宠物
+DST_SKILL_TARGET_AND_RANGE_INFO37	Target Range: 37	目标范围: 37
+DST_SKILL_TARGET_AND_RANGE_INFO38	Target Range: 38	目标范围: 38
+DST_SKILL_TARGET_AND_RANGE_INFO39	Target Range: 39	目标范围: 39
+DST_SKILL_TARGET_AND_RANGE_INFO40	Target Range: 40	目标范围: 40
+DST_SKILL_TARGET_AND_RANGE_INFO41	Target Range: 41	目标范围: 41
+DST_SYSTEMMSG_CRITICAL_ATTACK_ATTACKER	%s took %d critical damage.	%s受到了%d点暴击伤害。
+DST_SYSTEMMSG_CRITICAL_ATTACK_DEFENDER	%s dealt %d critical damage.	%s造成了%d点暴击伤害。
+DST_SYSTEMMSG_SKILL_ACTION_ATTACKER	Casting: %s.	施放:%s。
+DST_SKILL_TRANSFORM_USE_INFO_FLAG_ABLE_WHEN_BODY_CURSE	[Usable while cursed]	[诅咒状态下可使用]
+DST_SKILL_TRANSFORM_USE_INFO_FLAG_ABLE_WHEN_CHANGE_CURSE	[Usable during a negative transformation]	[负面变身状态下可使用]
+DST_SKILL_TRANSFORM_USE_INFO_FLAG_ABLE_WHEN_GREAT_NAMEK	[Usable while in Great Namek form]	[巨大那美克星人形态下可使用]
+DST_SKILL_TRANSFORM_USE_INFO_FLAG_ABLE_WHEN_EVIL_NAMEK	[Usable while in Evil Namek form]	[邪恶那美克星人形态下可使用]
+DST_SKILL_TRANSFORM_USE_INFO_FLAG_ABLE_WHEN_KING_NAMEK	[Usable while in Orange Namek form]	[橙色那美克星人形态下可使用]
+DST_SKILL_TRANSFORM_USE_INFO_FLAG_ABLE_WHEN_KAIOKEN	[Usable during Kaio-Ken]	[界王拳状态下可使用]
+DST_SKILL_TRANSFORM_USE_INFO_FLAG_ABLE_WHEN_MIND_CURSE	[Usable during confusion]	[混乱状态下可使用]
+DST_SKILL_TRANSFORM_USE_INFO_FLAG_ABLE_WHEN_NORMAL	[Usable while normal]	[普通状态下可使用]
+DST_SKILL_TRANSFORM_USE_INFO_FLAG_ABLE_WHEN_PURE_MAJIN	[Usable while in Pure Majin form]	[纯粹魔人形态下可使用]
+DST_SKILL_TRANSFORM_USE_INFO_FLAG_ABLE_WHEN_EVIL_BOO	[Usable while in Super Boo form]	[超级布欧形态下可使用]
+DST_SKILL_TRANSFORM_USE_INFO_FLAG_ABLE_WHEN_SUPER_BOO	[Usable while in Buuhan form]	[布欧悟饭形态下可使用]
+DST_SKILL_TRANSFORM_USE_INFO_FLAG_ABLE_WHEN_RABIES	[Usable while enraged]	[狂暴状态下可使用]
+DST_SKILL_TRANSFORM_USE_INFO_FLAG_ABLE_WHEN_ROLLING_ATTACK	[Usable during a roll attack]	[翻滚攻击状态下可使用]
+DST_SKILL_TRANSFORM_USE_INFO_FLAG_ABLE_WHEN_SPINNING_ATTACK	[Usable during a spin attack]	[旋转攻击状态下可使用]
+DST_SKILL_TRANSFORM_USE_INFO_FLAG_ABLE_WHEN_SUPER_SAIYAN	[Usable while in Super Saiyan form]	[超级赛亚人形态下可使用]
+DST_SKILL_TRANSFORM_USE_INFO_FLAG_ABLE_WHEN_SUPER_SAIYAN2	[Usable while in Super Saiyan 2 form]	[超级赛亚人2形态下可使用]
+DST_SKILL_TRANSFORM_USE_INFO_FLAG_ABLE_WHEN_SUPER_SAIYAN3	[Usable while in Super Saiyan God form]	[超级赛亚人之神形态下可使用]
+DST_SKILL_TRANSFORM_USE_INFO_FLAG_ABLE_WHEN_SUPER_SAIYANBLUE	[Usable while in Super Saiyan Blue form]	[超级赛亚人蓝色形态下可使用]
+DST_SKILL_TRANSFORM_USE_INFO_FLAG_ABLE_WHEN_SUPER_SAIYAN4	[Usable while in Super Saiyan 4 form]	[超级赛亚人4形态下可使用]
+DST_SKILL_TRANSFORM_USE_INFO_FLAG_ABLE_WHEN_BIG_MONKEY	[Usable while in Oozaru form]	[大猿形态下可使用]
+DST_SKILL_TRANSFORM_USE_INFO_FLAG_ABLE_WHEN_VEHICLE	[Usable while in a vehicle]	[载具状态下可使用]
+DST_SKILL_TRANSFORM_USE_INFO_FLAG_ABLE_WHEN_GREAT_ORANGE	[Usable while in Great Orange form]	[巨大橙色形态下可使用]
+DST_SKILL_TRANSFORM_USE_INFO_FLAG_ABLE_WHEN_SUPER_SAIYANROSE	[Usable while in Super Saiyan Rose form]	[超级赛亚人桃红形态下可使用]
+DST_SKILL_TRANSFORM_USE_INFO_FLAG_ABLE_WHEN_SUPER_SAIYANL	[Usable while in Super Saiyan Legendary form]	[传说超级赛亚人形态下可使用]
+DST_SKILL_TRANSFORM_USE_INFO_FLAG_ABLE_WHEN_SUPER_SAIYAN33	[Usable while in Super Saiyan 3 form]	[超级赛亚人3形态下可使用]
+DST_SKILL_TRANSFORM_USE_INFO_FLAG_ABLE_WHEN_SUPER_BOO2	[Usable while in Super Boo 2 form]	[超级布欧2形态下可使用]
+DST_SKILL_TRANSFORM_USE_INFO_FLAG_ABLE_WHEN_BUUHAN_SKIN	[Usable while in Buuhan Skin form]	[布欧悟饭皮肤形态下可使用]
+DST_SKILL_TRANSFORM_USE_INFO_FLAG_ABLE_WHEN_BUUHAN_SKIN2	[Usable while in Buuhan Skin 2 form]	[布欧悟饭皮肤2形态下可使用]
+DST_SKILL_TRANSFORM_USE_INFO_FLAG_ABLE_WHEN_GOTENKS_BOO_FIS	[Usable while in Gotenks Boo Fighter form]	[悟天克斯布欧格斗形态下可使用]
+DST_SKILL_TRANSFORM_USE_INFO_FLAG_ABLE_WHEN_GOTENKS_BOO_MAG	[Usable while in Gotenks Boo Mystic form]	[悟天克斯布欧秘术形态下可使用]
+DST_SKILL_TRANSFORM_USE_INFO_FLAG_ABLE_WHEN_DARK_NAMEK	[Usable while in Dark Namek form]	[黑暗那美克星人形态下可使用]
+DST_SKILL_TRANSFORM_USE_INFO_FLAG_ABLE_WHEN_MYSTIC_MAJIN	[Usable while in Mystic Majin form]	[神秘魔人形态下可使用]
+# TEST_BLOCK_LANG0_RISKY_ROWS_END
+
+# TEST_BLOCK_LANG0_BOT_CHECK_BEGIN
+# TEST_BLOCK_LANG0_BOT_CHECK_END
+DST_MSG_BOX_TITLE	Message	消息
+DST_MSG_BTN_CANCEL	Cancel	取消
+DST_MSG_BTN_OK	Ok	OK
+
+# AUTO_BLOCK_LANG0_OPTION_MENU_INFO_BOT_20260608_BEGIN
+DST_DIALOG_MODE_NARRATION	Please Wait while I'm on the bot check	请稍等，正在验证
+DST_MSG_BOX_TITLE	Message	消息
+DST_MSG_BTN_CANCEL	Cancel	取消
+DST_MSG_BTN_OK	Ok	OK
+DST_MAINMENU_COMMUNITY	Guild	公会
+DST_MAINMENU_CONTROL	Controls	控制
+DST_MAINMENU_FRIENDLIST	Friends List	好友列表
+DST_MAINMENU_INVEN	Inventory	背包
+DST_MAINMENU_PARTYMATCHINGLIST	Party Search	队伍搜索
+DST_MAINMENU_QUEST	Quests	任务
+DST_MAINMENU_RANKBOARD	Ranks	排行
+DST_MAINMENU_SKILL	Skills	技能
+DST_MAINMENU_STATUS	Character	角色
+DST_MAINMENU_TOOLTIP	Menu	菜单
+DST_MAINMENU_TOOLTIP_SHORTCUT	Hotkey	热键
+DST_INFOWINDOW_CREATE_ITEM	Mix Item	合成
+DST_INFOWINDOW_MAKE_LEVEL	Crafting Level : %d	工艺等级:%d
+DST_INFOWINDOW_MAKE_ZENNY	Fee	费
+DST_INFOWINDOW_PREVIEW_MANUAL	Use Shift+left mouse button to preview the item.	Shift+左键预览物品。
+DST_INFOWINDOW_RECIPE_MAT	Ingredients	材料
+DST_INFOWINDOW_SELL_PRICE	Sale Price	售价
+DST_INFOWINDOW_USE_STATE	Conditions:	条件:
+DST_INFOWINDOW_ZENNY	%s Zeni	%s 索
+DST_INFOWND_RPBONUS_CASTTIME	Casttime	吟唱
+DST_INFOWND_RPBONUS_COOLTIME	Cooldown	冷却
+DST_INFOWND_RPBONUS_EP	EP Reduced	EP减少
+DST_INFOWND_RPBONUS_GUARDCRASH	Guard Break	破防
+DST_INFOWND_RPBONUS_KEEPTIME	Upkeep	维持
+DST_INFOWND_RPBONUS_KNOCKDOWN	Knockdown	击倒
+DST_INFOWND_RPBONUS_POWER	Power Increased	威力增加
+DST_INFOWND_RPBONUS_USE	Use Skill	用技能
+DST_INFO_MASCOT	These are your registered Pets.	已登记的宠物。
+DST_INFO_MASCOT_ACTIVATE_ICON	Shows Pet Being Summoned	显示召唤宠物
+DST_INFO_MASCOT_BUTT	Remove Ring to Delete	取下戒指删除
+DST_INFO_MASCOT_LIST	List of Registered Pets	已登记宠物列表
+DST_INFO_MASCOT_RING_ICON	Ring equipment state can be found in the pet window, click on the ring to use.	宠物窗口可查看戒指，点击戒指使用。
+DST_INFO_RING_ITEM	Pets can be summoned and require VP to use Rings.	宠物需用VP戒指召唤。
+DST_OPTION_CANCEL	Cancel	取消
+DST_OPTION_CHATTING_ADDED_GUILD	Guild	公会
+DST_OPTION_CHATTING_ADDED_NORMAL	Normal	普通
+DST_OPTION_CHATTING_ADDED_PARTY	Party	队伍
+DST_OPTION_CHATTING_ADDED_PARTY_SEARCH	Party Search	队伍搜索
+DST_OPTION_CHATTING_ADDED_SHOUT	Shout	喊话
+DST_OPTION_CHATTING_ADDED_SYSTEM	System	系统
+DST_OPTION_CHATTING_ADDED_TRADE	Trade	交易
+DST_OPTION_CHATTING_ADDED_WISPHER	Whisper	密语
+DST_OPTION_CHATTING_BASIC_GUILD	Guild	公会
+DST_OPTION_CHATTING_BASIC_NORMAL	Normal	普通
+DST_OPTION_CHATTING_BASIC_PARTY	Party	队伍
+DST_OPTION_CHATTING_BASIC_PARTY_SEARCH	Party Search	队伍搜索
+DST_OPTION_CHATTING_BASIC_SHOUT	Shout	喊话
+DST_OPTION_CHATTING_BASIC_SYSTEM	System	系统
+DST_OPTION_CHATTING_BASIC_TRADE	Trade	交易
+DST_OPTION_CHATTING_BASIC_WISPHER	Whisper	密语
+DST_OPTION_CHATTING_COMMON_ADDEDWINDOW	Window+	窗口+
+DST_OPTION_CHATTING_COMMON_ADDEDWINDOW2	Window++	窗口++
+DST_OPTION_CHATTING_COMMON_INPUTMODE	Input Mode	输入模式
+DST_OPTION_CHATTING_COMMON_LOCK	Lock Chat	锁聊天
+DST_OPTION_CHATTING_COMMON_OPACITY	Opacity	透明度
+DST_OPTION_CHATTING_COMMON_SCROLL	Scroll Chat	滚动聊天
+DST_OPTION_CHATTING_TITLE_ADDED	Window+	窗口+
+DST_OPTION_CHATTING_TITLE_ADDED2	Window++	窗口++
+DST_OPTION_CHATTING_TITLE_BASIC	Basic	基本
+DST_OPTION_CHATTING_TITLE_COMMON	Common	通用
+DST_OPTION_CONTROL_ACTION_AVATAR_AUTORUN	Auto-run	自动跑
+DST_OPTION_CONTROL_ACTION_AVATAR_BACKWARD	Back	后退
+DST_OPTION_CONTROL_ACTION_AVATAR_BLOCKING	Block	格挡
+DST_OPTION_CONTROL_ACTION_AVATAR_CHARGE	Charge	蓄气
+DST_OPTION_CONTROL_ACTION_AVATAR_FORWARD	Forward	前进
+DST_OPTION_CONTROL_ACTION_AVATAR_JUMP	Jump	跳跃
+DST_OPTION_CONTROL_ACTION_AVATAR_LEFTSIDE	Left	左
+DST_OPTION_CONTROL_ACTION_AVATAR_LEFTTURN	Turn Left	左转
+DST_OPTION_CONTROL_ACTION_AVATAR_LOOTING	Loot	拾取
+DST_OPTION_CONTROL_ACTION_AVATAR_RIGHTSIDE	Right	右
+DST_OPTION_CONTROL_ACTION_AVATAR_RIGHTTURN	Turn Right	右转
+DST_OPTION_CONTROL_ACTION_AVATAR_SCOUTER	Scouter on / off	史考特开关
+DST_OPTION_CONTROL_ACTION_AVATAR_SITDOWN	Sit	坐
+DST_OPTION_CONTROL_ACTION_CHAT_PGDN	Scroll Down	下滚
+DST_OPTION_CONTROL_ACTION_CHAT_PGUP	Scroll Up	上滚
+DST_OPTION_CONTROL_ACTION_GLOBAL_CANCLE	Cancel	取消
+DST_OPTION_CONTROL_ACTION_GLOBAL_CHAT	Start Chat	开始聊天
+DST_OPTION_CONTROL_ACTION_GLOBAL_RENDERGUI	Hide UI	隐藏UI
+DST_OPTION_CONTROL_ACTION_GLOBAL_SNAPSHOT	Screenshot	截图
+DST_OPTION_CONTROL_ACTION_MINIMAP_ZOOMIN	Minimap Zoom-In	小地图放大
+DST_OPTION_CONTROL_ACTION_MINIMAP_ZOOMOUT	Minimap Zoom-Out	小地图缩小
+DST_OPTION_CONTROL_ACTION_QUICKSLOT_2NDCAP	Bag2	包2
+DST_OPTION_CONTROL_ACTION_QUICKSLOT_3RDCAP	Bag3	包3
+DST_OPTION_CONTROL_ACTION_QUICKSLOT_4THCAP	Bag4	包4
+DST_OPTION_CONTROL_ACTION_QUICKSLOT_5THCAP	Bag5	包5
+DST_OPTION_CONTROL_ACTION_QUICKSLOT_NEXT	Next Bar	下栏
+DST_OPTION_CONTROL_ACTION_QUICKSLOT_PREV	Prev Bar	上栏
+DST_OPTION_CONTROL_ACTION_QUICKSLOT_SUMMON_1	Quick Summon 1	快速召唤1
+DST_OPTION_CONTROL_ACTION_QUICKSLOT_SUMMON_2	Quick Summon 2	快速召唤2
+DST_OPTION_CONTROL_ACTION_QUICKSLOT_SUMMON_3	Quick Summon 3	快速召唤3
+DST_OPTION_CONTROL_ACTION_QUICKSLOT_SUMMON_4	Quick Summon 4	快速召唤4
+DST_OPTION_CONTROL_ACTION_QUICKSLOT_SUMMON_5	Quick Summon 5	快速召唤5
+DST_OPTION_CONTROL_ACTION_QUICKSLOT_SUMMON_6	Quick Summon 6	快速召唤6
+DST_OPTION_CONTROL_ACTION_QUICKSLOT_SUMMON_7	Quick Summon 7	快速召唤7
+DST_OPTION_CONTROL_ACTION_QUICKSLOT_SUMMON_8	Quick Summon 8	快速召唤8
+DST_OPTION_CONTROL_ACTION_TARGET_1STPARTY	Target Member1	目标队员1
+DST_OPTION_CONTROL_ACTION_TARGET_2NDPARTY	Target Member2	目标队员2
+DST_OPTION_CONTROL_ACTION_TARGET_3RDPARTY	Target Member3	目标队员3
+DST_OPTION_CONTROL_ACTION_TARGET_4THPARTY	Target Member4	目标队员4
+DST_OPTION_CONTROL_ACTION_TARGET_AUTO	Auto-Target	自动目标
+DST_OPTION_CONTROL_ACTION_TARGET_AUTOATK	Auto-Attack	自动攻击
+DST_OPTION_CONTROL_ACTION_TARGET_AUTOFOLLOW	Auto-Follow	自动跟随
+DST_OPTION_CONTROL_ACTION_TARGET_AUTOPARTY	Target Member	目标队员
+DST_OPTION_CONTROL_ACTION_TARGET_MARKING1	Mark1	标记1
+DST_OPTION_CONTROL_ACTION_TARGET_MARKING2	Mark2	标记2
+DST_OPTION_CONTROL_ACTION_TARGET_MARKING3	Mark3	标记3
+DST_OPTION_CONTROL_ACTION_TARGET_MARKING4	Mark4	标记4
+DST_OPTION_CONTROL_ACTION_TARGET_MARKING5	Mark5	标记5
+DST_OPTION_CONTROL_ACTION_TARGET_SELECTING1	Target Mark1	目标标记1
+DST_OPTION_CONTROL_ACTION_TARGET_SELECTING2	Target Mark2	目标标记2
+DST_OPTION_CONTROL_ACTION_TARGET_SELECTING3	Target Mark3	目标标记3
+DST_OPTION_CONTROL_ACTION_TARGET_SELECTING4	Target Mark4	目标标记4
+DST_OPTION_CONTROL_ACTION_TARGET_SELECTING5	Target Mark5	目标标记5
+DST_OPTION_CONTROL_ACTION_TARGET_SELF	Target Self	目标自己
+DST_OPTION_CONTROL_ACTION_WINDOW_DWC	DWC	DWC
+DST_OPTION_CONTROL_ACTION_WINDOW_FRIEND	Friends List	好友列表
+DST_OPTION_CONTROL_ACTION_WINDOW_GUILD	Guild Window	公会窗口
+DST_OPTION_CONTROL_ACTION_WINDOW_HELP	Help	帮助
+DST_OPTION_CONTROL_ACTION_WINDOW_HOIPOIMIX	HoiPoi Mix	合成
+DST_OPTION_CONTROL_ACTION_WINDOW_MAIN	Main Menu	主菜单
+DST_OPTION_CONTROL_ACTION_WINDOW_MAINCAP	Bag	包
+DST_OPTION_CONTROL_ACTION_WINDOW_MASCOT	Pets	宠物
+DST_OPTION_CONTROL_ACTION_WINDOW_MINIMAP	Minimap	小地图
+DST_OPTION_CONTROL_ACTION_WINDOW_OPTION	Options	选项
+DST_OPTION_CONTROL_ACTION_WINDOW_PARTY	Party Info	队伍信息
+DST_OPTION_CONTROL_ACTION_WINDOW_PROFILE	Character	角色
+DST_OPTION_CONTROL_ACTION_WINDOW_QUEST	Quests	任务
+DST_OPTION_CONTROL_ACTION_WINDOW_RANKBOARD	Rank Board	排行榜
+DST_OPTION_CONTROL_ACTION_WINDOW_SCOUTER	Scouter	史考特
+DST_OPTION_CONTROL_ACTION_WINDOW_SKILL	Skills	技能
+DST_OPTION_CONTROL_ACTION_WINDOW_WORLDMAP	Worldmap	世界图
+DST_OPTION_CONTROL_CATEGORY_AVATAR	Character	角色
+DST_OPTION_CONTROL_CATEGORY_FIXED	Other	其他
+DST_OPTION_CONTROL_CATEGORY_QUICKSLOT	Skill Slots	技能栏
+DST_OPTION_CONTROL_CATEGORY_TARGET	Target	目标
+DST_OPTION_CONTROL_CATEGORY_WINDOW	Window	窗口
+DST_OPTION_CONTROL_TEXT_CHANGEGUIDE	Key %s is used by %s, change to %s.	键%s被%s占用,改为%s
+DST_OPTION_CONTROL_TEXT_EMPTYKEY	None	无
+DST_OPTION_CONTROL_TEXT_FIXEDKEYGUIDE	Can't be changed	不可更改
+DST_OPTION_CONTROL_TEXT_GUIDE	Duplicates found: %s	重复按键:%s
+DST_OPTION_CONTROL_TEXT_NEGATIVEMODEGUIDE	Wrong Key	错误键
+DST_OPTION_CONTROL_TEXT_NEGATIVE_BY_OTHER	Key is already being used.	按键已被占用。
+DST_OPTION_CONTROL_TEXT_NOTCHANGEGUIDE	%s can't be changed	%s不可更改
+DST_OPTION_CONTROL_TEXT_NOTCOMBINEGUIDE	Can't use Key	不能用键
+DST_OPTION_CONTROL_TEXT_READYGUIDE	Please input the key you desire.	请输入按键。
+DST_OPTION_CONTROL_TEXT_SAMEKEYGUIDE	No duplicate Keys	无重复键
+DST_OPTION_CONTROL_TEXT_TITLE	Control	控制
+DST_OPTION_CONTROL_TEXT_WAITGUIDE	No changes.	无变化。
+DST_OPTION_TAB_DROP_FILTER	Drop Filter	掉落
+DST_OPTION_TAB_DROP_SELL	Drop Sell	出售
+DST_OPTION_DROPFILTER_TITLE_ITEMS	Items	物品
+DST_OPTION_DROPFILTER_TITLE_STONES	Stones	石头
+DST_OPTION_DROPFILTER_NORMAL	Normal	普通
+DST_OPTION_DROPFILTER_SUPERIOR	Superior	优质
+DST_OPTION_DROPFILTER_EXCELENT	Excelent	特级
+DST_OPTION_DROPFILTER_RARE	Rare	稀有
+DST_OPTION_DROPFILTER_LEGENDARY	Legendary	传说
+DST_OPTION_DROPFILTER_DRAGONBALL	DragonBall	龙珠
+DST_OPTION_DROPFILTER_JUNK	Event Items	活动物品
+DST_OPTION_DROPFILTER_RECOVER	Recover Items	恢复物品
+DST_OPTION_DROPFILTER_FOOD	Food Items	食物
+DST_OPTION_DROPFILTER_UTILITY	Utility Items	工具物品
+DST_OPTION_DROPFILTER_AUTOCOLLECT	Auto-Collect	自动拾取
+DST_OPTION_DROPFILTER_WEAPONUPGRADE	Weapon Stone	武器石
+DST_OPTION_DROPFILTER_ARMORUPGRADE	Armor Stone	防具石
+DST_OPTION_DROPFILTER_WEAPONGREATERUPGRADE	Weapon Greater Stone	武器大石
+DST_OPTION_DROPFILTER_ARMORGREATERUPGRADE	Armor Greater Stone	防具大石
+DST_OPTION_DROPFILTER_WEAPONDOWNGRADE	Weapon Downgrade Stone	武器降级石
+DST_OPTION_DROPFILTER_ARMORDOWNGRADE	Armor Downgrade Stone	防具降级石
+DST_OPTION_DROPFILTER_STONECORE	White Stone	白石
+DST_OPTION_DROPFILTER_TOOLTIP_NORMAL	Filter Normal Items	过滤普通物品
+DST_OPTION_DROPFILTER_TOOLTIP_SUPERIOR	Filter Superior Items	过滤优质物品
+DST_OPTION_DROPFILTER_TOOLTIP_EXCELENT	Filter Excelent Items	过滤特级物品
+DST_OPTION_DROPFILTER_TOOLTIP_RARE	Filter Rare Items 	过滤稀有物品
+DST_OPTION_DROPFILTER_TOOLTIP_LEGENDARY	Filter Legendary Items 	过滤传说物品
+DST_OPTION_DROPFILTER_TOOLTIP_DRAGONBALL	Filter Legendary Items 	过滤龙珠物品
+DST_OPTION_DROPFILTER_TOOLTIP_RECOVER	Filter Recover Items 	过滤恢复物品
+DST_OPTION_DROPFILTER_TOOLTIP_FOOD	Filter Food Items 	过滤食物
+DST_OPTION_DROPFILTER_TOOLTIP_UTILITY	Filter Utility Items 	过滤工具物品
+DST_OPTION_DROPFILTER_TOOLTIP_WEAPONUPGRADE	Filter Weapon Stone	过滤武器石
+DST_OPTION_DROPFILTER_TOOLTIP_ARMORUPGRADE	Filter Armor Stone	过滤防具石
+DST_OPTION_DROPFILTER_TOOLTIP_WEAPONGREATERUPGRADE	Filter Weapon Greater Stone	过滤武器大石
+DST_OPTION_DROPFILTER_TOOLTIP_ARMORGREATERUPGRADE	Filter Armor Greater Stone	过滤防具大石
+DST_OPTION_DROPFILTER_TOOLTIP_WEAPONDOWNGRADE	Filter Weapon Downgrade Stone	过滤武器降级石
+DST_OPTION_DROPFILTER_TOOLTIP_ARMORDOWNGRADE	Filter Armor Downgrade Stone	过滤防具降级石
+DST_OPTION_DROPFILTER_TOOLTIP_STONECORE	Filter White Stone	过滤白石
+DST_OPTION_DROPFILTER_TOOLTIP_AUTOCOLLECT	Auto-Collect Items	自动拾取物品
+DST_OPTION_ETC_EX_QUICKSLOT1	Extended Bar 1	扩展栏1
+DST_OPTION_ETC_EX_QUICKSLOT2	Extended Bar 2	扩展栏2
+DST_OPTION_ETC_EX_QUICKSLOT_LOCK	Lock Bars	锁栏
+DST_OPTION_ETC_FOV	FOV	FOV
+DST_OPTION_ETC_FRIENDCONNECT	Friend Connection Info	好友上线信息
+DST_OPTION_ETC_GUILDCONNECT	Guild Login	公会上线
+DST_OPTION_ETC_MOUSEDASH	Mouse Dash Interval	鼠标冲刺间隔
+DST_OPTION_ETC_QUESTEFFECT	Quest Text Effects	任务文字效果
+DST_OPTION_ETC_SELF_TARGET_APPLY	Self casting	自己施法
+DST_OPTION_ETC_USERTRADE	Trade	交易
+DST_OPTION_ETC_VIEW_POINT	Point	视点
+DST_OPTION_ETC_WINDOWMOVE	Lock Windows	锁窗口
+DST_OPTION_ETC_WINDOWMOVE_DEFAULT	Default Window Positions	默认窗口位置
+DST_OPTION_GMT_TAB	Bonus	加成
+DST_OPTION_GRAPHIC_CARTOON_EDGE	Cell Shading	卡通描边
+DST_OPTION_GRAPHIC_CHARACTER_EFFECT	Character Effects	角色效果
+DST_OPTION_GRAPHIC_CHARACTER_RANGE	Player Range	玩家距离
+DST_OPTION_GRAPHIC_CHARACTER_SHADOW	Player Shadows	玩家阴影
+DST_OPTION_GRAPHIC_ETC_TITLE	Other Effects	其他效果
+DST_OPTION_GRAPHIC_GAMMA	Gamma	亮度
+DST_OPTION_GRAPHIC_HDR_EFFECT	HDR FX	HDR
+DST_OPTION_GRAPHIC_PERFORMANCE_MODE	Performance Mode	性能模式
+DST_OPTION_PERF_PLAYER_FILTER	Player Filter:	玩家过滤:
+DST_OPTION_PERF_PLAYER_FILTER_ALL	Show All	显示全部
+DST_OPTION_PERF_PLAYER_FILTER_HIDE_ALL	Hide All	隐藏全部
+DST_OPTION_PERF_PLAYER_FILTER_PARTY	Party Only	仅队伍
+DST_OPTION_PERF_PLAYER_FILTER_GUILD	Guild Only	仅公会
+DST_OPTION_PERF_PLAYER_FILTER_FRIENDS	Friends Only	仅好友
+DST_OPTION_PERF_PLAYER_FILTER_PARTY_GUILD	Party + Guild	队伍+公会
+DST_OPTION_PERF_PLAYER_FILTER_ALL_SOCIAL	Party + Guild + Friends	队伍+公会+好友
+DST_OPTION_PERF_HIDE_MASCOT	Hide Mascots/Pets	隐藏宠物
+DST_OPTION_PERF_HIDE_PLAYER_EFFECTS	Hide Player Effects	隐藏玩家效果
+DST_OPTION_GRAPHIC_MAGIC_EFFECT	Spell Effects	技能效果
+DST_OPTION_GRAPHIC_QUALITY_HIGH	High	高
+DST_OPTION_GRAPHIC_QUALITY_LOW	Low	低
+DST_OPTION_GRAPHIC_QUALITY_MIDDLE	Medium	中
+DST_OPTION_GRAPHIC_QUALITY_OBJECT_RANGE	Object Distance	物体距离
+DST_OPTION_GRAPHIC_QUALITY_TERRAIN_RANGE	Terrain Distance	地形距离
+DST_OPTION_GRAPHIC_QUALITY_TOTAL	Total	整体
+DST_OPTION_GRAPHIC_QUALITY_USER	Custom	自定义
+DST_OPTION_GRAPHIC_RESOLUTION	Resolution	分辨率
+DST_OPTION_GRAPHIC_RESOLUTION_TITLE	Resolution	分辨率
+DST_OPTION_GRAPHIC_TERRAIN_SHADOW	Object Shadows	物体阴影
+DST_OPTION_GRAPHIC_TEXTURE_QUALITY	Texture Quality	贴图质量
+DST_OPTION_GRAPHIC_TITLE	Quality	画质
+DST_OPTION_GRAPHIC_UPGRADE_EFFECT	Upgrade Effects	强化效果
+DST_OPTION_GRAPHIC_WATER_EFFECT	Water Effects	水面效果
+DST_OPTION_GRAPHIC_WEATHER_EFFECT	Weather Effects	天气效果
+DST_OPTION_GRAPHIC_WINDOWMODE	Windowed Mode	窗口模式
+DST_OPTION_INFO_ACHAR_NAME	Show your name	显示名称
+DST_OPTION_INFO_AGGRO_MODE	Show your agro	显示仇恨
+DST_OPTION_INFO_COSTUME_RENDER	Show Costumes	显示时装
+DST_OPTION_INFO_DAMAGE_RENDER	Combat info	战斗信息
+DST_OPTION_INFO_DOJOMARK	Show Dojo Mark	显示道场标志
+DST_OPTION_INFO_DROPITEM_OWNERSHIP	Show loot Icon	显示掉落图标
+DST_OPTION_INFO_GUILDEMBLEM	Guild Emblem	公会徽章
+DST_OPTION_INFO_SCOUTERMODEL	Show Scouter	显示史考特
+DST_OPTION_INFO_TOOLTIP_ACHAR_NAME	Display Names.	显示名称。
+DST_OPTION_INFO_TOOLTIP_AGGRO	Display Agro values.	显示仇恨值。
+DST_OPTION_INFO_TOOLTIP_DAMAGE_RENDER	Display all combat info	显示战斗信息
+DST_OPTION_INFO_TOOLTIP_DROPITEM_OWNERSHIP	Show the loot Icon	显示掉落图标
+DST_OPTION_KIT_ITEM_EMPTY_TOOLTIP	Place your item here.	把物品放这里。
+DST_OPTION_OK	Apply	应用
+DST_OPTION_OKEFFECT	Apply Only Effect	仅应用效果
+DST_OPTION_RADIO_OFF	Off	关
+DST_OPTION_RADIO_ON	On	开
+DST_OPTION_RESET	Default	默认
+DST_OPTION_SOUND_BGM	Background Music	背景音乐
+DST_OPTION_SOUND_ENV	Environment Sound	环境音
+DST_OPTION_SOUND_MAIN	Main Volume	主音量
+DST_OPTION_SOUND_SE	Sound Effects	音效
+DST_OPTION_TAB_GAME	Game	游戏
+DST_OPTION_TAB_GAME_CHATTING	Chat	聊天
+DST_OPTION_TAB_GAME_CONTROL	Controls	控制
+DST_OPTION_TAB_GAME_ETC	Other	其他
+DST_OPTION_TAB_GAME_INFO	Info	信息
+DST_OPTION_TAB_SYSTEM	System	系统
+DST_OPTION_TAB_SYSTEM_EFFECT	FX	FX
+DST_OPTION_TAB_SYSTEM_GRAPHIC	GFX	GFX
+DST_OPTION_TAB_SYSTEM_SOUND	Sound	声音
+DST_OPTION_TITLE	Options	选项
+DST_OPTION_TOOLTIP_BGMVOLUME	Background Volume	背景音量
+DST_OPTION_TOOLTIP_CARTOON_EDGE	Cartoon Outline Yes/No	卡通描边开关
+DST_OPTION_TOOLTIP_CHARACTER_DISTANCE	Far or Near Viewing Distance	调整视野距离
+DST_OPTION_TOOLTIP_CHAT_ADDED2_WINDOW	Add 2nd Chat Window	增加第2聊天窗
+DST_OPTION_TOOLTIP_CHAT_ADDED_WINDOW	Separate Chat Window	分离聊天窗口
+DST_OPTION_TOOLTIP_CHAT_GUILD	Guild Chat	公会聊天
+DST_OPTION_TOOLTIP_CHAT_INPUTMODE	Chat Prompt	聊天提示
+DST_OPTION_TOOLTIP_CHAT_LOCK	Chat Window Lock	锁定聊天窗口
+DST_OPTION_TOOLTIP_CHAT_MOUSESCROLL	Mouse Scroll in Chat Window Active or Not	鼠标滚动聊天开关
+DST_OPTION_TOOLTIP_CHAT_NORMAL	Chat Normal	普通聊天
+DST_OPTION_TOOLTIP_CHAT_PARTY	Party Chat	队伍聊天
+DST_OPTION_TOOLTIP_CHAT_PARTY_SEARCH	Party Search Chat	队伍搜索聊天
+DST_OPTION_TOOLTIP_CHAT_SHOUT	Shout Chat	喊话聊天
+DST_OPTION_TOOLTIP_CHAT_SYSTEM	System Chat	系统聊天
+DST_OPTION_TOOLTIP_CHAT_TRADE	Trade Chat	交易聊天
+DST_OPTION_TOOLTIP_CHAT_WHISPER	Chat Whisper	密语聊天
+DST_OPTION_TOOLTIP_CHAT_WINDOW_OPACITY	Opacity	透明度
+DST_OPTION_TOOLTIP_DOJO_MARK	Show Dojo Mark	显示道场标志
+DST_OPTION_TOOLTIP_EFFECTVOLUME	Effect Volume	音效音量
+DST_OPTION_TOOLTIP_ENVVOLUME	Environment Volume	环境音量
+DST_OPTION_TOOLTIP_EX_QUICKSLOT1	Activate Quickbar 1	启用快捷栏1
+DST_OPTION_TOOLTIP_EX_QUICKSLOT2	Activate Quickbar 2	启用快捷栏2
+DST_OPTION_TOOLTIP_FOV	Adjust Angle	调整角度
+DST_OPTION_TOOLTIP_FRIEND_CONNECT	Shows when a Friend Connects	显示好友上线
+DST_OPTION_TOOLTIP_GAMMA	Change Brightness (Full Screen)	调整亮度(全屏)
+DST_OPTION_TOOLTIP_GRAPHIC_QUALITY	Overall Graphic Quality	整体画质
+DST_OPTION_TOOLTIP_GUILD_EMBLEM	Show Guild Emblem	显示公会徽章
+DST_OPTION_TOOLTIP_HDR	Set HDR Effects	设置HDR效果
+DST_OPTION_TOOLTIP_MAGIC_DETAIL	Set Skill Effects Quality	设置技能效果质量
+DST_OPTION_TOOLTIP_MAINVOLUME	Main Volume	主音量
+DST_OPTION_TOOLTIP_MEMBER_CONNECT	Shows when a Member connects	显示成员上线
+DST_OPTION_TOOLTIP_MOUSE_DASH	Double click to dash.	双击冲刺。
+DST_OPTION_TOOLTIP_OBJECT_DISTANCE	Object Distance	物体距离
+DST_OPTION_TOOLTIP_QUEST_TEXT	Instant Quest Text	即时任务文字
+DST_OPTION_TOOLTIP_QUICKSLOT_LOCK	Lock Quickbar	锁快捷栏
+DST_OPTION_TOOLTIP_RESOLUTION	Change Resolution	更改分辨率
+DST_OPTION_TOOLTIP_SCOUTER	Indicate Power Level of other Beings	显示他人战斗力
+DST_OPTION_TOOLTIP_SELF_TARGET_APPLY	Hold Shift to target yourself.	按Shift选自己。
+DST_OPTION_TOOLTIP_SHADOW	Character Shadows	角色阴影
+DST_OPTION_TOOLTIP_TAB_CHATTING	In-game Chat Option	游戏聊天选项
+DST_OPTION_TOOLTIP_TAB_CONTROL	Game Options	游戏选项
+DST_OPTION_TOOLTIP_TAB_ETC	Other Options	其他选项
+DST_OPTION_TOOLTIP_TAB_GRAPHIC	Graphics	图形
+DST_OPTION_TOOLTIP_TAB_INFO	Info Display	信息显示
+DST_OPTION_TOOLTIP_TAB_SOUND	Sound Options	声音选项
+DST_OPTION_TOOLTIP_TERRAIN_DISTANCE	Terrain Distance	地形距离
+DST_OPTION_TOOLTIP_TERRAIN_SHADOW	Shadow of Terrain	地形阴影
+DST_OPTION_TOOLTIP_TEXTURE_LEVEL	Set Texture Level	设置贴图等级
+DST_OPTION_TOOLTIP_TRADE	Decline Trades	拒绝交易
+DST_OPTION_TOOLTIP_UPGRADE_EFFECT	Glow Upgrade Effects	强化发光效果
+DST_OPTION_TOOLTIP_VIEW_POINT	Adjust View	调整视角
+DST_OPTION_TOOLTIP_WATER_EFFECT	Effects of Water	水面效果
+DST_OPTION_TOOLTIP_WEATHER_EFFECT	Set Weather Effects Quality	设置天气效果质量
+DST_OPTION_TOOLTIP_WINDOWMODE	Fullscreen or Windowed	全屏或窗口
+DST_OPTION_TOOLTIP_WINDOW_DEFAULT	Set All Windows to Default Location	窗口恢复默认位置
+DST_OPTION_TOOLTIP_WINDOW_MOVEABLE	Lock the Windows	锁定窗口
+DST_OPTION_CONTROL_ACTION_WINDOW_SCOUTERUI	Scouter UI	史考特UI
+# AUTO_BLOCK_LANG0_OPTION_MENU_INFO_BOT_20260608_END
+
+# AUTO_BLOCK_LANG0_POPUP_MENU_20260608_BEGIN
+DST_POPUPMENU_PARTY_INVITE	Invite to Party	邀请组队
+DST_POPUPMENU_GUILD_INVITE	Invite to Guild	邀请公会
+DST_POPUPMENU_USER_TRADE	Trade	交易
+DST_POPUPMENU_FRIEND_ADD	Add Friend	加好友
+DST_POPUPMENU_PVP_REQUEST_FIGHT	Duel	决斗
+DST_POPUPMENU_FOLLOW	Follow	跟随
+DST_POPUPMENU_SEND_WHISPER	Whisper	密语
+DST_POPUPMENU_USER_BLOCK	Block	屏蔽
+DST_SCOUTER_CHECK_MENU_EQUIPMENT	Scan Equipment	查看装备
+DST_POPUPMENU_CANCEL	Cancel	取消
+# AUTO_BLOCK_LANG0_POPUP_MENU_20260608_END
+
+# AUTO_BLOCK_LANG0_LONG_TEXT_20260608_BEGIN
+DST_LOBBY_WAIT_GAME_SERVER_CONNECT	[align = "center"][font size = "12" color="f4d762"]Loading Game[/font][br][br][font size = "10" color="269eff"]Too many players joining the game.[/font][br][br][font size = "10" color="f4d762"]Players in Queue: %d[/font][br][br][font size = "10" color="ffffff"]Please wait...[/font]	[align = "center"][font size = "12" color="f4d762"]正在进入游戏[/font][br][br][font size = "10" color="269eff"]当前进入游戏的玩家过多。[/font][br][br][font size = "10" color="f4d762"]排队人数: %d[/font][br][br][font size = "10" color="ffffff"]请稍候...[/font]
+DST_SCS_LOGIN_ALERT	[align = "center"][font size = "12" color="f4d762"]Bot Check Required[/font][br][br][font size = "9" color="ffffff"]To receive experience and item drops,[br]you must complete the Bot Verification.[br][br]Complete it once for 1 hour of immunity![/font]	[align = "center"][font size = "12" color="f4d762"]需要防挂机验证[/font][br][br][font size = "9" color="ffffff"]若要获得经验和物品掉落，[br]必须完成防挂机验证。[br][br]完成一次后1小时内免验证！[/font]
+DST_TELEPORT_COMMON_CONFIRM_MSG	[align = "center"][font size = "12" color="f4d762"]Time to move[/font][br][br][font size = "10" color="269eff"]You can teleport when you want.[/font][br][br][font size = "10" color="f4d762"]%s[/font][br][font size = "10" color="ffffff"]Yes: Teleport to this place[br]No: Don't teleport now[/font][br][br][font size = "10" color="ffffff"]Want to Teleport?[br][/font]	[align = "center"][font size = "12" color="f4d762"]传送确认[/font][br][br][font size = "10" color="269eff"]你可以选择是否传送。[/font][br][br][font size = "10" color="f4d762"]%s[/font][br][font size = "10" color="ffffff"]是: 传送到此处[br]否: 暂不传送[/font][br][br][font size = "10" color="ffffff"]要传送吗？[br][/font]
+DST_TELEPORT_COMMON_CONFIRM_YES_BTN	Yes	是
+DST_TELEPORT_COMMON_CONFIRM_NO_BTN	No	否
+DST_MSG_REMAIN_TIME	Time: %s	时间: %s
+DST_TIME_SECOND	 Sec	 秒
+# AUTO_BLOCK_LANG0_LONG_TEXT_20260608_END
+
+DST_PVP_ZONE_ENTER	PvP Zone entered.	进入PvP区域。
+DST_PVP_ZONE_LEFT	PvP Zone left.	离开PvP区域。
+
+DST_HUMAN_FIGHTER	Martial Artist	武道家
+DST_HUMAN_MYSTIC	Spiritualist	气功师
+DST_NAMEK	Namek	那美
+DST_NAMEK_FIGHTER	Warrior	战士
+DST_NAMEK_MYSTIC	Dragon Clan	龙族
+DST_SKILL_TAB_ACTION_SKILL	Action Skills	动作技能
+DST_SKILL_WINDOW_TITLE	Skills	技能
+
+# AUTO_BLOCK_LANG0_MARKET_20260608_BEGIN
+DST_MAILSYSTEM_MAIL_MARKET	World Markets	世界市场
+DST_MARKET_ACCESSORY	Accessory	饰品
+DST_MARKET_ACCESSORY1	Accessory 1	配件1
+DST_MARKET_ACCESSORY2	Accessory 2	配件2
+DST_MARKET_ACCESSORY3	Accessory 3	配件3
+DST_MARKET_ALLCATEGORY	All	全
+DST_MARKET_ALLCLASS	All Classes	全职业
+DST_MARKET_ALLTYPE	All	全
+DST_MARKET_ARMOR	Armor	防具
+DST_MARKET_BLACK_STONE	Black Stone	黑石
+DST_MARKET_BUY	[align = "center"][font size = "12" color="f4d762"]Auction Purchase[/font][br][br][font size = "10" color="269eff"]The following items:[/font][br][br][font size = "10" color="ffffff"]%s[br]Price: %s Zeni[/font][br][br][font size = "10" color="f36a7c"]Purchase this Item?[/font][br]	[align = "center"][font size = "12" color="f4d762"]购买确认[/font][br][br][font size = "10" color="269eff"]以下物品:[/font][br][br][font size = "10" color="ffffff"]%s[br]价格: %s 索[/font][br][br][font size = "10" color="f36a7c"]是否购买?[/font][br]
+DST_MARKET_BUYITEM_CLICK	Select Items to Buy	选择要买的物品
+DST_MARKET_BUYTEXT	Buy	买
+DST_MARKET_CAPSULE_KIT	Capsule Kit	胶囊套装
+DST_MARKET_CHANGETYPE	Switch Between Buying & Selling	切换买卖
+DST_MARKET_CONSOLE_MACHINE	Auction House	拍卖行
+DST_MARKET_DOJO	Dojo	道场
+DST_MARKET_DOWNGRADE_STONE_ARMOR	Armor Downgrade	防具降级
+DST_MARKET_DOWNGRADE_STONE_WEAPON	Weapon Downgrade	武器降级
+DST_MARKET_ENDTIME	72Hrs	72时
+DST_MARKET_ENDTIME_INFO	72Hr Left	剩72时
+DST_MARKET_ENDTIME_SECOND	48 hours	48小时
+DST_MARKET_ENDTIME_THIRED	72 hours	72小时
+DST_MARKET_ETC	Other	其他
+DST_MARKET_EXCELLENTTYPE	Excellent	特级
+DST_MARKET_EXP_BUFF	EXP Buff	经验增益
+DST_MARKET_FOOD	Food	食物
+DST_MARKET_FORGET_BOOK	Skill Reset Book	技能重置书
+DST_MARKET_FORGET_BOOKPLUS	Skill Reset Book+	技能重置书+
+DST_MARKET_GRADE	Rate	品级
+DST_MARKET_GREATER_UPGRADE_STONE_ARMOR	Armor Upgrade(High)	高级防具强化石
+DST_MARKET_GREATER_UPGRADE_STONE_WEAPON	Weapon Upgrade (High)	高级武器强化石
+DST_MARKET_GROVE_KNUCKLE	Glove	手套
+DST_MARKET_INPUT_NAME	Search	搜索
+DST_MARKET_ITEMNAME	Item Name	物品名
+DST_MARKET_ITEM_BUY_NOT_SEARCH	Item can't be found	未找到物品
+DST_MARKET_ITEM_NOT_SERACH	No Search Criteria	无搜索条件
+DST_MARKET_ITEM_SERACH_NOTRESULT	Results are shown	已显示结果
+DST_MARKET_LAST_TIME	Time Left	剩余时间
+DST_MARKET_LEFT	Last	上页
+DST_MARKET_LEGENDARYTYPE	Legendary	传说
+DST_MARKET_LEVEL_NOT_SERACH	Enter Correct Level Range	请输入正确等级范围
+DST_MARKET_MAINCATEGORY_INFO	Choose Main Category	选择主分类
+DST_MARKET_MASCOT	Pets	宠物
+DST_MARKET_MASCOT_FOOD	Pet Food	宠物粮
+DST_MARKET_MAXLEVEL	Max. Level	最高等级
+DST_MARKET_MAX_DURITME	Repair First	请先修理
+DST_MARKET_MINLEVEL	Min. Level	最低等级
+DST_MARKET_NAME	Name	名称
+DST_MARKET_NEW_FOOD	New Food	新食物
+DST_MARKET_NORMALTYPE	Normal	普通
+DST_MARKET_NORMAL_STONE	Normal Stone	普通石
+DST_MARKET_NOT_SERACH	Contains characters that can't be retrieved	含有无法检索的字符
+DST_MARKET_PRICE	Price	价格
+DST_MARKET_PURE_STONE	Pure stone	纯石
+DST_MARKET_RARETYPE	Rare	稀有
+DST_MARKET_RECIPE	Recipe	配方
+DST_MARKET_RECIPE_ITEM	Recipe	配方
+DST_MARKET_REFRESH	Refresh	刷新
+DST_MARKET_REGISTRATION	Register	上架
+DST_MARKET_RESORATIVE	Restore	恢复
+DST_MARKET_RESORATIVE_ITEM	Restore	恢复
+DST_MARKET_RIGHT	Next	下页
+DST_MARKET_SCOUTER	Scouter	史考特
+DST_MARKET_SCOUTER_MAIN	Chip	芯片
+DST_MARKET_SCOUTER_PART	Upgrade	升级
+DST_MARKET_SEARCH_ITEM	Select the category, enter a search term,press search	选择分类，输入关键词，然后搜索
+DST_MARKET_SELL	[align = "center"][font size = "12" color="f4d762"]Auction Sale[/font][br][br][font size = "10" color="269eff"]You are now selling an item.[/font][br][br][font size = "10" color="ffffff"]Item(s): %d[br]Fee to Sell: %s Zeni[/font][br][br][font size = "10" color="f36a7c"]Put Item on Sale?[/font][br]	[align = "center"][font size = "12" color="f4d762"]出售确认[/font][br][br][font size = "10" color="269eff"]你正在出售物品。[/font][br][br][font size = "10" color="ffffff"]物品数: %d[br]手续费: %s 索[/font][br][br][font size = "10" color="f36a7c"]是否上架?[/font][br]
+DST_MARKET_SELLER	Seller	卖家
+DST_MARKET_SELLITEM_CANCEL	Click 'Cancel' to Cancel the Auction	点取消可取消拍卖
+DST_MARKET_SELLTEXT	Sell	出售
+DST_MARKET_SELL_CANCEL	[align = "center"][font size = "12" color="f4d762"]Cancel Auction[/font][br][br][font size = "10" color="269eff"]Cancel the following:[/font][br][br][font size = "10" color="ffffff"]%s[br]Sale Price: %s Zeni[/font][br][br][font size = "10" color="f36a7c"]Do you want to Cancel?[/font][br]	[align = "center"][font size = "12" color="f4d762"]取消拍卖[/font][br][br][font size = "10" color="269eff"]取消以下物品:[/font][br][br][font size = "10" color="ffffff"]%s[br]售价: %s 索[/font][br][br][font size = "10" color="f36a7c"]是否取消?[/font][br]
+DST_MARKET_SELL_ITMEPRICE	Price	价格
+DST_MARKET_SELL_NOT	Cancel	取消
+DST_MARKET_SELL_PRICE	Charge	费用
+DST_MARKET_SERACH_ITEM	Search	搜索
+DST_MARKET_SERACH_REFRESH	Refresh	刷新
+DST_MARKET_STUFF	Material	材料
+DST_MARKET_SUBCATEGORY_INFO	Choose Sub Category	选择子分类
+DST_MARKET_SUBCATEGORY_NOT_SERACH	Select a subcategory	请选择子分类
+DST_MARKET_SUBWEAPON	Sub Weapon	副武器
+DST_MARKET_SUPERIORTYPE	Super	优质
+DST_MARKET_TITLE	Auction House	拍卖行
+DST_MARKET_UPGRADE_STONE_ARMOR	Armor Upgrade	防具强化石
+DST_MARKET_UPGRADE_STONE_WEAPON	Weapon Upgrade	武器强化石
+DST_MARKET_USELEVLE	Level	等级
+DST_MARKET_USE_ITEM	Available	可用
+DST_MARKET_WEAPON	Weapon	武器
+# AUTO_BLOCK_LANG0_MARKET_20260608_END
+
+DST_STAFF	Staff	杖
+DST_MIGHTY_MAJIN	Mighty Majin	大魔人
+DST_WONDER_MAJIN	Wonder Majin	意魔人
+DST_STREET_FIGHTER	Fighter	格斗家
+DST_SWORD_MASTER	Swordsman	剑术师
+DST_DARK_WARRIOR	Dark Warrior	魔导战士
+DST_SHADOW_KNIGHT	Shadow Knight	魔界战士
+DST_DENDEN_HEALER	Dende Priest	天天导师
+DST_POCO_SUMMONER	Poko Priest	波可导师
+DST_ULTI_MA	Ultimate Majin	奥迪魔
+DST_GRAND_MA	Grand Chef Majin	格兰魔
+DST_PLAS_MA	Plasma Majin	普利兹魔
+DST_KAR_MA	Karma Majin	卡尔魔
+DST_SCROLL	Scroll	卷轴
+DST_GEM	Gem	宝
+DST_STICK	Stick	棍
+DST_SWORD	Sword	剑
+DST_FAN	Fan	扇
+DST_WAND	Wand	短棒
+DST_INSTRUMENT	Trumpet	乐器
+DST_DRUM	Drum	鼓
+DST_MASK	Mask	面具
+
+# AUTO_BLOCK_LANG0_MAILSYSTEM_20260608_BEGIN
+DST_MAILSYSTEM_ALREADY_OPEN	Mail window is already open.	邮件窗口已打开。
+DST_MAILSYSTEM_ATTACH_DISABLED_MSG	Can't Attach	无法附加
+DST_MAILSYSTEM_DELMAILNUM	Deleted Mail	已删邮件
+DST_MAILSYSTEM_MAILBOX	Mailbox	邮箱
+DST_MAILSYSTEM_MAIL_ALARM	[Notifications] %s	[通知] %s
+DST_MAILSYSTEM_MAIL_ATTACH	Attach	附加
+DST_MAILSYSTEM_MAIL_ATTACH_2	Item Attachment	附加物品
+DST_MAILSYSTEM_MAIL_ATTACH_REQ	Request	请求
+DST_MAILSYSTEM_MAIL_ATTACH_SEND	Send	发送
+DST_MAILSYSTEM_MAIL_AWAY	Away	离开
+DST_MAILSYSTEM_MAIL_AWAY_OFF	Away Off	离开关
+DST_MAILSYSTEM_MAIL_AWAY_ON	Away On	离开开
+DST_MAILSYSTEM_MAIL_CONTENT	Content	内容
+DST_MAILSYSTEM_MAIL_DELETE	Delete	删除
+DST_MAILSYSTEM_MAIL_EMPTYMAIL	Your Mailbox is Empty	邮箱为空
+DST_MAILSYSTEM_MAIL_EXPIRED_DAY	%u Day	%u天
+DST_MAILSYSTEM_MAIL_EXPIRED_DAY_LOCK	Lock	锁定
+DST_MAILSYSTEM_MAIL_EXPIRED_DAY_TITLE	Expiration Date	到期日
+DST_MAILSYSTEM_MAIL_FROM	From	来自
+DST_MAILSYSTEM_MAIL_MARKET	World Markets	世界市场
+DST_MAILSYSTEM_MAIL_REPLY	Reply	回复
+DST_MAILSYSTEM_MAIL_RESET	Reset	重置
+DST_MAILSYSTEM_MAIL_RETURN	Return	退回
+DST_MAILSYSTEM_MAIL_SEND	Send	发送
+DST_MAILSYSTEM_MAIL_SENDDATE	Date Sent: %u/%u/%u %s %u:%u	发送日:%u/%u/%u %s %u:%u
+DST_MAILSYSTEM_MAIL_SYSTEM_MAIL	[System Mail]	[系统邮件]
+DST_MAILSYSTEM_MAIL_TO	To	至
+DST_MAILSYSTEM_MAIL_ZENNY	Zeni	索尼
+DST_MAILSYSTEM_MAIL_ZENNY_REQ	Give Zeni (BEWARE SCAM)	索尼请求(慎防诈骗)
+DST_MAILSYSTEM_MAIL_ZENNY_SEND	Take Zeni	领取索尼
+DST_MAILSYSTEM_MSG_ATTACH_ITEM_NOT	Item can't be attached to Mail	物品无法附加到邮件
+DST_MAILSYSTEM_MSG_ATTACH_ZENNY	Maximum Zeni to attach or request is %s	最多可附加或请求%s索尼
+DST_MAILSYSTEM_MSG_AWAY_OFF	[align = "center"]Available Status[br][br]If you turn off Away Mode[br]you can receive Mail again.[br][br]Turn Off Away Mode?	[align = "center"]可收信状态[br][br]关闭离开模式后[br]可再次接收邮件。[br][br]关闭离开模式?
+DST_MAILSYSTEM_MSG_AWAY_ON	[align = "center"]Away Status[br][br]If you set your status to away[br]all Mail will be Denied.[br]You won't receive Mail.[br][br]Switch to Away Mode?	[align = "center"]离开状态[br][br]设为离开后[br]所有邮件会被拒收。[br]你将无法接收邮件。[br][br]切换到离开模式?
+DST_MAILSYSTEM_MSG_DELETE	[align = "center"][font size = "12" color="f4d762"]Delete Mail[/font][br][br][font size = "10" color="f36a7c"]Deleting the selected Mail.[br][br]It's not possible to recover the deleted Mail[br]Please Choose carefully.[/font][br][br][font size = "10" color="ffffff"]Delete Selected Mail?[/font]	[align = "center"][font size = "12" color="f4d762"]删除邮件[/font][br][br][font size = "10" color="f36a7c"]将删除所选邮件。[br][br]删除后无法恢复，[br]请谨慎选择。[/font][br][br][font size = "10" color="ffffff"]删除所选邮件?[/font]
+DST_MAILSYSTEM_MSG_MAIL_CONTENT_BUFFEROVER	Max 128 Characters	最多128字符
+DST_MAILSYSTEM_MSG_MAIL_CONTENT_SLANGDER	[align = "center"]Compose Mail[br][br]In the mail you used forbidden words[br][br]please edit	[align = "center"]写邮件[br][br]邮件内容含禁用词[br][br]请修改
+DST_MAILSYSTEM_MSG_MAIL_NOT_LOCK	Mail Zeni Requests can't be Locked	索尼请求邮件不能锁定
+DST_MAILSYSTEM_MSG_NOTFIND_SELECTED_MAIL	No Mail Selected	未选择邮件
+DST_MAILSYSTEM_MSG_PLEASE_MAILCONTENT	[align = "center"]Mail[br][br]Make sure that all fields,[br]are filled in[br][br]you can use[br]a maximum of 128 characters	[align = "center"]邮件[br][br]请确认所有字段[br]都已填写[br][br]最多可输入[br]128个字符
+DST_MAILSYSTEM_MSG_PLEASE_TARGETNAME	[align = "center"]Sending Mail[br][br]Sending Mail, enter name[br]of receiver.[br][br]Character name must be[br]2-8 characters.[br][br]Type name of receiver.	[align = "center"]发送邮件[br][br]请输入收件人名称。[br][br]角色名必须为[br]2-8个字符。[br][br]请输入收件人。
+DST_MAILSYSTEM_MSG_RECEIVE_ACCEPT_MAIL	Received Mail from %s	收到%s的邮件
+DST_MAILSYSTEM_MSG_RECEIVE_ITEM	Received %s Item Attached to Mail	收到邮件附加物品%s
+DST_MAILSYSTEM_MSG_RECEIVE_ITEM_ACCEPT	[align = "center"][font size = "12" color="f4d762"]Receiving Mail[/font][br][br][font size = "10" color="269eff"]There are[br]attached Items in this Mail.[br][br]Received[br]attached items go to your Inventory.[/font][br][br][font size = "10" color="f36a7c"]Item: %s[br][br]Make sure you have an Empty Slot.[/font][br][br][font size = "10" color="ffffff"]Receive Item?[/font]	[align = "center"][font size = "12" color="f4d762"]领取邮件[/font][br][br][font size = "10" color="269eff"]此邮件中[br]有附加物品。[br][br]领取后[br]物品会进入背包。[/font][br][br][font size = "10" color="f36a7c"]物品: %s[br][br]请确认背包有空格。[/font][br][br][font size = "10" color="ffffff"]领取物品?[/font]
+DST_MAILSYSTEM_MSG_RECEIVE_ITEM_ZENNY_ACCEPT	[align = "center"]Receive Item & Zeni[br][br]An Item & Zeni[br]are attached.[br][br]There's an Item attached to Mail[br]with Zeni.[br][br]Zeni: %s[br]Item: %s[br][br]Make sure you have an Empty Slot.[br][br]Receive Item & Zeni?	[align = "center"]领取物品和索尼[br][br]邮件附有物品和索尼。[br][br]索尼: %s[br]物品: %s[br][br]请确认背包有空格。[br][br]领取物品和索尼?
+DST_MAILSYSTEM_MSG_RECEIVE_ITEM_ZENNY_REQ_ACCEPT	[align = "center"][font size = "12" color="f4d762"]Item/Zeni Request[/font][br][br][font size = "10" color="269eff"]There is a Mail requesting[br]Zeni for attached Item.[br][br]If you receive this Mail, you'll receive the attached Item[br]and send Zeni[br]to Player.[/font][br][br][font size = "10" color="f36a7c"]Item: %s[br]Cost Zeni: %s[br][br]You're not getting Zeni but paying.[br]Select carefully.[/font][br][br][font size = "10" color="ffffff"]Accept Item/Zeni Request?[/font]	[align = "center"][font size = "12" color="f4d762"]物品/索尼请求[/font][br][br][font size = "10" color="269eff"]此邮件请求索尼换取物品。[br][br]领取后会获得附加物品，[br]并向玩家支付索尼。[/font][br][br][font size = "10" color="f36a7c"]物品: %s[br]花费索尼: %s[br][br]这是付款而不是收款，[br]请谨慎选择。[/font][br][br][font size = "10" color="ffffff"]接受物品/索尼请求?[/font]
+DST_MAILSYSTEM_MSG_RECEIVE_ZENNY	Received %s Zeni	收到%s索尼
+DST_MAILSYSTEM_MSG_RECEIVE_ZENNY_ACCEPT	[align = "center"][font size = "12" color="f4d762"]Receive Zeni[/font][br][br][font size = "10" color="269eff"]There is[br]Zeni attached to this Mail.[br][br]You'll receive[br]the attached Zeni.[/font][br][br][font size = "10" color="f36a7c"]Zeni: %s[/font][br][br][font size = "10" color="ffffff"]Receive Zeni?[/font]	[align = "center"][font size = "12" color="f4d762"]领取索尼[/font][br][br][font size = "10" color="269eff"]此邮件附有索尼。[br][br]领取后[br]索尼会到账。[/font][br][br][font size = "10" color="f36a7c"]索尼: %s[/font][br][br][font size = "10" color="ffffff"]领取索尼?[/font]
+DST_MAILSYSTEM_MSG_RECEIVE_ZENNY_REQ	%s requested Zeni sent to %s	%s请求向%s发送索尼
+DST_MAILSYSTEM_MSG_RECEIVE_ZENNY_REQ_ACCEPT	[align = "center"][font size = "12" color="f4d762"]Zeni Request[/font][br][br][font size = "10" color="ffffff"]There is content requesting Zeni[br]in this mail.[br][br]If you receive this Mail you send the requested Zeni[br]to Player.[/font][br][br][font size = "10" color="f36a7c"]Cost Zeni: %s[br][br]This is NOT receiving Zeni but paying.[br]Select Carefully.[/font][br][br][font size = "10" color="ffffff"]Accept Request?[/font]	[align = "center"][font size = "12" color="f4d762"]索尼请求[/font][br][br][font size = "10" color="ffffff"]此邮件请求索尼。[br][br]领取此邮件后，你会把请求的索尼[br]发送给玩家。[/font][br][br][font size = "10" color="f36a7c"]花费索尼: %s[br][br]这是付款，不是收款。[br]请谨慎选择。[/font][br][br][font size = "10" color="ffffff"]接受请求?[/font]
+DST_MAILSYSTEM_MSG_REPLY_MAIL_ITEM	%s receive %s Item from 	%s收到%s物品，来自
+DST_MAILSYSTEM_MSG_REPLY_MAIL_ITEM_ZENNY	%s Item received & %s Zeni which %s sent	%s物品已收，%s索尼由%s发送
+DST_MAILSYSTEM_MSG_REPLY_MAIL_ITEM_ZENNY_REQ	%s received %s Items & Sent requested %s Zeni	%s收到%s物品并发送请求的%s索尼
+DST_MAILSYSTEM_MSG_REPLY_MAIL_ZENNY	%s Zeni received that %s sent	%s索尼已收到，来自%s
+DST_MAILSYSTEM_MSG_REPLY_MAIL_ZENNY_REQ	%s sent %s Zeni	%s发送%s索尼
+DST_MAILSYSTEM_MSG_RETRUN_MAIL	%s Returned Mail.	%s退回邮件。
+DST_MAILSYSTEM_MSG_RETURN	[align = "center"][font size = "12" color="f4d762"]Mail Return[/font][br][br][font size = "10" color="f36a7c"]Return selected Mail[br]Caution[br][br]Once returned you can't receive again.[/font][br][br][font size = "10" color="ffffff"]Do you want to return the Mail?[/font]	[align = "center"][font size = "12" color="f4d762"]退回邮件[/font][br][br][font size = "10" color="f36a7c"]退回所选邮件。[br]注意:[br][br]退回后无法再次领取。[/font][br][br][font size = "10" color="ffffff"]要退回此邮件吗?[/font]
+DST_MAILSYSTEM_MSG_SELECT_REQ_OR_SEND	[align = "center"][font size = "12" color="f4d762"]Request/Send Zeni[/font][br][br][font size = "10" color="269eff"]Requesting/Sending Zeni in mail[/font][br][font size = "10" color="ffffff"]Select[br][br]attach Zeni by Requesting or Sending[br]Attach Zeni.[/font]	[align = "center"][font size = "12" color="f4d762"]请求/发送索尼[/font][br][br][font size = "10" color="269eff"]在邮件中请求或发送索尼[/font][br][font size = "10" color="ffffff"]请选择[br][br]请求对方支付索尼[br]或附加索尼。[/font]
+DST_MAILSYSTEM_MSG_SEND_BASIC	[align = "center"][font size = "12" color="f4d762"]Send Mail[/font][br][br][font size = "10" color="269eff"]Sending mail costs Zeni.[/font][br][br][font size = "10" color="f36a7c"]Fee: %s Zeni[/font][br][br][font size = "10" color="ffffff"]Send Mail?[/font]	[align = "center"][font size = "12" color="f4d762"]发送邮件[/font][br][br][font size = "10" color="269eff"]发送邮件需要索尼。[/font][br][br][font size = "10" color="f36a7c"]费用: %s索尼[/font][br][br][font size = "10" color="ffffff"]发送邮件?[/font]
+DST_MAILSYSTEM_MSG_SEND_ITEM	[align = "center"][font size = "12" color="f4d762"]Send Item[/font][br][br][font size = "10" color="269eff"]Sending Items Costs Zeni.[/font][br][br][font size = "10" color="f36a7c"]Fee: %s Zeni[br]Attached item: %s[/font][br][br][font size = "10" color="ffffff"]Send Mail? [/font]	[align = "center"][font size = "12" color="f4d762"]发送物品[/font][br][br][font size = "10" color="269eff"]发送物品需要索尼。[/font][br][br][font size = "10" color="f36a7c"]费用: %s索尼[br]附加物品: %s[/font][br][br][font size = "10" color="ffffff"]发送邮件? [/font]
+DST_MAILSYSTEM_MSG_SEND_ITEM_ZENNY	[align = "center"][font size = "12" color="f4d762"]Item/Zeni[/font][br][br][font size = "10" color="269eff"]Sending mail and item costs Zeni.[/font][br][br][font size = "10" color="f36a7c"]Fee: %s Zeni[br]Attached Item: %s[br][br]Zeni: %s[/font][br][br][font size = "10" color="ffffff"]Send Mail?[/font]	[align = "center"][font size = "12" color="f4d762"]物品/索尼[/font][br][br][font size = "10" color="269eff"]发送邮件和物品需要索尼。[/font][br][br][font size = "10" color="f36a7c"]费用: %s索尼[br]附加物品: %s[br][br]索尼: %s[/font][br][br][font size = "10" color="ffffff"]发送邮件?[/font]
+DST_MAILSYSTEM_MSG_SEND_ITEM_ZENNY_REQ	[align = "center"][font size = "12" color="f4d762"]Item/Zeni Request[/font][br][br][font size = "10" color="269eff"]Sending mail costs Zeni.[/font][br][br][font size = "10" color="f36a7c"]Fee: %s Zeni[br]Attached Item: %s[br]Zeni requested: %s[/font][br][br][font size = "10" color="ffffff"]Send Mail?[/font]	[align = "center"][font size = "12" color="f4d762"]物品/索尼请求[/font][br][br][font size = "10" color="269eff"]发送邮件需要索尼。[/font][br][br][font size = "10" color="f36a7c"]费用: %s索尼[br]附加物品: %s[br]请求索尼: %s[/font][br][br][font size = "10" color="ffffff"]发送邮件?[/font]
+DST_MAILSYSTEM_MSG_SEND_SUCCEED	Sent Mail to %s	邮件已发给%s
+DST_MAILSYSTEM_MSG_SEND_ZENNY	[align = "center"][font size = "12" color="f4d762"]Send Zeni[/font][br][br][font size = "10" color="269eff"]Sending mail costs Zeni.[/font][br][br][font size = "10" color="f36a7c"]Fee: %s Zeni[br]Zeni: %s[/font][br][br][font size = "10" color="ffffff"]Send Mail?[/font]	[align = "center"][font size = "12" color="f4d762"]发送索尼[/font][br][br][font size = "10" color="269eff"]发送邮件需要索尼。[/font][br][br][font size = "10" color="f36a7c"]费用: %s索尼[br]索尼: %s[/font][br][br][font size = "10" color="ffffff"]发送邮件?[/font]
+DST_MAILSYSTEM_MSG_SEND_ZENNY_REQ	[align = "center"][font size = "12" color="f4d762"]Zeni Request[/font][br][br][font size = "10" color="269eff"]Sending mail costs Zeni.[/font][br][br][font size = "10" color="f36a7c"]Fee: %s Zeni[br]Zeni: %s[/font][br][br][font size = "10" color="ffffff"]Send Mail?[/font]	[align = "center"][font size = "12" color="f4d762"]索尼请求[/font][br][br][font size = "10" color="269eff"]发送邮件需要索尼。[/font][br][br][font size = "10" color="f36a7c"]费用: %s索尼[br]索尼: %s[/font][br][br][font size = "10" color="ffffff"]发送邮件?[/font]
+DST_MAILSYSTEM_NEGATIVE_CHECK_ATTACH	Can't Use Attachments in this Mail	此邮件无法使用附件
+DST_MAILSYSTEM_NEGATIVE_CHECK_LOCK	You can't select Locked Mail	不能选择锁定邮件
+DST_MAILSYSTEM_NOTREADMAILNUM	Unread Mail	未读邮件
+DST_MAILSYSTEM_NOT_DELETE_BY_ITEMZENNY	Can't delete item or Zeni.	无法删除含物品或索尼邮件
+DST_MAILSYSTEM_NOT_DELETE_BY_LOCK	Mail is locked and can't be deleted.	邮件已锁定，无法删除。
+DST_MAILSYSTEM_NOT_DELETE_BY_ZENNY_CLAIM	Zeni claim can't be deleted.	索尼请求不能删除。
+DST_MAILSYSTEM_NOT_IDENTIFICATION	Can't Identify	无法鉴定
+DST_MAILSYSTEM_NOT_IDENTIFICATION_ITEM	Mystery Item	未知物品
+DST_MAILSYSTEM_OPEN_SENDMAIL_CONFIRM_MSGBOX	[align = "center][font size="12"color="f4d762"]Mailbox Access[/font][br][br][font size="10"color="269eff"]Pet use rings[br]to get remote access to Mailbox[br]Connecting: You are connecting[br]Connect Now?[/font]	[align = "center][font size="12"color="f4d762"]邮箱访问[/font][br][br][font size="10"color="269eff"]宠物使用戒指[br]可远程连接邮箱。[br]连接中: 正在连接[br]现在连接?[/font]
+DST_MAILSYSTEM_STATUS	Mail Box	邮箱
+DST_MAILSYSTEM_STATUS_FULL	Mailbox is Full	邮箱已满
+DST_MAILSYSTEM_STATUS_UNREAD	You have %u Unread Mail	你有%u封未读邮件
+DST_MAILSYSTEM_TAB_MAILBOX	Inbox	收件
+DST_MAILSYSTEM_TAB_READMAIL	Read	已读
+DST_MAILSYSTEM_TAB_SENDMAIL	Send	发送
+DST_MAILSYSTEM_TAB_SYSTEMMAILBOX	System Mail	系统邮件
+DST_MAILSYSTEM_TOOLTIP_ATTACHACTION	Receive items or Zeni, or pay Zeni requested by others.	领取物品或索尼，或支付他人请求的索尼。
+DST_MAILSYSTEM_TOOLTIP_RECEIVE_ALL	Receive items and Zeni from eligible mail (up to 6 per use, 15s cooldown).	从符合条件的邮件领取物品和索尼(每次最多6封，冷却15秒)。
+DST_MAILSYSTEM_TOOLTIP_DELETE_RESOLVED	Delete resolved mail in batches of 6.	批量删除已处理邮件，每次最多6封。
+DST_MAILSYSTEM_TOOLTIP_DELETE_BUTTON	Delete Selected Mail	删除所选邮件
+DST_MAILSYSTEM_MSG_RECEIVE_ALL_COOLDOWN	Please wait 15 seconds before trying again.	请等待15秒后再试。
+DST_MAILSYSTEM_MSG_RECEIVE_ALL_NONE	No mail available to receive.	没有可领取的邮件。
+DST_MAILSYSTEM_MSG_DELETE_RESOLVED_NONE	No resolved mail to delete.	没有可删除的已处理邮件。
+DST_MAILSYSTEM_TOOLTIP_EXPIREDDAY	Mail will return/expire in set Time Period	邮件将在设定时间后退回或过期
+DST_MAILSYSTEM_TOOLTIP_FRIEND_LIST	Friend List	好友列表
+DST_MAILSYSTEM_TOOLTIP_NOT_ATTACH	Register Item that will be Attached	登记要附加的物品
+DST_MAILSYSTEM_TOOLTIP_RELOAD	Refresh	刷新
+GAME_MAIL_ALREADY_READ	Mail has already been read.	邮件已读。
+GAME_MAIL_CANT_SEND_MAIL_TO_YOURSELF	Can't send mail to yourself.	不能给自己发邮件。
+GAME_MAIL_INVALID_LOCK	Mail is locked	邮件已锁
+GAME_MAIL_INVALID_RETURN	Impossible to return mail	无法退回邮件
+GAME_MAIL_MAILING_PARTS_NOT_FOUND	Don't have a Mail Scouter Chip.	没有邮件史考特芯片。
+GAME_MAIL_NOT_FOUND	Mail not found.	邮件未找到。
+GAME_MAIL_TRANSMIT_PARTS_NOT_FOUND	Scouter: No Mail chip.	史考特:无邮件芯片。
+# AUTO_BLOCK_LANG0_MAILSYSTEM_20260608_END
+
+# AUTO_BLOCK_LANG0_FRIEND_20260608_BEGIN
+DST_FRIEND_ADD	Add	加
+DST_FRIEND_BLOCK	Block	屏蔽
+DST_FRIEND_DELETE	Remove	移除
+DST_FRIEND_ERR_EXIST_BLACK	Already Blacklisted	已在黑名单
+DST_FRIEND_ERR_EXIST_FRIEND	Already Friends	已是好友
+DST_FRIEND_ERR_SELF_EXIT_BLOCK	Can't blacklist yourself	不能屏蔽自己
+DST_FRIEND_ERR_SELF_EXIT_FRIENDLIST	Can't befriend yourself	不能加自己好友
+DST_FRIEND_INVALID_USER	Invalid User	无效用户
+DST_FRIEND_INVITE	Invite	邀请
+DST_FRIEND_MAIL	Mail	邮件
+DST_FRIEND_MSG_BLACK_ADD	[align = "center"]Blacklist[br][br]Blacklisting[br]Users can't Contact You[br][br]Enter Name	[align = "center"]黑名单[br][br]加入黑名单后[br]该用户无法联系你[br][br]输入名称
+DST_FRIEND_MSG_BLACK_ADD_RESULT	%s is added to the blacklist	%s已加入黑名单
+DST_FRIEND_MSG_BLACK_DEL_RESULT	%s is removed from the blacklist	%s已移出黑名单
+DST_FRIEND_MSG_BLACK_DEL	[align = "center"][font size = "12" color="f4d762"]Remove Blacklist[/font][br][br][font size = "10" color="269eff"]Removing Blacklisted User[/font][br][br][font size = "10" color="ffffff"]Deleting from Blacklist.[/font][br][br][font size = "10" color="f4d7"]Removing: %s[/font][br][br][font size = "10" color="ffffff"]Remove User?[/font]	[align = "center"][font size = "12" color="f4d762"]移出黑名单[/font][br][br][font size = "10" color="269eff"]移除黑名单用户[/font][br][br][font size = "10" color="ffffff"]从黑名单删除。[/font][br][br][font size = "10" color="f4d7"]移除: %s[/font][br][br][font size = "10" color="ffffff"]移除此用户?[/font]
+DST_FRIEND_MSG_FRIEND_ADD	[align = "center"][font size = "12" color="f4d762"]Add Friends[/font][br][br][font size = "10" color="f36a7c"]Adding a Friend[br]Friends can be used to make Parties etc.[/font][br][br][font size = "10" color="ffffff"]Enter Name[/font]	[align = "center"][font size = "12" color="f4d762"]添加好友[/font][br][br][font size = "10" color="f36a7c"]添加好友后[br]可方便组队等操作。[/font][br][br][font size = "10" color="ffffff"]输入名称[/font]
+DST_FRIEND_MSG_FRIEND_ADD_RESULT	%s is added to the friendlist	%s已加入好友列表
+DST_FRIEND_MSG_FRIEND_DEL	[align = "center"][font size = "12" color="f4d762"]Remove Friend[/font][br][br][font size = "10" color="f36a7c"]Removing Friend[/font][br][br][font size = "10" color="ffffff"]Deleting from Friend List.[/font][br][br][font size = "10" color="f36a7c"]Removing: %s[/font][br][br][font size = "10" color="ffffff"]Remove Friend?[/font]	[align = "center"][font size = "12" color="f4d762"]删除好友[/font][br][br][font size = "10" color="f36a7c"]正在删除好友[/font][br][br][font size = "10" color="ffffff"]将从好友列表删除。[/font][br][br][font size = "10" color="f36a7c"]移除: %s[/font][br][br][font size = "10" color="ffffff"]删除好友?[/font]
+DST_FRIEND_MSG_FRIEND_DEL_RESULT	%s is removed from the friendlist	%s已从好友列表删除
+DST_FRIEND_MSG_FRIEND_MOVE_RESULT	%s moved to the block list	%s已移至黑名单
+DST_FRIEND_MSG_LOGIN	%s has logged in	%s已登录
+DST_FRIEND_OFFLINE	Offline	离线
+DST_FRIEND_SUBJECT_CHANNEL	Channel	频道
+DST_FRIEND_SUBJECT_LEVEL	Level	等级
+DST_FRIEND_SUBJECT_LOC	Area	区域
+DST_FRIEND_SUBJECT_NAME	Name	名称
+DST_FRIEND_TAB_BLACKLIST	Blacklist	黑名单
+DST_FRIEND_TAB_FRIEND	Friends	好友
+DST_FRIEND_TOO_OVER_NAME	Name Too Long	名称过长
+DST_FRIEND_WHISPER	Whisper	私聊
+# AUTO_BLOCK_LANG0_FRIEND_20260608_END
+
+
+# GUILD UI START
+DST_POPUPMENU_GUILD_APPOINT_SECOND_MASTER	Make Jr. Master	任副会长
+DST_POPUPMENU_GUILD_CHANGE_MASTER	Appoint Guild Leader	任命会长
+DST_POPUPMENU_GUILD_DISAPPOINT_SECOND_MASTER	Demote Jr. Master	降副会长
+DST_POPUPMENU_GUILD_INVITE	Invite to Guild	邀请公会
+DST_POPUPMENU_GUILD_KICK_OUT	Expel	踢出
+DST_POPUPMENU_GUILD_POST	Send Mail	发邮件
+DST_GUILD	Guild	公会
+DST_GUILDWAREHOUSE_TITLE_1	Guild Warehouse 1	公会仓库1
+DST_GUILDWAREHOUSE_TITLE_2	Guild Warehouse2	公会仓库2
+DST_GUILDWAREHOUSE_TITLE_3	Guild Warehouse3	公会仓库3
+DST_GUILD_ADD_FUNCTION	[align = "center"][font size = "12" color="f4d762"]%s[/font][br][br][font size = "10" color="269eff"]Improvements[/font][br][br][font size = "10" color="ffffff"]The Following is Required[/font][br][br][font size = "10" color="f36a7c"]Guild Points: %d[br][br]Zeni: %s[/font][br][br][font size = "10" color="ffffff"]Add Feature?[/font]	[align = "center"][font size = "12" color="f4d762"]%s[/font][br][br][font size = "10" color="269eff"]功能扩展[/font][br][br][font size = "10" color="ffffff"]需要以下条件[/font][br][br][font size = "10" color="f36a7c"]公会点数: %d[br][br]索尼: %s[/font][br][br][font size = "10" color="ffffff"]添加功能?[/font]
+DST_GUILD_ADD_FUNCTION_NOTIFY_TO_MASTER	[align = "center"][font size = "12" color="f4d762"]Guild Change Made[/font][br][br][font size = "10" color="269eff"]Good Job![/font][br][br][font size = "10" color="f4d762"]Changes are:[br]%s[/font]	[align = "center"][font size = "12" color="f4d762"]公会变更完成[/font][br][br][font size = "10" color="269eff"]做得好![/font][br][br][font size = "10" color="f4d762"]变更内容:[br]%s[/font]
+DST_GUILD_ADD_FUNCTION_NOTIFY_TO_MEMBER	Access Changed	权限已变更
+DST_GUILD_APPOINT_SECOND_MASTER	[align = "center"][font size = "12" color="f4d762"]Appointment of the Jr. Master[/font][br][br][font size = "10" color="269eff"]Appoint a Jr. Master of the guild.[/font][br][br][font size = "10" color="ffffff"]Following player gets Jr. Master privileges.[/font][br][br][font size = "10" color="f4d762"]Player: %s[/font][br][br][font size = "10" color="ffffff"]Do you want to appoint the player?[/font]	[align = "center"][font size = "12" color="f4d762"]任命副会长[/font][br][br][font size = "10" color="269eff"]任命公会副会长。[/font][br][br][font size = "10" color="ffffff"]以下玩家将获得副会长权限。[/font][br][br][font size = "10" color="f4d762"]玩家: %s[/font][br][br][font size = "10" color="ffffff"]要任命此玩家吗?[/font]
+DST_GUILD_ASK_CHANGE_GUILD_EMBLEM_WITH_ZENNY	[align = "center"][font size = "12" color="f4d762"]Change Guild Emblem[/font][br][br][font size = "10" color="ffffff"]If you want to change the guild emblem [br]You need to pay the following amount.[/font][br][br]Cost: %s Zeni[br][br][font size = "10" color="ffffff"]Change Guild Emblem?[/font]	[align = "center"][font size = "12" color="f4d762"]更改公会徽章[/font][br][br][font size = "10" color="ffffff"]若要更改公会徽章，[br]需要支付以下费用。[/font][br][br]费用: %s索尼[br][br][font size = "10" color="ffffff"]更改公会徽章?[/font]
+DST_GUILD_CANCELED_DISSOLVE	Dissolve cancelled.	已取消解散。
+DST_GUILD_CANCEL_DISSOLVE	[align ="center"][font size="12"color="f4d762"]Guild Dissolve[/font][br][br][font size="10"color="269eff"]Cancel the guild dissolve.[/font][br][br][font size="10"color="ffffff"]You want to cancel the dissolve?[/font]	[align ="center"][font size="12"color="f4d762"]公会解散[/font][br][br][font size="10"color="269eff"]取消公会解散。[/font][br][br][font size="10"color="ffffff"]要取消解散吗?[/font]
+DST_GUILD_CHANGED_GUILD_NAME	Guild Renamed	公会已改名
+DST_GUILD_CHANGED_GUILD_NOTICE	New Notice	新公告
+DST_GUILD_CHANGED_GUILD_NOTICE_SUCCESS	New Notice	新公告
+DST_GUILD_CHANGE_GUILD_EMBLEM	Emblem Changed	徽章已变更
+DST_GUILD_CHANGE_GUILD_NAME	[align = "center"][font size = "12" color="f4d762"]Change Guild Name[/font] [br][br][font size = "10" color="269eff"]New Name:[/font][br][br][font size = "10" color="f36a7c"]2-16 Characters[/font][br]	[align = "center"][font size = "12" color="f4d762"]更改公会名[/font] [br][br][font size = "10" color="269eff"]新名称:[/font][br][br][font size = "10" color="f36a7c"]2-16个字符[/font][br]
+DST_GUILD_CHANGE_MASTER	%s is the New Master	%s成为新会长
+DST_GUILD_CLASS_CHANGE_MEMBER	%s  %s	%s  %s
+DST_GUILD_CONTRIBUTION_ZENNY	[align = "center"][font size = "12" color="f4d762"]Zeni Donation[br](for style points)[/font][br][br][font size = "10" color="269eff"]By donating Zeni[br]The guild gets points[br]To expand the guild.[/font][br][br][font size = "10" color="ffffff"]Donation Amount:[/font][br][br][font size = "10" color="f4d762"]Selected Amount: %s Zeni[br](10000 Zeni = 5 Style Points)[/font][br][br][font size = "10" color="ffffff"]Donate Zeni?[/font]	[align = "center"][font size = "12" color="f4d762"]索尼捐献[br](获得风格点)[/font][br][br][font size = "10" color="269eff"]捐献索尼后[br]公会获得点数，[br]用于扩展公会。[/font][br][br][font size = "10" color="ffffff"]捐献金额:[/font][br][br][font size = "10" color="f4d762"]选择金额: %s索尼[br](10000索尼 = 5风格点)[/font][br][br][font size = "10" color="ffffff"]捐献索尼?[/font]
+DST_GUILD_CONTRIBUTION_ZENNY_NOTIFY	Zeni for the Guild	公会索尼
+DST_GUILD_CONTRIBUTION_ZENNY_OTHERS	%s donated %s Zeni to Guild	%s向公会捐献%s索尼
+DST_GUILD_CREATE	Guild Created	公会已创建
+DST_GUILD_CREATE_GUILD_EMBLEM	Emblem Made	徽章已创建
+DST_GUILD_CREATE_NFY	%s was created.	%s已创建。
+DST_GUILD_CURRNET_POINT	Style Points	风格点
+DST_GUILD_CURRNET_POINT_EXPAIN	Donation: %d, Gained: %d	捐献:%d,获得:%d
+DST_GUILD_CUR_POS	Area	区域
+DST_GUILD_DECLINE	%s Declined	%s已拒绝
+DST_GUILD_DISBAND	Guild Disband	解散公会
+DST_GUILD_DISMISS_SECOND_MASTER	%s was demoted.	%s已降职。
+DST_GUILD_DISMISS_SECOND_MASTER_REQ	[align = "center"][font size = "12" color="f4d762"]Deprived of the Jr. Master position[/font][br][br][font size = "10" color="ffffff"]Deprived of the following player privileges.[/font][br][br][font size = "10" color="f36a7c"]Player: %s[/font][br][br][font size = "10" color="ffffff"]Do you want to deprive Jr. Master authority?[/font]	[align = "center"][font size = "12" color="f4d762"]解除副会长[/font][br][br][font size = "10" color="ffffff"]解除以下玩家的权限。[/font][br][br][font size = "10" color="f36a7c"]玩家: %s[/font][br][br][font size = "10" color="ffffff"]要解除副会长权限吗?[/font]
+DST_GUILD_DO_DISSOLVE	[align = "center"][font size = "12" color="f4d762"]Disband Guild[/font][br][br][font size = "10" color="f36a7c"]Disbanding a guild will remove the guild name.[br][br](The guild will be removed instantly) [/font][br][br][font size = "10" color="ffffff"]Start disbanding Guild?[/font]	[align = "center"][font size = "12" color="f4d762"]解散公会[/font][br][br][font size = "10" color="f36a7c"]解散公会会删除公会名。[br][br](公会将立即删除) [/font][br][br][font size = "10" color="ffffff"]开始解散公会?[/font]
+DST_GUILD_DO_MAKE	[align = "center"][font size = "12" color="f4d762"]Guild Creation[/font][br][br][font size = "10" color="269eff"]Gather your party members[br]Creating a guild provides a variety of content[br]to enjoy.[/font][br][br][font size = "10" color="ffffff"][/font]To create Guild[br]The following are required.[br][br][font size = "10" color="f36a7c"]Required level: Lvl 30[br]Party size: 5[br]Zeni: 200,000[br]Guild Name: Must be 2-16 characters[/font][br][br][font size = "10" color="ffffff"]Enter name and press Ok.[/font]	[align = "center"][font size = "12" color="f4d762"]创建公会[/font][br][br][font size = "10" color="269eff"]召集队伍成员，[br]创建公会可体验多种内容。[/font][br][br][font size = "10" color="ffffff"][/font]创建公会[br]需要以下条件。[br][br][font size = "10" color="f36a7c"]需求等级: 30级[br]队伍人数: 5[br]索尼: 200,000[br]公会名: 2-16个字符[/font][br][br][font size = "10" color="ffffff"]输入名称并按OK。[/font]
+DST_GUILD_DO_NOT_FUNC_FOR_DISBAND	Break	中断
+DST_GUILD_EMBLEM_EXPLAIN_1	text, templates, backgrounds, combine	文字、模板、背景、组合
+DST_GUILD_EMBLEM_EXPLAIN_2	(can be set separately for each color)	(每种颜色可分别设置)
+DST_GUILD_EMBLEM_INFO	Emblem	徽章
+DST_GUILD_EMBLEM_MODIFY_INFO	Style Changes	样式变更
+DST_GUILD_EMBLEM_TITLE	Logo	标志
+DST_GUILD_EMPTY	Not in a Guild	未加入公会
+DST_GUILD_ENTRUST_MASTER	Assign Guild Master %s	任命%s为会长
+DST_GUILD_EXPIRED	%s Didn't respond to the Invite	%s未回应邀请
+DST_GUILD_GYM	Dojo	道场
+DST_GUILD_INVITE	%s Invited	%s已邀请
+DST_GUILD_INVITE_REQ	[align = "center"][font size = "12" color="f4d762"]Guild Join Request[/font] [br][br][font size = "10" color="269eff"]You have received a Guild Invite[/font][br][br][font size = "10" color = "ffffff"]Do you want to join %s ?[/font][br]	[align = "center"][font size = "12" color="f4d762"]公会加入请求[/font] [br][br][font size = "10" color="269eff"]你收到了公会邀请[/font][br][br][font size = "10" color = "ffffff"]要加入%s吗?[/font][br]
+DST_GUILD_INVITE_RES	You are now in a Guild!	你已加入公会!
+DST_GUILD_IS_ONLY_MASTER	Master Only	仅会长
+DST_GUILD_KICKOUT_MEMBER	%s was expelled from the Guild	%s已被踢出公会
+DST_GUILD_KICK_OUT	[align = "center"][font size = "12" color="f4d762"]Dismiss[/font][br][br][font size = "10" color="f36a7c"]Dismiss the player from the guild.[/font][br][br][font size = "10" color="f36a7c"]Player: %s[/font][br][br][font size = "10" color="ffffff"]Are you sure, to dismiss the player?[/font]	[align = "center"][font size = "12" color="f4d762"]踢出[/font][br][br][font size = "10" color="f36a7c"]将该玩家踢出公会。[/font][br][br][font size = "10" color="f36a7c"]玩家: %s[/font][br][br][font size = "10" color="ffffff"]确定踢出该玩家?[/font]
+DST_GUILD_LEAVE	Leave	离开
+DST_GUILD_LEAVE_ASK	[align = "center"][font size="12"color="f4d762"]Leave Guild[/font][br][br][font size="10"color="ffffff"]You are sure to leave the Guild?[/font]	[align = "center"][font size="12"color="f4d762"]离开公会[/font][br][br][font size="10"color="ffffff"]确定离开公会吗?[/font]
+DST_GUILD_LEAVE_AVATAR	You left the Guild	你已离开公会
+DST_GUILD_LEAVE_MEMBER	%s has left the Guild	%s已离开公会
+DST_GUILD_LEVEL	Lv.	Lv.
+DST_GUILD_LEVEL_CHANGE_MEMBER	%s is now Lv.%d	%s现为%d级
+DST_GUILD_MASTER	Master	会长
+DST_GUILD_MAX_POINT	Max Points	点数上限
+DST_GUILD_MAX_POINT_EXPAIN	Get Points for Skills.	技能获得点数。
+DST_GUILD_MEMBER	Members	成员
+DST_GUILD_NAME_RULE	Name must be 2-16 characters	名称必须为2-16个字符
+DST_GUILD_NEW_MEMBER	%s has joined the Guild	%s已加入公会
+DST_GUILD_NOTICE	Notice	公告
+DST_GUILD_NOTICE_DISSOLVE	Guild will be disbanded.\nDate %dYear %dMonth %dDay (%s) at %d:%dMin.	公会将被解散。\n日期 %d年%d月%d日(%s) %d:%d分
+DST_GUILD_NOTICE_TITLE	Notice	公告
+DST_GUILD_NOT_JOIN	Not in a Guild	未加入公会
+DST_GUILD_NOT_SELECT_EMBLEM	background, framework, etc.	背景、框架等
+DST_GUILD_ONLINE_MEMBER	%s is Online	%s在线
+DST_GUILD_SECOND_MASTER	Jr. Master	副会长
+DST_GUILD_SECOND_MASTER_APPOINTED	%s has been appointed as Jr. Master	%s已被任命为副会长
+DST_GUILD_SETUP_EMBLEM_COLOR	Logo Color	标志颜色
+DST_GUILD_WAREHOUSE_CAN_NOT_DISCARD	No-Discard	不可丢弃
+DST_GUILD_WAREHOUSE_SAVE_ZENNY	%s Zeni Stored	存入%s索尼
+DST_GUILD_WAREHOUSE_ZENNY_DRAW_OUT	Drew %s Zeni from Bank	从仓库取出%s索尼
+DST_TAB_GUILD	Guild	公会
+# GUILD UI END
+
+DST_MULTIDIALOG_MENU_SMITH_DISASSEMBLE	Disassemble	分解
+DST_SEWING_KIT_BTN_DISASSEMBLE	Disassemble	分解
+DST_STATUS_TECHNIC_HOIPOIMIX_DISASSEMBLE	Disassemble	分解
+DST_PARTY_INVITE_SUCCESS	Invited: %s	已邀请: %s
+DST_INVENTORY_SORT_SUCCESS	sort %s done.	整理完成。
+DST_TRADE_ACCEPT_TRADE	[align = "center"][font size = "12" color="f4d762"]Trade[/font][br][br][font size = "10" color="269eff"]Trade with Others! [br]You can trade Items[/font][br][br][font size = "10" color="f4d762"]%s wants to Trade.[/font][br][br][font size = "10" color="ffffff"]Accept Trade?[/font]	[align = "center"][font size = "12" color="f4d762"]交易[/font][br][br][font size = "10" color="269eff"]与其他玩家交易！[br]可以交换物品[/font][br][br][font size = "10" color="f4d762"]%s 请求与你交易。[/font][br][br][font size = "10" color="ffffff"]是否接受交易？[/font]
+
+DST_POPUPMENU_PARTY_KICK_OUT	Expel from Party	从队伍中移除

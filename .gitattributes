@@ -1,0 +1,17 @@
+# Keep scripts and tabular source data diffable.
+*.py text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+*.tsv text eol=lf
+
+# Game package snapshots and generated/binary assets.
+*.pak binary
+*.rdf binary
+*.dat binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.zip binary
+*.7z binary
+*.rar binary
