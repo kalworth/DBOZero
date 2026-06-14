@@ -1,4 +1,4 @@
-# hanhua v3 scan summary
+﻿# hanhua v3 scan summary
 
 This scan is read-only. It does not modify game files or generated output.
 
@@ -36,7 +36,9 @@ This scan is read-only. It does not modify game files or generated output.
 - data/candidates_unified.tsv: 62050 rows
 - reports/overlaps_by_text.tsv: 632 rows
 - reports/overlaps_by_id.tsv: 5218 rows
-- reports/translation_conflicts.tsv: 19 rows
+- reports/translation_conflicts.tsv: 18 rows
+- reports/review_conflicts.md: 16 rows
+- reports/review_overlaps.md: 80 rows
 
 ## Policy notes
 

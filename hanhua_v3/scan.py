@@ -655,6 +655,48 @@ def unique_join(values: Iterable[str], limit: int = 12) -> str:
     return " | ".join(seen)
 
 
+def preview_text(text: str, limit: int = 90) -> str:
+    clean = text.replace("\r", "\\r").replace("\n", "\\n").replace("\t", " ")
+    if len(clean) <= limit:
+        return clean
+    return clean[: limit - 3] + "..."
+
+
+def display_location(row: TranslationRow) -> str:
+    return f"{row.surface}/{row.file_name}/{row.item_id} ({row.legacy_source}:{row.row_no})"
+
+
+def display_catalog_location(entry: CatalogEntry) -> str:
+    return f"{entry.surface}/{entry.file_name}/{entry.item_id}"
+
+
+def suggested_conflict_action(source_text: str, rows: list[TranslationRow], variants: list[str]) -> str:
+    source_norm = normalize_text(source_text)
+    if is_noise_text(source_text):
+        return "工具噪声：后续过滤，不需要人工处理。"
+    if source_norm == "scouter":
+        return "建议统一为“探测器”，旧的“史考特”应淘汰。"
+    if source_norm == "namek":
+        return "建议统一为“那美克”。"
+    if source_norm == "whisper":
+        return "建议聊天功能统一为“私聊”。"
+    if source_norm == "no-bank":
+        return "建议统一为“禁仓库”。"
+    if source_norm == "all classes":
+        return "建议统一为“全职业”。"
+    if source_norm == "party only":
+        return "建议统一为“仅队伍”。"
+    if "zeni" in source_norm:
+        return "建议货币统一为“索尼”，同时保留占位符。"
+    if source_norm == "weapon":
+        return "建议按场景区分：装备槽用“主武器”，泛称/市场用“武器”。"
+    if source_norm in {"normal", "start", "block", "charge"}:
+        return "这是多义词，不能全局替换；按 key 场景逐条确认。"
+    if len(variants) == 2:
+        return "二选一：确认一个主译法后写入 glossary 或逐 key 固定。"
+    return "需要人工确认主译法，避免继续散落多种中文。"
+
+
 def translation_summary(rows: Iterable[TranslationRow], limit: int = 8) -> str:
     return unique_join((f"{row.translation} [{row.surface}:{row.file_name}:{row.item_id}]" for row in rows), limit=limit)
 
@@ -900,6 +942,8 @@ def write_translation_conflicts(path: Path, translations: list[TranslationRow]) 
         by_target[(row.surface, row.file_name, row.item_id)].append(row)
 
     for text_norm, rows in by_text.items():
+        if is_noise_text(rows[0].source_text):
+            continue
         translations_seen = sorted({row.translation for row in rows if row.translation})
         if len(translations_seen) > 1:
             rows_out.append(
@@ -932,6 +976,120 @@ def write_translation_conflicts(path: Path, translations: list[TranslationRow]) 
         ["conflict_type", "key_or_source_text", "source_hash", "rows", "translation_variants", "locations"],
         rows_out,
     )
+
+
+def write_review_conflicts(path: Path, translations: list[TranslationRow]) -> int:
+    by_text: dict[str, list[TranslationRow]] = defaultdict(list)
+    for row in translations:
+        text_norm = normalize_text(row.source_text)
+        if text_norm and not is_noise_text(row.source_text):
+            by_text[text_norm].append(row)
+
+    conflicts: list[tuple[str, list[TranslationRow], list[str]]] = []
+    for _text_norm, rows in by_text.items():
+        variants = sorted({row.translation for row in rows if row.translation})
+        if len(variants) > 1:
+            conflicts.append((rows[0].source_text, rows, variants))
+
+    conflicts.sort(key=lambda item: (len(item[2]), len(item[1]), item[0].casefold()), reverse=True)
+
+    lines = [
+        "# Translation Conflicts Review",
+        "",
+        "这个文件给人看。它只列同一原文出现多个中文译法的情况。",
+        "",
+        f"Total conflicts: {len(conflicts)}",
+        "",
+    ]
+    for index, (source_text, rows, variants) in enumerate(conflicts, 1):
+        lines.extend(
+            [
+                f"## {index}. {preview_text(source_text)}",
+                "",
+                f"- 原文 hash: `{short_hash(source_text)}`",
+                f"- 出现位置: {len(rows)}",
+                f"- 现有译法: {unique_join(variants, limit=20)}",
+                f"- 建议处理: {suggested_conflict_action(source_text, rows, variants)}",
+                "",
+                "位置：",
+            ]
+        )
+        for row in rows[:12]:
+            lines.append(f"- `{display_location(row)}` -> {preview_text(row.translation, 80)}")
+        if len(rows) > 12:
+            lines.append(f"- ... 还有 {len(rows) - 12} 处")
+        lines.append("")
+
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text("\n".join(lines), encoding="utf-8-sig")
+    return len(conflicts)
+
+
+def write_review_overlaps(
+    path: Path,
+    entries: list[CatalogEntry],
+    translations_by_text: dict[str, list[TranslationRow]],
+    limit: int = 80,
+) -> int:
+    groups: dict[str, list[CatalogEntry]] = defaultdict(list)
+    for entry in entries:
+        text_norm = normalize_text(entry.source_text)
+        if text_norm and not is_noise_text(entry.source_text):
+            groups[text_norm].append(entry)
+
+    overlap_groups: list[tuple[str, list[CatalogEntry], list[TranslationRow]]] = []
+    for text_norm, group in groups.items():
+        surfaces = {entry.surface for entry in group}
+        if len(surfaces) < 2:
+            continue
+        manual_rows = translations_by_text.get(text_norm, [])
+        if not manual_rows and len(group) < 3:
+            continue
+        overlap_groups.append((group[0].source_text, group, manual_rows))
+
+    overlap_groups.sort(
+        key=lambda item: (
+            0 if item[2] else 1,
+            -len({entry.surface for entry in item[1]}),
+            -len(item[1]),
+            item[0].casefold(),
+        )
+    )
+    shown = overlap_groups[:limit]
+
+    lines = [
+        "# Cross-Surface Overlaps Review",
+        "",
+        "这个文件给人看。它列出同一原文同时出现在 Taiwan/lang0/tbl 多个表面的情况。",
+        "优先看带现有手工译法的条目，因为这些最容易造成重复翻译或译法不一致。",
+        "",
+        f"Total overlap groups: {len(overlap_groups)}",
+        f"Shown: {len(shown)}",
+        "",
+    ]
+    for index, (source_text, group, manual_rows) in enumerate(shown, 1):
+        surfaces = sorted({entry.surface for entry in group})
+        lines.extend(
+            [
+                f"## {index}. {preview_text(source_text)}",
+                "",
+                f"- 原文 hash: `{short_hash(source_text)}`",
+                f"- 表面: {', '.join(surfaces)}",
+                f"- 出现次数: {len(group)}",
+                f"- 现有手工译法: {translation_summary(manual_rows, limit=10) or '无'}",
+                "",
+                "代表位置：",
+            ]
+        )
+        for entry in group[:10]:
+            lines.append(f"- `{display_catalog_location(entry)}`")
+        if len(group) > 10:
+            lines.append(f"- ... 还有 {len(group) - 10} 处")
+        lines.append("")
+
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text("\n".join(lines), encoding="utf-8-sig")
+    return len(shown)
 
 
 def write_summary(
@@ -1000,7 +1158,7 @@ def write_summary(
         ]
     )
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text("\n".join(lines), encoding="utf-8")
+    path.write_text("\n".join(lines), encoding="utf-8-sig")
 
 
 def run(args: argparse.Namespace) -> None:
@@ -1044,6 +1202,15 @@ def run(args: argparse.Namespace) -> None:
     generated_counts["reports/translation_conflicts.tsv"] = write_translation_conflicts(
         report_dir / "translation_conflicts.tsv",
         translations,
+    )
+    generated_counts["reports/review_conflicts.md"] = write_review_conflicts(
+        report_dir / "review_conflicts.md",
+        translations,
+    )
+    generated_counts["reports/review_overlaps.md"] = write_review_overlaps(
+        report_dir / "review_overlaps.md",
+        entries,
+        translations_by_text,
     )
     write_summary(report_dir / "scan_summary.md", entries, translations, legacy, warnings, generated_counts)
 
