@@ -2,6 +2,11 @@
 /output/
 /output_taiwan/
 /release/
+/legacy/releases/
+
+# v3 generated discovery outputs
+/data/catalog_current.tsv
+/data/candidates_unified.tsv
 
 # Python caches and local runtime noise
 __pycache__/
