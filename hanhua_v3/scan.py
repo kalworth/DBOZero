@@ -574,6 +574,49 @@ def load_manual_translations(root: Path) -> tuple[list[TranslationRow], list[str
     return rows, warnings
 
 
+def load_translations_table(path: Path) -> tuple[list[TranslationRow], list[str]]:
+    rows: list[TranslationRow] = []
+    warnings: list[str] = []
+    if not path.exists():
+        return rows, warnings
+    for row_no, row in iter_tsv_rows(path):
+        if len(row) < 7:
+            warnings.append(f"{path.name}:{row_no}: ignored short row")
+            continue
+        if row[0].strip().lower() == "surface":
+            continue
+        surface = row[0].strip()
+        file_name = row[1].strip()
+        item_id = row[2].strip()
+        source_text = row[3]
+        source_hash = row[4].strip()
+        translation = row[5]
+        status = row[6].strip() or "accepted"
+        legacy_source = row[7].strip() if len(row) >= 8 else legacy_label(repo_root(), path)
+        legacy_row = 0
+        if len(row) >= 9 and row[8].strip():
+            try:
+                legacy_row = int(row[8].strip())
+            except ValueError:
+                warnings.append(f"{path.name}:{row_no}: invalid legacy_row {row[8]!r}")
+        note = row[9] if len(row) >= 10 else ""
+        if source_hash and source_hash != short_hash(source_text):
+            warnings.append(f"{path.name}:{row_no}: source_hash mismatch for {surface}/{file_name}/{item_id}")
+        if not translation:
+            continue
+        rows.append(TranslationRow(surface, file_name, item_id, source_text, translation, status, legacy_source, legacy_row or row_no, note))
+    return rows, warnings
+
+
+def load_active_translations(root: Path, data_dir: Path) -> tuple[list[TranslationRow], list[str], str]:
+    translations_path = data_dir / "translations.tsv"
+    if translations_path.exists():
+        rows, warnings = load_translations_table(translations_path)
+        return rows, warnings, "data/translations.tsv"
+    rows, warnings = load_manual_translations(root)
+    return rows, warnings, "legacy bootstrap"
+
+
 def first_existing(*paths: Path) -> Path | None:
     for path in paths:
         if path.exists():
@@ -875,6 +918,112 @@ def write_candidates(
     )
 
 
+def translation_bytes_fit(entry: CatalogEntry, translation: str) -> str:
+    if not translation:
+        return ""
+    if entry.surface == "lang0":
+        try:
+            return "ok" if len(translation.encode("gbk")) <= len(entry.source_text.encode("gbk", errors="replace")) else "too_long"
+        except UnicodeEncodeError:
+            return "encoding_error"
+    if entry.surface == "tbl":
+        encoding = entry.encoding.lower()
+        try:
+            if encoding == "utf-16le":
+                return "ok" if len(translation.encode("utf-16le")) <= len(entry.source_text.encode("utf-16le")) else "too_long"
+            return "ok" if len(translation.encode("gbk")) <= len(entry.source_text.encode("gbk", errors="replace")) else "too_long"
+        except UnicodeEncodeError:
+            return "encoding_error"
+    return ""
+
+
+def workbench_reason(
+    entry: CatalogEntry,
+    exact_rows: list[TranslationRow],
+    manual_suggestions: list[TranslationRow],
+    legacy_suggestions: list[LegacyCandidate],
+) -> str:
+    if exact_rows:
+        if len({row.translation for row in exact_rows}) > 1:
+            return "review_existing_conflict"
+        if exact_rows[0].status in {"needs_review", "conflict"}:
+            return "review_existing_marked"
+        if entry.surface == "tbl" and translation_bytes_fit(entry, exact_rows[0].translation) == "too_long":
+            return "review_existing_too_long"
+        return ""
+    if manual_suggestions:
+        return "reuse_or_edit_existing_translation"
+    if legacy_suggestions:
+        return "check_legacy_candidate"
+    if entry.surface in {"lang0", "tbl"} and looks_like_translation_candidate(entry.source_text):
+        return "new_translation_needed"
+    return ""
+
+
+def write_workbench(
+    path: Path,
+    entries: list[CatalogEntry],
+    exact: dict[tuple[str, str, str], list[TranslationRow]],
+    wildcard_by_source: dict[tuple[str, str, str], list[TranslationRow]],
+    translations_by_text: dict[str, list[TranslationRow]],
+    legacy_by_text: dict[str, list[LegacyCandidate]],
+) -> int:
+    def rows():
+        for entry in entries:
+            if entry.surface == "taiwan":
+                continue
+            text_norm = normalize_text(entry.source_text)
+            exact_rows = exact_translations_for(entry, exact, wildcard_by_source)
+            manual_suggestions = translations_by_text.get(text_norm, [])
+            legacy_suggestions = legacy_by_text.get(text_norm, [])
+            reason = workbench_reason(entry, exact_rows, manual_suggestions, legacy_suggestions)
+            if not reason:
+                continue
+            current_translation = exact_rows[0].translation if exact_rows else ""
+            candidate_translation = ""
+            if manual_suggestions:
+                candidate_translation = manual_suggestions[0].translation
+            elif legacy_suggestions:
+                candidate_translation = legacy_suggestions[0].translation
+            yield [
+                reason,
+                entry.surface,
+                entry.file_name,
+                entry.item_id,
+                entry.source_text,
+                short_hash(entry.source_text),
+                current_translation,
+                candidate_translation,
+                "",
+                translation_bytes_fit(entry, current_translation or candidate_translation),
+                translation_summary(manual_suggestions, limit=5),
+                legacy_suggestion_summary(legacy_suggestions, limit=5),
+                entry.location,
+                "Fill zh_cn_new only when you want to add or change this row.",
+            ]
+
+    return write_tsv(
+        path,
+        [
+            "reason",
+            "surface",
+            "file",
+            "id",
+            "source_text",
+            "source_hash",
+            "current_zh_cn",
+            "suggested_zh_cn",
+            "zh_cn_new",
+            "fit",
+            "manual_overlap_suggestions",
+            "legacy_candidate_suggestions",
+            "location",
+            "note",
+        ],
+        rows(),
+    )
+
+
 def write_overlap_by_text(
     path: Path,
     entries: list[CatalogEntry],
@@ -1092,6 +1241,56 @@ def write_review_overlaps(
     return len(shown)
 
 
+def write_next_steps(
+    path: Path,
+    workbench_count: int,
+    conflict_count: int,
+) -> None:
+    lines = [
+        "# What To Do Next",
+        "",
+        "老大，日常不用看全量 catalog。",
+        "",
+        "## 你要改旧翻译",
+        "",
+        "改这个文件：`data/translations.tsv`",
+        "",
+        "常用列：",
+        "",
+        "- `source_text`: 原文",
+        "- `zh_cn`: 当前中文，直接改这里",
+        "- `status`: 保持 `accepted` 即可；不确定就写 `needs_review`",
+        "- `note`: 备注为什么这样翻",
+        "",
+        "TBL 里为了长度把“那美克”写成“那美”这种情况可以保留，不需要为了术语统一强行改。",
+        "",
+        "## 你要补新增翻译",
+        "",
+        "填这个文件：`data/workbench.tsv`",
+        "",
+        "只看这些列：",
+        "",
+        "- `reason`: 为什么需要处理",
+        "- `surface`: 属于 lang0 还是 tbl",
+        "- `source_text`: 原文",
+        "- `current_zh_cn`: 已有旧翻译，没有就空",
+        "- `suggested_zh_cn`: 工具给的参考译法",
+        "- `zh_cn_new`: 你只需要填这一列",
+        "- `fit`: `too_long` 表示可能放不进固定长度字段",
+        "",
+        "填完 `zh_cn_new` 后，后续工具会把这些变更合并进主库。",
+        "",
+        "## 当前优先级",
+        "",
+        f"- 先看 `reports/review_conflicts.md`：{conflict_count} 个旧翻译冲突，适合少量人工拍板。",
+        f"- 再看 `data/workbench.tsv`：{workbench_count} 行待处理；先筛 `reason = reuse_or_edit_existing_translation`，这些最容易补。",
+        "- 暂时不要处理全量 `data/catalog_current.tsv`，它是机器地图。",
+        "",
+    ]
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text("\n".join(lines), encoding="utf-8-sig")
+
+
 def write_summary(
     path: Path,
     entries: list[CatalogEntry],
@@ -1153,6 +1352,8 @@ def write_summary(
             "- Taiwan text is now reference material, not the primary translation source.",
             "- Manual translations imported from legacy override TSV files are marked accepted.",
             "- Candidate suggestions from old candidate TSV files are reference-only.",
+            "- Existing translations in data/translations.tsv are treated as the editable v3 master table.",
+            "- Use data/workbench.tsv as the simple queue for new translations or old translation changes.",
             "- TBL entries are scanned from the current source snapshot and must be reconciled after every game update.",
             "",
         ]
@@ -1168,7 +1369,7 @@ def run(args: argparse.Namespace) -> None:
     report_dir = args.report_dir.resolve()
 
     entries = scan_current_catalog(dbozero)
-    translations, manual_warnings = load_manual_translations(root)
+    translations, manual_warnings, translation_source = load_active_translations(root, data_dir)
     legacy, legacy_warnings = load_legacy_candidates(root)
     warnings = manual_warnings + legacy_warnings
 
@@ -1176,9 +1377,21 @@ def run(args: argparse.Namespace) -> None:
     legacy_by_text = build_legacy_suggestion_index(legacy)
 
     generated_counts: dict[str, int] = {}
-    generated_counts["data/translations.tsv"] = write_translations(data_dir / "translations.tsv", translations)
+    translations_path = data_dir / "translations.tsv"
+    if not translations_path.exists():
+        generated_counts["data/translations.tsv"] = write_translations(translations_path, translations)
+    else:
+        generated_counts["data/translations.tsv"] = len(translations)
     generated_counts["data/catalog_current.tsv"] = write_catalog(
         data_dir / "catalog_current.tsv",
+        entries,
+        exact,
+        wildcard_by_source,
+        translations_by_text,
+        legacy_by_text,
+    )
+    generated_counts["data/workbench.tsv"] = write_workbench(
+        data_dir / "workbench.tsv",
         entries,
         exact,
         wildcard_by_source,
@@ -1212,11 +1425,17 @@ def run(args: argparse.Namespace) -> None:
         entries,
         translations_by_text,
     )
+    write_next_steps(
+        report_dir / "what_to_do_next.md",
+        generated_counts["data/workbench.tsv"],
+        generated_counts["reports/review_conflicts.md"],
+    )
+    generated_counts["reports/what_to_do_next.md"] = 1
     write_summary(report_dir / "scan_summary.md", entries, translations, legacy, warnings, generated_counts)
 
     print("hanhua v3 scan completed")
     print(f"current catalog entries: {len(entries)}")
-    print(f"manual translations imported: {len(translations)}")
+    print(f"active translations: {len(translations)} from {translation_source}")
     print(f"legacy candidates imported: {len(legacy)}")
     for name, count in generated_counts.items():
         print(f"{name}: {count}")

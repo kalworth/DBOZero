@@ -29,3 +29,6 @@ Important policy:
 - `data/translations.tsv` is the v3 manual translation seed.
 - `data/catalog_current.tsv` and `data/candidates_unified.tsv` are generated
   and can be recreated with `python -m hanhua_v3.scan`.
+- `data/workbench.tsv` is generated for daily editing. Fill `zh_cn_new` when
+  adding a new translation or changing an old one; do not edit the full catalog
+  by hand.

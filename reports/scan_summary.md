@@ -33,16 +33,20 @@ This scan is read-only. It does not modify game files or generated output.
 
 - data/translations.tsv: 3061 rows
 - data/catalog_current.tsv: 303575 rows
+- data/workbench.tsv: 62050 rows
 - data/candidates_unified.tsv: 62050 rows
 - reports/overlaps_by_text.tsv: 632 rows
 - reports/overlaps_by_id.tsv: 5218 rows
 - reports/translation_conflicts.tsv: 18 rows
 - reports/review_conflicts.md: 16 rows
 - reports/review_overlaps.md: 80 rows
+- reports/what_to_do_next.md: 1 rows
 
 ## Policy notes
 
 - Taiwan text is now reference material, not the primary translation source.
 - Manual translations imported from legacy override TSV files are marked accepted.
 - Candidate suggestions from old candidate TSV files are reference-only.
+- Existing translations in data/translations.tsv are treated as the editable v3 master table.
+- Use data/workbench.tsv as the simple queue for new translations or old translation changes.
 - TBL entries are scanned from the current source snapshot and must be reconciled after every game update.

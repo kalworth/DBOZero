@@ -16,3 +16,12 @@ run from the repository root.
 ```powershell
 python -m hanhua_v3.scan
 ```
+
+Editing workflow:
+
+- Edit existing accepted translations in `data/translations.tsv`.
+- Use generated `data/workbench.tsv` as the simple daily queue.
+- In `data/workbench.tsv`, fill `zh_cn_new` only for rows you want to add or
+  change.
+- `data/catalog_current.tsv` and `data/candidates_unified.tsv` are generated
+  discovery outputs; do not hand-edit them.
