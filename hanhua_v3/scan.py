@@ -304,10 +304,10 @@ def scan_table_quest(dbozero: Path) -> list[CatalogEntry]:
 
 
 TBL_SMALL_WORDS = frozenset({"a", "an", "and", "as", "at", "by", "for", "from", "in", "into", "of", "on", "or", "the", "to", "with"})
-TBL_TEXT_RE = re.compile(r"[\[(A-Za-z0-9][A-Za-z0-9' \[\]()%.,:/+&!?-]{3,}[A-Za-z0-9)\]%!?]")
+TBL_TEXT_RE = re.compile(r"[\[(A-Za-z0-9][A-Za-z0-9' \[\]()%°.,:/+&!?-]{3,}[A-Za-z0-9)\]%°.!?]")
 TBL_COMPOUND_WORD_RE = re.compile(r"(?:[A-Z][a-z]{2,}){2,}")
 TBL_ATTRIBUTE_WORDS = frozenset({"Elegant", "Funny", "Honest", "Strange", "Wild"})
-TBL_UTF16_EXTRA_CHARS = frozenset("\u00b0[]")
+TBL_UTF16_EXTRA_CHARS = frozenset("°[]")
 TBL_FORCE_KEYWORDS = (
     "Recipe",
     "Black Dragon",
@@ -335,45 +335,95 @@ def tbl_candidate_word(word: str) -> bool:
     letters = word.replace("'", "")
     if not letters.isalpha():
         return False
-    if word.lower() in TBL_SMALL_WORDS:
-        return True
-    if len(letters) < 3:
+    if len(letters) > 2 and not any(ch in "aeiouyAEIOUY" for ch in letters):
         return False
-    return any(ch.isupper() for ch in letters)
+    if letters.lower() in TBL_SMALL_WORDS:
+        return True
+    if letters.isupper():
+        return len(letters) <= 4
+    return letters[0].isupper() and letters[1:].islower()
 
 
 def tbl_candidate_text(text: str) -> bool:
     text = text.strip()
-    if len(text) < 4 or len(text) > 96:
+    if not text:
         return False
-    if re.search(r"\s{2,}", text):
+    if not TBL_TEXT_RE.fullmatch(text):
         return False
-    if text.count("(") != text.count(")"):
-        return False
-    words = re.findall(r"[A-Za-z][A-Za-z']*", text)
+
+    has_parenthetical_variant = re.search(r"\([A-Za-z0-9' .+-]+\)", text) is not None
+    validation_text = re.sub(r"\([A-Za-z0-9' .+-]+\)", " ", text)
+    validation_text = re.sub(r"\[[A-Za-z0-9' .+%-]+\]", " ", validation_text)
+    validation_text = re.sub(r"%[0-9]*[A-Za-z]", " ", validation_text)
+    validation_text = validation_text.replace("%%", " ")
+    validation_text = re.sub(r"[0-9°.,:/+&!?%-]+", " ", validation_text)
+    words = [part for part in validation_text.split() if part]
     if not words:
         return False
     if len(words) >= 2:
         return all(tbl_candidate_word(word) for word in words)
-    if re.search(r"\([A-Za-z0-9' .+-]+\)", text) and len(words[0]) >= 3:
+
+    if has_parenthetical_variant and len(words[0]) >= 3:
         return tbl_candidate_word(words[0])
+
     return len(words[0]) >= 6 and (tbl_candidate_word(words[0]) or TBL_COMPOUND_WORD_RE.fullmatch(words[0]) is not None)
 
 
 def tbl_property_candidate_text(text: str) -> bool:
-    return text in TBL_ATTRIBUTE_WORDS
+    text = text.strip()
+    if not text:
+        return False
+    if text in TBL_ATTRIBUTE_WORDS:
+        return True
+    if not (text[0].isalpha() or text[0] == ","):
+        return False
+    lower = text.lower()
+    return "element" in lower and ("attack" in lower or "defense" in lower)
 
 
 def tbl_forced_candidate_text(text: str) -> bool:
+    text = text.strip()
+    if not text or len(text) > 96 or "\n" in text or "\r" in text:
+        return False
+    if text.startswith("((") or text[0].islower():
+        return False
+    if not (text[0].isalnum() or text[0] in "([]"):
+        return False
+    if re.match(r"^[a-z][0-9]", text):
+        return False
+    lower = text.lower()
+    if "[metatag" in lower:
+        return False
+    if "50x" in lower or "divine" in lower or "hakai" in lower:
+        return True
     return any(keyword in text for keyword in TBL_FORCE_KEYWORDS)
 
 
 def tbl_shadow_sentence_candidate_text(text: str) -> bool:
-    if "Shadow Sovereign" not in text and "ShadowSovereign" not in text:
+    text = text.strip()
+    if not text or len(text) > 160 or "\n" in text or "\r" in text:
         return False
-    if len(text) < 20 or len(text) > 220:
+    if not TBL_TEXT_RE.fullmatch(text):
         return False
-    return re.search(r"[A-Za-z]{3,}", text) is not None
+    if not text[0].isupper() or text.startswith("(("):
+        return False
+    if not text.endswith((".", "!", "?")):
+        return False
+    lower = text.lower()
+    if "[metatag" in lower:
+        return False
+    if "shadow sovereign" not in lower and "shadowsovereign" not in lower:
+        return False
+    words = re.findall(r"[A-Za-z]+", text)
+    if len(words) < 6:
+        return False
+    for word in words:
+        letters = word.replace("'", "")
+        if len(letters) > 24:
+            return False
+        if len(letters) > 2 and not any(ch in "aeiouyAEIOUY" for ch in letters):
+            return False
+    return True
 
 
 def tbl_accepted_candidate_text(text: str) -> bool:
@@ -383,6 +433,35 @@ def tbl_accepted_candidate_text(text: str) -> bool:
         or tbl_forced_candidate_text(text)
         or tbl_shadow_sentence_candidate_text(text)
     )
+
+
+def tbl_queue_candidate_text(text: str) -> bool:
+    text = text.strip()
+    if not text or len(text) > 160 or "\n" in text or "\r" in text:
+        return False
+    if re.fullmatch(r"(?:Weapon|Armor)\([A-Z]\) \d{3}", text):
+        return False
+    if re.fullmatch(r"[A-Za-z]+(?:\([A-Z]\))? \d{3}", text):
+        return False
+    if re.fullmatch(r"[A-Z]{1,3}\d+(?:-\d+)?(?: Age| Pre)?", text):
+        return False
+    if tbl_property_candidate_text(text) or tbl_forced_candidate_text(text) or tbl_shadow_sentence_candidate_text(text):
+        return True
+    if not TBL_TEXT_RE.fullmatch(text):
+        return False
+    if re.search(r"\s", text):
+        return tbl_candidate_text(text)
+    words = re.findall(r"[A-Za-z][A-Za-z']*", text)
+    if len(words) != 1:
+        return False
+    word = words[0]
+    if len(word) < 4:
+        return False
+    if word.isupper():
+        return False
+    if not word[0].isupper():
+        return False
+    return tbl_candidate_word(word)
 
 
 def normalize_tbl_candidate_text(text: str, strip_length_prefix: bool = False) -> tuple[str, int]:
@@ -1024,16 +1103,49 @@ def write_workbench(
     )
 
 
+QUEUE_HEADER = ["来源", "文件", "位置", "原文", "参考译文", "填写中文", "长度状态"]
+
+
+def queue_key(file_name: str, item_id: str, source_text: str) -> tuple[str, str, str]:
+    return (file_name, item_id, source_text)
+
+
+def load_existing_translation_queue(path: Path) -> dict[tuple[str, str, str], dict[str, str]]:
+    rows: dict[tuple[str, str, str], dict[str, str]] = {}
+    if not path.is_file():
+        return rows
+
+    with path.open("r", encoding="utf-8-sig", newline="") as handle:
+        reader = csv.DictReader(handle, delimiter="\t")
+        if not reader.fieldnames:
+            return rows
+        for row in reader:
+            file_name = (row.get("文件") or "").strip()
+            item_id = (row.get("位置") or "").strip()
+            source_text = row.get("原文") or ""
+            if not file_name or not item_id or not source_text:
+                continue
+            key = queue_key(file_name, item_id, source_text)
+            previous = rows.get(key)
+            if previous is None or (row.get("填写中文") or "").strip():
+                rows[key] = row
+    return rows
+
+
 def write_new_translation_queue(
     path: Path,
     entries: list[CatalogEntry],
     exact: dict[tuple[str, str, str], list[TranslationRow]],
     wildcard_by_source: dict[tuple[str, str, str], list[TranslationRow]],
     legacy_by_text: dict[str, list[LegacyCandidate]],
+    existing_queue: dict[tuple[str, str, str], dict[str, str]] | None = None,
 ) -> int:
+    existing_queue = existing_queue or {}
+
     def rows():
+        emitted_tbl_sources: set[tuple[str, str]] = set()
         for entry in entries:
-            if entry.surface != "lang0":
+            if entry.surface not in {"lang0", "tbl"}:
                 continue
             if exact_translations_for(entry, exact, wildcard_by_source):
                 continue
@@ -1041,24 +1153,36 @@ def write_new_translation_queue(
                 continue
             text_norm = normalize_text(entry.source_text)
             legacy_suggestions = legacy_by_text.get(text_norm, [])
-            if legacy_suggestions:
-                continue
             suggested = legacy_suggestions[0].translation if legacy_suggestions else ""
+            old_row = existing_queue.get(queue_key(entry.file_name, entry.item_id, entry.source_text), {})
+            if not old_row and entry.surface == "tbl" and entry.encoding == "utf-16le":
+                old_row = existing_queue.get(queue_key(entry.file_name, "*", entry.source_text), {})
+            filled = old_row.get("填写中文") or ""
+            old_suggested = old_row.get("参考译文") or ""
+            if entry.surface == "tbl" and not (filled or suggested or tbl_queue_candidate_text(entry.source_text)):
+                continue
+            if entry.surface == "tbl" and entry.encoding != "utf-16le" and not (filled or suggested):
+                continue
+            item_id = entry.item_id
+            note = ""
+            if entry.surface == "tbl" and entry.encoding == "utf-16le":
+                tbl_source_key = (entry.file_name, normalize_text(entry.source_text))
+                if tbl_source_key in emitted_tbl_sources:
+                    continue
+                emitted_tbl_sources.add(tbl_source_key)
+                item_id = "*"
+                note = "wildcard_utf16"
             yield [
                 "UI" if entry.surface == "lang0" else "TBL",
                 entry.file_name,
-                entry.item_id,
+                item_id,
                 entry.source_text,
-                suggested,
-                "",
-                translation_bytes_fit(entry, suggested),
+                suggested or old_suggested,
+                filled,
+                note or translation_bytes_fit(entry, filled or suggested),
             ]
 
-    return write_tsv(
-        path,
-        ["来源", "文件", "位置", "原文", "参考译文", "填写中文", "长度状态"],
-        rows(),
-    )
+    return write_tsv(path, QUEUE_HEADER, rows())
 
 
 def write_tbl_internal_queue(
@@ -1089,11 +1213,7 @@ def write_tbl_internal_queue(
                 translation_bytes_fit(entry, suggested),
             ]
 
-    return write_tsv(
-        path,
-        ["来源", "文件", "位置", "原文", "参考译文", "填写中文", "长度状态"],
-        rows(),
-    )
+    return write_tsv(path, QUEUE_HEADER, rows())
 
 
 def write_overlap_by_text(
@@ -1324,7 +1444,7 @@ def write_next_steps(
         "",
         "## 1. 补新内容",
         "",
-        "打开：`data/待翻译_新增内容.tsv`",
+        "打开：`data/new_translations.tsv`",
         "",
         "只填这一列：",
         "",
@@ -1332,7 +1452,7 @@ def write_next_steps(
         "",
         "其他列只是参考：",
         "",
-        "- `来源`: UI 表示 lang0",
+        "- `来源`: UI 表示 lang0，TBL 表示 tbl0.pak / tbl1.pak",
         "- `文件`: 来源文件",
         "- `位置`: key 或 offset",
         "- `原文`: 游戏原文",
@@ -1341,7 +1461,7 @@ def write_next_steps(
         "",
         f"当前待填行数：{queue_count}",
         "",
-        "这个表现在只放 UI/lang0 待翻译内容，避免 TBL 几万行候选干扰你。",
+        "这个表包含 UI/lang0 和 TBL 待翻译内容。TBL 行很多，建议优先按 `来源`、`文件` 或关键词筛选。",
         "",
         "## 2. 改旧翻译",
         "",
@@ -1353,11 +1473,45 @@ def write_next_steps(
         "",
         "TBL 里为了长度把“那美克”写成“那美”这种情况可以保留。",
         "",
-        "## 3. 其他文件",
+        "## 3. 生成补丁",
         "",
-        "不用看。",
+        "翻译改完后，在当前目录运行：",
         "",
-        "`data/catalog_current.tsv`、`data/candidates_unified.tsv`、`data/workbench.tsv`、`reports/internal/` 都是工具内部生成物。",
+        "```powershell",
+        "python build_output.py",
+        "```",
+        "",
+        "它会重新生成：",
+        "",
+        "- `output/DBOZero`: 大陆简中 GBK 版",
+        "- `output_taiwan/DBOZero`: 台湾繁中 CP950 版",
+        "",
+        "发简中补丁就打包 `output`。",
+        "",
+        "发台湾繁中补丁就打包 `output_taiwan`。",
+        "",
+        "不要把 `src_file`、`data`、`legacy`、`reports` 一起发出去。",
+        "",
+        "## 4. 检查结果",
+        "",
+        "生成后至少确认这些文件存在：",
+        "",
+        "- `output/DBOZero/localize/Taiwan/language/local_data.dat`",
+        "- `output/DBOZero/pack/lang0.pak`",
+        "- `output/DBOZero/pack/tbl0.pak`",
+        "- `output/DBOZero/pack/tbl1.pak`",
+        "- `output_taiwan/DBOZero/localize/Taiwan/language/local_data.dat`",
+        "- `output_taiwan/DBOZero/pack/lang0.pak`",
+        "- `output_taiwan/DBOZero/pack/tbl0.pak`",
+        "- `output_taiwan/DBOZero/pack/tbl1.pak`",
+        "",
+        "`build_output.py` 只读 `src_file/DBOZero`，不会动真实游戏目录。",
+        "",
+        "## 5. 其他文件",
+        "",
+        "平时不用看。",
+        "",
+        "`reports/internal/` 里是工具内部生成物，平时不用看。",
         "",
     ]
     path.parent.mkdir(parents=True, exist_ok=True)
@@ -1426,7 +1580,7 @@ def write_summary(
             "- Manual translations imported from legacy override TSV files are marked accepted.",
             "- Candidate suggestions from old candidate TSV files are reference-only.",
             "- Existing translations in data/translations.tsv are treated as the editable v3 master table.",
-            "- Use data/workbench.tsv as the simple queue for new translations or old translation changes.",
+            "- Use data/new_translations.tsv for new translations and data/translations.tsv for accepted translation edits.",
             "- TBL entries are scanned from the current source snapshot and must be reconciled after every game update.",
             "",
         ]
@@ -1455,45 +1609,47 @@ def run(args: argparse.Namespace) -> None:
         generated_counts["data/translations.tsv"] = write_translations(translations_path, translations)
     else:
         generated_counts["data/translations.tsv"] = len(translations)
-    generated_counts["data/catalog_current.tsv"] = write_catalog(
-        data_dir / "catalog_current.tsv",
-        entries,
-        exact,
-        wildcard_by_source,
-        translations_by_text,
-        legacy_by_text,
-    )
-    generated_counts["data/workbench.tsv"] = write_workbench(
-        data_dir / "workbench.tsv",
-        entries,
-        exact,
-        wildcard_by_source,
-        translations_by_text,
-        legacy_by_text,
-    )
-    generated_counts["data/待翻译_新增内容.tsv"] = write_new_translation_queue(
-        data_dir / "待翻译_新增内容.tsv",
-        entries,
-        exact,
-        wildcard_by_source,
-        legacy_by_text,
-    )
-    generated_counts["data/内部_TBL候选.tsv"] = write_tbl_internal_queue(
-        data_dir / "内部_TBL候选.tsv",
-        entries,
-        exact,
-        wildcard_by_source,
-        legacy_by_text,
-    )
-    generated_counts["data/candidates_unified.tsv"] = write_candidates(
-        data_dir / "candidates_unified.tsv",
-        entries,
-        exact,
-        wildcard_by_source,
-        translations_by_text,
-        legacy_by_text,
-    )
+    existing_queue = load_existing_translation_queue(data_dir / "new_translations.tsv")
     internal_report_dir = report_dir / "internal"
+    generated_counts["reports/internal/catalog_current.tsv"] = write_catalog(
+        internal_report_dir / "catalog_current.tsv",
+        entries,
+        exact,
+        wildcard_by_source,
+        translations_by_text,
+        legacy_by_text,
+    )
+    generated_counts["reports/internal/workbench.tsv"] = write_workbench(
+        internal_report_dir / "workbench.tsv",
+        entries,
+        exact,
+        wildcard_by_source,
+        translations_by_text,
+        legacy_by_text,
+    )
+    generated_counts["data/new_translations.tsv"] = write_new_translation_queue(
+        data_dir / "new_translations.tsv",
+        entries,
+        exact,
+        wildcard_by_source,
+        legacy_by_text,
+        existing_queue,
+    )
+    generated_counts["reports/internal/tbl_internal_candidates.tsv"] = write_tbl_internal_queue(
+        internal_report_dir / "tbl_internal_candidates.tsv",
+        entries,
+        exact,
+        wildcard_by_source,
+        legacy_by_text,
+    )
+    generated_counts["reports/internal/candidates_unified.tsv"] = write_candidates(
+        internal_report_dir / "candidates_unified.tsv",
+        entries,
+        exact,
+        wildcard_by_source,
+        translations_by_text,
+        legacy_by_text,
+    )
     generated_counts["reports/internal/overlaps_by_text.tsv"] = write_overlap_by_text(
         internal_report_dir / "overlaps_by_text.tsv",
         entries,
@@ -1515,7 +1671,7 @@ def run(args: argparse.Namespace) -> None:
     )
     write_next_steps(
         report_dir / "what_to_do_next.md",
-        generated_counts["data/待翻译_新增内容.tsv"],
+        generated_counts["data/new_translations.tsv"],
     )
     generated_counts["reports/what_to_do_next.md"] = 1
     write_summary(internal_report_dir / "scan_summary.md", entries, translations, legacy, warnings, generated_counts)

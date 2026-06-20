@@ -4,7 +4,7 @@ This workspace is moving to the v3 rewrite.
 
 Daily translation workflow:
 
-- Fill new translations in `data/待翻译_新增内容.tsv`.
+- Fill new translations in `data/new_translations.tsv`.
 - Change old translations in `data/translations.tsv`.
 - Read `reports/what_to_do_next.md` if unsure.
 

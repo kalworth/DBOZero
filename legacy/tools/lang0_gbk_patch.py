@@ -27,6 +27,7 @@ class PatchError(RuntimeError):
 PRINTF_SPEC_RE = re.compile(r"%(?:\d+\$)?[+#0\- ]*(?:\d+|\*)?(?:\.(?:\d+|\*))?[hlL]?[diuoxXfFeEgGaAcspn%]")
 ALLOWED_PRINTF_MISMATCHES = {
     "DST_INVENTORY_SORT_SUCCESS": (("%s",), ()),
+    "DST_ITEM_REMOTE_SELL": (("% o", "%s", "%s"), ("%s", "%s")),
 }
 
 

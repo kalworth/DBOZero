@@ -5,10 +5,7 @@
 /legacy/releases/
 
 # v3 generated discovery outputs
-/data/catalog_current.tsv
-/data/candidates_unified.tsv
-/data/workbench.tsv
-/data/内部_TBL候选.tsv
+/data/new_translations.backup_before_*.tsv
 /reports/internal/
 
 # Python caches and local runtime noise

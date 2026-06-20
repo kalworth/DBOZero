@@ -139,6 +139,29 @@ def has_length_prefix(
     return int.from_bytes(data[length_pos:offset], "little") == source_units
 
 
+def inside_length_prefixed_field(
+    data: bytes | bytearray,
+    file_name: str,
+    offset: int,
+    source_units: int,
+    max_scan_units: int = 256,
+) -> bool:
+    if file_name != "tbl1.pak" or offset < 2:
+        return False
+
+    limit = min(offset // 2, max_scan_units)
+    for back_units in range(1, limit + 1):
+        length_pos = offset - (back_units * 2)
+        units = int.from_bytes(data[length_pos:length_pos + 2], "little")
+        if units <= 0 or units > max_scan_units:
+            continue
+        field_start = length_pos + 2
+        field_end = field_start + (units * 2)
+        if field_start <= offset and offset + (source_units * 2) <= field_end:
+            return field_start != offset or units != source_units
+    return False
+
+
 def find_all(data: bytes, needle: bytes) -> list[int]:
     offsets: list[int] = []
     start = 0
@@ -150,11 +173,65 @@ def find_all(data: bytes, needle: bytes) -> list[int]:
         start = idx + len(needle)
 
 
+def length_prefixed_offsets(
+    data: bytes | bytearray,
+    file_name: str,
+    source_text: str,
+) -> list[int]:
+    source = utf16le(source_text, "Source text")
+    source_units = len(source) // 2
+    return [
+        offset
+        for offset in find_all(bytes(data), source)
+        if has_length_prefix(data, file_name, offset, source_units)
+    ]
+
+
+def length_prefixed_source_variants(
+    data: bytes | bytearray,
+    row: TblOverride,
+    max_trim_chars: int = 4,
+) -> list[tuple[str, str, list[int]]]:
+    if row.file_name != "tbl1.pak":
+        return []
+
+    variants: list[tuple[str, str, list[int]]] = []
+    seen: set[str] = set()
+    max_trim = min(max_trim_chars, max(0, len(row.source_text) - 1))
+
+    for trim in range(1, max_trim + 1):
+        source_text = row.source_text[trim:]
+        if not source_text or source_text in seen:
+            continue
+        offsets = length_prefixed_offsets(data, row.file_name, source_text)
+        if offsets:
+            noise = row.source_text[:trim]
+            translation = row.translation[trim:] if row.translation.startswith(noise) else row.translation
+            variants.append((source_text, translation, offsets))
+            seen.add(source_text)
+
+    for trim in range(1, max_trim + 1):
+        source_text = row.source_text[:-trim]
+        if not source_text or source_text in seen:
+            continue
+        offsets = length_prefixed_offsets(data, row.file_name, source_text)
+        if offsets:
+            noise = row.source_text[-trim:]
+            translation = row.translation[:-trim] if row.translation.endswith(noise) else row.translation
+            variants.append((source_text, translation, offsets))
+            seen.add(source_text)
+
+    return variants
+
+
 def patch_tbl_bytes(data: bytes, rows: list[TblOverride], single_byte_encoding: str = "gbk") -> tuple[bytes, dict[str, int]]:
     original = bytes(data)
     patched = bytearray(data)
     changed = 0
     missing = 0
+    relocated = 0
+    normalized = 0
+    ambiguous = 0
     space_padded = 0
 
     ordered_rows = [
@@ -172,14 +249,11 @@ def patch_tbl_bytes(data: bytes, rows: list[TblOverride], single_byte_encoding: 
     for row in ordered_rows:
         source = utf16le(row.source_text, "Source text")
         source_units = len(source) // 2
-        pad_unit = b"\x20\x00" if has_length_prefix(patched, row.file_name, row.offset or -1, source_units) else b"\x00\x00"
-        replacement = fixed_replacement(row.source_text, row.translation, pad_unit)
         if row.offset is not None:
             offset = row.offset
             if 0 <= offset and offset + len(source) <= len(patched) and bytes(patched[offset : offset + len(source)]) == source:
+                replacement = fixed_replacement(row.source_text, row.translation)
                 patched[offset : offset + len(source)] = replacement
-                if pad_unit == b"\x20\x00":
-                    space_padded += 1
                 changed += 1
                 continue
 
@@ -197,27 +271,94 @@ def patch_tbl_bytes(data: bytes, rows: list[TblOverride], single_byte_encoding: 
                     )
                     changed += 1
                     continue
-            missing += 1
+
+            # Game updates often shift fixed TBL fields. If the old exact
+            # offset no longer matches, relocate only when the current source
+            # text is unique in the active source pack.
+            offsets = find_all(bytes(patched), source)
+            if len(offsets) == 1:
+                new_offset = offsets[0]
+                if not inside_length_prefixed_field(patched, row.file_name, new_offset, source_units):
+                    replacement = fixed_replacement(row.source_text, row.translation)
+                    patched[new_offset : new_offset + len(source)] = replacement
+                    changed += 1
+                    relocated += 1
+                    continue
+            elif len(offsets) > 1:
+                ambiguous += 1
+
+            for source_text, translation, normalized_offsets in length_prefixed_source_variants(patched, row):
+                if len(normalized_offsets) == 1:
+                    normalized_source = utf16le(source_text, "Source text")
+                    new_offset = normalized_offsets[0]
+                    replacement = fixed_replacement(source_text, translation)
+                    patched[new_offset : new_offset + len(normalized_source)] = replacement
+                    changed += 1
+                    normalized += 1
+                    break
+                ambiguous += 1
+            else:
+                missing += 1
+                continue
+
             continue
 
         offsets = find_all(bytes(patched), source)
         if not offsets:
+            # If the exact source existed before this batch but is gone now, a
+            # higher-priority duplicate row already consumed it. Do not fall
+            # back to trimmed variants, because that can rewrite shorter sibling
+            # fields such as "Bardock" after "Bardock SS3" was patched.
             if find_all(original, source):
+                continue
+            patched_by_variant = False
+            for source_text, translation, normalized_offsets in length_prefixed_source_variants(patched, row):
+                normalized_source = utf16le(source_text, "Source text")
+                replacement = fixed_replacement(source_text, translation)
+                for offset in normalized_offsets:
+                    if bytes(patched[offset : offset + len(normalized_source)]) != normalized_source:
+                        continue
+                    patched[offset : offset + len(normalized_source)] = replacement
+                    changed += 1
+                    normalized += 1
+                    patched_by_variant = True
+            if patched_by_variant:
                 continue
             missing += 1
             continue
+        patched_any = False
         for offset in offsets:
             if offset is None or offset < 0 or offset + len(source) > len(patched):
                 missing += 1
                 continue
+            if inside_length_prefixed_field(patched, row.file_name, offset, source_units):
+                continue
             if bytes(patched[offset : offset + len(source)]) != source:
                 missing += 1
                 continue
+            replacement = fixed_replacement(row.source_text, row.translation)
             patched[offset : offset + len(source)] = replacement
-            if pad_unit == b"\x20\x00":
-                space_padded += 1
             changed += 1
-    return bytes(patched), {"rows": len(rows), "changed": changed, "missing": missing, "space_padded": space_padded}
+            patched_any = True
+        if not patched_any:
+            for source_text, translation, normalized_offsets in length_prefixed_source_variants(patched, row):
+                normalized_source = utf16le(source_text, "Source text")
+                replacement = fixed_replacement(source_text, translation)
+                for offset in normalized_offsets:
+                    if bytes(patched[offset : offset + len(normalized_source)]) != normalized_source:
+                        continue
+                    patched[offset : offset + len(normalized_source)] = replacement
+                    changed += 1
+                    normalized += 1
+    return bytes(patched), {
+        "rows": len(rows),
+        "changed": changed,
+        "missing": missing,
+        "relocated": relocated,
+        "normalized": normalized,
+        "ambiguous": ambiguous,
+        "space_padded": space_padded,
+    }
 
 
 def patch_tbl_pack(

@@ -19,7 +19,7 @@ python -m hanhua_v3.scan
 
 Editing workflow:
 
-- Main queue: `data/待翻译_新增内容.tsv`.
+- Main queue: `data/new_translations.tsv`.
 - Fill only the `填写中文` column for new translations.
 - Edit existing accepted translations in `data/translations.tsv` only when you
   intentionally want to change old text.

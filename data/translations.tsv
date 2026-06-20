@@ -275,16 +275,18 @@ lang0	lang0.pak	DST_LOBBY_ZENNY	Bank	9e89988cc3fb	金额	accepted	legacy/transla
 lang0	lang0.pak	DST_LOGIN	Start	952f375412e8	登录	accepted	legacy/translations/lang0_overrides.tsv	24	
 lang0	lang0.pak	DST_LOGIN_CONTRACT	Contract	5a0ba3bb83f0	合同	accepted	legacy/translations/lang0_overrides.tsv	25	
 lang0	lang0.pak	DST_LOGIN_CREDIT	Credit	8a45d339a638	信用	accepted	legacy/translations/lang0_overrides.tsv	26	
-lang0	lang0.pak	DST_LOGIN_ID	User	9f8a2389a20c	账号	accepted	legacy/translations/lang0_overrides.tsv	27	
+lang0	lang0.pak	DST_LOGIN_ID	User	9f8a2389a20c	账号	replaced	legacy/translations/lang0_overrides.tsv	27	source changed to User:
+lang0	lang0.pak	DST_LOGIN_ID	User:	3123a0e46062	账号:	accepted	manual		login source now includes colon
 lang0	lang0.pak	DST_LOGIN_NEW_ACCOUNT	Game Policies	3f3981b9920c	游戏政策	accepted	legacy/translations/lang0_overrides.tsv	28	
-lang0	lang0.pak	DST_LOGIN_PASSWARD	Pass	d7cd56f2a2a3	密码	accepted	legacy/translations/lang0_overrides.tsv	29	
+lang0	lang0.pak	DST_LOGIN_PASSWARD	Pass	d7cd56f2a2a3	密码	replaced	legacy/translations/lang0_overrides.tsv	29	source changed to Pass:
+lang0	lang0.pak	DST_LOGIN_PASSWARD	Pass:	47115b88aaf4	密码:	accepted	manual		login source now includes colon
 lang0	lang0.pak	DST_LOGIN_PLAY_MOVIE	Film	b9aec1112810	影片	accepted	legacy/translations/lang0_overrides.tsv	30	
 lang0	lang0.pak	DST_SIDEICON_HINT_FRIEND_TEXT	%s has logged in.	d5da210bc7ab	%s 已登录	accepted	legacy/translations/lang0_overrides.tsv	31	
-lang0	lang0.pak	DST_NOTIFY_GET_BUFF	Received Buff: %s	09c71ea62a96	获得增益: %s	accepted	legacy/translations/lang0_overrides.tsv	32	
+lang0	lang0.pak	DST_NOTIFY_GET_BUFF	Received Buff: %s	09c71ea62a96	获得效果: %s	accepted	legacy/translations/lang0_overrides.tsv	32	
 lang0	lang0.pak	DST_CRANE_ROSHI	Crane Hermit	343f0d6f9cd9	鹤仙流	accepted	legacy/translations/lang0_overrides.tsv	33	
 lang0	lang0.pak	DST_TURTLE_ROSHI	Turtle Hermit	05d14536381e	龟仙流	accepted	legacy/translations/lang0_overrides.tsv	34	
 lang0	lang0.pak	DST_STATUS_WINDOW_TITLE	Character Status	7af82d3f4379	角色状态	accepted	legacy/translations/lang0_overrides.tsv	35	
-lang0	lang0.pak	DST_ITEM_CAN_EQUIP	Class: %s	ae718dd6f358	职业:%s	accepted	legacy/translations/lang0_overrides.tsv	36	
+lang0	lang0.pak	DST_ITEM_CAN_EQUIP	Class: %s 	0d03989bcba7	职业: %s	accepted	legacy/translations/lang0_overrides.tsv	36	
 lang0	lang0.pak	DST_ITEM_EQUIP_SLOT_TEXT	Slot: %s	b0a506bd4a46	部位: %s	accepted	legacy/translations/lang0_overrides.tsv	37	
 lang0	lang0.pak	DST_ITEM_GRADE_NORMAL	Normal	45e118d0563e	普通	accepted	legacy/translations/lang0_overrides.tsv	38	
 lang0	lang0.pak	DST_ITEM_GRADE_RARE	Rare	cce370d2f978	稀有	accepted	legacy/translations/lang0_overrides.tsv	39	
@@ -386,8 +388,8 @@ lang0	lang0.pak	DST_NAMEK	Namek	fa4790545002	那美	accepted	legacy/translations
 lang0	lang0.pak	DST_ITEM_ALREADY_EQUIPPED	Already Equipped	92c36b989e50	已装备	accepted	legacy/translations/lang0_overrides.tsv	135	
 lang0	lang0.pak	DST_ITEM_ALL_RACE_ENABLE_EQUIP_BUT_NMY	All Classes (Except Dragon Clan)	94b57809671b	所有职业（除龙族外）	accepted	legacy/translations/lang0_overrides.tsv	136	
 lang0	lang0.pak	DST_ITEM_ADDITIONAL_EFFECT	Effect	720b5dbc5319	效果	accepted	legacy/translations/lang0_overrides.tsv	137	
-lang0	lang0.pak	DST_ITEM_AIR_TEXT	Dogi effect: %s	e361a0de22e2	时装效果: %s	accepted	legacy/translations/lang0_overrides.tsv	138	
-lang0	lang0.pak	DST_ITEM_EQUIP_CLASS_TEXT	Req %s	f911ebcccabc	需要 %s	accepted	legacy/translations/lang0_overrides.tsv	139	
+lang0	lang0.pak	DST_ITEM_AIR_TEXT	Dogi effect: %s 	4b08629e024c	时装效果: %s 	accepted	legacy/translations/lang0_overrides.tsv	138	source now has trailing space
+lang0	lang0.pak	DST_ITEM_EQUIP_CLASS_TEXT	Req %s 	1e43975adc3c	需%s 	accepted	manual		shorten to fit lang0 fixed field; source now has trailing space
 lang0	lang0.pak	DST_ITEM_EQUIP_LEVEL_TEXT	Lv.%d	e0c9c05773f4	Lv.%d	accepted	legacy/translations/lang0_overrides.tsv	140	
 lang0	lang0.pak	DST_ITEM_EQUIP_MIN_MAX_LEVEL_TEXT	Lv.%d - %d	86112fbd14ee	Lv.%d-%d	accepted	legacy/translations/lang0_overrides.tsv	141	
 lang0	lang0.pak	DST_ITEM_GRADE_SUPERIOR	Superior	69cbd0d6056a	优质	accepted	legacy/translations/lang0_overrides.tsv	142	
@@ -399,7 +401,7 @@ lang0	lang0.pak	DST_DISASSEMBLE_EXCUTE	Disassemble	f96ef8437bb0	分解	accepted	
 lang0	lang0.pak	DST_STATUS_TECHNIC_HOIPOIMIX_DISASSEMBLE	Disassemble	f96ef8437bb0	分解	accepted	legacy/translations/lang0_overrides.tsv	148	
 lang0	lang0.pak	DST_SLOT_COUNT	Slots: %d	545941844726	槽位: %d	accepted	legacy/translations/lang0_overrides.tsv	149	
 lang0	lang0.pak	DST_SLOT_EMPTY	Empty	3159fe421b32	空	accepted	legacy/translations/lang0_overrides.tsv	150	
-lang0	lang0.pak	DST_ITEM_JUST_DURABILITY	Durability: % 3d	54b0cf4fc1e6	耐久: % 3d	accepted	legacy/translations/lang0_overrides.tsv	151	
+lang0	lang0.pak	DST_ITEM_JUST_DURABILITY	Durability:% 3d	a07fc51fcfac	耐久:% 3d	accepted	legacy/translations/lang0_overrides.tsv	151	source removed space after colon
 lang0	lang0.pak	DST_REVERTED_ACCOUNT	Account Bound	a1295adda1ef	账号绑定	accepted	legacy/translations/lang0_overrides.tsv	152	
 lang0	lang0.pak	DST_SKILL_CASTTIME	Cast: %s	764fabd0925a	吟唱:%s	accepted	legacy/translations/lang0_overrides.tsv	153	
 lang0	lang0.pak	DST_SKILL_COOLTIME	Cooldown: %s	8c06889293f6	冷却时间: %s	accepted	legacy/translations/lang0_overrides.tsv	154	
@@ -948,8 +950,8 @@ lang0	lang0.pak	DST_MIGHTY_MAJIN	Mighty Majin	5873eace4c5e	大魔人	accepted	le
 lang0	lang0.pak	DST_WONDER_MAJIN	Wonder Majin	89fdfb37cb7f	意魔人	accepted	legacy/translations/lang0_overrides.tsv	718	
 lang0	lang0.pak	DST_STREET_FIGHTER	Fighter	7f3c61ac8b0b	格斗家	accepted	legacy/translations/lang0_overrides.tsv	719	
 lang0	lang0.pak	DST_SWORD_MASTER	Swordsman	b39501ca197b	剑术师	accepted	legacy/translations/lang0_overrides.tsv	720	
-lang0	lang0.pak	DST_DARK_WARRIOR	Dark Warrior	ad7a940f7168	魔导战士	accepted	legacy/translations/lang0_overrides.tsv	721	
-lang0	lang0.pak	DST_SHADOW_KNIGHT	Shadow Knight	36dee10e42bf	魔界战士	accepted	legacy/translations/lang0_overrides.tsv	722	
+lang0	lang0.pak	DST_DARK_WARRIOR	Dark Warrior	ad7a940f7168	魔界战士	accepted	legacy/translations/lang0_overrides.tsv	721	
+lang0	lang0.pak	DST_SHADOW_KNIGHT	Shadow Knight	36dee10e42bf	魔道战士	accepted	legacy/translations/lang0_overrides.tsv	722	
 lang0	lang0.pak	DST_DENDEN_HEALER	Dende Priest	9470e1f0d859	天天导师	accepted	legacy/translations/lang0_overrides.tsv	723	
 lang0	lang0.pak	DST_POCO_SUMMONER	Poko Priest	75e260c302d5	波可导师	accepted	legacy/translations/lang0_overrides.tsv	724	
 lang0	lang0.pak	DST_ULTI_MA	Ultimate Majin	40e99d68c8fe	奥迪魔	accepted	legacy/translations/lang0_overrides.tsv	725	
@@ -1749,10 +1751,10 @@ tbl	tbl1.pak	0x01879308	New Cell Ring	19ba00fe4bf6	新沙鲁戒指	accepted	lega
 tbl	tbl1.pak	0x01879906	CC Life Material	8b6d185959c8	CC生命材料	accepted	legacy/translations/tbl_overrides.tsv	917	
 tbl	tbl1.pak	0x018C9F02	Red Fury	0c843de0e416	红色狂怒	accepted	legacy/translations/tbl_overrides.tsv	921	
 tbl	tbl1.pak	0x018CA472	Ultimate Combo	1b0bbc383805	终极连击	accepted	legacy/translations/tbl_overrides.tsv	924	
-tbl	tbl1.pak	0x012109CD	HEN Buff 50400 Lv1	5116303a1dec	HEN增益50400Lv1	accepted	legacy/translations/tbl_overrides.tsv	928	
-tbl	tbl1.pak	0x01210B29	HEN Buff 50400 Lv2	6fa807f772e3	HEN增益50400Lv2	accepted	legacy/translations/tbl_overrides.tsv	929	
-tbl	tbl1.pak	0x01210C85	HEN Buff 50400 Lv3	8f5a769849f5	HEN增益50400Lv3	accepted	legacy/translations/tbl_overrides.tsv	930	
-tbl	tbl1.pak	0x01210DE1	HEN Buff 50400 Lv4	ef21a179602c	HEN增益50400Lv4	accepted	legacy/translations/tbl_overrides.tsv	931	
+tbl	tbl1.pak	0x012109CD	SpeedUp LV1	360565628639	速度提升Lv1	accepted	legacy/translations/tbl_overrides.tsv	928	source changed from HEN Buff 50400 Lv1
+tbl	tbl1.pak	0x01210B29	SpeedUp LV2	714ed0ef0773	速度提升Lv2	accepted	legacy/translations/tbl_overrides.tsv	929	source changed from HEN Buff 50400 Lv2
+tbl	tbl1.pak	0x01210C85	SpeedUp LV3	37c5e91ea675	速度提升Lv3	accepted	legacy/translations/tbl_overrides.tsv	930	source changed from HEN Buff 50400 Lv3
+tbl	tbl1.pak	0x01210DE1	SpeedUp LV4	fa00c296b38d	速度提升Lv4	accepted	legacy/translations/tbl_overrides.tsv	931	source changed from HEN Buff 50400 Lv4
 tbl	tbl1.pak	0x01210F3D	HEN Buff 50410 Lv1	e4d32865aa40	HEN增益50410Lv1	accepted	legacy/translations/tbl_overrides.tsv	932	
 tbl	tbl1.pak	0x01211099	HEN Buff 50410 Lv2	40c716cd53e9	HEN增益50410Lv2	accepted	legacy/translations/tbl_overrides.tsv	933	
 tbl	tbl1.pak	0x012111F5	HEN Buff 50410 Lv3	d426d43249ed	HEN增益50410Lv3	accepted	legacy/translations/tbl_overrides.tsv	934	
@@ -1761,10 +1763,10 @@ tbl	tbl1.pak	0x012114AD	HEN Buff 50420 Lv1	2092329e7008	HEN增益50420Lv1	accept
 tbl	tbl1.pak	0x01211609	HEN Buff 50420 Lv2	fba03f8fc94f	HEN增益50420Lv2	accepted	legacy/translations/tbl_overrides.tsv	937	
 tbl	tbl1.pak	0x01211765	HEN Buff 50420 Lv3	e46dc4258615	HEN增益50420Lv3	accepted	legacy/translations/tbl_overrides.tsv	938	
 tbl	tbl1.pak	0x012118C1	HEN Buff 50420 Lv4	4e5993e73a3f	HEN增益50420Lv4	accepted	legacy/translations/tbl_overrides.tsv	939	
-tbl	tbl1.pak	0x01211A1D	HEN Buff 50430 Lv1	e0f2564c0ca1	HEN增益50430Lv1	accepted	legacy/translations/tbl_overrides.tsv	940	
-tbl	tbl1.pak	0x01211B79	HEN Buff 50430 Lv2	fc4c60c13ddb	HEN增益50430Lv2	accepted	legacy/translations/tbl_overrides.tsv	941	
-tbl	tbl1.pak	0x01211CD5	HEN Buff 50430 Lv3	52f948a3e3e8	HEN增益50430Lv3	accepted	legacy/translations/tbl_overrides.tsv	942	
-tbl	tbl1.pak	0x01211E31	HEN Buff 50430 Lv4	8b724b5f072a	HEN增益50430Lv4	accepted	legacy/translations/tbl_overrides.tsv	943	
+tbl	tbl1.pak	0x01211A1D	Focused Overdrive I	da041b167001	集中超载I	accepted	legacy/translations/tbl_overrides.tsv	940	source changed from HEN Buff 50430 Lv1
+tbl	tbl1.pak	0x01211B79	Focused Overdrive II	f9ee1f76ad61	集中超载II	accepted	legacy/translations/tbl_overrides.tsv	941	source changed from HEN Buff 50430 Lv2
+tbl	tbl1.pak	0x01211CD5	Focused Overdrive III	1755b0cec3db	集中超载III	accepted	legacy/translations/tbl_overrides.tsv	942	source changed from HEN Buff 50430 Lv3
+tbl	tbl1.pak	0x01211E31	Focused Overdrive IV	65039cca891c	集中超载IV	accepted	legacy/translations/tbl_overrides.tsv	943	source changed from HEN Buff 50430 Lv4
 tbl	tbl1.pak	0x01211F8D	HEN Buff 50440 Lv1	47bdafc1f4c0	HEN增益50440Lv1	accepted	legacy/translations/tbl_overrides.tsv	944	
 tbl	tbl1.pak	0x012120E9	HEN Buff 50440 Lv2	0f78a8726b77	HEN增益50440Lv2	accepted	legacy/translations/tbl_overrides.tsv	945	
 tbl	tbl1.pak	0x01212245	HEN Buff 50440 Lv3	ec93808271b4	HEN增益50440Lv3	accepted	legacy/translations/tbl_overrides.tsv	946	
@@ -3057,6 +3059,11 @@ tbl	tbl1.pak	0x0181B613	Frieza's Army First-Aid Box	1e5f447e8930	弗利萨军急
 tbl	tbl1.pak	0x0181C6CD	Prison of Frieza's Army	f620e5da0ee9	弗利萨军监狱	accepted	legacy/translations/tbl_overrides.tsv	3943	
 tbl	tbl1.pak	0x01861F57	Frieza's DNA	e75b3f18966f	弗利萨DNA	accepted	legacy/translations/tbl_overrides.tsv	3944	
 tbl	tbl1.pak	0x01866707	Frieza's Army UFO Engine	6238cdcbf9b9	弗利萨军UFO引擎	accepted	legacy/translations/tbl_overrides.tsv	3945	
-tbl	tbl1.pak	0x0186908F	Frieza's Planet	daa2f7e4deaf	弗利萨行星	accepted	legacy/translations/tbl_overrides.tsv	3948	
+tbl	tbl1.pak	0x0186908F	Frieza's Planet	daa2f7e4deaf	弗利萨行星	disabled	legacy/translations/tbl_overrides.tsv	3948	skipped: adjacent length-prefixed map list field
+tbl	tbl1.pak	0x0186906F	Planet Vegeta	e53c79ffb556	贝吉塔行星	disabled	manual		skipped: length-prefixed TBL field breaks fixed-size patching
 tbl	tbl1.pak	*	Stun Duration Decrease %d%%	e828852dc0cd	眩晕持续时间减少%d%%	accepted	legacy/translations/tbl_overrides.tsv	3952	
 tbl	tbl1.pak	*	Skill Lock Duration Decrease %d%%	3eea0702c9f1	技能锁定持续时间减少%d%%	accepted	legacy/translations/tbl_overrides.tsv	3953	
+taiwan	local_data.dat	DST_CHANGE_ITEMBATTLEATTR_ONE_MSG		d0758269d3a9	"[align = """"center""""][font size = """"12"""" color=""""f4d762""""]更改道具属性[/font][br][br][font size = """"10"""" color=""""ffffff""""]已选：%s[br]价格：%s索尼[br]成功率：%d%%[br][br]成功：赋予%s属性。[br]失败：属性清除。[br]不消耗辅助道具。[/font]"	accepted	manual		runtime PROP placeholder/layout fix
+taiwan	local_data.dat	DST_CHANGE_ITEMBATTLEATTR_TWO_MSG		331d339e697d	"[align = """"center""""][font size = """"12"""" color=""""f4d762""""]更改道具属性[/font][br][br][font size = """"10"""" color=""""ffffff""""]已选：%s[br]价格：%s索尼[br]成功率：%d%%[br][br]成功：赋予%s属性。[br]失败：属性清除。[/font]"	accepted	manual		runtime PROP placeholder/layout fix
+taiwan	local_data.dat	DST_ITEMPROPERTY_TRANSFER		bd276a9521ee	更改属性	accepted	manual		runtime PROP placeholder/layout fix
+taiwan	local_data.dat	DST_ITEMPROPERTY_TRANSFER_INFOTITLE		2367f42fa307	选择属性并赋予手套或上衣。	accepted	manual		runtime PROP placeholder/layout fix

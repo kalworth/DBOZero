@@ -1,0 +1,842 @@
+# -*- coding: utf-8 -*-
+"""
+Build copy-only DBO Zero localization outputs from the v3 translation tables.
+
+This reads:
+- data/translations.tsv
+- data/new_translations.tsv
+- src_file/DBOZero
+
+It writes:
+- output/DBOZero
+- output_taiwan/DBOZero
+
+It never reads or writes the live game directory.
+"""
+
+from __future__ import annotations
+
+import argparse
+import configparser
+import csv
+import re
+import shutil
+import struct
+import sys
+from collections import OrderedDict
+from dataclasses import dataclass
+from pathlib import Path
+from typing import Callable
+
+
+ROOT = Path(__file__).resolve().parent
+LEGACY_TOOLS = ROOT / "legacy" / "tools"
+sys.path.insert(0, str(LEGACY_TOOLS))
+
+import console_color  # noqa: E402
+import install_hanhua  # noqa: E402
+import lang0_gbk_patch  # noqa: E402
+import tbl_utf16_patch  # noqa: E402
+
+
+ACTIVE_STATUSES = {"", "accepted", "active", "ok", "keep"}
+TAIWAN_FILES = set(install_hanhua.LOCALIZATION_FILES)
+CORE_PACK_FILES = ("lang0.pak", "tbl0.pak", "tbl1.pak")
+OPTIONAL_PACK_FILES = ("gui0.pak",)
+GUI0_FONT_ALIASES = ("Default", "detail", "Lolita", "SimHei")
+FONT_EXTENSIONS = {".ttf", ".otf", ".ttc"}
+
+
+class BuildError(RuntimeError):
+    pass
+
+
+def find_lang0_value_start_at_line(data: bytes, key: str) -> int:
+    try:
+        key_bytes = key.encode("ascii")
+    except UnicodeEncodeError as exc:
+        raise lang0_gbk_patch.PatchError(f"lang0 key must be ASCII: {key}") from exc
+    pattern = re.compile(rb"(?m)^" + re.escape(key_bytes) + rb"[ \t]*=[ \t]*\"")
+    matches = list(pattern.finditer(data))
+    if not matches:
+        return -1
+    if len(matches) > 1:
+        raise lang0_gbk_patch.PatchError(f"Duplicate lang0 key pattern: {key}")
+    return matches[0].end()
+
+
+lang0_gbk_patch.find_lang0_value_start = find_lang0_value_start_at_line
+
+
+@dataclass(frozen=True)
+class TranslationSets:
+    taiwan: dict[tuple[str, str], str]
+    lang0: list[tuple[str, str, str]]
+    tbl: list[tbl_utf16_patch.TblOverride]
+    master_rows: int
+    queue_rows: int
+    warnings: list[str]
+
+
+@dataclass(frozen=True)
+class GuiFontOption:
+    path: Path
+    file_name: str
+    family_name: str
+    full_name: str
+    postscript_name: str
+
+    @property
+    def face_name(self) -> str:
+        return self.family_name or self.full_name or self.postscript_name or Path(self.file_name).stem
+
+    def match_keys(self) -> set[str]:
+        values = {
+            self.file_name,
+            Path(self.file_name).stem,
+            self.family_name,
+            self.full_name,
+            self.postscript_name,
+        }
+        return {value.casefold() for value in values if value}
+
+
+@dataclass(frozen=True)
+class GuiFontPatch:
+    file_name: str
+    face_name: str
+
+
+@dataclass(frozen=True)
+class GuiFontSettings:
+    font: str | None
+    font_dir: Path | None
+    font_name: str | None
+
+
+def inside_repo(path: Path) -> Path:
+    resolved = path.resolve()
+    try:
+        resolved.relative_to(ROOT.resolve())
+    except ValueError as exc:
+        raise BuildError(f"Output path must stay inside this workspace: {resolved}") from exc
+    return resolved
+
+
+def source_root(source_dir: Path) -> Path:
+    resolved = source_dir.resolve()
+    if (resolved / "DBOZero").is_dir():
+        return resolved
+    if resolved.name.lower() == "dbozero":
+        return resolved.parent
+    raise BuildError(f"Source dir must be src_file or a DBOZero folder: {source_dir}")
+
+
+def require_source_layout(source_dir: Path) -> None:
+    install_hanhua.require_source_layout(source_dir)
+
+
+def clean_config_value(value: str | None) -> str | None:
+    if value is None:
+        return None
+    stripped = value.strip()
+    return stripped or None
+
+
+def config_path(value: str | None) -> Path | None:
+    cleaned = clean_config_value(value)
+    if cleaned is None:
+        return None
+    path = Path(cleaned)
+    if not path.is_absolute():
+        path = ROOT / path
+    return path
+
+
+def load_gui_font_config(path: Path) -> GuiFontSettings:
+    if not path.is_file():
+        return GuiFontSettings(font=None, font_dir=None, font_name=None)
+
+    parser = configparser.ConfigParser(interpolation=None)
+    parser.read(path, encoding="utf-8-sig")
+    if not parser.has_section("gui0"):
+        return GuiFontSettings(font=None, font_dir=None, font_name=None)
+
+    return GuiFontSettings(
+        font=clean_config_value(parser.get("gui0", "font", fallback=None)),
+        font_dir=config_path(parser.get("gui0", "font_dir", fallback=None)),
+        font_name=clean_config_value(parser.get("gui0", "font_name", fallback=None)),
+    )
+
+
+def resolve_gui_font_settings(args: argparse.Namespace) -> GuiFontSettings:
+    config = load_gui_font_config(args.gui_font_config)
+    return GuiFontSettings(
+        font=args.gui_font if args.gui_font is not None else config.font,
+        font_dir=args.gui_font_dir if args.gui_font_dir is not None else config.font_dir,
+        font_name=args.gui_font_name if args.gui_font_name is not None else config.font_name,
+    )
+
+
+def read_u16be(data: bytes, offset: int) -> int:
+    return struct.unpack_from(">H", data, offset)[0]
+
+
+def read_u32be(data: bytes, offset: int) -> int:
+    return struct.unpack_from(">I", data, offset)[0]
+
+
+def sfnt_table_offset(data: bytes) -> int:
+    if data[:4] == b"ttcf":
+        if len(data) < 16:
+            raise BuildError("Invalid TTC font file")
+        return read_u32be(data, 12)
+    return 0
+
+
+def decode_name_record(platform_id: int, raw: bytes) -> str:
+    if platform_id in (0, 3):
+        return raw.decode("utf-16-be", errors="replace")
+    if platform_id == 1:
+        return raw.decode("mac_roman", errors="replace")
+    return raw.decode("utf-8", errors="replace")
+
+
+def read_font_names(path: Path) -> dict[int, str]:
+    data = path.read_bytes()
+    base = sfnt_table_offset(data)
+    if base + 12 > len(data):
+        return {}
+
+    table_count = read_u16be(data, base + 4)
+    name_table_offset = -1
+    for index in range(table_count):
+        record = base + 12 + index * 16
+        if record + 16 > len(data):
+            break
+        if data[record : record + 4] == b"name":
+            name_table_offset = read_u32be(data, record + 8)
+            break
+
+    if name_table_offset < 0 or name_table_offset + 6 > len(data):
+        return {}
+
+    record_count = read_u16be(data, name_table_offset + 2)
+    string_base = name_table_offset + read_u16be(data, name_table_offset + 4)
+    names: dict[int, str] = {}
+    for index in range(record_count):
+        record = name_table_offset + 6 + index * 12
+        if record + 12 > len(data):
+            break
+        platform_id = read_u16be(data, record)
+        name_id = read_u16be(data, record + 6)
+        length = read_u16be(data, record + 8)
+        offset = read_u16be(data, record + 10)
+        if name_id not in (1, 4, 6):
+            continue
+        raw = data[string_base + offset : string_base + offset + length]
+        value = decode_name_record(platform_id, raw).replace("\x00", "").strip()
+        if value and "\ufffd" not in value:
+            names.setdefault(name_id, value)
+    return names
+
+
+def iter_font_files(font_dir: Path):
+    if not font_dir.is_dir():
+        return
+    for path in sorted(font_dir.iterdir(), key=lambda item: item.name.casefold()):
+        if path.is_file() and path.suffix.casefold() in FONT_EXTENSIONS:
+            yield path
+
+
+def collect_gui_font_options(source_dir: Path, extra_font_dir: Path | None) -> list[GuiFontOption]:
+    dirs = [source_dir / "DBOZero" / "font"]
+    if extra_font_dir is not None:
+        dirs.append(extra_font_dir)
+
+    options: list[GuiFontOption] = []
+    seen: set[Path] = set()
+    for font_dir in dirs:
+        for path in iter_font_files(font_dir):
+            resolved = path.resolve()
+            if resolved in seen:
+                continue
+            seen.add(resolved)
+            try:
+                names = read_font_names(path)
+            except (OSError, struct.error, BuildError):
+                names = {}
+            options.append(
+                GuiFontOption(
+                    path=path,
+                    file_name=path.name,
+                    family_name=names.get(1, ""),
+                    full_name=names.get(4, ""),
+                    postscript_name=names.get(6, ""),
+                )
+            )
+    return options
+
+
+def print_gui_font_options(source_dir: Path, extra_font_dir: Path | None) -> None:
+    options = collect_gui_font_options(source_dir, extra_font_dir)
+    if not options:
+        print("No GUI font files found. Copy DBOZero\\font into src_file\\DBOZero or pass --gui-font-dir.")
+        return
+    for option in options:
+        print(
+            f"{option.file_name}\tface={option.face_name}\t"
+            f"family={option.family_name or '-'}\tfull={option.full_name or '-'}"
+        )
+
+
+def resolve_gui_font_patch(source_dir: Path, extra_font_dir: Path | None, query: str | None, face_name: str | None) -> GuiFontPatch | None:
+    if not query:
+        return None
+
+    options = collect_gui_font_options(source_dir, extra_font_dir)
+    query_key = query.casefold()
+    matches = [option for option in options if query_key in option.match_keys()]
+
+    if not matches and Path(query).suffix.casefold() in FONT_EXTENSIONS:
+        file_name = Path(query).name
+        return GuiFontPatch(file_name=file_name, face_name=face_name or Path(file_name).stem)
+
+    if not matches:
+        raise BuildError(f"Unknown GUI font {query!r}; run --list-gui-fonts with the same --gui-font-dir")
+
+    exact = [option for option in matches if option.file_name.casefold() == query_key]
+    selected = exact[0] if len(exact) == 1 else None
+    if selected is None:
+        if len(matches) == 1:
+            selected = matches[0]
+        else:
+            names = ", ".join(option.file_name for option in matches)
+            raise BuildError(f"Ambiguous GUI font {query!r}; use the exact file name. Matches: {names}")
+
+    return GuiFontPatch(file_name=selected.file_name, face_name=face_name or selected.face_name)
+
+
+def encode_gui0_token(value: str, label: str) -> bytes:
+    try:
+        return value.encode("ascii")
+    except UnicodeEncodeError as exc:
+        raise BuildError(f"GUI font {label} must be ASCII for gui0.pak: {value!r}") from exc
+
+
+def patch_gui0_font_defs(data: bytes, font_patch: GuiFontPatch | None) -> tuple[bytes, dict[str, int]]:
+    if font_patch is None:
+        return data, {"copied": 1, "font_aliases_changed": 0}
+
+    file_name = encode_gui0_token(font_patch.file_name, "file name")
+    face_name = encode_gui0_token(font_patch.face_name, "face name")
+    patched = bytes(data)
+    changed = 0
+
+    for alias in GUI0_FONT_ALIASES:
+        alias_bytes = re.escape(alias.encode("ascii"))
+        pattern = re.compile(
+            rb"(?m)^([ \t]*"
+            + alias_bytes
+            + rb"[ \t]*=[ \t]*)([^,\r\n;]+)([ \t]*,[ \t]*)([^;\r\n]*)(;?)"
+        )
+
+        def replace(match: re.Match[bytes]) -> bytes:
+            semicolon = match.group(5) or b";"
+            replacement = match.group(1) + file_name + match.group(3) + face_name + semicolon
+            original_len = len(match.group(0))
+            if len(replacement) > original_len:
+                raise BuildError(
+                    f"GUI font alias replacement for {alias!r} is too long for gui0.pak "
+                    f"({len(replacement)} > {original_len})"
+                )
+            return replacement + (b" " * (original_len - len(replacement)))
+
+        patched, count = pattern.subn(replace, patched, count=1)
+        if count != 1:
+            raise BuildError(f"Could not find gui0.pak font alias definition: {alias}")
+        changed += count
+
+    return patched, {"copied": 0, "font_aliases_changed": changed}
+
+
+def write_gui0_pack(source_dir: Path, pack_dir: Path, font_patch: GuiFontPatch | None) -> dict[str, int]:
+    source_gui0 = source_dir / "DBOZero" / "pack" / "gui0.pak"
+    if not source_gui0.is_file():
+        return {}
+    patched, stats = patch_gui0_font_defs(source_gui0.read_bytes(), font_patch)
+    (pack_dir / "gui0.pak").write_bytes(patched)
+    return stats
+
+
+def iter_dict_rows(path: Path):
+    with path.open("r", encoding="utf-8-sig", newline="") as handle:
+        reader = csv.DictReader(handle, delimiter="\t")
+        for row_no, row in enumerate(reader, 2):
+            yield row_no, row
+
+
+def is_active_status(status: str) -> bool:
+    return status.strip().casefold() in ACTIVE_STATUSES
+
+
+def lang0_value_len(text: str, encoding: str) -> int:
+    return len(lang0_gbk_patch.encode_lang0_value(text, encoding))
+
+
+def source_lang0_value_len(text: str) -> int:
+    for encoding in ("gbk", "utf-8"):
+        try:
+            return lang0_value_len(text, encoding)
+        except lang0_gbk_patch.PatchError:
+            pass
+    return len(text.encode("utf-8", errors="replace").replace(b'"', b'""'))
+
+
+def queue_lang0_row_is_safe(item_id: str, source_text: str, translation: str, warnings: list[str], row_no: int) -> bool:
+    old_specs = lang0_gbk_patch.printf_specs(source_text)
+    new_specs = lang0_gbk_patch.printf_specs(translation)
+    if old_specs != new_specs and not lang0_gbk_patch.printf_mismatch_allowed(item_id, old_specs, new_specs):
+        warnings.append(f"new_translations.tsv:{row_no}: skipped printf mismatch for {item_id}: {old_specs} -> {new_specs}")
+        return False
+
+    source_len = source_lang0_value_len(source_text)
+    simplified_len = lang0_value_len(install_hanhua.to_simplified(translation), "gbk")
+    traditional_len = lang0_value_len(install_hanhua.to_traditional(translation), "cp950")
+    if simplified_len > source_len or traditional_len > source_len:
+        warnings.append(
+            f"new_translations.tsv:{row_no}: too-long lang0 text for {item_id} "
+            f"(source={source_len}, gbk={simplified_len}, cp950={traditional_len})"
+        )
+        return False
+    return True
+
+
+def read_master_translations(path: Path) -> tuple[dict[tuple[str, str], str], OrderedDict[tuple[str, str], str], OrderedDict[tuple[str, str, str], tbl_utf16_patch.TblOverride], int, list[str]]:
+    taiwan: dict[tuple[str, str], str] = {}
+    lang0: OrderedDict[tuple[str, str], str] = OrderedDict()
+    tbl: OrderedDict[tuple[str, str, str], tbl_utf16_patch.TblOverride] = OrderedDict()
+    warnings: list[str] = []
+    used = 0
+
+    if not path.is_file():
+        raise BuildError(f"Missing translation table: {path}")
+
+    for row_no, row in iter_dict_rows(path):
+        if not is_active_status(row.get("status", "")):
+            continue
+        surface = (row.get("surface") or "").strip().casefold()
+        file_name = (row.get("file") or "").strip()
+        item_id = (row.get("id") or "").strip()
+        source_text = row.get("source_text") or ""
+        translation = row.get("zh_cn") or ""
+        if not translation.strip():
+            continue
+
+        if surface == "taiwan":
+            if file_name not in TAIWAN_FILES:
+                warnings.append(f"translations.tsv:{row_no}: skipped unknown Taiwan file {file_name!r}")
+                continue
+            taiwan[(file_name, item_id)] = translation
+            used += 1
+        elif surface == "lang0":
+            if file_name != "lang0.pak":
+                warnings.append(f"translations.tsv:{row_no}: skipped unknown lang0 file {file_name!r}")
+                continue
+            lang0[(item_id, source_text)] = translation
+            used += 1
+        elif surface == "tbl":
+            if file_name not in tbl_utf16_patch.TBL_FILES:
+                warnings.append(f"translations.tsv:{row_no}: skipped unknown tbl file {file_name!r}")
+                continue
+            offset = tbl_utf16_patch.parse_offset(item_id, row_no)
+            tbl[(file_name, item_id, source_text)] = tbl_utf16_patch.TblOverride(file_name, offset, source_text, translation)
+            used += 1
+        else:
+            warnings.append(f"translations.tsv:{row_no}: skipped unknown surface {surface!r}")
+
+    return taiwan, lang0, tbl, used, warnings
+
+
+def read_queue_translations(
+    path: Path,
+    lang0: OrderedDict[tuple[str, str], str],
+    tbl: OrderedDict[tuple[str, str, str], tbl_utf16_patch.TblOverride],
+) -> tuple[int, list[str]]:
+    warnings: list[str] = []
+    used = 0
+    if not path.is_file():
+        return used, warnings
+
+    for row_no, row in iter_dict_rows(path):
+        file_name = (row.get("文件") or "").strip()
+        item_id = (row.get("位置") or "").strip()
+        source_text = row.get("原文") or ""
+        translation = row.get("填写中文") or ""
+        if not translation.strip():
+            continue
+
+        if file_name == "lang0.pak":
+            if not queue_lang0_row_is_safe(item_id, source_text, translation, warnings, row_no):
+                continue
+            lang0[(item_id, source_text)] = translation
+            used += 1
+            continue
+
+        if file_name in tbl_utf16_patch.TBL_FILES:
+            offset = None if item_id in tbl_utf16_patch.ALL_OFFSETS else tbl_utf16_patch.parse_offset(item_id, row_no)
+            tbl[(file_name, item_id, source_text)] = tbl_utf16_patch.TblOverride(file_name, offset, source_text, translation)
+            used += 1
+            continue
+
+        warnings.append(f"new_translations.tsv:{row_no}: skipped unsupported file {file_name!r}")
+
+    return used, warnings
+
+
+def load_translation_sets(data_dir: Path) -> TranslationSets:
+    taiwan, lang0, tbl, master_rows, warnings = read_master_translations(data_dir / "translations.tsv")
+    queue_rows, queue_warnings = read_queue_translations(data_dir / "new_translations.tsv", lang0, tbl)
+    warnings.extend(queue_warnings)
+    return TranslationSets(
+        taiwan=taiwan,
+        lang0=[(key, source_text, translation) for (key, source_text), translation in lang0.items()],
+        tbl=list(tbl.values()),
+        master_rows=master_rows,
+        queue_rows=queue_rows,
+        warnings=warnings,
+    )
+
+
+def write_user_readme(out_dir: Path) -> None:
+    text = """DBOZ 简中补丁 使用说明
+
+安装：
+1. 关闭游戏和启动器。
+2. 自己备份游戏里的 DBOZero 文件夹，至少备份：
+   DBOZero\\localize\\Taiwan
+   DBOZero\\pack\\lang0.pak
+   DBOZero\\pack\\tbl0.pak
+   DBOZero\\pack\\tbl1.pak
+   DBOZero\\pack\\gui0.pak
+3. 把本目录里的 DBOZero 文件夹复制到游戏根目录。
+4. 提示覆盖时选“是”。
+5. 启动器选择 CN 中文。
+
+说明：
+- 本补丁不含安装器。
+- 本补丁会覆盖 Taiwan 语言文件、lang0.pak、tbl0.pak、tbl1.pak、gui0.pak。
+- 出问题就用你自己的备份覆盖回去。
+"""
+    (out_dir / "使用说明.txt").write_text(text, encoding="utf-8")
+
+
+def write_taiwan_user_readme(out_dir: Path) -> None:
+    text = """DBOZ 台灣繁中補丁 使用說明
+
+安裝：
+1. 關閉遊戲和啟動器。
+2. 自己備份遊戲裡的 DBOZero 資料夾，至少備份：
+   DBOZero\\localize\\Taiwan
+   DBOZero\\pack\\lang0.pak
+   DBOZero\\pack\\tbl0.pak
+   DBOZero\\pack\\tbl1.pak
+   DBOZero\\pack\\gui0.pak
+3. 把本目錄裡的 DBOZero 資料夾複製到遊戲根目錄。
+4. 提示覆蓋時選「是」。
+5. 啟動器選擇 CN 中文。
+
+說明：
+- 本目錄是給台灣 Big5/CP950 環境使用的繁中版。
+- 出問題就用你自己的備份覆蓋回去。
+"""
+    (out_dir / "使用说明_台湾繁中.txt").write_text(text, encoding="utf-8")
+
+
+def transform_lang0(rows: list[tuple[str, str, str]], transform: Callable[[str], str]) -> list[tuple[str, str, str]]:
+    return [(key, source_text, transform(text)) for key, source_text, text in rows]
+
+
+def find_lang0_line_value_ranges(data: bytes, key: str) -> list[tuple[int, int]]:
+    try:
+        key_bytes = key.encode("ascii")
+    except UnicodeEncodeError as exc:
+        raise lang0_gbk_patch.PatchError(f"lang0 key must be ASCII: {key}") from exc
+    pattern = re.compile(rb"(?m)^" + re.escape(key_bytes) + rb"[ \t]*=[ \t]*\"")
+    ranges: list[tuple[int, int]] = []
+    for match in pattern.finditer(data):
+        start = match.end()
+        end = lang0_gbk_patch.find_lang0_value_end(data, start, key)
+        ranges.append((start, end))
+    return ranges
+
+
+def patch_lang0_bytes_by_source(
+    data: bytes,
+    rows: list[tuple[str, str, str]],
+    encoding: str,
+) -> tuple[bytes, dict[str, int]]:
+    source = bytes(data)
+    patched = bytearray(data)
+    changed = 0
+    missing = 0
+    space_padded = 0
+
+    for key, source_text, text in rows:
+        matches = find_lang0_line_value_ranges(source, key)
+        if not matches:
+            missing += 1
+            continue
+
+        selected: tuple[int, int] | None = None
+        selected_old_value = ""
+        for start, end in matches:
+            old_value = lang0_gbk_patch.decode_lang0_value(lang0_gbk_patch.unescape_lang0_value(source[start:end]))
+            if source_text and old_value != source_text:
+                continue
+            if selected is not None:
+                raise lang0_gbk_patch.PatchError(f"Duplicate lang0 key/source pattern: {key} = {source_text!r}")
+            selected = (start, end)
+            selected_old_value = old_value
+
+        if selected is None and not source_text and len(matches) == 1:
+            selected = matches[0]
+            selected_old_value = lang0_gbk_patch.decode_lang0_value(
+                lang0_gbk_patch.unescape_lang0_value(source[selected[0] : selected[1]])
+            )
+
+        if selected is None:
+            missing += 1
+            continue
+
+        old_specs = lang0_gbk_patch.printf_specs(selected_old_value)
+        new_specs = lang0_gbk_patch.printf_specs(text)
+        if old_specs != new_specs and not lang0_gbk_patch.printf_mismatch_allowed(key, old_specs, new_specs):
+            raise lang0_gbk_patch.PatchError(f"Printf placeholder mismatch for {key}: {old_specs} -> {new_specs}")
+
+        start, end = selected
+        new_value = lang0_gbk_patch.encode_lang0_value(text, encoding)
+        old_len = end - start
+        if len(new_value) > old_len:
+            raise lang0_gbk_patch.PatchError(
+                f"Translation is too long for fixed lang0 field: {key} "
+                f"({len(new_value)} bytes > {old_len} bytes): {selected_old_value!r} -> {text!r}"
+            )
+        pad_len = old_len - len(new_value)
+        patched[start : end + 1] = new_value + b'"' + (b" " * pad_len)
+        if pad_len:
+            space_padded += 1
+        changed += 1
+
+    return bytes(patched), {"rows": len(rows), "changed": changed, "missing": missing, "space_padded": space_padded}
+
+
+def transform_tbl(rows: list[tbl_utf16_patch.TblOverride], transform: Callable[[str], str]) -> list[tbl_utf16_patch.TblOverride]:
+    return [
+        tbl_utf16_patch.TblOverride(row.file_name, row.offset, row.source_text, transform(row.translation))
+        for row in rows
+    ]
+
+
+def copy_missing_pack_files(source_dir: Path, pack_dir: Path) -> None:
+    source_pack = source_dir / "DBOZero" / "pack"
+    for name in CORE_PACK_FILES:
+        target = pack_dir / name
+        if not target.exists():
+            shutil.copy2(source_pack / name, target)
+    for name in OPTIONAL_PACK_FILES:
+        source = source_pack / name
+        target = pack_dir / name
+        if source.is_file() and not target.exists():
+            shutil.copy2(source, target)
+
+
+def build_one(
+    source_dir: Path,
+    out_dir: Path,
+    translations: TranslationSets,
+    *,
+    clean: bool,
+    text_transform: Callable[[str], str],
+    ansi_encoding: str,
+    readme_writer: Callable[[Path], None],
+    gui_font: GuiFontPatch | None,
+) -> dict[str, dict[str, int]]:
+    out_dir = inside_repo(out_dir)
+    if clean and out_dir.exists():
+        shutil.rmtree(out_dir)
+
+    language_dir = out_dir / "DBOZero" / "localize" / "Taiwan" / "language"
+    pack_dir = out_dir / "DBOZero" / "pack"
+    pack_dir.mkdir(parents=True, exist_ok=True)
+
+    taiwan_stats = install_hanhua.build_payload(
+        source_dir,
+        language_dir,
+        translations.taiwan,
+        text_transform,
+        ansi_encoding,
+    )
+
+    lang0_rows = transform_lang0(translations.lang0, text_transform)
+    source_lang0 = lang0_gbk_patch.lang0_path(source_dir)
+    patched_lang0, lang0_stats = patch_lang0_bytes_by_source(source_lang0.read_bytes(), lang0_rows, ansi_encoding)
+    (pack_dir / "lang0.pak").write_bytes(patched_lang0)
+
+    tbl_rows = transform_tbl(translations.tbl, text_transform)
+    tbl_stats = tbl_utf16_patch.patch_tbl_pack(source_dir, pack_dir, tbl_rows, ansi_encoding)
+    gui0_stats = write_gui0_pack(source_dir, pack_dir, gui_font)
+    copy_missing_pack_files(source_dir, pack_dir)
+
+    readme_writer(out_dir)
+    stats = {
+        **taiwan_stats,
+        "pack/lang0.pak": lang0_stats,
+        **{f"pack/{name}": values for name, values in tbl_stats.items()},
+    }
+    if gui0_stats:
+        stats["pack/gui0.pak"] = gui0_stats
+    return stats
+
+
+def format_stats(stats: dict[str, dict[str, int]]) -> list[str]:
+    lines: list[str] = []
+    for name, values in stats.items():
+        joined = ", ".join(f"{key}={value}" for key, value in values.items())
+        lines.append(f"{name}: {joined}")
+    return lines
+
+
+def validate_basic(source_dir: Path, out_dir: Path, label: str, ansi_encoding: str) -> None:
+    language_dir = out_dir / "DBOZero" / "localize" / "Taiwan" / "language"
+    pack_dir = out_dir / "DBOZero" / "pack"
+    for name in install_hanhua.LOCALIZATION_FILES:
+        if not (language_dir / name).is_file():
+            raise BuildError(f"{label} missing language file: {name}")
+    for name in CORE_PACK_FILES:
+        source = source_dir / "DBOZero" / "pack" / name
+        target = pack_dir / name
+        if not target.is_file():
+            raise BuildError(f"{label} missing pack file: {name}")
+        if source.stat().st_size != target.stat().st_size:
+            raise BuildError(f"{label} {name} size changed: {source.stat().st_size} -> {target.stat().st_size}")
+    for name in OPTIONAL_PACK_FILES:
+        source = source_dir / "DBOZero" / "pack" / name
+        if not source.is_file():
+            continue
+        target = pack_dir / name
+        if not target.is_file():
+            raise BuildError(f"{label} missing pack file: {name}")
+        if target.stat().st_size <= 0:
+            raise BuildError(f"{label} empty pack file: {name}")
+    for name in ("local_data.dat", "local_sync_data.dat"):
+        (language_dir / name).read_bytes().decode(ansi_encoding)
+
+
+def build_all(args: argparse.Namespace) -> int:
+    source_dir = source_root(args.source_dir)
+    gui_settings = resolve_gui_font_settings(args)
+    if args.list_gui_fonts:
+        print_gui_font_options(source_dir, gui_settings.font_dir)
+        return 0
+
+    require_source_layout(source_dir)
+    translations = load_translation_sets(args.data_dir)
+    gui_font = resolve_gui_font_patch(source_dir, gui_settings.font_dir, gui_settings.font, gui_settings.font_name)
+    blocking_warnings = [
+        warning
+        for warning in translations.warnings
+        if "too-long lang0 text" in warning or "skipped printf mismatch" in warning
+    ]
+    if blocking_warnings:
+        for warning in blocking_warnings[:50]:
+            print(f"ERROR: {warning}")
+        if len(blocking_warnings) > 50:
+            print(f"ERROR: {len(blocking_warnings) - 50} more blocking translation errors hidden")
+        raise BuildError(
+            "lang0 translations must fit the original field length and keep placeholders; fix data/new_translations.tsv"
+        )
+
+    for warning in translations.warnings[:20]:
+        print(f"WARNING: {warning}")
+    if len(translations.warnings) > 20:
+        print(f"WARNING: {len(translations.warnings) - 20} more warnings hidden")
+
+    built: list[tuple[str, Path, str, dict[str, dict[str, int]]]] = []
+    if args.variant in ("all", "mainland"):
+        out = inside_repo(args.out)
+        stats = build_one(
+            source_dir,
+            out,
+            translations,
+            clean=not args.no_clean,
+            text_transform=install_hanhua.to_simplified,
+            ansi_encoding="gbk",
+            readme_writer=write_user_readme,
+            gui_font=gui_font,
+        )
+        built.append(("mainland", out, "gbk", stats))
+
+    if args.variant in ("all", "taiwan"):
+        out = inside_repo(args.taiwan_out)
+        stats = build_one(
+            source_dir,
+            out,
+            translations,
+            clean=not args.no_clean,
+            text_transform=install_hanhua.to_traditional,
+            ansi_encoding="cp950",
+            readme_writer=write_taiwan_user_readme,
+            gui_font=gui_font,
+        )
+        built.append(("taiwan", out, "cp950", stats))
+
+    if not args.no_validate:
+        for label, out_dir, ansi_encoding, _stats in built:
+            validate_basic(source_dir, out_dir, label, ansi_encoding)
+
+    print(f"Loaded master translations: {translations.master_rows}")
+    print(f"Loaded filled queue rows: {translations.queue_rows}")
+    for label, out_dir, _ansi_encoding, stats in built:
+        print(f"Built {label}: {console_color.path(str(out_dir))}")
+        for line in format_stats(stats):
+            print(line)
+    return 0
+
+
+def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description="Build DBO Zero output and output_taiwan from v3 translation tables.")
+    parser.add_argument("--source-dir", type=Path, default=ROOT / "src_file")
+    parser.add_argument("--data-dir", type=Path, default=ROOT / "data")
+    parser.add_argument("--out", type=Path, default=ROOT / "output")
+    parser.add_argument("--taiwan-out", type=Path, default=ROOT / "output_taiwan")
+    parser.add_argument("--variant", choices=("all", "mainland", "taiwan"), default="all")
+    parser.add_argument("--no-clean", action="store_true", help="Do not delete old output folders first.")
+    parser.add_argument("--no-validate", action="store_true", help="Skip basic generated-file checks.")
+    parser.add_argument("--gui-font-config", type=Path, default=ROOT / "data" / "gui_font.ini")
+    parser.add_argument("--gui-font-dir", type=Path, help="Optional DBOZero\\font directory used for GUI font choices.")
+    parser.add_argument("--list-gui-fonts", action="store_true", help="List GUI font choices and exit.")
+    parser.add_argument("--gui-font", help="GUI font to write into gui0.pak, matched by file name, stem, family, or full name.")
+    parser.add_argument("--gui-font-name", help="Override the internal font face name written into gui0.pak.")
+    return parser.parse_args(argv)
+
+
+def main(argv: list[str] | None = None) -> int:
+    if hasattr(sys.stdout, "reconfigure"):
+        sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+        sys.stderr.reconfigure(encoding="utf-8", errors="replace")
+    try:
+        return build_all(parse_args(argv))
+    except (
+        BuildError,
+        install_hanhua.PatchError,
+        lang0_gbk_patch.PatchError,
+        tbl_utf16_patch.PatchError,
+        UnicodeDecodeError,
+    ) as exc:
+        print(console_color.error(f"ERROR: {exc}"), file=sys.stderr)
+        return 2
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
