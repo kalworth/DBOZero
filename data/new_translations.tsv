@@ -317,8 +317,8 @@ UI	lang0.pak	DST_ITEMBATTLEATTR_NOTIFY_SELECT_ELEMENT	Select an element before c
 UI	lang0.pak	DST_ITEMBATTLEATTR_VIP_REMOTE_ONLY	VIP members can open Change Attributes remotely from the status bar.		VIP成员可以从状态栏远程打开属性更改。	ok
 UI	lang0.pak	DST_VIP_REMOTE_HUB_TITLE	VIP Remote Services		VIP远程服务	ok
 UI	lang0.pak	DST_VIP_REMOTE_EVENT_REWARD	Event Reward		活动奖励	ok
-UI	lang0.pak	DST_VIP_REMOTE_REPAIR_ALL	Repair All Equipment			
-UI	lang0.pak	DST_VIP_REMOTE_REPAIR_ALL_MB_CONFIRM	"[align = ""center""][font size = ""12"" color=""f4d762""]VIP Remote Repair[/font][br][br][font size = ""10"" color=""ffffff""]Repair all equipped items?[br]Cost: %s Zeni[/font]"			
+UI	lang0.pak	DST_VIP_REMOTE_REPAIR_ALL	Repair All Equipment		修理全部装备	ok
+UI	lang0.pak	DST_VIP_REMOTE_REPAIR_ALL_MB_CONFIRM	"[align = ""center""][font size = ""12"" color=""f4d762""]VIP Remote Repair[/font][br][br][font size = ""10"" color=""ffffff""]Repair all equipped items?[br]Cost: %s Zeni[/font]"		"[align = ""center""][font size = ""12"" color=""f4d762""]VIP远程修理[/font][br][br][font size = ""10"" color=""ffffff""]修理所有装备？[br]费用：%s 索尼[/font]"	ok
 UI	lang0.pak	DST_VIP_REMOTE_HUB_OPEN_FAIL	Could not open VIP menu. Rebuild the client and ensure vipremotehubgui.frm is in the gui folder.		无法打开VIP菜单。请重建客户端，并确认 vipremotehubgui.frm 位于 gui 文件夹。	ok
 UI	lang0.pak	DST_CHARACTER_FAIL_BY_BUDOKAI	Can't join Budokai.		无法参加武道会。	ok
 UI	lang0.pak	DST_CHARACTER_FAIL_BY_GUILD	Can't Sign		无法报名	ok
@@ -965,10 +965,10 @@ UI	lang0.pak	DST_ITEMGRADETRANSFER_MATERIALNEED_COMMENT	"[align = ""left""][font
 UI	lang0.pak	DST_ITEMGRADETRANSFER_MATERIALTOOLTIP	Place mysterious powder.		位置神秘。	ok
 UI	lang0.pak	DST_ITEMGRADETRANSFER_MATERIALTYPE_ERR	To proceed insert mysterious powder.		到放入神秘。	ok
 UI	lang0.pak	DST_ITEMGRADETRANSFER_NOGRADEITEM_ERR	First, upgrade the item.		第一，升级该道具。	ok
-UI	lang0.pak	DST_ITEMGRADETRANSFER_RANK_ERR	Items must have the same rarity.			
-UI	lang0.pak	DST_ITEMGRADETRANSFER_BTN	Transfer			
+UI	lang0.pak	DST_ITEMGRADETRANSFER_RANK_ERR	Items must have the same rarity.		道具稀有度必须相同。	ok
+UI	lang0.pak	DST_ITEMGRADETRANSFER_BTN	Transfer		转移	ok
 UI	lang0.pak	DST_ITEMGRADETRANSFER_OK	Item Level Transfer		道具品质转移	ok
-UI	lang0.pak	DST_ITEMGRADETRANSFER_SUCCESS	Success! Upgrade Transfered.			
+UI	lang0.pak	DST_ITEMGRADETRANSFER_SUCCESS	Success! Upgrade Transfered.		强化等级转移成功。	ok
 UI	lang0.pak	DST_ITEMGRADETRANSFER_REQUESTION	"[align = ""center""][font size = ""12"" color=""f36a7c""]Notifications[/font][br][br][font size = ""10"" color=""ffffff""]Reinforced grades consume:[br][/font][font size = ""10"" color=""f4d762""] %s + %d[br][/font][font size = ""10"" color=""ffffff""]Are you sure you want to proceed?[/font]"		"[align = ""center""][font size = ""12"" color=""f36a7c""]通知[/font][br][br][font size = ""10"" color=""ffffff""]强化等级转移将消耗：[br][/font][font size = ""10"" color=""f4d762""] %s + %d[br][/font][font size = ""10"" color=""ffffff""]确定要继续吗？[/font]"	ok
 UI	lang0.pak	DST_ITEMGRADETRANSFER_RESULTCOMMENT	"[align = ""center""][font size = ""12"" color=""f4d762""]Reinforced grades completed[/font][br][br][font size = ""10"" color=""ffffff""]It has acquired the following items.[br][br][/font][font size = ""10"" color=""f4d762""]%s + %d[br][/font]"		"[align = ""center""][font size = ""12"" color=""f4d762""]强化等级转移完成[/font][br][br][font size = ""10"" color=""ffffff""]已获得以下道具。[br][br][/font][font size = ""10"" color=""f4d762""]%s + %d[br][/font]"	ok
 UI	lang0.pak	DST_ITEMGRADETRANSFER_TARGETTOOLTIP	Insert Target-Item please		放入目标-道具请	ok
