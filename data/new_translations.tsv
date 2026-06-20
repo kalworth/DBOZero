@@ -1758,8 +1758,8 @@ UI	lang0.pak	DST_OPTION_TOOLTIP_PERFORMANCE_MODE	Disables all visual effects for
 UI	lang0.pak	DST_OPTION_PERF_HIDE_MASCOT_TOOLTIP	Hides other players' mascots and pet summons		隐藏其他玩家的吉祥物和宠物召唤物	ok
 UI	lang0.pak	DST_OPTION_PERF_HIDE_PLAYER_EFFECTS_TOOLTIP	Hides all combat effects from other players (skills, attacks, projectiles). Only your own effects will be visible.		Hides 全部战斗效果来自其他玩家 (技能，，). 专用你的效果将。	ok
 UI	lang0.pak	DST_OPTION_INFO_TOOLTIP_COSTUME_RENDER	Possibility to hide/show Costumes		Possibility 到隐藏/显示 Costumes	ok
-UI	lang0.pak	DST_ITEM_CAN_NOT_MOVE_ERROR_PACKET_SEND	Title Status/Effect has been setted.		称号状态/效果已。	ok
-UI	lang0.pak	DST_ITEM_CAN_NOT_MOVE_ERROR_PACKET_SEND2	Title Effect has been setted.		称号效果已。	ok
+UI	lang0.pak	DST_ITEM_CAN_NOT_MOVE_ERROR_PACKET_SEND	Title Status/Effect has been setted.		称号状态/效果已生效。	ok
+UI	lang0.pak	DST_ITEM_CAN_NOT_MOVE_ERROR_PACKET_SEND2	Title Effect has been setted.		称号效果已生效。	ok
 UI	lang0.pak	DST_OPTION_RESOLUTION_FORMAT	%d*%d*%dbit		%d*%d*%d	ok
 UI	lang0.pak	DST_OPTION_RESOLUTION_FORMAT_WINMODE	%d*%d		%d*%d	ok
 UI	lang0.pak	DST_OUT_RANGE_FROM_POPOSTONE	Too far away from a Popo Stone.		离波波石太远。	ok
