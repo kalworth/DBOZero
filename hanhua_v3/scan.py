@@ -426,12 +426,31 @@ def tbl_shadow_sentence_candidate_text(text: str) -> bool:
     return True
 
 
+def tbl_item_description_candidate_text(text: str) -> bool:
+    text = text.strip()
+    if not text or len(text) > 220 or "\n" in text or "\r" in text:
+        return False
+    if not re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9' .,:;!?()&+\-/\[\]]+", text):
+        return False
+    lower = text.lower()
+    if "[metatag" in lower:
+        return False
+    return (
+        lower.startswith("a powerful ring obtained from ")
+        or lower.startswith("a powerful earring obtained from ")
+        or lower.startswith("a powerful necklace obtained from ")
+        or lower.startswith("a sub-weapon touched by ")
+        or lower.startswith("a dogi touched by ")
+    )
+
+
 def tbl_accepted_candidate_text(text: str) -> bool:
     return (
         tbl_candidate_text(text)
         or tbl_property_candidate_text(text)
         or tbl_forced_candidate_text(text)
         or tbl_shadow_sentence_candidate_text(text)
+        or tbl_item_description_candidate_text(text)
     )
 
 
@@ -445,7 +464,12 @@ def tbl_queue_candidate_text(text: str) -> bool:
         return False
     if re.fullmatch(r"[A-Z]{1,3}\d+(?:-\d+)?(?: Age| Pre)?", text):
         return False
-    if tbl_property_candidate_text(text) or tbl_forced_candidate_text(text) or tbl_shadow_sentence_candidate_text(text):
+    if (
+        tbl_property_candidate_text(text)
+        or tbl_forced_candidate_text(text)
+        or tbl_shadow_sentence_candidate_text(text)
+        or tbl_item_description_candidate_text(text)
+    ):
         return True
     if not TBL_TEXT_RE.fullmatch(text):
         return False

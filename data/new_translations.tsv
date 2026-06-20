@@ -318,7 +318,7 @@ UI	lang0.pak	DST_ITEMBATTLEATTR_VIP_REMOTE_ONLY	VIP members can open Change Attr
 UI	lang0.pak	DST_VIP_REMOTE_HUB_TITLE	VIP Remote Services		VIP远程服务	ok
 UI	lang0.pak	DST_VIP_REMOTE_EVENT_REWARD	Event Reward		活动奖励	ok
 UI	lang0.pak	DST_VIP_REMOTE_REPAIR_ALL	Repair All Equipment		修理全部装备	ok
-UI	lang0.pak	DST_VIP_REMOTE_REPAIR_ALL_MB_CONFIRM	"[align = ""center""][font size = ""12"" color=""f4d762""]VIP Remote Repair[/font][br][br][font size = ""10"" color=""ffffff""]Repair all equipped items?[br]Cost: %s Zeni[/font]"		"[align = ""center""][font size = ""12"" color=""f4d762""]VIP远程修理[/font][br][br][font size = ""10"" color=""ffffff""]修理所有装备？[br]费用：%s 索尼[/font]"	ok
+UI	lang0.pak	DST_VIP_REMOTE_REPAIR_ALL_MB_CONFIRM	"[align = ""center""][font size = ""12"" color=""f4d762""]VIP Remote Repair[/font][br][br][font size = ""10"" color=""ffffff""]Repair all equipped items?[br]Cost: %s Zeni[/font]"		"[align = ""center""][font size = ""12"" color=""f4d762""]VIP远程修理[/font][br][br][font size = ""10"" color=""ffffff""]修理全部装备？[br]费用：%s 索尼[/font]"	ok
 UI	lang0.pak	DST_VIP_REMOTE_HUB_OPEN_FAIL	Could not open VIP menu. Rebuild the client and ensure vipremotehubgui.frm is in the gui folder.		无法打开VIP菜单。请重建客户端，并确认 vipremotehubgui.frm 位于 gui 文件夹。	ok
 UI	lang0.pak	DST_CHARACTER_FAIL_BY_BUDOKAI	Can't join Budokai.		无法参加武道会。	ok
 UI	lang0.pak	DST_CHARACTER_FAIL_BY_GUILD	Can't Sign		无法报名	ok
@@ -955,23 +955,23 @@ UI	lang0.pak	DST_ITEMDISASSEMBLE_RESULT_TITLE	Obtaining material!		Obtaining 材
 UI	lang0.pak	DST_ITEMDOWNGRADE_ARMOR	Armor can be downgraded to level %d.		盔甲可以降级到等级 %d.	ok
 UI	lang0.pak	DST_ITEMDOWNGRADE_NOT	Item can't be downgraded		道具无法降级	ok
 UI	lang0.pak	DST_ITEMDOWNGRADE_WEAPON	Weapon can be downgraded to level %d.		武器可以降级到等级 %d.	ok
-UI	lang0.pak	DST_ITEMGRADETRANSFER_COMMENT	"[align = ""left""][font size = ""12"" color=""ffffff""]Item Grade transfer[/font][br][br][font size = ""10"" color=""ffffff""]Items can be upgraded but[br]the additive item disappears.[/font]"		"[align = ""left""][font size = ""12"" color=""ffffff""]道具品质转移[/font][br][br][font size = ""10"" color=""ffffff""]可提升道具品质，[br]但辅助道具会消失。[/font]"	ok
-UI	lang0.pak	DST_ITEMGRADETRANSFER_COMPLETE_COMMENT	"[align = ""left""][font size = ""10"" color=""ffffff""]Transfer complete[br][br]Start transfer for %s ?[/font]"		"[align = ""left""][font size = ""10"" color=""ffffff""]转移完成[br][br]开始为 %s 转移？[/font]"	ok
-UI	lang0.pak	DST_ITEMGRADETRANSFER_ITEMLEVEL_ERR	Item doesn't meet the level.		道具不满足等级。	ok
-UI	lang0.pak	DST_ITEMGRADETRANSFER_ITEMTOOLTIP	Insert upgrade item.		放入升级道具。	ok
-UI	lang0.pak	DST_ITEMGRADETRANSFER_ITEMTYPE_ERR	Only the same type work.		专用相同类型工作。	ok
-UI	lang0.pak	DST_ITEMGRADETRANSFER_MATERIALCNT_ERR	More mysterious powder needed.		需要更多神秘粉末。	ok
-UI	lang0.pak	DST_ITEMGRADETRANSFER_MATERIALNEED_COMMENT	"[align = ""left""][font size = ""10"" color=""f36a7c""]%d mysterious Powder [/font][font size = ""10"" color=""269eff""]Level %d[/font][br][font size = ""10"" color=""ffffff""]to enhance item [/font][font size = ""10"" color=""f4d762""]%s[br][/font][font size = ""10"" color=""ffffff""]Press the button please.[/font]"		"[align = ""left""][font size = ""10"" color=""f36a7c""]%d 个神秘粉末 [/font][font size = ""10"" color=""269eff""]等级 %d[/font][br][font size = ""10"" color=""ffffff""]用于强化道具 [/font][font size = ""10"" color=""f4d762""]%s[br][/font][font size = ""10"" color=""ffffff""]请按下按钮。[/font]"	ok
-UI	lang0.pak	DST_ITEMGRADETRANSFER_MATERIALTOOLTIP	Place mysterious powder.		位置神秘。	ok
-UI	lang0.pak	DST_ITEMGRADETRANSFER_MATERIALTYPE_ERR	To proceed insert mysterious powder.		到放入神秘。	ok
-UI	lang0.pak	DST_ITEMGRADETRANSFER_NOGRADEITEM_ERR	First, upgrade the item.		第一，升级该道具。	ok
+UI	lang0.pak	DST_ITEMGRADETRANSFER_COMMENT	"[align = ""left""][font size = ""12"" color=""ffffff""]Item Grade transfer[/font][br][br][font size = ""10"" color=""ffffff""]Items can be upgraded but[br]the additive item disappears.[/font]"		"[align = ""left""][font size = ""12"" color=""ffffff""]强化等级转移[/font][br][br][font size = ""10"" color=""ffffff""]可将强化等级转移到目标道具，[br]作为材料的道具会消失。[/font]"	ok
+UI	lang0.pak	DST_ITEMGRADETRANSFER_COMPLETE_COMMENT	"[align = ""left""][font size = ""10"" color=""ffffff""]Transfer complete[br][br]Start transfer for %s ?[/font]"		"[align = ""left""][font size = ""10"" color=""ffffff""]转移准备完成[br][br]要开始转移 %s 吗？[/font]"	ok
+UI	lang0.pak	DST_ITEMGRADETRANSFER_ITEMLEVEL_ERR	Item doesn't meet the level.		道具等级不足。	ok
+UI	lang0.pak	DST_ITEMGRADETRANSFER_ITEMTOOLTIP	Insert upgrade item.		放入强化道具。	ok
+UI	lang0.pak	DST_ITEMGRADETRANSFER_ITEMTYPE_ERR	Only the same type work.		只能使用同类型道具。	ok
+UI	lang0.pak	DST_ITEMGRADETRANSFER_MATERIALCNT_ERR	More mysterious powder needed.		神秘粉末不足。	ok
+UI	lang0.pak	DST_ITEMGRADETRANSFER_MATERIALNEED_COMMENT	"[align = ""left""][font size = ""10"" color=""f36a7c""]%d mysterious Powder [/font][font size = ""10"" color=""269eff""]Level %d[/font][br][font size = ""10"" color=""ffffff""]to enhance item [/font][font size = ""10"" color=""f4d762""]%s[br][/font][font size = ""10"" color=""ffffff""]Press the button please.[/font]"		"[align = ""left""][font size = ""10"" color=""f36a7c""]需要 %d 个神秘粉末[/font][font size = ""10"" color=""269eff""]强化等级 %d[/font][br][font size = ""10"" color=""ffffff""]将强化转移至 [/font][font size = ""10"" color=""f4d762""]%s[br][/font][font size = ""10"" color=""ffffff""]请点击按钮继续。[/font]"	ok
+UI	lang0.pak	DST_ITEMGRADETRANSFER_MATERIALTOOLTIP	Place mysterious powder.		放入神秘粉末。	ok
+UI	lang0.pak	DST_ITEMGRADETRANSFER_MATERIALTYPE_ERR	To proceed insert mysterious powder.		请先放入神秘粉末。	ok
+UI	lang0.pak	DST_ITEMGRADETRANSFER_NOGRADEITEM_ERR	First, upgrade the item.		请先强化道具。	ok
 UI	lang0.pak	DST_ITEMGRADETRANSFER_RANK_ERR	Items must have the same rarity.		道具稀有度必须相同。	ok
-UI	lang0.pak	DST_ITEMGRADETRANSFER_BTN	Transfer		转移	ok
-UI	lang0.pak	DST_ITEMGRADETRANSFER_OK	Item Level Transfer		道具品质转移	ok
-UI	lang0.pak	DST_ITEMGRADETRANSFER_SUCCESS	Success! Upgrade Transfered.		强化等级转移成功。	ok
-UI	lang0.pak	DST_ITEMGRADETRANSFER_REQUESTION	"[align = ""center""][font size = ""12"" color=""f36a7c""]Notifications[/font][br][br][font size = ""10"" color=""ffffff""]Reinforced grades consume:[br][/font][font size = ""10"" color=""f4d762""] %s + %d[br][/font][font size = ""10"" color=""ffffff""]Are you sure you want to proceed?[/font]"		"[align = ""center""][font size = ""12"" color=""f36a7c""]通知[/font][br][br][font size = ""10"" color=""ffffff""]强化等级转移将消耗：[br][/font][font size = ""10"" color=""f4d762""] %s + %d[br][/font][font size = ""10"" color=""ffffff""]确定要继续吗？[/font]"	ok
-UI	lang0.pak	DST_ITEMGRADETRANSFER_RESULTCOMMENT	"[align = ""center""][font size = ""12"" color=""f4d762""]Reinforced grades completed[/font][br][br][font size = ""10"" color=""ffffff""]It has acquired the following items.[br][br][/font][font size = ""10"" color=""f4d762""]%s + %d[br][/font]"		"[align = ""center""][font size = ""12"" color=""f4d762""]强化等级转移完成[/font][br][br][font size = ""10"" color=""ffffff""]已获得以下道具。[br][br][/font][font size = ""10"" color=""f4d762""]%s + %d[br][/font]"	ok
-UI	lang0.pak	DST_ITEMGRADETRANSFER_TARGETTOOLTIP	Insert Target-Item please		放入目标-道具请	ok
+UI	lang0.pak	DST_ITEMGRADETRANSFER_BTN	Transfer		强化转移	ok
+UI	lang0.pak	DST_ITEMGRADETRANSFER_OK	Item Level Transfer		强化等级转移	ok
+UI	lang0.pak	DST_ITEMGRADETRANSFER_SUCCESS	Success! Upgrade Transfered.		强化转移成功。	ok
+UI	lang0.pak	DST_ITEMGRADETRANSFER_REQUESTION	"[align = ""center""][font size = ""12"" color=""f36a7c""]Notifications[/font][br][br][font size = ""10"" color=""ffffff""]Reinforced grades consume:[br][/font][font size = ""10"" color=""f4d762""] %s + %d[br][/font][font size = ""10"" color=""ffffff""]Are you sure you want to proceed?[/font]"		"[align = ""center""][font size = ""12"" color=""f36a7c""]提示[/font][br][br][font size = ""10"" color=""ffffff""]本次强化转移将消耗：[br][/font][font size = ""10"" color=""f4d762""] %s + %d[br][/font][font size = ""10"" color=""ffffff""]是否继续？[/font]"	ok
+UI	lang0.pak	DST_ITEMGRADETRANSFER_RESULTCOMMENT	"[align = ""center""][font size = ""12"" color=""f4d762""]Reinforced grades completed[/font][br][br][font size = ""10"" color=""ffffff""]It has acquired the following items.[br][br][/font][font size = ""10"" color=""f4d762""]%s + %d[br][/font]"		"[align = ""center""][font size = ""12"" color=""f4d762""]强化转移完成[/font][br][br][font size = ""10"" color=""ffffff""]获得以下道具：[br][br][/font][font size = ""10"" color=""f4d762""]%s + %d[br][/font]"	ok
+UI	lang0.pak	DST_ITEMGRADETRANSFER_TARGETTOOLTIP	Insert Target-Item please		放入目标道具。	ok
 UI	lang0.pak	DST_ITEMLIST	Item list		道具列表	ok
 UI	lang0.pak	DST_ITEMLIST_REMAINTIME	Time Left: %dd %dh		时间剩余：%d %d	ok
 UI	lang0.pak	DST_ITEMLIST_REMAINTIME_H	Time Left: %dh		时间剩余：%d	ok
@@ -1617,11 +1617,11 @@ UI	lang0.pak	DST_MULTIDIALOG_MENU_SKILL_INIT	Skill reset		技能重置	ok
 UI	lang0.pak	DST_MULTIDIALOG_MENU_SMITH_UPGRADE	Upgrade		升级	ok
 UI	lang0.pak	DST_MULTIDIALOG_MENU_TMQ	Time Machine Quests		时光机任务	ok
 UI	lang0.pak	DST_MULTIDIALOG_MENU_UPGRADEEX	Item Upgrade		装备强化	ok
-UI	lang0.pak	DST_MULTIDIALOG_UPDATE_ITEMGRADETRANSFER	Grade transfer		品质转移	ok
+UI	lang0.pak	DST_MULTIDIALOG_UPDATE_ITEMGRADETRANSFER	Grade transfer		强化转移	ok
 UI	lang0.pak	DST_MUST_SELECT_REWARD	Select Reward		选择奖励	ok
-UI	lang0.pak	DST_M_MIGHTY_ULTI_GRAND	Mighty Majin Classes		Mighty 魔人职业	ok
+UI	lang0.pak	DST_M_MIGHTY_ULTI_GRAND	Mighty Majin Classes		大魔人职业	ok
 UI	lang0.pak	DST_M_WONDER_PLAS_KAR	Wonder Majin Classes		意魔人职业	ok
-UI	lang0.pak	DST_NETMARBLE_CASH_PAYMENT_URL	https://dbozero.com/		://./	ok
+UI	lang0.pak	DST_NETMARBLE_CASH_PAYMENT_URL	https://dbozero.com/			ok
 UI	lang0.pak	DST_NETPY	Token		代币	ok
 UI	lang0.pak	DST_NETPYSHOP	Token Shop		代币商店	ok
 UI	lang0.pak	DST_NETPY_CURRENT_NETPY	Current Tokens		当前代币	ok
@@ -20780,10 +20780,13 @@ TBL	tbl1.pak	*	EV Life Pill Y			wildcard_utf16
 TBL	tbl1.pak	*	EV Magic Pill Y			wildcard_utf16
 TBL	tbl1.pak	*	EV Clarity Potion			wildcard_utf16
 TBL	tbl1.pak	*	Black Dragon Ring Type A		黑龙戒指A型	wildcard_utf16
+TBL	tbl1.pak	*	A powerful ring obtained from the powerful mech black dragon.		从强大的机械黑龙处获得的强力戒指。	wildcard_utf16
 TBL	tbl1.pak	*	Black Dragon Ring Type B		黑龙戒指B型	wildcard_utf16
 TBL	tbl1.pak	*	Black Dragon Earring type A		黑龙耳环A型	wildcard_utf16
 TBL	tbl1.pak	*	Black Dragon Earring type B		黑龙耳环B型	wildcard_utf16
+TBL	tbl1.pak	*	A powerful earring obtained from the powerful mech black dragon.		从强大的机械黑龙处获得的强力耳环。	wildcard_utf16
 TBL	tbl1.pak	*	Black Dragon Necklace		黑龙项链	wildcard_utf16
+TBL	tbl1.pak	*	A powerful necklace obtained from the powerful mech black dragon.		从强大的机械黑龙处获得的强力项链。	wildcard_utf16
 TBL	tbl1.pak	*	EV Resurrection Popo [Other Character]			wildcard_utf16
 TBL	tbl1.pak	*	EV Protective Net			wildcard_utf16
 TBL	tbl1.pak	*	EV Detoxification Pill S		EV解毒药丸S	wildcard_utf16
@@ -21481,6 +21484,7 @@ TBL	tbl1.pak	*	Spooky Soul Title			wildcard_utf16
 TBL	tbl1.pak	*	Broly Outfit		布罗利套装	wildcard_utf16
 TBL	tbl1.pak	*	Pan GT Outfit (Female)			wildcard_utf16
 TBL	tbl1.pak	*	(Only Adult) Athena Wisdom GOD Outfit			wildcard_utf16
+TBL	tbl1.pak	*	A Dogi touched by a GOD!		受神之力触碰的道服！	wildcard_utf16
 TBL	tbl1.pak	*	(Adult Only) Absolute Bra (Bulla)			wildcard_utf16
 TBL	tbl1.pak	*	Used by Trunks Sister, Bra.			wildcard_utf16
 TBL	tbl1.pak	*	(Adult Only) Lucy Heartfilia Clothes			wildcard_utf16
@@ -21873,11 +21877,15 @@ TBL	tbl1.pak	*	Purple Shen Pants(M)			wildcard_utf16
 TBL	tbl1.pak	*	Purple Shen Boots(H)			wildcard_utf16
 TBL	tbl1.pak	*	Purple Shen Boots(N)			wildcard_utf16
 TBL	tbl1.pak	*	Purple Shen Boots(M)			wildcard_utf16
+TBL	tbl1.pak	*	A powerful ring obtained from the powerful Mech Shadow dragon.		从强大的暗影机械暴龙处获得的强力戒指。	wildcard_utf16
+TBL	tbl1.pak	*	A powerful earring obtained from the powerful Mech Shadow Dragon X.		从强大的暗影机械暴龙X处获得的强力耳环。	wildcard_utf16
+TBL	tbl1.pak	*	A powerful necklace obtained from the powerful Mech Shadow Dragon X.		从强大的暗影机械暴龙X处获得的强力项链。	wildcard_utf16
 TBL	tbl1.pak	*	Special Shadow Part		特殊暗影零件	wildcard_utf16
 TBL	tbl1.pak	*	Manufacturing Extract Shadow		制造萃取物暗影	wildcard_utf16
 TBL	tbl1.pak	*	Shadow Star Material		暗影星材料	wildcard_utf16
 TBL	tbl1.pak	*	Shadow Steel		暗影钢	wildcard_utf16
 TBL	tbl1.pak	*	Shadow Large Crystal			wildcard_utf16
+TBL	tbl1.pak	*	A sub-weapon touched by the powers of the Shadow Sovereign; be careful when using it lest you be drawn to the dark side.		受暗影暴君之力影响的副武器，使用时务必小心，以免堕入黑暗。	wildcard_utf16
 TBL	tbl1.pak	*	(Human)Shadow Sovereign Armor Recipe		(人类)暗影暴君盔甲配方	wildcard_utf16
 TBL	tbl1.pak	*	Learn about Shadow Sovereign Armor material and mixing method.			wildcard_utf16
 TBL	tbl1.pak	*	(Human)Shadow Sovereign Pants Recipe		(人类)暗影暴君裤子配方	wildcard_utf16
