@@ -257,13 +257,13 @@ lang0	lang0.pak	DST_EQUIP_SLOT_TYPE_DOGI	Dogi	8a3cbc4a85de	时装	accepted	legac
 lang0	lang0.pak	DST_LOBBY_CHARACTER_MAKE	New Character	991697573c36	创建新角色	accepted	legacy/translations/lang0_overrides.tsv	6	
 lang0	lang0.pak	DST_ITEM_GRADE_HERO	Divine	1b8cf090e6ef	神圣	accepted	legacy/translations/lang0_overrides.tsv	7	
 lang0	lang0.pak	DST_ITEMLIST_ITEMNAME	Name: %s	6ac139c4f333	名称: %s	accepted	legacy/translations/lang0_overrides.tsv	8	
-lang0	lang0.pak	DST_STATUS_STAT_CON	CON	7679a072c928	CON	accepted	legacy/translations/lang0_overrides.tsv	9	fixed_width_status_panel_keep_english
-lang0	lang0.pak	DST_STATUS_STAT_DEX	DEX	be4f7df24208	DEX	accepted	legacy/translations/lang0_overrides.tsv	10	fixed_width_status_panel_keep_english
-lang0	lang0.pak	DST_STATUS_STAT_ENG	ENG	7fb1789cc47c	ENG	accepted	legacy/translations/lang0_overrides.tsv	11	fixed_width_status_panel_keep_english
-lang0	lang0.pak	DST_STATUS_STAT_FOC	FOC	a6c566bfb77d	FOC	accepted	legacy/translations/lang0_overrides.tsv	12	fixed_width_status_panel_keep_english
-lang0	lang0.pak	DST_STATUS_STAT_SOL	SOL	8afba266746f	SOL	accepted	legacy/translations/lang0_overrides.tsv	13	fixed_width_status_panel_keep_english
-lang0	lang0.pak	DST_STATUS_STAT_STR	STR	5c0138f24005	STR	accepted	legacy/translations/lang0_overrides.tsv	14	fixed_width_status_panel_keep_english
-lang0	lang0.pak	DST_STATUS_AP	P.Level	dc0b3985a95d	P.Level	accepted	legacy/translations/lang0_overrides.tsv	15	fixed_width_status_panel_keep_english
+lang0	lang0.pak	DST_STATUS_STAT_CON	CON		CON	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATUS_STAT_DEX	DEX		DEX	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATUS_STAT_ENG	ENG		ENG	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATUS_STAT_FOC	FOC		FOC	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATUS_STAT_SOL	SOL		SOL	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATUS_STAT_STR	STR		STR	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATUS_AP	P.Level		P.Level	accepted			status_panel_full_group_keep_english
 lang0	lang0.pak	DST_STATUS_ATTACK	Attack	1b81f28b5afb	攻击	accepted	legacy/translations/lang0_overrides.tsv	16	
 lang0	lang0.pak	DST_STATUS_ATTACK_RATE	Hit Rate	27a36c2c2dcf	命中率	accepted	legacy/translations/lang0_overrides.tsv	17	
 lang0	lang0.pak	DST_STATUS_ATTR	Attr	bc9a688c50df	属性	accepted	legacy/translations/lang0_overrides.tsv	18	
@@ -3067,68 +3067,210 @@ taiwan	local_data.dat	DST_CHANGE_ITEMBATTLEATTR_ONE_MSG		d0758269d3a9	"[align = 
 taiwan	local_data.dat	DST_CHANGE_ITEMBATTLEATTR_TWO_MSG		331d339e697d	"[align = """"center""""][font size = """"12"""" color=""""f4d762""""]更改道具属性[/font][br][br][font size = """"10"""" color=""""ffffff""""]已选：%s[br]价格：%s索尼[br]成功率：%d%%[br][br]成功：赋予%s属性。[br]失败：属性清除。[/font]"	accepted	manual		runtime PROP placeholder/layout fix
 taiwan	local_data.dat	DST_ITEMPROPERTY_TRANSFER		bd276a9521ee	更改属性	accepted	manual		runtime PROP placeholder/layout fix
 taiwan	local_data.dat	DST_ITEMPROPERTY_TRANSFER_INFOTITLE		2367f42fa307	选择属性并赋予手套或上衣。	accepted	manual		runtime PROP placeholder/layout fix
-taiwan	local_data.dat	DST_STATS_SEC_BASE	基礎		BASE	accepted			fixed_width_stats_label_keep_english
-taiwan	local_data.dat	DST_STATS_SEC_RECOVERY	恢復		RECOVERY	accepted			fixed_width_stats_label_keep_english
-taiwan	local_data.dat	DST_STATS_SEC_CC	COND.		COND.	accepted			fixed_width_stats_label_keep_english
-taiwan	local_data.dat	DST_STATS_CC_PARALYZE	Paralyze		Paralyze	accepted			fixed_width_stats_label_keep_english
-taiwan	local_data.dat	DST_STATS_CC_TERROR	Terror		Terror	accepted			fixed_width_stats_label_keep_english
-taiwan	local_data.dat	DST_STATS_CC_CONFUSE	Confuse		Confuse	accepted			fixed_width_stats_label_keep_english
-taiwan	local_data.dat	DST_STATS_CC_STONE	Stone		Stone	accepted			fixed_width_stats_label_keep_english
-taiwan	local_data.dat	DST_STATS_CC_CANDY	Candy		Candy	accepted			fixed_width_stats_label_keep_english
-taiwan	local_data.dat	DST_STATS_CC_BLEED	Bleed		Bleed	accepted			fixed_width_stats_label_keep_english
-taiwan	local_data.dat	DST_STATS_CC_POISON	Poison		Poison	accepted			fixed_width_stats_label_keep_english
-taiwan	local_data.dat	DST_STATS_CC_STOMACH	Stomach		Stomach	accepted			fixed_width_stats_label_keep_english
-taiwan	local_data.dat	DST_STATS_CC_BURN	Burn		Burn	accepted			fixed_width_stats_label_keep_english
-taiwan	local_data.dat	DST_STATS_RES_REGEN	回		Reg	accepted			fixed_width_stats_label_keep_english
-taiwan	local_data.dat	DST_STATS_RES_REST	息		Rst	accepted			fixed_width_stats_label_keep_english
-taiwan	local_data.dat	DST_STATS_RES_COMBAT	戰		Cmb	accepted			fixed_width_stats_label_keep_english
-taiwan	local_data.dat	DST_STATS_RES_FLYRED	飛		Fly	accepted			fixed_width_stats_label_keep_english
-taiwan	local_data.dat	DST_STATS_RES_REDUCE	減		Red	accepted			fixed_width_stats_label_keep_english
-taiwan	local_data.dat	DST_STATS_HDR_COMBAT	戰鬥		COMBAT	accepted			fixed_width_stats_label_keep_english
-taiwan	local_data.dat	DST_STATS_HDR_ATTR	元素		ELEMENTS	accepted			fixed_width_stats_label_keep_english
-taiwan	local_data.dat	DST_STATS_ELEM_ATK	%s攻:		%s Atk:	accepted			fixed_width_stats_label_keep_english
-taiwan	local_data.dat	DST_STATS_ELEM_DEF	%s防:		%s Def:	accepted			fixed_width_stats_label_keep_english
-taiwan	local_data.dat	DST_STATS_HDR_SPEED	速度		SPEED	accepted			fixed_width_stats_label_keep_english
-taiwan	local_data.dat	DST_STATS_HDR_SUPPORT	輔助		SUPPORT	accepted			fixed_width_stats_label_keep_english
-taiwan	local_data.dat	DST_STATS_LBL_P_ATK	格攻:		P.Atk:      	accepted			fixed_width_stats_label_keep_english
-taiwan	local_data.dat	DST_STATS_LBL_P_DEF	格防:		P.Def:       	accepted			fixed_width_stats_label_keep_english
-taiwan	local_data.dat	DST_STATS_LBL_E_ATK	氣攻:		E.Atk:      	accepted			fixed_width_stats_label_keep_english
-taiwan	local_data.dat	DST_STATS_LBL_E_DEF	氣防:		E.Def:       	accepted			fixed_width_stats_label_keep_english
-taiwan	local_data.dat	DST_STATS_LBL_P_PEN	格穿:		P.Pen:      	accepted			fixed_width_stats_label_keep_english
-taiwan	local_data.dat	DST_STATS_LBL_E_PEN	氣穿:		E.Pen:      	accepted			fixed_width_stats_label_keep_english
-taiwan	local_data.dat	DST_STATS_LBL_HIT	命中:		Hit Rate:    	accepted			fixed_width_stats_label_keep_english
-taiwan	local_data.dat	DST_STATS_LBL_DODGE	閃避:		Dodge:      	accepted			fixed_width_stats_label_keep_english
-taiwan	local_data.dat	DST_STATS_LBL_DEF_RATE	防禦:		Def Rate:   	accepted			fixed_width_stats_label_keep_english
-taiwan	local_data.dat	DST_STATS_LBL_BLK_DMG	格傷:		Block Dmg:  	accepted			fixed_width_stats_label_keep_english
-taiwan	local_data.dat	DST_STATS_LBL_BLK_SUC	格擋:		Block Suc:  	accepted			fixed_width_stats_label_keep_english
-taiwan	local_data.dat	DST_STATS_LBL_BLK_RES	格抗:		Block Res:  	accepted			fixed_width_stats_label_keep_english
-taiwan	local_data.dat	DST_STATS_LBL_P_CRIT	格暴:		P.Crit:     	accepted			fixed_width_stats_label_keep_english
-taiwan	local_data.dat	DST_STATS_LBL_E_CRIT	氣暴:		E.Crit:     	accepted			fixed_width_stats_label_keep_english
-taiwan	local_data.dat	DST_STATS_LBL_P_CRDMG	格暴傷		P.CritDmg:  	accepted			fixed_width_stats_label_keep_english
-taiwan	local_data.dat	DST_STATS_LBL_E_CRDMG	氣暴傷		E.CritDmg:  	accepted			fixed_width_stats_label_keep_english
-taiwan	local_data.dat	DST_STATS_LBL_P_CRDEF	格暴防		P.CritDef:  	accepted			fixed_width_stats_label_keep_english
-taiwan	local_data.dat	DST_STATS_LBL_E_CRDEF	氣暴防		E.CritDef:  	accepted			fixed_width_stats_label_keep_english
-taiwan	local_data.dat	DST_STATS_LBL_P_REFL	格反:		P.Reflect:  	accepted			fixed_width_stats_label_keep_english
-taiwan	local_data.dat	DST_STATS_LBL_E_REFL	氣反:		E.Reflect:  	accepted			fixed_width_stats_label_keep_english
-taiwan	local_data.dat	DST_STATS_LBL_ANTI_CRIT	防暴:		Anti Crit:  	accepted			fixed_width_stats_label_keep_english
-taiwan	local_data.dat	DST_STATS_LBL_SKN_DMG	技傷%:		Skill Dmg%: 	accepted			fixed_width_stats_label_keep_english
-taiwan	local_data.dat	DST_STATS_LBL_SKN_DMGC	技傷/秒		Sk.Dmg/Cs:  	accepted			fixed_width_stats_label_keep_english
-taiwan	local_data.dat	DST_STATS_LBL_NONE_OFF	無攻:		None Atk:   	accepted			fixed_width_stats_label_keep_english
-taiwan	local_data.dat	DST_STATS_LBL_NONE_DEF	無防:		None Def:   	accepted			fixed_width_stats_label_keep_english
-taiwan	local_data.dat	DST_STATS_LBL_HON_OFF	誠攻:		Honest Atk: 	accepted			fixed_width_stats_label_keep_english
-taiwan	local_data.dat	DST_STATS_LBL_HON_DEF	誠防:		Honest Def: 	accepted			fixed_width_stats_label_keep_english
-taiwan	local_data.dat	DST_STATS_LBL_STR_OFF	怪攻:		Strange Atk	accepted			fixed_width_stats_label_keep_english
-taiwan	local_data.dat	DST_STATS_LBL_STR_DEF	怪防:		Strange Def	accepted			fixed_width_stats_label_keep_english
-taiwan	local_data.dat	DST_STATS_LBL_WLD_OFF	野攻:		Wild Atk:   	accepted			fixed_width_stats_label_keep_english
-taiwan	local_data.dat	DST_STATS_LBL_WLD_DEF	野防:		Wild Def:   	accepted			fixed_width_stats_label_keep_english
-taiwan	local_data.dat	DST_STATS_LBL_ELG_OFF	雅攻:		Eleg Atk:   	accepted			fixed_width_stats_label_keep_english
-taiwan	local_data.dat	DST_STATS_LBL_ELG_DEF	雅防:		Eleg Def:   	accepted			fixed_width_stats_label_keep_english
-taiwan	local_data.dat	DST_STATS_LBL_FNY_OFF	搞攻:		Funny Atk:  	accepted			fixed_width_stats_label_keep_english
-taiwan	local_data.dat	DST_STATS_LBL_FNY_DEF	搞防:		Funny Def:  	accepted			fixed_width_stats_label_keep_english
-taiwan	local_data.dat	DST_STATUS_AP			P.Level	accepted			fixed_width_status_panel_keep_english
-taiwan	local_data.dat	DST_STATUS_STAT_CON			CON	accepted			fixed_width_status_panel_keep_english
-taiwan	local_data.dat	DST_STATUS_STAT_DEX			DEX	accepted			fixed_width_status_panel_keep_english
-taiwan	local_data.dat	DST_STATUS_STAT_ENG			ENG	accepted			fixed_width_status_panel_keep_english
-taiwan	local_data.dat	DST_STATUS_STAT_FOC			FOC	accepted			fixed_width_status_panel_keep_english
-taiwan	local_data.dat	DST_STATUS_STAT_SOL			SOL	accepted			fixed_width_status_panel_keep_english
-taiwan	local_data.dat	DST_STATUS_STAT_STR			STR	accepted			fixed_width_status_panel_keep_english
+taiwan	local_data.dat	DST_STATS_SEC_BASE	基礎		BASE	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_SEC_RECOVERY	恢復		RECOVERY	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_SEC_CC	COND.		COND.	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_CC_PARALYZE	Paralyze		Paralyze	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_CC_TERROR	Terror		Terror	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_CC_CONFUSE	Confuse		Confuse	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_CC_STONE	Stone		Stone	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_CC_CANDY	Candy		Candy	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_CC_BLEED	Bleed		Bleed	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_CC_POISON	Poison		Poison	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_CC_STOMACH	Stomach		Stomach	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_CC_BURN	Burn		Burn	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_RES_REGEN	回		Reg	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_RES_REST	息		Rst	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_RES_COMBAT	戰		Cmb	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_RES_FLYRED	飛		Fly	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_RES_REDUCE	減		Red	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_HDR_COMBAT	戰鬥		COMBAT	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_HDR_ATTR	元素		ELEMENTS	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_ELEM_ATK	%s攻:		%s Atk:	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_ELEM_DEF	%s防:		%s Def:	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_HDR_SPEED	速度		SPEED	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_HDR_SUPPORT	輔助		SUPPORT	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_P_ATK	格攻:		P.Atk:	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_P_DEF	格防:		P.Def:	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_E_ATK	氣攻:		E.Atk:	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_E_DEF	氣防:		E.Def:	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_P_PEN	格穿:		P.Pen:	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_E_PEN	氣穿:		E.Pen:	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_HIT	命中:		Hit Rate:	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_DODGE	閃避:		Dodge:	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_DEF_RATE	防禦:		Def Rate:	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_BLK_DMG	格傷:		Block Dmg:	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_BLK_SUC	格擋:		Block Suc:	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_BLK_RES	格抗:		Block Res:	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_P_CRIT	格暴:		P.Crit:	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_E_CRIT	氣暴:		E.Crit:	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_P_CRDMG	格暴傷		P.CritDmg:	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_E_CRDMG	氣暴傷		E.CritDmg:	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_P_CRDEF	格暴防		P.CritDef:	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_E_CRDEF	氣暴防		E.CritDef:	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_P_REFL	格反:		P.Reflect:	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_E_REFL	氣反:		E.Reflect:	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_ANTI_CRIT	防暴:		Anti Crit:	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_SKN_DMG	技傷%:		Skill Dmg%:	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_SKN_DMGC	技傷/秒		Sk.Dmg/Cs:	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_NONE_OFF	無攻:		None Atk:	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_NONE_DEF	無防:		None Def:	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_HON_OFF	誠攻:		Honest Atk:	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_HON_DEF	誠防:		Honest Def:	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_STR_OFF	怪攻:		Strange Atk	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_STR_DEF	怪防:		Strange Def	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_WLD_OFF	野攻:		Wild Atk:	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_WLD_DEF	野防:		Wild Def:	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_ELG_OFF	雅攻:		Eleg Atk:	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_ELG_DEF	雅防:		Eleg Def:	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_FNY_OFF	搞攻:		Funny Atk:	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_FNY_DEF	搞防:		Funny Def:	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATUS_AP	戰鬥力		P.Level	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATUS_STAT_CON	耐		CON	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATUS_STAT_DEX	敏		DEX	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATUS_STAT_ENG	運		ENG	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATUS_STAT_FOC	專		FOC	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATUS_STAT_SOL	氣		SOL	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATUS_STAT_STR	力		STR	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_CC_BLEED	Bleed		Bleed	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_CC_BURN	Burn		Burn	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_CC_CANDY	Candy		Candy	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_CC_CONFUSE	Confuse		Confuse	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_CC_HDR_VAL	R/D/D		R/D/D	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_CC_HDR_VAL	R/D/D		R/D/D	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_CC_PARALYZE	Paralyze		Paralyze	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_CC_POISON	Poison		Poison	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_CC_STOMACH	Stomach		Stomach	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_CC_STONE	Stone		Stone	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_CC_TERROR	Terror		Terror	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_ELEM_ATK	%s Atk:		%s Atk:	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_ELEM_DEF	%s Def:		%s Def:	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_HDR_ATTR	ELEMENTS		ELEMENTS	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_HDR_COMBAT	COMBAT		COMBAT	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_HDR_SPEED	SPEED		SPEED	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_HDR_SUPPORT	SUPPORT		SUPPORT	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_AGGRO	仇恨:		Aggro:	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_LBL_AGGRO	Aggro:		Aggro:	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_AGGRO_P	仇%:		Aggro%:	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_LBL_AGGRO_P	Aggro%:		Aggro%:	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_LBL_ANTI_CRIT	Anti Crit:		Anti Crit:	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_ATK_RNG	射程:		Atk Range:	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_LBL_ATK_RNG	Atk Range:		Atk Range:	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_ATK_SPD	攻速:		Atk Spd:	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_LBL_ATK_SPD	Atk Spd:		Atk Spd:	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_LBL_BLK_DMG	Block Dmg:		Block Dmg:	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_LBL_BLK_RES	Block Res:		Block Res:	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_LBL_BLK_SUC	Block Suc:		Block Suc:	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_BODY_IMM	身免:		Body Imm	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_LBL_BODY_IMM	Body Imm		Body Imm	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_CAST	詠唱:		Cast Time:	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_LBL_CAST	Cast Time:		Cast Time:	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_CAST_SPD	施法:		Cast Spd:	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_LBL_CAST_SPD	Cast Spd:		Cast Spd:	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_CHG_IMM	變免:		Chg Imm	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_LBL_CHG_IMM	Chg Imm		Chg Imm	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_COOLDOWN	冷卻:		Cooldown:	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_LBL_COOLDOWN	Cooldown:		Cooldown:	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_CRS_BLK	咒格:		Curse Block	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_LBL_CRS_BLK	Curse Block		Curse Block	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_LBL_DEF_RATE	Def Rate:		Def Rate:	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_LBL_DODGE	Dodge:		Dodge:	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_DOT	持傷:		DoT:	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_LBL_DOT	DoT:		DoT:	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_DURATION	持續:		Duration:	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_LBL_DURATION	Duration:		Duration:	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_LBL_ELG_DEF	Eleg Def:		Eleg Def:	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_LBL_ELG_OFF	Eleg Atk:		Eleg Atk:	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_EP_COST	EP減:		EP Cost	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_LBL_EP_COST	EP Cost		EP Cost	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_EXP	經驗%:		EXP%:	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_LBL_EXP	EXP%:		EXP%:	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_LBL_E_ATK	E.Atk:		E.Atk:	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_LBL_E_CRDEF	E.CritDef:		E.CritDef:	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_LBL_E_CRDMG	E.CritDmg:		E.CritDmg:	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_LBL_E_CRIT	E.Crit:		E.Crit:	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_LBL_E_DEF	E.Def:		E.Def:	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_LBL_E_PEN	E.Pen:		E.Pen:	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_LBL_E_REFL	E.Reflect:		E.Reflect:	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_FLY	飛行:		Fly Spd:	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_LBL_FLY	Fly Spd:		Fly Spd:	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_FLY_ACC	飛加:		Fly Accel:	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_LBL_FLY_ACC	Fly Accel:		Fly Accel:	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_FLY_DSH	飛衝:		Fly Dash:	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_LBL_FLY_DSH	Fly Dash:		Fly Dash:	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_LBL_FNY_DEF	Funny Def:		Funny Def:	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_LBL_FNY_OFF	Funny Atk:		Funny Atk:	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_GUARD	守護:		Guard Rate:	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_LBL_GUARD	Guard Rate:		Guard Rate:	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_HEAL	治療:		Heal:	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_LBL_HEAL	Heal:		Heal:	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_HEAL_P	治%:		Heal%:	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_LBL_HEAL_P	Heal%:		Heal%:	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_LBL_HIT	Hit Rate:		Hit Rate:	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_HIT_EP	受擊EP		Hit EP:	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_LBL_HIT_EP	Hit EP:		Hit EP:	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_HIT_EPP	受EP%:		Hit EP%:	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_LBL_HIT_EPP	Hit EP%:		Hit EP%:	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_HIT_LP	受擊LP		Hit LP:	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_LBL_HIT_LP	Hit LP:		Hit LP:	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_HIT_LPP	受LP%:		Hit LP%:	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_LBL_HIT_LPP	Hit LP%:		Hit LP%:	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_LBL_HON_DEF	Honest Def:		Honest Def:	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_LBL_HON_OFF	Honest Atk:		Honest Atk:	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_HOT	持療:		HoT:	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_LBL_HOT	HoT:		HoT:	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_HOT_P	持療%		HoT%:	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_LBL_HOT_P	HoT%:		HoT%:	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_HTB_BLK	HTB格		HTB Block:	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_LBL_HTB_BLK	HTB Block:		HTB Block:	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_KD_BLK	倒格:		KD Block:	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_LBL_KD_BLK	KD Block:		KD Block:	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_MIND_IMM	心免:		Mind Imm	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_LBL_MIND_IMM	Mind Imm		Mind Imm	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_LBL_NONE_DEF	None Def:		None Def:	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_LBL_NONE_OFF	None Atk:		None Atk:	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_LBL_P_ATK	P.Atk:		P.Atk:	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_LBL_P_CRDEF	P.CritDef:		P.CritDef:	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_LBL_P_CRDMG	P.CritDmg:		P.CritDmg:	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_LBL_P_CRIT	P.Crit:		P.Crit:	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_LBL_P_DEF	P.Def:		P.Def:	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_LBL_P_PEN	P.Pen:		P.Pen:	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_LBL_P_REFL	P.Reflect:		P.Reflect:	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_QUEST	任務%:		Quest Drop%	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_LBL_QUEST	Quest Drop%		Quest Drop%	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_RUN	跑步:		Run Spd:	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_LBL_RUN	Run Spd:		Run Spd:	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_LBL_SKN_DMG	Skill Dmg%:		Skill Dmg%:	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_LBL_SKN_DMGC	Sk.Dmg/Cs:		Sk.Dmg/Cs:	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_SK_BLK	技格:		Skill Block	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_LBL_SK_BLK	Skill Block		Skill Block	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_STAT_DUR	狀態:		Status Dur:	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_LBL_STAT_DUR	Status Dur:		Status Dur:	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_LBL_STR_DEF	Strange Def		Strange Def	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_LBL_STR_OFF	Strange Atk		Strange Atk	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_UPGRADE	強化%:		Upgrade%:	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_LBL_UPGRADE	Upgrade%:		Upgrade%:	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_WALK	行走:		Walk Spd:	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_LBL_WALK	Walk Spd:		Walk Spd:	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_WEIGHT	負重:		Weight:	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_LBL_WEIGHT	Weight:		Weight:	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_LBL_WLD_DEF	Wild Def:		Wild Def:	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_LBL_WLD_OFF	Wild Atk:		Wild Atk:	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_NA	-		-	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_NA	-		-	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_RES_AP	AP		AP	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_RES_AP	AP		AP	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_RES_COMBAT	Cmb		Cmb	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_RES_EP	EP		EP	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_RES_EP	EP		EP	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_RES_FLYRED	Fly		Fly	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_RES_LP	LP		LP	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_RES_LP	LP		LP	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_RES_REDUCE	Red		Red	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_RES_REGEN	Reg		Reg	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_RES_REST	Rst		Rst	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATS_RES_RP	RP		RP	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_RES_RP	RP		RP	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_SEC_BASE	BASE		BASE	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_SEC_CC	COND.		COND.	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATS_SEC_RECOVERY	RECOVERY		RECOVERY	accepted			status_panel_full_group_keep_english
