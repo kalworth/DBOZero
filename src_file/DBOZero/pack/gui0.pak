@@ -30634,6 +30634,23 @@ button GuildChannelButton
 		surface_focus 	= "srfBtnHelpFocus";
 		surface_disable = "srfBtnHelpDown";
 	}
+
+	// Guild Passive tab - reset/respec (master only, toggled from code)
+	button GuildPassiveResetButton
+	{
+		x		= 105;
+		y		= 386;
+		width		= 111;
+		height		= 18;
+
+		visible		= false;
+
+		surface_file 	= "Community.srf";
+		surface_up 	= "srfNameButtonUp";
+		surface_down 	= "srfNameButtonDown";
+		surface_focus 	= "srfNameButtonFoc";
+		surface_disable = "srfNameButtonUp";
+	}
 }surface "srfGuildEmblemBtnUp"
 {
 	resource_file	= "Game.rsr";
@@ -101037,7 +101054,7 @@ dialog dlgMain
 			x		= 0;
 			y		= 0;
 			width	= 288;
-			height	= 730;
+			height	= 755;
 			
 			clipping = true;
 			
@@ -102057,6 +102074,32 @@ dialog dlgMain
 				x			= 9;
 				y			= 720;
 				width		= 200;
+				height		= 12;
+
+				togglemode	= true;
+
+				text_x		= "13";
+
+				text_downcoord_x= "0";
+				text_downcoord_y= "0";
+
+				surface_file 	= "OptionWnd.srf";
+				surface_up 		= "srfSmallCheckBoxOff";
+				surface_down 	= "srfSmallCheckBoxOn";
+				surface_focus 	= "srfSmallCheckBoxOff";
+				surface_disable = "srfSmallCheckBoxOn";
+				
+				font_name = detail;
+				
+				clipping = true;
+				
+			}
+
+			button btnHideHitTextureEffect
+			{
+				x			= 9;
+				y			= 740;
+				width		= 220;
 				height		= 12;
 
 				togglemode	= true;
@@ -191622,183 +191665,57 @@ dialog dlgMain
 
 		width	= 364;
 		height	= 460;
+		clipping	= true;
 
-		surface_file	= "StatusWnd.srf";
-		surface			= "srfStats3_Back";
-
-		panel StatsTop
+		panel pnlScroll
 		{
-			x = 35;
-			y = 48;
+			x = 10;
+			y = 52;
+			width = 344;
+			height = 368;
+			clipping = true;
 
-			width = 310;
-			height = 80;
-
-			staticbox stbParalysisTimeDown
-			{
-				x	= 0;
-				y 	= 0;
-				width	= 155;
-				height	= 13;
-
-				text_style	= left;
-				text_color_red	= 90;
-				text_color_green = 255;
-				text_color_blue = 0;
-				font_name	= detail;
-				text_effect_mode = shadow;
-			}
-
-			staticbox stbTerrorTimeDown
-			{
-				x	= 0;
-				y 	= 20;
-				width	= 155;
-				height	= 13;
-
-				text_style	= left;
-				text_color_red	= 90;
-				text_color_green = 255;
-				text_color_blue = 0;
-				font_name	= detail;
-				text_effect_mode = shadow;
-			}
-
-			staticbox stbChaosTimeDown
-			{
-				x	= 0;
-				y 	= 40;
-				width	= 155;
-				height	= 13;
-
-				text_style	= left;
-				text_color_red	= 90;
-				text_color_green = 255;
-				text_color_blue = 0;
-				font_name	= detail;
-				text_effect_mode = shadow;
-			}
-
-			staticbox stbPetrifactionTimeDown
-			{
-				x	= 0;
-				y 	= 60;
-				width	= 155;
-				height	= 13;
-
-				text_style	= left;
-				text_color_red	= 90;
-				text_color_green = 255;
-				text_color_blue = 0;
-				font_name	= detail;
-				text_effect_mode = shadow;
-			}
-
-			//------------ Keman New TAB
-
-			staticbox stbSweetsTimeDown
-			{
-				x	= 170;
-				y 	= 0;
-				width	= 152;
-				height	= 13;
-
-				text_style	= left;
-				text_color_red	= 90;
-				text_color_green = 255;
-				text_color_blue = 0;
-				font_name	= detail;
-				text_effect_mode = shadow;
-			}
-
-			staticbox stbBleedingTimeDown
-			{
-				x	= 170;
-				y 	= 20;
-				width	= 152;
-				height	= 13;
-
-				text_style	= left;
-				text_color_red	= 90;
-				text_color_green = 255;
-				text_color_blue = 0;
-				font_name	= detail;
-				text_effect_mode = shadow;
-			}
-
-			staticbox stbPoisoningTimeDown
-			{
-				x	= 170;
-				y 	= 40;
-				width	= 152;
-				height	= 13;
-
-				text_style	= left;
-				text_color_red	= 90;
-				text_color_green = 255;
-				text_color_blue = 0;
-				font_name	= detail;
-				text_effect_mode = shadow;
-			}
-
-			staticbox stbBellyacheTimeDown
-			{
-				x	= 165;
-				y 	= 60;
-				width	= 152;
-				height	= 13;
-
-				text_style	= left;
-				text_color_red	= 90;
-				text_color_green = 255;
-				text_color_blue = 0;
-				font_name	= detail;
-				text_effect_mode = shadow;
-			}
-
-		}
-//------------ Keman 25 is ok
-		panel StatsLeft
-		{
-			x = 25;
-			y = 90;
-
-			width = 90;
-			height = 288;
-
-			outputbox StatusLeftValues
-			{
-				x =0;
-				y =0;
-
-				width = 150;
-				height = 288;
-
-				margin_x = 0;
-				margin_y = 55;
-			}
-
-		}
-//------------ Keman other box is ok
-		panel Statsback
-		{
-
-			x = 130;
-			y = 90;
-
-			width = 290;
-			height = 330;
-			
-			outputbox outputDisplayStatsName
+			outputbox outputDisplayStatsLeftName
 			{
 				x		= 0;
 				y		= 0;
-				width		= 290;
-				height		= 330;
+				width		= 96;
+				height		= 368;
+				maxline		= 512;
+				margin_x	= 3;
+				margin_y	= 4;
+				clipping	= true;
+				text_color_red	= 255;
+				text_color_green	= 255;
+				text_color_blue	= 255;
+				font_name	= detail;
+				text_effect_mode = shadow;
+			}
 
-				margin_x	= 0;
-				margin_y	= 55;
-
+			outputbox outputDisplayStatsLeft
+			{
+				x		= 96;
+				y		= 0;
+				width		= 74;
+				height		= 368;
+				maxline		= 512;
+				margin_x	= 1;
+				margin_y	= 4;
+				clipping	= true;
+				text_color_red	= 255;
+				text_color_green	= 255;
+				text_color_blue	= 255;
+				font_name	= detail;
+				text_effect_mode = shadow;
+				scrollbar_dynamicshow	= false;
+				scrollbar_width		= 10;
+				slider_width		= 10;
+				slider_height		= 22;
+				button_width		= 10;
+				button_height		= 16;
+				vertical_scroll		= true;
+				scrollbar_leftline	= false;
+				scrollbar_margin_top	= 4;
 
 				surface_file 			= "GameCommon.srf";
 				increase_surface_up		= "srfScrollNextBtnUp";
@@ -191812,28 +191729,50 @@ dialog dlgMain
 				slider_surface			= "srfScrollSmall";
 				layout_surface			= "srfScrollLayout";
 			}
-			
-			outputbox outputDisplayStatsValue
+
+			outputbox outputDisplayStatsRightName
 			{
-				x		= 110;
+				x		= 170;
 				y		= 0;
-				width		= 95;
-				height		= 330;
+				width		= 104;
+				height		= 368;
+				maxline		= 512;
+				margin_x	= 3;
+				margin_y	= 4;
+				clipping	= true;
+				text_color_red	= 255;
+				text_color_green	= 255;
+				text_color_blue	= 255;
+				font_name	= detail;
+				text_effect_mode = shadow;
+			}
 
-				margin_x	= 0;
-				margin_y	= 55;
-
+			outputbox outputDisplayStatsRight
+			{
+				x		= 274;
+				y		= 0;
+				width		= 70;
+				height		= 368;
+				maxline		= 512;
+				margin_x	= 1;
+				margin_y	= 4;
+				clipping	= true;
+				text_color_red	= 255;
+				text_color_green	= 255;
+				text_color_blue	= 255;
+				font_name	= detail;
+				text_effect_mode = shadow;
 				scrollbar_dynamicshow	= false;
-				scrollbar_width		= 12;
-				slider_width		= 12;
-				slider_height		= 26;
-				button_width		= 12;
-				button_height		= 19;
+				scrollbar_width		= 10;
+				slider_width		= 10;
+				slider_height		= 22;
+				button_width		= 10;
+				button_height		= 16;
 				vertical_scroll		= true;
 				scrollbar_leftline	= false;
-				scrollbar_margin_top	= 50;
+				scrollbar_margin_top	= 4;
 
-				surface_file 			= "GameCommon.srf";	
+				surface_file 			= "GameCommon.srf";
 				increase_surface_up		= "srfScrollNextBtnUp";
 				increase_surface_down		= "srfScrollNextBtnDown";
 				increase_surface_focus		= "srfScrollNextBtnFoc";
