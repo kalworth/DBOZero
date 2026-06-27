@@ -257,12 +257,12 @@ lang0	lang0.pak	DST_EQUIP_SLOT_TYPE_DOGI	Dogi	8a3cbc4a85de	时装	accepted	legac
 lang0	lang0.pak	DST_LOBBY_CHARACTER_MAKE	New Character	991697573c36	创建新角色	accepted	legacy/translations/lang0_overrides.tsv	6	
 lang0	lang0.pak	DST_ITEM_GRADE_HERO	Divine	1b8cf090e6ef	神圣	accepted	legacy/translations/lang0_overrides.tsv	7	
 lang0	lang0.pak	DST_ITEMLIST_ITEMNAME	Name: %s	6ac139c4f333	名称: %s	accepted	legacy/translations/lang0_overrides.tsv	8	
-lang0	lang0.pak	DST_STATUS_STAT_CON	CON		CON	accepted			status_panel_full_group_keep_english
-lang0	lang0.pak	DST_STATUS_STAT_DEX	DEX		DEX	accepted			status_panel_full_group_keep_english
-lang0	lang0.pak	DST_STATUS_STAT_ENG	ENG		ENG	accepted			status_panel_full_group_keep_english
-lang0	lang0.pak	DST_STATUS_STAT_FOC	FOC		FOC	accepted			status_panel_full_group_keep_english
-lang0	lang0.pak	DST_STATUS_STAT_SOL	SOL		SOL	accepted			status_panel_full_group_keep_english
-lang0	lang0.pak	DST_STATUS_STAT_STR	STR		STR	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATUS_STAT_CON	CON		耐	accepted			base_status_attrs_translated
+lang0	lang0.pak	DST_STATUS_STAT_DEX	DEX		敏	accepted			base_status_attrs_translated
+lang0	lang0.pak	DST_STATUS_STAT_ENG	ENG		運	accepted			base_status_attrs_translated
+lang0	lang0.pak	DST_STATUS_STAT_FOC	FOC		專	accepted			base_status_attrs_translated
+lang0	lang0.pak	DST_STATUS_STAT_SOL	SOL		氣	accepted			base_status_attrs_translated
+lang0	lang0.pak	DST_STATUS_STAT_STR	STR		力	accepted			base_status_attrs_translated
 lang0	lang0.pak	DST_STATUS_AP	P.Level		P.Level	accepted			status_panel_full_group_keep_english
 lang0	lang0.pak	DST_STATUS_ATTACK	Attack	1b81f28b5afb	攻击	accepted	legacy/translations/lang0_overrides.tsv	16	
 lang0	lang0.pak	DST_STATUS_ATTACK_RATE	Hit Rate	27a36c2c2dcf	命中率	accepted	legacy/translations/lang0_overrides.tsv	17	
@@ -3068,9 +3068,9 @@ taiwan	local_data.dat	DST_CHANGE_ITEMBATTLEATTR_TWO_MSG		331d339e697d	"[align = 
 taiwan	local_data.dat	DST_ITEMPROPERTY_TRANSFER		bd276a9521ee	更改属性	accepted	manual		runtime PROP placeholder/layout fix
 taiwan	local_data.dat	DST_ITEMPROPERTY_TRANSFER_INFOTITLE		2367f42fa307	选择属性并赋予手套或上衣。	accepted	manual		runtime PROP placeholder/layout fix
 taiwan	local_data.dat	DST_STATUS_AP	戰鬥力		P.Level	accepted			status_panel_full_group_keep_english
-taiwan	local_data.dat	DST_STATUS_STAT_CON	耐		CON	accepted			status_panel_full_group_keep_english
-taiwan	local_data.dat	DST_STATUS_STAT_DEX	敏		DEX	accepted			status_panel_full_group_keep_english
-taiwan	local_data.dat	DST_STATUS_STAT_ENG	運		ENG	accepted			status_panel_full_group_keep_english
-taiwan	local_data.dat	DST_STATUS_STAT_FOC	專		FOC	accepted			status_panel_full_group_keep_english
-taiwan	local_data.dat	DST_STATUS_STAT_SOL	氣		SOL	accepted			status_panel_full_group_keep_english
-taiwan	local_data.dat	DST_STATUS_STAT_STR	力		STR	accepted			status_panel_full_group_keep_english
+taiwan	local_data.dat	DST_STATUS_STAT_CON	耐		耐	accepted			base_status_attrs_translated
+taiwan	local_data.dat	DST_STATUS_STAT_DEX	敏		敏	accepted			base_status_attrs_translated
+taiwan	local_data.dat	DST_STATUS_STAT_ENG	運		運	accepted			base_status_attrs_translated
+taiwan	local_data.dat	DST_STATUS_STAT_FOC	專		專	accepted			base_status_attrs_translated
+taiwan	local_data.dat	DST_STATUS_STAT_SOL	氣		氣	accepted			base_status_attrs_translated
+taiwan	local_data.dat	DST_STATUS_STAT_STR	力		力	accepted			base_status_attrs_translated
