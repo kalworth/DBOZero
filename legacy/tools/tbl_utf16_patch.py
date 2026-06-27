@@ -117,6 +117,15 @@ def fixed_replacement(source_text: str, translation: str, pad_unit: bytes = b"\x
     return replacement + (pad_unit * (pad_bytes // 2))
 
 
+def safe_fixed_replacement(source_text: str, translation: str, pad_unit: bytes = b"\x00\x00") -> bytes | None:
+    try:
+        return fixed_replacement(source_text, translation, pad_unit)
+    except PatchError as exc:
+        if "too long for fixed tbl field" in str(exc):
+            return None
+        raise
+
+
 def fixed_single_byte_replacement(source: bytes, source_text: str, translation: str, encoding: str = "gbk") -> bytes:
     replacement = encoded_text_bytes(translation, "Translation", encoding)
     if len(replacement) > len(source):
@@ -291,7 +300,10 @@ def patch_tbl_bytes(data: bytes, rows: list[TblOverride], single_byte_encoding: 
                 if len(normalized_offsets) == 1:
                     normalized_source = utf16le(source_text, "Source text")
                     new_offset = normalized_offsets[0]
-                    replacement = fixed_replacement(source_text, translation)
+                    replacement = safe_fixed_replacement(source_text, translation)
+                    if replacement is None:
+                        missing += 1
+                        continue
                     patched[new_offset : new_offset + len(normalized_source)] = replacement
                     changed += 1
                     normalized += 1
@@ -314,7 +326,9 @@ def patch_tbl_bytes(data: bytes, rows: list[TblOverride], single_byte_encoding: 
             patched_by_variant = False
             for source_text, translation, normalized_offsets in length_prefixed_source_variants(patched, row):
                 normalized_source = utf16le(source_text, "Source text")
-                replacement = fixed_replacement(source_text, translation)
+                replacement = safe_fixed_replacement(source_text, translation)
+                if replacement is None:
+                    continue
                 for offset in normalized_offsets:
                     if bytes(patched[offset : offset + len(normalized_source)]) != normalized_source:
                         continue
@@ -343,7 +357,9 @@ def patch_tbl_bytes(data: bytes, rows: list[TblOverride], single_byte_encoding: 
         if not patched_any:
             for source_text, translation, normalized_offsets in length_prefixed_source_variants(patched, row):
                 normalized_source = utf16le(source_text, "Source text")
-                replacement = fixed_replacement(source_text, translation)
+                replacement = safe_fixed_replacement(source_text, translation)
+                if replacement is None:
+                    continue
                 for offset in normalized_offsets:
                     if bytes(patched[offset : offset + len(normalized_source)]) != normalized_source:
                         continue

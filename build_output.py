@@ -19,6 +19,8 @@ from __future__ import annotations
 import argparse
 import configparser
 import csv
+import hashlib
+import json
 import re
 import shutil
 import struct
@@ -43,12 +45,111 @@ ACTIVE_STATUSES = {"", "accepted", "active", "ok", "keep"}
 TAIWAN_FILES = set(install_hanhua.LOCALIZATION_FILES)
 CORE_PACK_FILES = ("lang0.pak", "tbl0.pak", "tbl1.pak")
 OPTIONAL_PACK_FILES = ("gui0.pak",)
+BUILD_CACHE_VERSION = 1
+BUILD_MANIFEST_NAME = ".build_manifest.json"
+BUILD_CODE_FILES = (
+    Path("build_output.py"),
+    Path("legacy/tools/install_hanhua.py"),
+    Path("legacy/tools/lang0_gbk_patch.py"),
+    Path("legacy/tools/tbl_utf16_patch.py"),
+)
 GUI0_FONT_ALIASES = ("Default", "detail", "Lolita", "SimHei")
 FONT_EXTENSIONS = {".ttf", ".otf", ".ttc"}
 
 
 class BuildError(RuntimeError):
     pass
+
+
+def stable_json_hash(value) -> str:
+    payload = json.dumps(value, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
+    return hashlib.sha256(payload.encode("utf-8")).hexdigest()
+
+
+def file_hash(path: Path) -> str:
+    digest = hashlib.sha256()
+    with path.open("rb") as handle:
+        for chunk in iter(lambda: handle.read(1024 * 1024), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
+
+
+def existing_file_hash(path: Path) -> str:
+    return file_hash(path) if path.is_file() else "<missing>"
+
+
+def build_code_hash() -> str:
+    return stable_json_hash(
+        [
+            (path.as_posix(), existing_file_hash(ROOT / path))
+            for path in BUILD_CODE_FILES
+        ]
+    )
+
+
+def load_build_manifest(out_dir: Path) -> dict:
+    path = out_dir / BUILD_MANIFEST_NAME
+    if path.is_file():
+        try:
+            with path.open("r", encoding="utf-8") as handle:
+                manifest = json.load(handle)
+        except (OSError, json.JSONDecodeError):
+            manifest = {}
+    else:
+        manifest = {}
+    if not isinstance(manifest, dict) or manifest.get("version") != BUILD_CACHE_VERSION:
+        manifest = {"version": BUILD_CACHE_VERSION, "targets": {}}
+    if not isinstance(manifest.get("targets"), dict):
+        manifest["targets"] = {}
+    return manifest
+
+
+def write_build_manifest(out_dir: Path, manifest: dict) -> None:
+    out_dir.mkdir(parents=True, exist_ok=True)
+    with (out_dir / BUILD_MANIFEST_NAME).open("w", encoding="utf-8", newline="\n") as handle:
+        json.dump(manifest, handle, ensure_ascii=False, indent=2, sort_keys=True)
+        handle.write("\n")
+
+
+def target_signature(
+    *,
+    sources: dict[str, Path],
+    translation_hash: str,
+    transform_sig: str,
+    code_sig: str,
+) -> str:
+    return stable_json_hash(
+        {
+            "sources": {
+                name: existing_file_hash(path)
+                for name, path in sorted(sources.items())
+            },
+            "translation_hash": translation_hash,
+            "transform_sig": transform_sig,
+            "code_sig": code_sig,
+        }
+    )
+
+
+def outputs_exist(paths: list[Path]) -> bool:
+    return all(path.exists() and (not path.is_file() or path.stat().st_size > 0) for path in paths)
+
+
+def maybe_build_target(
+    *,
+    manifest: dict,
+    target_id: str,
+    output_paths: list[Path],
+    signature: str,
+    force: bool,
+    builder: Callable[[], dict[str, int]],
+) -> dict[str, int]:
+    targets = manifest.setdefault("targets", {})
+    if not force and targets.get(target_id) == signature and outputs_exist(output_paths):
+        return {"skipped": 1}
+    stats = builder()
+    targets[target_id] = signature
+    return stats
 
 
 def find_lang0_value_start_at_line(data: bytes, key: str) -> int:
@@ -638,6 +739,54 @@ def transform_tbl(rows: list[tbl_utf16_patch.TblOverride], transform: Callable[[
     ]
 
 
+def group_tbl_translations(rows: list[tbl_utf16_patch.TblOverride]) -> dict[str, list[tbl_utf16_patch.TblOverride]]:
+    grouped: dict[str, list[tbl_utf16_patch.TblOverride]] = {name: [] for name in tbl_utf16_patch.TBL_FILES}
+    for row in rows:
+        grouped.setdefault(row.file_name, []).append(row)
+    return grouped
+
+
+def hash_taiwan_rows(rows: dict[tuple[str, str], str]) -> str:
+    return stable_json_hash(sorted((file_name, item_id, text) for (file_name, item_id), text in rows.items()))
+
+
+def hash_lang0_rows(rows: list[tuple[str, str, str]]) -> str:
+    return stable_json_hash(rows)
+
+
+def hash_tbl_rows(rows: list[tbl_utf16_patch.TblOverride]) -> str:
+    return stable_json_hash(
+        [
+            {
+                "file": row.file_name,
+                "offset": row.offset,
+                "source": row.source_text,
+                "translation": row.translation,
+            }
+            for row in rows
+        ]
+    )
+
+
+def patch_tbl_file(
+    source_dir: Path,
+    pack_dir: Path,
+    file_name: str,
+    rows: list[tbl_utf16_patch.TblOverride],
+    single_byte_encoding: str,
+) -> dict[str, int]:
+    source = tbl_utf16_patch.tbl_path(source_dir, file_name)
+    if not source.is_file():
+        raise tbl_utf16_patch.PatchError(f"Missing source tbl file: {source}")
+    pack_dir.mkdir(parents=True, exist_ok=True)
+    if not rows:
+        shutil.copy2(source, pack_dir / file_name)
+        return {"rows": 0, "copied": 1}
+    patched, stats = tbl_utf16_patch.patch_tbl_bytes(source.read_bytes(), rows, single_byte_encoding)
+    (pack_dir / file_name).write_bytes(patched)
+    return stats
+
+
 def copy_missing_pack_files(source_dir: Path, pack_dir: Path) -> None:
     source_pack = source_dir / "DBOZero" / "pack"
     for name in CORE_PACK_FILES:
@@ -657,7 +806,9 @@ def build_one(
     translations: TranslationSets,
     *,
     clean: bool,
+    force: bool,
     text_transform: Callable[[str], str],
+    transform_sig: str,
     ansi_encoding: str,
     readme_writer: Callable[[Path], None],
     gui_font: GuiFontPatch | None,
@@ -668,34 +819,116 @@ def build_one(
 
     language_dir = out_dir / "DBOZero" / "localize" / "Taiwan" / "language"
     pack_dir = out_dir / "DBOZero" / "pack"
+    language_dir.mkdir(parents=True, exist_ok=True)
     pack_dir.mkdir(parents=True, exist_ok=True)
+    manifest = load_build_manifest(out_dir)
+    code_sig = build_code_hash()
+    stats: dict[str, dict[str, int]] = {}
 
-    taiwan_stats = install_hanhua.build_payload(
-        source_dir,
-        language_dir,
-        translations.taiwan,
-        text_transform,
-        ansi_encoding,
+    taiwan_sources = {
+        name: source_dir / "DBOZero" / "localize" / "Taiwan" / "language" / name
+        for name in install_hanhua.LOCALIZATION_FILES
+    }
+    taiwan_signature = target_signature(
+        sources=taiwan_sources,
+        translation_hash=hash_taiwan_rows(translations.taiwan),
+        transform_sig=transform_sig,
+        code_sig=code_sig,
     )
+    taiwan_output_paths = [language_dir / name for name in install_hanhua.LOCALIZATION_FILES]
+    taiwan_stats = maybe_build_target(
+        manifest=manifest,
+        target_id="DBOZero/localize/Taiwan/language",
+        output_paths=taiwan_output_paths,
+        signature=taiwan_signature,
+        force=force,
+        builder=lambda: install_hanhua.build_payload(
+            source_dir,
+            language_dir,
+            translations.taiwan,
+            text_transform,
+            ansi_encoding,
+        ),
+    )
+    if set(taiwan_stats) == {"skipped"}:
+        stats["localize/Taiwan/language"] = taiwan_stats
+    else:
+        stats.update(taiwan_stats)
 
     lang0_rows = transform_lang0(translations.lang0, text_transform)
     source_lang0 = lang0_gbk_patch.lang0_path(source_dir)
-    patched_lang0, lang0_stats = patch_lang0_bytes_by_source(source_lang0.read_bytes(), lang0_rows, ansi_encoding)
-    (pack_dir / "lang0.pak").write_bytes(patched_lang0)
+    lang0_signature = target_signature(
+        sources={"pack/lang0.pak": source_lang0},
+        translation_hash=hash_lang0_rows(lang0_rows),
+        transform_sig=transform_sig,
+        code_sig=code_sig,
+    )
+
+    def build_lang0() -> dict[str, int]:
+        patched_lang0, lang0_stats = patch_lang0_bytes_by_source(source_lang0.read_bytes(), lang0_rows, ansi_encoding)
+        (pack_dir / "lang0.pak").write_bytes(patched_lang0)
+        return lang0_stats
+
+    stats["pack/lang0.pak"] = maybe_build_target(
+        manifest=manifest,
+        target_id="DBOZero/pack/lang0.pak",
+        output_paths=[pack_dir / "lang0.pak"],
+        signature=lang0_signature,
+        force=force,
+        builder=build_lang0,
+    )
 
     tbl_rows = transform_tbl(translations.tbl, text_transform)
-    tbl_stats = tbl_utf16_patch.patch_tbl_pack(source_dir, pack_dir, tbl_rows, ansi_encoding)
-    gui0_stats = write_gui0_pack(source_dir, pack_dir, gui_font)
+    tbl_groups = group_tbl_translations(tbl_rows)
+    for file_name in tbl_utf16_patch.TBL_FILES:
+        source_tbl = tbl_utf16_patch.tbl_path(source_dir, file_name)
+        file_rows = tbl_groups.get(file_name, [])
+        signature = target_signature(
+            sources={f"pack/{file_name}": source_tbl},
+            translation_hash=hash_tbl_rows(file_rows),
+            transform_sig=transform_sig,
+            code_sig=code_sig,
+        )
+        stats[f"pack/{file_name}"] = maybe_build_target(
+            manifest=manifest,
+            target_id=f"DBOZero/pack/{file_name}",
+            output_paths=[pack_dir / file_name],
+            signature=signature,
+            force=force,
+            builder=lambda file_name=file_name, file_rows=file_rows: patch_tbl_file(
+                source_dir,
+                pack_dir,
+                file_name,
+                file_rows,
+                ansi_encoding,
+            ),
+        )
+
+    gui0_stats = {}
+    source_gui0 = source_dir / "DBOZero" / "pack" / "gui0.pak"
+    if source_gui0.is_file():
+        gui0_signature = target_signature(
+            sources={"pack/gui0.pak": source_gui0},
+            translation_hash=stable_json_hash(
+                None if gui_font is None else {"file_name": gui_font.file_name, "face_name": gui_font.face_name}
+            ),
+            transform_sig=transform_sig,
+            code_sig=code_sig,
+        )
+        gui0_stats = maybe_build_target(
+            manifest=manifest,
+            target_id="DBOZero/pack/gui0.pak",
+            output_paths=[pack_dir / "gui0.pak"],
+            signature=gui0_signature,
+            force=force,
+            builder=lambda: write_gui0_pack(source_dir, pack_dir, gui_font),
+        )
     copy_missing_pack_files(source_dir, pack_dir)
 
     readme_writer(out_dir)
-    stats = {
-        **taiwan_stats,
-        "pack/lang0.pak": lang0_stats,
-        **{f"pack/{name}": values for name, values in tbl_stats.items()},
-    }
     if gui0_stats:
         stats["pack/gui0.pak"] = gui0_stats
+    write_build_manifest(out_dir, manifest)
     return stats
 
 
@@ -769,8 +1002,10 @@ def build_all(args: argparse.Namespace) -> int:
             source_dir,
             out,
             translations,
-            clean=not args.no_clean,
+            clean=args.force and not args.no_clean,
+            force=args.force,
             text_transform=install_hanhua.to_simplified,
+            transform_sig="mainland-gbk",
             ansi_encoding="gbk",
             readme_writer=write_user_readme,
             gui_font=gui_font,
@@ -783,8 +1018,10 @@ def build_all(args: argparse.Namespace) -> int:
             source_dir,
             out,
             translations,
-            clean=not args.no_clean,
+            clean=args.force and not args.no_clean,
+            force=args.force,
             text_transform=install_hanhua.to_traditional,
+            transform_sig="taiwan-cp950",
             ansi_encoding="cp950",
             readme_writer=write_taiwan_user_readme,
             gui_font=gui_font,
@@ -811,7 +1048,9 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser.add_argument("--out", type=Path, default=ROOT / "output")
     parser.add_argument("--taiwan-out", type=Path, default=ROOT / "output_taiwan")
     parser.add_argument("--variant", choices=("all", "mainland", "taiwan"), default="all")
-    parser.add_argument("--no-clean", action="store_true", help="Do not delete old output folders first.")
+    parser.add_argument("--force", action="store_true", help="Rebuild every target and refresh the incremental manifest.")
+    parser.add_argument("--no-incremental", action="store_true", dest="force", help="Alias for --force.")
+    parser.add_argument("--no-clean", action="store_true", help="Do not delete old output folders when forcing a rebuild.")
     parser.add_argument("--no-validate", action="store_true", help="Skip basic generated-file checks.")
     parser.add_argument("--gui-font-config", type=Path, default=ROOT / "data" / "gui_font.ini")
     parser.add_argument("--gui-font-dir", type=Path, help="Optional DBOZero\\font directory used for GUI font choices.")
