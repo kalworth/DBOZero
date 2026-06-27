@@ -2621,101 +2621,101 @@ UI	lang0.pak	DST_STATUS_TECHNIC_HOIPOIMIX_SPECIAL_SKILL	Special Skill		特殊技
 UI	lang0.pak	DST_STATUS_TECHNIC_HOIPOIMIX_SPECIAL_SKILL_GUIDE	Above Level 15		以上等级 15	ok
 UI	lang0.pak	DST_STATUS_TECHNIC_HOIPOIMIX_SPECIAL_SKILL_GUIDE_HTML	"[align = ""center""][font size=""10""color=""ffff68""]With special crafting you can[br]create different items.[/font][br][font size=""10""color=""ffffff""]Above Lv.30 Accessories & Sub-Weapons, above Lv.50 you can craft Scouters[/font]"		"[align = ""center""][font size=""10""color=""ffff68""]使用特殊制作你可以[br]创建不同道具。[/font][br][font size=""10""color=""ffffff""]以上 Lv.30 Accessories & 子-武器，以上 Lv.50 你可以制作 Scouters[/font]"	ok
 UI	lang0.pak	DST_STATUS_TECHNIC_HOIPOIMIX_TITLE	HoiPoi Mix		合成	ok
-UI	lang0.pak	DST_STATS_SEC_BASE	BASE			
-UI	lang0.pak	DST_STATS_SEC_RECOVERY	RECOVERY			
-UI	lang0.pak	DST_STATS_SEC_CC	COND.			
-UI	lang0.pak	DST_STATS_CC_HDR_VAL	R/D/D			
-UI	lang0.pak	DST_STATS_CC_PARALYZE	Paralyze			
-UI	lang0.pak	DST_STATS_CC_TERROR	Terror			
-UI	lang0.pak	DST_STATS_CC_CONFUSE	Confuse			
-UI	lang0.pak	DST_STATS_CC_STONE	Stone			
-UI	lang0.pak	DST_STATS_CC_CANDY	Candy			
-UI	lang0.pak	DST_STATS_CC_BLEED	Bleed			
-UI	lang0.pak	DST_STATS_CC_POISON	Poison			
-UI	lang0.pak	DST_STATS_CC_STOMACH	Stomach			
-UI	lang0.pak	DST_STATS_CC_BURN	Burn			
-UI	lang0.pak	DST_STATS_RES_REGEN	Reg			
-UI	lang0.pak	DST_STATS_RES_REST	Rst			
-UI	lang0.pak	DST_STATS_RES_COMBAT	Cmb			
-UI	lang0.pak	DST_STATS_RES_FLYRED	Fly			
-UI	lang0.pak	DST_STATS_RES_REDUCE	Red			
-UI	lang0.pak	DST_STATS_HDR_COMBAT	COMBAT			
-UI	lang0.pak	DST_STATS_HDR_ATTR	ELEMENTS			
-UI	lang0.pak	DST_STATS_ELEM_ATK	%s Atk:			
-UI	lang0.pak	DST_STATS_ELEM_DEF	%s Def:			
-UI	lang0.pak	DST_STATS_HDR_SPEED	SPEED			
-UI	lang0.pak	DST_STATS_HDR_SUPPORT	SUPPORT			
-UI	lang0.pak	DST_STATS_LBL_P_ATK	P.Atk:      			
-UI	lang0.pak	DST_STATS_LBL_P_DEF	P.Def:       			
-UI	lang0.pak	DST_STATS_LBL_E_ATK	E.Atk:      			
-UI	lang0.pak	DST_STATS_LBL_E_DEF	E.Def:       			
-UI	lang0.pak	DST_STATS_LBL_P_PEN	P.Pen:      			
-UI	lang0.pak	DST_STATS_LBL_E_PEN	E.Pen:      			
-UI	lang0.pak	DST_STATS_LBL_HIT	Hit Rate:    			
-UI	lang0.pak	DST_STATS_LBL_DODGE	Dodge:      			
-UI	lang0.pak	DST_STATS_LBL_DEF_RATE	Def Rate:   			
-UI	lang0.pak	DST_STATS_LBL_BLK_DMG	Block Dmg:  			
-UI	lang0.pak	DST_STATS_LBL_BLK_SUC	Block Suc:  			
-UI	lang0.pak	DST_STATS_LBL_BLK_RES	Block Res:  			
-UI	lang0.pak	DST_STATS_LBL_P_CRIT	P.Crit:     			
-UI	lang0.pak	DST_STATS_LBL_E_CRIT	E.Crit:     			
-UI	lang0.pak	DST_STATS_LBL_P_CRDMG	P.CritDmg:  			
-UI	lang0.pak	DST_STATS_LBL_E_CRDMG	E.CritDmg:  			
-UI	lang0.pak	DST_STATS_LBL_P_CRDEF	P.CritDef:  			
-UI	lang0.pak	DST_STATS_LBL_E_CRDEF	E.CritDef:  			
-UI	lang0.pak	DST_STATS_LBL_P_REFL	P.Reflect:  			
-UI	lang0.pak	DST_STATS_LBL_E_REFL	E.Reflect:  			
-UI	lang0.pak	DST_STATS_LBL_ANTI_CRIT	Anti Crit:  			
-UI	lang0.pak	DST_STATS_LBL_SKN_DMG	Skill Dmg%: 			
-UI	lang0.pak	DST_STATS_LBL_SKN_DMGC	Sk.Dmg/Cs:  			
-UI	lang0.pak	DST_STATS_LBL_NONE_OFF	None Atk:   			
-UI	lang0.pak	DST_STATS_LBL_NONE_DEF	None Def:   			
-UI	lang0.pak	DST_STATS_LBL_HON_OFF	Honest Atk: 			
-UI	lang0.pak	DST_STATS_LBL_HON_DEF	Honest Def: 			
-UI	lang0.pak	DST_STATS_LBL_STR_OFF	Strange Atk			
-UI	lang0.pak	DST_STATS_LBL_STR_DEF	Strange Def			
-UI	lang0.pak	DST_STATS_LBL_WLD_OFF	Wild Atk:   			
-UI	lang0.pak	DST_STATS_LBL_WLD_DEF	Wild Def:   			
-UI	lang0.pak	DST_STATS_LBL_ELG_OFF	Eleg Atk:   			
-UI	lang0.pak	DST_STATS_LBL_ELG_DEF	Eleg Def:   			
-UI	lang0.pak	DST_STATS_LBL_FNY_OFF	Funny Atk:  			
-UI	lang0.pak	DST_STATS_LBL_FNY_DEF	Funny Def:  			
-UI	lang0.pak	DST_STATS_LBL_WALK	Walk Spd:   			
-UI	lang0.pak	DST_STATS_LBL_RUN	Run Spd:    			
-UI	lang0.pak	DST_STATS_LBL_FLY	Fly Spd:    			
-UI	lang0.pak	DST_STATS_LBL_FLY_ACC	Fly Accel:  			
-UI	lang0.pak	DST_STATS_LBL_FLY_DSH	Fly Dash:   			
-UI	lang0.pak	DST_STATS_LBL_ATK_SPD	Atk Spd:    			
-UI	lang0.pak	DST_STATS_LBL_ATK_RNG	Atk Range:  			
-UI	lang0.pak	DST_STATS_LBL_CAST	Cast Time:  			
-UI	lang0.pak	DST_STATS_LBL_COOLDOWN	Cooldown:   			
-UI	lang0.pak	DST_STATS_LBL_DURATION	Duration:   			
-UI	lang0.pak	DST_STATS_LBL_STAT_DUR	Status Dur: 			
-UI	lang0.pak	DST_STATS_LBL_CAST_SPD	Cast Spd:   			
-UI	lang0.pak	DST_STATS_LBL_EP_COST	EP Cost			
-UI	lang0.pak	DST_STATS_LBL_HIT_LP	Hit LP:     			
-UI	lang0.pak	DST_STATS_LBL_HIT_LPP	Hit LP%:    			
-UI	lang0.pak	DST_STATS_LBL_HIT_EP	Hit EP:     			
-UI	lang0.pak	DST_STATS_LBL_HIT_EPP	Hit EP%:    			
-UI	lang0.pak	DST_STATS_LBL_MIND_IMM	Mind Imm			
-UI	lang0.pak	DST_STATS_LBL_BODY_IMM	Body Imm			
-UI	lang0.pak	DST_STATS_LBL_CHG_IMM	Chg Imm			
-UI	lang0.pak	DST_STATS_LBL_WEIGHT	Weight:     			
-UI	lang0.pak	DST_STATS_LBL_AGGRO	Aggro:      			
-UI	lang0.pak	DST_STATS_LBL_AGGRO_P	Aggro%:     			
-UI	lang0.pak	DST_STATS_LBL_HEAL	Heal:       			
-UI	lang0.pak	DST_STATS_LBL_HEAL_P	Heal%:      			
-UI	lang0.pak	DST_STATS_LBL_HOT	HoT:        			
-UI	lang0.pak	DST_STATS_LBL_HOT_P	HoT%:       			
-UI	lang0.pak	DST_STATS_LBL_DOT	DoT:        			
-UI	lang0.pak	DST_STATS_LBL_GUARD	Guard Rate: 			
-UI	lang0.pak	DST_STATS_LBL_SK_BLK	Skill Block			
-UI	lang0.pak	DST_STATS_LBL_CRS_BLK	Curse Block			
-UI	lang0.pak	DST_STATS_LBL_KD_BLK	KD Block:   			
-UI	lang0.pak	DST_STATS_LBL_HTB_BLK	HTB Block:  			
-UI	lang0.pak	DST_STATS_LBL_UPGRADE	Upgrade%:   			
-UI	lang0.pak	DST_STATS_LBL_EXP	EXP%:       			
-UI	lang0.pak	DST_STATS_LBL_QUEST	Quest Drop%			
+UI	lang0.pak	DST_STATS_SEC_BASE	BASE		基礎	ok
+UI	lang0.pak	DST_STATS_SEC_RECOVERY	RECOVERY		恢復	ok
+UI	lang0.pak	DST_STATS_SEC_CC	COND.		COND.	ok
+UI	lang0.pak	DST_STATS_CC_HDR_VAL	R/D/D		R/D/D	ok
+UI	lang0.pak	DST_STATS_CC_PARALYZE	Paralyze		Paralyze	ok
+UI	lang0.pak	DST_STATS_CC_TERROR	Terror		Terror	ok
+UI	lang0.pak	DST_STATS_CC_CONFUSE	Confuse		Confuse	ok
+UI	lang0.pak	DST_STATS_CC_STONE	Stone		Stone	ok
+UI	lang0.pak	DST_STATS_CC_CANDY	Candy		Candy	ok
+UI	lang0.pak	DST_STATS_CC_BLEED	Bleed		Bleed	ok
+UI	lang0.pak	DST_STATS_CC_POISON	Poison		Poison	ok
+UI	lang0.pak	DST_STATS_CC_STOMACH	Stomach		Stomach	ok
+UI	lang0.pak	DST_STATS_CC_BURN	Burn		Burn	ok
+UI	lang0.pak	DST_STATS_RES_REGEN	Reg		回	ok
+UI	lang0.pak	DST_STATS_RES_REST	Rst		息	ok
+UI	lang0.pak	DST_STATS_RES_COMBAT	Cmb		戰	ok
+UI	lang0.pak	DST_STATS_RES_FLYRED	Fly		飛	ok
+UI	lang0.pak	DST_STATS_RES_REDUCE	Red		減	ok
+UI	lang0.pak	DST_STATS_HDR_COMBAT	COMBAT		戰鬥	ok
+UI	lang0.pak	DST_STATS_HDR_ATTR	ELEMENTS		元素	ok
+UI	lang0.pak	DST_STATS_ELEM_ATK	%s Atk:		%s攻:	ok
+UI	lang0.pak	DST_STATS_ELEM_DEF	%s Def:		%s防:	ok
+UI	lang0.pak	DST_STATS_HDR_SPEED	SPEED		速度	ok
+UI	lang0.pak	DST_STATS_HDR_SUPPORT	SUPPORT		輔助	ok
+UI	lang0.pak	DST_STATS_LBL_P_ATK	P.Atk:      		格攻:	ok
+UI	lang0.pak	DST_STATS_LBL_P_DEF	P.Def:       		格防:	ok
+UI	lang0.pak	DST_STATS_LBL_E_ATK	E.Atk:      		氣攻:	ok
+UI	lang0.pak	DST_STATS_LBL_E_DEF	E.Def:       		氣防:	ok
+UI	lang0.pak	DST_STATS_LBL_P_PEN	P.Pen:      		格穿:	ok
+UI	lang0.pak	DST_STATS_LBL_E_PEN	E.Pen:      		氣穿:	ok
+UI	lang0.pak	DST_STATS_LBL_HIT	Hit Rate:    		命中:	ok
+UI	lang0.pak	DST_STATS_LBL_DODGE	Dodge:      		閃避:	ok
+UI	lang0.pak	DST_STATS_LBL_DEF_RATE	Def Rate:   		防禦:	ok
+UI	lang0.pak	DST_STATS_LBL_BLK_DMG	Block Dmg:  		格傷:	ok
+UI	lang0.pak	DST_STATS_LBL_BLK_SUC	Block Suc:  		格擋:	ok
+UI	lang0.pak	DST_STATS_LBL_BLK_RES	Block Res:  		格抗:	ok
+UI	lang0.pak	DST_STATS_LBL_P_CRIT	P.Crit:     		格暴:	ok
+UI	lang0.pak	DST_STATS_LBL_E_CRIT	E.Crit:     		氣暴:	ok
+UI	lang0.pak	DST_STATS_LBL_P_CRDMG	P.CritDmg:  		格暴傷	ok
+UI	lang0.pak	DST_STATS_LBL_E_CRDMG	E.CritDmg:  		氣暴傷	ok
+UI	lang0.pak	DST_STATS_LBL_P_CRDEF	P.CritDef:  		格暴防	ok
+UI	lang0.pak	DST_STATS_LBL_E_CRDEF	E.CritDef:  		氣暴防	ok
+UI	lang0.pak	DST_STATS_LBL_P_REFL	P.Reflect:  		格反:	ok
+UI	lang0.pak	DST_STATS_LBL_E_REFL	E.Reflect:  		氣反:	ok
+UI	lang0.pak	DST_STATS_LBL_ANTI_CRIT	Anti Crit:  		防暴:	ok
+UI	lang0.pak	DST_STATS_LBL_SKN_DMG	Skill Dmg%: 		技傷%:	ok
+UI	lang0.pak	DST_STATS_LBL_SKN_DMGC	Sk.Dmg/Cs:  		技傷/秒	ok
+UI	lang0.pak	DST_STATS_LBL_NONE_OFF	None Atk:   		無攻:	ok
+UI	lang0.pak	DST_STATS_LBL_NONE_DEF	None Def:   		無防:	ok
+UI	lang0.pak	DST_STATS_LBL_HON_OFF	Honest Atk: 		誠攻:	ok
+UI	lang0.pak	DST_STATS_LBL_HON_DEF	Honest Def: 		誠防:	ok
+UI	lang0.pak	DST_STATS_LBL_STR_OFF	Strange Atk		怪攻:	ok
+UI	lang0.pak	DST_STATS_LBL_STR_DEF	Strange Def		怪防:	ok
+UI	lang0.pak	DST_STATS_LBL_WLD_OFF	Wild Atk:   		野攻:	ok
+UI	lang0.pak	DST_STATS_LBL_WLD_DEF	Wild Def:   		野防:	ok
+UI	lang0.pak	DST_STATS_LBL_ELG_OFF	Eleg Atk:   		雅攻:	ok
+UI	lang0.pak	DST_STATS_LBL_ELG_DEF	Eleg Def:   		雅防:	ok
+UI	lang0.pak	DST_STATS_LBL_FNY_OFF	Funny Atk:  		搞攻:	ok
+UI	lang0.pak	DST_STATS_LBL_FNY_DEF	Funny Def:  		搞防:	ok
+UI	lang0.pak	DST_STATS_LBL_WALK	Walk Spd:   		行走:	ok
+UI	lang0.pak	DST_STATS_LBL_RUN	Run Spd:    		跑步:	ok
+UI	lang0.pak	DST_STATS_LBL_FLY	Fly Spd:    		飛行:	ok
+UI	lang0.pak	DST_STATS_LBL_FLY_ACC	Fly Accel:  		飛加:	ok
+UI	lang0.pak	DST_STATS_LBL_FLY_DSH	Fly Dash:   		飛衝:	ok
+UI	lang0.pak	DST_STATS_LBL_ATK_SPD	Atk Spd:    		攻速:	ok
+UI	lang0.pak	DST_STATS_LBL_ATK_RNG	Atk Range:  		射程:	ok
+UI	lang0.pak	DST_STATS_LBL_CAST	Cast Time:  		詠唱:	ok
+UI	lang0.pak	DST_STATS_LBL_COOLDOWN	Cooldown:   		冷卻:	ok
+UI	lang0.pak	DST_STATS_LBL_DURATION	Duration:   		持續:	ok
+UI	lang0.pak	DST_STATS_LBL_STAT_DUR	Status Dur: 		狀態:	ok
+UI	lang0.pak	DST_STATS_LBL_CAST_SPD	Cast Spd:   		施法:	ok
+UI	lang0.pak	DST_STATS_LBL_EP_COST	EP Cost		EP減:	ok
+UI	lang0.pak	DST_STATS_LBL_HIT_LP	Hit LP:     		受擊LP	ok
+UI	lang0.pak	DST_STATS_LBL_HIT_LPP	Hit LP%:    		受LP%:	ok
+UI	lang0.pak	DST_STATS_LBL_HIT_EP	Hit EP:     		受擊EP	ok
+UI	lang0.pak	DST_STATS_LBL_HIT_EPP	Hit EP%:    		受EP%:	ok
+UI	lang0.pak	DST_STATS_LBL_MIND_IMM	Mind Imm		心免:	ok
+UI	lang0.pak	DST_STATS_LBL_BODY_IMM	Body Imm		身免:	ok
+UI	lang0.pak	DST_STATS_LBL_CHG_IMM	Chg Imm		變免:	ok
+UI	lang0.pak	DST_STATS_LBL_WEIGHT	Weight:     		負重:	ok
+UI	lang0.pak	DST_STATS_LBL_AGGRO	Aggro:      		仇恨:	ok
+UI	lang0.pak	DST_STATS_LBL_AGGRO_P	Aggro%:     		仇%:	ok
+UI	lang0.pak	DST_STATS_LBL_HEAL	Heal:       		治療:	ok
+UI	lang0.pak	DST_STATS_LBL_HEAL_P	Heal%:      		治%:	ok
+UI	lang0.pak	DST_STATS_LBL_HOT	HoT:        		持療:	ok
+UI	lang0.pak	DST_STATS_LBL_HOT_P	HoT%:       		持療%	ok
+UI	lang0.pak	DST_STATS_LBL_DOT	DoT:        		持傷:	ok
+UI	lang0.pak	DST_STATS_LBL_GUARD	Guard Rate: 		守護:	ok
+UI	lang0.pak	DST_STATS_LBL_SK_BLK	Skill Block		技格:	ok
+UI	lang0.pak	DST_STATS_LBL_CRS_BLK	Curse Block		咒格:	ok
+UI	lang0.pak	DST_STATS_LBL_KD_BLK	KD Block:   		倒格:	ok
+UI	lang0.pak	DST_STATS_LBL_HTB_BLK	HTB Block:  		HTB格	ok
+UI	lang0.pak	DST_STATS_LBL_UPGRADE	Upgrade%:   		強化%:	ok
+UI	lang0.pak	DST_STATS_LBL_EXP	EXP%:       		經驗%:	ok
+UI	lang0.pak	DST_STATS_LBL_QUEST	Quest Drop%		任務%:	ok
 UI	lang0.pak	DST_STATUS_TOOLTIP_ATTR	Attributes		属性	ok
 UI	lang0.pak	DST_STATUS_TOOLTIP_CON	Increases LP\nLP regeneration		增加LP\nLP	ok
 UI	lang0.pak	DST_STATUS_TOOLTIP_DEX	Increases Dodge\nIncreases Phy.Attack\nIncreases Phy.Crit.		增加闪避\n增加物理攻击\n增加物理暴击	ok
