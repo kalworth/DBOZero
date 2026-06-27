@@ -1,4 +1,4 @@
-﻿surface	file	id	source_text	source_hash	zh_cn	status	legacy_source	legacy_row	note
+surface	file	id	source_text	source_hash	zh_cn	status	legacy_source	legacy_row	note
 taiwan	table_text_all_data.rdf	3:7000215:0	Natsu Dragneel Outfit	707ef2c74936	纳兹灭龙外套	accepted	legacy/translations/overrides.tsv	6	
 taiwan	table_text_all_data.rdf	3:70002150:0	Used by DragonSlayer Natsu, the son of a Dragon.	df12df04b912	纳兹灭龙外套，龙之子纳兹专用。	accepted	legacy/translations/overrides.tsv	7	
 taiwan	table_text_all_data.rdf	3:7000231:0	Nika Smoke	886ab141960e	尼卡烟雾	accepted	legacy/translations/overrides.tsv	8	
@@ -3067,3 +3067,61 @@ taiwan	local_data.dat	DST_CHANGE_ITEMBATTLEATTR_ONE_MSG		d0758269d3a9	"[align = 
 taiwan	local_data.dat	DST_CHANGE_ITEMBATTLEATTR_TWO_MSG		331d339e697d	"[align = """"center""""][font size = """"12"""" color=""""f4d762""""]更改道具属性[/font][br][br][font size = """"10"""" color=""""ffffff""""]已选：%s[br]价格：%s索尼[br]成功率：%d%%[br][br]成功：赋予%s属性。[br]失败：属性清除。[/font]"	accepted	manual		runtime PROP placeholder/layout fix
 taiwan	local_data.dat	DST_ITEMPROPERTY_TRANSFER		bd276a9521ee	更改属性	accepted	manual		runtime PROP placeholder/layout fix
 taiwan	local_data.dat	DST_ITEMPROPERTY_TRANSFER_INFOTITLE		2367f42fa307	选择属性并赋予手套或上衣。	accepted	manual		runtime PROP placeholder/layout fix
+taiwan	local_data.dat	DST_STATS_SEC_BASE	基礎		BASE	accepted			fixed_width_stats_label_keep_english
+taiwan	local_data.dat	DST_STATS_SEC_RECOVERY	恢復		RECOVERY	accepted			fixed_width_stats_label_keep_english
+taiwan	local_data.dat	DST_STATS_SEC_CC	COND.		COND.	accepted			fixed_width_stats_label_keep_english
+taiwan	local_data.dat	DST_STATS_CC_PARALYZE	Paralyze		Paralyze	accepted			fixed_width_stats_label_keep_english
+taiwan	local_data.dat	DST_STATS_CC_TERROR	Terror		Terror	accepted			fixed_width_stats_label_keep_english
+taiwan	local_data.dat	DST_STATS_CC_CONFUSE	Confuse		Confuse	accepted			fixed_width_stats_label_keep_english
+taiwan	local_data.dat	DST_STATS_CC_STONE	Stone		Stone	accepted			fixed_width_stats_label_keep_english
+taiwan	local_data.dat	DST_STATS_CC_CANDY	Candy		Candy	accepted			fixed_width_stats_label_keep_english
+taiwan	local_data.dat	DST_STATS_CC_BLEED	Bleed		Bleed	accepted			fixed_width_stats_label_keep_english
+taiwan	local_data.dat	DST_STATS_CC_POISON	Poison		Poison	accepted			fixed_width_stats_label_keep_english
+taiwan	local_data.dat	DST_STATS_CC_STOMACH	Stomach		Stomach	accepted			fixed_width_stats_label_keep_english
+taiwan	local_data.dat	DST_STATS_CC_BURN	Burn		Burn	accepted			fixed_width_stats_label_keep_english
+taiwan	local_data.dat	DST_STATS_RES_REGEN	回		Reg	accepted			fixed_width_stats_label_keep_english
+taiwan	local_data.dat	DST_STATS_RES_REST	息		Rst	accepted			fixed_width_stats_label_keep_english
+taiwan	local_data.dat	DST_STATS_RES_COMBAT	戰		Cmb	accepted			fixed_width_stats_label_keep_english
+taiwan	local_data.dat	DST_STATS_RES_FLYRED	飛		Fly	accepted			fixed_width_stats_label_keep_english
+taiwan	local_data.dat	DST_STATS_RES_REDUCE	減		Red	accepted			fixed_width_stats_label_keep_english
+taiwan	local_data.dat	DST_STATS_HDR_COMBAT	戰鬥		COMBAT	accepted			fixed_width_stats_label_keep_english
+taiwan	local_data.dat	DST_STATS_HDR_ATTR	元素		ELEMENTS	accepted			fixed_width_stats_label_keep_english
+taiwan	local_data.dat	DST_STATS_ELEM_ATK	%s攻:		%s Atk:	accepted			fixed_width_stats_label_keep_english
+taiwan	local_data.dat	DST_STATS_ELEM_DEF	%s防:		%s Def:	accepted			fixed_width_stats_label_keep_english
+taiwan	local_data.dat	DST_STATS_HDR_SPEED	速度		SPEED	accepted			fixed_width_stats_label_keep_english
+taiwan	local_data.dat	DST_STATS_HDR_SUPPORT	輔助		SUPPORT	accepted			fixed_width_stats_label_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_P_ATK	格攻:		P.Atk:      	accepted			fixed_width_stats_label_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_P_DEF	格防:		P.Def:       	accepted			fixed_width_stats_label_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_E_ATK	氣攻:		E.Atk:      	accepted			fixed_width_stats_label_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_E_DEF	氣防:		E.Def:       	accepted			fixed_width_stats_label_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_P_PEN	格穿:		P.Pen:      	accepted			fixed_width_stats_label_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_E_PEN	氣穿:		E.Pen:      	accepted			fixed_width_stats_label_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_HIT	命中:		Hit Rate:    	accepted			fixed_width_stats_label_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_DODGE	閃避:		Dodge:      	accepted			fixed_width_stats_label_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_DEF_RATE	防禦:		Def Rate:   	accepted			fixed_width_stats_label_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_BLK_DMG	格傷:		Block Dmg:  	accepted			fixed_width_stats_label_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_BLK_SUC	格擋:		Block Suc:  	accepted			fixed_width_stats_label_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_BLK_RES	格抗:		Block Res:  	accepted			fixed_width_stats_label_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_P_CRIT	格暴:		P.Crit:     	accepted			fixed_width_stats_label_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_E_CRIT	氣暴:		E.Crit:     	accepted			fixed_width_stats_label_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_P_CRDMG	格暴傷		P.CritDmg:  	accepted			fixed_width_stats_label_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_E_CRDMG	氣暴傷		E.CritDmg:  	accepted			fixed_width_stats_label_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_P_CRDEF	格暴防		P.CritDef:  	accepted			fixed_width_stats_label_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_E_CRDEF	氣暴防		E.CritDef:  	accepted			fixed_width_stats_label_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_P_REFL	格反:		P.Reflect:  	accepted			fixed_width_stats_label_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_E_REFL	氣反:		E.Reflect:  	accepted			fixed_width_stats_label_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_ANTI_CRIT	防暴:		Anti Crit:  	accepted			fixed_width_stats_label_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_SKN_DMG	技傷%:		Skill Dmg%: 	accepted			fixed_width_stats_label_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_SKN_DMGC	技傷/秒		Sk.Dmg/Cs:  	accepted			fixed_width_stats_label_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_NONE_OFF	無攻:		None Atk:   	accepted			fixed_width_stats_label_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_NONE_DEF	無防:		None Def:   	accepted			fixed_width_stats_label_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_HON_OFF	誠攻:		Honest Atk: 	accepted			fixed_width_stats_label_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_HON_DEF	誠防:		Honest Def: 	accepted			fixed_width_stats_label_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_STR_OFF	怪攻:		Strange Atk	accepted			fixed_width_stats_label_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_STR_DEF	怪防:		Strange Def	accepted			fixed_width_stats_label_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_WLD_OFF	野攻:		Wild Atk:   	accepted			fixed_width_stats_label_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_WLD_DEF	野防:		Wild Def:   	accepted			fixed_width_stats_label_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_ELG_OFF	雅攻:		Eleg Atk:   	accepted			fixed_width_stats_label_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_ELG_DEF	雅防:		Eleg Def:   	accepted			fixed_width_stats_label_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_FNY_OFF	搞攻:		Funny Atk:  	accepted			fixed_width_stats_label_keep_english
+taiwan	local_data.dat	DST_STATS_LBL_FNY_DEF	搞防:		Funny Def:  	accepted			fixed_width_stats_label_keep_english
