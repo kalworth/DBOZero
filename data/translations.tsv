@@ -3125,3 +3125,10 @@ taiwan	local_data.dat	DST_STATS_LBL_ELG_OFF	雅攻:		Eleg Atk:   	accepted			fix
 taiwan	local_data.dat	DST_STATS_LBL_ELG_DEF	雅防:		Eleg Def:   	accepted			fixed_width_stats_label_keep_english
 taiwan	local_data.dat	DST_STATS_LBL_FNY_OFF	搞攻:		Funny Atk:  	accepted			fixed_width_stats_label_keep_english
 taiwan	local_data.dat	DST_STATS_LBL_FNY_DEF	搞防:		Funny Def:  	accepted			fixed_width_stats_label_keep_english
+taiwan	local_data.dat	DST_STATUS_AP			P.Level	accepted			fixed_width_status_panel_keep_english
+taiwan	local_data.dat	DST_STATUS_STAT_CON			CON	accepted			fixed_width_status_panel_keep_english
+taiwan	local_data.dat	DST_STATUS_STAT_DEX			DEX	accepted			fixed_width_status_panel_keep_english
+taiwan	local_data.dat	DST_STATUS_STAT_ENG			ENG	accepted			fixed_width_status_panel_keep_english
+taiwan	local_data.dat	DST_STATUS_STAT_FOC			FOC	accepted			fixed_width_status_panel_keep_english
+taiwan	local_data.dat	DST_STATUS_STAT_SOL			SOL	accepted			fixed_width_status_panel_keep_english
+taiwan	local_data.dat	DST_STATUS_STAT_STR			STR	accepted			fixed_width_status_panel_keep_english
