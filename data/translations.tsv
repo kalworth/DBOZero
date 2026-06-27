@@ -257,13 +257,13 @@ lang0	lang0.pak	DST_EQUIP_SLOT_TYPE_DOGI	Dogi	8a3cbc4a85de	时装	accepted	legac
 lang0	lang0.pak	DST_LOBBY_CHARACTER_MAKE	New Character	991697573c36	创建新角色	accepted	legacy/translations/lang0_overrides.tsv	6	
 lang0	lang0.pak	DST_ITEM_GRADE_HERO	Divine	1b8cf090e6ef	神圣	accepted	legacy/translations/lang0_overrides.tsv	7	
 lang0	lang0.pak	DST_ITEMLIST_ITEMNAME	Name: %s	6ac139c4f333	名称: %s	accepted	legacy/translations/lang0_overrides.tsv	8	
-lang0	lang0.pak	DST_STATUS_STAT_CON	CON	7679a072c928	耐	accepted	legacy/translations/lang0_overrides.tsv	9	
-lang0	lang0.pak	DST_STATUS_STAT_DEX	DEX	be4f7df24208	敏	accepted	legacy/translations/lang0_overrides.tsv	10	
-lang0	lang0.pak	DST_STATUS_STAT_ENG	ENG	7fb1789cc47c	运	accepted	legacy/translations/lang0_overrides.tsv	11	
-lang0	lang0.pak	DST_STATUS_STAT_FOC	FOC	a6c566bfb77d	集	accepted	legacy/translations/lang0_overrides.tsv	12	
-lang0	lang0.pak	DST_STATUS_STAT_SOL	SOL	8afba266746f	气	accepted	legacy/translations/lang0_overrides.tsv	13	
-lang0	lang0.pak	DST_STATUS_STAT_STR	STR	5c0138f24005	力	accepted	legacy/translations/lang0_overrides.tsv	14	
-lang0	lang0.pak	DST_STATUS_AP	P.Level	dc0b3985a95d	战斗力	accepted	legacy/translations/lang0_overrides.tsv	15	
+lang0	lang0.pak	DST_STATUS_STAT_CON	CON	7679a072c928	CON	accepted	legacy/translations/lang0_overrides.tsv	9	fixed_width_status_panel_keep_english
+lang0	lang0.pak	DST_STATUS_STAT_DEX	DEX	be4f7df24208	DEX	accepted	legacy/translations/lang0_overrides.tsv	10	fixed_width_status_panel_keep_english
+lang0	lang0.pak	DST_STATUS_STAT_ENG	ENG	7fb1789cc47c	ENG	accepted	legacy/translations/lang0_overrides.tsv	11	fixed_width_status_panel_keep_english
+lang0	lang0.pak	DST_STATUS_STAT_FOC	FOC	a6c566bfb77d	FOC	accepted	legacy/translations/lang0_overrides.tsv	12	fixed_width_status_panel_keep_english
+lang0	lang0.pak	DST_STATUS_STAT_SOL	SOL	8afba266746f	SOL	accepted	legacy/translations/lang0_overrides.tsv	13	fixed_width_status_panel_keep_english
+lang0	lang0.pak	DST_STATUS_STAT_STR	STR	5c0138f24005	STR	accepted	legacy/translations/lang0_overrides.tsv	14	fixed_width_status_panel_keep_english
+lang0	lang0.pak	DST_STATUS_AP	P.Level	dc0b3985a95d	P.Level	accepted	legacy/translations/lang0_overrides.tsv	15	fixed_width_status_panel_keep_english
 lang0	lang0.pak	DST_STATUS_ATTACK	Attack	1b81f28b5afb	攻击	accepted	legacy/translations/lang0_overrides.tsv	16	
 lang0	lang0.pak	DST_STATUS_ATTACK_RATE	Hit Rate	27a36c2c2dcf	命中率	accepted	legacy/translations/lang0_overrides.tsv	17	
 lang0	lang0.pak	DST_STATUS_ATTR	Attr	bc9a688c50df	属性	accepted	legacy/translations/lang0_overrides.tsv	18	
