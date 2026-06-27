@@ -260,7 +260,7 @@ lang0	lang0.pak	DST_ITEMLIST_ITEMNAME	Name: %s	6ac139c4f333	名称: %s	accepted	
 lang0	lang0.pak	DST_STATUS_STAT_CON	CON		耐	accepted			base_status_attrs_translated
 lang0	lang0.pak	DST_STATUS_STAT_DEX	DEX		敏	accepted			base_status_attrs_translated
 lang0	lang0.pak	DST_STATUS_STAT_ENG	ENG		運	accepted			base_status_attrs_translated
-lang0	lang0.pak	DST_STATUS_STAT_FOC	FOC		專	accepted			base_status_attrs_translated
+lang0	lang0.pak	DST_STATUS_STAT_FOC	FOC		集	accepted			base_status_focus_translated
 lang0	lang0.pak	DST_STATUS_STAT_SOL	SOL		氣	accepted			base_status_attrs_translated
 lang0	lang0.pak	DST_STATUS_STAT_STR	STR		力	accepted			base_status_attrs_translated
 lang0	lang0.pak	DST_STATUS_AP	P.Level		P.Level	accepted			status_panel_full_group_keep_english
@@ -3071,6 +3071,6 @@ taiwan	local_data.dat	DST_STATUS_AP	戰鬥力		P.Level	accepted			status_panel_f
 taiwan	local_data.dat	DST_STATUS_STAT_CON	耐		耐	accepted			base_status_attrs_translated
 taiwan	local_data.dat	DST_STATUS_STAT_DEX	敏		敏	accepted			base_status_attrs_translated
 taiwan	local_data.dat	DST_STATUS_STAT_ENG	運		運	accepted			base_status_attrs_translated
-taiwan	local_data.dat	DST_STATUS_STAT_FOC	專		專	accepted			base_status_attrs_translated
+taiwan	local_data.dat	DST_STATUS_STAT_FOC	集		集	accepted			base_status_focus_translated
 taiwan	local_data.dat	DST_STATUS_STAT_SOL	氣		氣	accepted			base_status_attrs_translated
 taiwan	local_data.dat	DST_STATUS_STAT_STR	力		力	accepted			base_status_attrs_translated
