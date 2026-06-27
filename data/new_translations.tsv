@@ -2628,7 +2628,7 @@ UI	lang0.pak	DST_STATS_CC_HDR_VAL	R/D/D
 UI	lang0.pak	DST_STATS_CC_PARALYZE	Paralyze			
 UI	lang0.pak	DST_STATS_CC_TERROR	Terror			
 UI	lang0.pak	DST_STATS_CC_CONFUSE	Confuse			
-UI	lang0.pak	DST_STATS_CC_STONE	Stone		石	
+UI	lang0.pak	DST_STATS_CC_STONE	Stone			
 UI	lang0.pak	DST_STATS_CC_CANDY	Candy			
 UI	lang0.pak	DST_STATS_CC_BLEED	Bleed			
 UI	lang0.pak	DST_STATS_CC_POISON	Poison			
@@ -2638,7 +2638,7 @@ UI	lang0.pak	DST_STATS_RES_REGEN	Reg
 UI	lang0.pak	DST_STATS_RES_REST	Rst			
 UI	lang0.pak	DST_STATS_RES_COMBAT	Cmb			
 UI	lang0.pak	DST_STATS_RES_FLYRED	Fly			
-UI	lang0.pak	DST_STATS_RES_REDUCE	Red		红	
+UI	lang0.pak	DST_STATS_RES_REDUCE	Red			
 UI	lang0.pak	DST_STATS_HDR_COMBAT	COMBAT			
 UI	lang0.pak	DST_STATS_HDR_ATTR	ELEMENTS			
 UI	lang0.pak	DST_STATS_ELEM_ATK	%s Atk:			
