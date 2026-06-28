@@ -1235,10 +1235,10 @@ tbl	tbl1.pak	*	Vegeta	576a29d8ebb9	贝吉塔	accepted	legacy/translations/tbl_ov
 tbl	tbl1.pak	*	Ozaru Vegeta	49c818f26f98	巨猿贝吉塔	accepted	legacy/translations/tbl_overrides.tsv	58	
 tbl	tbl1.pak	*	Ozaru Raditz	bf4b606fb079	巨猿拉蒂兹	accepted	legacy/translations/tbl_overrides.tsv	59	
 tbl	tbl1.pak	*	Ozaru Nappa	802b718b5e2f	巨猿纳帕	accepted	legacy/translations/tbl_overrides.tsv	60	
-tbl	tbl0.pak	0x013B8579	(Martial) Potion Super Saiyan 1	96d897f630dd	(武道家)超级赛亚人1药水	accepted	legacy/translations/tbl_overrides.tsv	63	
-tbl	tbl0.pak	0x013B86F5	(Martial) Potion Super Saiyan 2	16e6f7a231bb	(武道家)超级赛亚人2药水	accepted	legacy/translations/tbl_overrides.tsv	64	
-tbl	tbl0.pak	0x013B8871	(Martial) Potion Super Saiyan 3	83e1f6771269	(武道家)超级赛亚人3药水	accepted	legacy/translations/tbl_overrides.tsv	65	
-tbl	tbl0.pak	0x013B9159	(Martial) Potion Super Saiyan 4	4555e2a07da5	(武道家)超级赛亚人4药水	accepted	legacy/translations/tbl_overrides.tsv	66	
+tbl	tbl0.pak	*	(Martial) Potion Super Saiyan 1	96d897f630dd	(武道家)超级赛亚人1药水	accepted	legacy/translations/tbl_overrides.tsv	63	wildcard_after_tbl0_refresh_20260628
+tbl	tbl0.pak	*	(Martial) Potion Super Saiyan 2	16e6f7a231bb	(武道家)超级赛亚人2药水	accepted	legacy/translations/tbl_overrides.tsv	64	wildcard_after_tbl0_refresh_20260628
+tbl	tbl0.pak	*	(Martial) Potion Super Saiyan 3	83e1f6771269	(武道家)超级赛亚人3药水	accepted	legacy/translations/tbl_overrides.tsv	65	wildcard_after_tbl0_refresh_20260628
+tbl	tbl0.pak	*	(Martial) Potion Super Saiyan 4	4555e2a07da5	(武道家)超级赛亚人4药水	accepted	legacy/translations/tbl_overrides.tsv	66	wildcard_after_tbl0_refresh_20260628
 tbl	tbl0.pak	0x013BCB3D	(Martial) Capsule Super Saiyan 1	39a321ce07e3	(武道家)超级赛亚人1胶囊	accepted	legacy/translations/tbl_overrides.tsv	67	
 tbl	tbl0.pak	0x013BCCB9	(Martial) Capsule Super Saiyan 2	a2442dea1c21	(武道家)超级赛亚人2胶囊	accepted	legacy/translations/tbl_overrides.tsv	68	
 tbl	tbl0.pak	0x013BCE35	(Martial) Capsule Super Saiyan 3	f43ed366e3e5	(武道家)超级赛亚人3胶囊	accepted	legacy/translations/tbl_overrides.tsv	69	
@@ -1316,13 +1316,13 @@ tbl	tbl1.pak	0x016BEA95	(Spiritualist) (7 days) Super Saiyan BLUE	09207080249a	(
 tbl	tbl1.pak	0x016BEAED	(Spiritualist) (7 days) Super Saiyan Rose	88b071254457	(气功师)(7天)超级赛亚人桃红	accepted	legacy/translations/tbl_overrides.tsv	145	
 tbl	tbl1.pak	0x016BEBA5	4(Spiritualist) (7 days) Super Saiyan Legendary Super	3949b88d8289	(气功师)(7天)传说超级赛亚人(超)	accepted	legacy/translations/tbl_overrides.tsv	147	
 tbl	tbl1.pak	0x016BEC15	(Spiritualist) (7 days) Super Saiyan 4	797307159705	(气功师)(7天)超级赛亚人4	accepted	legacy/translations/tbl_overrides.tsv	148	
-tbl	tbl0.pak	0x013BA1AD	(Warrior) Potion Great Namek	e9c05c8cc90f	(那美克战士)巨大那美克药水	accepted	legacy/translations/tbl_overrides.tsv	149	
-tbl	tbl0.pak	0x013BA329	(Warrior) Potion Kamiccolo	a580d36c8c7e	(那美克战士)卡米克洛药水	accepted	legacy/translations/tbl_overrides.tsv	150	
-tbl	tbl0.pak	0x013BA4A5	(Warrior) Potion Dark Namek	1e1607c047b4	(那美克战士)黑暗那美克药水	accepted	legacy/translations/tbl_overrides.tsv	151	
-tbl	tbl0.pak	0x013BA621	(Warrior) Potion Great Orange	8064e0adcf41	(那美克战士)巨大橙色药水	accepted	legacy/translations/tbl_overrides.tsv	152	
-tbl	tbl0.pak	0x013BA79D	(Warrior) Potion Orange	4b245bd49ce6	(那美克战士)橙色药水	accepted	legacy/translations/tbl_overrides.tsv	153	
-tbl	tbl0.pak	0x013BA919	(Warrior) Potion Muscle Orange	6268e2bf6309	(那美克战士)肌肉橙色药水	accepted	legacy/translations/tbl_overrides.tsv	154	
-tbl	tbl0.pak	0x013BAA95	(Warrior) Potion Imperator	db3f7c487140	(那美克战士)帝王药水	accepted	legacy/translations/tbl_overrides.tsv	155	
+tbl	tbl0.pak	*	(Warrior) Potion Great Namek	e9c05c8cc90f	(那美克战士)巨大那美克药水	accepted	legacy/translations/tbl_overrides.tsv	149	wildcard_after_tbl0_refresh_20260628
+tbl	tbl0.pak	*	(Warrior) Potion Kamiccolo	a580d36c8c7e	(那美克战士)卡米克洛药水	accepted	legacy/translations/tbl_overrides.tsv	150	wildcard_after_tbl0_refresh_20260628
+tbl	tbl0.pak	*	(Warrior) Potion Dark Namek	1e1607c047b4	(那美克战士)黑暗那美克药水	accepted	legacy/translations/tbl_overrides.tsv	151	wildcard_after_tbl0_refresh_20260628
+tbl	tbl0.pak	*	(Warrior) Potion Great Orange	8064e0adcf41	(那美克战士)巨大橙色药水	accepted	legacy/translations/tbl_overrides.tsv	152	wildcard_after_tbl0_refresh_20260628
+tbl	tbl0.pak	*	(Warrior) Potion Orange	4b245bd49ce6	(那美克战士)橙色药水	accepted	legacy/translations/tbl_overrides.tsv	153	wildcard_after_tbl0_refresh_20260628
+tbl	tbl0.pak	*	(Warrior) Potion Muscle Orange	6268e2bf6309	(那美克战士)肌肉橙色药水	accepted	legacy/translations/tbl_overrides.tsv	154	wildcard_after_tbl0_refresh_20260628
+tbl	tbl0.pak	*	(Warrior) Potion Imperator	db3f7c487140	(那美克战士)帝王药水	accepted	legacy/translations/tbl_overrides.tsv	155	wildcard_after_tbl0_refresh_20260628
 tbl	tbl0.pak	0x013BE771	(Warrior) Capsule Great Namek	245b7f92c87a	(那美克战士)巨大那美克胶囊	accepted	legacy/translations/tbl_overrides.tsv	156	
 tbl	tbl0.pak	0x013BE8ED	(Warrior) Capsule Kamiccolo	7ca7843a07fe	(那美克战士)卡米克洛胶囊	accepted	legacy/translations/tbl_overrides.tsv	157	
 tbl	tbl0.pak	0x013BEA69	(Warrior) Capsule Dark Namek	6476bce826e2	(那美克战士)黑暗那美克胶囊	accepted	legacy/translations/tbl_overrides.tsv	158	
@@ -1388,24 +1388,24 @@ tbl	tbl0.pak	0x017F7B50	Ghost Pet Egg	c7fa05ff4d1a	幽灵宠物蛋	accepted	lega
 tbl	tbl0.pak	0x017F7BD8	Ghost Pet 2	8d47373cea3a	幽灵宠物2	accepted	legacy/translations/tbl_overrides.tsv	246	
 tbl	tbl0.pak	0x017F7C60	Ghost Pet 3	e51dbdb652fd	幽灵宠物3	accepted	legacy/translations/tbl_overrides.tsv	247	
 tbl	tbl0.pak	0x017F7CE8	Ghost Pet 4	afded6d2a693	幽灵宠物4	accepted	legacy/translations/tbl_overrides.tsv	248	
-tbl	tbl0.pak	0x012591A1	Smile Pattern Underwear	cea9f60f6674	笑脸图案内衣	accepted	legacy/translations/tbl_overrides.tsv	258	
+tbl	tbl0.pak	*	Smile Pattern Underwear	cea9f60f6674	笑脸图案内衣	accepted	legacy/translations/tbl_overrides.tsv	258	wildcard_after_tbl0_refresh_20260628
 tbl	tbl0.pak	0x0125990D	Red Puar 1	a4fc600b5d19	红色普尔1	accepted	legacy/translations/tbl_overrides.tsv	259	
 tbl	tbl0.pak	0x0125C88D	Broly Pet Egg	de385f0f15f8	布罗利宠物蛋	accepted	legacy/translations/tbl_overrides.tsv	260	
 tbl	tbl0.pak	0x0126FEC9	LP Majin	1a29e48fede1	LP魔人	accepted	legacy/translations/tbl_overrides.tsv	261	
 tbl	tbl0.pak	0x01270045	LP Namek	685c80b03b55	LP那美克	accepted	legacy/translations/tbl_overrides.tsv	262	
 tbl	tbl0.pak	0x012701C1	LP Human	17a4ab602a06	LP人类	accepted	legacy/translations/tbl_overrides.tsv	263	
-tbl	tbl0.pak	0x012732BD	Trumpet	66c3284825be	号角	accepted	legacy/translations/tbl_overrides.tsv	264	
+tbl	tbl0.pak	*	Trumpet	66c3284825be	号角	accepted	legacy/translations/tbl_overrides.tsv	264	wildcard_after_tbl0_refresh_20260628
 tbl	tbl0.pak	0x01279F19	Gohan Time Chamber Hair	f6f37d57eef7	孙悟饭精神时光屋发型	accepted	legacy/translations/tbl_overrides.tsv	271	
 tbl	tbl0.pak	0x0127AAF9	IS Hair	37372c89855f	IS发型	accepted	legacy/translations/tbl_overrides.tsv	272	
 tbl	tbl0.pak	0x0127AC75	Death Axe SK Transmog	95ff8c973185	死亡之斧SK幻化	accepted	legacy/translations/tbl_overrides.tsv	273	
 tbl	tbl0.pak	0x0127ADF1	Two Handed Sword SK	c448fb38a8ea	双手剑SK	accepted	legacy/translations/tbl_overrides.tsv	274	
-tbl	tbl0.pak	0x0127C8A9	Oozaru Martial	3ba06c3593f8	大猿武道家	accepted	legacy/translations/tbl_overrides.tsv	275	
+tbl	tbl0.pak	*	Oozaru Martial	3ba06c3593f8	大猿武道家	accepted	legacy/translations/tbl_overrides.tsv	275	wildcard_after_tbl0_refresh_20260628
 tbl	tbl0.pak	0x0127CA25	Oozaru Spirit	f7db83588d9e	大猿精神	accepted	legacy/translations/tbl_overrides.tsv	276	
 tbl	tbl0.pak	0x0127F0BD	Hallowen Box	ee66ef318852	万圣节盒	accepted	legacy/translations/tbl_overrides.tsv	277	
 tbl	tbl0.pak	0x012809F9	Halloween Title	e30a2d8f13ec	万圣节称号	accepted	legacy/translations/tbl_overrides.tsv	278	
 tbl	tbl0.pak	0x01280B75	Golden Oozaru Martial	db1d5b450a4c	黄金大猿武道家	accepted	legacy/translations/tbl_overrides.tsv	279	
 tbl	tbl0.pak	0x01281165	Natal Box	283d6b7978e3	圣诞盒	accepted	legacy/translations/tbl_overrides.tsv	280	
-tbl	tbl0.pak	0x0128320D	Saiyan Tail F	3493e3522097	赛亚人尾巴F	accepted	legacy/translations/tbl_overrides.tsv	281	
+tbl	tbl0.pak	*	Saiyan Tail F	3493e3522097	赛亚人尾巴F	accepted	legacy/translations/tbl_overrides.tsv	281	wildcard_after_tbl0_refresh_20260628
 tbl	tbl0.pak	0x012874D9	Event Sample	689ce5894211	活动样品	accepted	legacy/translations/tbl_overrides.tsv	282	
 tbl	tbl0.pak	0x01287C45	BMO Backpack	2637feaa2ff9	BMO背包	accepted	legacy/translations/tbl_overrides.tsv	283	
 tbl	tbl0.pak	0x012BCED1	CC Blessed Ruby 2	1a6dbcab7c13	CC祝福红宝石2	accepted	legacy/translations/tbl_overrides.tsv	284	
@@ -1422,16 +1422,16 @@ tbl	tbl0.pak	0x012BDDA9	New Stone 6	f856f2f69430	新石6	accepted	legacy/transla
 tbl	tbl0.pak	0x012D5F99	Sky Dungeon Material 1	4f83a21a8359	天空副本材料1	accepted	legacy/translations/tbl_overrides.tsv	295	
 tbl	tbl0.pak	0x012D6115	Sky Dungeon Material 2	8213e9366e51	天空副本材料2	accepted	legacy/translations/tbl_overrides.tsv	296	
 tbl	tbl0.pak	0x012D6291	Sky Dungeon Material 3	d063816263dc	天空副本材料3	accepted	legacy/translations/tbl_overrides.tsv	297	
-tbl	tbl0.pak	0x01359CE5	Halloween Wings	df4ce55900ef	万圣节翅膀	accepted	legacy/translations/tbl_overrides.tsv	300	
-tbl	tbl0.pak	0x01359E61	Fairy Wings	d7923413956e	仙女翅膀	accepted	legacy/translations/tbl_overrides.tsv	301	
+tbl	tbl0.pak	*	Halloween Wings	df4ce55900ef	万圣节翅膀	accepted	legacy/translations/tbl_overrides.tsv	300	wildcard_after_tbl0_refresh_20260628
+tbl	tbl0.pak	*	Fairy Wings	d7923413956e	仙女翅膀	accepted	legacy/translations/tbl_overrides.tsv	301	wildcard_after_tbl0_refresh_20260628
 tbl	tbl0.pak	0x0135CDE1	Buu Costume	546d1e41d8d7	布欧服装	accepted	legacy/translations/tbl_overrides.tsv	302	
 tbl	tbl0.pak	0x0135D0D9	Xeno Goku Outfit	0381b5c71e80	异次元孙悟空套装	accepted	legacy/translations/tbl_overrides.tsv	303	
-tbl	tbl0.pak	0x01361F85	Hellfire Sword	d74b5c32eeed	地狱火剑	accepted	legacy/translations/tbl_overrides.tsv	304	
+tbl	tbl0.pak	*	Hellfire Sword	d74b5c32eeed	地狱火剑	accepted	legacy/translations/tbl_overrides.tsv	304	wildcard_after_tbl0_refresh_20260628
 tbl	tbl0.pak	0x0136DF01	GM Weapon Upgrade Stone U75	06344e9bc1c3	GM武器升级石U75	accepted	legacy/translations/tbl_overrides.tsv	305	
-tbl	tbl0.pak	0x0136F545	Akeno Hat	a7cfebb45c83	朱乃帽子	accepted	legacy/translations/tbl_overrides.tsv	306	
-tbl	tbl0.pak	0x0136F6C1	Sabo Hat	e5f38047fa19	萨博帽子	accepted	legacy/translations/tbl_overrides.tsv	307	
-tbl	tbl0.pak	0x0136FCB1	Whitebeard Mustache	949a69e07f30	白胡子胡子	accepted	legacy/translations/tbl_overrides.tsv	308	
-tbl	tbl0.pak	0x01370125	Custom Hat	8aedfa1b9f5d	定制帽子	accepted	legacy/translations/tbl_overrides.tsv	309	
+tbl	tbl0.pak	*	Akeno Hat	a7cfebb45c83	朱乃帽子	accepted	legacy/translations/tbl_overrides.tsv	306	wildcard_after_tbl0_refresh_20260628
+tbl	tbl0.pak	*	Sabo Hat	e5f38047fa19	萨博帽子	accepted	legacy/translations/tbl_overrides.tsv	307	wildcard_after_tbl0_refresh_20260628
+tbl	tbl0.pak	*	Whitebeard Mustache	949a69e07f30	白胡子胡子	accepted	legacy/translations/tbl_overrides.tsv	308	wildcard_after_tbl0_refresh_20260628
+tbl	tbl0.pak	*	Custom Hat	8aedfa1b9f5d	定制帽子	accepted	legacy/translations/tbl_overrides.tsv	309	wildcard_after_tbl0_refresh_20260628
 tbl	tbl0.pak	0x01371ED5	UD1 Shard	17c89965ec30	UD1碎片	accepted	legacy/translations/tbl_overrides.tsv	310	
 tbl	tbl0.pak	0x01372051	UD2 Shard	16235397ac9b	UD2碎片	accepted	legacy/translations/tbl_overrides.tsv	311	
 tbl	tbl0.pak	0x013721CD	UD3 Shard	0cfe2095f92c	UD3碎片	accepted	legacy/translations/tbl_overrides.tsv	312	
@@ -1452,25 +1452,25 @@ tbl	tbl0.pak	0x013A6E69	UD2 Coin	863cfda1d764	UD2硬币	accepted	legacy/translat
 tbl	tbl0.pak	0x013A6FE5	UD3 Coin	365c483ed885	UD3硬币	accepted	legacy/translations/tbl_overrides.tsv	333	
 tbl	tbl0.pak	0x013AFFE1	Downgrade Weapon 85	4075b3525e64	降级武器85	accepted	legacy/translations/tbl_overrides.tsv	334	
 tbl	tbl0.pak	0x013B05D1	Moro Coin	73a2875cf4bb	摩罗硬币	accepted	legacy/translations/tbl_overrides.tsv	335	
-tbl	tbl0.pak	0x013BAC11	(Dragon) Potion Great Namek	d169c341ae89	(龙族)巨大那美克药水	accepted	legacy/translations/tbl_overrides.tsv	336	
-tbl	tbl0.pak	0x013BAD8D	(Dragon) Potion Kamiccolo	c51e53dc8c94	(龙族)卡米克洛药水	accepted	legacy/translations/tbl_overrides.tsv	337	
-tbl	tbl0.pak	0x013BAF09	(Dragon) Potion Dark Namek	96e7c2d9186e	(龙族)黑暗那美克药水	accepted	legacy/translations/tbl_overrides.tsv	338	
-tbl	tbl0.pak	0x013BB085	(Dragon) Potion Great Orange	cc5d95bf39d7	(龙族) Potion Great Orange	accepted	legacy/translations/tbl_overrides.tsv	339	
-tbl	tbl0.pak	0x013BB201	(Dragon) Potion Orange	d94a8c41ddd5	(龙族) Potion Orange	accepted	legacy/translations/tbl_overrides.tsv	340	
-tbl	tbl0.pak	0x013BB37D	(Dragon) Potion Muscle Orange	41aea9ea79d8	(龙族) Potion Muscle Orange	accepted	legacy/translations/tbl_overrides.tsv	341	
-tbl	tbl0.pak	0x013BB4F9	(Dragon) Potion Imperator	076a48288418	(龙族)帝王药水	accepted	legacy/translations/tbl_overrides.tsv	342	
-tbl	tbl0.pak	0x013BB675	(Might) Potion Pure Majin	c2efebd7590b	(大魔人)纯粹魔人药水	accepted	legacy/translations/tbl_overrides.tsv	343	
-tbl	tbl0.pak	0x013BB96D	(Might) Potion Super Boo	b024aafe59dc	(大魔人)超级布欧药水	accepted	legacy/translations/tbl_overrides.tsv	344	
-tbl	tbl0.pak	0x013BBAE9	(Might) Potion Bootenks	8d7ff15709d8	(大魔人)布欧悟天克斯药水	accepted	legacy/translations/tbl_overrides.tsv	345	
-tbl	tbl0.pak	0x013BBC65	(Might) Potion Buuhan	e6980fbfca94	(大魔人)布欧悟饭药水	accepted	legacy/translations/tbl_overrides.tsv	346	
-tbl	tbl0.pak	0x013BBDE1	(Might) Potion SS3	8d6c5f039267	(大魔人)超级赛亚人3药水	accepted	legacy/translations/tbl_overrides.tsv	347	
-tbl	tbl0.pak	0x013BBF5D	(Might) Potion Xeno	5c0ed03c96fc	(大魔人)异次元药水	accepted	legacy/translations/tbl_overrides.tsv	348	
-tbl	tbl0.pak	0x013BC0D9	(Wonder) Potion Pure Majin	fdf280a89189	(意魔人)纯粹魔人药水	accepted	legacy/translations/tbl_overrides.tsv	349	
-tbl	tbl0.pak	0x013BC3D1	(Wonder) Potion Super Boo	23182edcb5ce	(意魔人)超级布欧药水	accepted	legacy/translations/tbl_overrides.tsv	350	
-tbl	tbl0.pak	0x013BC54D	(Wonder) Potion Bootenks	3a234ae927c3	(意魔人)布欧悟天克斯药水	accepted	legacy/translations/tbl_overrides.tsv	351	
-tbl	tbl0.pak	0x013BC6C9	(Wonder) Potion Buuhan	7383ff5849ef	(意魔人)布欧悟饭药水	accepted	legacy/translations/tbl_overrides.tsv	352	
-tbl	tbl0.pak	0x013BC845	(Wonder) Potion SS3	69c4f187ffed	(意魔人)超级赛亚人3药水	accepted	legacy/translations/tbl_overrides.tsv	353	
-tbl	tbl0.pak	0x013BC9C1	(Wonder) Potion Xeno	fff3ff6dd87f	(意魔人)异次元药水	accepted	legacy/translations/tbl_overrides.tsv	354	
+tbl	tbl0.pak	*	(Dragon) Potion Great Namek	d169c341ae89	(龙族)巨大那美克药水	accepted	legacy/translations/tbl_overrides.tsv	336	wildcard_after_tbl0_refresh_20260628
+tbl	tbl0.pak	*	(Dragon) Potion Kamiccolo	c51e53dc8c94	(龙族)卡米克洛药水	accepted	legacy/translations/tbl_overrides.tsv	337	wildcard_after_tbl0_refresh_20260628
+tbl	tbl0.pak	*	(Dragon) Potion Dark Namek	96e7c2d9186e	(龙族)黑暗那美克药水	accepted	legacy/translations/tbl_overrides.tsv	338	wildcard_after_tbl0_refresh_20260628
+tbl	tbl0.pak	*	(Dragon) Potion Great Orange	cc5d95bf39d7	(龙族) Potion Great Orange	accepted	legacy/translations/tbl_overrides.tsv	339	wildcard_after_tbl0_refresh_20260628
+tbl	tbl0.pak	*	(Dragon) Potion Orange	d94a8c41ddd5	(龙族) Potion Orange	accepted	legacy/translations/tbl_overrides.tsv	340	wildcard_after_tbl0_refresh_20260628
+tbl	tbl0.pak	*	(Dragon) Potion Muscle Orange	41aea9ea79d8	(龙族) Potion Muscle Orange	accepted	legacy/translations/tbl_overrides.tsv	341	wildcard_after_tbl0_refresh_20260628
+tbl	tbl0.pak	*	(Dragon) Potion Imperator	076a48288418	(龙族)帝王药水	accepted	legacy/translations/tbl_overrides.tsv	342	wildcard_after_tbl0_refresh_20260628
+tbl	tbl0.pak	*	(Might) Potion Pure Majin	c2efebd7590b	(大魔人)纯粹魔人药水	accepted	legacy/translations/tbl_overrides.tsv	343	wildcard_after_tbl0_refresh_20260628
+tbl	tbl0.pak	*	(Might) Potion Super Boo	b024aafe59dc	(大魔人)超级布欧药水	accepted	legacy/translations/tbl_overrides.tsv	344	wildcard_after_tbl0_refresh_20260628
+tbl	tbl0.pak	*	(Might) Potion Bootenks	8d7ff15709d8	(大魔人)布欧悟天克斯药水	accepted	legacy/translations/tbl_overrides.tsv	345	wildcard_after_tbl0_refresh_20260628
+tbl	tbl0.pak	*	(Might) Potion Buuhan	e6980fbfca94	(大魔人)布欧悟饭药水	accepted	legacy/translations/tbl_overrides.tsv	346	wildcard_after_tbl0_refresh_20260628
+tbl	tbl0.pak	*	(Might) Potion SS3	8d6c5f039267	(大魔人)超级赛亚人3药水	accepted	legacy/translations/tbl_overrides.tsv	347	wildcard_after_tbl0_refresh_20260628
+tbl	tbl0.pak	*	(Might) Potion Xeno	5c0ed03c96fc	(大魔人)异次元药水	accepted	legacy/translations/tbl_overrides.tsv	348	wildcard_after_tbl0_refresh_20260628
+tbl	tbl0.pak	*	(Wonder) Potion Pure Majin	fdf280a89189	(意魔人)纯粹魔人药水	accepted	legacy/translations/tbl_overrides.tsv	349	wildcard_after_tbl0_refresh_20260628
+tbl	tbl0.pak	*	(Wonder) Potion Super Boo	23182edcb5ce	(意魔人)超级布欧药水	accepted	legacy/translations/tbl_overrides.tsv	350	wildcard_after_tbl0_refresh_20260628
+tbl	tbl0.pak	*	(Wonder) Potion Bootenks	3a234ae927c3	(意魔人)布欧悟天克斯药水	accepted	legacy/translations/tbl_overrides.tsv	351	wildcard_after_tbl0_refresh_20260628
+tbl	tbl0.pak	*	(Wonder) Potion Buuhan	7383ff5849ef	(意魔人)布欧悟饭药水	accepted	legacy/translations/tbl_overrides.tsv	352	wildcard_after_tbl0_refresh_20260628
+tbl	tbl0.pak	*	(Wonder) Potion SS3	69c4f187ffed	(意魔人)超级赛亚人3药水	accepted	legacy/translations/tbl_overrides.tsv	353	wildcard_after_tbl0_refresh_20260628
+tbl	tbl0.pak	*	(Wonder) Potion Xeno	fff3ff6dd87f	(意魔人)异次元药水	accepted	legacy/translations/tbl_overrides.tsv	354	wildcard_after_tbl0_refresh_20260628
 tbl	tbl0.pak	0x013BF1D5	(Dragon) Capsule Great Namek	698cbd73f90b	(龙族)巨大那美克胶囊	accepted	legacy/translations/tbl_overrides.tsv	355	
 tbl	tbl0.pak	0x013BF351	(Dragon) Capsule Kamiccolo	776fb043e0b9	(龙族)卡米克洛胶囊	accepted	legacy/translations/tbl_overrides.tsv	356	
 tbl	tbl0.pak	0x013BF4CD	(Dragon) Capsule Dark Namek	06d20a624bb3	(龙族)黑暗那美克胶囊	accepted	legacy/translations/tbl_overrides.tsv	357	
@@ -1490,36 +1490,36 @@ tbl	tbl0.pak	0x013C0B11	(Wonder) Capsule Bootenks	318aa6bea674	(意魔人)布欧
 tbl	tbl0.pak	0x013C0C8D	(Wonder) Capsule Buuhan	5d017bbbc75c	(意魔人)布欧悟饭胶囊	accepted	legacy/translations/tbl_overrides.tsv	371	
 tbl	tbl0.pak	0x013C0E09	(Wonder) Capsule SS3	8d82bf283b2d	(意魔人)超级赛亚人3胶囊	accepted	legacy/translations/tbl_overrides.tsv	372	
 tbl	tbl0.pak	0x013C0F85	(Wonder) Capsule Xeno	f7254bcb9942	(意魔人)异次元胶囊	accepted	legacy/translations/tbl_overrides.tsv	373	
-tbl	tbl0.pak	0x013C13F9	(Martial) Potion Super Saiyan 1	96d897f630dd	(武道家)超级赛亚人1药水	accepted	legacy/translations/tbl_overrides.tsv	374	
-tbl	tbl0.pak	0x013C1575	(Martial) Potion Super Saiyan 2	16e6f7a231bb	(武道家)超级赛亚人2药水	accepted	legacy/translations/tbl_overrides.tsv	375	
-tbl	tbl0.pak	0x013C16F1	(Martial) Potion Super Saiyan 3	83e1f6771269	(武道家)超级赛亚人3药水	accepted	legacy/translations/tbl_overrides.tsv	376	
-tbl	tbl0.pak	0x013C1FD9	(Martial) Potion Super Saiyan 4	4555e2a07da5	(武道家)超级赛亚人4药水	accepted	legacy/translations/tbl_overrides.tsv	377	
-tbl	tbl0.pak	0x013C302D	(Warrior) Potion Great Namek	e9c05c8cc90f	(那美克战士)巨大那美克药水	accepted	legacy/translations/tbl_overrides.tsv	378	
-tbl	tbl0.pak	0x013C31A9	(Warrior) Potion Kamiccolo	a580d36c8c7e	(那美克战士)卡米克洛药水	accepted	legacy/translations/tbl_overrides.tsv	379	
-tbl	tbl0.pak	0x013C3325	(Warrior) Potion Dark Namek	1e1607c047b4	(那美克战士)黑暗那美克药水	accepted	legacy/translations/tbl_overrides.tsv	380	
-tbl	tbl0.pak	0x013C34A1	(Warrior) Potion Great Orange	8064e0adcf41	(那美克战士)巨大橙色药水	accepted	legacy/translations/tbl_overrides.tsv	381	
-tbl	tbl0.pak	0x013C361D	(Warrior) Potion Orange	4b245bd49ce6	(那美克战士)橙色药水	accepted	legacy/translations/tbl_overrides.tsv	382	
-tbl	tbl0.pak	0x013C3799	(Warrior) Potion Muscle Orange	6268e2bf6309	(那美克战士)肌肉橙色药水	accepted	legacy/translations/tbl_overrides.tsv	383	
-tbl	tbl0.pak	0x013C3915	(Warrior) Potion Imperator	db3f7c487140	(那美克战士)帝王药水	accepted	legacy/translations/tbl_overrides.tsv	384	
-tbl	tbl0.pak	0x013C3A91	(Dragon) Potion Great Namek	d169c341ae89	(龙族)巨大那美克药水	accepted	legacy/translations/tbl_overrides.tsv	385	
-tbl	tbl0.pak	0x013C3C0D	(Dragon) Potion Kamiccolo	c51e53dc8c94	(龙族)卡米克洛药水	accepted	legacy/translations/tbl_overrides.tsv	386	
-tbl	tbl0.pak	0x013C3D89	(Dragon) Potion Dark Namek	96e7c2d9186e	(龙族)黑暗那美克药水	accepted	legacy/translations/tbl_overrides.tsv	387	
-tbl	tbl0.pak	0x013C3F05	(Dragon) Potion Great Orange	cc5d95bf39d7	(龙族) Potion Great Orange	accepted	legacy/translations/tbl_overrides.tsv	388	
-tbl	tbl0.pak	0x013C4081	(Dragon) Potion Orange	d94a8c41ddd5	(龙族) Potion Orange	accepted	legacy/translations/tbl_overrides.tsv	389	
-tbl	tbl0.pak	0x013C41FD	(Dragon) Potion Muscle Orange	41aea9ea79d8	(龙族) Potion Muscle Orange	accepted	legacy/translations/tbl_overrides.tsv	390	
-tbl	tbl0.pak	0x013C4379	(Dragon) Potion Imperator	076a48288418	(龙族)帝王药水	accepted	legacy/translations/tbl_overrides.tsv	391	
-tbl	tbl0.pak	0x013C44F5	(Might) Potion Pure Majin	c2efebd7590b	(大魔人)纯粹魔人药水	accepted	legacy/translations/tbl_overrides.tsv	392	
-tbl	tbl0.pak	0x013C47ED	(Might) Potion Super Boo	b024aafe59dc	(大魔人)超级布欧药水	accepted	legacy/translations/tbl_overrides.tsv	393	
-tbl	tbl0.pak	0x013C4969	(Might) Potion Bootenks	8d7ff15709d8	(大魔人)布欧悟天克斯药水	accepted	legacy/translations/tbl_overrides.tsv	394	
-tbl	tbl0.pak	0x013C4AE5	(Might) Potion Buuhan	e6980fbfca94	(大魔人)布欧悟饭药水	accepted	legacy/translations/tbl_overrides.tsv	395	
-tbl	tbl0.pak	0x013C4C61	(Might) Potion SS3	8d6c5f039267	(大魔人)超级赛亚人3药水	accepted	legacy/translations/tbl_overrides.tsv	396	
-tbl	tbl0.pak	0x013C4DDD	(Might) Potion Xeno	5c0ed03c96fc	(大魔人)异次元药水	accepted	legacy/translations/tbl_overrides.tsv	397	
-tbl	tbl0.pak	0x013C4F59	(Wonder) Potion Pure Majin	fdf280a89189	(意魔人)纯粹魔人药水	accepted	legacy/translations/tbl_overrides.tsv	398	
-tbl	tbl0.pak	0x013C5251	(Wonder) Potion Super Boo	23182edcb5ce	(意魔人)超级布欧药水	accepted	legacy/translations/tbl_overrides.tsv	399	
-tbl	tbl0.pak	0x013C53CD	(Wonder) Potion Bootenks	3a234ae927c3	(意魔人)布欧悟天克斯药水	accepted	legacy/translations/tbl_overrides.tsv	400	
-tbl	tbl0.pak	0x013C5549	(Wonder) Potion Buuhan	7383ff5849ef	(意魔人)布欧悟饭药水	accepted	legacy/translations/tbl_overrides.tsv	401	
-tbl	tbl0.pak	0x013C56C5	(Wonder) Potion SS3	69c4f187ffed	(意魔人)超级赛亚人3药水	accepted	legacy/translations/tbl_overrides.tsv	402	
-tbl	tbl0.pak	0x013C5841	(Wonder) Potion Xeno	fff3ff6dd87f	(意魔人)异次元药水	accepted	legacy/translations/tbl_overrides.tsv	403	
+tbl	tbl0.pak	0x013C13F9	(Martial) Potion Super Saiyan 1	96d897f630dd	(武道家)超级赛亚人1药水	disabled_tbl0_wildcard_20260628	legacy/translations/tbl_overrides.tsv	374	covered_by_wildcard_after_tbl0_refresh_20260628
+tbl	tbl0.pak	0x013C1575	(Martial) Potion Super Saiyan 2	16e6f7a231bb	(武道家)超级赛亚人2药水	disabled_tbl0_wildcard_20260628	legacy/translations/tbl_overrides.tsv	375	covered_by_wildcard_after_tbl0_refresh_20260628
+tbl	tbl0.pak	0x013C16F1	(Martial) Potion Super Saiyan 3	83e1f6771269	(武道家)超级赛亚人3药水	disabled_tbl0_wildcard_20260628	legacy/translations/tbl_overrides.tsv	376	covered_by_wildcard_after_tbl0_refresh_20260628
+tbl	tbl0.pak	0x013C1FD9	(Martial) Potion Super Saiyan 4	4555e2a07da5	(武道家)超级赛亚人4药水	disabled_tbl0_wildcard_20260628	legacy/translations/tbl_overrides.tsv	377	covered_by_wildcard_after_tbl0_refresh_20260628
+tbl	tbl0.pak	0x013C302D	(Warrior) Potion Great Namek	e9c05c8cc90f	(那美克战士)巨大那美克药水	disabled_tbl0_wildcard_20260628	legacy/translations/tbl_overrides.tsv	378	covered_by_wildcard_after_tbl0_refresh_20260628
+tbl	tbl0.pak	0x013C31A9	(Warrior) Potion Kamiccolo	a580d36c8c7e	(那美克战士)卡米克洛药水	disabled_tbl0_wildcard_20260628	legacy/translations/tbl_overrides.tsv	379	covered_by_wildcard_after_tbl0_refresh_20260628
+tbl	tbl0.pak	0x013C3325	(Warrior) Potion Dark Namek	1e1607c047b4	(那美克战士)黑暗那美克药水	disabled_tbl0_wildcard_20260628	legacy/translations/tbl_overrides.tsv	380	covered_by_wildcard_after_tbl0_refresh_20260628
+tbl	tbl0.pak	0x013C34A1	(Warrior) Potion Great Orange	8064e0adcf41	(那美克战士)巨大橙色药水	disabled_tbl0_wildcard_20260628	legacy/translations/tbl_overrides.tsv	381	covered_by_wildcard_after_tbl0_refresh_20260628
+tbl	tbl0.pak	0x013C361D	(Warrior) Potion Orange	4b245bd49ce6	(那美克战士)橙色药水	disabled_tbl0_wildcard_20260628	legacy/translations/tbl_overrides.tsv	382	covered_by_wildcard_after_tbl0_refresh_20260628
+tbl	tbl0.pak	0x013C3799	(Warrior) Potion Muscle Orange	6268e2bf6309	(那美克战士)肌肉橙色药水	disabled_tbl0_wildcard_20260628	legacy/translations/tbl_overrides.tsv	383	covered_by_wildcard_after_tbl0_refresh_20260628
+tbl	tbl0.pak	0x013C3915	(Warrior) Potion Imperator	db3f7c487140	(那美克战士)帝王药水	disabled_tbl0_wildcard_20260628	legacy/translations/tbl_overrides.tsv	384	covered_by_wildcard_after_tbl0_refresh_20260628
+tbl	tbl0.pak	0x013C3A91	(Dragon) Potion Great Namek	d169c341ae89	(龙族)巨大那美克药水	disabled_tbl0_wildcard_20260628	legacy/translations/tbl_overrides.tsv	385	covered_by_wildcard_after_tbl0_refresh_20260628
+tbl	tbl0.pak	0x013C3C0D	(Dragon) Potion Kamiccolo	c51e53dc8c94	(龙族)卡米克洛药水	disabled_tbl0_wildcard_20260628	legacy/translations/tbl_overrides.tsv	386	covered_by_wildcard_after_tbl0_refresh_20260628
+tbl	tbl0.pak	0x013C3D89	(Dragon) Potion Dark Namek	96e7c2d9186e	(龙族)黑暗那美克药水	disabled_tbl0_wildcard_20260628	legacy/translations/tbl_overrides.tsv	387	covered_by_wildcard_after_tbl0_refresh_20260628
+tbl	tbl0.pak	0x013C3F05	(Dragon) Potion Great Orange	cc5d95bf39d7	(龙族) Potion Great Orange	disabled_tbl0_wildcard_20260628	legacy/translations/tbl_overrides.tsv	388	covered_by_wildcard_after_tbl0_refresh_20260628
+tbl	tbl0.pak	0x013C4081	(Dragon) Potion Orange	d94a8c41ddd5	(龙族) Potion Orange	disabled_tbl0_wildcard_20260628	legacy/translations/tbl_overrides.tsv	389	covered_by_wildcard_after_tbl0_refresh_20260628
+tbl	tbl0.pak	0x013C41FD	(Dragon) Potion Muscle Orange	41aea9ea79d8	(龙族) Potion Muscle Orange	disabled_tbl0_wildcard_20260628	legacy/translations/tbl_overrides.tsv	390	covered_by_wildcard_after_tbl0_refresh_20260628
+tbl	tbl0.pak	0x013C4379	(Dragon) Potion Imperator	076a48288418	(龙族)帝王药水	disabled_tbl0_wildcard_20260628	legacy/translations/tbl_overrides.tsv	391	covered_by_wildcard_after_tbl0_refresh_20260628
+tbl	tbl0.pak	0x013C44F5	(Might) Potion Pure Majin	c2efebd7590b	(大魔人)纯粹魔人药水	disabled_tbl0_wildcard_20260628	legacy/translations/tbl_overrides.tsv	392	covered_by_wildcard_after_tbl0_refresh_20260628
+tbl	tbl0.pak	0x013C47ED	(Might) Potion Super Boo	b024aafe59dc	(大魔人)超级布欧药水	disabled_tbl0_wildcard_20260628	legacy/translations/tbl_overrides.tsv	393	covered_by_wildcard_after_tbl0_refresh_20260628
+tbl	tbl0.pak	0x013C4969	(Might) Potion Bootenks	8d7ff15709d8	(大魔人)布欧悟天克斯药水	disabled_tbl0_wildcard_20260628	legacy/translations/tbl_overrides.tsv	394	covered_by_wildcard_after_tbl0_refresh_20260628
+tbl	tbl0.pak	0x013C4AE5	(Might) Potion Buuhan	e6980fbfca94	(大魔人)布欧悟饭药水	disabled_tbl0_wildcard_20260628	legacy/translations/tbl_overrides.tsv	395	covered_by_wildcard_after_tbl0_refresh_20260628
+tbl	tbl0.pak	0x013C4C61	(Might) Potion SS3	8d6c5f039267	(大魔人)超级赛亚人3药水	disabled_tbl0_wildcard_20260628	legacy/translations/tbl_overrides.tsv	396	covered_by_wildcard_after_tbl0_refresh_20260628
+tbl	tbl0.pak	0x013C4DDD	(Might) Potion Xeno	5c0ed03c96fc	(大魔人)异次元药水	disabled_tbl0_wildcard_20260628	legacy/translations/tbl_overrides.tsv	397	covered_by_wildcard_after_tbl0_refresh_20260628
+tbl	tbl0.pak	0x013C4F59	(Wonder) Potion Pure Majin	fdf280a89189	(意魔人)纯粹魔人药水	disabled_tbl0_wildcard_20260628	legacy/translations/tbl_overrides.tsv	398	covered_by_wildcard_after_tbl0_refresh_20260628
+tbl	tbl0.pak	0x013C5251	(Wonder) Potion Super Boo	23182edcb5ce	(意魔人)超级布欧药水	disabled_tbl0_wildcard_20260628	legacy/translations/tbl_overrides.tsv	399	covered_by_wildcard_after_tbl0_refresh_20260628
+tbl	tbl0.pak	0x013C53CD	(Wonder) Potion Bootenks	3a234ae927c3	(意魔人)布欧悟天克斯药水	disabled_tbl0_wildcard_20260628	legacy/translations/tbl_overrides.tsv	400	covered_by_wildcard_after_tbl0_refresh_20260628
+tbl	tbl0.pak	0x013C5549	(Wonder) Potion Buuhan	7383ff5849ef	(意魔人)布欧悟饭药水	disabled_tbl0_wildcard_20260628	legacy/translations/tbl_overrides.tsv	401	covered_by_wildcard_after_tbl0_refresh_20260628
+tbl	tbl0.pak	0x013C56C5	(Wonder) Potion SS3	69c4f187ffed	(意魔人)超级赛亚人3药水	disabled_tbl0_wildcard_20260628	legacy/translations/tbl_overrides.tsv	402	covered_by_wildcard_after_tbl0_refresh_20260628
+tbl	tbl0.pak	0x013C5841	(Wonder) Potion Xeno	fff3ff6dd87f	(意魔人)异次元药水	disabled_tbl0_wildcard_20260628	legacy/translations/tbl_overrides.tsv	403	covered_by_wildcard_after_tbl0_refresh_20260628
 tbl	tbl0.pak	0x0143904D	Field Boss 01	2af9a8187ebf	野外首领01	accepted	legacy/translations/tbl_overrides.tsv	404	
 tbl	tbl0.pak	0x01439175	Field Boss 02	689d89f1ed0b	野外首领02	accepted	legacy/translations/tbl_overrides.tsv	405	
 tbl	tbl0.pak	0x0143929D	Field Boss 03	6083a9b91e67	野外首领03	accepted	legacy/translations/tbl_overrides.tsv	406	
