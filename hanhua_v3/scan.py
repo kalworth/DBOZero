@@ -4,10 +4,18 @@ import argparse
 import csv
 import hashlib
 import re
+import sys
 from collections import defaultdict
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Iterable
+
+
+ROOT = Path(__file__).resolve().parents[1]
+LEGACY_TOOLS = ROOT / "legacy" / "tools"
+sys.path.insert(0, str(LEGACY_TOOLS))
+
+import install_hanhua  # noqa: E402
 
 
 TAIWAN_FILES = (
@@ -30,6 +38,14 @@ LEGACY_CANDIDATE_FILES = (
     "lang0_candidates.tsv",
     "tbl_candidates.tsv",
 )
+
+LOCAL_DATA_SHORT_UI_MAX_CHARS = 24
+LOCAL_DATA_MESSAGE_KEY_RE = re.compile(
+    r"(?:_MSG|MESSAGE|NOTICE|NOTIFY|INFO|GUIDE|HTML|DESC|DESCRIPTION|TOOLTIP|CONFIRM|ASK|FAIL|FAILED|SUCCESS|"
+    r"ERROR|WARNING|ALERT|MAIL|COMMERCIAL|LOBBY|MARKET|FRIEND|QUEST|TUTORIAL|HELP|SYSTEM)"
+)
+LOCAL_DATA_RICH_TEXT_RE = re.compile(r"\[(?:/?font|br|align|metatag)\b", re.IGNORECASE)
+PRINTF_RE = re.compile(r"%(?:\d+\$)?[+#0\- ]*(?:\d+|\*)?(?:\.(?:\d+|\*))?[hlL]?[diuoxXfFeEgGaAcspn%]")
 
 
 @dataclass(frozen=True)
@@ -108,6 +124,39 @@ def has_cjk(text: str) -> bool:
         or "\uf900" <= ch <= "\ufaff"
         for ch in text
     )
+
+
+def printf_specs(text: str) -> list[str]:
+    return [spec for spec in PRINTF_RE.findall(text) if spec != "%%"]
+
+
+def is_rich_or_multiline_text(text: str) -> bool:
+    return bool(LOCAL_DATA_RICH_TEXT_RE.search(text) or "\n" in text or "\r" in text or "\\n" in text)
+
+
+def is_message_like_key(item_id: str) -> bool:
+    return bool(LOCAL_DATA_MESSAGE_KEY_RE.search(item_id.upper()))
+
+
+def is_short_local_data_ui_reference(entry: CatalogEntry, translation: str) -> bool:
+    text = translation
+    if entry.surface != "lang0" or entry.file_name != "lang0.pak":
+        return False
+    if entry.source_text != entry.source_text.strip() and not entry.item_id.upper().startswith("DST_STATS_"):
+        return False
+    if text != text.strip():
+        return False
+    if not text or not has_cjk(text):
+        return False
+    if len(text) > LOCAL_DATA_SHORT_UI_MAX_CHARS:
+        return False
+    if is_message_like_key(entry.item_id) and not entry.item_id.upper().startswith("DST_STATS_"):
+        return False
+    if is_rich_or_multiline_text(entry.source_text) or is_rich_or_multiline_text(text):
+        return False
+    if printf_specs(entry.source_text) != printf_specs(text):
+        return False
+    return True
 
 
 def looks_like_translation_candidate(text: str) -> bool:
@@ -789,6 +838,17 @@ def build_legacy_suggestion_index(legacy: list[LegacyCandidate]) -> dict[str, li
     return by_text
 
 
+def build_local_data_reference_index(entries: list[CatalogEntry]) -> dict[str, str]:
+    by_id: dict[str, str] = {}
+    for entry in entries:
+        if entry.surface != "taiwan" or entry.file_name != "local_data.dat":
+            continue
+        translation = install_hanhua.to_simplified(entry.source_text)
+        if translation.strip() and has_cjk(translation):
+            by_id[entry.item_id] = translation
+    return by_id
+
+
 def unique_join(values: Iterable[str], limit: int = 12) -> str:
     seen: list[str] = []
     for value in values:
@@ -1165,6 +1225,7 @@ def write_new_translation_queue(
     existing_queue: dict[tuple[str, str, str], dict[str, str]] | None = None,
 ) -> int:
     existing_queue = existing_queue or {}
+    local_data_by_id = build_local_data_reference_index(entries)
 
     def rows():
         emitted_tbl_sources: set[tuple[str, str]] = set()
@@ -1177,11 +1238,21 @@ def write_new_translation_queue(
                 continue
             text_norm = normalize_text(entry.source_text)
             legacy_suggestions = legacy_by_text.get(text_norm, [])
-            suggested = legacy_suggestions[0].translation if legacy_suggestions else ""
+            legacy_suggestion = legacy_suggestions[0].translation if legacy_suggestions else ""
+            local_data_suggestion = local_data_by_id.get(entry.item_id, "")
+            if local_data_suggestion and not is_short_local_data_ui_reference(entry, local_data_suggestion):
+                local_data_suggestion = ""
+            suggested = local_data_suggestion or legacy_suggestion
             old_row = existing_queue.get(queue_key(entry.file_name, entry.item_id, entry.source_text), {})
             if not old_row and entry.surface == "tbl" and entry.encoding == "utf-16le":
                 old_row = existing_queue.get(queue_key(entry.file_name, "*", entry.source_text), {})
             filled = old_row.get("填写中文") or ""
+            if local_data_suggestion:
+                simplified_filled = install_hanhua.to_simplified(filled)
+                if filled and simplified_filled == local_data_suggestion:
+                    filled = local_data_suggestion
+                elif not filled and translation_bytes_fit(entry, local_data_suggestion) == "ok":
+                    filled = local_data_suggestion
             old_suggested = old_row.get("参考译文") or ""
             if entry.surface == "tbl" and not (filled or suggested or tbl_queue_candidate_text(entry.source_text)):
                 continue
@@ -1601,6 +1672,7 @@ def write_summary(
             "## Policy notes",
             "",
             "- Taiwan text is now reference material, not the primary translation source.",
+            "- Same-key local_data.dat text is promoted only for short lang0 UI labels after simplified-Chinese conversion; rich/long/message-like lang0 rows and TBL rows keep their own workflow.",
             "- Manual translations imported from legacy override TSV files are marked accepted.",
             "- Candidate suggestions from old candidate TSV files are reference-only.",
             "- Existing translations in data/translations.tsv are treated as the editable v3 master table.",
