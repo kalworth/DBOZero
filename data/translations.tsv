@@ -257,12 +257,12 @@ lang0	lang0.pak	DST_EQUIP_SLOT_TYPE_DOGI	Dogi	8a3cbc4a85de	时装	accepted	legac
 lang0	lang0.pak	DST_LOBBY_CHARACTER_MAKE	New Character	991697573c36	创建新角色	accepted	legacy/translations/lang0_overrides.tsv	6	
 lang0	lang0.pak	DST_ITEM_GRADE_HERO	Divine	1b8cf090e6ef	神圣	accepted	legacy/translations/lang0_overrides.tsv	7	
 lang0	lang0.pak	DST_ITEMLIST_ITEMNAME	Name: %s	6ac139c4f333	名称: %s	accepted	legacy/translations/lang0_overrides.tsv	8	
-lang0	lang0.pak	DST_STATUS_STAT_CON	CON		耐	accepted			base_status_attrs_translated
-lang0	lang0.pak	DST_STATUS_STAT_DEX	DEX		敏	accepted			base_status_attrs_translated
-lang0	lang0.pak	DST_STATUS_STAT_ENG	ENG		运	accepted			base_status_attrs_translated
-lang0	lang0.pak	DST_STATUS_STAT_FOC	FOC		专	accepted			base_status_focus_translated
-lang0	lang0.pak	DST_STATUS_STAT_SOL	SOL		气	accepted			base_status_attrs_translated
-lang0	lang0.pak	DST_STATUS_STAT_STR	STR		力	accepted			base_status_attrs_translated
+lang0	lang0.pak	DST_STATUS_STAT_CON	CON		耐	accepted			base_status_attrs_fixed_lang0_short
+lang0	lang0.pak	DST_STATUS_STAT_DEX	DEX		敏	accepted			base_status_attrs_fixed_lang0_short
+lang0	lang0.pak	DST_STATUS_STAT_ENG	ENG		运	accepted			base_status_attrs_fixed_lang0_short
+lang0	lang0.pak	DST_STATUS_STAT_FOC	FOC		集	accepted			base_status_attrs_fixed_lang0_short
+lang0	lang0.pak	DST_STATUS_STAT_SOL	SOL		气	accepted			base_status_attrs_fixed_lang0_short
+lang0	lang0.pak	DST_STATUS_STAT_STR	STR		力	accepted			base_status_attrs_fixed_lang0_short
 lang0	lang0.pak	DST_STATUS_AP	P.Level		战斗力	accepted			status_panel_full_group_keep_english
 lang0	lang0.pak	DST_STATUS_ATTACK	Attack	1b81f28b5afb	攻击力	accepted	legacy/translations/lang0_overrides.tsv	16	
 lang0	lang0.pak	DST_STATUS_ATTACK_RATE	Hit Rate	27a36c2c2dcf	命中率	accepted	legacy/translations/lang0_overrides.tsv	17	
@@ -418,12 +418,12 @@ lang0	lang0.pak	DST_MAINMENU_END_SESSION	Log Out	4e8131ca3794	回角色	accepted
 lang0	lang0.pak	DST_MAINMENU_CHANNEL_CHANGE	Change Channel	d25153242357	频道变更	accepted	legacy/translations/lang0_overrides.tsv	165	
 lang0	lang0.pak	DST_CCBD_BOARD_INAVLID_ITEM	Invalid Item.	a993b1abf464	无效物品。	accepted	legacy/translations/lang0_overrides.tsv	166	
 lang0	lang0.pak	DST_MULTIDIALOG_MENU_UPGRADE	Item Upgrade	9bef00c25758	道具升级	accepted	legacy/translations/lang0_overrides.tsv	167	
-lang0	lang0.pak	DST_ITEM_ATTR_ELEGANCE	Water	de9b1be49dae	丽	accepted	legacy/translations/lang0_overrides.tsv	170	
-lang0	lang0.pak	DST_ITEM_ATTR_FUNNY	Fire	78baebfcb4b5	乐	accepted	legacy/translations/lang0_overrides.tsv	171	
-lang0	lang0.pak	DST_ITEM_ATTR_HONEST	Ice	0a2af398fe47	真	accepted	legacy/translations/lang0_overrides.tsv	172	
+lang0	lang0.pak	DST_ITEM_ATTR_ELEGANCE	Water	de9b1be49dae	水	accepted	legacy/translations/lang0_overrides.tsv	170	new_element_attrs_lang0
+lang0	lang0.pak	DST_ITEM_ATTR_FUNNY	Fire	78baebfcb4b5	火	accepted	legacy/translations/lang0_overrides.tsv	171	new_element_attrs_lang0
+lang0	lang0.pak	DST_ITEM_ATTR_HONEST	Ice	0a2af398fe47	冰	accepted	legacy/translations/lang0_overrides.tsv	172	new_element_attrs_lang0
 lang0	lang0.pak	DST_ITEM_ATTR_NONE	None	6eef6648406c	无	accepted	legacy/translations/lang0_overrides.tsv	173	
-lang0	lang0.pak	DST_ITEM_ATTR_STRANGE	Lightning	4504e5f0bfcc	奇	accepted	legacy/translations/lang0_overrides.tsv	174	
-lang0	lang0.pak	DST_ITEM_ATTR_WILD	Wind	142b5758f344	猛	accepted	legacy/translations/lang0_overrides.tsv	175	
+lang0	lang0.pak	DST_ITEM_ATTR_STRANGE	Lightning	4504e5f0bfcc	雷	accepted	legacy/translations/lang0_overrides.tsv	174	new_element_attrs_lang0
+lang0	lang0.pak	DST_ITEM_ATTR_WILD	Wind	142b5758f344	风	accepted	legacy/translations/lang0_overrides.tsv	175	new_element_attrs_lang0
 lang0	lang0.pak	DST_SKILL_TARGET_AND_RANGE_INFO1	Self Cast	92aad10c73d4	自身施放	accepted	legacy/translations/lang0_overrides.tsv	176	
 lang0	lang0.pak	DST_SKILL_TARGET_AND_RANGE_INFO2	All Enemies within %dM on %d targets	96fcae883444	对自身半径%d米内的敌人%d名使用	accepted	legacy/translations/lang0_overrides.tsv	177	
 lang0	lang0.pak	DST_SKILL_TARGET_AND_RANGE_INFO3	All Enemies within %d x %dM of the surrounding landscape on %d targets	0ba6f08a38a2	对自身周围%d米 x %d米内的敌人%d名使用	accepted	legacy/translations/lang0_overrides.tsv	178	
@@ -3068,9 +3068,25 @@ taiwan	local_data.dat	DST_CHANGE_ITEMBATTLEATTR_TWO_MSG		331d339e697d	"[align = 
 taiwan	local_data.dat	DST_ITEMPROPERTY_TRANSFER		bd276a9521ee	更改属性	accepted	manual		runtime PROP placeholder/layout fix
 taiwan	local_data.dat	DST_ITEMPROPERTY_TRANSFER_INFOTITLE		2367f42fa307	选择属性并赋予手套或上衣。	accepted	manual		runtime PROP placeholder/layout fix
 taiwan	local_data.dat	DST_STATUS_AP	戰鬥力		P.Level	accepted			status_panel_full_group_keep_english
-taiwan	local_data.dat	DST_STATUS_STAT_CON	耐		耐	accepted			base_status_attrs_translated
-taiwan	local_data.dat	DST_STATUS_STAT_DEX	敏		敏	accepted			base_status_attrs_translated
-taiwan	local_data.dat	DST_STATUS_STAT_ENG	運		運	accepted			base_status_attrs_translated
-taiwan	local_data.dat	DST_STATUS_STAT_FOC	集		集	accepted			base_status_focus_translated
-taiwan	local_data.dat	DST_STATUS_STAT_SOL	氣		氣	accepted			base_status_attrs_translated
-taiwan	local_data.dat	DST_STATUS_STAT_STR	力		力	accepted			base_status_attrs_translated
+taiwan	local_data.dat	DST_STATUS_STAT_CON	耐		耐力	accepted			base_status_attrs_full_local_data
+taiwan	local_data.dat	DST_STATUS_STAT_DEX	敏		敏捷	accepted			base_status_attrs_full_local_data
+taiwan	local_data.dat	DST_STATUS_STAT_ENG	運		幸运	accepted			base_status_attrs_full_local_data
+taiwan	local_data.dat	DST_STATUS_STAT_FOC	集		集中	accepted			base_status_attrs_full_local_data
+taiwan	local_data.dat	DST_STATUS_STAT_SOL	氣		气合	accepted			base_status_attrs_full_local_data
+taiwan	local_data.dat	DST_STATUS_STAT_STR	力		力量	accepted			base_status_attrs_full_local_data
+taiwan	local_data.dat	DST_ITEM_ATTR_ELEGANCE	丽		水	accepted			new_element_attrs_local_data_mirror
+taiwan	local_data.dat	DST_ITEM_ATTR_FUNNY	乐		火	accepted			new_element_attrs_local_data_mirror
+taiwan	local_data.dat	DST_ITEM_ATTR_HONEST	真		冰	accepted			new_element_attrs_local_data_mirror
+taiwan	local_data.dat	DST_ITEM_ATTR_STRANGE	奇		雷	accepted			new_element_attrs_local_data_mirror
+taiwan	local_data.dat	DST_ITEM_ATTR_WILD	猛		风	accepted			new_element_attrs_local_data_mirror
+taiwan	local_data.dat	DST_STATS_HDR_ATTR	元素		属性	accepted			new_element_attrs_local_data_mirror
+taiwan	local_data.dat	DST_STATS_LBL_HON_OFF	诚攻:		冰攻:	accepted			new_element_attrs_local_data_mirror
+taiwan	local_data.dat	DST_STATS_LBL_HON_DEF	诚防:		冰防:	accepted			new_element_attrs_local_data_mirror
+taiwan	local_data.dat	DST_STATS_LBL_STR_OFF	怪攻:		雷攻:	accepted			new_element_attrs_local_data_mirror
+taiwan	local_data.dat	DST_STATS_LBL_STR_DEF	怪防:		雷防:	accepted			new_element_attrs_local_data_mirror
+taiwan	local_data.dat	DST_STATS_LBL_WLD_OFF	野攻:		风攻:	accepted			new_element_attrs_local_data_mirror
+taiwan	local_data.dat	DST_STATS_LBL_WLD_DEF	野防:		风防:	accepted			new_element_attrs_local_data_mirror
+taiwan	local_data.dat	DST_STATS_LBL_ELG_OFF	雅攻:		水攻:	accepted			new_element_attrs_local_data_mirror
+taiwan	local_data.dat	DST_STATS_LBL_ELG_DEF	雅防:		水防:	accepted			new_element_attrs_local_data_mirror
+taiwan	local_data.dat	DST_STATS_LBL_FNY_OFF	搞攻:		火攻:	accepted			new_element_attrs_local_data_mirror
+taiwan	local_data.dat	DST_STATS_LBL_FNY_DEF	搞防:		火防:	accepted			new_element_attrs_local_data_mirror

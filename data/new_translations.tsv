@@ -1235,12 +1235,12 @@ UI	lang0.pak	DST_ITEM_IS_IDENTIFIED_ALREADY	This Item Has Been Identified Alread
 UI	lang0.pak	DST_ITEM_IS_UNIDENTIFIED	This Item Isn't Identified	此为未知的道具。	此为未知的道具。	ok
 UI	lang0.pak	DST_ITEM_LIMITED_DELETE	No-Discard	禁止丢弃	禁止丢弃	ok
 UI	lang0.pak	DST_ITEM_MOVE_SPEED	Speed: %d	移动速度 : %d	速度：%d	ok
-UI	lang0.pak	DST_ITEM_NEED_CON	Need %5d CON	所需耐力 : %5d以上	需要 %5d CON	ok
-UI	lang0.pak	DST_ITEM_NEED_DEX	Need %5d DEX	所需敏捷 : %5d 以上	需要 %5d DEX	ok
-UI	lang0.pak	DST_ITEM_NEED_ENG	Need %5d ENG	所需运气 : %5d 以上	需要 %5d ENG	ok
-UI	lang0.pak	DST_ITEM_NEED_FOC	Need %5d FOC	所需集中力 : %5d 以上	需要 %5d FOC	ok
-UI	lang0.pak	DST_ITEM_NEED_SOL	Need %5d SOL	所需精神力 : %5d 以上	需要 %5d SOL	ok
-UI	lang0.pak	DST_ITEM_NEED_STR	Need %5d STR	所需力量 : %5d 以上	需要 %5d STR	ok
+UI	lang0.pak	DST_ITEM_NEED_CON	Need %5d CON	所需耐力 : %5d以上	需耐力%5d	ok
+UI	lang0.pak	DST_ITEM_NEED_DEX	Need %5d DEX	所需敏捷 : %5d 以上	需敏捷%5d	ok
+UI	lang0.pak	DST_ITEM_NEED_ENG	Need %5d ENG	所需运气 : %5d 以上	需幸运%5d	ok
+UI	lang0.pak	DST_ITEM_NEED_FOC	Need %5d FOC	所需集中力 : %5d 以上	需集中%5d	ok
+UI	lang0.pak	DST_ITEM_NEED_SOL	Need %5d SOL	所需精神力 : %5d 以上	需气合%5d	ok
+UI	lang0.pak	DST_ITEM_NEED_STR	Need %5d STR	所需力量 : %5d 以上	需力量%5d	ok
 UI	lang0.pak	DST_ITEM_NO_TARGET_APPOINTED	No Target!	该道具须指定使用物件。	无目标！	ok
 UI	lang0.pak	DST_ITEM_OPTION_EFFECT	Item Effect	设定效果	设定效果	ok
 UI	lang0.pak	DST_ITEM_OPTION_RESTRUCTURE_BUY	Buy	购买	买	ok
@@ -2640,7 +2640,7 @@ UI	lang0.pak	DST_STATS_RES_COMBAT	Cmb	战	战	ok
 UI	lang0.pak	DST_STATS_RES_FLYRED	Fly	飞	飞	ok
 UI	lang0.pak	DST_STATS_RES_REDUCE	Red	减	减	ok
 UI	lang0.pak	DST_STATS_HDR_COMBAT	COMBAT	战斗	战斗	ok
-UI	lang0.pak	DST_STATS_HDR_ATTR	ELEMENTS	元素	元素	ok
+UI	lang0.pak	DST_STATS_HDR_ATTR	ELEMENTS	属性	属性	ok
 UI	lang0.pak	DST_STATS_ELEM_ATK	%s Atk:	%s攻:	%s攻:	ok
 UI	lang0.pak	DST_STATS_ELEM_DEF	%s Def:	%s防:	%s防:	ok
 UI	lang0.pak	DST_STATS_HDR_SPEED	SPEED	速度	速度	ok
@@ -2670,16 +2670,16 @@ UI	lang0.pak	DST_STATS_LBL_SKN_DMG	Skill Dmg%: 	技伤%:	技伤%:	ok
 UI	lang0.pak	DST_STATS_LBL_SKN_DMGC	Sk.Dmg/Cs:  	技伤/秒	技伤/秒	ok
 UI	lang0.pak	DST_STATS_LBL_NONE_OFF	None Atk:   	无攻:	无攻:	ok
 UI	lang0.pak	DST_STATS_LBL_NONE_DEF	None Def:   	无防:	无防:	ok
-UI	lang0.pak	DST_STATS_LBL_HON_OFF	Honest Atk: 	诚攻:	诚攻:	ok
-UI	lang0.pak	DST_STATS_LBL_HON_DEF	Honest Def: 	诚防:	诚防:	ok
-UI	lang0.pak	DST_STATS_LBL_STR_OFF	Strange Atk	怪攻:	怪攻:	ok
-UI	lang0.pak	DST_STATS_LBL_STR_DEF	Strange Def	怪防:	怪防:	ok
-UI	lang0.pak	DST_STATS_LBL_WLD_OFF	Wild Atk:   	野攻:	野攻:	ok
-UI	lang0.pak	DST_STATS_LBL_WLD_DEF	Wild Def:   	野防:	野防:	ok
-UI	lang0.pak	DST_STATS_LBL_ELG_OFF	Eleg Atk:   	雅攻:	雅攻:	ok
-UI	lang0.pak	DST_STATS_LBL_ELG_DEF	Eleg Def:   	雅防:	雅防:	ok
-UI	lang0.pak	DST_STATS_LBL_FNY_OFF	Funny Atk:  	搞攻:	搞攻:	ok
-UI	lang0.pak	DST_STATS_LBL_FNY_DEF	Funny Def:  	搞防:	搞防:	ok
+UI	lang0.pak	DST_STATS_LBL_HON_OFF	Honest Atk: 	冰攻:	冰攻:	ok
+UI	lang0.pak	DST_STATS_LBL_HON_DEF	Honest Def: 	冰防:	冰防:	ok
+UI	lang0.pak	DST_STATS_LBL_STR_OFF	Strange Atk	雷攻:	雷攻:	ok
+UI	lang0.pak	DST_STATS_LBL_STR_DEF	Strange Def	雷防:	雷防:	ok
+UI	lang0.pak	DST_STATS_LBL_WLD_OFF	Wild Atk:   	风攻:	风攻:	ok
+UI	lang0.pak	DST_STATS_LBL_WLD_DEF	Wild Def:   	风防:	风防:	ok
+UI	lang0.pak	DST_STATS_LBL_ELG_OFF	Eleg Atk:   	水攻:	水攻:	ok
+UI	lang0.pak	DST_STATS_LBL_ELG_DEF	Eleg Def:   	水防:	水防:	ok
+UI	lang0.pak	DST_STATS_LBL_FNY_OFF	Funny Atk:  	火攻:	火攻:	ok
+UI	lang0.pak	DST_STATS_LBL_FNY_DEF	Funny Def:  	火防:	火防:	ok
 UI	lang0.pak	DST_STATS_LBL_WALK	Walk Spd:   	行走:	行走:	ok
 UI	lang0.pak	DST_STATS_LBL_RUN	Run Spd:    	跑步:	跑步:	ok
 UI	lang0.pak	DST_STATS_LBL_FLY	Fly Spd:    	飞行:	飞行:	ok
@@ -2717,12 +2717,12 @@ UI	lang0.pak	DST_STATS_LBL_UPGRADE	Upgrade%:   	强化%:	强化%:	ok
 UI	lang0.pak	DST_STATS_LBL_EXP	EXP%:       	经验%:	经验%:	ok
 UI	lang0.pak	DST_STATS_LBL_QUEST	Quest Drop%	任务%:	任务%:	ok
 UI	lang0.pak	DST_STATUS_TOOLTIP_ATTR	Attributes		属性	ok
-UI	lang0.pak	DST_STATUS_TOOLTIP_CON	Increases LP\nLP regeneration		增加LP\nLP	ok
-UI	lang0.pak	DST_STATUS_TOOLTIP_DEX	Increases Dodge\nIncreases Phy.Attack\nIncreases Phy.Crit.		增加闪避\n增加物理攻击\n增加物理暴击	ok
-UI	lang0.pak	DST_STATUS_TOOLTIP_ENG	Increases EP\nEP regeneration		增加EP\nEP	ok
-UI	lang0.pak	DST_STATUS_TOOLTIP_FOC	Increases Hit Rate\nIncreases En.Crit.		增加希特概率\n增加 En.Crit.	ok
-UI	lang0.pak	DST_STATUS_TOOLTIP_SOL	Increases Energy Attack		增加气功攻击	ok
-UI	lang0.pak	DST_STATUS_TOOLTIP_STR	Increases Physical Attack		增加物理攻击	ok
+UI	lang0.pak	DST_STATUS_TOOLTIP_CON	Increases LP\nLP regeneration	耐力\n会对LP产生影响。	耐力\n会对LP产生影响。	ok
+UI	lang0.pak	DST_STATUS_TOOLTIP_DEX	Increases Dodge\nIncreases Phy.Attack\nIncreases Phy.Crit.	敏捷\n会对回避率产生影响。	敏捷\n会对回避率产生影响。	ok
+UI	lang0.pak	DST_STATUS_TOOLTIP_ENG	Increases EP\nEP regeneration	幸运\n会对EP产生影响。	幸运\n会对EP产生影响。	ok
+UI	lang0.pak	DST_STATUS_TOOLTIP_FOC	Increases Hit Rate\nIncreases En.Crit.	集中\n会对命中率制造状态异常产生影响。	集中\n会对命中率制造状态异常产生影响。	ok
+UI	lang0.pak	DST_STATUS_TOOLTIP_SOL	Increases Energy Attack	气合\n气攻/异常抗性	气合\n气攻/异常抗性	ok
+UI	lang0.pak	DST_STATUS_TOOLTIP_STR	Increases Physical Attack	力量\n格斗攻击	力量\n格斗攻击	ok
 UI	lang0.pak	DST_STATUS_UNIDENTIFIED_NAME	Unidentified	未知	未知	ok
 UI	lang0.pak	DST_STOMACHACHE_DEFENCE	Abdominal Pain Defense	腹痛防御力	腹痛防御力	ok
 UI	lang0.pak	DST_SUMMER_VACATION_EVENT_SIDEVIEW_CONTENT_01	When Icon marked red (90%),	ICON标示为红色时(90%以上)，	ICON标示为红色时(90%以上)，	ok
