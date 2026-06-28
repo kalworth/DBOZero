@@ -1,4 +1,4 @@
-surface	file	id	source_text	source_hash	zh_cn	status	legacy_source	legacy_row	note
+﻿surface	file	id	source_text	source_hash	zh_cn	status	legacy_source	legacy_row	note
 taiwan	table_text_all_data.rdf	3:7000215:0	Natsu Dragneel Outfit	707ef2c74936	纳兹灭龙外套	accepted	legacy/translations/overrides.tsv	6	
 taiwan	table_text_all_data.rdf	3:70002150:0	Used by DragonSlayer Natsu, the son of a Dragon.	df12df04b912	纳兹灭龙外套，龙之子纳兹专用。	accepted	legacy/translations/overrides.tsv	7	
 taiwan	table_text_all_data.rdf	3:7000231:0	Nika Smoke	886ab141960e	尼卡烟雾	accepted	legacy/translations/overrides.tsv	8	
@@ -259,12 +259,12 @@ lang0	lang0.pak	DST_ITEM_GRADE_HERO	Divine	1b8cf090e6ef	神圣	accepted	legacy/t
 lang0	lang0.pak	DST_ITEMLIST_ITEMNAME	Name: %s	6ac139c4f333	名称: %s	accepted	legacy/translations/lang0_overrides.tsv	8	
 lang0	lang0.pak	DST_STATUS_STAT_CON	CON		耐	accepted			base_status_attrs_translated
 lang0	lang0.pak	DST_STATUS_STAT_DEX	DEX		敏	accepted			base_status_attrs_translated
-lang0	lang0.pak	DST_STATUS_STAT_ENG	ENG		運	accepted			base_status_attrs_translated
-lang0	lang0.pak	DST_STATUS_STAT_FOC	FOC		集	accepted			base_status_focus_translated
-lang0	lang0.pak	DST_STATUS_STAT_SOL	SOL		氣	accepted			base_status_attrs_translated
+lang0	lang0.pak	DST_STATUS_STAT_ENG	ENG		运	accepted			base_status_attrs_translated
+lang0	lang0.pak	DST_STATUS_STAT_FOC	FOC		专	accepted			base_status_focus_translated
+lang0	lang0.pak	DST_STATUS_STAT_SOL	SOL		气	accepted			base_status_attrs_translated
 lang0	lang0.pak	DST_STATUS_STAT_STR	STR		力	accepted			base_status_attrs_translated
-lang0	lang0.pak	DST_STATUS_AP	P.Level		P.Level	accepted			status_panel_full_group_keep_english
-lang0	lang0.pak	DST_STATUS_ATTACK	Attack	1b81f28b5afb	攻击	accepted	legacy/translations/lang0_overrides.tsv	16	
+lang0	lang0.pak	DST_STATUS_AP	P.Level		战斗力	accepted			status_panel_full_group_keep_english
+lang0	lang0.pak	DST_STATUS_ATTACK	Attack	1b81f28b5afb	攻击力	accepted	legacy/translations/lang0_overrides.tsv	16	
 lang0	lang0.pak	DST_STATUS_ATTACK_RATE	Hit Rate	27a36c2c2dcf	命中率	accepted	legacy/translations/lang0_overrides.tsv	17	
 lang0	lang0.pak	DST_STATUS_ATTR	Attr	bc9a688c50df	属性	accepted	legacy/translations/lang0_overrides.tsv	18	
 lang0	lang0.pak	DST_STATUS_JOB	Class	41ff354b2b33	职业	accepted	legacy/translations/lang0_overrides.tsv	19	
@@ -276,35 +276,35 @@ lang0	lang0.pak	DST_LOGIN	Start	952f375412e8	登录	accepted	legacy/translations
 lang0	lang0.pak	DST_LOGIN_CONTRACT	Contract	5a0ba3bb83f0	合同	accepted	legacy/translations/lang0_overrides.tsv	25	
 lang0	lang0.pak	DST_LOGIN_CREDIT	Credit	8a45d339a638	信用	accepted	legacy/translations/lang0_overrides.tsv	26	
 lang0	lang0.pak	DST_LOGIN_ID	User	9f8a2389a20c	账号	replaced	legacy/translations/lang0_overrides.tsv	27	source changed to User:
-lang0	lang0.pak	DST_LOGIN_ID	User:	3123a0e46062	账号:	accepted	manual		login source now includes colon
-lang0	lang0.pak	DST_LOGIN_NEW_ACCOUNT	Game Policies	3f3981b9920c	游戏政策	accepted	legacy/translations/lang0_overrides.tsv	28	
+lang0	lang0.pak	DST_LOGIN_ID	User:	3123a0e46062	帐号	accepted	manual		login source now includes colon
+lang0	lang0.pak	DST_LOGIN_NEW_ACCOUNT	Game Policies	3f3981b9920c	注册帐户	accepted	legacy/translations/lang0_overrides.tsv	28	
 lang0	lang0.pak	DST_LOGIN_PASSWARD	Pass	d7cd56f2a2a3	密码	replaced	legacy/translations/lang0_overrides.tsv	29	source changed to Pass:
-lang0	lang0.pak	DST_LOGIN_PASSWARD	Pass:	47115b88aaf4	密码:	accepted	manual		login source now includes colon
+lang0	lang0.pak	DST_LOGIN_PASSWARD	Pass:	47115b88aaf4	密码	accepted	manual		login source now includes colon
 lang0	lang0.pak	DST_LOGIN_PLAY_MOVIE	Film	b9aec1112810	影片	accepted	legacy/translations/lang0_overrides.tsv	30	
 lang0	lang0.pak	DST_SIDEICON_HINT_FRIEND_TEXT	%s has logged in.	d5da210bc7ab	%s 已登录	accepted	legacy/translations/lang0_overrides.tsv	31	
 lang0	lang0.pak	DST_NOTIFY_GET_BUFF	Received Buff: %s	09c71ea62a96	获得效果: %s	accepted	legacy/translations/lang0_overrides.tsv	32	
 lang0	lang0.pak	DST_CRANE_ROSHI	Crane Hermit	343f0d6f9cd9	鹤仙流	accepted	legacy/translations/lang0_overrides.tsv	33	
 lang0	lang0.pak	DST_TURTLE_ROSHI	Turtle Hermit	05d14536381e	龟仙流	accepted	legacy/translations/lang0_overrides.tsv	34	
-lang0	lang0.pak	DST_STATUS_WINDOW_TITLE	Character Status	7af82d3f4379	角色状态	accepted	legacy/translations/lang0_overrides.tsv	35	
+lang0	lang0.pak	DST_STATUS_WINDOW_TITLE	Character Status	7af82d3f4379	角色	accepted	legacy/translations/lang0_overrides.tsv	35	
 lang0	lang0.pak	DST_ITEM_CAN_EQUIP	Class: %s 	0d03989bcba7	职业: %s	accepted	legacy/translations/lang0_overrides.tsv	36	
 lang0	lang0.pak	DST_ITEM_EQUIP_SLOT_TEXT	Slot: %s	b0a506bd4a46	部位: %s	accepted	legacy/translations/lang0_overrides.tsv	37	
-lang0	lang0.pak	DST_ITEM_GRADE_NORMAL	Normal	45e118d0563e	普通	accepted	legacy/translations/lang0_overrides.tsv	38	
-lang0	lang0.pak	DST_ITEM_GRADE_RARE	Rare	cce370d2f978	稀有	accepted	legacy/translations/lang0_overrides.tsv	39	
+lang0	lang0.pak	DST_ITEM_GRADE_NORMAL	Normal	45e118d0563e	一般	accepted	legacy/translations/lang0_overrides.tsv	38	
+lang0	lang0.pak	DST_ITEM_GRADE_RARE	Rare	cce370d2f978	稀少	accepted	legacy/translations/lang0_overrides.tsv	39	
 lang0	lang0.pak	DST_ITEM_GRADE_EXCELLENT	Excellent	1aafbf548bd1	特级	accepted	legacy/translations/lang0_overrides.tsv	40	
 lang0	lang0.pak	DST_ITEM_GRADE_LEGENDARY	Legendary	b7e8916505bf	传说	accepted	legacy/translations/lang0_overrides.tsv	41	
-lang0	lang0.pak	DST_ITEM_PHYSICAL_DEFENCE	Physical Def: %5d	2c4d79f95517	物理防御力: %5d	accepted	legacy/translations/lang0_overrides.tsv	42	
-lang0	lang0.pak	DST_ITEM_PHYSICAL_OFFENCE	Physical Atk: %5d	be5794cbb22a	物理攻击力: %5d	accepted	legacy/translations/lang0_overrides.tsv	43	
+lang0	lang0.pak	DST_ITEM_PHYSICAL_DEFENCE	Physical Def: %5d	2c4d79f95517	格斗防御力 : %5d	accepted	legacy/translations/lang0_overrides.tsv	42	
+lang0	lang0.pak	DST_ITEM_PHYSICAL_OFFENCE	Physical Atk: %5d	be5794cbb22a	格斗攻击力 : %5d	accepted	legacy/translations/lang0_overrides.tsv	43	
 lang0	lang0.pak	DST_PET_STATUS_ENERGY_DEFENSE	Energy Defense	2b88a899b17e	气功防御力	accepted	legacy/translations/lang0_overrides.tsv	44	
 lang0	lang0.pak	DST_PET_STATUS_ENERGY_OFFENSE	Energy Attack	d7917e01c16d	气功攻击力	accepted	legacy/translations/lang0_overrides.tsv	45	
-lang0	lang0.pak	DST_PET_STATUS_PHYSICAL_DEFENSE	Physical Defense	22677b83be6b	物理防御力	accepted	legacy/translations/lang0_overrides.tsv	46	
-lang0	lang0.pak	DST_STATUS_ENERGY_ATTACK	Energy Atk.	886d5729be37	气功攻击	accepted	legacy/translations/lang0_overrides.tsv	47	
-lang0	lang0.pak	DST_STATUS_ENERGY_CRITICAL	Crit. Energy	4b0d1d82a547	气功暴击	accepted	legacy/translations/lang0_overrides.tsv	48	
-lang0	lang0.pak	DST_STATUS_ENERGY_DEFENCE	E. Defense.	5cda8b428bc4	气功防御	accepted	legacy/translations/lang0_overrides.tsv	49	
-lang0	lang0.pak	DST_STATUS_PHYSICAL_ATTACK	Physical Atk.	4961e70535d8	物理攻击	accepted	legacy/translations/lang0_overrides.tsv	50	
-lang0	lang0.pak	DST_STATUS_PHYSICAL_CRITICAL	Crit. Physical	fd517a0730b4	物理暴击	accepted	legacy/translations/lang0_overrides.tsv	51	
-lang0	lang0.pak	DST_STATUS_PHYSICAL_DEFENCE	P. Defense.	bac7c2ae60ff	物理防御	accepted	legacy/translations/lang0_overrides.tsv	52	
+lang0	lang0.pak	DST_PET_STATUS_PHYSICAL_DEFENSE	Physical Defense	22677b83be6b	格斗防御力	accepted	legacy/translations/lang0_overrides.tsv	46	
+lang0	lang0.pak	DST_STATUS_ENERGY_ATTACK	Energy Atk.	886d5729be37	气功攻击力	accepted	legacy/translations/lang0_overrides.tsv	47	
+lang0	lang0.pak	DST_STATUS_ENERGY_CRITICAL	Crit. Energy	4b0d1d82a547	暴击机率	accepted	legacy/translations/lang0_overrides.tsv	48	
+lang0	lang0.pak	DST_STATUS_ENERGY_DEFENCE	E. Defense.	5cda8b428bc4	气功防御力	accepted	legacy/translations/lang0_overrides.tsv	49	
+lang0	lang0.pak	DST_STATUS_PHYSICAL_ATTACK	Physical Atk.	4961e70535d8	格斗攻击力	accepted	legacy/translations/lang0_overrides.tsv	50	
+lang0	lang0.pak	DST_STATUS_PHYSICAL_CRITICAL	Crit. Physical	fd517a0730b4	暴击机率	accepted	legacy/translations/lang0_overrides.tsv	51	
+lang0	lang0.pak	DST_STATUS_PHYSICAL_DEFENCE	P. Defense.	bac7c2ae60ff	格斗防御力	accepted	legacy/translations/lang0_overrides.tsv	52	
 lang0	lang0.pak	DST_ITEM_ATTACK_RANGE	Attack Range: %5d	8e304efe4faf	攻击范围: %5d	accepted	legacy/translations/lang0_overrides.tsv	53	
-lang0	lang0.pak	DST_ITEM_ATTACK_SPEED	Attack Speed: %4d	473e3b505470	攻击速度: %4d	accepted	legacy/translations/lang0_overrides.tsv	54	
+lang0	lang0.pak	DST_ITEM_ATTACK_SPEED	Attack Speed: %4d	473e3b505470	攻击速度 : %4d	accepted	legacy/translations/lang0_overrides.tsv	54	
 lang0	lang0.pak	DST_ITEM_ATTR_INFO	Element: %s	614d3f9ca427	属性: %s	accepted	legacy/translations/lang0_overrides.tsv	55	
 lang0	lang0.pak	DST_LOBBY_CHARACTER_ATTRIBUTE	Attributes	a6652617f2c7	属性	accepted	legacy/translations/lang0_overrides.tsv	56	
 lang0	lang0.pak	DST_LOBBY_CHARACTER_LIST	Characters	b6f59f08fd6d	角色	accepted	legacy/translations/lang0_overrides.tsv	57	
@@ -321,16 +321,16 @@ lang0	lang0.pak	DST_ITEM_LIMITED_STORE_COMMON_WAREHOUSE	No-Bank	fe517aab1048	禁
 lang0	lang0.pak	DST_ITEM_LIMITED_STORE_GUILD_WAREHOUSE	No-Bank	fe517aab1048	禁公仓	accepted	legacy/translations/lang0_overrides.tsv	68	
 lang0	lang0.pak	DST_ITEM_LIMITED_STORE_WAREHOUSE	No-Bank	fe517aab1048	禁仓库	accepted	legacy/translations/lang0_overrides.tsv	69	
 lang0	lang0.pak	DST_ITEM_LIMITED_USER_TRADE	No-Trade	efbada6a30c4	不可交易	accepted	legacy/translations/lang0_overrides.tsv	70	
-lang0	lang0.pak	DST_TODAT_TIP	Today's Tips	b7dc541296e8	今日小贴士	accepted	legacy/translations/lang0_overrides.tsv	71	
+lang0	lang0.pak	DST_TODAT_TIP	Today's Tips	b7dc541296e8	今日的小帮手	accepted	legacy/translations/lang0_overrides.tsv	71	
 lang0	lang0.pak	DST_ITEM_ALL_GENDER	All genders	758a589128ab	所有性别	accepted	legacy/translations/lang0_overrides.tsv	72	
-lang0	lang0.pak	DST_ITEM_ALL_RACE	All Classes	0e75c6a2260c	所有职业	accepted	legacy/translations/lang0_overrides.tsv	73	
+lang0	lang0.pak	DST_ITEM_ALL_RACE	All Classes	0e75c6a2260c	所有种族	accepted	legacy/translations/lang0_overrides.tsv	73	
 lang0	lang0.pak	DST_MOB_TYPE_MAJIN	Majin	76c650055c84	魔人	accepted	legacy/translations/lang0_overrides.tsv	74	
 lang0	lang0.pak	DST_MOB_TYPE_NAMEC	Namek	fa4790545002	那美	accepted	legacy/translations/lang0_overrides.tsv	75	
 lang0	lang0.pak	DST_MOB_TYPE_HUMAN	Human	e31663b107b9	人类	accepted	legacy/translations/lang0_overrides.tsv	76	
 lang0	lang0.pak	DST_REVERTED_EQUIP	Binds	be1d2ea7f25b	绑定	accepted	legacy/translations/lang0_overrides.tsv	77	
 lang0	lang0.pak	DST_REVERTED_GENERAL	Binds	be1d2ea7f25b	绑定	accepted	legacy/translations/lang0_overrides.tsv	78	
 lang0	lang0.pak	DST_REVERTED_USE	Binds	be1d2ea7f25b	绑定	accepted	legacy/translations/lang0_overrides.tsv	79	
-lang0	lang0.pak	DST_REVERTED_ACTIVATE	(Activate)	e1cc8b293bcc	(活动)	accepted	legacy/translations/lang0_overrides.tsv	80	
+lang0	lang0.pak	DST_REVERTED_ACTIVATE	(Activate)	e1cc8b293bcc	(绑定中)	accepted	legacy/translations/lang0_overrides.tsv	80	
 lang0	lang0.pak	DST_LOBBY_EXIT	Exit	f83b6fe3aebf	退出	accepted	legacy/translations/lang0_overrides.tsv	81	
 lang0	lang0.pak	DST_LOBBY_FACE	Face	203bc66d7067	面部	accepted	legacy/translations/lang0_overrides.tsv	82	
 lang0	lang0.pak	DST_LOBBY_GAME_START	Start	952f375412e8	开始	accepted	legacy/translations/lang0_overrides.tsv	83	
@@ -358,9 +358,9 @@ lang0	lang0.pak	DST_EQUIP_SLOT_TAIL	Accessory 4 - Tail	9017341a06b0	配件 4 - �
 lang0	lang0.pak	DST_EQUIP_SLOT_TYPE_BOOTS	Shoes	664785616853	鞋子	accepted	legacy/translations/lang0_overrides.tsv	105	
 lang0	lang0.pak	DST_STATUS_DODGE	Dodge	5f1a7e1f69f3	闪避	accepted	legacy/translations/lang0_overrides.tsv	106	
 lang0	lang0.pak	DST_STATUS_TAB_AVATAR	Character	ee9946c82d4a	角色	accepted	legacy/translations/lang0_overrides.tsv	107	
-lang0	lang0.pak	DST_STATUS_TAB_FAMILY	Fame	197e7446125b	声望	accepted	legacy/translations/lang0_overrides.tsv	108	
+lang0	lang0.pak	DST_STATUS_TAB_FAMILY	Fame	197e7446125b	战绩	accepted	legacy/translations/lang0_overrides.tsv	108	
 lang0	lang0.pak	DST_STATUS_TAB_SUMMON	Pet	df26241195d7	宠	accepted	legacy/translations/lang0_overrides.tsv	109	
-lang0	lang0.pak	DST_STATUS_TECHNIC_TITLE	Craft	99adcab28725	工艺	accepted	legacy/translations/lang0_overrides.tsv	110	
+lang0	lang0.pak	DST_STATUS_TECHNIC_TITLE	Craft	99adcab28725	技能	accepted	legacy/translations/lang0_overrides.tsv	110	
 lang0	lang0.pak	DST_STATUS_TAB_MOREINFO	Status	bae7d5be7082	状态	accepted	legacy/translations/lang0_overrides.tsv	111	
 lang0	lang0.pak	DST_LOBBY_POSITION	Location	d219c68101f5	位置	accepted	legacy/translations/lang0_overrides.tsv	112	
 lang0	lang0.pak	DST_LOBBY_CHANNEL	Channel:	626418139ea6	频道:	accepted	legacy/translations/lang0_overrides.tsv	113	
@@ -385,20 +385,20 @@ lang0	lang0.pak	DST_LOBBY_DEL_DAT	Delete	f6fdbe48dc54	删除	accepted	legacy/tra
 lang0	lang0.pak	DST_HUMAN	Human	e31663b107b9	人类	accepted	legacy/translations/lang0_overrides.tsv	132	
 lang0	lang0.pak	DST_MAJIN	Majin	76c650055c84	魔人	accepted	legacy/translations/lang0_overrides.tsv	133	
 lang0	lang0.pak	DST_NAMEK	Namek	fa4790545002	那美	accepted	legacy/translations/lang0_overrides.tsv	134	
-lang0	lang0.pak	DST_ITEM_ALREADY_EQUIPPED	Already Equipped	92c36b989e50	已装备	accepted	legacy/translations/lang0_overrides.tsv	135	
-lang0	lang0.pak	DST_ITEM_ALL_RACE_ENABLE_EQUIP_BUT_NMY	All Classes (Except Dragon Clan)	94b57809671b	所有职业（除龙族外）	accepted	legacy/translations/lang0_overrides.tsv	136	
+lang0	lang0.pak	DST_ITEM_ALREADY_EQUIPPED	Already Equipped	92c36b989e50	装备中道具	accepted	legacy/translations/lang0_overrides.tsv	135	
+lang0	lang0.pak	DST_ITEM_ALL_RACE_ENABLE_EQUIP_BUT_NMY	All Classes (Except Dragon Clan)	94b57809671b	所有种族(那美克星人龙族除外)	accepted	legacy/translations/lang0_overrides.tsv	136	
 lang0	lang0.pak	DST_ITEM_ADDITIONAL_EFFECT	Effect	720b5dbc5319	效果	accepted	legacy/translations/lang0_overrides.tsv	137	
 lang0	lang0.pak	DST_ITEM_AIR_TEXT	Dogi effect: %s 	4b08629e024c	时装效果: %s 	accepted	legacy/translations/lang0_overrides.tsv	138	source now has trailing space
 lang0	lang0.pak	DST_ITEM_EQUIP_CLASS_TEXT	Req %s 	1e43975adc3c	需%s 	accepted	manual		shorten to fit lang0 fixed field; source now has trailing space
 lang0	lang0.pak	DST_ITEM_EQUIP_LEVEL_TEXT	Lv.%d	e0c9c05773f4	Lv.%d	accepted	legacy/translations/lang0_overrides.tsv	140	
 lang0	lang0.pak	DST_ITEM_EQUIP_MIN_MAX_LEVEL_TEXT	Lv.%d - %d	86112fbd14ee	Lv.%d-%d	accepted	legacy/translations/lang0_overrides.tsv	141	
-lang0	lang0.pak	DST_ITEM_GRADE_SUPERIOR	Superior	69cbd0d6056a	优质	accepted	legacy/translations/lang0_overrides.tsv	142	
+lang0	lang0.pak	DST_ITEM_GRADE_SUPERIOR	Superior	69cbd0d6056a	高级	accepted	legacy/translations/lang0_overrides.tsv	142	
 lang0	lang0.pak	DST_ITEM_IDENTIFY_COST	Cost: %u	82a588dd8862	成本: %u	accepted	legacy/translations/lang0_overrides.tsv	143	
 lang0	lang0.pak	DST_JOB_BATTLE_DUNGEON_MANAGER	Dungeon Manager	0080ea2b9dcc	副本管理机	accepted	legacy/translations/lang0_overrides.tsv	144	
 lang0	lang0.pak	DST_ITEM_CAN_SEX	Gender : %s	8efd2f6d195c	性别 : %s	accepted	legacy/translations/lang0_overrides.tsv	145	
 lang0	lang0.pak	DST_ITEM_CAN_USE	Race : %s	4fe9bc9e9319	种族 : %s	accepted	legacy/translations/lang0_overrides.tsv	146	
 lang0	lang0.pak	DST_DISASSEMBLE_EXCUTE	Disassemble	f96ef8437bb0	分解	accepted	legacy/translations/lang0_overrides.tsv	147	
-lang0	lang0.pak	DST_STATUS_TECHNIC_HOIPOIMIX_DISASSEMBLE	Disassemble	f96ef8437bb0	分解	accepted	legacy/translations/lang0_overrides.tsv	148	
+lang0	lang0.pak	DST_STATUS_TECHNIC_HOIPOIMIX_DISASSEMBLE	Disassemble	f96ef8437bb0	分解道具	accepted	legacy/translations/lang0_overrides.tsv	148	
 lang0	lang0.pak	DST_SLOT_COUNT	Slots: %d	545941844726	槽位: %d	accepted	legacy/translations/lang0_overrides.tsv	149	
 lang0	lang0.pak	DST_SLOT_EMPTY	Empty	3159fe421b32	空	accepted	legacy/translations/lang0_overrides.tsv	150	
 lang0	lang0.pak	DST_ITEM_JUST_DURABILITY	Durability:% 3d	a07fc51fcfac	耐久:% 3d	accepted	legacy/translations/lang0_overrides.tsv	151	source removed space after colon
@@ -410,20 +410,20 @@ lang0	lang0.pak	DST_CHARTITLE_FILTER_OWNED	Owned Titles Only	1ec7f546cc3d	仅显
 lang0	lang0.pak	DST_ITEM_DURABILITY	Durability:% 3d /% 3d	1281a0d59b31	耐久度:% 3d /% 3d	accepted	legacy/translations/lang0_overrides.tsv	157	
 lang0	lang0.pak	DST_SCOUTERITEM_OFF_EQUIPMENT	Scouter Status: Off	8db021f188eb	史考特状态: 关闭	accepted	legacy/translations/lang0_overrides.tsv	158	
 lang0	lang0.pak	DST_SCOUTERITEM_ON_EQUIPMENT	Scouter Status: On	abdae663fa26	史考特状态: 开启	accepted	legacy/translations/lang0_overrides.tsv	159	
-lang0	lang0.pak	DST_MAINMENU_OPTION	Options	6bf5da9c080b	选项	accepted	legacy/translations/lang0_overrides.tsv	160	
+lang0	lang0.pak	DST_MAINMENU_OPTION	Options	6bf5da9c080b	设定	accepted	legacy/translations/lang0_overrides.tsv	160	
 lang0	lang0.pak	DST_MAINMENU_HELP	Help	c47ae15370cf	帮助	accepted	legacy/translations/lang0_overrides.tsv	161	
 lang0	lang0.pak	DST_MAINMENU_UNSTUCK	Unstuck	7032a66f78e9	脱卡	accepted	legacy/translations/lang0_overrides.tsv	162	
 lang0	lang0.pak	DST_MAINMENU_END_GAME	Exit	f83b6fe3aebf	退出	accepted	legacy/translations/lang0_overrides.tsv	163	
 lang0	lang0.pak	DST_MAINMENU_END_SESSION	Log Out	4e8131ca3794	回角色	accepted	legacy/translations/lang0_overrides.tsv	164	
-lang0	lang0.pak	DST_MAINMENU_CHANNEL_CHANGE	Change Channel	d25153242357	更换频道	accepted	legacy/translations/lang0_overrides.tsv	165	
+lang0	lang0.pak	DST_MAINMENU_CHANNEL_CHANGE	Change Channel	d25153242357	频道变更	accepted	legacy/translations/lang0_overrides.tsv	165	
 lang0	lang0.pak	DST_CCBD_BOARD_INAVLID_ITEM	Invalid Item.	a993b1abf464	无效物品。	accepted	legacy/translations/lang0_overrides.tsv	166	
-lang0	lang0.pak	DST_MULTIDIALOG_MENU_UPGRADE	Item Upgrade	9bef00c25758	装备强化	accepted	legacy/translations/lang0_overrides.tsv	167	
-lang0	lang0.pak	DST_ITEM_ATTR_ELEGANCE	Water	de9b1be49dae	水	accepted	legacy/translations/lang0_overrides.tsv	170	
-lang0	lang0.pak	DST_ITEM_ATTR_FUNNY	Fire	78baebfcb4b5	火	accepted	legacy/translations/lang0_overrides.tsv	171	
-lang0	lang0.pak	DST_ITEM_ATTR_HONEST	Ice	0a2af398fe47	冰	accepted	legacy/translations/lang0_overrides.tsv	172	
+lang0	lang0.pak	DST_MULTIDIALOG_MENU_UPGRADE	Item Upgrade	9bef00c25758	道具升级	accepted	legacy/translations/lang0_overrides.tsv	167	
+lang0	lang0.pak	DST_ITEM_ATTR_ELEGANCE	Water	de9b1be49dae	丽	accepted	legacy/translations/lang0_overrides.tsv	170	
+lang0	lang0.pak	DST_ITEM_ATTR_FUNNY	Fire	78baebfcb4b5	乐	accepted	legacy/translations/lang0_overrides.tsv	171	
+lang0	lang0.pak	DST_ITEM_ATTR_HONEST	Ice	0a2af398fe47	真	accepted	legacy/translations/lang0_overrides.tsv	172	
 lang0	lang0.pak	DST_ITEM_ATTR_NONE	None	6eef6648406c	无	accepted	legacy/translations/lang0_overrides.tsv	173	
-lang0	lang0.pak	DST_ITEM_ATTR_STRANGE	Lightning	4504e5f0bfcc	雷	accepted	legacy/translations/lang0_overrides.tsv	174	
-lang0	lang0.pak	DST_ITEM_ATTR_WILD	Wind	142b5758f344	风	accepted	legacy/translations/lang0_overrides.tsv	175	
+lang0	lang0.pak	DST_ITEM_ATTR_STRANGE	Lightning	4504e5f0bfcc	奇	accepted	legacy/translations/lang0_overrides.tsv	174	
+lang0	lang0.pak	DST_ITEM_ATTR_WILD	Wind	142b5758f344	猛	accepted	legacy/translations/lang0_overrides.tsv	175	
 lang0	lang0.pak	DST_SKILL_TARGET_AND_RANGE_INFO1	Self Cast	92aad10c73d4	自身施放	accepted	legacy/translations/lang0_overrides.tsv	176	
 lang0	lang0.pak	DST_SKILL_TARGET_AND_RANGE_INFO2	All Enemies within %dM on %d targets	96fcae883444	对自身半径%d米内的敌人%d名使用	accepted	legacy/translations/lang0_overrides.tsv	177	
 lang0	lang0.pak	DST_SKILL_TARGET_AND_RANGE_INFO3	All Enemies within %d x %dM of the surrounding landscape on %d targets	0ba6f08a38a2	对自身周围%d米 x %d米内的敌人%d名使用	accepted	legacy/translations/lang0_overrides.tsv	178	
@@ -502,15 +502,15 @@ lang0	lang0.pak	DST_SKILL_TRANSFORM_USE_INFO_FLAG_ABLE_WHEN_MYSTIC_MAJIN	[Usable
 lang0	lang0.pak	DST_MSG_BOX_TITLE	Message	68f4145fee7d	消息	accepted	legacy/translations/lang0_overrides.tsv	255	
 lang0	lang0.pak	DST_MSG_BTN_CANCEL	Cancel	77dfd2135f4d	取消	accepted	legacy/translations/lang0_overrides.tsv	256	
 lang0	lang0.pak	DST_MSG_BTN_OK	Ok	b0a98216a324	OK	accepted	legacy/translations/lang0_overrides.tsv	257	
-lang0	lang0.pak	DST_DIALOG_MODE_NARRATION	Please Wait while I'm on the bot check	349fde449275	请稍等，正在验证	accepted	legacy/translations/lang0_overrides.tsv	260	
+lang0	lang0.pak	DST_DIALOG_MODE_NARRATION	Please Wait while I'm on the bot check	349fde449275	正在播放旁白，请稍后。	accepted	legacy/translations/lang0_overrides.tsv	260	
 lang0	lang0.pak	DST_MSG_BOX_TITLE	Message	68f4145fee7d	消息	accepted	legacy/translations/lang0_overrides.tsv	261	
 lang0	lang0.pak	DST_MSG_BTN_CANCEL	Cancel	77dfd2135f4d	取消	accepted	legacy/translations/lang0_overrides.tsv	262	
 lang0	lang0.pak	DST_MSG_BTN_OK	Ok	b0a98216a324	OK	accepted	legacy/translations/lang0_overrides.tsv	263	
-lang0	lang0.pak	DST_MAINMENU_COMMUNITY	Guild	54241a3d0070	公会	accepted	legacy/translations/lang0_overrides.tsv	264	
-lang0	lang0.pak	DST_MAINMENU_CONTROL	Controls	bee75ca77f75	控制	accepted	legacy/translations/lang0_overrides.tsv	265	
+lang0	lang0.pak	DST_MAINMENU_COMMUNITY	Guild	54241a3d0070	社群	accepted	legacy/translations/lang0_overrides.tsv	264	
+lang0	lang0.pak	DST_MAINMENU_CONTROL	Controls	bee75ca77f75	操作方法	accepted	legacy/translations/lang0_overrides.tsv	265	
 lang0	lang0.pak	DST_MAINMENU_FRIENDLIST	Friends List	9912a1e690a4	好友列表	accepted	legacy/translations/lang0_overrides.tsv	266	
-lang0	lang0.pak	DST_MAINMENU_INVEN	Inventory	300d29fd5f32	背包	accepted	legacy/translations/lang0_overrides.tsv	267	
-lang0	lang0.pak	DST_MAINMENU_PARTYMATCHINGLIST	Party Search	68cefcfd567b	队伍搜索	accepted	legacy/translations/lang0_overrides.tsv	268	
+lang0	lang0.pak	DST_MAINMENU_INVEN	Inventory	300d29fd5f32	胶囊盒	accepted	legacy/translations/lang0_overrides.tsv	267	
+lang0	lang0.pak	DST_MAINMENU_PARTYMATCHINGLIST	Party Search	68cefcfd567b	组队配对	accepted	legacy/translations/lang0_overrides.tsv	268	
 lang0	lang0.pak	DST_MAINMENU_QUEST	Quests	eca701b5e1d8	任务	accepted	legacy/translations/lang0_overrides.tsv	269	
 lang0	lang0.pak	DST_MAINMENU_RANKBOARD	Ranks	00926d0ecaab	排行	accepted	legacy/translations/lang0_overrides.tsv	270	
 lang0	lang0.pak	DST_MAINMENU_SKILL	Skills	e09212c7d3ea	技能	accepted	legacy/translations/lang0_overrides.tsv	271	
@@ -539,23 +539,23 @@ lang0	lang0.pak	DST_INFO_MASCOT_BUTT	Remove Ring to Delete	745869442d19	取下�
 lang0	lang0.pak	DST_INFO_MASCOT_LIST	List of Registered Pets	23061466ade5	已登记宠物列表	accepted	legacy/translations/lang0_overrides.tsv	294	
 lang0	lang0.pak	DST_INFO_MASCOT_RING_ICON	Ring equipment state can be found in the pet window, click on the ring to use.	efa8d09edac3	宠物窗口可查看戒指，点击戒指使用。	accepted	legacy/translations/lang0_overrides.tsv	295	
 lang0	lang0.pak	DST_INFO_RING_ITEM	Pets can be summoned and require VP to use Rings.	21c40fb441f5	宠物需用VP戒指召唤。	accepted	legacy/translations/lang0_overrides.tsv	296	
-lang0	lang0.pak	DST_OPTION_CANCEL	Cancel	77dfd2135f4d	取消	accepted	legacy/translations/lang0_overrides.tsv	297	
-lang0	lang0.pak	DST_OPTION_CHATTING_ADDED_GUILD	Guild	54241a3d0070	公会	accepted	legacy/translations/lang0_overrides.tsv	298	
+lang0	lang0.pak	DST_OPTION_CANCEL	Cancel	77dfd2135f4d	关闭	accepted	legacy/translations/lang0_overrides.tsv	297	
+lang0	lang0.pak	DST_OPTION_CHATTING_ADDED_GUILD	Guild	54241a3d0070	流派	accepted	legacy/translations/lang0_overrides.tsv	298	
 lang0	lang0.pak	DST_OPTION_CHATTING_ADDED_NORMAL	Normal	45e118d0563e	普通	accepted	legacy/translations/lang0_overrides.tsv	299	
 lang0	lang0.pak	DST_OPTION_CHATTING_ADDED_PARTY	Party	60b18fc8a85f	队伍	accepted	legacy/translations/lang0_overrides.tsv	300	
-lang0	lang0.pak	DST_OPTION_CHATTING_ADDED_PARTY_SEARCH	Party Search	68cefcfd567b	队伍搜索	accepted	legacy/translations/lang0_overrides.tsv	301	
-lang0	lang0.pak	DST_OPTION_CHATTING_ADDED_SHOUT	Shout	85cf631d6fcc	喊话	accepted	legacy/translations/lang0_overrides.tsv	302	
+lang0	lang0.pak	DST_OPTION_CHATTING_ADDED_PARTY_SEARCH	Party Search	68cefcfd567b	搜寻队伍	accepted	legacy/translations/lang0_overrides.tsv	301	
+lang0	lang0.pak	DST_OPTION_CHATTING_ADDED_SHOUT	Shout	85cf631d6fcc	广播	accepted	legacy/translations/lang0_overrides.tsv	302	
 lang0	lang0.pak	DST_OPTION_CHATTING_ADDED_SYSTEM	System	bc0792d8dc81	系统	accepted	legacy/translations/lang0_overrides.tsv	303	
 lang0	lang0.pak	DST_OPTION_CHATTING_ADDED_TRADE	Trade	b0811e470d6b	交易	accepted	legacy/translations/lang0_overrides.tsv	304	
-lang0	lang0.pak	DST_OPTION_CHATTING_ADDED_WISPHER	Whisper	c010a73e4748	密语	accepted	legacy/translations/lang0_overrides.tsv	305	
-lang0	lang0.pak	DST_OPTION_CHATTING_BASIC_GUILD	Guild	54241a3d0070	公会	accepted	legacy/translations/lang0_overrides.tsv	306	
+lang0	lang0.pak	DST_OPTION_CHATTING_ADDED_WISPHER	Whisper	c010a73e4748	悄悄话	accepted	legacy/translations/lang0_overrides.tsv	305	
+lang0	lang0.pak	DST_OPTION_CHATTING_BASIC_GUILD	Guild	54241a3d0070	流派	accepted	legacy/translations/lang0_overrides.tsv	306	
 lang0	lang0.pak	DST_OPTION_CHATTING_BASIC_NORMAL	Normal	45e118d0563e	普通	accepted	legacy/translations/lang0_overrides.tsv	307	
 lang0	lang0.pak	DST_OPTION_CHATTING_BASIC_PARTY	Party	60b18fc8a85f	队伍	accepted	legacy/translations/lang0_overrides.tsv	308	
-lang0	lang0.pak	DST_OPTION_CHATTING_BASIC_PARTY_SEARCH	Party Search	68cefcfd567b	队伍搜索	accepted	legacy/translations/lang0_overrides.tsv	309	
-lang0	lang0.pak	DST_OPTION_CHATTING_BASIC_SHOUT	Shout	85cf631d6fcc	喊话	accepted	legacy/translations/lang0_overrides.tsv	310	
+lang0	lang0.pak	DST_OPTION_CHATTING_BASIC_PARTY_SEARCH	Party Search	68cefcfd567b	搜寻队伍	accepted	legacy/translations/lang0_overrides.tsv	309	
+lang0	lang0.pak	DST_OPTION_CHATTING_BASIC_SHOUT	Shout	85cf631d6fcc	广播	accepted	legacy/translations/lang0_overrides.tsv	310	
 lang0	lang0.pak	DST_OPTION_CHATTING_BASIC_SYSTEM	System	bc0792d8dc81	系统	accepted	legacy/translations/lang0_overrides.tsv	311	
 lang0	lang0.pak	DST_OPTION_CHATTING_BASIC_TRADE	Trade	b0811e470d6b	交易	accepted	legacy/translations/lang0_overrides.tsv	312	
-lang0	lang0.pak	DST_OPTION_CHATTING_BASIC_WISPHER	Whisper	c010a73e4748	密语	accepted	legacy/translations/lang0_overrides.tsv	313	
+lang0	lang0.pak	DST_OPTION_CHATTING_BASIC_WISPHER	Whisper	c010a73e4748	悄悄话	accepted	legacy/translations/lang0_overrides.tsv	313	
 lang0	lang0.pak	DST_OPTION_CHATTING_COMMON_ADDEDWINDOW	Window+	427b583c8c9c	窗口+	accepted	legacy/translations/lang0_overrides.tsv	314	
 lang0	lang0.pak	DST_OPTION_CHATTING_COMMON_ADDEDWINDOW2	Window++	1419f931d391	窗口++	accepted	legacy/translations/lang0_overrides.tsv	315	
 lang0	lang0.pak	DST_OPTION_CHATTING_COMMON_INPUTMODE	Input Mode	6ab836b6e60d	输入模式	accepted	legacy/translations/lang0_overrides.tsv	316	
@@ -566,10 +566,10 @@ lang0	lang0.pak	DST_OPTION_CHATTING_TITLE_ADDED	Window+	427b583c8c9c	窗口+	acc
 lang0	lang0.pak	DST_OPTION_CHATTING_TITLE_ADDED2	Window++	1419f931d391	窗口++	accepted	legacy/translations/lang0_overrides.tsv	321	
 lang0	lang0.pak	DST_OPTION_CHATTING_TITLE_BASIC	Basic	aa2c96dacf00	基本	accepted	legacy/translations/lang0_overrides.tsv	322	
 lang0	lang0.pak	DST_OPTION_CHATTING_TITLE_COMMON	Common	7de90a65241a	通用	accepted	legacy/translations/lang0_overrides.tsv	323	
-lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_AVATAR_AUTORUN	Auto-run	bf549d64e98c	自动跑	accepted	legacy/translations/lang0_overrides.tsv	324	
+lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_AVATAR_AUTORUN	Auto-run	bf549d64e98c	自动奔跑	accepted	legacy/translations/lang0_overrides.tsv	324	
 lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_AVATAR_BACKWARD	Back	b52b36b7269f	后退	accepted	legacy/translations/lang0_overrides.tsv	325	
 lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_AVATAR_BLOCKING	Block	82dd2cdf36f9	格挡	accepted	legacy/translations/lang0_overrides.tsv	326	
-lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_AVATAR_CHARGE	Charge	d4e1aee46cda	蓄气	accepted	legacy/translations/lang0_overrides.tsv	327	
+lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_AVATAR_CHARGE	Charge	d4e1aee46cda	集气	accepted	legacy/translations/lang0_overrides.tsv	327	
 lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_AVATAR_FORWARD	Forward	ba4e72261283	前进	accepted	legacy/translations/lang0_overrides.tsv	328	
 lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_AVATAR_JUMP	Jump	1eba140fdd9c	跳跃	accepted	legacy/translations/lang0_overrides.tsv	329	
 lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_AVATAR_LEFTSIDE	Left	8ae1c34bd37f	左	accepted	legacy/translations/lang0_overrides.tsv	330	
@@ -577,38 +577,38 @@ lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_AVATAR_LEFTTURN	Turn Left	cab20e0d8b75
 lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_AVATAR_LOOTING	Loot	e8fef4b91ca3	拾取	accepted	legacy/translations/lang0_overrides.tsv	332	
 lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_AVATAR_RIGHTSIDE	Right	954daa8b0033	右	accepted	legacy/translations/lang0_overrides.tsv	333	
 lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_AVATAR_RIGHTTURN	Turn Right	16ee6eb5533b	右转	accepted	legacy/translations/lang0_overrides.tsv	334	
-lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_AVATAR_SCOUTER	Scouter on / off	1741baf8e9ee	史考特开关	accepted	legacy/translations/lang0_overrides.tsv	335	
+lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_AVATAR_SCOUTER	Scouter on / off	1741baf8e9ee	Scott 开启/关闭	accepted	legacy/translations/lang0_overrides.tsv	335	
 lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_AVATAR_SITDOWN	Sit	83125c611966	坐	accepted	legacy/translations/lang0_overrides.tsv	336	
 lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_CHAT_PGDN	Scroll Down	22aaf38f1a5b	下滚	accepted	legacy/translations/lang0_overrides.tsv	337	
 lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_CHAT_PGUP	Scroll Up	9f40469e6a5f	上滚	accepted	legacy/translations/lang0_overrides.tsv	338	
 lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_GLOBAL_CANCLE	Cancel	77dfd2135f4d	取消	accepted	legacy/translations/lang0_overrides.tsv	339	
-lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_GLOBAL_CHAT	Start Chat	0db546be556f	开始聊天	accepted	legacy/translations/lang0_overrides.tsv	340	
+lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_GLOBAL_CHAT	Start Chat	0db546be556f	聊天	accepted	legacy/translations/lang0_overrides.tsv	340	
 lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_GLOBAL_RENDERGUI	Hide UI	57643108f594	隐藏UI	accepted	legacy/translations/lang0_overrides.tsv	341	
-lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_GLOBAL_SNAPSHOT	Screenshot	60c152d92dff	截图	accepted	legacy/translations/lang0_overrides.tsv	342	
-lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_MINIMAP_ZOOMIN	Minimap Zoom-In	03ad05e6d275	小地图放大	accepted	legacy/translations/lang0_overrides.tsv	343	
-lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_MINIMAP_ZOOMOUT	Minimap Zoom-Out	1ae07126ea63	小地图缩小	accepted	legacy/translations/lang0_overrides.tsv	344	
+lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_GLOBAL_SNAPSHOT	Screenshot	60c152d92dff	拍图	accepted	legacy/translations/lang0_overrides.tsv	342	
+lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_MINIMAP_ZOOMIN	Minimap Zoom-In	03ad05e6d275	放大地图	accepted	legacy/translations/lang0_overrides.tsv	343	
+lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_MINIMAP_ZOOMOUT	Minimap Zoom-Out	1ae07126ea63	缩小地图	accepted	legacy/translations/lang0_overrides.tsv	344	
 lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_QUICKSLOT_2NDCAP	Bag2	b65e28cdf2b9	包2	accepted	legacy/translations/lang0_overrides.tsv	345	
 lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_QUICKSLOT_3RDCAP	Bag3	faea3f612b56	包3	accepted	legacy/translations/lang0_overrides.tsv	346	
 lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_QUICKSLOT_4THCAP	Bag4	492ce9eb5a4c	包4	accepted	legacy/translations/lang0_overrides.tsv	347	
 lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_QUICKSLOT_5THCAP	Bag5	7432d4af263c	包5	accepted	legacy/translations/lang0_overrides.tsv	348	
-lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_QUICKSLOT_NEXT	Next Bar	025eb3c73552	下栏	accepted	legacy/translations/lang0_overrides.tsv	349	
+lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_QUICKSLOT_NEXT	Next Bar	025eb3c73552	次快速列	accepted	legacy/translations/lang0_overrides.tsv	349	
 lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_QUICKSLOT_PREV	Prev Bar	40c5a9f21462	上栏	accepted	legacy/translations/lang0_overrides.tsv	350	
-lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_QUICKSLOT_SUMMON_1	Quick Summon 1	be820416b912	快速召唤1	accepted	legacy/translations/lang0_overrides.tsv	351	
-lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_QUICKSLOT_SUMMON_2	Quick Summon 2	6ed125c1b568	快速召唤2	accepted	legacy/translations/lang0_overrides.tsv	352	
-lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_QUICKSLOT_SUMMON_3	Quick Summon 3	8d6a7f2254ec	快速召唤3	accepted	legacy/translations/lang0_overrides.tsv	353	
-lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_QUICKSLOT_SUMMON_4	Quick Summon 4	4857332be0bb	快速召唤4	accepted	legacy/translations/lang0_overrides.tsv	354	
-lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_QUICKSLOT_SUMMON_5	Quick Summon 5	f8847a74a03b	快速召唤5	accepted	legacy/translations/lang0_overrides.tsv	355	
-lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_QUICKSLOT_SUMMON_6	Quick Summon 6	8d6aab3b7352	快速召唤6	accepted	legacy/translations/lang0_overrides.tsv	356	
-lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_QUICKSLOT_SUMMON_7	Quick Summon 7	3990adb83061	快速召唤7	accepted	legacy/translations/lang0_overrides.tsv	357	
-lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_QUICKSLOT_SUMMON_8	Quick Summon 8	64ee2e2de320	快速召唤8	accepted	legacy/translations/lang0_overrides.tsv	358	
-lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_TARGET_1STPARTY	Target Member1	1ecbebc5c30e	目标队员1	accepted	legacy/translations/lang0_overrides.tsv	359	
-lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_TARGET_2NDPARTY	Target Member2	8a9153b475b1	目标队员2	accepted	legacy/translations/lang0_overrides.tsv	360	
-lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_TARGET_3RDPARTY	Target Member3	d6ed104cc2dc	目标队员3	accepted	legacy/translations/lang0_overrides.tsv	361	
-lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_TARGET_4THPARTY	Target Member4	f4e9c3f5066c	目标队员4	accepted	legacy/translations/lang0_overrides.tsv	362	
+lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_QUICKSLOT_SUMMON_1	Quick Summon 1	be820416b912	召唤兽快捷栏 1	accepted	legacy/translations/lang0_overrides.tsv	351	
+lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_QUICKSLOT_SUMMON_2	Quick Summon 2	6ed125c1b568	召唤兽快捷栏 2	accepted	legacy/translations/lang0_overrides.tsv	352	
+lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_QUICKSLOT_SUMMON_3	Quick Summon 3	8d6a7f2254ec	召唤兽快速栏 3	accepted	legacy/translations/lang0_overrides.tsv	353	
+lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_QUICKSLOT_SUMMON_4	Quick Summon 4	4857332be0bb	召唤兽快捷栏 4	accepted	legacy/translations/lang0_overrides.tsv	354	
+lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_QUICKSLOT_SUMMON_5	Quick Summon 5	f8847a74a03b	召唤兽快捷栏 5	accepted	legacy/translations/lang0_overrides.tsv	355	
+lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_QUICKSLOT_SUMMON_6	Quick Summon 6	8d6aab3b7352	召唤兽快捷栏 6	accepted	legacy/translations/lang0_overrides.tsv	356	
+lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_QUICKSLOT_SUMMON_7	Quick Summon 7	3990adb83061	召唤兽快速栏 7	accepted	legacy/translations/lang0_overrides.tsv	357	
+lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_QUICKSLOT_SUMMON_8	Quick Summon 8	64ee2e2de320	召唤兽快速栏 8	accepted	legacy/translations/lang0_overrides.tsv	358	
+lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_TARGET_1STPARTY	Target Member1	1ecbebc5c30e	选择第一位队员	accepted	legacy/translations/lang0_overrides.tsv	359	
+lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_TARGET_2NDPARTY	Target Member2	8a9153b475b1	选择第二位队员	accepted	legacy/translations/lang0_overrides.tsv	360	
+lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_TARGET_3RDPARTY	Target Member3	d6ed104cc2dc	选择第三位队员	accepted	legacy/translations/lang0_overrides.tsv	361	
+lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_TARGET_4THPARTY	Target Member4	f4e9c3f5066c	选出第四位队员	accepted	legacy/translations/lang0_overrides.tsv	362	
 lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_TARGET_AUTO	Auto-Target	b3245f9e562a	自动目标	accepted	legacy/translations/lang0_overrides.tsv	363	
 lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_TARGET_AUTOATK	Auto-Attack	0d56bf1b7c1f	自动攻击	accepted	legacy/translations/lang0_overrides.tsv	364	
-lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_TARGET_AUTOFOLLOW	Auto-Follow	0ec7262cec3e	自动跟随	accepted	legacy/translations/lang0_overrides.tsv	365	
-lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_TARGET_AUTOPARTY	Target Member	f3d8f3ff1a1c	目标队员	accepted	legacy/translations/lang0_overrides.tsv	366	
+lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_TARGET_AUTOFOLLOW	Auto-Follow	0ec7262cec3e	跟随	accepted	legacy/translations/lang0_overrides.tsv	365	
+lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_TARGET_AUTOPARTY	Target Member	f3d8f3ff1a1c	自动选择队员	accepted	legacy/translations/lang0_overrides.tsv	366	
 lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_TARGET_MARKING1	Mark1	0035678f00d0	标记1	accepted	legacy/translations/lang0_overrides.tsv	367	
 lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_TARGET_MARKING2	Mark2	a9d442292429	标记2	accepted	legacy/translations/lang0_overrides.tsv	368	
 lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_TARGET_MARKING3	Mark3	1f37477ae9b8	标记3	accepted	legacy/translations/lang0_overrides.tsv	369	
@@ -619,27 +619,27 @@ lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_TARGET_SELECTING2	Target Mark2	3e1ee90
 lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_TARGET_SELECTING3	Target Mark3	af0b56083504	目标标记3	accepted	legacy/translations/lang0_overrides.tsv	374	
 lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_TARGET_SELECTING4	Target Mark4	754cd255b46a	目标标记4	accepted	legacy/translations/lang0_overrides.tsv	375	
 lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_TARGET_SELECTING5	Target Mark5	27446e6bed3c	目标标记5	accepted	legacy/translations/lang0_overrides.tsv	376	
-lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_TARGET_SELF	Target Self	6f6334b4e76a	目标自己	accepted	legacy/translations/lang0_overrides.tsv	377	
+lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_TARGET_SELF	Target Self	6f6334b4e76a	选择自己	accepted	legacy/translations/lang0_overrides.tsv	377	
 lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_WINDOW_DWC	DWC	763690b00c49	DWC	accepted	legacy/translations/lang0_overrides.tsv	378	
 lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_WINDOW_FRIEND	Friends List	9912a1e690a4	好友列表	accepted	legacy/translations/lang0_overrides.tsv	379	
-lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_WINDOW_GUILD	Guild Window	deb56dcab68c	公会窗口	accepted	legacy/translations/lang0_overrides.tsv	380	
+lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_WINDOW_GUILD	Guild Window	deb56dcab68c	流派视窗	accepted	legacy/translations/lang0_overrides.tsv	380	
 lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_WINDOW_HELP	Help	c47ae15370cf	帮助	accepted	legacy/translations/lang0_overrides.tsv	381	
-lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_WINDOW_HOIPOIMIX	HoiPoi Mix	3e1be5449f37	合成	accepted	legacy/translations/lang0_overrides.tsv	382	
-lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_WINDOW_MAIN	Main Menu	758da7453531	主菜单	accepted	legacy/translations/lang0_overrides.tsv	383	
+lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_WINDOW_HOIPOIMIX	HoiPoi Mix	3e1be5449f37	混合胶囊	accepted	legacy/translations/lang0_overrides.tsv	382	
+lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_WINDOW_MAIN	Main Menu	758da7453531	主选单	accepted	legacy/translations/lang0_overrides.tsv	383	
 lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_WINDOW_MAINCAP	Bag	ef6155a5eccf	包	accepted	legacy/translations/lang0_overrides.tsv	384	
 lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_WINDOW_MASCOT	Pets	849c2d068505	宠物	accepted	legacy/translations/lang0_overrides.tsv	385	
 lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_WINDOW_MINIMAP	Minimap	03000e5d5a47	小地图	accepted	legacy/translations/lang0_overrides.tsv	386	
 lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_WINDOW_OPTION	Options	6bf5da9c080b	选项	accepted	legacy/translations/lang0_overrides.tsv	387	
 lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_WINDOW_PARTY	Party Info	c227893734c1	队伍信息	accepted	legacy/translations/lang0_overrides.tsv	388	
-lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_WINDOW_PROFILE	Character	ee9946c82d4a	角色	accepted	legacy/translations/lang0_overrides.tsv	389	
+lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_WINDOW_PROFILE	Character	ee9946c82d4a	角色视窗	accepted	legacy/translations/lang0_overrides.tsv	389	
 lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_WINDOW_QUEST	Quests	eca701b5e1d8	任务	accepted	legacy/translations/lang0_overrides.tsv	390	
-lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_WINDOW_RANKBOARD	Rank Board	33d8d05b07a7	排行榜	accepted	legacy/translations/lang0_overrides.tsv	391	
+lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_WINDOW_RANKBOARD	Rank Board	33d8d05b07a7	查看排名	accepted	legacy/translations/lang0_overrides.tsv	391	
 lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_WINDOW_SCOUTER	Scouter	8bcb090d6225	史考特	accepted	legacy/translations/lang0_overrides.tsv	392	
 lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_WINDOW_SKILL	Skills	e09212c7d3ea	技能	accepted	legacy/translations/lang0_overrides.tsv	393	
-lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_WINDOW_WORLDMAP	Worldmap	98a4eaad4359	世界图	accepted	legacy/translations/lang0_overrides.tsv	394	
-lang0	lang0.pak	DST_OPTION_CONTROL_CATEGORY_AVATAR	Character	ee9946c82d4a	角色	accepted	legacy/translations/lang0_overrides.tsv	395	
+lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_WINDOW_WORLDMAP	Worldmap	98a4eaad4359	世界地图	accepted	legacy/translations/lang0_overrides.tsv	394	
+lang0	lang0.pak	DST_OPTION_CONTROL_CATEGORY_AVATAR	Character	ee9946c82d4a	角色动作	accepted	legacy/translations/lang0_overrides.tsv	395	
 lang0	lang0.pak	DST_OPTION_CONTROL_CATEGORY_FIXED	Other	6e6a6f2086bb	其他	accepted	legacy/translations/lang0_overrides.tsv	396	
-lang0	lang0.pak	DST_OPTION_CONTROL_CATEGORY_QUICKSLOT	Skill Slots	dc8f0e3e27f3	技能栏	accepted	legacy/translations/lang0_overrides.tsv	397	
+lang0	lang0.pak	DST_OPTION_CONTROL_CATEGORY_QUICKSLOT	Skill Slots	dc8f0e3e27f3	快捷列热键	accepted	legacy/translations/lang0_overrides.tsv	397	
 lang0	lang0.pak	DST_OPTION_CONTROL_CATEGORY_TARGET	Target	61ad50a9b918	目标	accepted	legacy/translations/lang0_overrides.tsv	398	
 lang0	lang0.pak	DST_OPTION_CONTROL_CATEGORY_WINDOW	Window	41dfc0a6c927	窗口	accepted	legacy/translations/lang0_overrides.tsv	399	
 lang0	lang0.pak	DST_OPTION_CONTROL_TEXT_CHANGEGUIDE	Key %s is used by %s, change to %s.	5675318653ce	键%s被%s占用,改为%s	accepted	legacy/translations/lang0_overrides.tsv	400	
@@ -654,28 +654,28 @@ lang0	lang0.pak	DST_OPTION_CONTROL_TEXT_READYGUIDE	Please input the key you desi
 lang0	lang0.pak	DST_OPTION_CONTROL_TEXT_SAMEKEYGUIDE	No duplicate Keys	de107ccffaf9	无重复键	accepted	legacy/translations/lang0_overrides.tsv	409	
 lang0	lang0.pak	DST_OPTION_CONTROL_TEXT_TITLE	Control	ea1d3df298ca	控制	accepted	legacy/translations/lang0_overrides.tsv	410	
 lang0	lang0.pak	DST_OPTION_CONTROL_TEXT_WAITGUIDE	No changes.	9b1fcbda693f	无变化。	accepted	legacy/translations/lang0_overrides.tsv	411	
-lang0	lang0.pak	DST_OPTION_TAB_DROP_FILTER	Drop Filter	fd377724e1c9	掉落	accepted	legacy/translations/lang0_overrides.tsv	412	
+lang0	lang0.pak	DST_OPTION_TAB_DROP_FILTER	Drop Filter	fd377724e1c9	撷取	accepted	legacy/translations/lang0_overrides.tsv	412	
 lang0	lang0.pak	DST_OPTION_TAB_DROP_SELL	Drop Sell	99cd286609b9	出售	accepted	legacy/translations/lang0_overrides.tsv	413	
 lang0	lang0.pak	DST_OPTION_DROPFILTER_TITLE_ITEMS	Items	44d25b5d1b6d	物品	accepted	legacy/translations/lang0_overrides.tsv	414	
-lang0	lang0.pak	DST_OPTION_DROPFILTER_TITLE_STONES	Stones	09c28ae8f83b	石头	accepted	legacy/translations/lang0_overrides.tsv	415	
+lang0	lang0.pak	DST_OPTION_DROPFILTER_TITLE_STONES	Stones	09c28ae8f83b	宝石	accepted	legacy/translations/lang0_overrides.tsv	415	
 lang0	lang0.pak	DST_OPTION_DROPFILTER_NORMAL	Normal	45e118d0563e	普通	accepted	legacy/translations/lang0_overrides.tsv	416	
-lang0	lang0.pak	DST_OPTION_DROPFILTER_SUPERIOR	Superior	69cbd0d6056a	优质	accepted	legacy/translations/lang0_overrides.tsv	417	
-lang0	lang0.pak	DST_OPTION_DROPFILTER_EXCELENT	Excelent	cd87a570a42c	特级	accepted	legacy/translations/lang0_overrides.tsv	418	
+lang0	lang0.pak	DST_OPTION_DROPFILTER_SUPERIOR	Superior	69cbd0d6056a	高级	accepted	legacy/translations/lang0_overrides.tsv	417	
+lang0	lang0.pak	DST_OPTION_DROPFILTER_EXCELENT	Excelent	cd87a570a42c	优	accepted	legacy/translations/lang0_overrides.tsv	418	
 lang0	lang0.pak	DST_OPTION_DROPFILTER_RARE	Rare	cce370d2f978	稀有	accepted	legacy/translations/lang0_overrides.tsv	419	
 lang0	lang0.pak	DST_OPTION_DROPFILTER_LEGENDARY	Legendary	b7e8916505bf	传说	accepted	legacy/translations/lang0_overrides.tsv	420	
-lang0	lang0.pak	DST_OPTION_DROPFILTER_DRAGONBALL	DragonBall	a3c1b43aea22	龙珠	accepted	legacy/translations/lang0_overrides.tsv	421	
+lang0	lang0.pak	DST_OPTION_DROPFILTER_DRAGONBALL	DragonBall	a3c1b43aea22	七龙珠	accepted	legacy/translations/lang0_overrides.tsv	421	
 lang0	lang0.pak	DST_OPTION_DROPFILTER_JUNK	Event Items	c54155196347	活动物品	accepted	legacy/translations/lang0_overrides.tsv	422	
-lang0	lang0.pak	DST_OPTION_DROPFILTER_RECOVER	Recover Items	715ac0abdfd5	恢复物品	accepted	legacy/translations/lang0_overrides.tsv	423	
-lang0	lang0.pak	DST_OPTION_DROPFILTER_FOOD	Food Items	44f9e728ad0b	食物	accepted	legacy/translations/lang0_overrides.tsv	424	
-lang0	lang0.pak	DST_OPTION_DROPFILTER_UTILITY	Utility Items	460f6db5dc39	工具物品	accepted	legacy/translations/lang0_overrides.tsv	425	
-lang0	lang0.pak	DST_OPTION_DROPFILTER_AUTOCOLLECT	Auto-Collect	cf22be73020c	自动拾取	accepted	legacy/translations/lang0_overrides.tsv	426	
-lang0	lang0.pak	DST_OPTION_DROPFILTER_WEAPONUPGRADE	Weapon Stone	39c425f6dcce	武器石	accepted	legacy/translations/lang0_overrides.tsv	427	
-lang0	lang0.pak	DST_OPTION_DROPFILTER_ARMORUPGRADE	Armor Stone	5ec408d89638	防具石	accepted	legacy/translations/lang0_overrides.tsv	428	
-lang0	lang0.pak	DST_OPTION_DROPFILTER_WEAPONGREATERUPGRADE	Weapon Greater Stone	4d550558920e	武器大石	accepted	legacy/translations/lang0_overrides.tsv	429	
-lang0	lang0.pak	DST_OPTION_DROPFILTER_ARMORGREATERUPGRADE	Armor Greater Stone	1b353032ac4c	防具大石	accepted	legacy/translations/lang0_overrides.tsv	430	
+lang0	lang0.pak	DST_OPTION_DROPFILTER_RECOVER	Recover Items	715ac0abdfd5	恢复道具	accepted	legacy/translations/lang0_overrides.tsv	423	
+lang0	lang0.pak	DST_OPTION_DROPFILTER_FOOD	Food Items	44f9e728ad0b	食物道具	accepted	legacy/translations/lang0_overrides.tsv	424	
+lang0	lang0.pak	DST_OPTION_DROPFILTER_UTILITY	Utility Items	460f6db5dc39	功能性道具	accepted	legacy/translations/lang0_overrides.tsv	425	
+lang0	lang0.pak	DST_OPTION_DROPFILTER_AUTOCOLLECT	Auto-Collect	cf22be73020c	自动撷取	accepted	legacy/translations/lang0_overrides.tsv	426	
+lang0	lang0.pak	DST_OPTION_DROPFILTER_WEAPONUPGRADE	Weapon Stone	39c425f6dcce	武器强化石	accepted	legacy/translations/lang0_overrides.tsv	427	
+lang0	lang0.pak	DST_OPTION_DROPFILTER_ARMORUPGRADE	Armor Stone	5ec408d89638	护甲强化石	accepted	legacy/translations/lang0_overrides.tsv	428	
+lang0	lang0.pak	DST_OPTION_DROPFILTER_WEAPONGREATERUPGRADE	Weapon Greater Stone	4d550558920e	武器高级强化石	accepted	legacy/translations/lang0_overrides.tsv	429	
+lang0	lang0.pak	DST_OPTION_DROPFILTER_ARMORGREATERUPGRADE	Armor Greater Stone	1b353032ac4c	护甲高级强化石	accepted	legacy/translations/lang0_overrides.tsv	430	
 lang0	lang0.pak	DST_OPTION_DROPFILTER_WEAPONDOWNGRADE	Weapon Downgrade Stone	0f73eab54ddb	武器降级石	accepted	legacy/translations/lang0_overrides.tsv	431	
-lang0	lang0.pak	DST_OPTION_DROPFILTER_ARMORDOWNGRADE	Armor Downgrade Stone	c2690fa9d179	防具降级石	accepted	legacy/translations/lang0_overrides.tsv	432	
-lang0	lang0.pak	DST_OPTION_DROPFILTER_STONECORE	White Stone	28e457cfce12	白石	accepted	legacy/translations/lang0_overrides.tsv	433	
+lang0	lang0.pak	DST_OPTION_DROPFILTER_ARMORDOWNGRADE	Armor Downgrade Stone	c2690fa9d179	护甲降级石	accepted	legacy/translations/lang0_overrides.tsv	432	
+lang0	lang0.pak	DST_OPTION_DROPFILTER_STONECORE	White Stone	28e457cfce12	强化保护石	accepted	legacy/translations/lang0_overrides.tsv	433	
 lang0	lang0.pak	DST_OPTION_DROPFILTER_TOOLTIP_NORMAL	Filter Normal Items	3e7d387c0715	过滤普通物品	accepted	legacy/translations/lang0_overrides.tsv	434	
 lang0	lang0.pak	DST_OPTION_DROPFILTER_TOOLTIP_SUPERIOR	Filter Superior Items	07dbb51a75fa	过滤优质物品	accepted	legacy/translations/lang0_overrides.tsv	435	
 lang0	lang0.pak	DST_OPTION_DROPFILTER_TOOLTIP_EXCELENT	Filter Excelent Items	1f58e60c5df7	过滤特级物品	accepted	legacy/translations/lang0_overrides.tsv	436	
@@ -693,26 +693,26 @@ lang0	lang0.pak	DST_OPTION_DROPFILTER_TOOLTIP_WEAPONDOWNGRADE	Filter Weapon Down
 lang0	lang0.pak	DST_OPTION_DROPFILTER_TOOLTIP_ARMORDOWNGRADE	Filter Armor Downgrade Stone	d677b4590b6b	过滤防具降级石	accepted	legacy/translations/lang0_overrides.tsv	448	
 lang0	lang0.pak	DST_OPTION_DROPFILTER_TOOLTIP_STONECORE	Filter White Stone	1b348bd0da9b	过滤白石	accepted	legacy/translations/lang0_overrides.tsv	449	
 lang0	lang0.pak	DST_OPTION_DROPFILTER_TOOLTIP_AUTOCOLLECT	Auto-Collect Items	2ae19a7cef7e	自动拾取物品	accepted	legacy/translations/lang0_overrides.tsv	450	
-lang0	lang0.pak	DST_OPTION_ETC_EX_QUICKSLOT1	Extended Bar 1	c5ee9bcc059b	扩展栏1	accepted	legacy/translations/lang0_overrides.tsv	451	
-lang0	lang0.pak	DST_OPTION_ETC_EX_QUICKSLOT2	Extended Bar 2	3984edfe8813	扩展栏2	accepted	legacy/translations/lang0_overrides.tsv	452	
+lang0	lang0.pak	DST_OPTION_ETC_EX_QUICKSLOT1	Extended Bar 1	c5ee9bcc059b	扩充快捷列1	accepted	legacy/translations/lang0_overrides.tsv	451	
+lang0	lang0.pak	DST_OPTION_ETC_EX_QUICKSLOT2	Extended Bar 2	3984edfe8813	扩充快捷列2	accepted	legacy/translations/lang0_overrides.tsv	452	
 lang0	lang0.pak	DST_OPTION_ETC_EX_QUICKSLOT_LOCK	Lock Bars	8dcb33dd3d21	锁栏	accepted	legacy/translations/lang0_overrides.tsv	453	
 lang0	lang0.pak	DST_OPTION_ETC_FOV	FOV	4fc538e314a5	FOV	accepted	legacy/translations/lang0_overrides.tsv	454	
 lang0	lang0.pak	DST_OPTION_ETC_FRIENDCONNECT	Friend Connection Info	15058490a51c	好友上线信息	accepted	legacy/translations/lang0_overrides.tsv	455	
 lang0	lang0.pak	DST_OPTION_ETC_GUILDCONNECT	Guild Login	f98796068704	公会上线	accepted	legacy/translations/lang0_overrides.tsv	456	
-lang0	lang0.pak	DST_OPTION_ETC_MOUSEDASH	Mouse Dash Interval	ba80c866e90e	鼠标冲刺间隔	accepted	legacy/translations/lang0_overrides.tsv	457	
+lang0	lang0.pak	DST_OPTION_ETC_MOUSEDASH	Mouse Dash Interval	ba80c866e90e	鼠标点击间隔	accepted	legacy/translations/lang0_overrides.tsv	457	
 lang0	lang0.pak	DST_OPTION_ETC_QUESTEFFECT	Quest Text Effects	e6ba0a660519	任务文字效果	accepted	legacy/translations/lang0_overrides.tsv	458	
-lang0	lang0.pak	DST_OPTION_ETC_SELF_TARGET_APPLY	Self casting	21a882a22cb8	自己施法	accepted	legacy/translations/lang0_overrides.tsv	459	
+lang0	lang0.pak	DST_OPTION_ETC_SELF_TARGET_APPLY	Self casting	21a882a22cb8	施展SELF技能	accepted	legacy/translations/lang0_overrides.tsv	459	
 lang0	lang0.pak	DST_OPTION_ETC_USERTRADE	Trade	b0811e470d6b	交易	accepted	legacy/translations/lang0_overrides.tsv	460	
 lang0	lang0.pak	DST_OPTION_ETC_VIEW_POINT	Point	f79a28423ed1	视点	accepted	legacy/translations/lang0_overrides.tsv	461	
-lang0	lang0.pak	DST_OPTION_ETC_WINDOWMOVE	Lock Windows	8be8b9f851a8	锁窗口	accepted	legacy/translations/lang0_overrides.tsv	462	
-lang0	lang0.pak	DST_OPTION_ETC_WINDOWMOVE_DEFAULT	Default Window Positions	50593eeea70b	默认窗口位置	accepted	legacy/translations/lang0_overrides.tsv	463	
+lang0	lang0.pak	DST_OPTION_ETC_WINDOWMOVE	Lock Windows	8be8b9f851a8	可移动视窗	accepted	legacy/translations/lang0_overrides.tsv	462	
+lang0	lang0.pak	DST_OPTION_ETC_WINDOWMOVE_DEFAULT	Default Window Positions	50593eeea70b	还原视窗位置	accepted	legacy/translations/lang0_overrides.tsv	463	
 lang0	lang0.pak	DST_OPTION_GMT_TAB	Bonus	4d963cfab70d	加成	accepted	legacy/translations/lang0_overrides.tsv	464	
-lang0	lang0.pak	DST_OPTION_GRAPHIC_CARTOON_EDGE	Cell Shading	2cabbb64bc8e	卡通描边	accepted	legacy/translations/lang0_overrides.tsv	465	
+lang0	lang0.pak	DST_OPTION_GRAPHIC_CARTOON_EDGE	Cell Shading	2cabbb64bc8e	卡通效果	accepted	legacy/translations/lang0_overrides.tsv	465	
 lang0	lang0.pak	DST_OPTION_GRAPHIC_CHARACTER_EFFECT	Character Effects	b05ac48d94af	角色效果	accepted	legacy/translations/lang0_overrides.tsv	466	
-lang0	lang0.pak	DST_OPTION_GRAPHIC_CHARACTER_RANGE	Player Range	a4c98c5a0970	玩家距离	accepted	legacy/translations/lang0_overrides.tsv	467	
-lang0	lang0.pak	DST_OPTION_GRAPHIC_CHARACTER_SHADOW	Player Shadows	0eb4cfb0735c	玩家阴影	accepted	legacy/translations/lang0_overrides.tsv	468	
+lang0	lang0.pak	DST_OPTION_GRAPHIC_CHARACTER_RANGE	Player Range	a4c98c5a0970	角色视野距离	accepted	legacy/translations/lang0_overrides.tsv	467	
+lang0	lang0.pak	DST_OPTION_GRAPHIC_CHARACTER_SHADOW	Player Shadows	0eb4cfb0735c	角色阴影	accepted	legacy/translations/lang0_overrides.tsv	468	
 lang0	lang0.pak	DST_OPTION_GRAPHIC_ETC_TITLE	Other Effects	d4a430c3a084	其他效果	accepted	legacy/translations/lang0_overrides.tsv	469	
-lang0	lang0.pak	DST_OPTION_GRAPHIC_GAMMA	Gamma	cba508b12182	亮度	accepted	legacy/translations/lang0_overrides.tsv	470	
+lang0	lang0.pak	DST_OPTION_GRAPHIC_GAMMA	Gamma	cba508b12182	明度	accepted	legacy/translations/lang0_overrides.tsv	470	
 lang0	lang0.pak	DST_OPTION_GRAPHIC_HDR_EFFECT	HDR FX	cceada5ea889	HDR	accepted	legacy/translations/lang0_overrides.tsv	471	
 lang0	lang0.pak	DST_OPTION_GRAPHIC_PERFORMANCE_MODE	Performance Mode	6fd40bbf1291	性能模式	accepted	legacy/translations/lang0_overrides.tsv	472	
 lang0	lang0.pak	DST_OPTION_PERF_PLAYER_FILTER	Player Filter:	61c69736246c	玩家过滤:	accepted	legacy/translations/lang0_overrides.tsv	473	
@@ -725,23 +725,23 @@ lang0	lang0.pak	DST_OPTION_PERF_PLAYER_FILTER_PARTY_GUILD	Party + Guild	ccaf16d9
 lang0	lang0.pak	DST_OPTION_PERF_PLAYER_FILTER_ALL_SOCIAL	Party + Guild + Friends	0589d9d8d5ed	队伍+公会+好友	accepted	legacy/translations/lang0_overrides.tsv	480	
 lang0	lang0.pak	DST_OPTION_PERF_HIDE_MASCOT	Hide Mascots/Pets	2b15971f4565	隐藏宠物	accepted	legacy/translations/lang0_overrides.tsv	481	
 lang0	lang0.pak	DST_OPTION_PERF_HIDE_PLAYER_EFFECTS	Hide Player Effects	fd9343aa6ece	隐藏玩家效果	accepted	legacy/translations/lang0_overrides.tsv	482	
-lang0	lang0.pak	DST_OPTION_GRAPHIC_MAGIC_EFFECT	Spell Effects	6b3fb4853f90	技能效果	accepted	legacy/translations/lang0_overrides.tsv	483	
+lang0	lang0.pak	DST_OPTION_GRAPHIC_MAGIC_EFFECT	Spell Effects	6b3fb4853f90	魔法细部效果	accepted	legacy/translations/lang0_overrides.tsv	483	
 lang0	lang0.pak	DST_OPTION_GRAPHIC_QUALITY_HIGH	High	b1a5954a483f	高	accepted	legacy/translations/lang0_overrides.tsv	484	
 lang0	lang0.pak	DST_OPTION_GRAPHIC_QUALITY_LOW	Low	a124947cbd2d	低	accepted	legacy/translations/lang0_overrides.tsv	485	
 lang0	lang0.pak	DST_OPTION_GRAPHIC_QUALITY_MIDDLE	Medium	d404968ea90b	中	accepted	legacy/translations/lang0_overrides.tsv	486	
-lang0	lang0.pak	DST_OPTION_GRAPHIC_QUALITY_OBJECT_RANGE	Object Distance	b9f8b02417f4	物体距离	accepted	legacy/translations/lang0_overrides.tsv	487	
-lang0	lang0.pak	DST_OPTION_GRAPHIC_QUALITY_TERRAIN_RANGE	Terrain Distance	4731e956c1c7	地形距离	accepted	legacy/translations/lang0_overrides.tsv	488	
+lang0	lang0.pak	DST_OPTION_GRAPHIC_QUALITY_OBJECT_RANGE	Object Distance	b9f8b02417f4	物件视野	accepted	legacy/translations/lang0_overrides.tsv	487	
+lang0	lang0.pak	DST_OPTION_GRAPHIC_QUALITY_TERRAIN_RANGE	Terrain Distance	4731e956c1c7	地形视野	accepted	legacy/translations/lang0_overrides.tsv	488	
 lang0	lang0.pak	DST_OPTION_GRAPHIC_QUALITY_TOTAL	Total	b25928c69902	整体	accepted	legacy/translations/lang0_overrides.tsv	489	
-lang0	lang0.pak	DST_OPTION_GRAPHIC_QUALITY_USER	Custom	081ae3fdc403	自定义	accepted	legacy/translations/lang0_overrides.tsv	490	
-lang0	lang0.pak	DST_OPTION_GRAPHIC_RESOLUTION	Resolution	516aae52959d	分辨率	accepted	legacy/translations/lang0_overrides.tsv	491	
-lang0	lang0.pak	DST_OPTION_GRAPHIC_RESOLUTION_TITLE	Resolution	516aae52959d	分辨率	accepted	legacy/translations/lang0_overrides.tsv	492	
-lang0	lang0.pak	DST_OPTION_GRAPHIC_TERRAIN_SHADOW	Object Shadows	2cc821990e96	物体阴影	accepted	legacy/translations/lang0_overrides.tsv	493	
-lang0	lang0.pak	DST_OPTION_GRAPHIC_TEXTURE_QUALITY	Texture Quality	96e585a50ae1	贴图质量	accepted	legacy/translations/lang0_overrides.tsv	494	
-lang0	lang0.pak	DST_OPTION_GRAPHIC_TITLE	Quality	a60f2c73604f	画质	accepted	legacy/translations/lang0_overrides.tsv	495	
-lang0	lang0.pak	DST_OPTION_GRAPHIC_UPGRADE_EFFECT	Upgrade Effects	5009e6164ee4	强化效果	accepted	legacy/translations/lang0_overrides.tsv	496	
-lang0	lang0.pak	DST_OPTION_GRAPHIC_WATER_EFFECT	Water Effects	fc58bcffa4e2	水面效果	accepted	legacy/translations/lang0_overrides.tsv	497	
+lang0	lang0.pak	DST_OPTION_GRAPHIC_QUALITY_USER	Custom	081ae3fdc403	使用者	accepted	legacy/translations/lang0_overrides.tsv	490	
+lang0	lang0.pak	DST_OPTION_GRAPHIC_RESOLUTION	Resolution	516aae52959d	解析度设定	accepted	legacy/translations/lang0_overrides.tsv	491	
+lang0	lang0.pak	DST_OPTION_GRAPHIC_RESOLUTION_TITLE	Resolution	516aae52959d	解析度设定	accepted	legacy/translations/lang0_overrides.tsv	492	
+lang0	lang0.pak	DST_OPTION_GRAPHIC_TERRAIN_SHADOW	Object Shadows	2cc821990e96	地型阴影	accepted	legacy/translations/lang0_overrides.tsv	493	
+lang0	lang0.pak	DST_OPTION_GRAPHIC_TEXTURE_QUALITY	Texture Quality	96e585a50ae1	字型解析度	accepted	legacy/translations/lang0_overrides.tsv	494	
+lang0	lang0.pak	DST_OPTION_GRAPHIC_TITLE	Quality	a60f2c73604f	效果	accepted	legacy/translations/lang0_overrides.tsv	495	
+lang0	lang0.pak	DST_OPTION_GRAPHIC_UPGRADE_EFFECT	Upgrade Effects	5009e6164ee4	升级效果	accepted	legacy/translations/lang0_overrides.tsv	496	
+lang0	lang0.pak	DST_OPTION_GRAPHIC_WATER_EFFECT	Water Effects	fc58bcffa4e2	水波效果	accepted	legacy/translations/lang0_overrides.tsv	497	
 lang0	lang0.pak	DST_OPTION_GRAPHIC_WEATHER_EFFECT	Weather Effects	0e3ab1020394	天气效果	accepted	legacy/translations/lang0_overrides.tsv	498	
-lang0	lang0.pak	DST_OPTION_GRAPHIC_WINDOWMODE	Windowed Mode	48da25a986b6	窗口模式	accepted	legacy/translations/lang0_overrides.tsv	499	
+lang0	lang0.pak	DST_OPTION_GRAPHIC_WINDOWMODE	Windowed Mode	48da25a986b6	视窗模式	accepted	legacy/translations/lang0_overrides.tsv	499	
 lang0	lang0.pak	DST_OPTION_INFO_ACHAR_NAME	Show your name	1ced3a9476e8	显示名称	accepted	legacy/translations/lang0_overrides.tsv	500	
 lang0	lang0.pak	DST_OPTION_INFO_AGGRO_MODE	Show your agro	4ed2af5e535d	显示仇恨	accepted	legacy/translations/lang0_overrides.tsv	501	
 lang0	lang0.pak	DST_OPTION_INFO_COSTUME_RENDER	Show Costumes	07b42f289121	显示时装	accepted	legacy/translations/lang0_overrides.tsv	502	
@@ -755,25 +755,25 @@ lang0	lang0.pak	DST_OPTION_INFO_TOOLTIP_AGGRO	Display Agro values.	c2bf99199fcf	
 lang0	lang0.pak	DST_OPTION_INFO_TOOLTIP_DAMAGE_RENDER	Display all combat info	62561f9c0b65	显示战斗信息	accepted	legacy/translations/lang0_overrides.tsv	510	
 lang0	lang0.pak	DST_OPTION_INFO_TOOLTIP_DROPITEM_OWNERSHIP	Show the loot Icon	c918440f7620	显示掉落图标	accepted	legacy/translations/lang0_overrides.tsv	511	
 lang0	lang0.pak	DST_OPTION_KIT_ITEM_EMPTY_TOOLTIP	Place your item here.	4aa20701126e	把物品放这里。	accepted	legacy/translations/lang0_overrides.tsv	512	
-lang0	lang0.pak	DST_OPTION_OK	Apply	cfea419c3b4e	应用	accepted	legacy/translations/lang0_overrides.tsv	513	
+lang0	lang0.pak	DST_OPTION_OK	Apply	cfea419c3b4e	套用	accepted	legacy/translations/lang0_overrides.tsv	513	
 lang0	lang0.pak	DST_OPTION_OKEFFECT	Apply Only Effect	51c95289c002	仅应用效果	accepted	legacy/translations/lang0_overrides.tsv	514	
 lang0	lang0.pak	DST_OPTION_RADIO_OFF	Off	e3de5ab0ca4c	关	accepted	legacy/translations/lang0_overrides.tsv	515	
 lang0	lang0.pak	DST_OPTION_RADIO_ON	On	e0049a66519c	开	accepted	legacy/translations/lang0_overrides.tsv	516	
-lang0	lang0.pak	DST_OPTION_RESET	Default	808d7dca8a74	默认	accepted	legacy/translations/lang0_overrides.tsv	517	
-lang0	lang0.pak	DST_OPTION_SOUND_BGM	Background Music	5d04c4e5d2b1	背景音乐	accepted	legacy/translations/lang0_overrides.tsv	518	
-lang0	lang0.pak	DST_OPTION_SOUND_ENV	Environment Sound	336a13b780c4	环境音	accepted	legacy/translations/lang0_overrides.tsv	519	
+lang0	lang0.pak	DST_OPTION_RESET	Default	808d7dca8a74	预设值	accepted	legacy/translations/lang0_overrides.tsv	517	
+lang0	lang0.pak	DST_OPTION_SOUND_BGM	Background Music	5d04c4e5d2b1	背景音量	accepted	legacy/translations/lang0_overrides.tsv	518	
+lang0	lang0.pak	DST_OPTION_SOUND_ENV	Environment Sound	336a13b780c4	环境音量	accepted	legacy/translations/lang0_overrides.tsv	519	
 lang0	lang0.pak	DST_OPTION_SOUND_MAIN	Main Volume	35eb53001e1e	主音量	accepted	legacy/translations/lang0_overrides.tsv	520	
-lang0	lang0.pak	DST_OPTION_SOUND_SE	Sound Effects	9c018170b60d	音效	accepted	legacy/translations/lang0_overrides.tsv	521	
+lang0	lang0.pak	DST_OPTION_SOUND_SE	Sound Effects	9c018170b60d	效果音量	accepted	legacy/translations/lang0_overrides.tsv	521	
 lang0	lang0.pak	DST_OPTION_TAB_GAME	Game	e3e82846c325	游戏	accepted	legacy/translations/lang0_overrides.tsv	522	
 lang0	lang0.pak	DST_OPTION_TAB_GAME_CHATTING	Chat	2ced57f12591	聊天	accepted	legacy/translations/lang0_overrides.tsv	523	
-lang0	lang0.pak	DST_OPTION_TAB_GAME_CONTROL	Controls	bee75ca77f75	控制	accepted	legacy/translations/lang0_overrides.tsv	524	
+lang0	lang0.pak	DST_OPTION_TAB_GAME_CONTROL	Controls	bee75ca77f75	键盘	accepted	legacy/translations/lang0_overrides.tsv	524	
 lang0	lang0.pak	DST_OPTION_TAB_GAME_ETC	Other	6e6a6f2086bb	其他	accepted	legacy/translations/lang0_overrides.tsv	525	
 lang0	lang0.pak	DST_OPTION_TAB_GAME_INFO	Info	4b631f698425	信息	accepted	legacy/translations/lang0_overrides.tsv	526	
 lang0	lang0.pak	DST_OPTION_TAB_SYSTEM	System	bc0792d8dc81	系统	accepted	legacy/translations/lang0_overrides.tsv	527	
 lang0	lang0.pak	DST_OPTION_TAB_SYSTEM_EFFECT	FX	b661792a999a	FX	accepted	legacy/translations/lang0_overrides.tsv	528	
 lang0	lang0.pak	DST_OPTION_TAB_SYSTEM_GRAPHIC	GFX	da3fc7832353	GFX	accepted	legacy/translations/lang0_overrides.tsv	529	
 lang0	lang0.pak	DST_OPTION_TAB_SYSTEM_SOUND	Sound	b4e3efeba10e	声音	accepted	legacy/translations/lang0_overrides.tsv	530	
-lang0	lang0.pak	DST_OPTION_TITLE	Options	6bf5da9c080b	选项	accepted	legacy/translations/lang0_overrides.tsv	531	
+lang0	lang0.pak	DST_OPTION_TITLE	Options	6bf5da9c080b	设定	accepted	legacy/translations/lang0_overrides.tsv	531	
 lang0	lang0.pak	DST_OPTION_TOOLTIP_BGMVOLUME	Background Volume	ea5cd34f7626	背景音量	accepted	legacy/translations/lang0_overrides.tsv	532	
 lang0	lang0.pak	DST_OPTION_TOOLTIP_CARTOON_EDGE	Cartoon Outline Yes/No	45bec34ebc4e	卡通描边开关	accepted	legacy/translations/lang0_overrides.tsv	533	
 lang0	lang0.pak	DST_OPTION_TOOLTIP_CHARACTER_DISTANCE	Far or Near Viewing Distance	8283ca9964d4	调整视野距离	accepted	legacy/translations/lang0_overrides.tsv	534	
@@ -830,16 +830,16 @@ lang0	lang0.pak	DST_OPTION_TOOLTIP_WEATHER_EFFECT	Set Weather Effects Quality	b2
 lang0	lang0.pak	DST_OPTION_TOOLTIP_WINDOWMODE	Fullscreen or Windowed	67e61807aeb6	全屏或窗口	accepted	legacy/translations/lang0_overrides.tsv	585	
 lang0	lang0.pak	DST_OPTION_TOOLTIP_WINDOW_DEFAULT	Set All Windows to Default Location	47e6c5d9ba00	窗口恢复默认位置	accepted	legacy/translations/lang0_overrides.tsv	586	
 lang0	lang0.pak	DST_OPTION_TOOLTIP_WINDOW_MOVEABLE	Lock the Windows	efa7cf77a281	锁定窗口	accepted	legacy/translations/lang0_overrides.tsv	587	
-lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_WINDOW_SCOUTERUI	Scouter UI	ef2341b0659b	史考特UI	accepted	legacy/translations/lang0_overrides.tsv	588	
+lang0	lang0.pak	DST_OPTION_CONTROL_ACTION_WINDOW_SCOUTERUI	Scouter UI	ef2341b0659b	史考特视窗	accepted	legacy/translations/lang0_overrides.tsv	588	
 lang0	lang0.pak	DST_POPUPMENU_PARTY_INVITE	Invite to Party	f16185dd3aed	邀请组队	accepted	legacy/translations/lang0_overrides.tsv	592	
-lang0	lang0.pak	DST_POPUPMENU_GUILD_INVITE	Invite to Guild	1e9cbf5e916e	邀请公会	accepted	legacy/translations/lang0_overrides.tsv	593	
+lang0	lang0.pak	DST_POPUPMENU_GUILD_INVITE	Invite to Guild	1e9cbf5e916e	邀请加入流派	accepted	legacy/translations/lang0_overrides.tsv	593	
 lang0	lang0.pak	DST_POPUPMENU_USER_TRADE	Trade	b0811e470d6b	交易	accepted	legacy/translations/lang0_overrides.tsv	594	
 lang0	lang0.pak	DST_POPUPMENU_FRIEND_ADD	Add Friend	1a09d54afb70	加好友	accepted	legacy/translations/lang0_overrides.tsv	595	
 lang0	lang0.pak	DST_POPUPMENU_PVP_REQUEST_FIGHT	Duel	a65733b35940	决斗	accepted	legacy/translations/lang0_overrides.tsv	596	
 lang0	lang0.pak	DST_POPUPMENU_FOLLOW	Follow	66587a7a62a9	跟随	accepted	legacy/translations/lang0_overrides.tsv	597	
-lang0	lang0.pak	DST_POPUPMENU_SEND_WHISPER	Whisper	c010a73e4748	密语	accepted	legacy/translations/lang0_overrides.tsv	598	
+lang0	lang0.pak	DST_POPUPMENU_SEND_WHISPER	Whisper	c010a73e4748	悄悄话	accepted	legacy/translations/lang0_overrides.tsv	598	
 lang0	lang0.pak	DST_POPUPMENU_USER_BLOCK	Block	82dd2cdf36f9	屏蔽	accepted	legacy/translations/lang0_overrides.tsv	599	
-lang0	lang0.pak	DST_SCOUTER_CHECK_MENU_EQUIPMENT	Scan Equipment	715d76e2bbfc	查看装备	accepted	legacy/translations/lang0_overrides.tsv	600	
+lang0	lang0.pak	DST_SCOUTER_CHECK_MENU_EQUIPMENT	Scan Equipment	715d76e2bbfc	观看他人装备	accepted	legacy/translations/lang0_overrides.tsv	600	
 lang0	lang0.pak	DST_POPUPMENU_CANCEL	Cancel	77dfd2135f4d	取消	accepted	legacy/translations/lang0_overrides.tsv	601	
 lang0	lang0.pak	DST_LOBBY_WAIT_GAME_SERVER_CONNECT	"[align = ""center""][font size = ""12"" color=""f4d762""]Loading Game[/font][br][br][font size = ""10"" color=""269eff""]Too many players joining the game.[/font][br][br][font size = ""10"" color=""f4d762""]Players in Queue: %d[/font][br][br][font size = ""10"" color=""ffffff""]Please wait...[/font]"	cd9d724d47da	"[align = ""center""][font size = ""12"" color=""f4d762""]正在进入游戏[/font][br][br][font size = ""10"" color=""269eff""]当前进入游戏的玩家过多。[/font][br][br][font size = ""10"" color=""f4d762""]排队人数: %d[/font][br][br][font size = ""10"" color=""ffffff""]请稍候...[/font]"	accepted	legacy/translations/lang0_overrides.tsv	605	
 lang0	lang0.pak	DST_SCS_LOGIN_ALERT	"[align = ""center""][font size = ""12"" color=""f4d762""]Bot Check Required[/font][br][br][font size = ""9"" color=""ffffff""]To receive experience and item drops,[br]you must complete the Bot Verification.[br][br]Complete it once for 1 hour of immunity![/font]"	bca890356ace	"[align = ""center""][font size = ""12"" color=""f4d762""]需要防挂机验证[/font][br][br][font size = ""9"" color=""ffffff""]若要获得经验和物品掉落，[br]必须完成防挂机验证。[br][br]完成一次后1小时内免验证！[/font]"	accepted	legacy/translations/lang0_overrides.tsv	606	
@@ -854,7 +854,7 @@ lang0	lang0.pak	DST_HUMAN_FIGHTER	Martial Artist	ae1c7a317ba2	武道家	accepted
 lang0	lang0.pak	DST_HUMAN_MYSTIC	Spiritualist	73b3809d295d	气功师	accepted	legacy/translations/lang0_overrides.tsv	618	
 lang0	lang0.pak	DST_NAMEK	Namek	fa4790545002	那美	accepted	legacy/translations/lang0_overrides.tsv	619	
 lang0	lang0.pak	DST_NAMEK_FIGHTER	Warrior	945eda39d82d	战士	accepted	legacy/translations/lang0_overrides.tsv	620	
-lang0	lang0.pak	DST_NAMEK_MYSTIC	Dragon Clan	90e503aa15f2	龙族	accepted	legacy/translations/lang0_overrides.tsv	621	
+lang0	lang0.pak	DST_NAMEK_MYSTIC	Dragon Clan	90e503aa15f2	那美克龙族	accepted	legacy/translations/lang0_overrides.tsv	621	
 lang0	lang0.pak	DST_SKILL_TAB_ACTION_SKILL	Action Skills	64d7a97e565b	动作技能	accepted	legacy/translations/lang0_overrides.tsv	622	
 lang0	lang0.pak	DST_SKILL_WINDOW_TITLE	Skills	e09212c7d3ea	技能	accepted	legacy/translations/lang0_overrides.tsv	623	
 lang0	lang0.pak	DST_MAILSYSTEM_MAIL_MARKET	World Markets	6c550d27c635	世界市场	accepted	legacy/translations/lang0_overrides.tsv	626	
@@ -949,21 +949,21 @@ lang0	lang0.pak	DST_STAFF	Staff	a4730a22cf49	杖	accepted	legacy/translations/la
 lang0	lang0.pak	DST_MIGHTY_MAJIN	Mighty Majin	5873eace4c5e	大魔人	accepted	legacy/translations/lang0_overrides.tsv	717	
 lang0	lang0.pak	DST_WONDER_MAJIN	Wonder Majin	89fdfb37cb7f	意魔人	accepted	legacy/translations/lang0_overrides.tsv	718	
 lang0	lang0.pak	DST_STREET_FIGHTER	Fighter	7f3c61ac8b0b	格斗家	accepted	legacy/translations/lang0_overrides.tsv	719	
-lang0	lang0.pak	DST_SWORD_MASTER	Swordsman	b39501ca197b	剑术师	accepted	legacy/translations/lang0_overrides.tsv	720	
+lang0	lang0.pak	DST_SWORD_MASTER	Swordsman	b39501ca197b	剑术家	accepted	legacy/translations/lang0_overrides.tsv	720	
 lang0	lang0.pak	DST_DARK_WARRIOR	Dark Warrior	ad7a940f7168	魔界战士	accepted	legacy/translations/lang0_overrides.tsv	721	
-lang0	lang0.pak	DST_SHADOW_KNIGHT	Shadow Knight	36dee10e42bf	魔道战士	accepted	legacy/translations/lang0_overrides.tsv	722	
+lang0	lang0.pak	DST_SHADOW_KNIGHT	Shadow Knight	36dee10e42bf	魔导战士	accepted	legacy/translations/lang0_overrides.tsv	722	
 lang0	lang0.pak	DST_DENDEN_HEALER	Dende Priest	9470e1f0d859	天天导师	accepted	legacy/translations/lang0_overrides.tsv	723	
 lang0	lang0.pak	DST_POCO_SUMMONER	Poko Priest	75e260c302d5	波可导师	accepted	legacy/translations/lang0_overrides.tsv	724	
 lang0	lang0.pak	DST_ULTI_MA	Ultimate Majin	40e99d68c8fe	奥迪魔	accepted	legacy/translations/lang0_overrides.tsv	725	
-lang0	lang0.pak	DST_GRAND_MA	Grand Chef Majin	c23516490ca9	格兰魔	accepted	legacy/translations/lang0_overrides.tsv	726	
-lang0	lang0.pak	DST_PLAS_MA	Plasma Majin	95b123fcd50b	普利兹魔	accepted	legacy/translations/lang0_overrides.tsv	727	
+lang0	lang0.pak	DST_GRAND_MA	Grand Chef Majin	c23516490ca9	葛兰魔	accepted	legacy/translations/lang0_overrides.tsv	726	
+lang0	lang0.pak	DST_PLAS_MA	Plasma Majin	95b123fcd50b	普立兹魔	accepted	legacy/translations/lang0_overrides.tsv	727	
 lang0	lang0.pak	DST_KAR_MA	Karma Majin	f54067bf331a	卡尔魔	accepted	legacy/translations/lang0_overrides.tsv	728	
 lang0	lang0.pak	DST_SCROLL	Scroll	090a3c807816	卷轴	accepted	legacy/translations/lang0_overrides.tsv	729	
 lang0	lang0.pak	DST_GEM	Gem	ae634fdf7461	宝	accepted	legacy/translations/lang0_overrides.tsv	730	
 lang0	lang0.pak	DST_STICK	Stick	41460ebaa0e8	棍	accepted	legacy/translations/lang0_overrides.tsv	731	
 lang0	lang0.pak	DST_SWORD	Sword	4a126f4379ee	剑	accepted	legacy/translations/lang0_overrides.tsv	732	
 lang0	lang0.pak	DST_FAN	Fan	ec384064ecf4	扇	accepted	legacy/translations/lang0_overrides.tsv	733	
-lang0	lang0.pak	DST_WAND	Wand	2af4fc97b86a	短棒	accepted	legacy/translations/lang0_overrides.tsv	734	
+lang0	lang0.pak	DST_WAND	Wand	2af4fc97b86a	短棍	accepted	legacy/translations/lang0_overrides.tsv	734	
 lang0	lang0.pak	DST_INSTRUMENT	Trumpet	66c3284825be	乐器	accepted	legacy/translations/lang0_overrides.tsv	735	
 lang0	lang0.pak	DST_DRUM	Drum	32bad1d2cace	鼓	accepted	legacy/translations/lang0_overrides.tsv	736	
 lang0	lang0.pak	DST_MASK	Mask	8aadf1657da5	面具	accepted	legacy/translations/lang0_overrides.tsv	737	
@@ -1095,16 +1095,16 @@ lang0	lang0.pak	DST_FRIEND_TAB_BLACKLIST	Blacklist	7b2dd04c28ef	黑名单	accept
 lang0	lang0.pak	DST_FRIEND_TAB_FRIEND	Friends	c11d5e1d35fb	好友	accepted	legacy/translations/lang0_overrides.tsv	868	
 lang0	lang0.pak	DST_FRIEND_TOO_OVER_NAME	Name Too Long	5b3ed7823489	名称过长	accepted	legacy/translations/lang0_overrides.tsv	869	
 lang0	lang0.pak	DST_FRIEND_WHISPER	Whisper	c010a73e4748	私聊	accepted	legacy/translations/lang0_overrides.tsv	870	
-lang0	lang0.pak	DST_POPUPMENU_GUILD_APPOINT_SECOND_MASTER	Make Jr. Master	51569d868152	任副会长	accepted	legacy/translations/lang0_overrides.tsv	875	
-lang0	lang0.pak	DST_POPUPMENU_GUILD_CHANGE_MASTER	Appoint Guild Leader	9e2a1d4839f0	任命会长	accepted	legacy/translations/lang0_overrides.tsv	876	
-lang0	lang0.pak	DST_POPUPMENU_GUILD_DISAPPOINT_SECOND_MASTER	Demote Jr. Master	8dc4335da455	降副会长	accepted	legacy/translations/lang0_overrides.tsv	877	
-lang0	lang0.pak	DST_POPUPMENU_GUILD_INVITE	Invite to Guild	1e9cbf5e916e	邀请公会	accepted	legacy/translations/lang0_overrides.tsv	878	
-lang0	lang0.pak	DST_POPUPMENU_GUILD_KICK_OUT	Expel	7ce23a02caae	踢出	accepted	legacy/translations/lang0_overrides.tsv	879	
-lang0	lang0.pak	DST_POPUPMENU_GUILD_POST	Send Mail	a107085e8e8e	发邮件	accepted	legacy/translations/lang0_overrides.tsv	880	
-lang0	lang0.pak	DST_GUILD	Guild	54241a3d0070	公会	accepted	legacy/translations/lang0_overrides.tsv	881	
-lang0	lang0.pak	DST_GUILDWAREHOUSE_TITLE_1	Guild Warehouse 1	aac0c5d83ff0	公会仓库1	accepted	legacy/translations/lang0_overrides.tsv	882	
-lang0	lang0.pak	DST_GUILDWAREHOUSE_TITLE_2	Guild Warehouse2	5a78b4479bd8	公会仓库2	accepted	legacy/translations/lang0_overrides.tsv	883	
-lang0	lang0.pak	DST_GUILDWAREHOUSE_TITLE_3	Guild Warehouse3	6def2da0ff5a	公会仓库3	accepted	legacy/translations/lang0_overrides.tsv	884	
+lang0	lang0.pak	DST_POPUPMENU_GUILD_APPOINT_SECOND_MASTER	Make Jr. Master	51569d868152	任命为师范	accepted	legacy/translations/lang0_overrides.tsv	875	
+lang0	lang0.pak	DST_POPUPMENU_GUILD_CHANGE_MASTER	Appoint Guild Leader	9e2a1d4839f0	任命为最高师范	accepted	legacy/translations/lang0_overrides.tsv	876	
+lang0	lang0.pak	DST_POPUPMENU_GUILD_DISAPPOINT_SECOND_MASTER	Demote Jr. Master	8dc4335da455	解除师范资格	accepted	legacy/translations/lang0_overrides.tsv	877	
+lang0	lang0.pak	DST_POPUPMENU_GUILD_INVITE	Invite to Guild	1e9cbf5e916e	邀请加入流派	accepted	legacy/translations/lang0_overrides.tsv	878	
+lang0	lang0.pak	DST_POPUPMENU_GUILD_KICK_OUT	Expel	7ce23a02caae	放逐	accepted	legacy/translations/lang0_overrides.tsv	879	
+lang0	lang0.pak	DST_POPUPMENU_GUILD_POST	Send Mail	a107085e8e8e	寄信	accepted	legacy/translations/lang0_overrides.tsv	880	
+lang0	lang0.pak	DST_GUILD	Guild	54241a3d0070	流派	accepted	legacy/translations/lang0_overrides.tsv	881	
+lang0	lang0.pak	DST_GUILDWAREHOUSE_TITLE_1	Guild Warehouse 1	aac0c5d83ff0	流派仓库1	accepted	legacy/translations/lang0_overrides.tsv	882	
+lang0	lang0.pak	DST_GUILDWAREHOUSE_TITLE_2	Guild Warehouse2	5a78b4479bd8	流派仓库2	accepted	legacy/translations/lang0_overrides.tsv	883	
+lang0	lang0.pak	DST_GUILDWAREHOUSE_TITLE_3	Guild Warehouse3	6def2da0ff5a	流派仓库3	accepted	legacy/translations/lang0_overrides.tsv	884	
 lang0	lang0.pak	DST_GUILD_ADD_FUNCTION	"[align = ""center""][font size = ""12"" color=""f4d762""]%s[/font][br][br][font size = ""10"" color=""269eff""]Improvements[/font][br][br][font size = ""10"" color=""ffffff""]The Following is Required[/font][br][br][font size = ""10"" color=""f36a7c""]Guild Points: %d[br][br]Zeni: %s[/font][br][br][font size = ""10"" color=""ffffff""]Add Feature?[/font]"	c1a1aec21cbd	"[align = ""center""][font size = ""12"" color=""f4d762""]%s[/font][br][br][font size = ""10"" color=""269eff""]功能扩展[/font][br][br][font size = ""10"" color=""ffffff""]需要以下条件[/font][br][br][font size = ""10"" color=""f36a7c""]公会点数: %d[br][br]索尼: %s[/font][br][br][font size = ""10"" color=""ffffff""]添加功能?[/font]"	accepted	legacy/translations/lang0_overrides.tsv	885	
 lang0	lang0.pak	DST_GUILD_ADD_FUNCTION_NOTIFY_TO_MASTER	"[align = ""center""][font size = ""12"" color=""f4d762""]Guild Change Made[/font][br][br][font size = ""10"" color=""269eff""]Good Job![/font][br][br][font size = ""10"" color=""f4d762""]Changes are:[br]%s[/font]"	494e120b4a15	"[align = ""center""][font size = ""12"" color=""f4d762""]公会变更完成[/font][br][br][font size = ""10"" color=""269eff""]做得好![/font][br][br][font size = ""10"" color=""f4d762""]变更内容:[br]%s[/font]"	accepted	legacy/translations/lang0_overrides.tsv	886	
 lang0	lang0.pak	DST_GUILD_ADD_FUNCTION_NOTIFY_TO_MEMBER	Access Changed	96e95adc25c5	权限已变更	accepted	legacy/translations/lang0_overrides.tsv	887	
@@ -1122,10 +1122,10 @@ lang0	lang0.pak	DST_GUILD_CLASS_CHANGE_MEMBER	%s  %s	f999e2ab2b87	%s  %s	accepte
 lang0	lang0.pak	DST_GUILD_CONTRIBUTION_ZENNY	"[align = ""center""][font size = ""12"" color=""f4d762""]Zeni Donation[br](for style points)[/font][br][br][font size = ""10"" color=""269eff""]By donating Zeni[br]The guild gets points[br]To expand the guild.[/font][br][br][font size = ""10"" color=""ffffff""]Donation Amount:[/font][br][br][font size = ""10"" color=""f4d762""]Selected Amount: %s Zeni[br](10000 Zeni = 5 Style Points)[/font][br][br][font size = ""10"" color=""ffffff""]Donate Zeni?[/font]"	68f32da3fe15	"[align = ""center""][font size = ""12"" color=""f4d762""]索尼捐献[br](获得风格点)[/font][br][br][font size = ""10"" color=""269eff""]捐献索尼后[br]公会获得点数，[br]用于扩展公会。[/font][br][br][font size = ""10"" color=""ffffff""]捐献金额:[/font][br][br][font size = ""10"" color=""f4d762""]选择金额: %s索尼[br](10000索尼 = 5风格点)[/font][br][br][font size = ""10"" color=""ffffff""]捐献索尼?[/font]"	accepted	legacy/translations/lang0_overrides.tsv	899	
 lang0	lang0.pak	DST_GUILD_CONTRIBUTION_ZENNY_NOTIFY	Zeni for the Guild	ecc95b2883cf	公会索尼	accepted	legacy/translations/lang0_overrides.tsv	900	
 lang0	lang0.pak	DST_GUILD_CONTRIBUTION_ZENNY_OTHERS	%s donated %s Zeni to Guild	8c4c101e9605	%s向公会捐献%s索尼	accepted	legacy/translations/lang0_overrides.tsv	901	
-lang0	lang0.pak	DST_GUILD_CREATE	Guild Created	a6661aaab54c	公会已创建	accepted	legacy/translations/lang0_overrides.tsv	902	
+lang0	lang0.pak	DST_GUILD_CREATE	Guild Created	a6661aaab54c	建立新流派。	accepted	legacy/translations/lang0_overrides.tsv	902	
 lang0	lang0.pak	DST_GUILD_CREATE_GUILD_EMBLEM	Emblem Made	727085321d7a	徽章已创建	accepted	legacy/translations/lang0_overrides.tsv	903	
 lang0	lang0.pak	DST_GUILD_CREATE_NFY	%s was created.	d41dba7fb2dd	%s已创建。	accepted	legacy/translations/lang0_overrides.tsv	904	
-lang0	lang0.pak	DST_GUILD_CURRNET_POINT	Style Points	6b2bde6205b8	风格点	accepted	legacy/translations/lang0_overrides.tsv	905	
+lang0	lang0.pak	DST_GUILD_CURRNET_POINT	Style Points	6b2bde6205b8	现在流派点数	accepted	legacy/translations/lang0_overrides.tsv	905	
 lang0	lang0.pak	DST_GUILD_CURRNET_POINT_EXPAIN	Donation: %d, Gained: %d	6ec93d599c88	捐献:%d,获得:%d	accepted	legacy/translations/lang0_overrides.tsv	906	
 lang0	lang0.pak	DST_GUILD_CUR_POS	Area	2745debaa64a	区域	accepted	legacy/translations/lang0_overrides.tsv	907	
 lang0	lang0.pak	DST_GUILD_DECLINE	%s Declined	7cb49673b838	%s已拒绝	accepted	legacy/translations/lang0_overrides.tsv	908	
@@ -1135,53 +1135,53 @@ lang0	lang0.pak	DST_GUILD_DISMISS_SECOND_MASTER_REQ	"[align = ""center""][font s
 lang0	lang0.pak	DST_GUILD_DO_DISSOLVE	"[align = ""center""][font size = ""12"" color=""f4d762""]Disband Guild[/font][br][br][font size = ""10"" color=""f36a7c""]Disbanding a guild will remove the guild name.[br][br](The guild will be removed instantly) [/font][br][br][font size = ""10"" color=""ffffff""]Start disbanding Guild?[/font]"	6be56c749dea	"[align = ""center""][font size = ""12"" color=""f4d762""]解散公会[/font][br][br][font size = ""10"" color=""f36a7c""]解散公会会删除公会名。[br][br](公会将立即删除) [/font][br][br][font size = ""10"" color=""ffffff""]开始解散公会?[/font]"	accepted	legacy/translations/lang0_overrides.tsv	912	
 lang0	lang0.pak	DST_GUILD_DO_MAKE	"[align = ""center""][font size = ""12"" color=""f4d762""]Guild Creation[/font][br][br][font size = ""10"" color=""269eff""]Gather your party members[br]Creating a guild provides a variety of content[br]to enjoy.[/font][br][br][font size = ""10"" color=""ffffff""][/font]To create Guild[br]The following are required.[br][br][font size = ""10"" color=""f36a7c""]Required level: Lvl 30[br]Party size: 5[br]Zeni: 200,000[br]Guild Name: Must be 2-16 characters[/font][br][br][font size = ""10"" color=""ffffff""]Enter name and press Ok.[/font]"	9191905e6a4c	"[align = ""center""][font size = ""12"" color=""f4d762""]创建公会[/font][br][br][font size = ""10"" color=""269eff""]召集队伍成员，[br]创建公会可体验多种内容。[/font][br][br][font size = ""10"" color=""ffffff""][/font]创建公会[br]需要以下条件。[br][br][font size = ""10"" color=""f36a7c""]需求等级: 30级[br]队伍人数: 5[br]索尼: 200,000[br]公会名: 2-16个字符[/font][br][br][font size = ""10"" color=""ffffff""]输入名称并按OK。[/font]"	accepted	legacy/translations/lang0_overrides.tsv	913	
 lang0	lang0.pak	DST_GUILD_DO_NOT_FUNC_FOR_DISBAND	Break	7c9d6bf311eb	中断	accepted	legacy/translations/lang0_overrides.tsv	914	
-lang0	lang0.pak	DST_GUILD_EMBLEM_EXPLAIN_1	text, templates, backgrounds, combine	7cc47519736e	文字、模板、背景、组合	accepted	legacy/translations/lang0_overrides.tsv	915	
-lang0	lang0.pak	DST_GUILD_EMBLEM_EXPLAIN_2	(can be set separately for each color)	1dd7d46c7f4e	(每种颜色可分别设置)	accepted	legacy/translations/lang0_overrides.tsv	916	
+lang0	lang0.pak	DST_GUILD_EMBLEM_EXPLAIN_1	text, templates, backgrounds, combine	7cc47519736e	请组合纹章、边框、背景。	accepted	legacy/translations/lang0_overrides.tsv	915	
+lang0	lang0.pak	DST_GUILD_EMBLEM_EXPLAIN_2	(can be set separately for each color)	1dd7d46c7f4e	(可以挑选颜色。)	accepted	legacy/translations/lang0_overrides.tsv	916	
 lang0	lang0.pak	DST_GUILD_EMBLEM_INFO	Emblem	33082edabb4e	徽章	accepted	legacy/translations/lang0_overrides.tsv	917	
 lang0	lang0.pak	DST_GUILD_EMBLEM_MODIFY_INFO	Style Changes	74c90506f2d8	样式变更	accepted	legacy/translations/lang0_overrides.tsv	918	
 lang0	lang0.pak	DST_GUILD_EMBLEM_TITLE	Logo	83fce8327410	标志	accepted	legacy/translations/lang0_overrides.tsv	919	
-lang0	lang0.pak	DST_GUILD_EMPTY	Not in a Guild	699d8b940048	未加入公会	accepted	legacy/translations/lang0_overrides.tsv	920	
+lang0	lang0.pak	DST_GUILD_EMPTY	Not in a Guild	699d8b940048	尚未加入流派。	accepted	legacy/translations/lang0_overrides.tsv	920	
 lang0	lang0.pak	DST_GUILD_ENTRUST_MASTER	Assign Guild Master %s	a81c7799178e	任命%s为会长	accepted	legacy/translations/lang0_overrides.tsv	921	
-lang0	lang0.pak	DST_GUILD_EXPIRED	%s Didn't respond to the Invite	a87516c527fa	%s未回应邀请	accepted	legacy/translations/lang0_overrides.tsv	922	
+lang0	lang0.pak	DST_GUILD_EXPIRED	%s Didn't respond to the Invite	a87516c527fa	%s 没有回应流派邀请。	accepted	legacy/translations/lang0_overrides.tsv	922	
 lang0	lang0.pak	DST_GUILD_GYM	Dojo	2dd1f883527b	道场	accepted	legacy/translations/lang0_overrides.tsv	923	
 lang0	lang0.pak	DST_GUILD_INVITE	%s Invited	c5adaec4390e	%s已邀请	accepted	legacy/translations/lang0_overrides.tsv	924	
 lang0	lang0.pak	DST_GUILD_INVITE_REQ	"[align = ""center""][font size = ""12"" color=""f4d762""]Guild Join Request[/font] [br][br][font size = ""10"" color=""269eff""]You have received a Guild Invite[/font][br][br][font size = ""10"" color = ""ffffff""]Do you want to join %s ?[/font][br]"	275bf54993cf	"[align = ""center""][font size = ""12"" color=""f4d762""]公会加入请求[/font] [br][br][font size = ""10"" color=""269eff""]你收到了公会邀请[/font][br][br][font size = ""10"" color = ""ffffff""]要加入%s吗?[/font][br]"	accepted	legacy/translations/lang0_overrides.tsv	925	
 lang0	lang0.pak	DST_GUILD_INVITE_RES	You are now in a Guild!	6b911a071b65	你已加入公会!	accepted	legacy/translations/lang0_overrides.tsv	926	
 lang0	lang0.pak	DST_GUILD_IS_ONLY_MASTER	Master Only	df2f9a95a582	仅会长	accepted	legacy/translations/lang0_overrides.tsv	927	
-lang0	lang0.pak	DST_GUILD_KICKOUT_MEMBER	%s was expelled from the Guild	b041e042f062	%s已被踢出公会	accepted	legacy/translations/lang0_overrides.tsv	928	
+lang0	lang0.pak	DST_GUILD_KICKOUT_MEMBER	%s was expelled from the Guild	b041e042f062	%s 被驱逐了。	accepted	legacy/translations/lang0_overrides.tsv	928	
 lang0	lang0.pak	DST_GUILD_KICK_OUT	"[align = ""center""][font size = ""12"" color=""f4d762""]Dismiss[/font][br][br][font size = ""10"" color=""f36a7c""]Dismiss the player from the guild.[/font][br][br][font size = ""10"" color=""f36a7c""]Player: %s[/font][br][br][font size = ""10"" color=""ffffff""]Are you sure, to dismiss the player?[/font]"	9fffdb21bf7e	"[align = ""center""][font size = ""12"" color=""f4d762""]踢出[/font][br][br][font size = ""10"" color=""f36a7c""]将该玩家踢出公会。[/font][br][br][font size = ""10"" color=""f36a7c""]玩家: %s[/font][br][br][font size = ""10"" color=""ffffff""]确定踢出该玩家?[/font]"	accepted	legacy/translations/lang0_overrides.tsv	929	
 lang0	lang0.pak	DST_GUILD_LEAVE	Leave	7e3520a97331	离开	accepted	legacy/translations/lang0_overrides.tsv	930	
 lang0	lang0.pak	DST_GUILD_LEAVE_ASK	"[align = ""center""][font size=""12""color=""f4d762""]Leave Guild[/font][br][br][font size=""10""color=""ffffff""]You are sure to leave the Guild?[/font]"	d29737115dc1	"[align = ""center""][font size=""12""color=""f4d762""]离开公会[/font][br][br][font size=""10""color=""ffffff""]确定离开公会吗?[/font]"	accepted	legacy/translations/lang0_overrides.tsv	931	
-lang0	lang0.pak	DST_GUILD_LEAVE_AVATAR	You left the Guild	f4ad9338d472	你已离开公会	accepted	legacy/translations/lang0_overrides.tsv	932	
-lang0	lang0.pak	DST_GUILD_LEAVE_MEMBER	%s has left the Guild	4ea6652e8d77	%s已离开公会	accepted	legacy/translations/lang0_overrides.tsv	933	
+lang0	lang0.pak	DST_GUILD_LEAVE_AVATAR	You left the Guild	f4ad9338d472	已退出流派。	accepted	legacy/translations/lang0_overrides.tsv	932	
+lang0	lang0.pak	DST_GUILD_LEAVE_MEMBER	%s has left the Guild	4ea6652e8d77	%s 已退出流派。	accepted	legacy/translations/lang0_overrides.tsv	933	
 lang0	lang0.pak	DST_GUILD_LEVEL	Lv.	99f42451a1ce	Lv.	accepted	legacy/translations/lang0_overrides.tsv	934	
 lang0	lang0.pak	DST_GUILD_LEVEL_CHANGE_MEMBER	%s is now Lv.%d	bc24f03f8082	%s现为%d级	accepted	legacy/translations/lang0_overrides.tsv	935	
 lang0	lang0.pak	DST_GUILD_MASTER	Master	78f3842f0201	会长	accepted	legacy/translations/lang0_overrides.tsv	936	
 lang0	lang0.pak	DST_GUILD_MAX_POINT	Max Points	a2eb751cf946	点数上限	accepted	legacy/translations/lang0_overrides.tsv	937	
 lang0	lang0.pak	DST_GUILD_MAX_POINT_EXPAIN	Get Points for Skills.	50095c05502d	技能获得点数。	accepted	legacy/translations/lang0_overrides.tsv	938	
 lang0	lang0.pak	DST_GUILD_MEMBER	Members	1cb449c11266	成员	accepted	legacy/translations/lang0_overrides.tsv	939	
-lang0	lang0.pak	DST_GUILD_NAME_RULE	Name must be 2-16 characters	d3ecf7dc66da	名称必须为2-16个字符	accepted	legacy/translations/lang0_overrides.tsv	940	
-lang0	lang0.pak	DST_GUILD_NEW_MEMBER	%s has joined the Guild	fc60b2bd69ba	%s已加入公会	accepted	legacy/translations/lang0_overrides.tsv	941	
+lang0	lang0.pak	DST_GUILD_NAME_RULE	Name must be 2-16 characters	d3ecf7dc66da	流派名称请输入中文2~16个字。	accepted	legacy/translations/lang0_overrides.tsv	940	
+lang0	lang0.pak	DST_GUILD_NEW_MEMBER	%s has joined the Guild	fc60b2bd69ba	%s已加入流派了。	accepted	legacy/translations/lang0_overrides.tsv	941	
 lang0	lang0.pak	DST_GUILD_NOTICE	Notice	5256fffffb86	公告	accepted	legacy/translations/lang0_overrides.tsv	942	
 lang0	lang0.pak	DST_GUILD_NOTICE_DISSOLVE	Guild will be disbanded.\nDate %dYear %dMonth %dDay (%s) at %d:%dMin.	d46fc223bc86	公会将被解散。\n日期 %d年%d月%d日(%s) %d:%d分	accepted	legacy/translations/lang0_overrides.tsv	943	
 lang0	lang0.pak	DST_GUILD_NOTICE_TITLE	Notice	5256fffffb86	公告	accepted	legacy/translations/lang0_overrides.tsv	944	
-lang0	lang0.pak	DST_GUILD_NOT_JOIN	Not in a Guild	699d8b940048	未加入公会	accepted	legacy/translations/lang0_overrides.tsv	945	
+lang0	lang0.pak	DST_GUILD_NOT_JOIN	Not in a Guild	699d8b940048	尚未加入流派。	accepted	legacy/translations/lang0_overrides.tsv	945	
 lang0	lang0.pak	DST_GUILD_NOT_SELECT_EMBLEM	background, framework, etc.	c8886c7c496c	背景、框架等	accepted	legacy/translations/lang0_overrides.tsv	946	
 lang0	lang0.pak	DST_GUILD_ONLINE_MEMBER	%s is Online	9b454c11088b	%s在线	accepted	legacy/translations/lang0_overrides.tsv	947	
-lang0	lang0.pak	DST_GUILD_SECOND_MASTER	Jr. Master	daeacd68ac0f	副会长	accepted	legacy/translations/lang0_overrides.tsv	948	
-lang0	lang0.pak	DST_GUILD_SECOND_MASTER_APPOINTED	%s has been appointed as Jr. Master	3c28c340842a	%s已被任命为副会长	accepted	legacy/translations/lang0_overrides.tsv	949	
+lang0	lang0.pak	DST_GUILD_SECOND_MASTER	Jr. Master	daeacd68ac0f	师范	accepted	legacy/translations/lang0_overrides.tsv	948	
+lang0	lang0.pak	DST_GUILD_SECOND_MASTER_APPOINTED	%s has been appointed as Jr. Master	3c28c340842a	%s被任命为流派师父。	accepted	legacy/translations/lang0_overrides.tsv	949	
 lang0	lang0.pak	DST_GUILD_SETUP_EMBLEM_COLOR	Logo Color	592667846075	标志颜色	accepted	legacy/translations/lang0_overrides.tsv	950	
 lang0	lang0.pak	DST_GUILD_WAREHOUSE_CAN_NOT_DISCARD	No-Discard	76e3db51ec84	不可丢弃	accepted	legacy/translations/lang0_overrides.tsv	951	
 lang0	lang0.pak	DST_GUILD_WAREHOUSE_SAVE_ZENNY	%s Zeni Stored	93454393c4a6	存入%s索尼	accepted	legacy/translations/lang0_overrides.tsv	952	
 lang0	lang0.pak	DST_GUILD_WAREHOUSE_ZENNY_DRAW_OUT	Drew %s Zeni from Bank	abc17268d384	从仓库取出%s索尼	accepted	legacy/translations/lang0_overrides.tsv	953	
-lang0	lang0.pak	DST_TAB_GUILD	Guild	54241a3d0070	公会	accepted	legacy/translations/lang0_overrides.tsv	954	
+lang0	lang0.pak	DST_TAB_GUILD	Guild	54241a3d0070	流派	accepted	legacy/translations/lang0_overrides.tsv	954	
 lang0	lang0.pak	DST_MULTIDIALOG_MENU_SMITH_DISASSEMBLE	Disassemble	f96ef8437bb0	分解	accepted	legacy/translations/lang0_overrides.tsv	957	
 lang0	lang0.pak	DST_SEWING_KIT_BTN_DISASSEMBLE	Disassemble	f96ef8437bb0	分解	accepted	legacy/translations/lang0_overrides.tsv	958	
-lang0	lang0.pak	DST_STATUS_TECHNIC_HOIPOIMIX_DISASSEMBLE	Disassemble	f96ef8437bb0	分解	accepted	legacy/translations/lang0_overrides.tsv	959	
+lang0	lang0.pak	DST_STATUS_TECHNIC_HOIPOIMIX_DISASSEMBLE	Disassemble	f96ef8437bb0	分解道具	accepted	legacy/translations/lang0_overrides.tsv	959	
 lang0	lang0.pak	DST_PARTY_INVITE_SUCCESS	Invited: %s	5bcf080c207b	已邀请: %s	accepted	legacy/translations/lang0_overrides.tsv	960	
 lang0	lang0.pak	DST_INVENTORY_SORT_SUCCESS	sort %s done.	82cac7dbcbe4	整理完成。	accepted	legacy/translations/lang0_overrides.tsv	961	
 lang0	lang0.pak	DST_TRADE_ACCEPT_TRADE	"[align = ""center""][font size = ""12"" color=""f4d762""]Trade[/font][br][br][font size = ""10"" color=""269eff""]Trade with Others! [br]You can trade Items[/font][br][br][font size = ""10"" color=""f4d762""]%s wants to Trade.[/font][br][br][font size = ""10"" color=""ffffff""]Accept Trade?[/font]"	e69cbf5104cd	"[align = ""center""][font size = ""12"" color=""f4d762""]交易[/font][br][br][font size = ""10"" color=""269eff""]与其他玩家交易！[br]可以交换物品[/font][br][br][font size = ""10"" color=""f4d762""]%s 请求与你交易。[/font][br][br][font size = ""10"" color=""ffffff""]是否接受交易？[/font]"	accepted	legacy/translations/lang0_overrides.tsv	962	
-lang0	lang0.pak	DST_POPUPMENU_PARTY_KICK_OUT	Expel from Party	0fcaf88e6073	从队伍中移除	accepted	legacy/translations/lang0_overrides.tsv	964	
+lang0	lang0.pak	DST_POPUPMENU_PARTY_KICK_OUT	Expel from Party	0fcaf88e6073	强制退出球员	accepted	legacy/translations/lang0_overrides.tsv	964	
 tbl	tbl0.pak	*	AzureRenegade	15f3e0f41d71	苍蓝叛逆者	accepted	legacy/translations/tbl_overrides.tsv	3	
 tbl	tbl0.pak	*	BurningRenegade	67f6ee41f4ab	燃烧叛逆者	accepted	legacy/translations/tbl_overrides.tsv	4	
 tbl	tbl1.pak	*	Azure Renegade	b8881d869f4b	苍蓝叛逆者	accepted	legacy/translations/tbl_overrides.tsv	5	
