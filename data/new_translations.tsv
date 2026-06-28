@@ -4659,7 +4659,6 @@ TBL	tbl0.pak	*	E Pa004			wildcard_utf16
 TBL	tbl0.pak	*	BUG TOON 7			wildcard_utf16
 TBL	tbl0.pak	*	BUG TOON 8			wildcard_utf16
 TBL	tbl0.pak	*	BUG TOON 9			wildcard_utf16
-TBL	tbl0.pak	*	Smile Pattern Underwear		笑脸图案内衣	wildcard_utf16
 TBL	tbl0.pak	*	Red Puar 1		红色普尔1	wildcard_utf16
 TBL	tbl0.pak	*	Red Puar 2		红色普尔 2	wildcard_utf16
 TBL	tbl0.pak	*	Red Puar 3		红色普尔 3	wildcard_utf16
@@ -4671,7 +4670,6 @@ TBL	tbl0.pak	*	LP Namek		LP那美克	wildcard_utf16
 TBL	tbl0.pak	*	LP Human		LP人类	wildcard_utf16
 TBL	tbl0.pak	*	POT LP			wildcard_utf16
 TBL	tbl0.pak	*	POT EP			wildcard_utf16
-TBL	tbl0.pak	*	Trumpet		号角	wildcard_utf16
 TBL	tbl0.pak	*	Recipe 75		配方 75	wildcard_utf16
 TBL	tbl0.pak	*	3K CASH			wildcard_utf16
 TBL	tbl0.pak	*	Tanjiro Hair		炭治郎发型	wildcard_utf16
@@ -4692,7 +4690,6 @@ TBL	tbl0.pak	*	IS Hair		IS发型	wildcard_utf16
 TBL	tbl0.pak	*	Death Axe SK Transmog		死亡之斧SK幻化	wildcard_utf16
 TBL	tbl0.pak	*	Two Handed Sword SK		双手剑SK	wildcard_utf16
 TBL	tbl0.pak	*	Subaru		Subaru	wildcard_utf16
-TBL	tbl0.pak	*	Oozaru Martial		大猿武道家	wildcard_utf16
 TBL	tbl0.pak	*	Oozaru Spirit		大猿精神	wildcard_utf16
 TBL	tbl0.pak	*	VIP Capsule Dogi		VIP 胶囊道服	wildcard_utf16
 TBL	tbl0.pak	*	Hallowen Box		万圣节盒	wildcard_utf16
@@ -4706,7 +4703,6 @@ TBL	tbl0.pak	*	50xPStone		50x防具强化石	wildcard_utf16
 TBL	tbl0.pak	*	50xWStone		50x武器强化石	wildcard_utf16
 TBL	tbl0.pak	*	Christmas Title		圣诞称号	wildcard_utf16
 TBL	tbl0.pak	*	Boost 400 EXP		加成 400 EXP	wildcard_utf16
-TBL	tbl0.pak	*	Saiyan Tail F		赛亚人尾巴F	wildcard_utf16
 TBL	tbl0.pak	*	Awards25		Awards25	wildcard_utf16
 TBL	tbl0.pak	*	Bucecoelha		Bucecoelha	wildcard_utf16
 TBL	tbl0.pak	*	Certificate		Certificate	wildcard_utf16
@@ -4737,8 +4733,6 @@ TBL	tbl0.pak	*	EV CC			wildcard_utf16
 TBL	tbl0.pak	*	BUG TOON			wildcard_utf16
 TBL	tbl0.pak	*	Special		特殊	wildcard_utf16
 TBL	tbl0.pak	*	Spinning Star			wildcard_utf16
-TBL	tbl0.pak	*	Halloween Wings		万圣节翅膀	wildcard_utf16
-TBL	tbl0.pak	*	Fairy Wings		仙女翅膀	wildcard_utf16
 TBL	tbl0.pak	*	Cyber Saiyan			wildcard_utf16
 TBL	tbl0.pak	*	IDEL B			wildcard_utf16
 TBL	tbl0.pak	*	ICHI B			wildcard_utf16
@@ -4753,14 +4747,9 @@ TBL	tbl0.pak	*	Buu Costume		布欧服装	wildcard_utf16
 TBL	tbl0.pak	*	King Vegeta Armor		国王贝吉塔护甲	wildcard_utf16
 TBL	tbl0.pak	*	Xeno Goku Outfit		异次元孙悟空套装	wildcard_utf16
 TBL	tbl0.pak	*	To Be Retextured			wildcard_utf16
-TBL	tbl0.pak	*	Hellfire Sword		地狱火剑	wildcard_utf16
 TBL	tbl0.pak	*	GM Weapon Upgrade Stone U75		GM武器升级石U75	wildcard_utf16
 TBL	tbl0.pak	*	GM Armor Upgrade Stone U75		GM防具强化石 U75	wildcard_utf16
-TBL	tbl0.pak	*	Akeno Hat		朱乃帽子	wildcard_utf16
-TBL	tbl0.pak	*	Sabo Hat		萨博帽子	wildcard_utf16
-TBL	tbl0.pak	*	Whitebeard Mustache		白胡子胡子	wildcard_utf16
 TBL	tbl0.pak	*	Custom Dogi		自定义道服	wildcard_utf16
-TBL	tbl0.pak	*	Custom Hat		定制帽子	wildcard_utf16
 TBL	tbl0.pak	*	LV UP 75!			wildcard_utf16
 TBL	tbl0.pak	*	Dogi Preview		道服预览	wildcard_utf16
 TBL	tbl0.pak	*	UD1 Shard		UD1碎片	wildcard_utf16
@@ -4907,36 +4896,6 @@ TBL	tbl0.pak	*	Zero One			wildcard_utf16
 TBL	tbl0.pak	*	Founder01		Founder01	wildcard_utf16
 TBL	tbl0.pak	*	Founder02		Founder02	wildcard_utf16
 TBL	tbl0.pak	*	CC F35			wildcard_utf16
-TBL	tbl0.pak	*	(Martial) Potion Super Saiyan 1		(武道家)超级赛亚人1药水	wildcard_utf16
-TBL	tbl0.pak	*	(Martial) Potion Super Saiyan 2		(武道家)超级赛亚人2药水	wildcard_utf16
-TBL	tbl0.pak	*	(Martial) Potion Super Saiyan 3		(武道家)超级赛亚人3药水	wildcard_utf16
-TBL	tbl0.pak	*	(Martial) Potion Super Saiyan 4		(武道家)超级赛亚人4药水	wildcard_utf16
-TBL	tbl0.pak	*	(Warrior) Potion Great Namek		(那美克战士)巨大那美克药水	wildcard_utf16
-TBL	tbl0.pak	*	(Warrior) Potion Kamiccolo		(那美克战士)卡米克洛药水	wildcard_utf16
-TBL	tbl0.pak	*	(Warrior) Potion Dark Namek		(那美克战士)黑暗那美克药水	wildcard_utf16
-TBL	tbl0.pak	*	(Warrior) Potion Great Orange		(那美克战士)巨大橙色药水	wildcard_utf16
-TBL	tbl0.pak	*	(Warrior) Potion Orange		(那美克战士)橙色药水	wildcard_utf16
-TBL	tbl0.pak	*	(Warrior) Potion Muscle Orange		(那美克战士)肌肉橙色药水	wildcard_utf16
-TBL	tbl0.pak	*	(Warrior) Potion Imperator		(那美克战士)帝王药水	wildcard_utf16
-TBL	tbl0.pak	*	(Dragon) Potion Great Namek		(龙族)巨大那美克药水	wildcard_utf16
-TBL	tbl0.pak	*	(Dragon) Potion Kamiccolo		(龙族)卡米克洛药水	wildcard_utf16
-TBL	tbl0.pak	*	(Dragon) Potion Dark Namek		(龙族)黑暗那美克药水	wildcard_utf16
-TBL	tbl0.pak	*	(Dragon) Potion Great Orange		(龙族) Potion Great Orange	wildcard_utf16
-TBL	tbl0.pak	*	(Dragon) Potion Orange		(龙族) Potion Orange	wildcard_utf16
-TBL	tbl0.pak	*	(Dragon) Potion Muscle Orange		(龙族) Potion Muscle Orange	wildcard_utf16
-TBL	tbl0.pak	*	(Dragon) Potion Imperator		(龙族)帝王药水	wildcard_utf16
-TBL	tbl0.pak	*	(Might) Potion Pure Majin		(大魔人)纯粹魔人药水	wildcard_utf16
-TBL	tbl0.pak	*	(Might) Potion Super Boo		(大魔人)超级布欧药水	wildcard_utf16
-TBL	tbl0.pak	*	(Might) Potion Bootenks		(大魔人)布欧悟天克斯药水	wildcard_utf16
-TBL	tbl0.pak	*	(Might) Potion Buuhan		(大魔人)布欧悟饭药水	wildcard_utf16
-TBL	tbl0.pak	*	(Might) Potion SS3		(大魔人)超级赛亚人3药水	wildcard_utf16
-TBL	tbl0.pak	*	(Might) Potion Xeno		(大魔人)异次元药水	wildcard_utf16
-TBL	tbl0.pak	*	(Wonder) Potion Pure Majin		(意魔人)纯粹魔人药水	wildcard_utf16
-TBL	tbl0.pak	*	(Wonder) Potion Super Boo		(意魔人)超级布欧药水	wildcard_utf16
-TBL	tbl0.pak	*	(Wonder) Potion Bootenks		(意魔人)布欧悟天克斯药水	wildcard_utf16
-TBL	tbl0.pak	*	(Wonder) Potion Buuhan		(意魔人)布欧悟饭药水	wildcard_utf16
-TBL	tbl0.pak	*	(Wonder) Potion SS3		(意魔人)超级赛亚人3药水	wildcard_utf16
-TBL	tbl0.pak	*	(Wonder) Potion Xeno		(意魔人)异次元药水	wildcard_utf16
 TBL	tbl0.pak	*	(Martial) Capsule Super Saiyan 1		(武道家)超级赛亚人1胶囊	wildcard_utf16
 TBL	tbl0.pak	*	(Martial) Capsule Super Saiyan 2		(武道家)超级赛亚人2胶囊	wildcard_utf16
 TBL	tbl0.pak	*	(Martial) Capsule Super Saiyan 3		(武道家)超级赛亚人3胶囊	wildcard_utf16
