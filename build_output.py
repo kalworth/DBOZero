@@ -55,6 +55,14 @@ BUILD_CODE_FILES = (
 )
 GUI0_FONT_ALIASES = ("Default", "detail", "Lolita", "SimHei")
 FONT_EXTENSIONS = {".ttf", ".otf", ".ttc"}
+UNQUOTED_FULL_STAT_LANG0 = {
+    "DST_STATUS_STAT_CON": "耐力",
+    "DST_STATUS_STAT_DEX": "敏捷",
+    "DST_STATUS_STAT_ENG": "幸运",
+    "DST_STATUS_STAT_FOC": "集中",
+    "DST_STATUS_STAT_SOL": "气合",
+    "DST_STATUS_STAT_STR": "力量",
+}
 
 
 class BuildError(RuntimeError):
@@ -716,6 +724,24 @@ def patch_lang0_bytes_by_source(
             raise lang0_gbk_patch.PatchError(f"Printf placeholder mismatch for {key}: {old_specs} -> {new_specs}")
 
         start, end = selected
+        if key in UNQUOTED_FULL_STAT_LANG0:
+            stat_text = UNQUOTED_FULL_STAT_LANG0[key]
+            if encoding.lower() in {"cp950", "big5"}:
+                stat_text = install_hanhua.to_traditional(stat_text)
+            raw_value = lang0_gbk_patch.encoded_text_bytes(stat_text, encoding)
+            old_field_len = end - start + 2
+            if len(raw_value) > old_field_len:
+                raise lang0_gbk_patch.PatchError(
+                    f"Unquoted full stat text is too long for fixed lang0 field: {key} "
+                    f"({len(raw_value)} bytes > {old_field_len} bytes): {stat_text!r}"
+                )
+            pad_len = old_field_len - len(raw_value)
+            patched[start - 1 : end + 1] = raw_value + (b" " * pad_len)
+            if pad_len:
+                space_padded += 1
+            changed += 1
+            continue
+
         new_value = lang0_gbk_patch.encode_lang0_value(text, encoding)
         old_len = end - start
         if len(new_value) > old_len:
