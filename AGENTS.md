@@ -43,6 +43,15 @@ Expected outputs:
 - `位置=*` in TBL rows means a UTF-16LE wildcard translation by source text. Do not replace it with a guessed offset.
 - Candidate/discovery files are not proof that a string is visible in game. Promote or translate rows based on user selection, screenshots, or clear text relevance.
 
+## Text Source Priority Rules
+
+- Default to `local_data.dat` / `local_sync_data.dat` first for short normal UI labels, attribute names, status labels, and other non-rich-text UI strings.
+- Use `lang0.pak` or TBL for rich text, long text, message popups, system messages, and newly added UI/TBL text whose runtime source is known to be `lang0` or `tbl`.
+- Do not let old `local_data.dat` wording override new element terminology. Water / Fire / Ice / Lightning / Wind style new attribute content should keep the current `lang0` / new-content translations unless runtime evidence proves another source is used.
+- If a visible short label still comes from `lang0.pak` even though the same key exists in `local_data.dat`, first verify the runtime source from screenshots or output bytes. Only then add a narrowly scoped `lang0` special case.
+- The validated pattern for cramped `lang0.pak` status labels is fixed-width unquoted replacement: replace the whole quoted field, for example `"STR"`, with a same-length value such as `力量 ` in GBK. This is allowed only when the output file size is unchanged and the game has been tested to accept the unquoted value.
+- Do not use this unquoted `lang0` pattern as a general replacement strategy. Keep it limited to proven short labels such as the six base status stats unless a new case is separately tested.
+
 ## Encoding And Pack Rules
 
 - `local_data.dat` and `local_sync_data.dat` are generated as ANSI game files, not UTF-8.
