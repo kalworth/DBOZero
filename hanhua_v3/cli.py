@@ -8,7 +8,7 @@ import sys
 from datetime import datetime
 from pathlib import Path
 
-from . import batch_translate_queue, scan
+from . import __version__, batch_translate_queue, scan
 from .recover import RecoveryError, recover_from_git
 from .source import (
     DEFAULT_GAME_DIR,
@@ -242,7 +242,8 @@ def add_translate_args(parser: argparse.ArgumentParser) -> None:
 
 
 def build_parser() -> argparse.ArgumentParser:
-    parser = argparse.ArgumentParser(prog="python -m hanhua_v3", description="DBO Zero 汉化 v3 统一命令行工具")
+    parser = argparse.ArgumentParser(prog="dboc", description="DBO Zero 汉化 v3 统一命令行工具")
+    parser.add_argument("--version", action="version", version=f"%(prog)s {__version__}")
     subparsers = parser.add_subparsers(dest="command", required=True)
 
     update = subparsers.add_parser("update", help="一键完成恢复点、源刷新、扫描、翻译和构建")

@@ -38,7 +38,7 @@ TBL 里为了长度把“那美克”写成“那美”这种情况可以保留�
 翻译改完后，在当前目录运行：
 
 ```powershell
-python -m hanhua_v3 build
+dboc build
 ```
 
 它会重新生成：
@@ -65,7 +65,7 @@ python -m hanhua_v3 build
 - `output_taiwan/DBOZero/pack/tbl0.pak`
 - `output_taiwan/DBOZero/pack/tbl1.pak`
 
-`python -m hanhua_v3 build` 只读 `src_file/DBOZero`，不会动真实游戏目录。
+`dboc build` 只读 `src_file/DBOZero`，不会动真实游戏目录。
 
 ## 5. 其他文件
 

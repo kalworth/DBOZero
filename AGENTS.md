@@ -6,28 +6,30 @@ Answer questions in Chinese, and address me as "老大" before every answer.
 
 ## Current Workflow
 
-This workspace builds a copy-only DBO Zero Chinese patch from `src_file/DBOZero`. Never write to the live game directory `E:\DBO Zero 2.0`. The only allowed live-directory read is an explicit `python -m hanhua_v3 refresh` or `update`, which copies the required original assets into `src_file/DBOZero`.
+This workspace builds a copy-only DBO Zero Chinese patch from `src_file/DBOZero`. Never write to the live game directory `E:\DBO Zero 2.0`. The only allowed live-directory read is an explicit `dboc refresh` or `dboc update`, which copies the required original assets into `src_file/DBOZero`.
 
 Use the unified v3 CLI:
 
-- `python -m hanhua_v3 update`: creates a Git checkpoint, refreshes source assets, scans, translates new rows, and builds both outputs.
-- `python -m hanhua_v3 status`: compares the 8 required source assets with the live game directory without modifying either location.
-- `python -m hanhua_v3 refresh`: creates a Git checkpoint and refreshes only the 8 required source assets.
-- `python -m hanhua_v3 scan`: refreshes discovery data and translation queues from `src_file/DBOZero`.
-- `python -m hanhua_v3 recover --ref "stash@{n}"`: fills current blank translations from Git history using exact keys and unambiguous source-text fallback.
-- `python -m hanhua_v3 build`: builds both outputs in parallel by default.
+- Install or refresh the `dboc` command with `python -m hanhua_v3.install_cli`; uninstall only the command wrapper with `python -m hanhua_v3.install_cli --uninstall`.
+
+- `dboc update`: creates a Git checkpoint, refreshes source assets, scans, translates new rows, and builds both outputs.
+- `dboc status`: compares the 8 required source assets with the live game directory without modifying either location.
+- `dboc refresh`: creates a Git checkpoint and refreshes only the 8 required source assets.
+- `dboc scan`: refreshes discovery data and translation queues from `src_file/DBOZero`.
+- `dboc recover --ref "stash@{n}"`: fills current blank translations from Git history using exact keys and unambiguous source-text fallback.
+- `dboc build`: builds both outputs in parallel by default.
 - `data/translations.tsv`: accepted translation master table. Edit `zh_cn` only when changing an existing accepted translation.
 - `data/new_translations.tsv`: daily queue for new `lang0.pak` and selected TBL translations. Fill only `填写中文`.
 - `reports/internal/tbl_internal_candidates.tsv`: full internal TBL candidate audit. Do not treat it as the daily translation table.
 - `reports/what_to_do_next.md`: short human workflow guide.
 - `build_output.py`: builds both user-facing outputs.
 
-The old `build_output.py` and `python -m hanhua_v3.scan` entrypoints remain compatible, but daily work should use the unified CLI.
+The old `python -m hanhua_v3`, `build_output.py`, and `python -m hanhua_v3.scan` entrypoints remain compatible, but daily work should use `dboc`.
 
 Build from this directory:
 
 ```powershell
-python -m hanhua_v3 build
+dboc build
 ```
 
 Expected outputs:
@@ -71,9 +73,9 @@ Expected outputs:
 
 When `src_file/DBOZero` is replaced with a newer game snapshot:
 
-1. Run `python -m hanhua_v3 update`; it creates the required local Git checkpoint automatically and includes tracked `data/new_translations.tsv` changes.
-2. If running steps manually, create the checkpoint before `python -m hanhua_v3 scan`.
-3. Run `python -m hanhua_v3 build` after manual translation work.
+1. Run `dboc update`; it creates the required local Git checkpoint automatically and includes tracked `data/new_translations.tsv` changes.
+2. If running steps manually, create the checkpoint before `dboc scan`.
+3. Run `dboc build` after manual translation work.
 4. Check build stats, especially `pack/lang0.pak`, `pack/tbl0.pak`, and `pack/tbl1.pak` `missing` counts.
 5. If fixed TBL rows move, use the current v3 data first. Only use legacy relocation scripts when explicitly needed for old override recovery.
 
@@ -83,9 +85,9 @@ The active v3 validation baseline is:
 
 ```powershell
 python -m py_compile build_output.py hanhua_v3\scan.py
-python -m hanhua_v3 status
-python -m hanhua_v3 scan
-python -m hanhua_v3 build
+dboc status
+dboc scan
+dboc build
 ```
 
 Do not use `legacy/tools/validate_output.py` as the default v3 validation gate.

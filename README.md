@@ -4,10 +4,30 @@
 
 ## 一键更新
 
-游戏更新后，在仓库根目录运行：
+首次使用先在仓库根目录注册命令：
 
 ```powershell
-python -m hanhua_v3 update
+python -m hanhua_v3.install_cli
+```
+
+安装器会在当前 Python 的 `Scripts` 目录创建受控的 `dboc.cmd`。以后无论终端位于哪个目录，都使用 `dboc`。游戏更新后运行：
+
+```powershell
+dboc update
+```
+
+查看全部指令或某个指令的参数：
+
+```powershell
+dboc --help
+dboc update --help
+dboc build --help
+```
+
+不再使用时可移除命令入口，不会删除仓库：
+
+```powershell
+python -m hanhua_v3.install_cli --uninstall
 ```
 
 该命令会依次完成：
@@ -24,25 +44,25 @@ python -m hanhua_v3 update
 
 ```powershell
 # 检查 src_file 是否与实际游戏的必要文件一致
-python -m hanhua_v3 status
+dboc status
 
 # 只刷新源快照（会先建立 Git 恢复点）
-python -m hanhua_v3 refresh
+dboc refresh
 
 # 只扫描当前 src_file
-python -m hanhua_v3 scan
+dboc scan
 
 # 只翻译相对 HEAD 新增的队列原文
-python -m hanhua_v3 translate --new-since HEAD
+dboc translate --new-since HEAD
 
 # 从较新 Git 状态恢复当前空白译文
-python -m hanhua_v3 recover --ref "stash@{1}"
+dboc recover --ref "stash@{1}"
 
 # 构建两套输出；默认并行和增量执行
-python -m hanhua_v3 build
+dboc build
 ```
 
-`python build_output.py` 与 `python -m hanhua_v3.scan` 继续保留为兼容入口，新操作统一使用 `python -m hanhua_v3`。
+`python -m hanhua_v3`、`python build_output.py` 与 `python -m hanhua_v3.scan` 继续保留为兼容入口，新操作统一使用 `dboc`。
 
 ## 翻译文件
 
@@ -67,8 +87,8 @@ python -m hanhua_v3 build
 
 ```powershell
 python -m compileall -q build_output.py hanhua_v3
-python -m hanhua_v3 status
-python -m hanhua_v3 build --force
+dboc status
+dboc build --force
 ```
 
 构建完成后应重点检查 `pack/lang0.pak`、`pack/tbl0.pak`、`pack/tbl1.pak` 的 `missing` 计数。
