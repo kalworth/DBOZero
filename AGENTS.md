@@ -8,6 +8,12 @@ Answer questions in Chinese, and address me as "老大" before every answer.
 
 This workspace builds a copy-only DBO Zero Chinese patch from `src_file/DBOZero`. Never write to the live game directory `E:\DBO Zero 2.0`. The only allowed live-directory read is an explicit `dboc refresh` or `dboc update`, which copies the required original assets into `src_file/DBOZero`.
 
+## CLI Usage Documentation
+
+- The canonical `dboc` installation, command, option, and example documentation is in the repository-root `README.md`.
+- Read `README.md` before operating the CLI. Use `dboc --help` or `dboc <command> --help` for the live argument reference.
+- When a CLI command, option, default, or workflow changes, update `README.md` in the same change. Keep `AGENTS.md` focused on repository constraints and safety rules rather than duplicating the complete user guide.
+
 Use the unified v3 CLI:
 
 - Install or refresh the `dboc` command with `python -m hanhua_v3.install_cli`; uninstall only the command wrapper with `python -m hanhua_v3.install_cli --uninstall`.
