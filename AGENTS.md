@@ -57,6 +57,7 @@ Expected outputs:
 - In `data/new_translations.tsv`, fill only `填写中文`; leave IDs, source text, and reference columns intact.
 - `位置=*` in TBL rows means a UTF-16LE wildcard translation by source text. Do not replace it with a guessed offset.
 - Candidate/discovery files are not proof that a string is visible in game. Promote or translate rows based on user selection, screenshots, or clear text relevance.
+- `tbl0.pak` values `AzureRenegade` and `BurningRenegade` are internal title-effect tokens and must remain byte-for-byte untranslated. Their spaced `tbl1.pak` display names may be translated.
 
 ## Text Source Priority Rules
 

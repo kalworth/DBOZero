@@ -31,6 +31,8 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Callable
 
+from hanhua_v3.policy import TBL_INTERNAL_TOKEN_DENYLIST, is_tbl_internal_token
+
 
 ROOT = Path(__file__).resolve().parent
 LEGACY_TOOLS = ROOT / "legacy" / "tools"
@@ -834,6 +836,7 @@ def transform_tbl(rows: list[tbl_utf16_patch.TblOverride], transform: Callable[[
     return [
         tbl_utf16_patch.TblOverride(row.file_name, row.offset, row.source_text, transform(row.translation))
         for row in rows
+        if not is_tbl_internal_token(row.file_name, row.source_text)
     ]
 
 
@@ -1093,6 +1096,17 @@ def validate_basic(source_dir: Path, out_dir: Path, label: str, ansi_encoding: s
             raise BuildError(f"{label} empty pack file: {name}")
     for name in ("local_data.dat", "local_sync_data.dat"):
         (language_dir / name).read_bytes().decode(ansi_encoding)
+    for file_name, token in TBL_INTERNAL_TOKEN_DENYLIST:
+        source_data = (source_dir / "DBOZero" / "pack" / file_name).read_bytes()
+        output_data = (pack_dir / file_name).read_bytes()
+        needle = token.encode("utf-16le")
+        source_count = source_data.count(needle)
+        output_count = output_data.count(needle)
+        if output_count != source_count:
+            raise BuildError(
+                f"{label} changed internal title-effect token {file_name}/{token}: "
+                f"source={source_count}, output={output_count}"
+            )
 
 
 def run_build_variant(

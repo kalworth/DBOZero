@@ -10,6 +10,8 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Iterable
 
+from .policy import is_tbl_internal_token
+
 
 ROOT = Path(__file__).resolve().parents[1]
 LEGACY_TOOLS = ROOT / "legacy" / "tools"
@@ -1233,6 +1235,8 @@ def write_new_translation_queue(
         emitted_tbl_sources: set[tuple[str, str]] = set()
         for entry in entries:
             if entry.surface not in {"lang0", "tbl"}:
+                continue
+            if entry.surface == "tbl" and is_tbl_internal_token(entry.file_name, entry.source_text):
                 continue
             if exact_translations_for(entry, exact, wildcard_by_source):
                 continue
