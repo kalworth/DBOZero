@@ -233,7 +233,12 @@ def length_prefixed_source_variants(
     return variants
 
 
-def patch_tbl_bytes(data: bytes, rows: list[TblOverride], single_byte_encoding: str = "gbk") -> tuple[bytes, dict[str, int]]:
+def patch_tbl_bytes(
+    data: bytes,
+    rows: list[TblOverride],
+    single_byte_encoding: str = "gbk",
+    missing_rows: list[tuple[TblOverride, str]] | None = None,
+) -> tuple[bytes, dict[str, int]]:
     original = bytes(data)
     patched = bytearray(data)
     changed = 0
@@ -303,6 +308,8 @@ def patch_tbl_bytes(data: bytes, rows: list[TblOverride], single_byte_encoding: 
                     replacement = safe_fixed_replacement(source_text, translation)
                     if replacement is None:
                         missing += 1
+                        if missing_rows is not None:
+                            missing_rows.append((row, "normalized_translation_too_long"))
                         continue
                     patched[new_offset : new_offset + len(normalized_source)] = replacement
                     changed += 1
@@ -311,6 +318,8 @@ def patch_tbl_bytes(data: bytes, rows: list[TblOverride], single_byte_encoding: 
                 ambiguous += 1
             else:
                 missing += 1
+                if missing_rows is not None:
+                    missing_rows.append((row, "exact_offset_and_relocation_not_found"))
                 continue
 
             continue
@@ -339,16 +348,22 @@ def patch_tbl_bytes(data: bytes, rows: list[TblOverride], single_byte_encoding: 
             if patched_by_variant:
                 continue
             missing += 1
+            if missing_rows is not None:
+                missing_rows.append((row, "wildcard_source_not_found"))
             continue
         patched_any = False
         for offset in offsets:
             if offset is None or offset < 0 or offset + len(source) > len(patched):
                 missing += 1
+                if missing_rows is not None:
+                    missing_rows.append((row, "wildcard_offset_out_of_range"))
                 continue
             if inside_length_prefixed_field(patched, row.file_name, offset, source_units):
                 continue
             if bytes(patched[offset : offset + len(source)]) != source:
                 missing += 1
+                if missing_rows is not None:
+                    missing_rows.append((row, "wildcard_source_changed_during_batch"))
                 continue
             replacement = fixed_replacement(row.source_text, row.translation)
             patched[offset : offset + len(source)] = replacement

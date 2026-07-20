@@ -928,7 +928,7 @@ lang0	lang0.pak	DST_MARKET_SELL	"[align = ""center""][font size = ""12"" color="
 lang0	lang0.pak	DST_MARKET_SELLER	Seller	ec3ef051d5a8	卖家	accepted	legacy/translations/lang0_overrides.tsv	694	
 lang0	lang0.pak	DST_MARKET_SELLITEM_CANCEL	Click 'Cancel' to Cancel the Auction	366d8c8e166d	点取消可取消拍卖	accepted	legacy/translations/lang0_overrides.tsv	695	
 lang0	lang0.pak	DST_MARKET_SELLTEXT	Sell	fa3cf2ad51e0	贩卖	accepted	legacy/translations/lang0_overrides.tsv	696	local_data_priority_market
-lang0	lang0.pak	DST_MARKET_SELL_CANCEL	"[align = ""center""][font size = ""12"" color=""f4d762""]Cancel Auction[/font][br][br][font size = ""10"" color=""269eff""]Cancel the following:[/font][br][br][font size = ""10"" color=""ffffff""]%s[br]Sale Price: %s Zeni[/font][br][br][font size = ""10"" color=""f36a7c""]Do you want to Cancel?[/font][br]"	6a7204ff3159	[align = "center"][font size = "12" color="f4d762"]取消委托贩卖道具[/font][br][br][font size = "10" color="269font"] 将取消下列登录」[10" color="269"] 取消color="ffffff"]%s[br]卖价 : %sZ[/font][br][br][font size = "10" color="f36a7c"][警告] 您确定要取消吗？	accepted	legacy/translations/lang0_overrides.tsv	697	local_data_priority_market
+lang0	lang0.pak	DST_MARKET_SELL_CANCEL	"[align = ""center""][font size = ""12"" color=""f4d762""]Cancel Auction[/font][br][br][font size = ""10"" color=""269eff""]Cancel the following:[/font][br][br][font size = ""10"" color=""ffffff""]%s[br]Sale Price: %s Zeni[/font][br][br][font size = ""10"" color=""f36a7c""]Do you want to Cancel?[/font][br]"	6a7204ff3159	"[align = ""center""][font size = ""12"" color=""f4d762""]取消委托贩卖道具[/font][br][br][font size = ""10"" color=""269font""] 将取消下列登录」[10"" color=""269""] 取消color=""ffffff""]%s[br]卖价 : %sZ[/font][br][br][font size = ""10"" color=""f36a7c""][警告] 您确定要取消吗？"	accepted	legacy/translations/lang0_overrides.tsv	697	local_data_priority_market
 lang0	lang0.pak	DST_MARKET_SELL_ITMEPRICE	Price	3e8248e32edf	价格	accepted	legacy/translations/lang0_overrides.tsv	698	
 lang0	lang0.pak	DST_MARKET_SELL_NOT	Cancel	77dfd2135f4d	贩卖取消	accepted	legacy/translations/lang0_overrides.tsv	699	local_data_priority_market
 lang0	lang0.pak	DST_MARKET_SELL_PRICE	Charge	d4e1aee46cda	手续费	accepted	legacy/translations/lang0_overrides.tsv	700	local_data_priority_market
@@ -1215,13 +1215,13 @@ tbl	tbl1.pak	*	Bright Red Dragon	91846e5d84bd	奥西里斯之天空龙	accepted	
 tbl	tbl1.pak	*	Shiny Blue Dragon	01df12449bd6	欧贝利斯克之巨神兵	accepted	legacy/translations/tbl_overrides.tsv	34	
 tbl	tbl1.pak	*	Legendary Super Saiyan (Super)	06815121ff30	传说超级赛亚人(超)	accepted	legacy/translations/tbl_overrides.tsv	35	
 tbl	tbl1.pak	*	Golden Oozaru	9e2fa7216a82	黄金巨猿	accepted	legacy/translations/tbl_overrides.tsv	36	
-tbl	tbl1.pak	*	Tournament Bacterian	1058ec953602	武道会细菌队长	accepted	legacy/translations/tbl_overrides.tsv	37	
-tbl	tbl1.pak	*	Tournament Giran	3f69b244fba2	武道会基兰	accepted	legacy/translations/tbl_overrides.tsv	38	
-tbl	tbl1.pak	*	Tournament Chaos	cd464944f80d	武道会饺子	accepted	legacy/translations/tbl_overrides.tsv	39	
-tbl	tbl1.pak	*	Tournament King Chappa	fa331492a06e	武道会查帕王	accepted	legacy/translations/tbl_overrides.tsv	40	
-tbl	tbl1.pak	*	Tournament Tien	34da7513c807	武道会天津饭	accepted	legacy/translations/tbl_overrides.tsv	41	
-tbl	tbl1.pak	*	Tournament Yamcha	e6c275dfded0	武道会雅木茶	accepted	legacy/translations/tbl_overrides.tsv	42	
-tbl	tbl1.pak	*	Tournament Goku	338bac2fda7e	武道会孙悟空	accepted	legacy/translations/tbl_overrides.tsv	43	
+tbl	tbl1.pak	*	Tournament Bacterian	1058ec953602	武道会细菌队长	disabled_missing_20260720	legacy/translations/tbl_overrides.tsv	37	source absent in 2026-07-20 snapshot
+tbl	tbl1.pak	*	Tournament Giran	3f69b244fba2	武道会基兰	disabled_missing_20260720	legacy/translations/tbl_overrides.tsv	38	source absent in 2026-07-20 snapshot
+tbl	tbl1.pak	*	Tournament Chaos	cd464944f80d	武道会饺子	disabled_missing_20260720	legacy/translations/tbl_overrides.tsv	39	source absent in 2026-07-20 snapshot
+tbl	tbl1.pak	*	Tournament King Chappa	fa331492a06e	武道会查帕王	disabled_missing_20260720	legacy/translations/tbl_overrides.tsv	40	source absent in 2026-07-20 snapshot
+tbl	tbl1.pak	*	Tournament Tien	34da7513c807	武道会天津饭	disabled_missing_20260720	legacy/translations/tbl_overrides.tsv	41	source absent in 2026-07-20 snapshot
+tbl	tbl1.pak	*	Tournament Yamcha	e6c275dfded0	武道会雅木茶	disabled_missing_20260720	legacy/translations/tbl_overrides.tsv	42	source absent in 2026-07-20 snapshot
+tbl	tbl1.pak	*	Tournament Goku	338bac2fda7e	武道会孙悟空	disabled_missing_20260720	legacy/translations/tbl_overrides.tsv	43	source absent in 2026-07-20 snapshot
 tbl	tbl1.pak	*	Goku(Super)	cb77bd4d3cb5	孙悟空(超)	accepted	legacy/translations/tbl_overrides.tsv	44	
 tbl	tbl1.pak	*	Vegeta(Super)	0aa9f93b2c30	贝吉塔(超)	accepted	legacy/translations/tbl_overrides.tsv	45	
 tbl	tbl1.pak	*	Increase Physical Defense Penetration %d%%	7705bb192545	增加物理防御穿透%d%%	accepted	legacy/translations/tbl_overrides.tsv	46	
@@ -1314,7 +1314,7 @@ tbl	tbl1.pak	0x016BE9ED	(Spiritualist) (7 days) Super Saiyan 3	369b51eaace2	(气
 tbl	tbl1.pak	0x016BEA3F	(Spiritualist) (7 days) Super Saiyan GOD	74d81cd7162b	(气功师)(7天)超级赛亚人之神	accepted	legacy/translations/tbl_overrides.tsv	143	
 tbl	tbl1.pak	0x016BEA95	(Spiritualist) (7 days) Super Saiyan BLUE	09207080249a	(气功师)(7天)超级赛亚人蓝色	accepted	legacy/translations/tbl_overrides.tsv	144	
 tbl	tbl1.pak	0x016BEAED	(Spiritualist) (7 days) Super Saiyan Rose	88b071254457	(气功师)(7天)超级赛亚人桃红	accepted	legacy/translations/tbl_overrides.tsv	145	
-tbl	tbl1.pak	0x016BEBA5	4(Spiritualist) (7 days) Super Saiyan Legendary Super	3949b88d8289	(气功师)(7天)传说超级赛亚人(超)	accepted	legacy/translations/tbl_overrides.tsv	147	
+tbl	tbl1.pak	0x016BEBA5	4(Spiritualist) (7 days) Super Saiyan Legendary Super	3949b88d8289	(气功师)(7天)传说超级赛亚人(超)	disabled_missing_20260720	legacy/translations/tbl_overrides.tsv	147	source absent in 2026-07-20 snapshot; corrected source retained as queue wildcard
 tbl	tbl1.pak	0x016BEC15	(Spiritualist) (7 days) Super Saiyan 4	797307159705	(气功师)(7天)超级赛亚人4	accepted	legacy/translations/tbl_overrides.tsv	148	
 tbl	tbl0.pak	*	(Warrior) Potion Great Namek	e9c05c8cc90f	(那美克战士)巨大那美克药水	accepted	legacy/translations/tbl_overrides.tsv	149	wildcard_after_tbl0_refresh_20260628
 tbl	tbl0.pak	*	(Warrior) Potion Kamiccolo	a580d36c8c7e	(那美克战士)卡米克洛药水	accepted	legacy/translations/tbl_overrides.tsv	150	wildcard_after_tbl0_refresh_20260628
@@ -1544,7 +1544,7 @@ tbl	tbl1.pak	0x011A8840	Stage 4 Target	f8210b4d4e47	阶段4目标	accepted	legac
 tbl	tbl1.pak	0x011A8E38	Stage 1 Target	9d03c1344f46	阶段1目标	accepted	legacy/translations/tbl_overrides.tsv	425	
 tbl	tbl1.pak	0x011A907C	Stage 2 Target	7cffc37deb18	阶段2目标	accepted	legacy/translations/tbl_overrides.tsv	426	
 tbl	tbl1.pak	0x011A9FEE	To the Hyperbolic Time Chamber	aecb1722ddd4	前往精神时光屋	accepted	legacy/translations/tbl_overrides.tsv	427	
-tbl	tbl1.pak	*	KThe Spiritualist master pummels his\nenemy with a barrage of energy blasts.	64dc64a4636b	KThe 气功师 master pummels his\nenemy with a barrage of energy blasts.	accepted	legacy/translations/tbl_overrides.tsv	430	
+tbl	tbl1.pak	*	KThe Spiritualist master pummels his\nenemy with a barrage of energy blasts.	64dc64a4636b	KThe 气功师 master pummels his\nenemy with a barrage of energy blasts.	disabled_missing_20260720	legacy/translations/tbl_overrides.tsv	430	source absent in 2026-07-20 snapshot
 tbl	tbl1.pak	0x012D0B18	ANThe Namekian of the Dragon Clan attacks\nwith a stream of energy-based spells.	968ba97992bb	ANThe Namekian of the 那美克龙族 attacks\nwith a stream of energy-based spells.	accepted	legacy/translations/tbl_overrides.tsv	433	
 tbl	tbl1.pak	*	Martial Artist Buff	3921796039f6	武道家增益	accepted	legacy/translations/tbl_overrides.tsv	451	
 tbl	tbl1.pak	*	Spiritualist Buff	6cc94d5f8cc2	气功师增益	accepted	legacy/translations/tbl_overrides.tsv	456	
@@ -1674,7 +1674,7 @@ tbl	tbl1.pak	0x01736BEA	Citizen 002	618519792bd0	市民002	accepted	legacy/trans
 tbl	tbl1.pak	0x01737C86	Citizen 003	c2ad890af718	市民003	accepted	legacy/translations/tbl_overrides.tsv	758	
 tbl	tbl1.pak	0x01737F0E	UD-Secret	a1fc9202513c	UD-秘密	accepted	legacy/translations/tbl_overrides.tsv	760	
 tbl	tbl1.pak	0x017498DA	Warriors use Ax or Claws and Dragon Clan use Scroll and Gems.	8e1f9a23821a	Warriors use Ax or Claws and 那美克龙族 use Scroll and Gems.	accepted	legacy/translations/tbl_overrides.tsv	761	
-tbl	tbl1.pak	0x017562A0	HHey, practicing Spiritualist, can I reach the measurements of ten girls?	be554cc6851d	HHey, practicing 气功师, can I reach the measurements of ten girls?	accepted	legacy/translations/tbl_overrides.tsv	762	
+tbl	tbl1.pak	0x017562A0	HHey, practicing Spiritualist, can I reach the measurements of ten girls?	be554cc6851d	HHey, practicing 气功师, can I reach the measurements of ten girls?	disabled_missing_20260720	legacy/translations/tbl_overrides.tsv	762	source absent in 2026-07-20 snapshot
 tbl	tbl1.pak	0x017F2C0C	Giant Namek	d74ceb7c679a	巨大那美克	accepted	legacy/translations/tbl_overrides.tsv	767	
 tbl	tbl1.pak	0x0181ECBE	Ghost Tail	09bc037033cb	幽灵尾巴	accepted	legacy/translations/tbl_overrides.tsv	785	
 tbl	tbl1.pak	0x0181EDFE	Dragon Frog Skin	83e3aeafd08c	龙青蛙皮肤	accepted	legacy/translations/tbl_overrides.tsv	788	
@@ -1743,7 +1743,7 @@ tbl	tbl1.pak	0x01831274	Namek Warrior Cleru's delicious pineapple.	04762ea05b3a	
 tbl	tbl1.pak	0x01831C48	Namek Warrior Howe's entrusted letter.	15b5bd9a0314	那美克战士 Howe's entrusted letter.	accepted	legacy/translations/tbl_overrides.tsv	898	
 tbl	tbl1.pak	0x018349D2	Red Crystal	60320530a681	红色水晶	accepted	legacy/translations/tbl_overrides.tsv	899	
 tbl	tbl1.pak	0x018376F2	Big Metal Bucket	558a2c4f07e9	大金属桶	accepted	legacy/translations/tbl_overrides.tsv	900	
-tbl	tbl1.pak	0x0183E054	CCloak, handed over from  legendary\nNamek Warrior Mr. P. to Gullah.	028c311cf6c0	CCloak, handed over from  legendary\n那美克战士 Mr. P. to Gullah.	accepted	legacy/translations/tbl_overrides.tsv	901	
+tbl	tbl1.pak	0x0183E054	CCloak, handed over from  legendary\nNamek Warrior Mr. P. to Gullah.	028c311cf6c0	CCloak, handed over from  legendary\n那美克战士 Mr. P. to Gullah.	disabled_missing_20260720	legacy/translations/tbl_overrides.tsv	901	source absent in 2026-07-20 snapshot
 tbl	tbl1.pak	0x0185E15A	Very old Dragon Clan Staff.	842981776b83	Very old 那美克龙族 Staff.	accepted	legacy/translations/tbl_overrides.tsv	902	
 tbl	tbl1.pak	0x0186BA28	Alternate Key	f83539a057ec	异色钥匙	accepted	legacy/translations/tbl_overrides.tsv	904	
 tbl	tbl1.pak	0x018792E8	Old Cell Ring	a651290a6259	老旧沙鲁戒指	accepted	legacy/translations/tbl_overrides.tsv	915	
@@ -1751,26 +1751,26 @@ tbl	tbl1.pak	0x01879308	New Cell Ring	19ba00fe4bf6	新沙鲁戒指	accepted	lega
 tbl	tbl1.pak	0x01879906	CC Life Material	8b6d185959c8	CC生命材料	accepted	legacy/translations/tbl_overrides.tsv	917	
 tbl	tbl1.pak	0x018C9F02	Red Fury	0c843de0e416	红色狂怒	accepted	legacy/translations/tbl_overrides.tsv	921	
 tbl	tbl1.pak	0x018CA472	Ultimate Combo	1b0bbc383805	终极连击	accepted	legacy/translations/tbl_overrides.tsv	924	
-tbl	tbl1.pak	0x012109CD	SpeedUp LV1	360565628639	速度提升Lv1	accepted	legacy/translations/tbl_overrides.tsv	928	source changed from HEN Buff 50400 Lv1
-tbl	tbl1.pak	0x01210B29	SpeedUp LV2	714ed0ef0773	速度提升Lv2	accepted	legacy/translations/tbl_overrides.tsv	929	source changed from HEN Buff 50400 Lv2
-tbl	tbl1.pak	0x01210C85	SpeedUp LV3	37c5e91ea675	速度提升Lv3	accepted	legacy/translations/tbl_overrides.tsv	930	source changed from HEN Buff 50400 Lv3
-tbl	tbl1.pak	0x01210DE1	SpeedUp LV4	fa00c296b38d	速度提升Lv4	accepted	legacy/translations/tbl_overrides.tsv	931	source changed from HEN Buff 50400 Lv4
-tbl	tbl1.pak	0x01210F3D	HEN Buff 50410 Lv1	e4d32865aa40	HEN增益50410Lv1	accepted	legacy/translations/tbl_overrides.tsv	932	
-tbl	tbl1.pak	0x01211099	HEN Buff 50410 Lv2	40c716cd53e9	HEN增益50410Lv2	accepted	legacy/translations/tbl_overrides.tsv	933	
-tbl	tbl1.pak	0x012111F5	HEN Buff 50410 Lv3	d426d43249ed	HEN增益50410Lv3	accepted	legacy/translations/tbl_overrides.tsv	934	
-tbl	tbl1.pak	0x01211351	HEN Buff 50410 Lv4	ef4e9345b49d	HEN增益50410Lv4	accepted	legacy/translations/tbl_overrides.tsv	935	
-tbl	tbl1.pak	0x012114AD	HEN Buff 50420 Lv1	2092329e7008	HEN增益50420Lv1	accepted	legacy/translations/tbl_overrides.tsv	936	
-tbl	tbl1.pak	0x01211609	HEN Buff 50420 Lv2	fba03f8fc94f	HEN增益50420Lv2	accepted	legacy/translations/tbl_overrides.tsv	937	
-tbl	tbl1.pak	0x01211765	HEN Buff 50420 Lv3	e46dc4258615	HEN增益50420Lv3	accepted	legacy/translations/tbl_overrides.tsv	938	
-tbl	tbl1.pak	0x012118C1	HEN Buff 50420 Lv4	4e5993e73a3f	HEN增益50420Lv4	accepted	legacy/translations/tbl_overrides.tsv	939	
+tbl	tbl1.pak	0x012109CD	SpeedUp LV1	360565628639	速度提升Lv1	disabled_missing_20260720	legacy/translations/tbl_overrides.tsv	928	source changed from HEN Buff 50400 Lv1; source absent in 2026-07-20 snapshot
+tbl	tbl1.pak	0x01210B29	SpeedUp LV2	714ed0ef0773	速度提升Lv2	disabled_missing_20260720	legacy/translations/tbl_overrides.tsv	929	source changed from HEN Buff 50400 Lv2; source absent in 2026-07-20 snapshot
+tbl	tbl1.pak	0x01210C85	SpeedUp LV3	37c5e91ea675	速度提升Lv3	disabled_missing_20260720	legacy/translations/tbl_overrides.tsv	930	source changed from HEN Buff 50400 Lv3; source absent in 2026-07-20 snapshot
+tbl	tbl1.pak	0x01210DE1	SpeedUp LV4	fa00c296b38d	速度提升Lv4	disabled_missing_20260720	legacy/translations/tbl_overrides.tsv	931	source changed from HEN Buff 50400 Lv4; source absent in 2026-07-20 snapshot
+tbl	tbl1.pak	0x01210F3D	HEN Buff 50410 Lv1	e4d32865aa40	HEN增益50410Lv1	disabled_internal_identifier_20260720	legacy/translations/tbl_overrides.tsv	932	internal identifier; not proven visible
+tbl	tbl1.pak	0x01211099	HEN Buff 50410 Lv2	40c716cd53e9	HEN增益50410Lv2	disabled_internal_identifier_20260720	legacy/translations/tbl_overrides.tsv	933	internal identifier; not proven visible
+tbl	tbl1.pak	0x012111F5	HEN Buff 50410 Lv3	d426d43249ed	HEN增益50410Lv3	disabled_internal_identifier_20260720	legacy/translations/tbl_overrides.tsv	934	internal identifier; not proven visible
+tbl	tbl1.pak	0x01211351	HEN Buff 50410 Lv4	ef4e9345b49d	HEN增益50410Lv4	disabled_internal_identifier_20260720	legacy/translations/tbl_overrides.tsv	935	internal identifier; not proven visible
+tbl	tbl1.pak	0x012114AD	HEN Buff 50420 Lv1	2092329e7008	HEN增益50420Lv1	disabled_internal_identifier_20260720	legacy/translations/tbl_overrides.tsv	936	internal identifier; not proven visible
+tbl	tbl1.pak	0x01211609	HEN Buff 50420 Lv2	fba03f8fc94f	HEN增益50420Lv2	disabled_internal_identifier_20260720	legacy/translations/tbl_overrides.tsv	937	internal identifier; not proven visible
+tbl	tbl1.pak	0x01211765	HEN Buff 50420 Lv3	e46dc4258615	HEN增益50420Lv3	disabled_internal_identifier_20260720	legacy/translations/tbl_overrides.tsv	938	internal identifier; not proven visible
+tbl	tbl1.pak	0x012118C1	HEN Buff 50420 Lv4	4e5993e73a3f	HEN增益50420Lv4	disabled_internal_identifier_20260720	legacy/translations/tbl_overrides.tsv	939	internal identifier; not proven visible
 tbl	tbl1.pak	0x01211A1D	Focused Overdrive I	da041b167001	集中超载I	accepted	legacy/translations/tbl_overrides.tsv	940	source changed from HEN Buff 50430 Lv1
 tbl	tbl1.pak	0x01211B79	Focused Overdrive II	f9ee1f76ad61	集中超载II	accepted	legacy/translations/tbl_overrides.tsv	941	source changed from HEN Buff 50430 Lv2
 tbl	tbl1.pak	0x01211CD5	Focused Overdrive III	1755b0cec3db	集中超载III	accepted	legacy/translations/tbl_overrides.tsv	942	source changed from HEN Buff 50430 Lv3
 tbl	tbl1.pak	0x01211E31	Focused Overdrive IV	65039cca891c	集中超载IV	accepted	legacy/translations/tbl_overrides.tsv	943	source changed from HEN Buff 50430 Lv4
-tbl	tbl1.pak	0x01211F8D	HEN Buff 50440 Lv1	47bdafc1f4c0	HEN增益50440Lv1	accepted	legacy/translations/tbl_overrides.tsv	944	
-tbl	tbl1.pak	0x012120E9	HEN Buff 50440 Lv2	0f78a8726b77	HEN增益50440Lv2	accepted	legacy/translations/tbl_overrides.tsv	945	
-tbl	tbl1.pak	0x01212245	HEN Buff 50440 Lv3	ec93808271b4	HEN增益50440Lv3	accepted	legacy/translations/tbl_overrides.tsv	946	
-tbl	tbl1.pak	0x012123A1	HEN Buff 50440 Lv4	ae2cb0505816	HEN增益50440Lv4	accepted	legacy/translations/tbl_overrides.tsv	947	
+tbl	tbl1.pak	0x01211F8D	HEN Buff 50440 Lv1	47bdafc1f4c0	HEN增益50440Lv1	disabled_internal_identifier_20260720	legacy/translations/tbl_overrides.tsv	944	internal identifier; not proven visible
+tbl	tbl1.pak	0x012120E9	HEN Buff 50440 Lv2	0f78a8726b77	HEN增益50440Lv2	disabled_internal_identifier_20260720	legacy/translations/tbl_overrides.tsv	945	internal identifier; not proven visible
+tbl	tbl1.pak	0x01212245	HEN Buff 50440 Lv3	ec93808271b4	HEN增益50440Lv3	disabled_internal_identifier_20260720	legacy/translations/tbl_overrides.tsv	946	internal identifier; not proven visible
+tbl	tbl1.pak	0x012123A1	HEN Buff 50440 Lv4	ae2cb0505816	HEN增益50440Lv4	disabled_internal_identifier_20260720	legacy/translations/tbl_overrides.tsv	947	internal identifier; not proven visible
 tbl	tbl1.pak	0x0121459D	Dragon Clan Transformation	5f02be49d340	那美克龙族 Transformation	accepted	legacy/translations/tbl_overrides.tsv	948	
 tbl	tbl1.pak	0x012149B1	SSJ GOD Spiritualist	2dfca4cc5e73	SSJ GOD 气功师	accepted	legacy/translations/tbl_overrides.tsv	949	
 tbl	tbl1.pak	0x01214DC5	SSJ2 Spiritualist	a72baa5ba268	SSJ2 气功师	accepted	legacy/translations/tbl_overrides.tsv	950	
@@ -1793,7 +1793,7 @@ tbl	tbl1.pak	0x0125ADE5	Xeno Majin Might	7edf3eb5a18d	异次元魔人大	accepte
 tbl	tbl1.pak	0x0125AF41	Xeno Majin Wonder	4f29cca65af0	异次元魔人意	accepted	legacy/translations/tbl_overrides.tsv	967	
 tbl	tbl1.pak	0x01262429	SSJ3 Spiritualist	ad638ca94950	SSJ3 气功师	accepted	legacy/translations/tbl_overrides.tsv	968	
 tbl	tbl1.pak	0x01272671	Turtle	7039da614328	龟	accepted	legacy/translations/tbl_overrides.tsv	969	
-tbl	tbl1.pak	0x012843E9	Buff SK 85	434bdc938dc5	增益SK85	accepted	legacy/translations/tbl_overrides.tsv	970	
+tbl	tbl1.pak	0x012843E9	Buff SK 85	434bdc938dc5	增益SK85	disabled_internal_identifier_20260720	legacy/translations/tbl_overrides.tsv	970	internal identifier; not proven visible
 tbl	tbl1.pak	0x012B6CBD	Golden Ozaru	e1a23bc6f240	黄金大猿	accepted	legacy/translations/tbl_overrides.tsv	973	
 tbl	tbl1.pak	0x012B6E19	Golden Ozaru Spiritualist	64f0cb8470a6	黄金大猿气功师	accepted	legacy/translations/tbl_overrides.tsv	974	
 tbl	tbl1.pak	0x012D5E73	Dark Devil's Silver Coin	786cfa933f5c	黑暗魔鬼的银色硬币	accepted	legacy/translations/tbl_overrides.tsv	975	
@@ -1823,8 +1823,8 @@ tbl	tbl1.pak	0x012ED77F	Upgrade Stone U25	2df1b908cd7a	升级石U25	accepted	leg
 tbl	tbl1.pak	0x012EFE0F	Ancient Staff	9cf9f3258c91	古代杖	accepted	legacy/translations/tbl_overrides.tsv	1066	
 tbl	tbl1.pak	*	Warrior Sword	a6f437257955	那美克战士剑	accepted	legacy/translations/tbl_overrides.tsv	1072	
 tbl	tbl1.pak	0x012F6A69	Black Frog Meat	591c86812675	黑色青蛙肉	accepted	legacy/translations/tbl_overrides.tsv	1092	
-tbl	tbl1.pak	0x012FD4B9	HCostume provided for kids at the\nbeginnings of Martial Artist training.	2c0f28d8b49c	HCostume provided for kids at the\nbeginnings of 武道家 training.	accepted	legacy/translations/tbl_overrides.tsv	1093	
-tbl	tbl1.pak	*	ZMartial Artist tops made with human made\nfibre copied from firm skin tissues of namekian.	0bfb6750b600	Z武道家 tops made with human made\nfibre copied from firm skin tissues of namekian.	accepted	legacy/translations/tbl_overrides.tsv	1094	
+tbl	tbl1.pak	0x012FD4B9	HCostume provided for kids at the\nbeginnings of Martial Artist training.	2c0f28d8b49c	HCostume provided for kids at the\nbeginnings of 武道家 training.	disabled_missing_20260720	legacy/translations/tbl_overrides.tsv	1093	source absent in 2026-07-20 snapshot
+tbl	tbl1.pak	*	ZMartial Artist tops made with human made\nfibre copied from firm skin tissues of namekian.	0bfb6750b600	Z武道家 tops made with human made\nfibre copied from firm skin tissues of namekian.	disabled_missing_20260720	legacy/translations/tbl_overrides.tsv	1094	source absent in 2026-07-20 snapshot
 tbl	tbl1.pak	0x0130A813	Yamcha's Outfit	0d76744e5db5	雅木茶的套装	accepted	legacy/translations/tbl_overrides.tsv	1097	
 tbl	tbl1.pak	0x0130A907	Kami's Outfit	a95cb993d21c	天神的套装	accepted	legacy/translations/tbl_overrides.tsv	1098	
 tbl	tbl1.pak	0x0130FF37	Z-Warrior Outfit	122faf4f565d	Z-战士套装	accepted	legacy/translations/tbl_overrides.tsv	1124	
@@ -1886,7 +1886,7 @@ tbl	tbl1.pak	0x01378A75	Shadow Warrior Equip (Top)	921f0d6797a1	暗影战士装�
 tbl	tbl1.pak	0x01378B33	Shadow Warrior Equip (Pants)	93c0c08103b0	暗影战士装备(裤子)	accepted	legacy/translations/tbl_overrides.tsv	1358	
 tbl	tbl1.pak	0x01378BF5	Shadow Warrior Equip (Shoes)	bf0c12ff8c3d	暗影战士装备(鞋子)	accepted	legacy/translations/tbl_overrides.tsv	1359	
 tbl	tbl1.pak	*	PZWhen you begin the Dragon Clan training wear this equip.\nLightweight and easy to move in.	6ff1caa3d17b	PZWhen you begin the 那美克龙族 training wear this equip.\nLightweight and easy to move in.	accepted	legacy/translations/tbl_overrides.tsv	1360	
-tbl	tbl1.pak	*	PONamekians from Dragon Clan used to\npractice most often wearing this in battle.	6648eb1234b0	PONamekians from 那美克龙族 used to\npractice most often wearing this in battle.	accepted	legacy/translations/tbl_overrides.tsv	1363	
+tbl	tbl1.pak	*	PONamekians from Dragon Clan used to\npractice most often wearing this in battle.	6648eb1234b0	PONamekians from 那美克龙族 used to\npractice most often wearing this in battle.	disabled_missing_20260720	legacy/translations/tbl_overrides.tsv	1363	source absent in 2026-07-20 snapshot
 tbl	tbl1.pak	*	P3Ceremonial suit for the Namekians from Dragon Clan.	bd2edcf53187	P3Ceremonial suit for the Namekians from 那美克龙族.	accepted	legacy/translations/tbl_overrides.tsv	1366	
 tbl	tbl1.pak	*	PUSpiritualists love this necklace.\nIt's said that the symbol engraved is mysteriouse.	352e09191ddc	PU气功师 love this necklace.\nIt's said that the symbol engraved is mysteriouse.	accepted	legacy/translations/tbl_overrides.tsv	1370	
 tbl	tbl1.pak	0x013A8F3D	Defense Chip 1	28cce392465e	防御芯片1	accepted	legacy/translations/tbl_overrides.tsv	1409	
@@ -1914,7 +1914,7 @@ tbl	tbl1.pak	0x013B8C3F	Cannon Fire EX	7b28a10a440e	炮火EX	accepted	legacy/tra
 tbl	tbl1.pak	0x013B90DB	Light Speed Trumpet EX	8cb5ab84eafb	光速度号角EX	accepted	legacy/translations/tbl_overrides.tsv	1538	
 tbl	tbl1.pak	0x013B915B	Dark Trumpet EX	a5b48b6dd2dd	黑暗号角EX	accepted	legacy/translations/tbl_overrides.tsv	1539	
 tbl	tbl1.pak	*	U7Spiritualist beginner clothes.\nLight and easy to move.	cd1ed003e3bb	U7气功师 beginner clothes.\nLight and easy to move.	accepted	legacy/translations/tbl_overrides.tsv	1554	
-tbl	tbl1.pak	*	VUSpiritualists love this necklace.\nIt's said that the symbol engraved is mysteriouse.	3afd1a04f773	VU气功师 love this necklace.\nIt's said that the symbol engraved is mysteriouse.	accepted	legacy/translations/tbl_overrides.tsv	1558	
+tbl	tbl1.pak	*	VUSpiritualists love this necklace.\nIt's said that the symbol engraved is mysteriouse.	3afd1a04f773	VU气功师 love this necklace.\nIt's said that the symbol engraved is mysteriouse.	disabled_missing_20260720	legacy/translations/tbl_overrides.tsv	1558	source absent in 2026-07-20 snapshot
 tbl	tbl1.pak	0x013EF53D	Super CC Scouter S	4bd31ccf5d8d	超级CC探测器S	accepted	legacy/translations/tbl_overrides.tsv	1578	
 tbl	tbl1.pak	0x013F1E65	Crystal Spirit Circuit 15	ba17ad45b15b	水晶精神电路15	accepted	legacy/translations/tbl_overrides.tsv	1585	
 tbl	tbl1.pak	0x013F1EDD	Crystal Spirit Circuit 20	18c4312f3123	水晶精神电路20	accepted	legacy/translations/tbl_overrides.tsv	1586	
@@ -2236,7 +2236,7 @@ tbl	tbl1.pak	0x015C72A9	HL Capsule Box Z20 Combo	beaa7e5f10d2	HL胶囊盒Z20连�
 tbl	tbl1.pak	0x015C7325	HL Capsule Box Z24 Combo	4fc3af2d2dee	HL胶囊盒Z24连击	accepted	legacy/translations/tbl_overrides.tsv	2218	
 tbl	tbl1.pak	0x015C73A1	HL Capsule Box Z28 Combo	7fcbbbd3bb3e	HL胶囊盒Z28连击	accepted	legacy/translations/tbl_overrides.tsv	2219	
 tbl	tbl1.pak	0x015C741D	HL Capsule Box Z32 Combo	4100335d9c06	HL胶囊盒Z32连击	accepted	legacy/translations/tbl_overrides.tsv	2220	
-tbl	tbl1.pak	*	9Arrogant Rabbit Boss made through the Martial Artist top.	f338298baaf2	9Arrogant Rabbit Boss made through the 武道家 top.	accepted	legacy/translations/tbl_overrides.tsv	2241	
+tbl	tbl1.pak	*	9Arrogant Rabbit Boss made through the Martial Artist top.	f338298baaf2	9Arrogant Rabbit Boss made through the 武道家 top.	disabled_missing_20260720	legacy/translations/tbl_overrides.tsv	2241	source absent in 2026-07-20 snapshot
 tbl	tbl1.pak	*	EV Super Saiyan Potion [Spiritualist]	5dff59137b1c	EV超级赛亚人药水[气功师]	accepted	legacy/translations/tbl_overrides.tsv	2261	
 tbl	tbl1.pak	0x015DD355	U38 Upgrade Capsule	a7101711346d	U38升级胶囊	accepted	legacy/translations/tbl_overrides.tsv	2262	
 tbl	tbl1.pak	0x015DD3EF	U42 Upgrade Capsule	fb980105feed	U42升级胶囊	accepted	legacy/translations/tbl_overrides.tsv	2263	
@@ -2356,20 +2356,20 @@ tbl	tbl1.pak	0x016587E3	[CBT] Spiritualist Integrated Package	2162f25c1b33	[CBT]
 tbl	tbl1.pak	0x01658899	[CBT] Dragon Clan Integrated Package	9f6456266109	[CBT] 那美克龙族 Integrated Package	accepted	legacy/translations/tbl_overrides.tsv	2501	
 tbl	tbl1.pak	0x01658957	[CBT] Wonder Majin Integrated Package	9eb0e42b12b5	[CBT] 意魔人 Integrated Package	accepted	legacy/translations/tbl_overrides.tsv	2502	
 tbl	tbl1.pak	0x01662E47	EV Super Saiyan Potion [Martial Artist]	8dc2c5d7c8a7	EV超级赛亚人药水[武道家]	accepted	legacy/translations/tbl_overrides.tsv	2506	
-tbl	tbl1.pak	0x0166522B	3The acquisition of skills!\nPower UP (Spiritualist)	a55d69987ff1	3The acquisition of skills!\nPower UP (气功师)	accepted	legacy/translations/tbl_overrides.tsv	2508	
+tbl	tbl1.pak	0x0166522B	3The acquisition of skills!\nPower UP (Spiritualist)	a55d69987ff1	3The acquisition of skills!\nPower UP (气功师)	disabled_missing_20260720	legacy/translations/tbl_overrides.tsv	2508	source absent in 2026-07-20 snapshot
 tbl	tbl1.pak	0x016652D7	The acquisition of skills!\nPower UP (Warrior)	3125f729bf6e	The acquisition of skills!\nPower UP (那美克战士)	accepted	legacy/translations/tbl_overrides.tsv	2509	
-tbl	tbl1.pak	0x01665375	2The acquisition of skills!\nPower UP (Dragon Clan)	29572b268dc3	2The acquisition of skills!\nPower UP (那美克龙族)	accepted	legacy/translations/tbl_overrides.tsv	2510	
-tbl	tbl1.pak	0x016654C7	3The acquisition of skills!\nPower UP (Wonder Majin)	31f73f7c2ca0	3The acquisition of skills!\nPower UP (意魔人)	accepted	legacy/translations/tbl_overrides.tsv	2511	
-tbl	tbl1.pak	0x01665641	0The acquisition of skills!\nGuard (Spiritualist)	64df70c606bd	0The acquisition of skills!\nGuard (气功师)	accepted	legacy/translations/tbl_overrides.tsv	2512	
+tbl	tbl1.pak	0x01665375	2The acquisition of skills!\nPower UP (Dragon Clan)	29572b268dc3	2The acquisition of skills!\nPower UP (那美克龙族)	disabled_missing_20260720	legacy/translations/tbl_overrides.tsv	2510	source absent in 2026-07-20 snapshot
+tbl	tbl1.pak	0x016654C7	3The acquisition of skills!\nPower UP (Wonder Majin)	31f73f7c2ca0	3The acquisition of skills!\nPower UP (意魔人)	disabled_missing_20260720	legacy/translations/tbl_overrides.tsv	2511	source absent in 2026-07-20 snapshot
+tbl	tbl1.pak	0x01665641	0The acquisition of skills!\nGuard (Spiritualist)	64df70c606bd	0The acquisition of skills!\nGuard (气功师)	disabled_missing_20260720	legacy/translations/tbl_overrides.tsv	2512	source absent in 2026-07-20 snapshot
 tbl	tbl1.pak	0x01665715	The acquisition of skills!\nGuard (Warrior)	bee1d3c8720c	The acquisition of skills!\nGuard (那美克战士)	accepted	legacy/translations/tbl_overrides.tsv	2513	
 tbl	tbl1.pak	0x016657DD	The acquisition of skills!\nGuard (Dragon Clan)	0f5b4527a8c2	The acquisition of skills!\nGuard (那美克龙族)	accepted	legacy/translations/tbl_overrides.tsv	2514	
-tbl	tbl1.pak	0x0166597D	0The acquisition of skills!\nGuard (Wonder Majin)	0812ba5ae013	0The acquisition of skills!\nGuard (意魔人)	accepted	legacy/translations/tbl_overrides.tsv	2515	
+tbl	tbl1.pak	0x0166597D	0The acquisition of skills!\nGuard (Wonder Majin)	0812ba5ae013	0The acquisition of skills!\nGuard (意魔人)	disabled_missing_20260720	legacy/translations/tbl_overrides.tsv	2515	source absent in 2026-07-20 snapshot
 tbl	tbl1.pak	0x01665BEB	The acquisition of skills!\nDash (Warrior)	7386e34ee2cc	The acquisition of skills!\nDash (那美克战士)	accepted	legacy/translations/tbl_overrides.tsv	2516	
 tbl	tbl1.pak	0x01665CAF	The acquisition of skills!\nDash (Dragon Clan)	761bf9c6d2ce	The acquisition of skills!\nDash (那美克龙族)	accepted	legacy/translations/tbl_overrides.tsv	2517	
 tbl	tbl1.pak	0x01665E49	The acquisition of skills!\nDash (Wonder Majin)	46d4c6f39fb7	The acquisition of skills!\nDash (意魔人)	accepted	legacy/translations/tbl_overrides.tsv	2518	
-tbl	tbl1.pak	0x016660FF	4The acquisition of skills!\nCounter Attack (Warrior)	ff628eef5096	4The acquisition of skills!\nCounter Attack (那美克战士)	accepted	legacy/translations/tbl_overrides.tsv	2519	
-tbl	tbl1.pak	0x016661EB	8The acquisition of skills!\nCounter Attack (Dragon Clan)	8b1e66a24bd5	8The acquisition of skills!\nCounter Attack (那美克龙族)	accepted	legacy/translations/tbl_overrides.tsv	2520	
-tbl	tbl1.pak	0x016663D5	9The acquisition of skills!\nCounter Attack (Wonder Majin)	2470810ed3dd	9The acquisition of skills!\nCounter Attack (意魔人)	accepted	legacy/translations/tbl_overrides.tsv	2521	
+tbl	tbl1.pak	0x016660FF	4The acquisition of skills!\nCounter Attack (Warrior)	ff628eef5096	4The acquisition of skills!\nCounter Attack (那美克战士)	disabled_missing_20260720	legacy/translations/tbl_overrides.tsv	2519	source absent in 2026-07-20 snapshot
+tbl	tbl1.pak	0x016661EB	8The acquisition of skills!\nCounter Attack (Dragon Clan)	8b1e66a24bd5	8The acquisition of skills!\nCounter Attack (那美克龙族)	disabled_missing_20260720	legacy/translations/tbl_overrides.tsv	2520	source absent in 2026-07-20 snapshot
+tbl	tbl1.pak	0x016663D5	9The acquisition of skills!\nCounter Attack (Wonder Majin)	2470810ed3dd	9The acquisition of skills!\nCounter Attack (意魔人)	disabled_missing_20260720	legacy/translations/tbl_overrides.tsv	2521	source absent in 2026-07-20 snapshot
 tbl	tbl1.pak	0x0166833F	EV White Stone U60	e698e24e9b09	EV白色石U60	accepted	legacy/translations/tbl_overrides.tsv	2526	
 tbl	tbl1.pak	0x0166A107	Popo Ring Lv70	47047eab6614	波波戒指Lv70	accepted	legacy/translations/tbl_overrides.tsv	2527	
 tbl	tbl1.pak	0x0166B891	White Stone U75	5bc33341e714	白色石U75	accepted	legacy/translations/tbl_overrides.tsv	2528	
@@ -2437,7 +2437,7 @@ tbl	tbl1.pak	0x01686B33	White Stone U80	0f30898ed736	白色石U80	accepted	legac
 tbl	tbl1.pak	0x0168806B	Android 18 Set 1	daf24af966a6	人造人18套装1	accepted	legacy/translations/tbl_overrides.tsv	2612	
 tbl	tbl1.pak	0x0168810D	Android 18 Set 2	f8be3bee2f9c	人造人18套装2	accepted	legacy/translations/tbl_overrides.tsv	2613	
 tbl	tbl1.pak	0x016881AF	Android 18 Set 3	adfe1e9bad80	人造人18套装3	accepted	legacy/translations/tbl_overrides.tsv	2614	
-tbl	tbl1.pak	*	QArrogant Rabbit Boss clothing made\nthrough the Martial Artist clothing material.	807e4fa401d4	QArrogant Rabbit Boss clothing made\nthrough the 武道家 clothing material.	accepted	legacy/translations/tbl_overrides.tsv	2615	
+tbl	tbl1.pak	*	QArrogant Rabbit Boss clothing made\nthrough the Martial Artist clothing material.	807e4fa401d4	QArrogant Rabbit Boss clothing made\nthrough the 武道家 clothing material.	disabled_missing_20260720	legacy/translations/tbl_overrides.tsv	2615	source absent in 2026-07-20 snapshot
 tbl	tbl1.pak	0x0168DE19	Ancient Dragon Ball Outfit A	7fee21688360	古代龙珠套装A	accepted	legacy/translations/tbl_overrides.tsv	2618	
 tbl	tbl1.pak	0x0168DF25	Ancient Dragon Ball Outfit B	1bf8ffe180ca	古代龙珠套装B	accepted	legacy/translations/tbl_overrides.tsv	2619	
 tbl	tbl1.pak	0x0168E271	Ancient Soldier's Outfit A	258a6ff5c077	古代士兵的套装A	accepted	legacy/translations/tbl_overrides.tsv	2620	
@@ -2514,7 +2514,7 @@ tbl	tbl1.pak	0x016AF855	Legendary Super Saiyan Spiritualist	a8a44f633114	传说�
 tbl	tbl1.pak	0x016AF8E1	Ultra Ego Spiritualist	a8626989f7b9	Ultra Ego 气功师	accepted	legacy/translations/tbl_overrides.tsv	2791	
 tbl	tbl1.pak	0x016AF961	Kamicollo-Sama Dragon Clan	2919f3d5609b	Kamicollo-Sama 那美克龙族	accepted	legacy/translations/tbl_overrides.tsv	2792	
 tbl	tbl1.pak	0x016AF9E1	Saiyan Beast Spiritualist	4f6c3cc476d8	Saiyan Beast 气功师	accepted	legacy/translations/tbl_overrides.tsv	2793	
-tbl	tbl1.pak	0x016AFA7B	(Super Saiyan Blue Evolution Spiritualist	a0f4709f693b	(Super Saiyan Blue Evolution 气功师	accepted	legacy/translations/tbl_overrides.tsv	2794	
+tbl	tbl1.pak	0x016AFA7B	(Super Saiyan Blue Evolution Spiritualist	a0f4709f693b	(Super Saiyan Blue Evolution 气功师	disabled_missing_20260720	legacy/translations/tbl_overrides.tsv	2794	source absent in 2026-07-20 snapshot
 tbl	tbl1.pak	*	Super Saiyan Blue Spiritualist	53fc2123d488	超级赛亚人蓝气功师	accepted	legacy/translations/tbl_overrides.tsv	2795	
 tbl	tbl1.pak	0x016AFB2D	Fake Super Saiyan Spiritualist	423aecccf87b	Fake Super Saiyan 气功师	accepted	legacy/translations/tbl_overrides.tsv	2796	
 tbl	tbl1.pak	0x016AFC45	Super Saiyan 2 Martial	116dc9ab4563	超级赛亚人2武道家	accepted	legacy/translations/tbl_overrides.tsv	2797	
@@ -3012,9 +3012,9 @@ tbl	tbl1.pak	0x0182DFD4	Frieza Residual Party Drink Water	2750f9494f01	弗利萨
 tbl	tbl1.pak	0x0182F07E	Frieza's Army Confidential File	199c9ebcac31	弗利萨军机密文件	accepted	legacy/translations/tbl_overrides.tsv	3872	
 tbl	tbl1.pak	0x0183A648	Notes from Frieza's Army.	9906bec3524a	弗利萨军的笔记。	accepted	legacy/translations/tbl_overrides.tsv	3873	
 tbl	tbl1.pak	0x008C489D	FreezaFragCapsule	303eb1cd7f1d	弗利萨碎片胶囊	accepted	legacy/translations/tbl_overrides.tsv	3875	
-tbl	tbl1.pak	0x011FDC05	FreezatoGolden	e0c5857454fc	弗利萨变黄金	accepted	legacy/translations/tbl_overrides.tsv	3876	
-tbl	tbl1.pak	0x011FDD61	1FreezaSkill	054b3e45fb72	1弗利萨技能	accepted	legacy/translations/tbl_overrides.tsv	3877	
-tbl	tbl1.pak	0x011FDEBD	2FreezaSkill	889ef5b7f475	2弗利萨技能	accepted	legacy/translations/tbl_overrides.tsv	3878	
+tbl	tbl1.pak	0x011FDC05	FreezatoGolden	e0c5857454fc	弗利萨变黄金	disabled_internal_identifier_20260720	legacy/translations/tbl_overrides.tsv	3876	internal identifier; not proven visible
+tbl	tbl1.pak	0x011FDD61	1FreezaSkill	054b3e45fb72	1弗利萨技能	disabled_internal_identifier_20260720	legacy/translations/tbl_overrides.tsv	3877	internal identifier; not proven visible
+tbl	tbl1.pak	0x011FDEBD	2FreezaSkill	889ef5b7f475	2弗利萨技能	disabled_internal_identifier_20260720	legacy/translations/tbl_overrides.tsv	3878	internal identifier; not proven visible
 tbl	tbl1.pak	0x012E0061	Frieza's Army Military Rations	0802514109db	弗利萨军军粮	accepted	legacy/translations/tbl_overrides.tsv	3879	
 tbl	tbl1.pak	0x012E0467	Frieza's Army Superior Mineral Water	ab0b8381bc85	弗利萨军高级矿泉水	accepted	legacy/translations/tbl_overrides.tsv	3880	
 tbl	tbl1.pak	0x014033F3	Final Freeza Pet	d6d548277b24	最终弗利萨宠物	accepted	legacy/translations/tbl_overrides.tsv	3882	
@@ -3090,3 +3090,12 @@ taiwan	local_data.dat	DST_STATS_LBL_ELG_OFF	雅攻:		水攻:	accepted			new_elem
 taiwan	local_data.dat	DST_STATS_LBL_ELG_DEF	雅防:		水防:	accepted			new_element_attrs_local_data_mirror
 taiwan	local_data.dat	DST_STATS_LBL_FNY_OFF	搞攻:		火攻:	accepted			new_element_attrs_local_data_mirror
 taiwan	local_data.dat	DST_STATS_LBL_FNY_DEF	搞防:		火防:	accepted			new_element_attrs_local_data_mirror
+taiwan	local_data.dat	DST_TELEPORT_COMMON_CONFIRM_NO_BTN	移動取消	71317c6b7740	取消移动	accepted	git:stash@{1}		recovered_from_git_history
+taiwan	local_data.dat	DST_STATUS_STAT_FOC	專	b98a81588d85	集中	accepted	git:stash@{1}		recovered_from_git_history
+taiwan	local_data.dat	DST_STATUS_TOOLTIP_CON	耐力\n會對LP產生影響。	c19ab68f1178	耐力\n影响生命值。	accepted	git:stash@{1}		recovered_from_git_history
+taiwan	local_data.dat	DST_STATUS_TOOLTIP_DEX	敏捷\n會對迴避率產生影響。	19a0980bd664	敏捷\n影响回避率。	accepted	git:stash@{1}		recovered_from_git_history
+taiwan	local_data.dat	DST_STATUS_TOOLTIP_ENG	幸運\n會對EP產生影響。	38b6b049d3f3	幸运\n影响能量值。	accepted	git:stash@{1}		recovered_from_git_history
+taiwan	local_data.dat	DST_STATUS_TOOLTIP_FOC	集中\n會對命中率製造狀態異常產生影響。	60e2fdab755a	集中\n影响命中率和异常状态。	accepted	git:stash@{1}		recovered_from_git_history
+taiwan	local_data.dat	DST_STATUS_TOOLTIP_SOL	氣合\n會對氣功攻擊力和抵抗狀態異常產生影響。	4ae34d64c161	气合\n影响气功攻击力和异常状态抵抗。	accepted	git:stash@{1}		recovered_from_git_history
+taiwan	local_data.dat	DST_STATUS_TOOLTIP_STR	力量\n會對格鬥攻擊力產生影響。	4de156227bae	力量\n影响格斗攻击力。	accepted	git:stash@{1}		recovered_from_git_history
+taiwan	table_text_all_data.rdf	26:613:0	擊破者	a6c7b693fb16	宇宙帝王	accepted	git:stash@{1}		recovered_from_git_history

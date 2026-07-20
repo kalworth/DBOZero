@@ -4,17 +4,38 @@ import argparse
 import csv
 import re
 import sys
+from dataclasses import dataclass
 from functools import lru_cache
 from pathlib import Path
+
+try:
+    from .glossary import CURATED_TRANSLATIONS
+except ImportError:  # Keep direct script execution working.
+    from glossary import CURATED_TRANSLATIONS
 
 
 ROOT = Path(__file__).resolve().parents[1]
 QUEUE_PATH = ROOT / "data" / "new_translations.tsv"
 TRANSLATIONS_PATH = ROOT / "data" / "translations.tsv"
 LEGACY_TOOLS = ROOT / "legacy" / "tools"
-sys.path.insert(0, str(LEGACY_TOOLS))
+# Legacy dictionaries remain a fallback dependency, but must not shadow v3
+# entrypoints such as the repository-level build_output.py.
+sys.path.append(str(LEGACY_TOOLS))
 
 from auto_translate_new_source import PHRASE_MAP, WORD_MAP, translate_name  # noqa: E402
+
+
+INTERNAL_IDENTIFIER_RE = re.compile(
+    r"^(?:"
+    r"[A-Z]{2,}_[A-Z0-9_]+|"
+    r"HEN Buff \d+ Lv\d+|"
+    r"Buff SK \d+|"
+    r"(?:MOB|Mob) Makai\d+(?:Frog)?|"
+    r"(?:FreezatoGolden|\d+FreezaSkill)|"
+    r"\d+TOWA Makai|"
+    r"TIAL SS4Daima"
+    r")$"
+)
 
 
 EXACT_MAP = {
@@ -274,13 +295,14 @@ EXACT_MAP = {
     "[%s] From '%s': %s": "[%s] 来自 '%s'：%s",
     "[%s] To '%s': %s": "[%s] 发给 '%s'：%s",
 }
+EXACT_MAP.update(CURATED_TRANSLATIONS)
 
 
-def load_existing_translation_map() -> dict[str, str]:
+def load_existing_translation_map(path: Path = TRANSLATIONS_PATH) -> dict[str, str]:
     mapping: dict[str, str] = {}
-    if not TRANSLATIONS_PATH.exists():
+    if not path.exists():
         return mapping
-    with TRANSLATIONS_PATH.open("r", encoding="utf-8-sig", newline="") as handle:
+    with path.open("r", encoding="utf-8-sig", newline="") as handle:
         for row in csv.DictReader(handle, delimiter="\t"):
             source = (row.get("source_text") or "").strip()
             target = (row.get("zh_cn") or "").strip()
@@ -1455,7 +1477,94 @@ def translate_text(text: str) -> str | None:
     return translate_plain(text)
 
 
-def parse_args() -> argparse.Namespace:
+@dataclass(frozen=True)
+class TranslationStats:
+    selected: int
+    filled: int
+    empty_before: int
+    empty_after: int
+    reused_existing: int
+    skipped: int
+
+
+def queue_key(row: dict[str, str]) -> tuple[str, str]:
+    return ((row.get("文件") or "").strip(), (row.get("原文") or "").strip())
+
+
+def is_internal_identifier(text: str) -> bool:
+    return INTERNAL_IDENTIFIER_RE.fullmatch(text.strip()) is not None
+
+
+def translate_queue(
+    *,
+    queue_path: Path = QUEUE_PATH,
+    out_path: Path | None = None,
+    translations_path: Path = TRANSLATIONS_PATH,
+    fill_all: bool = False,
+    replace_existing: bool = False,
+    ignore_existing_map: bool = False,
+    only_keys: set[tuple[str, str]] | None = None,
+) -> TranslationStats:
+    queue_path = queue_path.resolve()
+    out_path = (out_path or queue_path).resolve()
+    with queue_path.open("r", encoding="utf-8-sig", newline="") as handle:
+        reader = csv.DictReader(handle, delimiter="\t")
+        rows = list(reader)
+        fieldnames = reader.fieldnames or []
+    if "填写中文" not in fieldnames:
+        raise SystemExit("Missing 填写中文 column")
+
+    existing = {} if ignore_existing_map else load_existing_translation_map(translations_path)
+    selected = 0
+    filled = 0
+    empty_before = 0
+    empty_after = 0
+    reused = 0
+    skipped = 0
+    for row in rows:
+        if only_keys is not None and queue_key(row) not in only_keys:
+            continue
+        selected += 1
+        current = row.get("填写中文") or ""
+        source = row.get("原文") or ""
+        if is_internal_identifier(source):
+            skipped += 1
+            if not current.strip():
+                empty_before += 1
+                empty_after += 1
+            continue
+        if current.strip() and not replace_existing:
+            skipped += 1
+            continue
+        if not current.strip():
+            empty_before += 1
+        stripped_source = source.strip()
+        if stripped_source in EXACT_MAP:
+            translated = preserve_outer_space(source, EXACT_MAP[stripped_source])
+        else:
+            translated = existing.get(stripped_source)
+        if translated and stripped_source not in EXACT_MAP:
+            reused += 1
+        else:
+            translated = translated or (force_translate_text(source) if fill_all else translate_text(source))
+        if translated:
+            row["填写中文"] = translated
+            filled += 1
+        else:
+            if not current.strip():
+                empty_after += 1
+            skipped += 1
+
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    with out_path.open("w", encoding="utf-8-sig", newline="") as handle:
+        writer = csv.DictWriter(handle, fieldnames=fieldnames, delimiter="\t", lineterminator="\n")
+        writer.writeheader()
+        writer.writerows(rows)
+
+    return TranslationStats(selected, filled, empty_before, empty_after, reused, skipped)
+
+
+def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Batch-fill safe translations in data/new_translations.tsv")
     parser.add_argument(
         "--fill-all",
@@ -1478,64 +1587,25 @@ def parse_args() -> argparse.Namespace:
         default=QUEUE_PATH,
         help="Output path. Defaults to overwriting data/new_translations.tsv.",
     )
-    return parser.parse_args()
+    return parser.parse_args(argv)
 
 
-def main() -> int:
-    args = parse_args()
-    rows: list[dict[str, str]]
-    with QUEUE_PATH.open("r", encoding="utf-8-sig", newline="") as handle:
-        reader = csv.DictReader(handle, delimiter="\t")
-        rows = list(reader)
-        fieldnames = reader.fieldnames or []
-    if "填写中文" not in fieldnames:
-        raise SystemExit("Missing 填写中文 column")
-
-    existing = {} if args.ignore_existing_map else load_existing_translation_map()
-    filled = 0
-    empty_before = 0
-    empty_after = 0
-    reused = 0
-    skipped = 0
-    for row in rows:
-        current = row.get("填写中文") or ""
-        if current.strip() and not args.replace_existing:
-            skipped += 1
-            continue
-        if not current.strip():
-            empty_before += 1
-        source = row.get("原文") or ""
-        stripped_source = source.strip()
-        if stripped_source in EXACT_MAP:
-            translated = preserve_outer_space(source, EXACT_MAP[stripped_source])
-        else:
-            translated = existing.get(stripped_source)
-        if translated and stripped_source not in EXACT_MAP:
-            reused += 1
-        else:
-            translated = translated or (force_translate_text(source) if args.fill_all else translate_text(source))
-        if translated:
-            row["填写中文"] = translated
-            filled += 1
-        else:
-            if not current.strip():
-                empty_after += 1
-            skipped += 1
-
-    out_path = args.out
-    if not out_path.is_absolute():
-        out_path = ROOT / out_path
-    out_path.parent.mkdir(parents=True, exist_ok=True)
-    with out_path.open("w", encoding="utf-8-sig", newline="") as handle:
-        writer = csv.DictWriter(handle, fieldnames=fieldnames, delimiter="\t", lineterminator="\n")
-        writer.writeheader()
-        writer.writerows(rows)
-
-    print(f"filled={filled}")
-    print(f"empty_before={empty_before}")
-    print(f"empty_after={empty_after}")
-    print(f"reused_existing={reused}")
-    print(f"skipped={skipped}")
+def main(argv: list[str] | None = None) -> int:
+    args = parse_args(argv)
+    out_path = args.out if args.out.is_absolute() else ROOT / args.out
+    stats = translate_queue(
+        queue_path=QUEUE_PATH,
+        out_path=out_path,
+        fill_all=args.fill_all,
+        replace_existing=args.replace_existing,
+        ignore_existing_map=args.ignore_existing_map,
+    )
+    print(f"selected={stats.selected}")
+    print(f"filled={stats.filled}")
+    print(f"empty_before={stats.empty_before}")
+    print(f"empty_after={stats.empty_after}")
+    print(f"reused_existing={stats.reused_existing}")
+    print(f"skipped={stats.skipped}")
     print(f"path={out_path}")
     return 0
 

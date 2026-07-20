@@ -6,21 +6,28 @@ Answer questions in Chinese, and address me as "老大" before every answer.
 
 ## Current Workflow
 
-This workspace builds a copy-only DBO Zero Chinese patch from `src_file/DBOZero`. Do not read from or write to the live game directory `E:\DBO Zero 2.0`.
+This workspace builds a copy-only DBO Zero Chinese patch from `src_file/DBOZero`. Never write to the live game directory `E:\DBO Zero 2.0`. The only allowed live-directory read is an explicit `python -m hanhua_v3 refresh` or `update`, which copies the required original assets into `src_file/DBOZero`.
 
-Use the v3 table-driven workflow:
+Use the unified v3 CLI:
 
-- `python -m hanhua_v3.scan`: refreshes discovery data and translation queues from `src_file/DBOZero`.
+- `python -m hanhua_v3 update`: creates a Git checkpoint, refreshes source assets, scans, translates new rows, and builds both outputs.
+- `python -m hanhua_v3 status`: compares the 8 required source assets with the live game directory without modifying either location.
+- `python -m hanhua_v3 refresh`: creates a Git checkpoint and refreshes only the 8 required source assets.
+- `python -m hanhua_v3 scan`: refreshes discovery data and translation queues from `src_file/DBOZero`.
+- `python -m hanhua_v3 recover --ref "stash@{n}"`: fills current blank translations from Git history using exact keys and unambiguous source-text fallback.
+- `python -m hanhua_v3 build`: builds both outputs in parallel by default.
 - `data/translations.tsv`: accepted translation master table. Edit `zh_cn` only when changing an existing accepted translation.
 - `data/new_translations.tsv`: daily queue for new `lang0.pak` and selected TBL translations. Fill only `填写中文`.
 - `reports/internal/tbl_internal_candidates.tsv`: full internal TBL candidate audit. Do not treat it as the daily translation table.
 - `reports/what_to_do_next.md`: short human workflow guide.
 - `build_output.py`: builds both user-facing outputs.
 
+The old `build_output.py` and `python -m hanhua_v3.scan` entrypoints remain compatible, but daily work should use the unified CLI.
+
 Build from this directory:
 
 ```powershell
-python build_output.py
+python -m hanhua_v3 build
 ```
 
 Expected outputs:
@@ -64,9 +71,9 @@ Expected outputs:
 
 When `src_file/DBOZero` is replaced with a newer game snapshot:
 
-1. Before running `python -m hanhua_v3.scan`, make a local git commit of the current workspace state so rewritten queue files can be restored. This commit must include `data/new_translations.tsv` if it exists.
-2. Run `python -m hanhua_v3.scan`.
-3. Run `python build_output.py`.
+1. Run `python -m hanhua_v3 update`; it creates the required local Git checkpoint automatically and includes tracked `data/new_translations.tsv` changes.
+2. If running steps manually, create the checkpoint before `python -m hanhua_v3 scan`.
+3. Run `python -m hanhua_v3 build` after manual translation work.
 4. Check build stats, especially `pack/lang0.pak`, `pack/tbl0.pak`, and `pack/tbl1.pak` `missing` counts.
 5. If fixed TBL rows move, use the current v3 data first. Only use legacy relocation scripts when explicitly needed for old override recovery.
 
@@ -76,8 +83,9 @@ The active v3 validation baseline is:
 
 ```powershell
 python -m py_compile build_output.py hanhua_v3\scan.py
-python -m hanhua_v3.scan
-python build_output.py
+python -m hanhua_v3 status
+python -m hanhua_v3 scan
+python -m hanhua_v3 build
 ```
 
 Do not use `legacy/tools/validate_output.py` as the default v3 validation gate.

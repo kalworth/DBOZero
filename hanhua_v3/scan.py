@@ -13,7 +13,9 @@ from typing import Iterable
 
 ROOT = Path(__file__).resolve().parents[1]
 LEGACY_TOOLS = ROOT / "legacy" / "tools"
-sys.path.insert(0, str(LEGACY_TOOLS))
+# Keep legacy parsers available without allowing legacy scripts to shadow v3
+# modules imported later by the unified CLI.
+sys.path.append(str(LEGACY_TOOLS))
 
 import install_hanhua  # noqa: E402
 
@@ -1267,6 +1269,9 @@ def write_new_translation_queue(
                 emitted_tbl_sources.add(tbl_source_key)
                 item_id = "*"
                 note = "wildcard_utf16"
+            length_status = note or translation_bytes_fit(entry, filled or suggested)
+            if not length_status:
+                length_status = "untranslated"
             yield [
                 "UI" if entry.surface == "lang0" else "TBL",
                 entry.file_name,
@@ -1274,7 +1279,7 @@ def write_new_translation_queue(
                 entry.source_text,
                 suggested or old_suggested,
                 filled,
-                note or translation_bytes_fit(entry, filled or suggested),
+                length_status,
             ]
 
     return write_tsv(path, QUEUE_HEADER, rows())
@@ -1552,7 +1557,7 @@ def write_next_steps(
         "- `位置`: key 或 offset",
         "- `原文`: 游戏原文",
         "- `参考译文`: 旧资料里找到的参考译法",
-        "- `长度状态`: `too_long` 表示可能放不进固定长度字段",
+        "- `长度状态`: `ok` 表示长度可用，`untranslated` 表示尚未填写，`too_long` 表示可能放不进固定长度字段",
         "",
         f"当前待填行数：{queue_count}",
         "",
@@ -1573,7 +1578,7 @@ def write_next_steps(
         "翻译改完后，在当前目录运行：",
         "",
         "```powershell",
-        "python build_output.py",
+        "python -m hanhua_v3 build",
         "```",
         "",
         "它会重新生成：",
@@ -1600,7 +1605,7 @@ def write_next_steps(
         "- `output_taiwan/DBOZero/pack/tbl0.pak`",
         "- `output_taiwan/DBOZero/pack/tbl1.pak`",
         "",
-        "`build_output.py` 只读 `src_file/DBOZero`，不会动真实游戏目录。",
+        "`python -m hanhua_v3 build` 只读 `src_file/DBOZero`，不会动真实游戏目录。",
         "",
         "## 5. 其他文件",
         "",

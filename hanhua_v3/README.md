@@ -1,27 +1,23 @@
-# hanhua v3
+# hanhua_v3 模块说明
 
-This directory is the rewrite track for the DBO Zero localization toolchain.
-
-The first milestone is a read-only discovery layer:
-
-- scan the current `src_file/DBOZero` snapshot;
-- import old manual translation TSV files as legacy data;
-- build one unified catalog;
-- build one unified candidate table;
-- report overlaps between Taiwan, lang0, and tbl text.
-
-The old toolchain stays available during the rewrite. New v3 commands should be
-run from the repository root.
+`hanhua_v3` 是当前汉化工具链的统一实现层。仓库根目录运行：
 
 ```powershell
-python -m hanhua_v3.scan
+python -m hanhua_v3 --help
 ```
 
-Editing workflow:
+模块职责：
 
-- Main queue: `data/new_translations.tsv`.
-- Fill only the `填写中文` column for new translations.
-- Edit existing accepted translations in `data/translations.tsv` only when you
-  intentionally want to change old text.
-- `reports/internal/` and ignored generated TSV files are tool diagnostics, not
-  the normal workflow.
+- `cli.py`：`update/refresh/scan/translate/recover/build/status` 命令编排。
+- `source.py`：从实际游戏目录只读同步 8 个必要源资源，并逐文件校验 SHA-256。
+- `scan.py`：扫描 Taiwan、lang0 和 TBL，刷新当前目录与日常翻译队列。
+- `batch_translate_queue.py`：保留格式、占位符和内部标识边界的批量翻译器。
+- `glossary.py`：人工校订的精确译名。
+- `recover.py`：从 Git 历史 TSV 恢复仍匹配当前源的译文，不恢复旧代码或旧 TBL 偏移。
+
+日常只编辑：
+
+- `data/new_translations.tsv` 的 `填写中文`；
+- `data/translations.tsv` 的 `zh_cn`。
+
+`reports/internal/` 仅用于搜索和审计。

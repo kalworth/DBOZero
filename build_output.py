@@ -25,6 +25,7 @@ import re
 import shutil
 import struct
 import sys
+from concurrent.futures import ProcessPoolExecutor, as_completed
 from collections import OrderedDict
 from dataclasses import dataclass
 from pathlib import Path
@@ -33,7 +34,9 @@ from typing import Callable
 
 ROOT = Path(__file__).resolve().parent
 LEGACY_TOOLS = ROOT / "legacy" / "tools"
-sys.path.insert(0, str(LEGACY_TOOLS))
+# Legacy patchers are compatibility dependencies. Keep the repository root
+# ahead of them so Windows build workers import this v3 entrypoint.
+sys.path.append(str(LEGACY_TOOLS))
 
 import console_color  # noqa: E402
 import install_hanhua  # noqa: E402
@@ -230,6 +233,14 @@ class GuiFontSettings:
     font: str | None
     font_dir: Path | None
     font_name: str | None
+
+
+@dataclass(frozen=True)
+class BuildVariantJob:
+    label: str
+    out_dir: Path
+    transform_sig: str
+    ansi_encoding: str
 
 
 def inside_repo(path: Path) -> Path:
@@ -603,6 +614,9 @@ def read_queue_translations(
 
         if file_name in tbl_utf16_patch.TBL_FILES:
             offset = None if item_id in tbl_utf16_patch.ALL_OFFSETS else tbl_utf16_patch.parse_offset(item_id, row_no)
+            for existing_key in list(tbl):
+                if existing_key[0] == file_name and existing_key[2] == source_text:
+                    del tbl[existing_key]
             tbl[(file_name, item_id, source_text)] = tbl_utf16_patch.TblOverride(file_name, offset, source_text, translation)
             used += 1
             continue
@@ -675,6 +689,17 @@ def transform_lang0(rows: list[tuple[str, str, str]], transform: Callable[[str],
     return [(key, source_text, transform(text)) for key, source_text, text in rows]
 
 
+def write_build_missing_report(path: Path, header: list[str], rows: list[list[str]]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    if not rows:
+        path.unlink(missing_ok=True)
+        return
+    with path.open("w", encoding="utf-8-sig", newline="") as handle:
+        writer = csv.writer(handle, delimiter="\t", lineterminator="\n")
+        writer.writerow(header)
+        writer.writerows(rows)
+
+
 def find_lang0_line_value_ranges(data: bytes, key: str) -> list[tuple[int, int]]:
     try:
         key_bytes = key.encode("ascii")
@@ -684,15 +709,38 @@ def find_lang0_line_value_ranges(data: bytes, key: str) -> list[tuple[int, int]]
     ranges: list[tuple[int, int]] = []
     for match in pattern.finditer(data):
         start = match.end()
-        end = lang0_gbk_patch.find_lang0_value_end(data, start, key)
+        end = find_lang0_value_end(data, start, key)
         ranges.append((start, end))
     return ranges
+
+
+def find_lang0_value_end(data: bytes, start: int, key: str) -> int:
+    pos = start
+    while pos < len(data):
+        value = data[pos]
+        if value in (ord("\r"), ord("\n")):
+            break
+        if value == ord("\\") and pos + 1 < len(data):
+            pos += 2
+            continue
+        if value == ord('"'):
+            if pos + 1 < len(data) and data[pos + 1] == ord('"'):
+                pos += 2
+                continue
+            return pos
+        pos += 1
+    raise lang0_gbk_patch.PatchError(f"Closing quote not found for {key}")
+
+
+def normalize_lang0_source_text(text: str) -> str:
+    return text.replace('\\"', '"')
 
 
 def patch_lang0_bytes_by_source(
     data: bytes,
     rows: list[tuple[str, str, str]],
     encoding: str,
+    missing_rows: list[tuple[str, str, str, str]] | None = None,
 ) -> tuple[bytes, dict[str, int]]:
     source = bytes(data)
     patched = bytearray(data)
@@ -704,27 +752,38 @@ def patch_lang0_bytes_by_source(
         matches = find_lang0_line_value_ranges(source, key)
         if not matches:
             missing += 1
+            if missing_rows is not None:
+                missing_rows.append((key, source_text, text, "key_not_found"))
             continue
 
         selected: tuple[int, int] | None = None
         selected_old_value = ""
+        selected_old_raw = b""
+        expected_source_text = normalize_lang0_source_text(source_text)
         for start, end in matches:
-            old_value = lang0_gbk_patch.decode_lang0_value(lang0_gbk_patch.unescape_lang0_value(source[start:end]))
-            if source_text and old_value != source_text:
+            old_raw = source[start:end]
+            old_value = lang0_gbk_patch.decode_lang0_value(
+                lang0_gbk_patch.unescape_lang0_value(old_raw).replace(b'\\"', b'"')
+            )
+            if source_text and old_value != expected_source_text:
                 continue
             if selected is not None:
                 raise lang0_gbk_patch.PatchError(f"Duplicate lang0 key/source pattern: {key} = {source_text!r}")
             selected = (start, end)
             selected_old_value = old_value
+            selected_old_raw = old_raw
 
         if selected is None and not source_text and len(matches) == 1:
             selected = matches[0]
             selected_old_value = lang0_gbk_patch.decode_lang0_value(
                 lang0_gbk_patch.unescape_lang0_value(source[selected[0] : selected[1]])
             )
+            selected_old_raw = source[selected[0] : selected[1]]
 
         if selected is None:
             missing += 1
+            if missing_rows is not None:
+                missing_rows.append((key, source_text, text, "key_found_but_source_changed"))
             continue
 
         old_specs = lang0_gbk_patch.printf_specs(selected_old_value)
@@ -751,7 +810,11 @@ def patch_lang0_bytes_by_source(
             changed += 1
             continue
 
-        new_value = lang0_gbk_patch.encode_lang0_value(text, encoding)
+        if b'\\"' in selected_old_raw:
+            normalized_text = normalize_lang0_source_text(text)
+            new_value = lang0_gbk_patch.encoded_text_bytes(normalized_text, encoding).replace(b'"', b'\\"')
+        else:
+            new_value = lang0_gbk_patch.encode_lang0_value(text, encoding)
         old_len = end - start
         if len(new_value) > old_len:
             raise lang0_gbk_patch.PatchError(
@@ -817,8 +880,28 @@ def patch_tbl_file(
     if not rows:
         shutil.copy2(source, pack_dir / file_name)
         return {"rows": 0, "copied": 1}
-    patched, stats = tbl_utf16_patch.patch_tbl_bytes(source.read_bytes(), rows, single_byte_encoding)
+    missing_rows: list[tuple[tbl_utf16_patch.TblOverride, str]] = []
+    patched, stats = tbl_utf16_patch.patch_tbl_bytes(
+        source.read_bytes(),
+        rows,
+        single_byte_encoding,
+        missing_rows=missing_rows,
+    )
     (pack_dir / file_name).write_bytes(patched)
+    write_build_missing_report(
+        ROOT / "reports" / "internal" / f"build_missing_{file_name}_{single_byte_encoding}.tsv",
+        ["file", "location", "source_text", "translation", "reason"],
+        [
+            [
+                row.file_name,
+                "*" if row.offset is None else f"0x{row.offset:08X}",
+                row.source_text,
+                row.translation,
+                reason,
+            ]
+            for row, reason in missing_rows
+        ],
+    )
     return stats
 
 
@@ -900,8 +983,19 @@ def build_one(
     )
 
     def build_lang0() -> dict[str, int]:
-        patched_lang0, lang0_stats = patch_lang0_bytes_by_source(source_lang0.read_bytes(), lang0_rows, ansi_encoding)
+        missing_rows: list[tuple[str, str, str, str]] = []
+        patched_lang0, lang0_stats = patch_lang0_bytes_by_source(
+            source_lang0.read_bytes(),
+            lang0_rows,
+            ansi_encoding,
+            missing_rows=missing_rows,
+        )
         (pack_dir / "lang0.pak").write_bytes(patched_lang0)
+        write_build_missing_report(
+            ROOT / "reports" / "internal" / f"build_missing_lang0.pak_{ansi_encoding}.tsv",
+            ["file", "location", "source_text", "translation", "reason"],
+            [["lang0.pak", key, source_text, text, reason] for key, source_text, text, reason in missing_rows],
+        )
         return lang0_stats
 
     stats["pack/lang0.pak"] = maybe_build_target(
@@ -1001,6 +1095,63 @@ def validate_basic(source_dir: Path, out_dir: Path, label: str, ansi_encoding: s
         (language_dir / name).read_bytes().decode(ansi_encoding)
 
 
+def run_build_variant(
+    job: BuildVariantJob,
+    source_dir: Path,
+    translations: TranslationSets,
+    clean: bool,
+    force: bool,
+    gui_font: GuiFontPatch | None,
+) -> tuple[str, Path, str, dict[str, dict[str, int]]]:
+    if job.label == "mainland":
+        text_transform = install_hanhua.to_simplified
+        readme_writer = write_user_readme
+    elif job.label == "taiwan":
+        text_transform = install_hanhua.to_traditional
+        readme_writer = write_taiwan_user_readme
+    else:
+        raise BuildError(f"Unknown build variant: {job.label}")
+
+    stats = build_one(
+        source_dir,
+        job.out_dir,
+        translations,
+        clean=clean,
+        force=force,
+        text_transform=text_transform,
+        transform_sig=job.transform_sig,
+        ansi_encoding=job.ansi_encoding,
+        readme_writer=readme_writer,
+        gui_font=gui_font,
+    )
+    return job.label, job.out_dir, job.ansi_encoding, stats
+
+
+def run_build_jobs(
+    jobs: list[BuildVariantJob],
+    source_dir: Path,
+    translations: TranslationSets,
+    *,
+    clean: bool,
+    force: bool,
+    gui_font: GuiFontPatch | None,
+    parallel: bool,
+) -> list[tuple[str, Path, str, dict[str, dict[str, int]]]]:
+    if not parallel or len(jobs) <= 1:
+        return [run_build_variant(job, source_dir, translations, clean, force, gui_font) for job in jobs]
+
+    results: dict[str, tuple[str, Path, str, dict[str, dict[str, int]]]] = {}
+    with ProcessPoolExecutor(max_workers=len(jobs)) as executor:
+        future_to_job = {
+            executor.submit(run_build_variant, job, source_dir, translations, clean, force, gui_font): job
+            for job in jobs
+        }
+        for future in as_completed(future_to_job):
+            job = future_to_job[future]
+            results[job.label] = future.result()
+    return [results[job.label] for job in jobs]
+
+
 def build_all(args: argparse.Namespace) -> int:
     source_dir = source_root(args.source_dir)
     gui_settings = resolve_gui_font_settings(args)
@@ -1030,38 +1181,32 @@ def build_all(args: argparse.Namespace) -> int:
     if len(translations.warnings) > 20:
         print(f"WARNING: {len(translations.warnings) - 20} more warnings hidden")
 
-    built: list[tuple[str, Path, str, dict[str, dict[str, int]]]] = []
+    jobs: list[BuildVariantJob] = []
     if args.variant in ("all", "mainland"):
-        out = inside_repo(args.out)
-        stats = build_one(
-            source_dir,
-            out,
-            translations,
-            clean=args.force and not args.no_clean,
-            force=args.force,
-            text_transform=install_hanhua.to_simplified,
+        jobs.append(BuildVariantJob(
+            label="mainland",
+            out_dir=inside_repo(args.out),
             transform_sig="mainland-gbk",
             ansi_encoding="gbk",
-            readme_writer=write_user_readme,
-            gui_font=gui_font,
-        )
-        built.append(("mainland", out, "gbk", stats))
+        ))
 
     if args.variant in ("all", "taiwan"):
-        out = inside_repo(args.taiwan_out)
-        stats = build_one(
-            source_dir,
-            out,
-            translations,
-            clean=args.force and not args.no_clean,
-            force=args.force,
-            text_transform=install_hanhua.to_traditional,
+        jobs.append(BuildVariantJob(
+            label="taiwan",
+            out_dir=inside_repo(args.taiwan_out),
             transform_sig="taiwan-cp950",
             ansi_encoding="cp950",
-            readme_writer=write_taiwan_user_readme,
-            gui_font=gui_font,
-        )
-        built.append(("taiwan", out, "cp950", stats))
+        ))
+
+    built = run_build_jobs(
+        jobs,
+        source_dir,
+        translations,
+        clean=args.force and not args.no_clean,
+        force=args.force,
+        gui_font=gui_font,
+        parallel=args.variant == "all" and not args.no_parallel,
+    )
 
     if not args.no_validate:
         for label, out_dir, ansi_encoding, _stats in built:
@@ -1083,6 +1228,7 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser.add_argument("--out", type=Path, default=ROOT / "output")
     parser.add_argument("--taiwan-out", type=Path, default=ROOT / "output_taiwan")
     parser.add_argument("--variant", choices=("all", "mainland", "taiwan"), default="all")
+    parser.add_argument("--no-parallel", action="store_true", help="Build mainland and Taiwan variants sequentially.")
     parser.add_argument("--force", action="store_true", help="Rebuild every target and refresh the incremental manifest.")
     parser.add_argument("--no-incremental", action="store_true", dest="force", help="Alias for --force.")
     parser.add_argument("--no-clean", action="store_true", help="Do not delete old output folders when forcing a rebuild.")

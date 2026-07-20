@@ -17,9 +17,9 @@
 - `位置`: key 或 offset
 - `原文`: 游戏原文
 - `参考译文`: 旧资料里找到的参考译法
-- `长度状态`: `too_long` 表示可能放不进固定长度字段
+- `长度状态`: `ok` 表示长度可用，`untranslated` 表示尚未填写，`too_long` 表示可能放不进固定长度字段
 
-当前待填行数：28302
+当前待填行数：28550
 
 这个表包含 UI/lang0 和 TBL 待翻译内容。TBL 行很多，建议优先按 `来源`、`文件` 或关键词筛选。
 
@@ -33,16 +33,12 @@
 
 TBL 里为了长度把“那美克”写成“那美”这种情况可以保留。
 
-短普通 UI、属性名、状态名优先改 `local_data.dat` 对应行。富文本、长文本、消息弹窗、新增 UI/TBL 文本继续按实际来源改 `lang0.pak` 或 TBL。
-
-有一种例外：如果截图证明某个短标签实际读的是 `lang0.pak`，而 `local_data.dat` 改了也无效，可以做很窄的 `lang0` 特判。已验证可用的范式是状态栏 6 个基础属性：把 `"STR"` 这类 5 字节字段替换成 `力量 ` 这种同长度无引号值，保证 `lang0.pak` 文件大小不变。不要把这个当成通用写法，必须逐项验证。
-
 ## 3. 生成补丁
 
 翻译改完后，在当前目录运行：
 
 ```powershell
-python build_output.py
+python -m hanhua_v3 build
 ```
 
 它会重新生成：
@@ -69,7 +65,7 @@ python build_output.py
 - `output_taiwan/DBOZero/pack/tbl0.pak`
 - `output_taiwan/DBOZero/pack/tbl1.pak`
 
-`build_output.py` 只读 `src_file/DBOZero`，不会动真实游戏目录。
+`python -m hanhua_v3 build` 只读 `src_file/DBOZero`，不会动真实游戏目录。
 
 ## 5. 其他文件
 

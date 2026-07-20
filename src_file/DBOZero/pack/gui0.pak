@@ -15916,6 +15916,102 @@ surface "srfComboBoxBtnDis"
 
 	handle		= 0;
 	blend		= 0;
+}
+
+surface "srfPreviewBtnUp"
+{
+	resource_file	= "Lobby.rsr";
+	resource_name	= "rsrLobby";
+
+	x		= 0;
+	y		= 0;
+	width		= 82;
+	height		= 22;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 280;
+	uv_top		= 141;
+	uv_right	= 427;
+	uv_bottom	= 173;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfPreviewBtnFoc"
+{
+	resource_file	= "Lobby.rsr";
+	resource_name	= "rsrLobby";
+
+	x		= 0;
+	y		= 0;
+	width		= 82;
+	height		= 22;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 280;
+	uv_top		= 174;
+	uv_right	= 427;
+	uv_bottom	= 206;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfPreviewBtnDown"
+{
+	resource_file	= "Lobby.rsr";
+	resource_name	= "rsrLobby";
+
+	x		= 0;
+	y		= 0;
+	width		= 82;
+	height		= 22;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 280;
+	uv_top		= 207;
+	uv_right	= 427;
+	uv_bottom	= 239;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfPreviewBtnDis"
+{
+	resource_file	= "Lobby.rsr";
+	resource_name	= "rsrLobby";
+
+	x		= 0;
+	y		= 0;
+	width		= 82;
+	height		= 22;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 128;
+
+	uv_left		= 280;
+	uv_top		= 141;
+	uv_right	= 427;
+	uv_bottom	= 173;
+
+	handle		= 0;
+	blend		= 0;
 }dialog dlgMain
 {
 	x	= 0;
@@ -37287,6 +37383,755 @@ surface "srfOutLayout"
 	blend		= 0;
 }
 
+dialog dlgMain
+{
+	height	= 600.00;
+	surface	= "srfDungeonQueueDialogBackground";
+	surface_file	= "DungeonQueue.srf";
+	width	= 799.00;
+	x	= 0.00;
+	y	= 0.00;
+
+	button btnClose
+	{
+		height	= 14;
+		surface_disable	= "srfDungeonQueueCloseDown";
+		surface_down	= "srfDungeonQueueCloseDown";
+		surface_file	= "DungeonQueue.srf";
+		surface_focus	= "srfDungeonQueueCloseFocus";
+		surface_up	= "srfDungeonQueueCloseUp";
+		width	= 14;
+		x	= 757;
+		y	= 28;
+	}
+
+	button btnMainTab0
+	{
+		font_attribute	= 0.00;
+		height = 28;
+		text_style	= "center";
+		togglemode	= true;
+		width	= 112;
+		x	= 83;
+		y = 90;
+	}
+
+	button btnMainTab1
+	{
+		font_attribute	= 0.00;
+		height = 28;
+		text_style	= "center";
+		togglemode	= true;
+		width	= 126;
+		x	= 206;
+		y = 90;
+	}
+
+	button btnMainTab2
+	{
+		font_attribute	= 0.00;
+		height = 28;
+		text_style	= "center";
+		togglemode	= true;
+		width	= 110;
+		x	= 343;
+		y = 90;
+	}
+
+	button btnMainTab3
+	{
+		font_attribute	= 0.00;
+		height = 28;
+		text_style	= "center";
+		togglemode	= true;
+		width	= 128;
+		x	= 463;
+		y = 90;
+	}
+
+	button btnFilterTab0
+	{
+		font_attribute	= 0.00;
+		height	= 22;
+		text_style	= "center";
+		togglemode	= true;
+		width	= 91;
+		x	= 66;
+		y	= 136;
+	}
+
+	button btnFilterTab1
+	{
+		font_attribute	= 0.00;
+		height	= 22;
+		text_style	= "center";
+		togglemode	= true;
+		width	= 91;
+		x	= 175;
+		y	= 136;
+	}
+
+	button btnFilterTab2
+	{
+		font_attribute	= 0.00;
+		height	= 22;
+		text_style	= "center";
+		togglemode	= true;
+		width	= 91;
+		x	= 284;
+		y	= 136;
+	}
+
+	staticbox stbQueueStatus
+	{
+		enabled	= false;
+		font_attribute	= 0.00;
+		height	= 22.00;
+		text_color_blue	= 90.00;
+		text_color_green	= 190.00;
+		text_color_red	= 255.00;
+		text_style	= "center";
+		width	= 656.00;
+		x	= 72.00;
+		y	= 550.00;
+	}
+
+	staticbox stbDetailName
+	{
+		enabled	= false;
+		font_attribute	= 0.00;
+		font_height	= 100.00;
+		height	= 22.00;
+		text_color_blue	= 255.00;
+		text_color_green	= 255.00;
+		text_color_red	= 255.00;
+		text_style	= "left";
+		width	= 306.00;
+		x	= 432.00;
+		y	= 180.00;
+	}
+
+	staticbox stbDetailLevel
+	{
+		enabled	= false;
+		font_attribute	= 0.00;
+		height	= 20.00;
+		text_color_blue	= 255.00;
+		text_color_green	= 220.00;
+		text_color_red	= 180.00;
+		text_style	= "left";
+		width	= 306.00;
+		x	= 432.00;
+		y	= 206.00;
+	}
+
+	staticbox stbDetailInfo
+	{
+		enabled	= false;
+		font_attribute	= 0.00;
+		height	= 44.00;
+		text_color_blue	= 200.00;
+		text_color_green	= 200.00;
+		text_color_red	= 200.00;
+		text_style	= "center";
+		width	= 306.00;
+		x	= 432.00;
+		y	= 268.00;
+	}
+
+	htmlbox hbxCcbdExplain
+	{
+		enabled	= false;
+		height	= 150.00;
+		width	= 320.00;
+		x	= 66.00;
+		y	= 178.00;
+	}
+
+	panel pnlCcbdBar
+	{
+		height	= 20.00;
+		surface	= "srfBar";
+		surface_file	= "CCBDBoardGui.srf";
+		width	= 320.00;
+		x	= 66.00;
+		y	= 330.00;
+	}
+
+	staticbox stbCcbdBar
+	{
+		enabled	= false;
+		height	= 20.00;
+		text_effect_mode	= shadow;
+		text_style	= "center";
+		width	= 320.00;
+		x	= 66.00;
+		y	= 330.00;
+	}
+
+	panel pnlNeedItem
+	{
+		height	= 32.00;
+		width	= 32.00;
+		x	= 494.00;
+		y	= 344.00;
+	}
+
+	staticbox stbCcbdTicket
+	{
+		enabled	= false;
+		font_attribute	= 0.00;
+		font_height	= 85.00;
+		font_name	= "detail";
+		height	= 32.00;
+		text_color_blue	= 255.00;
+		text_color_green	= 255.00;
+		text_color_red	= 255.00;
+		text_style	= "right";
+		width	= 58.00;
+		x	= 430.00;
+		y	= 344.00;
+	}
+
+	staticbox stbTmqFranium
+	{
+		enabled	= false;
+		font_attribute	= 0.00;
+		font_height	= 85.00;
+		font_name	= "detail";
+		height	= 32.00;
+		text_color_blue	= 255.00;
+		text_color_green	= 255.00;
+		text_color_red	= 255.00;
+		text_style	= "right";
+		width	= 72.00;
+		x	= 418.00;
+		y	= 344.00;
+	}
+
+	combobox cbbDifficulty
+	{
+		combo_button_height	= 18.00;
+		combo_button_width	= 18.00;
+		font_attribute	= 0.00;
+		font_height	= 85.00;
+		font_name	= "detail";
+		height	= 24.00;
+		layout_surface	= "srfScrollLayout";
+		list_height	= 110.00;
+		list_surface	= "srfCbbListCenter";
+		list_text_style	= "center";
+		margin_x	= 0.00;
+		margin_y	= 0.00;
+		mask_alpha	= 255.00;
+		mask_color_blue	= 255.00;
+		mask_color_green	= 255.00;
+		mask_color_red	= 255.00;
+		masksurface	= "srfCbbListMask";
+		scroll_button_height	= 0.00;
+		scroll_button_width	= 0.00;
+		scrollbar_margin_x	= 0.00;
+		slider_height	= 26.00;
+		slider_surface	= "srfCbbScrollSlider";
+		slider_width	= 13.00;
+		surface	= "srfCbbStatic";
+		surface_disable	= "srfCbbBtnDisable";
+		surface_down	= "srfCbbBtnDown";
+		surface_file	= "PartyMatchingList.srf";
+		surface_focus	= "srfCbbBtnFocus";
+		surface_up	= "srfCbbBtnUp";
+		text_color_blue	= 255.00;
+		text_color_green	= 255.00;
+		text_color_red	= 255.00;
+		text_margin_x	= 0.00;
+		text_selcolor_blue	= 100.00;
+		text_selcolor_green	= 220.00;
+		text_selcolor_red	= 255.00;
+		text_style	= "center";
+		visiblecount	= 5.00;
+		width	= 206.00;
+		x	= 532.00;
+		y	= 348.00;
+	}
+
+	button btnApply
+	{
+		font_attribute	= 0.00;
+		height	= 28;
+		surface_down	= "srfRepairButtonDown";
+		surface_file	= "tenkaichishop.srf";
+		surface_focus	= "srfRepairButtonFocus";
+		surface_up	= "srfRepairButtonUp";
+		text_style	= "center";
+		textcolor_focus_blue	= 255.00;
+		textcolor_focus_green	= 255.00;
+		textcolor_focus_red	= 255.00;
+		textcolor_up_blue	= 255.00;
+		textcolor_up_green	= 255.00;
+		textcolor_up_red	= 255.00;
+		togglemode	= true;
+		width	= 182;
+		x	= 440;
+		y	= 396;
+	}
+
+	button btnPartyOnly
+	{
+		height	= 16;
+		surface_disable	= "srfSmallCheckBoxOn";
+		surface_down	= "srfSmallCheckBoxOn";
+		surface_file	= "OptionWnd.srf";
+		surface_focus	= "srfSmallCheckBoxFocus";
+		surface_up	= "srfSmallCheckBoxOff";
+		togglemode	= true;
+		width	= 16;
+		x	= 432;
+		y	= 438;
+	}
+
+	staticbox stbPartyOnlyLabel
+	{
+		enabled	= false;
+		font_attribute	= 0.00;
+		height	= 20;
+		text_color_blue	= 220.00;
+		text_color_green	= 220.00;
+		text_color_red	= 220.00;
+		text_style	= "left";
+		width	= 284;
+		x	= 454;
+		y	= 438;
+	}
+
+	button btnListRow0
+	{
+		font_attribute	= 0.00;
+		height	= 26.00;
+		text_style	= "left";
+		text_x	= 8.00;
+		text_y	= 4.00;
+		textcolor_focus_blue	= 100.00;
+		textcolor_focus_green	= 220.00;
+		textcolor_focus_red	= 255.00;
+		textcolor_up_blue	= 210.00;
+		textcolor_up_green	= 210.00;
+		textcolor_up_red	= 210.00;
+		width	= 320.00;
+		x	= 66.00;
+		y	= 178.00;
+	}
+
+	button btnListRow1
+	{
+		font_attribute	= 0.00;
+		height	= 26.00;
+		text_style	= "left";
+		text_x	= 8.00;
+		text_y	= 4.00;
+		textcolor_focus_blue	= 100.00;
+		textcolor_focus_green	= 220.00;
+		textcolor_focus_red	= 255.00;
+		textcolor_up_blue	= 210.00;
+		textcolor_up_green	= 210.00;
+		textcolor_up_red	= 210.00;
+		width	= 320.00;
+		x	= 66.00;
+		y	= 210.00;
+	}
+
+	button btnListRow2
+	{
+		font_attribute	= 0.00;
+		height	= 26.00;
+		text_style	= "left";
+		text_x	= 8.00;
+		text_y	= 4.00;
+		textcolor_focus_blue	= 100.00;
+		textcolor_focus_green	= 220.00;
+		textcolor_focus_red	= 255.00;
+		textcolor_up_blue	= 210.00;
+		textcolor_up_green	= 210.00;
+		textcolor_up_red	= 210.00;
+		width	= 320.00;
+		x	= 66.00;
+		y	= 242.00;
+	}
+
+	button btnListRow3
+	{
+		font_attribute	= 0.00;
+		height	= 26.00;
+		text_style	= "left";
+		text_x	= 8.00;
+		text_y	= 4.00;
+		textcolor_focus_blue	= 100.00;
+		textcolor_focus_green	= 220.00;
+		textcolor_focus_red	= 255.00;
+		textcolor_up_blue	= 210.00;
+		textcolor_up_green	= 210.00;
+		textcolor_up_red	= 210.00;
+		width	= 320.00;
+		x	= 66.00;
+		y	= 274.00;
+	}
+
+	button btnListRow4
+	{
+		font_attribute	= 0.00;
+		height	= 26.00;
+		text_style	= "left";
+		text_x	= 8.00;
+		text_y	= 4.00;
+		textcolor_focus_blue	= 100.00;
+		textcolor_focus_green	= 220.00;
+		textcolor_focus_red	= 255.00;
+		textcolor_up_blue	= 210.00;
+		textcolor_up_green	= 210.00;
+		textcolor_up_red	= 210.00;
+		width	= 320.00;
+		x	= 66.00;
+		y	= 306.00;
+	}
+
+	button btnListRow5
+	{
+		font_attribute	= 0.00;
+		height	= 26.00;
+		text_style	= "left";
+		text_x	= 8.00;
+		text_y	= 4.00;
+		textcolor_focus_blue	= 100.00;
+		textcolor_focus_green	= 220.00;
+		textcolor_focus_red	= 255.00;
+		textcolor_up_blue	= 210.00;
+		textcolor_up_green	= 210.00;
+		textcolor_up_red	= 210.00;
+		width	= 320.00;
+		x	= 66.00;
+		y	= 338.00;
+	}
+
+	button btnListRow6
+	{
+		font_attribute	= 0.00;
+		height	= 26.00;
+		text_style	= "left";
+		text_x	= 8.00;
+		text_y	= 4.00;
+		textcolor_focus_blue	= 100.00;
+		textcolor_focus_green	= 220.00;
+		textcolor_focus_red	= 255.00;
+		textcolor_up_blue	= 210.00;
+		textcolor_up_green	= 210.00;
+		textcolor_up_red	= 210.00;
+		width	= 320.00;
+		x	= 66.00;
+		y	= 370.00;
+	}
+
+	button btnListRow7
+	{
+		font_attribute	= 0.00;
+		height	= 26.00;
+		text_style	= "left";
+		text_x	= 8.00;
+		text_y	= 4.00;
+		textcolor_focus_blue	= 100.00;
+		textcolor_focus_green	= 220.00;
+		textcolor_focus_red	= 255.00;
+		textcolor_up_blue	= 210.00;
+		textcolor_up_green	= 210.00;
+		textcolor_up_red	= 210.00;
+		width	= 320.00;
+		x	= 66.00;
+		y	= 402.00;
+	}
+
+	button btnListRow8
+	{
+		font_attribute	= 0.00;
+		height	= 26.00;
+		text_style	= "left";
+		text_x	= 8.00;
+		text_y	= 4.00;
+		textcolor_focus_blue	= 100.00;
+		textcolor_focus_green	= 220.00;
+		textcolor_focus_red	= 255.00;
+		textcolor_up_blue	= 210.00;
+		textcolor_up_green	= 210.00;
+		textcolor_up_red	= 210.00;
+		width	= 320.00;
+		x	= 66.00;
+		y	= 434.00;
+	}
+
+	button btnListRow9
+	{
+		font_attribute	= 0.00;
+		height	= 26.00;
+		text_style	= "left";
+		text_x	= 8.00;
+		text_y	= 4.00;
+		textcolor_focus_blue	= 100.00;
+		textcolor_focus_green	= 220.00;
+		textcolor_focus_red	= 255.00;
+		textcolor_up_blue	= 210.00;
+		textcolor_up_green	= 210.00;
+		textcolor_up_red	= 210.00;
+		width	= 320.00;
+		x	= 66.00;
+		y	= 466.00;
+	}
+
+	staticbox stbBoss0
+	{
+		enabled	= false;
+		font_attribute	= 0.00;
+		font_height	= 90.00;
+		height	= 26.00;
+		text_color_blue	= 120.00;
+		text_color_green	= 200.00;
+		text_color_red	= 255.00;
+		text_style	= "left";
+		visible	= false;
+		width	= 320.00;
+		x	= 66.00;
+		y	= 178.00;
+	}
+
+	staticbox stbBoss1
+	{
+		enabled	= false;
+		font_attribute	= 0.00;
+		font_height	= 90.00;
+		height	= 26.00;
+		text_color_blue	= 120.00;
+		text_color_green	= 200.00;
+		text_color_red	= 255.00;
+		text_style	= "left";
+		visible	= false;
+		width	= 320.00;
+		x	= 66.00;
+		y	= 212.00;
+	}
+
+	staticbox stbBoss2
+	{
+		enabled	= false;
+		font_attribute	= 0.00;
+		font_height	= 90.00;
+		height	= 26.00;
+		text_color_blue	= 120.00;
+		text_color_green	= 200.00;
+		text_color_red	= 255.00;
+		text_style	= "left";
+		visible	= false;
+		width	= 320.00;
+		x	= 66.00;
+		y	= 246.00;
+	}
+
+	staticbox stbBoss3
+	{
+		enabled	= false;
+		font_attribute	= 0.00;
+		font_height	= 90.00;
+		height	= 26.00;
+		text_color_blue	= 120.00;
+		text_color_green	= 200.00;
+		text_color_red	= 255.00;
+		text_style	= "left";
+		visible	= false;
+		width	= 320.00;
+		x	= 66.00;
+		y	= 280.00;
+	}
+
+	staticbox stbBoss4
+	{
+		enabled	= false;
+		font_attribute	= 0.00;
+		font_height	= 90.00;
+		height	= 26.00;
+		text_color_blue	= 120.00;
+		text_color_green	= 200.00;
+		text_color_red	= 255.00;
+		text_style	= "left";
+		visible	= false;
+		width	= 320.00;
+		x	= 66.00;
+		y	= 314.00;
+	}
+
+	staticbox stbBoss5
+	{
+		enabled	= false;
+		font_attribute	= 0.00;
+		font_height	= 90.00;
+		height	= 26.00;
+		text_color_blue	= 120.00;
+		text_color_green	= 200.00;
+		text_color_red	= 255.00;
+		text_style	= "left";
+		visible	= false;
+		width	= 320.00;
+		x	= 66.00;
+		y	= 348.00;
+	}
+
+	staticbox stbBoss6
+	{
+		enabled	= false;
+		font_attribute	= 0.00;
+		font_height	= 90.00;
+		height	= 26.00;
+		text_color_blue	= 120.00;
+		text_color_green	= 200.00;
+		text_color_red	= 255.00;
+		text_style	= "left";
+		visible	= false;
+		width	= 320.00;
+		x	= 66.00;
+		y	= 382.00;
+	}
+
+	staticbox stbBoss7
+	{
+		enabled	= false;
+		font_attribute	= 0.00;
+		font_height	= 90.00;
+		height	= 26.00;
+		text_color_blue	= 120.00;
+		text_color_green	= 200.00;
+		text_color_red	= 255.00;
+		text_style	= "left";
+		visible	= false;
+		width	= 320.00;
+		x	= 66.00;
+		y	= 416.00;
+	}
+
+}
+resource "rsrWndDungeonQueue"
+{
+	handle	= 0;
+	file	= "wnd_dungeonsearch.png";
+}
+surface "srfDungeonQueueDialogBackground"
+{
+	resource_file	= "DungeonQueue.rsr";
+	resource_name	= "rsrWndDungeonQueue";
+
+	x		= 0;
+	y		= 0;
+	width		= 799;
+	height		= 600;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 0;
+	uv_top		= 0;
+	uv_right	= 799;
+	uv_bottom	= 600;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfDungeonQueueCloseUp"
+{
+	resource_file	= "Game.rsr";
+	resource_name	= "rsrTenkaichiBudokai2";
+
+	x		= 0;
+	y		= 0;
+	width		= 14;
+	height		= 14;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 294;
+	uv_top		= 0;
+	uv_right	= 308;
+	uv_bottom	= 14;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfDungeonQueueCloseFocus"
+{
+	resource_file	= "Game.rsr";
+	resource_name	= "rsrTenkaichiBudokai2";
+
+	x		= 0;
+	y		= 0;
+	width		= 14;
+	height		= 14;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 309;
+	uv_top		= 0;
+	uv_right	= 323;
+	uv_bottom	= 14;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfDungeonQueueCloseDown"
+{
+	resource_file	= "Game.rsr";
+	resource_name	= "rsrTenkaichiBudokai2";
+
+	x		= 0;
+	y		= 0;
+	width		= 14;
+	height		= 14;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 324;
+	uv_top		= 0;
+	uv_right	= 338;
+	uv_bottom	= 14;
+
+	handle		= 0;
+	blend		= 0;
+}
+dialog dlgMain
+{
+    x	= 0;
+ 	y 	= 0;
+	width		= 43;
+	height		= 43;
+
+    button btnDungeonQueueSideIcon
+	{
+		x				= 0;
+		y				= 0;
+		width			= 43;
+		height			= 43;
+		
+		surface_file 	= "EventTime.srf";
+		surface_up		= "srfEventTimeSideIconBtnUp";
+		surface_focus	= "srfEventTimeSideIconBtnFocus";
+		surface_down	= "srfEventTimeSideIconBtnDown";
+	}
+}
 resource "rsrDWC1"
 {
 	handle 	= 0;
@@ -44128,6 +44973,12 @@ resource "rsrEventReward"
 	handle	= 0;
 	file	= "event_reward.png";
 }
+
+resource "rsrVipRemoteHub"
+{
+	handle	= 0;
+	file	= "vipremotehub_bg.png";
+}
 surface "srfDialog"
 {
 	resource_file	= "Game.rsr";
@@ -44702,7 +45553,31 @@ surface "srfPlayNameRight"
 
 	handle		= 0;
 	blend		= 0.00;
-}dialog dlgMain
+}
+surface "srfVipHubBg"
+{
+	resource_file	= "EventReward.rsr";
+	resource_name	= "rsrVipRemoteHub";
+
+	x		= 0;
+	y		= 0;
+	width		= 320;
+	height		= 128;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 0;
+	uv_top		= 0;
+	uv_right	= 320;
+	uv_bottom	= 128;
+
+	handle		= 0;
+	blend		= 0;
+}
+dialog dlgMain
 {
 	x				= 200;
  	y 				= 100;
@@ -47474,6 +48349,12 @@ resource "rsrMainIcon"
     file    = "main_icon_0.png";
 }
 
+
+resource "rsrItemAscend"
+{
+	handle	= 0;
+	file	= "wnd_uascend.png";
+}
 
 // It must location last of file cause of finish encoding if file name is empty
 resource "rsrDummy"
@@ -69493,7 +70374,67 @@ surface "srfEmptyRecipe"
 
 	handle		= 0;
 	blend		= 0;
-}dialog dlgMain
+}
+surface "srfAscendUp"
+{
+	resource_file	= "Game.rsr";
+	resource_name	= "rsrItemAscend";
+	x = 0; y = 0; width = 280; height = 100;
+	color_red = 255; color_green = 255; color_blue = 255; color_alpha = 255;
+	uv_left = 0; uv_top = 0; uv_right = 280; uv_bottom = 100;
+	handle = 0; blend = 0;
+}
+
+surface "srfAscendMid"
+{
+	resource_file	= "Game.rsr";
+	resource_name	= "rsrItemAscend";
+	x = 0; y = 100; width = 280; height = 100;
+	color_red = 255; color_green = 255; color_blue = 255; color_alpha = 255;
+	uv_left = 0; uv_top = 100; uv_right = 280; uv_bottom = 200;
+	handle = 0; blend = 0;
+}
+
+surface "srfAscendDown"
+{
+	resource_file	= "Game.rsr";
+	resource_name	= "rsrItemAscend";
+	x = 0; y = 200; width = 280; height = 100;
+	color_red = 255; color_green = 255; color_blue = 255; color_alpha = 255;
+	uv_left = 0; uv_top = 200; uv_right = 280; uv_bottom = 300;
+	handle = 0; blend = 0;
+}
+
+surface "srfAscendBg"
+{
+	resource_file	= "Game.rsr";
+	resource_name	= "rsrItemAscend";
+	x = 0; y = 0; width = 360; height = 420;
+	color_red = 255; color_green = 255; color_blue = 255; color_alpha = 255;
+	uv_left = 0; uv_top = 0; uv_right = 360; uv_bottom = 420;
+	handle = 0; blend = 0;
+}
+
+surface "srfAscendRateFill"
+{
+	resource_file	= "Game.rsr";
+	resource_name	= "rsrItemAscend";
+	x = 0; y = 0; width = 308; height = 22;
+	color_red = 255; color_green = 255; color_blue = 255; color_alpha = 255;
+	uv_left = 0; uv_top = 430; uv_right = 308; uv_bottom = 452;
+	handle = 0; blend = 0;
+}
+
+surface "srfAscendFxBand"
+{
+	resource_file	= "Game.rsr";
+	resource_name	= "rsrItemAscend";
+	x = 0; y = 0; width = 360; height = 50;
+	color_red = 255; color_green = 255; color_blue = 255; color_alpha = 255;
+	uv_left = 0; uv_top = 460; uv_right = 360; uv_bottom = 510;
+	handle = 0; blend = 0;
+}
+dialog dlgMain
 {
 	x	= 0;
  	y 	= 0;
@@ -72334,6 +73275,396 @@ surface "srfMouse"
 	handle		= 0;
 	blend		= 0;
 }// --------------------------------------------------------------------------------------
+// Item Rarity Ascend panel ("legendary" 360x420 layout). Background = single srfAscendBg
+// surface in HoipoiMix.srf -> game.rsr -> rsrItemAscend -> wnd_uascend.png (gold filigree
+// corners + Shenron watermark composed from the game's own art). Component names must
+// match ItemAscendGui.cpp exactly.
+// --------------------------------------------------------------------------------------
+
+dialog dlgMain
+{
+	x	= 0;
+	y	= 0;
+	width	= 360;
+	height	= 420;
+
+	titlebar_x		= 0;
+	titlebar_y		= 0;
+	titlebar_width		= 320;
+	titlebar_height		= 26;
+
+	surface_file = "HoipoiMix.srf";
+	surface = "srfAscendBg";
+
+	staticbox stbTitle
+	{
+		x	= 92;
+		y	= 6;
+		width	= 200;
+		height	= 18;
+		enabled = false;
+		text_style	= center;
+		text_color_red	= 255;
+		text_color_green = 214;
+		text_color_blue = 120;
+		font_attribute	= 0;
+	}
+
+	button btnExit
+	{
+		x		= 334;
+		y		= 6;
+		width		= 16;
+		height		= 16;
+		surface_file 	= "ItemUpgrade.srf";
+		surface_up 	= "srfItemUpgradeBtnExitUp";
+		surface_down 	= "srfItemUpgradeBtnExitDown";
+		surface_focus 	= "srfItemUpgradeBtnExitFoc";
+		surface_disable = "srfItemUpgradeBtnExitDis";
+	}
+
+	panel pnlSrcSlot
+	{
+		x		= 70;
+		y		= 50;
+		width		= 36;
+		height		= 36;
+		enabled = false;
+		surface_file = "HoipoiMix.srf";
+		surface		 = "srfSlot";
+	}
+
+	panel pnlPreviewSlot
+	{
+		x		= 254;
+		y		= 50;
+		width		= 36;
+		height		= 36;
+		enabled = false;
+		surface_file = "HoipoiMix.srf";
+		surface		 = "srfSlot";
+	}
+
+	staticbox stbCurrentName
+	{
+		x	= 8;
+		y	= 100;
+		width	= 164;
+		height	= 16;
+		enabled = false;
+		text_style	= center;
+		text_color_red	= 255;
+		text_color_green = 255;
+		text_color_blue = 255;
+		font_height	= 100;
+		font_attribute	= 0;
+	}
+
+	staticbox stbResultName
+	{
+		x	= 188;
+		y	= 100;
+		width	= 164;
+		height	= 16;
+		enabled = false;
+		text_style	= center;
+		text_color_red	= 255;
+		text_color_green = 255;
+		text_color_blue = 255;
+		font_height	= 100;
+		font_attribute	= 0;
+	}
+
+	staticbox stbMaterialLabel
+	{
+		x	= 26;
+		y	= 128;
+		width	= 180;
+		height	= 18;
+		enabled = false;
+		text_style	= left;
+		text_color_red	= 255;
+		text_color_green = 214;
+		text_color_blue = 120;
+		font_attribute	= 0;
+		text = "Materials";
+	}
+
+	panel pnlMatSlot0
+	{
+		x		= 54;
+		y		= 150;
+		width		= 36;
+		height		= 36;
+		enabled = false;
+		surface_file = "HoipoiMix.srf";
+		surface		 = "srfSlot";
+	}
+
+	panel pnlMatSlot1
+	{
+		x		= 126;
+		y		= 150;
+		width		= 36;
+		height		= 36;
+		enabled = false;
+		surface_file = "HoipoiMix.srf";
+		surface		 = "srfSlot";
+	}
+
+	panel pnlMatSlot2
+	{
+		x		= 198;
+		y		= 150;
+		width		= 36;
+		height		= 36;
+		enabled = false;
+		surface_file = "HoipoiMix.srf";
+		surface		 = "srfSlot";
+	}
+
+	panel pnlMatSlot3
+	{
+		x		= 270;
+		y		= 150;
+		width		= 36;
+		height		= 36;
+		enabled = false;
+		surface_file = "HoipoiMix.srf";
+		surface		 = "srfSlot";
+	}
+
+	staticbox stbRateLabel
+	{
+		x	= 26;
+		y	= 216;
+		width	= 180;
+		height	= 18;
+		enabled = false;
+		text_style	= left;
+		text_color_red	= 255;
+		text_color_green = 214;
+		text_color_blue = 120;
+		font_attribute	= 0;
+		text = "Success Rate";
+	}
+
+	progressbar pgbRate
+	{
+		x	= 26;
+		y	= 238;
+		width	= 308;
+		height	= 22;
+
+		min	= 0;
+		max	= 100;
+		value	= 0;
+
+		vertical = false;
+
+		surface_file = "HoipoiMix.srf";
+		surface	     = "srfAscendRateFill";
+	}
+
+	staticbox stbSuccessRate
+	{
+		x	= 24;
+		y	= 236;
+		width	= 312;
+		height	= 26;
+		enabled = false;
+		text_style	= center;
+		text_color_red	= 255;
+		text_color_green = 255;
+		text_color_blue = 255;
+		font_height	= 110;
+		font_attribute	= 0;
+	}
+
+	staticbox stbZennyLabel
+	{
+		x	= 26;
+		y	= 270;
+		width	= 180;
+		height	= 18;
+		enabled = false;
+		text_style	= left;
+		text_color_red	= 255;
+		text_color_green = 214;
+		text_color_blue = 120;
+		font_attribute	= 0;
+		text = "Zeni";
+	}
+
+	staticbox stbZenny
+	{
+		x	= 24;
+		y	= 292;
+		width	= 312;
+		height	= 20;
+		enabled = false;
+		text_style	= center;
+		text_color_red	= 255;
+		text_color_green = 255;
+		text_color_blue = 255;
+		font_height	= 110;
+		font_attribute	= 0;
+	}
+
+	htmlbox htmlInfo
+	{
+		x	= 24;
+		y	= 330;
+		width	= 312;
+		height	= 54;
+
+		surface_file 	= "GameCommon.srf";
+		increase_surface_up		= "srfScrollNextBtnUp";
+		increase_surface_down		= "srfScrollNextBtnDown";
+		increase_surface_focus		= "srfScrollNextBtnFoc";
+		increase_surface_disable	= "srfScrollNextBtnDown";
+		decrease_surface_up		= "srfScrollPrevBtnUp";
+		decrease_surface_down		= "srfScrollPrevBtnDown";
+		decrease_surface_focus		= "srfScrollPrevBtnFoc";
+		decrease_surface_disable	= "srfScrollPrevBtnDown";
+		slider_surface			= "srfScrollSmall";
+		layout_surface			= "srfScrollLayout";
+
+		slider_width	= 12;
+		slider_height	= 26;
+		button_width	= 12;
+		button_height	= 19;
+	}
+
+	button btnAscend
+	{
+		x	= 145;
+		y	= 392;
+		width	= 69;
+		height	= 23;
+		textcolor_up_red	= 255;
+		textcolor_up_green	= 214;
+		textcolor_up_blue	= 84;
+		textcolor_focus_red	= 255;
+		textcolor_focus_green	= 240;
+		textcolor_focus_blue	= 160;
+		textcolor_down_red	= 255;
+		textcolor_down_green	= 214;
+		textcolor_down_blue	= 84;
+		surface_file 	= "GameCommon.srf";
+		surface_up 		= "srfCommonBtnUp";
+		surface_down 	= "srfCommonBtnDown";
+		surface_focus 	= "srfCommonBtnFoc";
+		surface_disable = "srfCommonBtnDis";
+	}
+
+	panel pnlResultFx
+	{
+		x	= 0;
+		y	= 160;
+		width	= 360;
+		height	= 50;
+		enabled = false;
+		surface_file = "HoipoiMix.srf";
+		surface		 = "srfAscendFxBand";
+	}
+
+	staticbox stbResultFx
+	{
+		x	= 0;
+		y	= 160;
+		width	= 360;
+		height	= 50;
+		enabled = false;
+		text_style	= center;
+		text_color_red	= 255;
+		text_color_green = 255;
+		text_color_blue = 255;
+		font_height	= 280;
+		font_attribute	= 0;
+	}
+}
+resource "rsrItemAscend"
+{
+    handle  = 0;
+    file    = "wnd_uascend.png";
+}
+// Surfaces for the Item Ascend panel frame. Texture: wnd_uascend.png (513x512 atlas).
+// Maps the top-left window (title + Current/Result slots at y 0..98, body below) onto a
+// 280-wide dialog (height 300). Adjust uv_* if the window region in the atlas differs.
+
+surface "srfAscendUp"
+{
+	resource_file	= "ItemAscend.rsr";
+	resource_name	= "rsrItemAscend";
+
+	x		= 0;
+	y		= 0;
+	width		= 280;
+	height		= 98;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 0;
+	uv_top		= 0;
+	uv_right	= 256;
+	uv_bottom	= 98;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfAscendMid"
+{
+	resource_file	= "ItemAscend.rsr";
+	resource_name	= "rsrItemAscend";
+
+	x		= 0;
+	y		= 98;
+	width		= 280;
+	height		= 164;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 0;
+	uv_top		= 98;
+	uv_right	= 256;
+	uv_bottom	= 150;
+
+	handle		= 0;
+	blend		= 0;
+}
+
+surface "srfAscendDown"
+{
+	resource_file	= "ItemAscend.rsr";
+	resource_name	= "rsrItemAscend";
+
+	x		= 0;
+	y		= 262;
+	width		= 280;
+	height		= 38;
+
+	color_red	= 255;
+	color_green	= 255;
+	color_blue	= 255;
+	color_alpha	= 255;
+
+	uv_left		= 0;
+	uv_top		= 150;
+	uv_right	= 256;
+	uv_bottom	= 175;
+
+	handle		= 0;
+	blend		= 0;
+}
+// --------------------------------------------------------------------------------------
 // Dialog Setting
 
 dialog dlgMain
@@ -138818,6 +140149,15 @@ base_skillIndex = 20091 ;
 //base_skillIndex =@;
 //}
 
+//RC 7  0 
+//skill@
+//{
+//x = 617 ;
+//y = 15 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
 //RC 0  1 
 //skillupgrade
 //{
@@ -138885,6 +140225,15 @@ base_skillIndex = 20221 ;
 //skill@
 //{
 //x = 531 ;
+//y = 79 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
+//RC 7  1 
+//skill@
+//{
+//x = 617 ;
 //y = 79 ;
 //mastery = FALSE;
 //base_skillIndex =@;
@@ -138962,6 +140311,15 @@ base_skillIndex = 20201 ;
 //base_skillIndex =@;
 //}
 
+//RC 7  2 
+//skill@
+//{
+//x = 617 ;
+//y = 143 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
 //RC 0  3 
 skill 10111 
 {
@@ -139029,6 +140387,15 @@ base_skillIndex = 10021 ;
 //skill@
 //{
 //x = 531 ;
+//y = 207 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
+//RC 7  3 
+//skill@
+//{
+//x = 617 ;
 //y = 207 ;
 //mastery = FALSE;
 //base_skillIndex =@;
@@ -139106,6 +140473,15 @@ base_skillIndex = 20211 ;
 //base_skillIndex =@;
 //}
 
+//RC 7  4 
+//skill@
+//{
+//x = 617 ;
+//y = 271 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
 //RC 0  5 
 skill 10411 
 {
@@ -139173,6 +140549,15 @@ base_skillIndex = 20911 ;
 //skill@
 //{
 //x = 531 ;
+//y = 335 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
+//RC 7  5 
+//skill@
+//{
+//x = 617 ;
 //y = 335 ;
 //mastery = FALSE;
 //base_skillIndex =@;
@@ -139250,6 +140635,15 @@ base_skillIndex = 20041 ;
 //base_skillIndex =@;
 //}
 
+//RC 7  6 
+//skill@
+//{
+//x = 617 ;
+//y = 399 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
 //RC 0  7 
 //skill 0 
 //{
@@ -139317,6 +140711,15 @@ base_skillIndex = 20051 ;
 //skill@
 //{
 //x = 531 ;
+//y = 463 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
+//RC 7  7 
+//skill@
+//{
+//x = 617 ;
 //y = 463 ;
 //mastery = FALSE;
 //base_skillIndex =@;
@@ -139394,6 +140797,15 @@ base_skillIndex = 20081 ;
 //base_skillIndex =@;
 //}
 
+//RC 7  8 
+//skill@
+//{
+//x = 617 ;
+//y = 527 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
 //RC 0  9 
 //skill 0 
 //{
@@ -139461,6 +140873,15 @@ base_skillIndex = 30611 ;
 //skill@
 //{
 //x = 531 ;
+//y = 591 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
+//RC 7  9 
+//skill@
+//{
+//x = 617 ;
 //y = 591 ;
 //mastery = FALSE;
 //base_skillIndex =@;
@@ -139538,6 +140959,15 @@ base_skillIndex = 71012 ;
 //base_skillIndex =@;
 //}
 
+//RC 7  10 
+//skill@
+//{
+//x = 617 ;
+//y = 655 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
 //RC 0  11 
 //skill 0 
 //{
@@ -139610,6 +141040,15 @@ base_skillIndex = 910129 ;
 //base_skillIndex =@;
 //}
 
+//RC 7  11 
+//skill@
+//{
+//x = 617 ;
+//y = 719 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
 //RC 0  12 
 //skill@
 //{
@@ -139629,13 +141068,13 @@ base_skillIndex = 910129 ;
 //}
 
 //RC 2  12 
-//skill 795982 
-//{
-//x = 182 ;
-//y = 783 ;
-//mastery = FALSE;
-//base_skillIndex = 795982 ;
-//}
+skill 101060313 
+{
+x = 182 ;
+y = 783 ;
+mastery = FALSE;
+base_skillIndex = 101060313 ;
+}
 
 //RC 3  12 
 skill 795980 
@@ -139677,6 +141116,15 @@ base_skillIndex = 795980 ;
 //skill@
 //{
 //x = 531 ;
+//y = 783 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
+//RC 7  12 
+//skill@
+//{
+//x = 617 ;
 //y = 783 ;
 //mastery = FALSE;
 //base_skillIndex =@;
@@ -139754,6 +141202,15 @@ base_skillIndex = 99120 ;
 //base_skillIndex =@;
 //}
 
+//RC 7  13 
+//skill@
+//{
+//x = 617 ;
+//y = 847 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
 //RC 0  14 
 skill 99130 
 {
@@ -139821,6 +141278,15 @@ base_skillIndex = 99150 ;
 //skill@
 //{
 //x = 531 ;
+//y = 911 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
+//RC 7  14 
+//skill@
+//{
+//x = 617 ;
 //y = 911 ;
 //mastery = FALSE;
 //base_skillIndex =@;
@@ -139898,6 +141364,15 @@ base_skillIndex = 95097 ;
 //base_skillIndex =@;
 //}
 
+//RC 7  15 
+//skill@
+//{
+//x = 617 ;
+//y = 975 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
 //RC 0  16 
 //skill@
 //{
@@ -139965,6 +141440,15 @@ base_skillIndex = 9509797 ;
 //skill@
 //{
 //x = 531 ;
+//y = 1039 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
+//RC 7  16 
+//skill@
+//{
+//x = 617 ;
 //y = 1039 ;
 //mastery = FALSE;
 //base_skillIndex =@;
@@ -140042,6 +141526,15 @@ base_skillIndex = 9509797 ;
 //base_skillIndex =@;
 //}
 
+//RC 7  17 
+//skill@
+//{
+//x = 617 ;
+//y = 1103 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
 //RC 0  18 
 //skill@
 //{
@@ -140109,6 +141602,15 @@ base_skillIndex = 421000 ;
 //skill@
 //{
 //x = 531 ;
+//y = 1167 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
+//RC 7  18 
+//skill@
+//{
+//x = 617 ;
 //y = 1167 ;
 //mastery = FALSE;
 //base_skillIndex =@;
@@ -140186,6 +141688,15 @@ base_skillIndex = 421000 ;
 //base_skillIndex =@;
 //}
 
+//RC 7  19 
+//skill@
+//{
+//x = 617 ;
+//y = 1231 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
 //RC 0  20 
 //skill@
 //{
@@ -140253,6 +141764,15 @@ base_skillIndex = 421000 ;
 //skill@
 //{
 //x = 531 ;
+//y = 1295 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
+//RC 7  20 
+//skill@
+//{
+//x = 617 ;
 //y = 1295 ;
 //mastery = FALSE;
 //base_skillIndex =@;
@@ -143882,6 +145402,15 @@ base_skillIndex = 120131 ;
 //base_skillIndex =@;
 //}
 
+//RC 7  0 
+//skill@
+//{
+//x = 617 ;
+//y = 15 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
 //RC 0  1 
 //skillupgrade
 //{
@@ -143949,6 +145478,15 @@ base_skillIndex = 120501 ;
 //skill@
 //{
 //x = 531 ;
+//y = 79 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
+//RC 7  1 
+//skill@
+//{
+//x = 617 ;
 //y = 79 ;
 //mastery = FALSE;
 //base_skillIndex =@;
@@ -144026,6 +145564,15 @@ base_skillIndex = 120301 ;
 //base_skillIndex =@;
 //}
 
+//RC 7  2 
+//skill@
+//{
+//x = 617 ;
+//y = 143 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
 //RC 0  3 
 //skillupgrade
 //{
@@ -144093,6 +145640,15 @@ base_skillIndex = 110051 ;
 //skill@
 //{
 //x = 531 ;
+//y = 207 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
+//RC 7  3 
+//skill@
+//{
+//x = 617 ;
 //y = 207 ;
 //mastery = FALSE;
 //base_skillIndex =@;
@@ -144170,6 +145726,15 @@ base_skillIndex = 120311 ;
 //base_skillIndex =@;
 //}
 
+//RC 7  4 
+//skill@
+//{
+//x = 617 ;
+//y = 271 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
 //RC 0  5 
 //skillupgrade
 //{
@@ -144237,6 +145802,15 @@ base_skillIndex = 120911 ;
 //skill@
 //{
 //x = 531 ;
+//y = 335 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
+//RC 7  5 
+//skill@
+//{
+//x = 617 ;
 //y = 335 ;
 //mastery = FALSE;
 //base_skillIndex =@;
@@ -144314,6 +145888,15 @@ base_skillIndex = 120021 ;
 //base_skillIndex =@;
 //}
 
+//RC 7  6 
+//skill@
+//{
+//x = 617 ;
+//y = 399 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
 //RC 0  7 
 skill 7200220 
 {
@@ -144381,6 +145964,15 @@ base_skillIndex = 120011 ;
 //skill@
 //{
 //x = 531 ;
+//y = 463 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
+//RC 7  7 
+//skill@
+//{
+//x = 617 ;
 //y = 463 ;
 //mastery = FALSE;
 //base_skillIndex =@;
@@ -144458,6 +146050,15 @@ base_skillIndex = 120101 ;
 //base_skillIndex =@;
 //}
 
+//RC 7  8 
+//skill@
+//{
+//x = 617 ;
+//y = 527 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
 //RC 0  9 
 //skill@
 //{
@@ -144525,6 +146126,15 @@ base_skillIndex = 130411 ;
 //skill@
 //{
 //x = 531 ;
+//y = 591 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
+//RC 7  9 
+//skill@
+//{
+//x = 617 ;
 //y = 591 ;
 //mastery = FALSE;
 //base_skillIndex =@;
@@ -144602,6 +146212,15 @@ base_skillIndex = 151012 ;
 //base_skillIndex =@;
 //}
 
+//RC 7  10 
+//skill@
+//{
+//x = 617 ;
+//y = 655 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
 //RC 0  11 
 //skill@
 //{
@@ -144674,6 +146293,15 @@ base_skillIndex = 1510129 ;
 //base_skillIndex =@;
 //}
 
+//RC 7  11 
+//skill@
+//{
+//x = 617 ;
+//y = 719 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
 //RC 0  12 
 //skill 0 
 //{
@@ -144693,13 +146321,13 @@ base_skillIndex = 795283 ;
 }
 
 //RC 2  12 
-//skill 795983 
-//{
-//x = 182 ;
-//y = 783 ;
-//mastery = FALSE;
-//base_skillIndex = 795983 ;
-//}
+skill 101060314 
+{
+x = 182 ;
+y = 783 ;
+mastery = FALSE;
+base_skillIndex = 101060314 ;
+}
 
 //RC 3  12 
 skill 795981 
@@ -144741,6 +146369,15 @@ base_skillIndex = 795981 ;
 //skill@
 //{
 //x = 531 ;
+//y = 783 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
+//RC 7  12 
+//skill@
+//{
+//x = 617 ;
 //y = 783 ;
 //mastery = FALSE;
 //base_skillIndex =@;
@@ -144818,6 +146455,15 @@ base_skillIndex = 99151 ;
 //base_skillIndex =@;
 //}
 
+//RC 7  13 
+//skill@
+//{
+//x = 617 ;
+//y = 847 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
 //RC 0  14 
 skill 99131 
 {
@@ -144885,6 +146531,15 @@ base_skillIndex = 99121 ;
 //skill@
 //{
 //x = 531 ;
+//y = 911 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
+//RC 7  14 
+//skill@
+//{
+//x = 617 ;
 //y = 911 ;
 //mastery = FALSE;
 //base_skillIndex =@;
@@ -144962,6 +146617,15 @@ base_skillIndex = 95098 ;
 //base_skillIndex =@;
 //}
 
+//RC 7  15 
+//skill@
+//{
+//x = 617 ;
+//y = 975 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
 //RC 0  16 
 //skill@
 //{
@@ -145029,6 +146693,15 @@ base_skillIndex = 9509898 ;
 //skill@
 //{
 //x = 531 ;
+//y = 1039 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
+//RC 7  16 
+//skill@
+//{
+//x = 617 ;
 //y = 1039 ;
 //mastery = FALSE;
 //base_skillIndex =@;
@@ -145106,6 +146779,15 @@ base_skillIndex = 421001 ;
 //base_skillIndex =@;
 //}
 
+//RC 7  17 
+//skill@
+//{
+//x = 617 ;
+//y = 1103 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
 //RC 0  18 
 //skill@
 //{
@@ -145173,6 +146855,15 @@ base_skillIndex = 421001 ;
 //skill@
 //{
 //x = 531 ;
+//y = 1167 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
+//RC 7  18 
+//skill@
+//{
+//x = 617 ;
 //y = 1167 ;
 //mastery = FALSE;
 //base_skillIndex =@;
@@ -145250,6 +146941,15 @@ base_skillIndex = 421001 ;
 //base_skillIndex =@;
 //}
 
+//RC 7  19 
+//skill@
+//{
+//x = 617 ;
+//y = 1231 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
 //RC 0  20 
 //skill 211012 
 //{
@@ -145286,6 +146986,15 @@ base_skillIndex = 421001 ;
 //base_skillIndex =@;
 //}
 
+//RC 4  20 
+//skill@
+//{
+//x = 356 ;
+//y = 1295 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
 //RC 5  20 
 //skill@
 //{
@@ -145308,6 +147017,15 @@ base_skillIndex = 421001 ;
 //skill@
 //{
 //x = 531 ;
+//y = 1295 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
+//RC 7  20 
+//skill@
+//{
+//x = 617 ;
 //y = 1295 ;
 //mastery = FALSE;
 //base_skillIndex =@;
@@ -161103,6 +162821,15 @@ base_skillIndex = 521171 ;
 //base_skillIndex =@;
 //}
 
+//RC 7  0 
+//skill@
+//{
+//x = 617 ;
+//y = 15 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
 //RC 0  1 
 skill 510121 
 {
@@ -161170,6 +162897,15 @@ base_skillIndex = 520161 ;
 //skill@
 //{
 //x = 531 ;
+//y = 79 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
+//RC 7  1 
+//skill@
+//{
+//x = 617 ;
 //y = 79 ;
 //mastery = FALSE;
 //base_skillIndex =@;
@@ -161247,6 +162983,15 @@ base_skillIndex = 520131 ;
 //base_skillIndex =@;
 //}
 
+//RC 7  2 
+//skill@
+//{
+//x = 617 ;
+//y = 143 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
 //RC 0  3 
 skill 510151 
 {
@@ -161314,6 +163059,15 @@ base_skillIndex = 510031 ;
 //skill@
 //{
 //x = 531 ;
+//y = 207 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
+//RC 7  3 
+//skill@
+//{
+//x = 617 ;
 //y = 207 ;
 //mastery = FALSE;
 //base_skillIndex =@;
@@ -161391,6 +163145,15 @@ base_skillIndex = 520321 ;
 //base_skillIndex =@;
 //}
 
+//RC 7  4 
+//skill@
+//{
+//x = 617 ;
+//y = 271 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
 //RC 0  5 
 //skillupgrade
 //{
@@ -161458,6 +163221,15 @@ base_skillIndex = 520241 ;
 //skill@
 //{
 //x = 531 ;
+//y = 335 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
+//RC 7  5 
+//skill@
+//{
+//x = 617 ;
 //y = 335 ;
 //mastery = FALSE;
 //base_skillIndex =@;
@@ -161535,6 +163307,15 @@ base_skillIndex = 520011 ;
 //base_skillIndex =@;
 //}
 
+//RC 7  6 
+//skill@
+//{
+//x = 617 ;
+//y = 399 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
 //RC 0  7 
 skill 7200223 
 {
@@ -161602,6 +163383,15 @@ base_skillIndex = 520021 ;
 //skill@
 //{
 //x = 531 ;
+//y = 463 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
+//RC 7  7 
+//skill@
+//{
+//x = 617 ;
 //y = 463 ;
 //mastery = FALSE;
 //base_skillIndex =@;
@@ -161679,6 +163469,15 @@ base_skillIndex = 520271 ;
 //base_skillIndex =@;
 //}
 
+//RC 7  8 
+//skill@
+//{
+//x = 617 ;
+//y = 527 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
 //RC 0  9 
 skill 2021085 
 {
@@ -161746,6 +163545,15 @@ base_skillIndex = 510021 ;
 //skill@
 //{
 //x = 531 ;
+//y = 591 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
+//RC 7  9 
+//skill@
+//{
+//x = 617 ;
 //y = 591 ;
 //mastery = FALSE;
 //base_skillIndex =@;
@@ -161823,6 +163631,15 @@ base_skillIndex = 510051 ;
 //base_skillIndex =@;
 //}
 
+//RC 7  10 
+//skill@
+//{
+//x = 617 ;
+//y = 655 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
 //RC 0  11 
 skill 2012099 
 {
@@ -161890,6 +163707,15 @@ base_skillIndex = 532011 ;
 //skill@
 //{
 //x = 531 ;
+//y = 719 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
+//RC 7  11 
+//skill@
+//{
+//x = 617 ;
 //y = 719 ;
 //mastery = FALSE;
 //base_skillIndex =@;
@@ -161967,6 +163793,15 @@ base_skillIndex = 95879 ;
 //base_skillIndex =@;
 //}
 
+//RC 7  12 
+//skill@
+//{
+//x = 617 ;
+//y = 783 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
 //RC 0  13 
 //skill@
 //{
@@ -161986,13 +163821,13 @@ base_skillIndex = 95879 ;
 //}
 
 //RC 2  13 
-//skill@
-//{
-//x = 182 ;
-//y = 847 ;
-//mastery = FALSE;
-//base_skillIndex =@;
-//}
+skill 101060317 
+{
+x = 182 ;
+y = 847 ;
+mastery = FALSE;
+base_skillIndex = 101060317 ;
+}
 
 //RC 3  13 
 skill 420988 
@@ -162034,6 +163869,15 @@ base_skillIndex = 795986 ;
 //skill@
 //{
 //x = 531 ;
+//y = 847 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
+//RC 7  13 
+//skill@
+//{
+//x = 617 ;
 //y = 847 ;
 //mastery = FALSE;
 //base_skillIndex =@;
@@ -162111,6 +163955,15 @@ base_skillIndex = 99125 ;
 //base_skillIndex =@;
 //}
 
+//RC 7  14 
+//skill@
+//{
+//x = 617 ;
+//y = 911 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
 //RC 0  15 
 skill 99135 
 {
@@ -162178,6 +164031,15 @@ base_skillIndex = 99155 ;
 //skill@
 //{
 //x = 531 ;
+//y = 975 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
+//RC 7  15 
+//skill@
+//{
+//x = 617 ;
 //y = 975 ;
 //mastery = FALSE;
 //base_skillIndex =@;
@@ -162255,6 +164117,15 @@ base_skillIndex = 421004 ;
 //base_skillIndex =@;
 //}
 
+//RC 7  16 
+//skill@
+//{
+//x = 617 ;
+//y = 1039 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
 //RC 0  17 
 //skill@
 //{
@@ -162322,6 +164193,15 @@ base_skillIndex = 421004 ;
 //skill@
 //{
 //x = 531 ;
+//y = 1103 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
+//RC 7  17 
+//skill@
+//{
+//x = 617 ;
 //y = 1103 ;
 //mastery = FALSE;
 //base_skillIndex =@;
@@ -162408,6 +164288,15 @@ base_skillIndex = 421004 ;
 //base_skillIndex =@;
 //}
 
+//RC 7  18 
+//skill@
+//{
+//x = 617 ;
+//y = 1167 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
 //RC 0  19 
 //skill@
 //{
@@ -162480,6 +164369,15 @@ base_skillIndex = 421004 ;
 //base_skillIndex =@;
 //}
 
+//RC 7  19 
+//skill@
+//{
+//x = 617 ;
+//y = 1231 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
 //RC 0  20 
 //skill@
 //{
@@ -162547,6 +164445,15 @@ base_skillIndex = 421004 ;
 //skill@
 //{
 //x = 531 ;
+//y = 1295 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
+//RC 7  20 
+//skill@
+//{
+//x = 617 ;
 //y = 1295 ;
 //mastery = FALSE;
 //base_skillIndex =@;
@@ -168930,6 +170837,15 @@ base_skillIndex = 620101 ;
 //base_skillIndex =@;
 //}
 
+//RC 7  0 
+//skill@
+//{
+//x = 617 ;
+//y = 15 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
 //RC 0  1 
 skill 610121 
 {
@@ -168997,6 +170913,15 @@ base_skillIndex = 620161 ;
 //skill@
 //{
 //x = 531 ;
+//y = 79 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
+//RC 7  1 
+//skill@
+//{
+//x = 617 ;
 //y = 79 ;
 //mastery = FALSE;
 //base_skillIndex =@;
@@ -169074,6 +170999,15 @@ base_skillIndex = 620131 ;
 //base_skillIndex =@;
 //}
 
+//RC 7  2 
+//skill@
+//{
+//x = 617 ;
+//y = 143 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
 //RC 0  3 
 skill 610151 
 {
@@ -169141,6 +171075,15 @@ base_skillIndex = 610021 ;
 //skill@
 //{
 //x = 531 ;
+//y = 207 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
+//RC 7  3 
+//skill@
+//{
+//x = 617 ;
 //y = 207 ;
 //mastery = FALSE;
 //base_skillIndex =@;
@@ -169218,6 +171161,15 @@ base_skillIndex = 620151 ;
 //base_skillIndex =@;
 //}
 
+//RC 7  4 
+//skill@
+//{
+//x = 617 ;
+//y = 271 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
 //RC 0  5 
 skill 610161 
 {
@@ -169285,6 +171237,15 @@ base_skillIndex = 620231 ;
 //skill@
 //{
 //x = 531 ;
+//y = 335 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
+//RC 7  5 
+//skill@
+//{
+//x = 617 ;
 //y = 335 ;
 //mastery = FALSE;
 //base_skillIndex =@;
@@ -169362,6 +171323,15 @@ base_skillIndex = 620011 ;
 //base_skillIndex =@;
 //}
 
+//RC 7  6 
+//skill@
+//{
+//x = 617 ;
+//y = 399 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
 //RC 0  7 
 skill 7200224 
 {
@@ -169429,6 +171399,15 @@ base_skillIndex = 620021 ;
 //skill@
 //{
 //x = 531 ;
+//y = 463 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
+//RC 7  7 
+//skill@
+//{
+//x = 617 ;
 //y = 463 ;
 //mastery = FALSE;
 //base_skillIndex =@;
@@ -169506,6 +171485,15 @@ base_skillIndex = 620091 ;
 //base_skillIndex =@;
 //}
 
+//RC 7  8 
+//skill@
+//{
+//x = 617 ;
+//y = 527 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
 //RC 0  9 
 skill 2021080 
 {
@@ -169573,6 +171561,15 @@ base_skillIndex = 610011 ;
 //skill@
 //{
 //x = 531 ;
+//y = 591 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
+//RC 7  9 
+//skill@
+//{
+//x = 617 ;
 //y = 591 ;
 //mastery = FALSE;
 //base_skillIndex =@;
@@ -169650,6 +171647,15 @@ base_skillIndex = 610031 ;
 //base_skillIndex =@;
 //}
 
+//RC 7  10 
+//skill@
+//{
+//x = 617 ;
+//y = 655 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
 //RC 0  11 
 skill 2012087 
 {
@@ -169717,6 +171723,15 @@ base_skillIndex = 632011 ;
 //skill@
 //{
 //x = 531 ;
+//y = 719 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
+//RC 7  11 
+//skill@
+//{
+//x = 617 ;
 //y = 719 ;
 //mastery = FALSE;
 //base_skillIndex =@;
@@ -169794,6 +171809,15 @@ base_skillIndex = 95979 ;
 //base_skillIndex =@;
 //}
 
+//RC 7  12 
+//skill@
+//{
+//x = 617 ;
+//y = 783 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
 //RC 0  13 
 //skill@
 //{
@@ -169813,13 +171837,13 @@ base_skillIndex = 95979 ;
 //}
 
 //RC 2  13 
-//skill@
-//{
-//x = 182 ;
-//y = 847 ;
-//mastery = FALSE;
-//base_skillIndex =@;
-//}
+skill 101060318 
+{
+x = 182 ;
+y = 847 ;
+mastery = FALSE;
+base_skillIndex = 101060318 ;
+}
 
 //RC 3  13 
 skill 420989 
@@ -169861,6 +171885,15 @@ base_skillIndex = 795987 ;
 //skill@
 //{
 //x = 531 ;
+//y = 847 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
+//RC 7  13 
+//skill@
+//{
+//x = 617 ;
 //y = 847 ;
 //mastery = FALSE;
 //base_skillIndex =@;
@@ -169938,6 +171971,15 @@ base_skillIndex = 99126 ;
 //base_skillIndex =@;
 //}
 
+//RC 7  14 
+//skill@
+//{
+//x = 617 ;
+//y = 911 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
 //RC 0  15 
 skill 99136 
 {
@@ -170005,6 +172047,15 @@ base_skillIndex = 99156 ;
 //skill@
 //{
 //x = 531 ;
+//y = 975 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
+//RC 7  15 
+//skill@
+//{
+//x = 617 ;
 //y = 975 ;
 //mastery = FALSE;
 //base_skillIndex =@;
@@ -170082,6 +172133,15 @@ base_skillIndex = 421005 ;
 //base_skillIndex =@;
 //}
 
+//RC 7  16 
+//skill@
+//{
+//x = 617 ;
+//y = 1039 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
 //RC 0  17 
 //skill@
 //{
@@ -170149,6 +172209,15 @@ base_skillIndex = 421005 ;
 //skill@
 //{
 //x = 531 ;
+//y = 1103 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
+//RC 7  17 
+//skill@
+//{
+//x = 617 ;
 //y = 1103 ;
 //mastery = FALSE;
 //base_skillIndex =@;
@@ -170226,6 +172295,15 @@ base_skillIndex = 421005 ;
 //base_skillIndex =@;
 //}
 
+//RC 7  18 
+//skill@
+//{
+//x = 617 ;
+//y = 1167 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
 //RC 0  19 
 //skill@
 //{
@@ -170298,6 +172376,15 @@ base_skillIndex = 421005 ;
 //base_skillIndex =@;
 //}
 
+//RC 7  19 
+//skill@
+//{
+//x = 617 ;
+//y = 1231 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
 //RC 0  20 
 //skill@
 //{
@@ -170365,6 +172452,15 @@ base_skillIndex = 421005 ;
 //skill@
 //{
 //x = 531 ;
+//y = 1295 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
+//RC 7  20 
+//skill@
+//{
+//x = 617 ;
 //y = 1295 ;
 //mastery = FALSE;
 //base_skillIndex =@;
@@ -176764,6 +178860,15 @@ base_skillIndex = 320101 ;
 //base_skillIndex =@;
 //}
 
+//RC 7  0 
+//skill@
+//{
+//x = 617 ;
+//y = 15 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
 //RC 0  1 
 //skillupgrade
 //{
@@ -176831,6 +178936,15 @@ base_skillIndex = 320321 ;
 //skill@
 //{
 //x = 531 ;
+//y = 79 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
+//RC 7  1 
+//skill@
+//{
+//x = 617 ;
 //y = 79 ;
 //mastery = FALSE;
 //base_skillIndex =@;
@@ -176908,6 +179022,15 @@ base_skillIndex = 320201 ;
 //base_skillIndex =@;
 //}
 
+//RC 7  2 
+//skill@
+//{
+//x = 617 ;
+//y = 143 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
 //RC 0  3 
 //skillupgrade
 //{
@@ -176975,6 +179098,15 @@ base_skillIndex = 310021 ;
 //skill@
 //{
 //x = 531 ;
+//y = 207 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
+//RC 7  3 
+//skill@
+//{
+//x = 617 ;
 //y = 207 ;
 //mastery = FALSE;
 //base_skillIndex =@;
@@ -177052,6 +179184,15 @@ base_skillIndex = 320311 ;
 //base_skillIndex =@;
 //}
 
+//RC 7  4 
+//skill@
+//{
+//x = 617 ;
+//y = 271 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
 //RC 0  5 
 //skillupgrade
 //{
@@ -177119,6 +179260,15 @@ base_skillIndex = 320811 ;
 //skill@
 //{
 //x = 531 ;
+//y = 335 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
+//RC 7  5 
+//skill@
+//{
+//x = 617 ;
 //y = 335 ;
 //mastery = FALSE;
 //base_skillIndex =@;
@@ -177196,6 +179346,15 @@ base_skillIndex = 320011 ;
 //base_skillIndex =@;
 //}
 
+//RC 7  6 
+//skill@
+//{
+//x = 617 ;
+//y = 399 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
 //RC 0  7 
 skill 7200221 
 {
@@ -177263,6 +179422,15 @@ base_skillIndex = 320021 ;
 //skill@
 //{
 //x = 531 ;
+//y = 463 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
+//RC 7  7 
+//skill@
+//{
+//x = 617 ;
 //y = 463 ;
 //mastery = FALSE;
 //base_skillIndex =@;
@@ -177340,6 +179508,15 @@ base_skillIndex = 320091 ;
 //base_skillIndex =@;
 //}
 
+//RC 7  8 
+//skill@
+//{
+//x = 617 ;
+//y = 527 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
 //RC 0  9 
 //skill@
 //{
@@ -177407,6 +179584,15 @@ base_skillIndex = 311011 ;
 //skill@
 //{
 //x = 531 ;
+//y = 591 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
+//RC 7  9 
+//skill@
+//{
+//x = 617 ;
 //y = 591 ;
 //mastery = FALSE;
 //base_skillIndex =@;
@@ -177484,6 +179670,15 @@ base_skillIndex = 311111 ;
 //base_skillIndex =@;
 //}
 
+//RC 7  10 
+//skill@
+//{
+//x = 617 ;
+//y = 655 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
 //RC 0  11 
 //skill@
 //{
@@ -177551,6 +179746,15 @@ base_skillIndex = 330611 ;
 //skill@
 //{
 //x = 531 ;
+//y = 719 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
+//RC 7  11 
+//skill@
+//{
+//x = 617 ;
 //y = 719 ;
 //mastery = FALSE;
 //base_skillIndex =@;
@@ -177628,6 +179832,15 @@ base_skillIndex = 52012 ;
 //base_skillIndex =@;
 //}
 
+//RC 7  12 
+//skill@
+//{
+//x = 617 ;
+//y = 783 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
 //RC 0  13 
 //skill@
 //{
@@ -177647,13 +179860,13 @@ base_skillIndex = 52012 ;
 //}
 
 //RC 2  13 
-//skill@
-//{
-//x = 182 ;
-//y = 847 ;
-//mastery = FALSE;
-//base_skillIndex =@;
-//}
+skill 101060315 
+{
+x = 182 ;
+y = 847 ;
+mastery = FALSE;
+base_skillIndex = 101060315 ;
+}
 
 //RC 3  13 
 skill 795984 
@@ -177695,6 +179908,15 @@ base_skillIndex = 421019 ;
 //skill@
 //{
 //x = 531 ;
+//y = 847 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
+//RC 7  13 
+//skill@
+//{
+//x = 617 ;
 //y = 847 ;
 //mastery = FALSE;
 //base_skillIndex =@;
@@ -177772,6 +179994,15 @@ base_skillIndex = 99123 ;
 //base_skillIndex =@;
 //}
 
+//RC 7  14 
+//skill@
+//{
+//x = 617 ;
+//y = 911 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
 //RC 0  15 
 skill 99133 
 {
@@ -177839,6 +180070,15 @@ base_skillIndex = 99153 ;
 //skill@
 //{
 //x = 531 ;
+//y = 975 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
+//RC 7  15 
+//skill@
+//{
+//x = 617 ;
 //y = 975 ;
 //mastery = FALSE;
 //base_skillIndex =@;
@@ -177916,6 +180156,15 @@ base_skillIndex = 421002 ;
 //base_skillIndex =@;
 //}
 
+//RC 7  16 
+//skill@
+//{
+//x = 617 ;
+//y = 1039 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
 //RC 0  17 
 //skill@
 //{
@@ -177983,6 +180232,15 @@ base_skillIndex = 421002 ;
 //skill@
 //{
 //x = 531 ;
+//y = 1103 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
+//RC 7  17 
+//skill@
+//{
+//x = 617 ;
 //y = 1103 ;
 //mastery = FALSE;
 //base_skillIndex =@;
@@ -178060,6 +180318,15 @@ base_skillIndex = 421002 ;
 //base_skillIndex =@;
 //}
 
+//RC 7  18 
+//skill@
+//{
+//x = 617 ;
+//y = 1167 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
 //RC 0  19 
 //skill@
 //{
@@ -178132,6 +180399,15 @@ base_skillIndex = 421002 ;
 //base_skillIndex =@;
 //}
 
+//RC 7  19 
+//skill@
+//{
+//x = 617 ;
+//y = 1231 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
 //RC 0  20 
 //skill@
 //{
@@ -178199,6 +180475,15 @@ base_skillIndex = 421002 ;
 //skill@
 //{
 //x = 531 ;
+//y = 1295 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
+//RC 7  20 
+//skill@
+//{
+//x = 617 ;
 //y = 1295 ;
 //mastery = FALSE;
 //base_skillIndex =@;
@@ -178350,6 +180635,15 @@ base_skillIndex = 420141 ;
 //base_skillIndex =@;
 //}
 
+//RC 7  0 
+//skill@
+//{
+//x = 617 ;
+//y = 15 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
 //RC 0  1 
 skill 410211 
 {
@@ -178417,6 +180711,15 @@ base_skillIndex = 420421 ;
 //skill@
 //{
 //x = 531 ;
+//y = 79 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
+//RC 7  1 
+//skill@
+//{
+//x = 617 ;
 //y = 79 ;
 //mastery = FALSE;
 //base_skillIndex =@;
@@ -178494,6 +180797,15 @@ base_skillIndex = 420301 ;
 //base_skillIndex =@;
 //}
 
+//RC 7  2 
+//skill@
+//{
+//x = 617 ;
+//y = 143 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
 //RC 0  3 
 //skillupgrade
 //{
@@ -178561,6 +180873,15 @@ base_skillIndex = 410011 ;
 //skill@
 //{
 //x = 531 ;
+//y = 207 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
+//RC 7  3 
+//skill@
+//{
+//x = 617 ;
 //y = 207 ;
 //mastery = FALSE;
 //base_skillIndex =@;
@@ -178638,6 +180959,15 @@ base_skillIndex = 420411 ;
 //base_skillIndex =@;
 //}
 
+//RC 7  4 
+//skill@
+//{
+//x = 617 ;
+//y = 271 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
 //RC 0  5 
 skill 7200222 
 {
@@ -178705,6 +181035,15 @@ base_skillIndex = 421111 ;
 //skill@
 //{
 //x = 531 ;
+//y = 335 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
+//RC 7  5 
+//skill@
+//{
+//x = 617 ;
 //y = 335 ;
 //mastery = FALSE;
 //base_skillIndex =@;
@@ -178782,6 +181121,15 @@ base_skillIndex = 420011 ;
 //base_skillIndex =@;
 //}
 
+//RC 7  6 
+//skill@
+//{
+//x = 617 ;
+//y = 399 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
 //RC 0  7 
 //skill@
 //{
@@ -178849,6 +181197,15 @@ base_skillIndex = 420021 ;
 //skill@
 //{
 //x = 531 ;
+//y = 463 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
+//RC 7  7 
+//skill@
+//{
+//x = 617 ;
 //y = 463 ;
 //mastery = FALSE;
 //base_skillIndex =@;
@@ -178926,6 +181283,15 @@ base_skillIndex = 420201 ;
 //base_skillIndex =@;
 //}
 
+//RC 7  8 
+//skill@
+//{
+//x = 617 ;
+//y = 527 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
 //RC 0  9 
 //skill@
 //{
@@ -178993,6 +181359,15 @@ base_skillIndex = 410611 ;
 //skill@
 //{
 //x = 531 ;
+//y = 591 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
+//RC 7  9 
+//skill@
+//{
+//x = 617 ;
 //y = 591 ;
 //mastery = FALSE;
 //base_skillIndex =@;
@@ -179070,6 +181445,15 @@ base_skillIndex = 410711 ;
 //base_skillIndex =@;
 //}
 
+//RC 7  10 
+//skill@
+//{
+//x = 617 ;
+//y = 655 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
 //RC 0  11 
 //skill@
 //{
@@ -179137,6 +181521,15 @@ base_skillIndex = 430411 ;
 //skill@
 //{
 //x = 531 ;
+//y = 719 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
+//RC 7  11 
+//skill@
+//{
+//x = 617 ;
 //y = 719 ;
 //mastery = FALSE;
 //base_skillIndex =@;
@@ -179214,6 +181607,15 @@ base_skillIndex = 51012 ;
 //base_skillIndex =@;
 //}
 
+//RC 7  12 
+//skill@
+//{
+//x = 617 ;
+//y = 783 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
 //RC 0  13 
 //skill@
 //{
@@ -179233,13 +181635,13 @@ base_skillIndex = 51012 ;
 //}
 
 //RC 2  13 
-//skill@
-//{
-//x = 182 ;
-//y = 847 ;
-//mastery = FALSE;
-//base_skillIndex =@;
-//}
+skill 101060316 
+{
+x = 182 ;
+y = 847 ;
+mastery = FALSE;
+base_skillIndex = 101060316 ;
+}
 
 //RC 3  13 
 skill 421020 
@@ -179281,6 +181683,15 @@ base_skillIndex = 795985 ;
 //skill@
 //{
 //x = 531 ;
+//y = 847 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
+//RC 7  13 
+//skill@
+//{
+//x = 617 ;
 //y = 847 ;
 //mastery = FALSE;
 //base_skillIndex =@;
@@ -179358,6 +181769,15 @@ base_skillIndex = 99124 ;
 //base_skillIndex =@;
 //}
 
+//RC 7  14 
+//skill@
+//{
+//x = 617 ;
+//y = 911 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
 //RC 0  15 
 skill 99134 
 {
@@ -179425,6 +181845,15 @@ base_skillIndex = 99154 ;
 //skill@
 //{
 //x = 531 ;
+//y = 975 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
+//RC 7  15 
+//skill@
+//{
+//x = 617 ;
 //y = 975 ;
 //mastery = FALSE;
 //base_skillIndex =@;
@@ -179502,6 +181931,15 @@ base_skillIndex = 421003 ;
 //base_skillIndex =@;
 //}
 
+//RC 7  16 
+//skill@
+//{
+//x = 617 ;
+//y = 1039 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
 //RC 0  17 
 //skill@
 //{
@@ -179569,6 +182007,15 @@ base_skillIndex = 421003 ;
 //skill@
 //{
 //x = 531 ;
+//y = 1103 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
+//RC 7  17 
+//skill@
+//{
+//x = 617 ;
 //y = 1103 ;
 //mastery = FALSE;
 //base_skillIndex =@;
@@ -179646,6 +182093,15 @@ base_skillIndex = 421003 ;
 //base_skillIndex =@;
 //}
 
+//RC 7  18 
+//skill@
+//{
+//x = 617 ;
+//y = 1167 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
 //RC 0  19 
 //skill@
 //{
@@ -179682,6 +182138,15 @@ base_skillIndex = 421003 ;
 //base_skillIndex =@;
 //}
 
+//RC 4  19 
+//skill@
+//{
+//x = 356 ;
+//y = 1231 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
 //RC 5  19 
 //skill@
 //{
@@ -179704,6 +182169,15 @@ base_skillIndex = 421003 ;
 //skill@
 //{
 //x = 531 ;
+//y = 1231 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
+//RC 7  19 
+//skill@
+//{
+//x = 617 ;
 //y = 1231 ;
 //mastery = FALSE;
 //base_skillIndex =@;
@@ -179776,6 +182250,15 @@ base_skillIndex = 421003 ;
 //skill@
 //{
 //x = 531 ;
+//y = 1295 ;
+//mastery = FALSE;
+//base_skillIndex =@;
+//}
+
+//RC 7  20 
+//skill@
+//{
+//x = 617 ;
 //y = 1295 ;
 //mastery = FALSE;
 //base_skillIndex =@;
@@ -203245,397 +205728,145 @@ surface "srfFuelGaugeBack"
 	handle		= 0;
 	blend		= 0;
 }dialog dlgMain
-
 {
-
 	x = 0;
-
 	y = 0;
-
 	width = 320;
-
 	height = 128;
 
-
-
 	titlebar_x = 0;
-
 	titlebar_y = 0;
-
 	titlebar_width = 277;
-
 	titlebar_height = 20;
 
-
-
-	surface_file = "vipremotehubgui.srf";
-
-	surface = "srfVipHubFrameTop";
-
-	surface = "srfVipHubFrameMid";
-
-	surface = "srfVipHubFrameBot";
-
-	surface = "srfVipHubInnerTop";
-
-	surface = "srfVipHubInnerMid";
-
-	surface = "srfVipHubInnerBot";
-
-
+	surface_file = "EventReward.srf";
+	surface = "srfVipHubBg";
 
 	staticbox StTitle
-
 	{
-
-		x = 91;
-
-		y = 27;
-
-		width = 138;
-
-		height = 23;
-
-
+		x = 70;
+		y = 6;
+		width = 180;
+		height = 20;
 
 		font_name = Default;
-
 		enabled = False;
 
-
-
-		font_height = 100;
-
+		font_height = 95;
 		text_style = center;
-
 		text_color_red = 255;
-
-		text_color_green = 255;
-
-		text_color_blue = 255;
-
-
-
-		surface_file = "EventReward.srf";
-
-		surface = "srfTitle";
-
+		text_color_green = 236;
+		text_color_blue = 170;
 	}
-
-
 
 	button btnClose
-
 	{
-
-		x = 300;
-
-		y = 4;
-
+		x = 298;
+		y = 6;
 		width = 16;
-
 		height = 16;
 
-
-
 		surface_file = "GameCommon.srf";
-
 		surface_up = "srfClose2BtnUp";
-
 		surface_down = "srfClose2BtnDown";
-
 		surface_focus = "srfClose2BtnFoc";
-
 	}
-
 }
-
-surface "srfVipHubFrameTop"
-
+surface "srfVipHubBg"
 {
-
-	resource_file	= "Game.rsr";
-
-	resource_name	= "rsrCommon_1";
-
-
+	resource_file	= "EventReward.rsr";
+	resource_name	= "rsrVipRemoteHub";
 
 	x		= 0;
-
 	y		= 0;
-
 	width		= 320;
-
-	height		= 50;
-
-
+	height		= 128;
 
 	color_red	= 255;
-
 	color_green	= 255;
-
 	color_blue	= 255;
-
 	color_alpha	= 255;
 
-
-
 	uv_left		= 0;
-
 	uv_top		= 0;
-
 	uv_right	= 320;
-
-	uv_bottom	= 50;
-
-
+	uv_bottom	= 128;
 
 	handle		= 0;
-
 	blend		= 0;
-
 }
 
-
-
-surface "srfVipHubFrameMid"
-
+surface "srfVipHubSlotUp"
 {
-
-	resource_file	= "Game.rsr";
-
-	resource_name	= "rsrCommon_1";
-
-
+	resource_file	= "EventReward.rsr";
+	resource_name	= "rsrVipRemoteHub";
 
 	x		= 0;
-
-	y		= 50;
-
-	width		= 320;
-
-	height		= 68;
-
-
+	y		= 0;
+	width		= 36;
+	height		= 36;
 
 	color_red	= 255;
-
 	color_green	= 255;
-
 	color_blue	= 255;
-
 	color_alpha	= 255;
 
-
-
 	uv_left		= 0;
-
-	uv_top		= 100;
-
-	uv_right	= 320;
-
-	uv_bottom	= 101;
-
-
+	uv_top		= 140;
+	uv_right	= 36;
+	uv_bottom	= 176;
 
 	handle		= 0;
-
 	blend		= 0;
-
 }
 
-
-
-surface "srfVipHubFrameBot"
-
+surface "srfVipHubSlotFocus"
 {
-
-	resource_file	= "Game.rsr";
-
-	resource_name	= "rsrCommon_1";
-
-
+	resource_file	= "EventReward.rsr";
+	resource_name	= "rsrVipRemoteHub";
 
 	x		= 0;
-
-	y		= 118;
-
-	width		= 320;
-
-	height		= 10;
-
-
+	y		= 0;
+	width		= 36;
+	height		= 36;
 
 	color_red	= 255;
-
 	color_green	= 255;
-
 	color_blue	= 255;
-
 	color_alpha	= 255;
 
-
-
-	uv_left		= 0;
-
-	uv_top		= 470;
-
-	uv_right	= 320;
-
-	uv_bottom	= 480;
-
-
+	uv_left		= 40;
+	uv_top		= 140;
+	uv_right	= 76;
+	uv_bottom	= 176;
 
 	handle		= 0;
-
 	blend		= 0;
-
 }
 
-
-
-surface "srfVipHubInnerTop"
-
+surface "srfVipHubSlotDown"
 {
-
 	resource_file	= "EventReward.rsr";
+	resource_name	= "rsrVipRemoteHub";
 
-	resource_name	= "rsrEventReward";
-
-
-
-	x		= 9;
-
-	y		= 50;
-
-	width		= 303;
-
-	height		= 10;
-
-
+	x		= 0;
+	y		= 0;
+	width		= 36;
+	height		= 36;
 
 	color_red	= 255;
-
 	color_green	= 255;
-
 	color_blue	= 255;
-
 	color_alpha	= 255;
 
-
-
-	uv_left		= 0;
-
-	uv_top		= 0;
-
-	uv_right	= 303;
-
-	uv_bottom	= 10;
-
-
+	uv_left		= 80;
+	uv_top		= 140;
+	uv_right	= 116;
+	uv_bottom	= 176;
 
 	handle		= 0;
-
 	blend		= 0;
-
 }
-
-
-
-surface "srfVipHubInnerMid"
-
-{
-
-	resource_file	= "EventReward.rsr";
-
-	resource_name	= "rsrEventReward";
-
-
-
-	x		= 9;
-
-	y		= 60;
-
-	width		= 303;
-
-	height		= 58;
-
-
-
-	color_red	= 255;
-
-	color_green	= 255;
-
-	color_blue	= 255;
-
-	color_alpha	= 255;
-
-
-
-	uv_left		= 0;
-
-	uv_top		= 12;
-
-	uv_right	= 303;
-
-	uv_bottom	= 13;
-
-
-
-	handle		= 0;
-
-	blend		= 0;
-
-}
-
-
-
-surface "srfVipHubInnerBot"
-
-{
-
-	resource_file	= "EventReward.rsr";
-
-	resource_name	= "rsrEventReward";
-
-
-
-	x		= 9;
-
-	y		= 118;
-
-	width		= 303;
-
-	height		= 10;
-
-
-
-	color_red	= 255;
-
-	color_green	= 255;
-
-	color_blue	= 255;
-
-	color_alpha	= 255;
-
-
-
-	uv_left		= 0;
-
-	uv_top		= 15;
-
-	uv_right	= 303;
-
-	uv_bottom	= 25;
-
-
-
-	handle		= 0;
-
-	blend		= 0;
-
-}
-
 dialog dlgMain
 {
 	x	    = 0;
