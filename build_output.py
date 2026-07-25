@@ -32,18 +32,10 @@ from pathlib import Path
 from typing import Callable
 
 from hanhua_v3.policy import TBL_INTERNAL_TOKEN_DENYLIST, is_tbl_internal_token
+from hanhua_v3.runtime import console_color, install_hanhua, lang0_gbk_patch, tbl_utf16_patch
 
 
 ROOT = Path(__file__).resolve().parent
-LEGACY_TOOLS = ROOT / "legacy" / "tools"
-# Legacy patchers are compatibility dependencies. Keep the repository root
-# ahead of them so Windows build workers import this v3 entrypoint.
-sys.path.append(str(LEGACY_TOOLS))
-
-import console_color  # noqa: E402
-import install_hanhua  # noqa: E402
-import lang0_gbk_patch  # noqa: E402
-import tbl_utf16_patch  # noqa: E402
 
 
 ACTIVE_STATUSES = {"", "accepted", "active", "ok", "keep"}
@@ -54,9 +46,9 @@ BUILD_CACHE_VERSION = 1
 BUILD_MANIFEST_NAME = ".build_manifest.json"
 BUILD_CODE_FILES = (
     Path("build_output.py"),
-    Path("legacy/tools/install_hanhua.py"),
-    Path("legacy/tools/lang0_gbk_patch.py"),
-    Path("legacy/tools/tbl_utf16_patch.py"),
+    Path("hanhua_v3/runtime/install_hanhua.py"),
+    Path("hanhua_v3/runtime/lang0_gbk_patch.py"),
+    Path("hanhua_v3/runtime/tbl_utf16_patch.py"),
 )
 GUI0_FONT_ALIASES = ("Default", "detail", "Lolita", "SimHei")
 FONT_EXTENSIONS = {".ttf", ".otf", ".ttc"}

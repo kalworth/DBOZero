@@ -11,15 +11,10 @@ from pathlib import Path
 from typing import Iterable
 
 from .policy import is_tbl_internal_token
+from .runtime import install_hanhua
 
 
 ROOT = Path(__file__).resolve().parents[1]
-LEGACY_TOOLS = ROOT / "legacy" / "tools"
-# Keep legacy parsers available without allowing legacy scripts to shadow v3
-# modules imported later by the unified CLI.
-sys.path.append(str(LEGACY_TOOLS))
-
-import install_hanhua  # noqa: E402
 
 
 TAIWAN_FILES = (

@@ -1,94 +1,93 @@
 # DBO Zero 汉化工具链
 
-本仓库使用 v3 表驱动流程，从原始游戏快照生成大陆简中和台湾繁中两套复制式补丁。
+从游戏原始资源生成大陆简中（GBK）和台湾繁中（CP950/Big5）两套**复制式**汉化补丁：
+构建产物直接覆盖到游戏目录即可生效，不修改游戏程序，不写注册表。
 
-## 一键更新
+> **免责声明**：本项目是非官方的玩家自制工具，与游戏开发商/运营商无关。
+> 仓库不包含任何游戏资源文件；补丁由工具在你本机安装的游戏基础上生成。
+> 使用本工具及补丁的风险自负，请先备份游戏目录。
 
-首次使用先在仓库根目录注册命令：
+## 只想用汉化补丁的玩家
 
-```powershell
-python -m hanhua_v3.install_cli
-```
+不需要安装 Python，也不需要 clone 本仓库：
 
-安装器会在当前 Python 的 `Scripts` 目录创建受控的 `dboc.cmd`。以后无论终端位于哪个目录，都使用 `dboc`。游戏更新后运行：
+1. 到本仓库的 **Releases** 页面下载最新补丁压缩包（简中或繁中）；
+2. 解压，把其中的 `DBOZero` 目录里的内容复制到游戏目录下的 `DBOZero`，覆盖同名文件；
+3. 启动游戏。
 
-```powershell
-dboc update
-```
+还原原文：用游戏启动器的文件校验/修复功能，或重新覆盖回你备份的原始文件。
 
-查看全部指令或某个指令的参数：
+## 想参与翻译或自己构建补丁
 
-```powershell
-dboc --help
-dboc update --help
-dboc build --help
-```
+### 环境要求
 
-不再使用时可移除命令入口，不会删除仓库：
+- Windows（游戏本身是 Windows 程序；工具链的纯 Python 部分同样可在 macOS/Linux 运行）
+- Python 3.9 或更高版本
+- Git
+- 一份已安装的 DBO Zero 游戏（用于只读提取原始资源文件）
 
-```powershell
-python -m hanhua_v3.install_cli --uninstall
-```
-
-该命令会依次完成：
-
-1. 自动提交当前受版本控制内容，建立刷新前恢复点；
-2. 从 `E:\DBO Zero 2.0\DBOZero` 只读同步 8 个必要语言/资源包文件；
-3. 扫描新版 `lang0.pak`、`tbl0.pak`、`tbl1.pak` 并刷新翻译队列；
-4. 仅翻译本次新增且能够可靠处理的词条；
-5. 并行构建并验证大陆 GBK 与台湾 CP950 两套输出。
-
-实际游戏目录只作为读取源。CLI 不会写入游戏、复制账号数据、日志、客户端程序或更新缓存。
-
-## 常用命令
+### 快速开始
 
 ```powershell
-# 检查 src_file 是否与实际游戏的必要文件一致
-dboc status
-
-# 只刷新源快照（会先建立 Git 恢复点）
-dboc refresh
-
-# 只扫描当前 src_file
-dboc scan
-
-# 只翻译相对 HEAD 新增的队列原文
-dboc translate --new-since HEAD
-
-# 从较新 Git 状态恢复当前空白译文
-dboc recover --ref "stash@{1}"
-
-# 构建两套输出；默认并行和增量执行
-dboc build
+git clone <仓库地址>
+cd hanhua
+pip install -e .            # 安装跨平台的 dboc 命令（可编辑安装）
+dboc config --game-dir "E:\DBO Zero 2.0"   # 配置一次游戏目录
+dboc update                 # 提取源文件 → 扫描 → 翻译新增 → 构建两套补丁
 ```
 
-`python -m hanhua_v3`、`python build_output.py` 与 `python -m hanhua_v3.scan` 继续保留为兼容入口，新操作统一使用 `dboc`。
+游戏目录配置只需做一次，写入仓库根的 `dboc.toml`（已 gitignore）。
+不配也可以：CLI 会依次尝试 `DBOC_GAME_DIR` 环境变量和常见安装路径自动探测，
+或用 `--game-dir` 参数临时指定。查看当前生效值：`dboc config --show`。
 
-## 翻译文件
+### 翻译入口
 
-- `data/new_translations.tsv`：新增 `lang0` 和所选 TBL 词条，只填写 `填写中文`。
-- `data/translations.tsv`：已接受译文主表，修改现有译文时只改 `zh_cn`。
-- `hanhua_v3/glossary.py`：CLI 自动翻译使用的人工校订精确术语。
-- `reports/internal/`：扫描与审计产物，不是日常编辑面。
+只编辑这两个文件：
 
-内部标识、纯占位格式和候选噪声不会因“一键更新”被强制汉化。TBL 的 `位置=*` 始终表示按原文进行 UTF-16LE 通配替换，不猜测新版偏移。
+- `data/new_translations.tsv`：新增词条队列，**只填 `填写中文` 列**；
+- `data/translations.tsv`：已接受译文主表，**只改 `zh_cn` 列**。
 
-## 目录
+改完运行 `dboc build` 重新生成补丁：
 
-- `hanhua_v3/`：统一 CLI、扫描、源同步、翻译和 Git 恢复模块。
-- `src_file/DBOZero/`：当前版本的 8 个必要原始资源文件。
-- `data/`：可维护的翻译主表和日常队列。
-- `output/DBOZero/`：大陆简中 GBK 输出。
-- `output_taiwan/DBOZero/`：台湾繁中 CP950/Big5 输出。
-- `legacy/`：旧解析器和历史资料，仅由 v3 兼容调用。
-- `scripts/`：专项恢复工具，不作为日常入口。
+- `output/DBOZero`：大陆简中 GBK 版；
+- `output_taiwan/DBOZero`：台湾繁中 CP950/Big5 版。
 
-## 验证
+翻译必须遵守的规则（编码、长度、来源优先级等）见
+[docs/translation-rules.md](docs/translation-rules.md)。
+
+### 常用命令
 
 ```powershell
-python -m compileall -q build_output.py hanhua_v3
-dboc status
-dboc build --force
+dboc update        # 游戏更新后一键：恢复点 → 同步源 → 扫描 → 翻译新增 → 构建
+dboc status        # 对比源快照与本机游戏是否一致
+dboc refresh       # 只从游戏目录同步 8 个必要源文件（会先建 Git 恢复点）
+dboc scan          # 只扫描 src_file 并刷新翻译队列
+dboc translate     # 批量填写可确定的队列译文
+dboc build         # 构建两套补丁（默认并行、增量）
+dboc config        # 查看/写入游戏目录配置
+dboc --help        # 全部命令与参数
 ```
 
-构建完成后应重点检查 `pack/lang0.pak`、`pack/tbl0.pak`、`pack/tbl1.pak` 的 `missing` 计数。
+游戏目录只作为**读取源**。CLI 不会写入游戏目录，也不会复制账号数据、
+日志、客户端程序或更新缓存。
+
+## 仓库结构
+
+```
+hanhua_v3/     v3 工具链实现（CLI、扫描、翻译、恢复、配置）
+  runtime/     构建实际依赖的补丁模块（唯一维护副本）
+data/          翻译主表与日常队列（仓库核心资产）
+src_file/      源快照目录（游戏资源不入库，用法见其 README）
+docs/          翻译规则与开发者文档
+output*/       生成的补丁（不入库）
+legacy/        归档的旧工具与历史译法资料（tools 内为兼容垫片）
+scripts/       专项恢复工具，非日常入口
+tests/         单元测试（pytest）
+```
+
+更多开发细节（模块职责、验证流程、代码约定）见
+[docs/development.md](docs/development.md)。
+
+## License
+
+代码以 [MIT License](LICENSE) 发布。游戏本身的资源与商标归原权利人所有。

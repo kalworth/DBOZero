@@ -1,0 +1,37 @@
+name: CI
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+
+jobs:
+  test:
+    name: ${{ matrix.os }} / Python ${{ matrix.python }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [windows-latest, ubuntu-latest]
+        python: ["3.9", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+
+      - name: Install (editable, with dev deps)
+        run: pip install -e .[dev]
+
+      - name: Compile check
+        run: python -m compileall -q build_output.py hanhua_v3 tests
+
+      - name: Unit tests
+        run: pytest -q
+
+      - name: CLI smoke test
+        run: |
+          dboc --version
+          dboc --help
+          dboc build --help

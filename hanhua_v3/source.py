@@ -8,7 +8,6 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_GAME_DIR = Path(r"E:\DBO Zero 2.0\DBOZero")
 DEFAULT_SOURCE_DIR = ROOT / "src_file" / "DBOZero"
 
 # Only copy original assets consumed by scan.py and build_output.py. Runtime

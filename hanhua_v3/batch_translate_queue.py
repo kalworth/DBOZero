@@ -10,19 +10,15 @@ from pathlib import Path
 
 try:
     from .glossary import CURATED_TRANSLATIONS
+    from .runtime.auto_translate_new_source import PHRASE_MAP, WORD_MAP, translate_name
 except ImportError:  # Keep direct script execution working.
     from glossary import CURATED_TRANSLATIONS
+    from runtime.auto_translate_new_source import PHRASE_MAP, WORD_MAP, translate_name
 
 
 ROOT = Path(__file__).resolve().parents[1]
 QUEUE_PATH = ROOT / "data" / "new_translations.tsv"
 TRANSLATIONS_PATH = ROOT / "data" / "translations.tsv"
-LEGACY_TOOLS = ROOT / "legacy" / "tools"
-# Legacy dictionaries remain a fallback dependency, but must not shadow v3
-# entrypoints such as the repository-level build_output.py.
-sys.path.append(str(LEGACY_TOOLS))
-
-from auto_translate_new_source import PHRASE_MAP, WORD_MAP, translate_name  # noqa: E402
 
 
 INTERNAL_IDENTIFIER_RE = re.compile(

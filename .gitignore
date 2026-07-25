@@ -4,6 +4,17 @@
 /release/
 /legacy/releases/
 
+# Game asset snapshot (copyrighted game files, never commit; see src_file/README.md)
+/src_file/*
+!/src_file/README.md
+
+# Per-user local configuration
+/dboc.toml
+
+# Local AI tooling directories
+/.codex/
+/.agents/
+
 # v3 generated discovery outputs
 /data/new_translations.backup_before_*.tsv
 /reports/internal/
@@ -11,6 +22,7 @@
 # Python caches and local runtime noise
 __pycache__/
 *.py[cod]
+*.egg-info/
 .pytest_cache/
 
 # Local editor and OS files

@@ -1,37 +1,12 @@
-# -*- coding: utf-8 -*-
-"""Small ANSI color helpers for terminal output."""
+"""Compatibility shim. The canonical, maintained module lives in
+hanhua_v3.runtime.console_color; this shim keeps archived legacy scripts working.
+"""
 
-from __future__ import annotations
-
-import os
 import sys
+from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 
-GREEN = "32"
-RED = "31"
-CYAN = "36"
+from hanhua_v3.runtime import console_color as _impl
 
-
-def supports_color(stream=None) -> bool:
-    stream = stream or sys.stdout
-    if os.environ.get("NO_COLOR"):
-        return False
-    return hasattr(stream, "isatty") and stream.isatty()
-
-
-def color(text: str, code: str, stream=None) -> str:
-    if not supports_color(stream):
-        return text
-    return f"\033[{code}m{text}\033[0m"
-
-
-def ok(text: str, stream=None) -> str:
-    return color(text, GREEN, stream)
-
-
-def error(text: str, stream=None) -> str:
-    return color(text, RED, stream)
-
-
-def path(text: str, stream=None) -> str:
-    return color(text, CYAN, stream)
+sys.modules[__name__] = _impl

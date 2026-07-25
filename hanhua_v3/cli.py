@@ -8,14 +8,15 @@ import sys
 from datetime import datetime
 from pathlib import Path
 
-from . import __version__, batch_translate_queue, scan
+from . import __version__, batch_translate_queue, config, scan
+from .config import ConfigError
 from .recover import RecoveryError, recover_from_git
 from .source import (
-    DEFAULT_GAME_DIR,
     DEFAULT_SOURCE_DIR,
     SourceRefreshError,
     compare_source,
     refresh_source,
+    resolve_game_dir,
     resolve_source_dir,
 )
 
@@ -211,6 +212,25 @@ def run_status(args: argparse.Namespace) -> int:
     return 1 if different else 0
 
 
+def run_config(args: argparse.Namespace) -> int:
+    if args.game_dir is not None:
+        game_root = resolve_game_dir(args.game_dir)
+        config.save_game_dir(game_root)
+        print(f"已写入 {config.CONFIG_PATH}：game_dir = {game_root}")
+    if args.show or args.game_dir is None:
+        try:
+            resolved = config.resolve_game_dir(None)
+        except ConfigError as exc:
+            print(exc)
+            return 2
+        print(f"当前生效的游戏目录：{resolve_game_dir(resolved)}")
+        if config.CONFIG_PATH.is_file():
+            print(f"配置文件：{config.CONFIG_PATH}")
+        else:
+            print("配置文件：未创建（当前值来自环境变量或自动探测）")
+    return 0
+
+
 def add_source_args(parser: argparse.ArgumentParser, *, include_game: bool) -> None:
     parser.add_argument(
         "--source-dir",
@@ -222,8 +242,8 @@ def add_source_args(parser: argparse.ArgumentParser, *, include_game: bool) -> N
         parser.add_argument(
             "--game-dir",
             type=Path,
-            default=DEFAULT_GAME_DIR,
-            help="实际游戏 DBOZero 目录，仅作为只读同步源",
+            default=None,
+            help="实际游戏 DBOZero 目录，仅作为只读同步源；缺省时依次读取 DBOC_GAME_DIR 环境变量、dboc.toml 和自动探测",
         )
 
 
@@ -281,6 +301,11 @@ def build_parser() -> argparse.ArgumentParser:
     add_source_args(status, include_game=True)
     status.add_argument("--queue", type=Path, default=DEFAULT_QUEUE)
     status.set_defaults(handler=run_status)
+
+    config_parser = subparsers.add_parser("config", help="查看或写入本机游戏目录配置（dboc.toml）")
+    config_parser.add_argument("--game-dir", type=Path, default=None, help="校验并写入游戏目录到 dboc.toml")
+    config_parser.add_argument("--show", action="store_true", help="显示当前生效的游戏目录")
+    config_parser.set_defaults(handler=run_config)
     return parser
 
 
@@ -291,8 +316,10 @@ def main(argv: list[str] | None = None) -> int:
     args = build_parser().parse_args(argv)
     if hasattr(args, "source_dir"):
         args.source_dir = resolve_source_dir(args.source_dir)
+    if getattr(args, "game_dir", None) is None and hasattr(args, "game_dir") and args.command != "config":
+        args.game_dir = config.resolve_game_dir(None)
     try:
         return args.handler(args)
-    except (CliError, RecoveryError, SourceRefreshError, subprocess.CalledProcessError) as exc:
+    except (CliError, ConfigError, RecoveryError, SourceRefreshError, subprocess.CalledProcessError) as exc:
         print(f"ERROR: {exc}", file=sys.stderr)
         return 2

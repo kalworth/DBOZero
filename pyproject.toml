@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dbo-zero-hanhua"
+description = "DBO Zero 汉化工具链：从游戏原始资源构建大陆简中/台湾繁中复制式补丁"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+dynamic = ["version"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[project.scripts]
+dboc = "hanhua_v3.cli:main"
+
+[tool.setuptools]
+packages = ["hanhua_v3", "hanhua_v3.runtime"]
+py-modules = ["build_output"]
+
+[tool.setuptools.dynamic]
+version = { attr = "hanhua_v3.__version__" }
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
