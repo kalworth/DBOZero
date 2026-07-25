@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import shutil
 from pathlib import Path
 
 import pytest
@@ -76,3 +77,45 @@ def test_compare_source_flags_differences(tmp_path: Path) -> None:
     (game_root / "pack" / "tbl0.pak").write_bytes(b"changed")
     changed = {result.relative_path for result in source.compare_source(game_root, source_dir) if result.changed}
     assert changed == {Path("pack/tbl0.pak")}
+
+
+def make_variant_copy(game_root: Path, variant: Path, *relatives: Path) -> Path:
+    for relative in relatives:
+        target = variant / relative
+        target.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(game_root / relative, target)
+    return variant
+
+
+def test_detect_patched_source_flags_output_identical_file(tmp_path: Path) -> None:
+    game_root = make_game_dir(tmp_path)
+    variant = make_variant_copy(game_root, tmp_path / "output" / "DBOZero", Path("pack/lang0.pak"))
+    warnings = source.detect_patched_source(game_root, variant_dirs=(variant,))
+    assert any("lang0.pak" in warning for warning in warnings)
+
+
+def test_detect_patched_source_ignores_passthrough_gui0(tmp_path: Path) -> None:
+    game_root = make_game_dir(tmp_path)
+    variant = make_variant_copy(game_root, tmp_path / "output" / "DBOZero", *source.SOURCE_FILES)
+    warnings = source.detect_patched_source(game_root, variant_dirs=(variant,))
+    assert warnings
+    assert not any("gui0.pak" in warning for warning in warnings)
+
+
+def test_detect_patched_source_utf8_fallback(tmp_path: Path) -> None:
+    game_root = make_game_dir(tmp_path)
+    assert source.detect_patched_source(game_root, variant_dirs=()) == []
+    (game_root / "pack" / "lang0.pak").write_bytes("账号创建成功".encode("gbk"))
+    warnings = source.detect_patched_source(game_root, variant_dirs=())
+    assert any("lang0.pak" in warning for warning in warnings)
+
+
+def test_refresh_source_refuses_patched_game(tmp_path: Path) -> None:
+    game_root = make_game_dir(tmp_path)
+    variant = make_variant_copy(game_root, tmp_path / "output" / "DBOZero", Path("pack/tbl0.pak"))
+    try:
+        source.refresh_source(game_root, tmp_path / "src_file", variant_dirs=(variant,))
+    except source.SourceRefreshError as exc:
+        assert "tbl0.pak" in str(exc)
+    else:
+        raise AssertionError("refresh should refuse patched game files")

@@ -21,6 +21,7 @@ SOURCE_FILES = (
     Path("pack/lang0.pak"),
     Path("pack/tbl0.pak"),
     Path("pack/tbl1.pak"),
+    Path("pack/tbl2.pak"),
 )
 
 
@@ -67,10 +68,82 @@ def validate_layout(root: Path) -> None:
         raise SourceRefreshError("缺少必要源文件：" + ", ".join(missing))
 
 
-def refresh_source(game_dir: Path, source_dir: Path = DEFAULT_SOURCE_DIR) -> list[SourceFileResult]:
+OUTPUT_VARIANT_DIRS = (
+    ROOT / "output" / "DBOZero",
+    ROOT / "output_taiwan" / "DBOZero",
+)
+
+# gui0.pak is copied verbatim into outputs when no font alias changes, so an
+# original gui0 always matches the build output and must be excluded from
+# patched-content detection.
+PASSTHROUGH_FILES = frozenset({Path("pack/gui0.pak")})
+
+# Originals of these files are always valid UTF-8 (English/UTF-8 text), while
+# the built patch rewrites them as GBK/CP950. A decode failure flags a patched
+# file even when no build outputs are available to compare against.
+UTF8_ORIGINAL_FILES = frozenset(
+    {
+        Path("pack/lang0.pak"),
+        Path("localize/Taiwan/language/local_sync_data.dat"),
+    }
+)
+
+
+def detect_patched_source(
+    game_root: Path, *, variant_dirs: tuple[Path, ...] = OUTPUT_VARIANT_DIRS
+) -> list[str]:
+    """Return warning lines for live files that look like built patch output.
+
+    The snapshot must always hold original game files. Pulling an already
+    patched file would overwrite the clean snapshot and corrupt every
+    downstream scan/translation, so refresh refuses to proceed when any file
+    is byte-identical to a build output or fails the UTF-8 originality check.
+    """
+    warnings: list[str] = []
+    for relative in SOURCE_FILES:
+        live_file = game_root / relative
+        if not live_file.is_file() or relative in PASSTHROUGH_FILES:
+            continue
+        live_hash = sha256_file(live_file)
+        matched_variant = next(
+            (
+                variant.parent.name
+                for variant in variant_dirs
+                if (variant / relative).is_file() and sha256_file(variant / relative) == live_hash
+            ),
+            None,
+        )
+        if matched_variant is not None:
+            warnings.append(f"{relative.as_posix()} 与构建输出 {matched_variant} 逐字节一致")
+        elif relative in UTF8_ORIGINAL_FILES:
+            try:
+                live_file.read_bytes().decode("utf-8")
+            except UnicodeDecodeError:
+                warnings.append(f"{relative.as_posix()} 不是有效 UTF-8，疑似 GBK/CP950 补丁输出")
+    return warnings
+
+
+def assert_source_not_patched(game_root: Path, *, variant_dirs: tuple[Path, ...] = OUTPUT_VARIANT_DIRS) -> None:
+    warnings = detect_patched_source(game_root, variant_dirs=variant_dirs)
+    if warnings:
+        details = "\n".join(f"  - {line}" for line in warnings)
+        raise SourceRefreshError(
+            "游戏目录里的文件看起来是已打补丁的版本，已停止同步以避免覆盖原版快照：\n"
+            f"{details}\n"
+            "请先用游戏启动器的文件校验/修复功能恢复官方原版文件，再重新运行。"
+        )
+
+
+def refresh_source(
+    game_dir: Path,
+    source_dir: Path = DEFAULT_SOURCE_DIR,
+    *,
+    variant_dirs: tuple[Path, ...] = OUTPUT_VARIANT_DIRS,
+) -> list[SourceFileResult]:
     game_root = resolve_game_dir(game_dir)
     source_root = resolve_source_dir(source_dir)
     validate_layout(game_root)
+    assert_source_not_patched(game_root, variant_dirs=variant_dirs)
 
     results: list[SourceFileResult] = []
     for relative in SOURCE_FILES:

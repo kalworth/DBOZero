@@ -4,6 +4,13 @@
 
 Answer questions in Chinese, and address me as "老大" before every answer.
 
+## Agent Safety Workflow
+
+- Use `tmp/` (gitignored) as the scratch root for any experimental or generated file work.
+- At the start of a task, create a purpose-named subdirectory under `tmp/` (for example `tmp/tbl2_format_probe/`) and keep all intermediate files, experiment outputs, and verification artifacts inside it. One directory per task; keep the directory after the task ends as a work record — do not clean it up.
+- Unless the user explicitly asks for direct source modification, do not edit the tracked source tree first. Build and verify the change inside `tmp/<task>/`, run tests/validation there, and only after verification ask the user whether to merge it into the source tree.
+- Merging into tracked source always requires explicit user confirmation.
+
 ## Current Workflow
 
 This workspace builds a copy-only DBO Zero Chinese patch from `src_file/DBOZero`. Never write to the live game directory. The only allowed live-directory read is an explicit `dboc refresh` or `dboc update`, which copies the required original assets into `src_file/DBOZero`.
@@ -20,8 +27,8 @@ Use the unified v3 CLI:
 - Install with `pip install -e .` (editable install; the workspace root must stay the repository root). This is the only supported installation path.
 
 - `dboc update`: creates a Git checkpoint, refreshes source assets, scans, translates new rows, and builds both outputs.
-- `dboc status`: compares the 8 required source assets with the live game directory without modifying either location.
-- `dboc refresh`: creates a Git checkpoint and refreshes only the 8 required source assets.
+- `dboc status`: compares the 9 required source assets with the live game directory without modifying either location.
+- `dboc refresh`: creates a Git checkpoint and refreshes only the 9 required source assets.
 - `dboc scan`: refreshes discovery data and translation queues from `src_file/DBOZero`.
 - `dboc recover --ref "stash@{n}"`: fills current blank translations from Git history using exact keys and unambiguous source-text fallback.
 - `dboc build`: builds both outputs in parallel by default.
@@ -42,7 +49,7 @@ Expected outputs:
 
 ## Source And Output Boundaries
 
-- `src_file/DBOZero/` is the source snapshot, synced read-only from the user's own game install via `dboc refresh`. It contains copyrighted game assets and is **not tracked by Git** — never commit it.
+- `src_file/DBOZero/` is the source snapshot, synced read-only from the user's own game install via `dboc refresh`. It contains copyrighted game assets and is **not tracked by Git** — never commit it. The game directory must hold original files: `refresh`/`update` refuse to sync when live files match the build outputs (i.e. the patch is applied), and `dboc status` reports the same warning. Restore originals via the launcher repair first.
 - `dboc.toml` is per-machine local config and is **not tracked by Git**.
 - `output/`, `output_taiwan/`, and `release/` are generated deliverables, not tracked.
 - `hanhua_v3/runtime/` holds the actively maintained patching modules (moved from `legacy/tools`). Edit them there; the same-named files under `legacy/tools/` are compatibility shims only.

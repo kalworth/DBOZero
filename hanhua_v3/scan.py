@@ -592,7 +592,7 @@ def iter_utf16le_printable_runs(data: bytes, min_chars: int = 4):
 
 def scan_tbl_candidates(dbozero: Path) -> list[CatalogEntry]:
     rows: list[CatalogEntry] = []
-    for file_name in ("tbl0.pak", "tbl1.pak"):
+    for file_name in ("tbl0.pak", "tbl1.pak", "tbl2.pak"):
         path = pack_dir(dbozero) / file_name
         data = path.read_bytes()
         for match in re.finditer(rb"[ -~]{4,}", data):
@@ -1551,7 +1551,7 @@ def write_next_steps(
         "",
         "其他列只是参考：",
         "",
-        "- `来源`: UI 表示 lang0，TBL 表示 tbl0.pak / tbl1.pak",
+        "- `来源`: UI 表示 lang0，TBL 表示 tbl0.pak / tbl1.pak / tbl2.pak",
         "- `文件`: 来源文件",
         "- `位置`: key 或 offset",
         "- `原文`: 游戏原文",

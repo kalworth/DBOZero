@@ -60,7 +60,7 @@ dboc update                 # 提取源文件 → 扫描 → 翻译新增 → �
 ```powershell
 dboc update        # 游戏更新后一键：恢复点 → 同步源 → 扫描 → 翻译新增 → 构建
 dboc status        # 对比源快照与本机游戏是否一致
-dboc refresh       # 只从游戏目录同步 8 个必要源文件（会先建 Git 恢复点）
+dboc refresh       # 只从游戏目录同步 9 个必要源文件（会先建 Git 恢复点）
 dboc scan          # 只扫描 src_file 并刷新翻译队列
 dboc translate     # 批量填写可确定的队列译文
 dboc build         # 构建两套补丁（默认并行、增量）

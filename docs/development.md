@@ -7,7 +7,7 @@
 
 - `hanhua_v3/cli.py`：`update/refresh/scan/translate/recover/build/status/config` 命令编排。
 - `hanhua_v3/config.py`：本机配置（`dboc.toml`）、环境变量与游戏目录自动探测。
-- `hanhua_v3/source.py`：从游戏目录只读同步 8 个必要源资源，逐文件 SHA-256 校验。
+- `hanhua_v3/source.py`：从游戏目录只读同步 9 个必要源资源，逐文件 SHA-256 校验。
 - `hanhua_v3/scan.py`：扫描 Taiwan、lang0 和 TBL，刷新翻译队列与内部审计表。
 - `hanhua_v3/batch_translate_queue.py`：保留格式、占位符和内部标识边界的批量翻译器。
 - `hanhua_v3/glossary.py`：人工校订的精确术语。

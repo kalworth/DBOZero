@@ -32,6 +32,7 @@ Thumbs.db
 Desktop.ini
 
 # Temporary scratch files
+/tmp/
 *.tmp
 *.bak
 *.orig

@@ -15,6 +15,7 @@ from .source import (
     DEFAULT_SOURCE_DIR,
     SourceRefreshError,
     compare_source,
+    detect_patched_source,
     refresh_source,
     resolve_game_dir,
     resolve_source_dir,
@@ -209,6 +210,12 @@ def run_status(args: argparse.Namespace) -> int:
     print(f"源快照：different={len(different)}, matched={len(comparison) - len(different)}")
     for result in different:
         print(f"  [不同] {result.relative_path.as_posix()}")
+    patched_warnings = detect_patched_source(resolve_game_dir(args.game_dir))
+    for warning in patched_warnings:
+        print(f"  [疑似补丁] {warning}")
+    if patched_warnings:
+        print("游戏目录疑似已打补丁，请先恢复官方原版文件再运行 dboc refresh/update")
+        return 2
     return 1 if different else 0
 
 
