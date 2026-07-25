@@ -11,7 +11,7 @@
 
 不需要安装 Python，也不需要 clone 本仓库：
 
-1. 到本仓库的 **Releases** 页面下载最新补丁压缩包（简中或繁中）；
+1. 到 [Releases 页面](https://github.com/kalworth/DBOZero/releases)下载最新补丁压缩包（简中或繁中）；
 2. 解压，把其中的 `DBOZero` 目录里的内容复制到游戏目录下的 `DBOZero`，覆盖同名文件；
 3. 启动游戏。
 
@@ -29,8 +29,8 @@
 ### 快速开始
 
 ```powershell
-git clone <仓库地址>
-cd hanhua
+git clone https://github.com/kalworth/DBOZero.git
+cd DBOZero
 pip install -e .            # 安装跨平台的 dboc 命令（可编辑安装）
 dboc config --game-dir "E:\DBO Zero 2.0"   # 配置一次游戏目录
 dboc update                 # 提取源文件 → 扫描 → 翻译新增 → 构建两套补丁
